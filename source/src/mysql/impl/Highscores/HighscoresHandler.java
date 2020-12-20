@@ -1,16 +1,6 @@
 package mysql.impl.Highscores;
 
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-import com.arlania.model.PlayerRights;
-import com.arlania.model.Skill;
-import com.arlania.world.entity.impl.player.Player;
-import com.mysql.jdbc.Statement;
-
 /*public class HighscoresHandler implements Runnable{
 
 

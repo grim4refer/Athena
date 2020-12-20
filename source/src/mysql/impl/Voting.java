@@ -1,16 +1,16 @@
 package mysql.impl;
 
-import com.arlania.model.Position;
-import com.arlania.model.Locations.Location;
-import com.arlania.util.Misc;
-import com.arlania.world.World;
-import com.arlania.world.content.Achievements;
-import com.arlania.world.content.PlayerLogs;
-import com.arlania.world.content.Achievements.AchievementData;
-import com.arlania.world.content.skill.impl.dungeoneering.Dungeoneering;
-import com.arlania.world.content.transportation.TeleportHandler;
-import com.arlania.world.entity.impl.npc.NPC;
-import com.arlania.world.entity.impl.player.Player;
+import com.athena.model.Position;
+import com.athena.model.Locations.Location;
+import com.athena.util.Misc;
+import com.athena.world.World;
+import com.athena.world.content.Achievements;
+import com.athena.world.content.PlayerLogs;
+import com.athena.world.content.Achievements.AchievementData;
+import com.athena.world.content.skill.impl.dungeoneering.Dungeoneering;
+import com.athena.world.content.transportation.TeleportHandler;
+import com.athena.world.entity.impl.npc.NPC;
+import com.athena.world.entity.impl.player.Player;
 
 import mysql.motivote.MotivoteHandler;
 import mysql.motivote.Vote;

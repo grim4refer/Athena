@@ -2,11 +2,11 @@ package mysql.impl;
 
 import java.sql.PreparedStatement;
 
-import com.arlania.GameServer;
-import com.arlania.GameSettings;
-import com.arlania.model.PlayerRights;
-import com.arlania.model.Skill;
-import com.arlania.world.entity.impl.player.Player;
+import com.athena.GameServer;
+import com.athena.GameSettings;
+import com.athena.model.PlayerRights;
+import com.athena.model.Skill;
+import com.athena.world.entity.impl.player.Player;
 
 import mysql.MySQLController;
 import mysql.MySQLController.Database;

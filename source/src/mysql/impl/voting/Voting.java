@@ -1,18 +1,8 @@
 package mysql.impl.voting;
 
-import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.Connection;
-import java.sql.SQLException;
 
-import com.arlania.GameLoader;
-import com.arlania.model.Item;
-import com.arlania.util.Misc;
-import com.arlania.world.World;
-import com.arlania.world.content.Achievements;
-import com.arlania.world.content.PlayerLogs;
-import com.arlania.world.content.Achievements.AchievementData;
-import com.arlania.world.entity.impl.player.Player;
+import com.athena.world.entity.impl.player.Player;
 import com.mysql.jdbc.Statement;
 
 public class Voting implements Runnable {

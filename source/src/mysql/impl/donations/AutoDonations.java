@@ -1,14 +1,5 @@
 package mysql.impl.donations;
 
-import java.sql.*;
-
-import com.arlania.model.Item;
-import com.arlania.model.PlayerRights;
-import com.arlania.util.Misc;
-import com.arlania.world.content.PlayerPanel;
-import com.arlania.world.content.PointsHandler;
-import com.arlania.world.entity.impl.player.Player;
-
 /*
 public class AutoDonations implements Runnable {
 

@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import com.arlania.GameSettings;
+import com.athena.GameSettings;
 
 import mysql.impl.Store;
 import mysql.impl.Voting;
