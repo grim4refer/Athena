@@ -1,2 +1,0 @@
-[5/2/16 05:15PM]	Login from host 127.0.0.1, serial number: 	
-[5/2/16 05:23PM]	Login from host 127.0.0.1, serial number: 	

@@ -1,46 +1,38 @@
 package mysql.motivote;
 
-
 @SuppressWarnings("rawtypes")
-public abstract class Incentive
-{
+public abstract class Incentive {
 	private final Motivote motivote;
 	private final int internalID;
 	private final String username;
 	private final String ip;
-	
-	public Incentive(Motivote motivote, int internalID, String username, String ip)
-	{
+
+	public Incentive(Motivote motivote, int internalID, String username, String ip) {
 		this.motivote = motivote;
 		this.internalID = internalID;
 		this.username = username;
 		this.ip = ip;
 	}
-	
-	public int internalID()
-	{
+
+	public int internalID() {
 		return internalID;
 	}
-	
-	public String username()
-	{
+
+	public String username() {
 		return username;
 	}
-	
-	public String ip()
-	{
+
+	public String ip() {
 		return ip;
 	}
-	
+
 	@SuppressWarnings("unchecked")
-	public void complete()
-	{
+	public void complete() {
 		motivote.complete(this);
 	}
-	
+
 	@SuppressWarnings("unchecked")
-	public void fail()
-	{
+	public void fail() {
 		motivote.fail(this);
 	}
 }

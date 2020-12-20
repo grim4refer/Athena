@@ -2,11 +2,11 @@ package mysql.impl;
 
 import java.sql.PreparedStatement;
 
-import com.ruse.GameServer;
-import com.ruse.GameSettings;
-import com.ruse.model.PlayerRights;
-import com.ruse.model.Skill;
-import com.ruse.world.entity.impl.player.Player;
+import com.arlania.GameServer;
+import com.arlania.GameSettings;
+import com.arlania.model.PlayerRights;
+import com.arlania.model.Skill;
+import com.arlania.world.entity.impl.player.Player;
 
 import mysql.MySQLController;
 import mysql.MySQLController.Database;
@@ -28,20 +28,22 @@ public class Hiscores {
 		}
 		GameServer.getLoader().getEngine().submit(() -> {
 			try {
-				PreparedStatement preparedStatement = highscores.getConnection().prepareStatement("DELETE FROM hs_users WHERE USERNAME = ?");
+	     		PreparedStatement preparedStatement = highscores.getConnection().prepareStatement("DELETE FROM hs_users WHERE USERNAME = ?");
 				preparedStatement.setString(1, player.getUsername());
 				preparedStatement.executeUpdate();
 				preparedStatement = highscores.getConnection().prepareStatement("INSERT INTO hs_users (username,rights,overall_xp,attack_xp,defence_xp,strength_xp,constitution_xp,ranged_xp,prayer_xp,magic_xp,cooking_xp,woodcutting_xp,fletching_xp,fishing_xp,firemaking_xp,crafting_xp,smithing_xp,mining_xp,herblore_xp,agility_xp,thieving_xp,slayer_xp,farming_xp,runecrafting_xp,hunter_xp,construction_xp,summoning_xp,dungeoneering_xp) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 				preparedStatement.setString(1, player.getUsername());
-				preparedStatement.setInt(2, player.getRights().ordinal());
+			    preparedStatement.setInt(2, player.getRights().ordinal());
 				preparedStatement.setLong(3, player.getSkillManager().getTotalExp());
+				
+				//System.out.print("Sending Hiscores Data");
 				for (int i = 4; i <= 28; i++) {
-                    preparedStatement.setInt(i, player.getSkillManager().getExperience(Skill.forId(i - 4)));
+                   preparedStatement.setInt(i, player.getSkillManager().getExperience(Skill.forId(i - 4)));
                 }
 				preparedStatement.executeUpdate();
 			} catch(Exception e) {
 				e.printStackTrace();
 			}
-		});
+	  });
 	}
 }
