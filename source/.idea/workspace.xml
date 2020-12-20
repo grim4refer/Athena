@@ -1022,11 +1022,11 @@
   </component>
   <component name="RunManager">
     <configuration name="GameServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.arlania.GameServer" />
+      <option name="MAIN_CLASS_NAME" value="com.athena.GameServer" />
       <module name="Athena Source" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.arlania.*" />
+          <option name="PATTERN" value="com.athena.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
