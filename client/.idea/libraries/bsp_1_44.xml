@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="bsp_1.44">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/bsp_1.44.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/discord-rpc-release-v3.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jna-4.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/nullannotations-0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/theme.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/trident.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
