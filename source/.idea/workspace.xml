@@ -20,6 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8d1f07c-fade-4abe-adf0-c4e30d8b0824" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Athena Source.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
@@ -1000,14 +1002,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>&quot;allan</find>
-    </findStrings>
-    <dirStrings>
-      <dir>C:\Users\Administrator\Dropbox\newLxSourceDragons\Project</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -1017,8 +1011,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550168907297" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../client" />
   </component>
   <component name="RunManager">
     <configuration name="GameServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -1064,6 +1060,32 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1131" y="487" key="FileChooserDialogImpl" timestamp="1608496837583">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1131" y="487" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1608496837583" />
+    <state width="2057" height="398" key="GridCell.Tab.0.bottom" timestamp="1608496976088">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="2057" height="398" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1608496976088" />
+    <state width="2057" height="398" key="GridCell.Tab.0.center" timestamp="1608496976088">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="2057" height="398" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1608496976088" />
+    <state width="2057" height="398" key="GridCell.Tab.0.left" timestamp="1608496976088">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="2057" height="398" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1608496976088" />
+    <state width="2057" height="398" key="GridCell.Tab.0.right" timestamp="1608496976088">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="2057" height="398" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1608496976088" />
+    <state x="1014" y="351" width="672" height="678" key="search.everywhere.popup" timestamp="1608497426848">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1014" y="351" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1608497426848" />
   </component>
   <component name="masterDetails">
     <states>

@@ -13,7 +13,7 @@ import com.athena.util.ShutdownHook;
 public class GameServer {
 
 	private static final GameLoader loader = new GameLoader(GameSettings.GAME_PORT);
-	private static final Logger logger = Logger.getLogger("Arlania");
+	private static final Logger logger = Logger.getLogger("Athena");
 	private static boolean updating;
 
 	public static void main(String[] params) {
@@ -24,9 +24,9 @@ public class GameServer {
 			loader.init();
 			loader.finish();
 			logger.info("The loader has finished loading utility tasks.");
-			logger.info("LiquidX is now online on port "+GameSettings.GAME_PORT+"!");
+			logger.info("Athena is now online on port "+GameSettings.GAME_PORT+"!");
 		} catch (Exception ex) {
-			logger.log(Level.SEVERE, "Could not start LiquidX! Program terminated.", ex);
+			logger.log(Level.SEVERE, "Could not start Athena! Program terminated.", ex);
 			System.exit(1);
 		}
 	}

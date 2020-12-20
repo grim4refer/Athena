@@ -211,7 +211,7 @@ public class CacheDownloader implements Runnable {
 			jLabel3 = new JLabel();
 
 			setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-			setTitle("LiquidX Cache  Update");
+			setTitle("Athena Cache  Update");
 
 			addWindowListener(new java.awt.event.WindowAdapter() {
 				public void windowClosing(java.awt.event.WindowEvent evt) {

@@ -5,6 +5,9 @@
       <artifact name="Lx Client:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand />
     <select />
@@ -228,8 +231,14 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectId" id="1lw8YFcgN6Y8RvIh0KGYH5tLDLc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../source" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.16503906" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -277,6 +286,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -307,29 +317,29 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1053" y="302" width="588" height="701" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1608495997554" />
-    <state width="2057" height="397" key="GridCell.Tab.0.bottom" timestamp="1608496364433">
+    <state width="2057" height="398" key="GridCell.Tab.0.bottom" timestamp="1608497266092">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="2057" height="397" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1608496364433" />
-    <state width="2057" height="397" key="GridCell.Tab.0.center" timestamp="1608496364433">
+    <state width="2057" height="398" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1608497266092" />
+    <state width="2057" height="398" key="GridCell.Tab.0.center" timestamp="1608497266092">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="2057" height="397" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1608496364433" />
-    <state width="2057" height="397" key="GridCell.Tab.0.left" timestamp="1608496364433">
+    <state width="2057" height="398" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1608497266092" />
+    <state width="2057" height="398" key="GridCell.Tab.0.left" timestamp="1608497266092">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="2057" height="397" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1608496364433" />
-    <state width="2057" height="397" key="GridCell.Tab.0.right" timestamp="1608496364433">
+    <state width="2057" height="398" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1608497266092" />
+    <state width="2057" height="398" key="GridCell.Tab.0.right" timestamp="1608497266092">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="2057" height="397" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1608496364433" />
+    <state width="2057" height="398" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1608497266092" />
     <state x="1127" y="400" key="SettingsEditor" timestamp="1608495965609">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1127" y="400" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1608495965609" />
-    <state x="1320" y="373" width="672" height="678" key="search.everywhere.popup" timestamp="1608496304203">
+    <state x="1320" y="373" width="672" height="678" key="search.everywhere.popup" timestamp="1608496877214">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1320" y="373" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1608496304203" />
+    <state x="1320" y="373" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1608496877214" />
   </component>
 </project>

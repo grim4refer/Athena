@@ -68,7 +68,7 @@ public class StartScreen {
 				(new Item (557, 1000)),
 				(new Item (555, 1000)),
 				(new Item (554, 1000))},
-				"Play LiquidX as an Iron man.", "You will be restricted from trading, staking and looting items from killed players.", "You will not get a npc drop if another player has done more damage.", "You will have to rely on your starter, skilling, pvming, and shops.", "This game mode is for players that love a challenge.", "", ""),
+				"Play Athena as an Iron man.", "You will be restricted from trading, staking and looting items from killed players.", "You will not get a npc drop if another player has done more damage.", "You will have to rely on your starter, skilling, pvming, and shops.", "This game mode is for players that love a challenge.", "", ""),
 		ULTIMATE_IRON("  Ultimate Iron", 52763, -12778, 1, 2, new Item[] {
 				new Item(2441, 10),
 				new Item(2437, 10),
@@ -96,7 +96,7 @@ public class StartScreen {
 				(new Item (557, 1000)),
 				(new Item (555, 1000)),
 				(new Item (554, 1000))},
-				"Play LiquidX as a Ultimate Ironman.", "In addiction to the iron man rules you cannot use banks.", "This gamemode is for the players that love the impossible.", "", "", "", "");
+				"Play Athena as a Ultimate Ironman.", "In addiction to the iron man rules you cannot use banks.", "This gamemode is for the players that love the impossible.", "", "", "", "");
 
 		private String name;
 		private int stringId;
@@ -176,38 +176,38 @@ public class StartScreen {
 				player.setReceivedStarter(true);
 				handleConfirm(player);
 				addStarterToInv(player);
-				ClanChatManager.join(player, "viper");
+				ClanChatManager.join(player, "Athena");
 				player.setPlayerLocked(false);
 				player.getPacketSender().sendInterface(3559);
 				player.getAppearance().setCanChangeAppearance(true);
 				player.setNewPlayer(false);
 				PlayerPunishment.addIpToStarterList1(player.getHostAddress());
 				PlayerPunishment.addIpToStarter1(player.getHostAddress());		
-				World.sendMessage("<col=6600CC>[NEW PLAYER]: "+player.getUsername()+" has logged into LiquidX for the first time!");
+				World.sendMessage("<col=6600CC>[NEW PLAYER]: "+player.getUsername()+" has logged into Athena for the first time!");
 			}
 			else if(PlayerPunishment.hasRecieved1stStarter(player.getHostAddress()) && !PlayerPunishment.hasRecieved2ndStarter(player.getHostAddress())) {
 				player.getPacketSender().sendInterfaceRemoval();
 				player.setReceivedStarter(true);
 				handleConfirm(player);
 				addStarterToInv(player);
-				ClanChatManager.join(player, "viper");
+				ClanChatManager.join(player, "Athena");
 				player.setPlayerLocked(false);
 				player.getPacketSender().sendInterface(3559);
 				player.getAppearance().setCanChangeAppearance(true);
 				player.setNewPlayer(false);
 				PlayerPunishment.addIpToStarterList2(player.getHostAddress());
 				PlayerPunishment.addIpToStarter2(player.getHostAddress());			
-				World.sendMessage("<col=6600CC>[NEW PLAYER]: "+player.getUsername()+" has logged into LiquidX for the first time!");
+				World.sendMessage("<col=6600CC>[NEW PLAYER]: "+player.getUsername()+" has logged into Athena for the first time!");
 			}
 			else if(PlayerPunishment.hasRecieved1stStarter(player.getHostAddress()) && PlayerPunishment.hasRecieved2ndStarter(player.getHostAddress())) {
 				//player.getPacketSender().sendInterfaceRemoval();
-				ClanChatManager.join(player, "viper");
+				ClanChatManager.join(player, "Athena");
 				player.setPlayerLocked(false);
 				player.getPacketSender().sendInterface(3559);
 				player.getAppearance().setCanChangeAppearance(true);
 				player.setNewPlayer(false);
 				player.getPacketSender().sendMessage("You've received to many starters.");
-				World.sendMessage("<col=6600CC>[NEW PLAYER]: "+player.getUsername()+" has logged into LiquidX for the first time!");
+				World.sendMessage("<col=6600CC>[NEW PLAYER]: "+player.getUsername()+" has logged into Athena for the first time!");
 			}
 			//DialogueManager.start(player, 81);
 			//return true;
