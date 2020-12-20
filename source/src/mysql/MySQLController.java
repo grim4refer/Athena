@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import com.arlania.GameSettings;
+import com.ruse.GameSettings;
 
 import mysql.impl.Store;
 import mysql.impl.Voting;
@@ -69,14 +69,18 @@ public class MySQLController {
 	public MySQLController() {
 		/* DATABASES */
 		DATABASES = new MySQLDatabase[]{
-			
-		
-	
+				new MySQLDatabase("host", 3306, "user", "db", "pass"),
+				//new MySQLDatabase("host", 3306, "aerosoft_recovery", "aerosoft_recover", "kqtZPF@T.!a^"),
+				//new MySQLDatabase("s", 3306, "rusepsco_grande", "rusepsco_grandeu", "MMNNBBHHYY123_c!!!"),
 		};
 		
-		VOTE = new Motivote(new Voting(), "http://runeunity.org/vote/", "0ae2dc6c");
+		/* VOTING */
+		VOTE = new Motivote(new Voting(), "http://Ruseps.com/vote/", "6a6ad3cc");
 		VOTE.start();
-		
+	
+		/*
+		 * Start the process
+		 */
 		MySQLProcessor.process();
 	}
 

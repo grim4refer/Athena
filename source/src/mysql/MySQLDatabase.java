@@ -42,7 +42,7 @@ public class MySQLDatabase {
 		} catch (Exception e) {
 			System.out.println("Unable to create connection to database "+database+"!");
 			connectionAttempts++;
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 	}
 

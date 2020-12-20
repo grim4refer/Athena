@@ -3,10 +3,10 @@
         "id": 0,
         "type": "OPTION",
         "lines": 5,
-        "line1": "Blue Flower",
-        "line2": "Purple Flower",
-        "line3": "Red Flower",
-        "line4": "Orange Flower",
+        "line1": "Rock Crabs",
+        "line2": "Experiments",
+        "line3": "Yaks",
+        "line4": "Bandits",
         "line5": "Next",
         "next": 1,
         "npcId": -1
@@ -15,23 +15,22 @@
         "id": 1,
         "type": "OPTION",
         "lines": 5,
-        "line1": "Rainbow Flower",
-        "line2": "Pastel Flower",
-        "line3": "Black Flower",
-        "line4": "White Flower",
+        "line1": "Ghouls",
+        "line2": "Chaos Druids",
+        "line3": "TzHaar",
+        "line4": "Dust Devils",
         "line5": "Next",
-        "next": -1,
+        "next": 2,
         "npcId": -1
     },
-
     {
         "id": 2,
         "type": "OPTION",
         "lines": 5,
-        "line1": "Yellow",
-        "line2": "Null",
-        "line3": "Null",
-        "line4": "Null",
+        "line1": "Chickens",
+        "line2": "Monkey skeletons",
+        "line3": "Monkey Guards",
+        "line4": "Armoured Zombies",
         "line5": "Back",
         "next": -1,
         "npcId": -1
@@ -57,10 +56,11 @@
     {
         "id": 5,
         "type": "OPTION",
-        "lines": 3,
-        "line1": "I'd like to know how many funds I have in total",
-        "line2": "I'd like to teleport to the Member's Zone",
-        "line3": "Cancel",
+        "lines": 4,
+        "line1": "I'd like to claim my purchased items",
+        "line2": "I'd like to know how many funds I have in total",
+        "line3": "I'd like to teleport to the Member's Zone",
+        "line4": "Cancel",
         "next": -1,
         "npcId": -1
     },
@@ -242,11 +242,12 @@
     {
         "id": 24,
         "type": "OPTION",
-        "lines": 4,
-        "line1": "I'd like to buy a Completionist Cape (100M)",
-		"line2": "I'd like to obtain youtuber rank",
-		"line3": "I'd like to buy a Max Cape (50M)",
-        "line4": "Cancel",
+        "lines": 5,
+		"line1": "Talk about Prestiging",
+        "line2": "I'd like to buy a Completionist Cape (100M)",
+		"line3": "I'd like to buy a Veteran Cape & Veteran Rank (75M)",
+		"line4": "I'd like to buy a Max Cape (50M)",
+        "line5": "Cancel",
         "next": -1,
         "npcId": -1
     },
@@ -391,7 +392,7 @@
         "lines": 4,
         "line1": "Please! You must help me, adventurer!",
         "line2": "The Culinaromancer is back!",
-        "line3": "He's going to destroy SERVERNAME!",
+        "line3": "He's going to destroy Ruse!",
         "line4": "Will you help defeat him?",
         "next": 44,
         "npcId": 3385
@@ -682,12 +683,10 @@
     {
         "id": 69,
         "type": "OPTION",
-        "lines": 5,
+        "lines": 3,
         "line1": "Corporeal Beast",
         "line2": "Nex",
-        "line3": "Scorpia (WILDERNESS)",
-        "line4": "Venenatis (WILDERNESS)",
-        "line5": "return",
+        "line3": "Return",
         "next": -1,
         "npcId": -1
     },
@@ -717,7 +716,7 @@
         "type": "NPC_STATEMENT",
         "anim": "THINKING_STILL",
         "lines": 1,
-        "line1": "Please wait at least 5 seconds. Don't touch anything!",
+        "line1": "Hmmm... Hold on..",
         "next": 72,
         "npcId": 7969
     },
@@ -727,7 +726,7 @@
         "anim": "SAD",
         "lines": 2,
         "line1": "Nope, sorry.",
-        "line2": "I Can't seem to locate that drop",
+        "line2": "I haven't heard of that item.",
         "next": -1,
         "npcId": 7969
     },
@@ -769,7 +768,7 @@
         "type": "NPC_STATEMENT",
         "anim": "NORMAL",
         "lines": 4,
-        "line1": "30% bonus experience for 2 hours.",
+        "line1": "50% bonus experience for 2 hours.",
         "line2": "It is also said that those who contributed",
         "line3": "will be blessed even further, and receive",
         "line4": "bonus Loyalty points too, during these 2 hours.",
@@ -807,7 +806,7 @@
         "type": "NPC_STATEMENT",
         "anim": "NORMAL",
         "lines": 2,
-        "line1": "Welcome to SERVERNAME!",
+        "line1": "Welcome to Ruse!",
         "line2": "Which mode would you like to play as?",
         "next": 82,
         "npcId": 6139
@@ -997,11 +996,11 @@
         "id": 100,
         "type": "OPTION",
         "lines": 5,
-        "line1": "Buy Pure Set @blu@(2M)",
-		"line2": "Buy Melee Main Set @blu@(2M)",
-		"line3": "Buy Range Main Set @blu@(3.5M)",
-		"line4": "Buy Magic Main Set @blu@(2M)",
-		"line5": "Buy Hybrid Main Set @blu@(3M)",
+        "line1": "Buy Pure Set @blu@(1.1M)",
+		"line2": "Buy Melee Main Set @blu@(1.3M)",
+		"line3": "Buy Range Main Set @blu@(1.5M)",
+		"line4": "Buy Magic Main Set @blu@(1.6M)",
+		"line5": "Buy Hybrid Main Set @blu@(2.3M)",
         "next": -1,
         "npcId": -1
     },
@@ -1254,72 +1253,189 @@
         "npcId": 2579
     },
     {
-        "id": 127,
-        "type": "OPTION",
-        "lines": 3,
-        "line1": "Vet'ion",
-        "line2": "Callisto",
-        
-        "line3": "Return",
-        "next": -1,
-        "npcId": -1
-    },
-     {
-        "id": 177,
-        "type": "NPC_STATEMENT",
-        "anim": "CALM",
-        "lines": 2,
-        "line1": "The Lumbridge Cows Event is now live!",
-        "line2": "Type ::cows to enter! Enjoy",    
-        "next": -1,
-        "npcId": 5210
-    },
-    {
-        "id": 155,
-        "type": "NPC_STATEMENT",
-        "anim": "NORMAL",
-        "lines": 2,
-        "line1": "Gamble your items or coins with me!",
-        "line2": "Use your items or coins on me to gamble them",
-        "next": -1,
-        "npcId": 367
-    },
-     {
-        "id": 157,
-        "type": "NPC_STATEMENT",
-        "anim": "NORMAL",
-        "lines": 2,
-        "line1": "Mine those shooting stars and get some star dust!",
-        "line2": "Spend your start dust on my shop/sell it to the general store!",
-        "next": -1,
-        "npcId": 4902
-    },
-     {
-        "id": 159,
-        "type": "NPC_STATEMENT",
-        "anim": "NORMAL",
-        "lines": 2,
-        "line1": "Hello there, I will combine all of your potions together!",
-        "line2": "@blu@Free @bla@for donators and @red@250,000 @bla@for regular players.",
-        "next": 160,
-        "npcId": 543
-    },
-     {
-        "id": 160,
-        "type": "OPTION",
-        "lines": 2,
-        "line1": "Yes, combine my potions to (4) doses",
-        "line2": "Never mind, I'm good",
-        "next": -1
-      
-    },
-    {
         "id": 126,
         "type": "OPTION",
         "lines": 2,
 		"line1": "I'd like to prestige.",
 		"line2": "No thanks.",
 		"next": -1
+    },
+    {
+        "id": 127,
+        "type": "OPTION",
+        "lines": 4,
+		"line1": "I'd like to play Rise Of The Six.",
+		"line2": "I'd like my Barrows progress reset please.",
+		"line3": "I'd like to view your shop.",
+		"line4": "Never mind.",
+		"next": -1
+    },
+    {
+        "id": 128,
+        "type": "OPTION",
+        "lines": 4,
+		"line1": "I'd like to fight them with my clan!",
+		"line2": "I'd like to fight them on my own!",
+		"line3": "Please let me know how to play.",
+		"line4": "Never mind, sorry.",
+		"next": -1
+    },
+    {
+        "id": 129,
+        "type": "NPC_STATEMENT",
+        "anim": "GLANCE_DOWN",
+        "lines": 4,
+        "line1": "Rise Of The Six is a minigame in which you",
+		"line2": "fight all the Barrows brothers for as long",
+		"line3": "as you can. The minigame can be played with",
+		"line4": "clanchat members too.",
+        "next": 130,
+        "npcId": 1152
+    },
+    {
+        "id": 130,
+        "type": "NPC_STATEMENT",
+        "anim": "GLANCE_DOWN",
+        "lines": 4,
+        "line1": "Each time a Barrows brother is killed, you",
+		"line2": "you and your allies will receive 1 Barrows",
+		"line3": "point. If you play the minigame on your own,",
+		"line4": "you will receive 2 points per kill instead.",
+        "next": 131,
+        "npcId": 1152
+    },
+    {
+        "id": 131,
+        "type": "NPC_STATEMENT",
+        "anim": "GLANCE_DOWN",
+        "lines": 1,
+        "line1": "Barrows points can be spent in my shop.",
+        "next": 132,
+        "npcId": 1152
+    },
+    {
+        "id": 132,
+        "type": "NPC_STATEMENT",
+        "anim": "GLANCE_DOWN",
+        "lines": 2,
+        "line1": "Also, I must let you know that if you die,",
+		"line2": "you will not be able to retrieve your items.",
+        "next": 128,
+        "npcId": 1152
+    },
+    {
+        "id": 133,
+        "type": "NPC_STATEMENT",
+        "anim": "GLANCE_DOWN",
+        "lines": 1,
+        "line1": "There you go.",
+        "next": -1,
+        "npcId": 1152
+    },
+    {
+        "id": 134,
+        "type": "NPC_STATEMENT",
+        "anim": "GLANCE_DOWN",
+        "lines": 2,
+        "line1": "Your clan has just started a Rise Of The Six",
+		"line2": "game. Would you like to join them?",
+        "next": 135,
+        "npcId": 1152
+    },
+    {
+        "id": 135,
+        "type": "OPTION",
+        "lines": 2,
+		"line1": "Yes! Take me to them!",
+		"line2": "No thanks.",
+		"next": -1
+    },
+    {
+        "id": 136,
+        "type": "OPTION",
+        "lines": 3,
+        "line1": "Oldschool Bosses",
+        "line2": "Modern Bosses",
+		"line3": "Cancel",
+        "next": -1,
+        "npcId": -1
+    },
+    {
+        "id": 137,
+        "type": "OPTION",
+        "lines": 4,
+		"line1": "@bla@Callisto (@red@35 Wilderness, Multi@bla@)",
+		"line2": "@bla@Vet'ion (@red@31 Wilderness, Multi@bla@)",
+		"line3": "@bla@Venenatis (@red@27 Wilderness, Multi@bla@)",
+		"line4": "More",
+        "next": -1,
+        "npcId": -1
+    },
+    {
+        "id": 138,
+        "type": "OPTION",
+        "lines": 4,
+        "line1": "Zulrah",
+        "line2": "Kraken",
+		"line3": "Scorpia",
+		"line4": "Cancel",
+        "next": -1,
+        "npcId": -1
+    },
+    {
+        "id": 139,
+        "type": "OPTION",
+        "lines": 3,
+        "line1": "Purchase House (5,000,000 coins)",
+        "line2": "Open Construction Store",
+		"line3": "Cancel",
+        "next": -1,
+        "npcId": -1
+    },
+    {
+        "id": 140,
+        "type": "OPTION",
+        "lines": 4,
+        "line1": "Enter House",
+        "line2": "Enter House (Building Mode)",
+		"line3": "Enter Friend's House",
+		"line4": "Cancel",
+        "next": -1,
+        "npcId": -1
+    },
+    {
+		"id": 141,
+        "type": "OPTION",
+        "lines": 5,
+        "line1": "Teleport to Member Zone",
+		"line2": "Learn More about Ruse's Membership",
+		"line3": "View Member Shop 1",
+		"line4": "View Member Shop 2",
+		"line5": "Nevermind",
+		"next": -1
+    },
+    {
+        "id": 142,
+        "type": "NPC_STATEMENT",
+        "anim": "PLAIN_TALKING",
+        "lines": 4,
+        "line1": "You can purchase a scroll by using ::store",
+        "line2": "After purchasing a scroll you will be able to",
+        "line3": "unlock membership features. The value of the scroll",
+        "line4": "(10, 25, 50, 100) will be added to your balance.",
+        "next": 143,
+        "npcId": 3777
+    },
+	{
+        "id": 143,
+        "type": "NPC_STATEMENT",
+        "anim": "PLAIN_TALKING",
+        "lines": 4,
+        "line1": "Once you've spent $10 you become a Bronze Member.",
+        "line2": "Silver Member is earned by spending $25+.",
+        "line3": "Gold Member can be earned by spending $50+.",
+        "line4": "Platinum Membership is earned by spending $100+.",
+        "next": 141,
+        "npcId": 3777
     }
-	
 ]

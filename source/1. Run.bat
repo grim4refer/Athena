@@ -1,4 +1,4 @@
 @echo off
-title Arlania
-"C:\Program Files\Java\jdk1.8.0_121/bin/java.exe" -server -Xmx1024m -cp bin;lib/* com.arlania.GameServer
+title Exion
+"C:/Program Files/java/jdk1.8.0_65/bin/java.exe" -server -Xmx3024m -cp bin;lib/* com.draconia.GameServer
 pause

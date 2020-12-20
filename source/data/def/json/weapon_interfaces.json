@@ -1,207 +1,13 @@
 [
-
-{
-    "hash": 19009,
-    "item-id": 19009,
-    "interface": "FASTSPEED"
-  },
-  {
-    "hash": 19008,
-    "item-id": 19008,
-    "interface": "FASTSPEED"
-  },
-  {
-    "hash": 19007,
-    "item-id": 19007,
-    "interface": "FASTSPEED2"
-  },
-  {
-    "hash": 19006,
-    "item-id": 19006,
-    "interface": "FASTSPEED2"
-  },
-  {
-    "hash": 19067,
-    "item-id": 19067,
-    "interface": "FASTSPEED2"
-  },
-  {
-    "hash": 19028,
-    "item-id": 19028,
-    "interface": "FASTSPEED2"
-  },
-   {
-    "hash": 19056,
-    "item-id": 19056,
-    "interface": "FASTSPEED3"
-  },
-  
-
-{
-    "hash": 18896,
-    "item-id": 18896,
-    "interface": "FASTSPEED1"
-  },
-  {
-    "hash": 19055,
-    "item-id": 19055,
-    "interface": "FASTSPEED0"
-  },
-  {
-    "hash": 18898,
-    "item-id": 18898,
-    "interface": "FASTSPEED2"
-  },
-  {
-    "hash": 18913,
-    "item-id": 18913,
-    "interface": "FASTSPEED0"
-  },
-  {
-    "hash": 18915,
-    "item-id": 18915,
-    "interface": "FASTSPEED1"
-  },
-   {
-    "hash": 18923,
-    "item-id": 18923,
-    "interface": "FASTSPEED1"
-  },
-  {
-    "hash": 18925,
-    "item-id": 18925,
-    "interface": "FASTSPEED1"
-  },
-  {
-    "hash": 18932,
-    "item-id": 18932,
-    "interface": "FASTSPEED1"
-  },
-    {
-    "hash": 18985,
-    "item-id": 18985,
-    "interface": "FASTSPEED1"
-  },
-    {
-    "hash": 18988,
-    "item-id": 18988,
-    "interface": "FASTSPEED2"
-  },
-    {
-    "hash": 18989,
-    "item-id": 18989,
-    "interface": "FASTSPEED1"
-  },
-  {
-    "hash": 18994,
-    "item-id": 18994,
-    "interface": "FASTSPEED1"
-  },
-  {
-    "hash": 14018,
-    "item-id": 14018,
-    "interface": "FASTSPEED1"
-  },
- 
-   {
-    "hash": 19001,
-    "item-id": 19001,
-    "interface": "FASTSPEED2"
-  },
-  {
-    "hash": 19002,
-    "item-id": 19002,
-    "interface": "FASTSPEED2"
-  },
-  {
-    "hash": 19003,
-    "item-id": 19003,
-    "interface": "FASTSPEED2"
-  },
-  {
-    "hash": 18902,
-    "item-id": 18902,
-    "interface": "FASTSPEED3"
-  },
-  
-  
-  
-    {
-    "hash": 19004,
-    "item-id": 19004,
-    "interface": "FASTSPEED3"
-  },
-    {
-    "hash": 19005,
-    "item-id": 19005,
-    "interface": "FASTSPEED3"
-  },
-    {
-    "hash": 19006,
-    "item-id": 19006,
-    "interface": "FASTSPEED3"
-  },
-    {
-    "hash": 19007,
-    "item-id": 19007,
-    "interface": "FASTSPEED3"
-  },
-    {
-    "hash": 19008,
-    "item-id": 19008,
-    "interface": "FASTSPEED3"
-  },
-    {
-    "hash": 19008,
-    "item-id": 19008,
-    "interface": "FASTSPEED1"
-  },
-    {
-    "hash": 19057,
-    "item-id": 19057,
-    "interface": "FASTSPEED3"
-  },
-  {
-    "hash": 18902,
-    "item-id": 18902,
-    "interface": "FASTSPEED3"
-  },
-
-
   {
     "hash": 3093,
     "item-id": 3093,
     "interface": "DART"
   },
-   {
-    "hash": 12926,
-    "item-id": 12926,
-    "interface": "DART"
-  },
-   {
-    "hash": 12927,
-    "item-id": 12927,
-    "interface": "DART"
-  },
-   {
-    "hash": 16137,
-    "item-id": 16137,
-    "interface": "SWORD"
-  },
   {
     "hash": 3094,
     "item-id": 3094,
     "interface": "DART"
-  },
-  {
-    "hash": 13047,
-    "item-id": 13047,
-    "interface": "DAGGER"
-  },
-  {
-    "hash": 13045,
-    "item-id": 13045,
-    "interface": "WARHAMMER"
   },
   {
     "hash": 3095,
@@ -243,11 +49,6 @@
     "item-id": 14484,
     "interface": "CLAWS"
   },
-   {
-    "hash": 19023,
-    "item-id": 19023,
-    "interface": "CLAWS"
-  },
   {
     "hash": 35,
     "item-id": 35,
@@ -259,18 +60,8 @@
     "interface": "WHIP"
   },
   {
-    "hash": 11554,
-    "item-id": 11554,
-    "interface": "WHIP"
-  },
-  {
-    "hash": 20061,
-    "item-id": 20061,
-    "interface": "WHIP"
-  },
-  {
-    "hash": 4705,
-    "item-id": 4705,
+    "hash": 21371,
+    "item-id": 21371,
     "interface": "WHIP"
   },
   {
@@ -278,12 +69,17 @@
     "item-id": 4153,
     "interface": "WARHAMMER"
   },
-   {
-    "hash": 18903,
-    "item-id": 18903,
+  {
+    "hash": 13045,
+    "item-id": 13045,
     "interface": "WARHAMMER"
   },
-   {
+  {
+    "hash": 22047,
+    "item-id": 22047,
+    "interface": "DART"
+  },
+  {
     "hash": 20555,
     "item-id": 20555,
     "interface": "WARHAMMER"
@@ -296,11 +92,6 @@
   {
     "hash": 4170,
     "item-id": 4170,
-    "interface": "STAFF"
-  },
-   {
-    "hash": 12284,
-    "item-id": 12284,
     "interface": "STAFF"
   },
   {
@@ -346,11 +137,6 @@
   {
     "hash": 4212,
     "item-id": 4212,
-    "interface": "SHORTBOW"
-  },
-  {
-    "hash": 20998,
-    "item-id": 20998,
     "interface": "SHORTBOW"
   },
   {
@@ -444,11 +230,6 @@
     "interface": "HALBERD"
   },
   {
-    "hash": 18899,
-    "item-id": 18899,
-    "interface": "HALBERD"
-  },
-  {
     "hash": 4236,
     "item-id": 4236,
     "interface": "UNARMED"
@@ -522,25 +303,6 @@
     "hash": 1229,
     "item-id": 1229,
     "interface": "DAGGER"
-  },
-  
-  
-   {
-    "hash": 20058,
-    "item-id": 20058,
-    "interface": "WARHAMMER"
-  },
-
-  {
-    "hash": 20057,
-    "item-id": 20057,
-    "interface": "LONGSWORD"
-  },
-
-  {
-    "hash": 20059,
-    "item-id": 20059,
-    "interface": "SWORD"
   },
   {
     "hash": 1231,
@@ -928,21 +690,6 @@
     "interface": "STAFF"
   },
   {
-    "hash": 18900,
-    "item-id": 18900,
-    "interface": "STAFF"
-  },
-  {
-    "hash": 4454,
-    "item-id": 4454,
-    "interface": "STAFF"
-  },
-  {
-    "hash": 13058,
-    "item-id": 13058,
-    "interface": "STAFF"
-  },
-  {
     "hash": 1381,
     "item-id": 1381,
     "interface": "STAFF"
@@ -1056,11 +803,6 @@
     "hash": 6527,
     "item-id": 6527,
     "interface": "UNARMED"
-  },
-  {
-    "hash": 4450,
-    "item-id": 4450,
-    "interface": "WARHAMMER"
   },
   {
     "hash": 6528,
@@ -1578,6 +1320,16 @@
     "interface": "DAGGER"
   },
   {
+    "hash": 13047,
+    "item-id": 13047,
+    "interface": "DAGGER"
+  },
+  {
+    "hash": 13049,
+    "item-id": 13049,
+    "interface": "DAGGER"
+  },
+  {
     "hash": 4675,
     "item-id": 4675,
     "interface": "STAFF"
@@ -2058,11 +1810,6 @@
     "interface": "CROSSBOW"
   },
   {
-    "hash": 4453,
-    "item-id": 4453,
-    "interface": "CROSSBOW"
-  },
-  {
     "hash": 4934,
     "item-id": 4934,
     "interface": "UNARMED"
@@ -2140,6 +1887,11 @@
   {
     "hash": 861,
     "item-id": 861,
+    "interface": "SHORTBOW"
+  },
+    {
+    "hash": 12926,
+    "item-id": 12926,
     "interface": "SHORTBOW"
   },
   {
@@ -2374,21 +2126,6 @@
     "interface": "LONGBOW"
   },
   {
-    "hash": 18965,
-    "item-id": 18965,
-    "interface": "SHORTBOW"
-  },
-  {
-    "hash": 4706,
-    "item-id": 4706,
-    "interface": "SHORTBOW"
-  },
-  {
-    "hash": 18971,
-    "item-id": 18971,
-    "interface": "SHORTBOW"
-  },
-  {
     "hash": 15701,
     "item-id": 15701,
     "interface": "LONGBOW"
@@ -2479,8 +2216,18 @@
     "interface": "LONGSWORD"
   },
   {
+    "hash": 14023,
+    "item-id": 14023,
+    "interface": "LONGSWORD"
+  },
+  {
     "hash": 18349,
     "item-id": 18349,
+    "interface": "SWORD"
+  },
+  {
+    "hash": 14024,
+    "item-id": 14024,
     "interface": "SWORD"
   },
   {
@@ -2498,12 +2245,6 @@
     "item-id": 18357,
     "interface": "CROSSBOW"
   },
-   {
-    "hash": 13051,
-    "item-id": 13051,
-    "interface": "CROSSBOW"
-  },
-  
   {
     "hash": 14017,
     "item-id": 14017,
@@ -2518,6 +2259,11 @@
     "hash": 14018,
     "item-id": 14018,
     "interface": "SWORD"
+  },
+  {
+    "hash": 20171,
+    "item-id": 20171,
+    "interface": "SHORTBOW"
   },
   {
     "hash": 19143,
@@ -3035,11 +2781,6 @@
     "interface": "SWORD"
   },
   {
-    "hash": 18894,
-    "item-id": 18894,
-    "interface": "SWORD"
-  },
-  {
     "hash": 16036,
     "item-id": 16036,
     "interface": "SWORD"
@@ -3192,6 +2933,11 @@
   {
     "hash": 11716,
     "item-id": 11716,
+    "interface": "SPEAR"
+  },
+  {
+    "hash": 13905,
+    "item-id": 13905,
     "interface": "SPEAR"
   }
 ]
