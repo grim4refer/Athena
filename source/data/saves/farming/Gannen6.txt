@@ -1,0 +1,48 @@
+[PATCH]
+patch: 0
+stage: 0
+minute: 49
+hour: 12
+day: 5
+year: 2020
+END PATCH
+
+[PATCH]
+patch: 1
+stage: 0
+minute: 17
+hour: 11
+day: 355
+year: 2019
+END PATCH
+
+[PATCH]
+patch: 2
+stage: 0
+minute: 44
+hour: 12
+day: 5
+year: 2020
+END PATCH
+
+[PATCH]
+patch: 3
+stage: 3
+minute: 19
+hour: 11
+day: 355
+year: 2019
+END PATCH
+
+[PLANT]
+patch: 3
+plant: 15
+stage: 4
+watered: -1
+harvested: 0
+minute: 25
+hour: 11
+day: 355
+year: 2019
+END PLANT
+

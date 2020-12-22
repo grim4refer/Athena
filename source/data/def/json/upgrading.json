@@ -1,0 +1,980 @@
+[
+  {
+    "NAME": "RED_DARKLORD_FULLHELM",
+    "STARTER_ITEM": 1153,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 20
+      }
+    ],
+    "SUCCESS_CHANCE": 75,
+    "END_ITEM": 21050
+  },
+  {
+    "NAME": "RED_DARKLORD_PLATEBODY",
+    "STARTER_ITEM": 1115,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 20
+      }
+    ],
+    "SUCCESS_CHANCE": 75,
+    "END_ITEM": 21051
+  },
+  {
+    "NAME": "RED_DARKLORD1_PLATELEGS",
+    "STARTER_ITEM": 1067,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 20
+      }
+    ],
+    "SUCCESS_CHANCE": 75,
+    "END_ITEM": 21052
+  },
+  {
+    "NAME": "RED_DARKLORD_GLOVES",
+    "STARTER_ITEM": 21011,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 20
+      }
+    ],
+    "SUCCESS_CHANCE": 75,
+    "END_ITEM": 21053
+  },
+  {
+    "NAME": "RED_DARKLORD_BOOTS",
+    "STARTER_ITEM": 21012,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 20
+      }
+    ],
+    "SUCCESS_CHANCE": 75,
+    "END_ITEM": 21054
+  },
+  {
+    "NAME": "WATER_LASER_SWORD",
+    "STARTER_ITEM": 21031,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 20
+      }
+    ],
+    "SUCCESS_CHANCE": 75,
+    "END_ITEM": 21033
+  },
+  {
+    "NAME": "INFERNAL_MG",
+    "STARTER_ITEM": 21082,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 200
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 4784
+  },
+  {
+    "NAME": "WATER_BLADE",
+    "STARTER_ITEM": 17849,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 500
+      }
+    ],
+    "SUCCESS_CHANCE": 45,
+    "END_ITEM": 20510
+  },
+  {
+    "NAME": "FIRE_LASER_SWORD",
+    "STARTER_ITEM": 21002,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 20
+      }
+    ],
+    "SUCCESS_CHANCE": 60,
+    "END_ITEM": 21003
+  },
+  {
+    "NAME": "GRASS_LASER_SWORD",
+    "STARTER_ITEM": 21030,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 20
+      }
+    ],
+    "SUCCESS_CHANCE": 60,
+    "END_ITEM": 21032
+  },
+  {
+    "NAME": "DARK_PREDATOR_HELM",
+    "STARTER_ITEM": 20086,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 60
+      }
+    ],
+    "SUCCESS_CHANCE": 65,
+    "END_ITEM": 20081
+  },
+  {
+    "NAME": "DARK_PREDATOR_BODY",
+    "STARTER_ITEM": 20087,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 60
+      }
+    ],
+    "SUCCESS_CHANCE": 65,
+    "END_ITEM": 20082
+  },
+  {
+    "NAME": "DARK_PREDATOR_LEGS",
+    "STARTER_ITEM": 20088,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 60
+      }
+    ],
+    "SUCCESS_CHANCE": 65,
+    "END_ITEM": 20083
+  },
+  {
+    "NAME": "TRIO_HELM",
+    "STARTER_ITEM": 20095,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 112
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 3947
+  },
+  {
+    "NAME": "TRIO_BODY",
+    "STARTER_ITEM": 20096,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 112
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 3948
+  },
+  {
+    "NAME": "TRIO_LEGS",
+    "STARTER_ITEM": 20097,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 112
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 3949
+  },
+  {
+    "NAME": "DARK_PREDATOR_BOOST",
+    "STARTER_ITEM": 21021,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 72
+      }
+    ],
+    "SUCCESS_CHANCE": 65,
+    "END_ITEM": 20084
+  },
+  {
+    "NAME": "DARK_PREDATOR_GLOVES",
+    "STARTER_ITEM": 21020,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 72
+      }
+    ],
+    "SUCCESS_CHANCE": 65,
+    "END_ITEM": 20085
+  },
+  {
+    "NAME": "DARK_PREDATOR_SCYTHE",
+    "STARTER_ITEM": 21013,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 72
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 20079
+  },
+  {
+    "NAME": "DEADLY_ASSASIN_HELM",
+    "STARTER_ITEM": 20104,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 48
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 20012
+  },
+  {
+    "NAME": "DEADLY_ASSASIN_BODY",
+    "STARTER_ITEM": 20105,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 48
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 20010
+  },
+  {
+    "NAME": "DEADLY_ASSASIN_LEGS",
+    "STARTER_ITEM": 20103,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 48
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 20011
+  },
+  {
+    "NAME": "DEADLY_ASSASIN_GLOVES",
+    "STARTER_ITEM": 20106,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 48
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 20020
+  },
+  {
+    "NAME": "DEADLY_ASSASIN_BOOTS",
+    "STARTER_ITEM": 20107,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 48
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 20019
+  },
+  {
+    "NAME": "DEADLY_ASSASIN_BLADE",
+    "STARTER_ITEM": 20102,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 48
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 20607
+  },
+  {
+    "NAME": "NATURE_TORVA_DEFENDER",
+    "STARTER_ITEM": 13199,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 48
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 21064
+  },
+  {
+    "NAME": "NATURE_TORVA_HELM",
+    "STARTER_ITEM": 13196,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 60
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 14008
+  },
+  {
+    "NAME": "NATURE_TORVA_BODY",
+    "STARTER_ITEM": 13197,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 60
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 14009
+  },
+  {
+    "NAME": "NATURE_TORVA_LEGS",
+    "STARTER_ITEM": 13198,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 60
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 14010
+  },
+  {
+    "NAME": "NATURE_TORVA_SWORD",
+    "STARTER_ITEM": 21060,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 60
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 21063
+  },
+  {
+    "NAME": "NATURE_TORVA_GLOVES",
+    "STARTER_ITEM": 13207,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 60
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 21066
+  },
+  {
+    "NAME": "NATURE_TORVA_BOOTS",
+    "STARTER_ITEM": 13206,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 60
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 21065
+  },
+  {
+    "NAME": "DONATOR_SCROLL",
+    "STARTER_ITEM": 12421,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 200
+     },
+  	 {
+        "id": 12421,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 12422
+  },
+  {
+    "NAME": "SUPER_DONATOR_SCROLL",
+    "STARTER_ITEM": 12422,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 1000
+      }
+    ],
+    "SUCCESS_CHANCE": 25,
+    "END_ITEM": 12423
+  },
+  {
+    "NAME": "EXTREME_DONATOR",
+    "STARTER_ITEM": 12423,
+    "REQUIREMENTS": [
+      {
+        "id": 5023,
+        "amount": 200
+     },
+  	 {
+        "id": 619,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 100,
+    "END_ITEM": 12424
+  },
+  {
+    "NAME": "LEGENDARY_DONATOR",
+    "STARTER_ITEM": 12424,
+    "REQUIREMENTS": [
+      {
+        "id": 5023,
+        "amount": 1000
+    },
+  	{
+        "id": 619,
+        "amount": 2
+      }
+    ],
+    "SUCCESS_CHANCE": 100,
+    "END_ITEM": 12425
+  },
+  {
+      "NAME": "DARK_LORD_HELM",
+    "STARTER_ITEM": 3651,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 500
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 3689
+  },
+  {
+    "NAME": "DARK_LORD_BODY",
+    "STARTER_ITEM": 3652,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 500
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 3687
+  },
+  {
+    "NAME": "DARK_LORD_LEGS",
+    "STARTER_ITEM": 3653,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 500
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 3688
+  },
+  {
+    "NAME": "DARK_LORD_BOOTS",
+    "STARTER_ITEM": 3654,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 500
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 3691
+  },
+  {
+    "NAME": "DARK_LORD_GLOVES",
+    "STARTER_ITEM": 3655,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 500
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 3690
+  },
+  {
+    "NAME": "DARK_LORD_CAPE",
+    "STARTER_ITEM": 3981,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 500
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 3692
+  },
+  {
+    "NAME": "LAVA_SCYTHE",
+    "STARTER_ITEM": 20510,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 500
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 3666
+  },
+  {
+    "NAME": "ANIMAL_BOW",
+    "STARTER_ITEM": 3961,
+    "REQUIREMENTS": [
+      {
+        "id": 21006,
+        "amount": 50
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 20805
+  },
+  {
+    "NAME": "NEW_SHIELD",
+    "STARTER_ITEM": 20511,
+    "REQUIREMENTS": [
+      {
+        "id": 21007,
+        "amount": 50
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 19064
+  },
+  {
+    "NAME": "BRUTAL_WHIP",
+    "STARTER_ITEM": 20089,
+    "REQUIREMENTS": [
+      {
+        "id": 20089,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 83
+  },
+  {
+    "NAME": "ELITE_CROSSBOW",
+    "STARTER_ITEM": 18889,
+    "REQUIREMENTS": [
+      {
+        "id": 18889,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 18931
+  },
+  {
+    "NAME": "INFERNAL_STAFF",
+    "STARTER_ITEM": 20604,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 300
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 20602
+  },
+  {
+    "NAME": "ELITE_WAND",
+    "STARTER_ITEM": 13215,
+    "REQUIREMENTS": [
+      {
+        "id": 13215,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 18891
+  },
+  {
+    "NAME": "D_BOX",
+    "STARTER_ITEM": 7118,
+    "REQUIREMENTS": [
+      {
+        "id": 11425,
+        "amount": 2
+      }
+    ],
+    "SUCCESS_CHANCE": 45,
+    "END_ITEM": 3230
+  },
+  {
+    "NAME": "FLAMING",
+    "STARTER_ITEM": 17849,
+    "REQUIREMENTS": [
+      {
+        "id": 17849,
+        "amount": 2
+      }
+    ],
+    "SUCCESS_CHANCE": 30,
+    "END_ITEM": 17848
+  },
+  {
+    "NAME": "ROW",
+    "STARTER_ITEM": 2572,
+    "REQUIREMENTS": [
+      {
+        "id": 2572,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 11527
+  },
+  {
+    "NAME": "ROW1",
+    "STARTER_ITEM": 11527,
+    "REQUIREMENTS": [
+      {
+        "id": 11527,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 11529
+  },
+  {
+    "NAME": "ROW2",
+    "STARTER_ITEM": 11529,
+    "REQUIREMENTS": [
+      {
+        "id": 11529,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 11531
+  },
+  {
+    "NAME": "VOID_MELLEE_HELM",
+    "STARTER_ITEM": 11665,
+    "REQUIREMENTS": [
+      {
+        "id": 11425,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 21056
+  },
+  {
+    "NAME": "VOID_RANGE_HELM",
+    "STARTER_ITEM": 11664,
+    "REQUIREMENTS": [
+      {
+        "id": 11425,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 21057
+  },
+  {
+    "NAME": "VOID_MAGE_HELM",
+    "STARTER_ITEM": 11663,
+    "REQUIREMENTS": [
+      {
+        "id": 11425,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 21058
+  },
+  {
+    "NAME": "VOID_BODY_HELM",
+    "STARTER_ITEM": 8839,
+    "REQUIREMENTS": [
+      {
+        "id": 11425,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 19787
+  },
+  {
+    "NAME": "VOID_LEGS_HELM",
+    "STARTER_ITEM": 8840,
+    "REQUIREMENTS": [
+      {
+        "id": 11425,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 19788
+  },
+  {
+    "NAME": "VOID_GLOVES_HELM",
+    "STARTER_ITEM": 8842,
+    "REQUIREMENTS": [
+      {
+        "id": 11425,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 21059
+      },
+  {
+    "NAME": "VOID_MELLEE_HELM",
+    "STARTER_ITEM": 21056,
+    "REQUIREMENTS": [
+      {
+        "id": 11425,
+        "amount": 3
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 20841
+  },
+  {
+    "NAME": "VOID_RANGE_HELM",
+    "STARTER_ITEM": 21057,
+    "REQUIREMENTS": [
+      {
+        "id": 11425,
+        "amount": 3
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 20842
+  },
+  {
+    "NAME": "VOID_MAGE_HELM",
+    "STARTER_ITEM": 21058,
+    "REQUIREMENTS": [
+      {
+        "id": 11425,
+        "amount": 3
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 20843
+  },
+  {
+    "NAME": "VOID_BODY_HELM",
+    "STARTER_ITEM": 19787,
+    "REQUIREMENTS": [
+      {
+        "id": 11425,
+        "amount": 3
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 20845
+  },
+  {
+    "NAME": "VOID_LEGS_HELM",
+    "STARTER_ITEM": 19788,
+    "REQUIREMENTS": [
+      {
+        "id": 11425,
+        "amount": 3
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 20844
+  },
+  {
+    "NAME": "VOID_GLOVES_HELM",
+    "STARTER_ITEM": 21059,
+    "REQUIREMENTS": [
+      {
+        "id": 11425,
+        "amount": 3
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 20846
+  },
+  {
+    "NAME": "SLAYER1",
+    "STARTER_ITEM": 11550,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 400
+      },
+      {
+        "id": 11320,
+        "amount": 10
+      }
+    ],
+    "SUCCESS_CHANCE": 30,
+    "END_ITEM": 11549
+  },
+  {
+    "NAME": "SLAYER2",
+    "STARTER_ITEM": 11549,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 600
+      },
+      {
+        "id": 11320,
+        "amount": 20
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 11546
+  },
+  {
+    "NAME": "SLAYER3",
+    "STARTER_ITEM": 11546,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 800
+      },
+      {
+        "id": 11320,
+        "amount": 30
+      }
+    ],
+    "SUCCESS_CHANCE": 40,
+    "END_ITEM": 11547
+  },
+  {
+    "NAME": "SLAYER4",
+    "STARTER_ITEM": 11547,
+    "REQUIREMENTS": [
+      {
+        "id": 11316,
+        "amount": 1200
+      },
+      {
+        "id": 11320,
+        "amount": 40
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 11548
+  },
+  {
+    "NAME": "RINGOFDEVOTION",
+    "STARTER_ITEM": 20054,
+    "REQUIREMENTS": [
+      {
+        "id": 20054,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 11555
+  },
+  {
+    "NAME": "ORNATAKATANA",
+    "STARTER_ITEM": 14018,
+    "REQUIREMENTS": [
+      {
+        "id": 14018,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 25,
+    "END_ITEM": 20818
+  },
+  {
+    "NAME": "1BTICKETS",
+    "STARTER_ITEM": 5022,
+    "REQUIREMENTS": [
+      {
+        "id": 5022,
+        "amount": 100000000
+      }
+    ],
+    "SUCCESS_CHANCE": 100,
+    "END_ITEM": 5023,
+    "END_AMOUNT": 100
+  },
+  {
+      "NAME": "1QTICKETS",
+    "STARTER_ITEM": 5023,
+    "REQUIREMENTS": [
+      {
+        "id": 5023,
+        "amount": 100
+      }
+    ],
+    "SUCCESS_CHANCE": 100,
+    "END_ITEM": 5022,
+    "END_AMOUNT": 100000000
+  },
+  {
+    "NAME": "PETBOX",
+    "STARTER_ITEM": 7100,
+    "REQUIREMENTS": [
+      {
+        "id": 7100,
+        "amount": 25
+      }
+    ],
+    "SUCCESS_CHANCE": 100,
+    "END_ITEM": 19934
+  },
+  {
+    "NAME": "MANAMINIGUN",
+    "STARTER_ITEM": 4784,
+    "REQUIREMENTS": [
+      {
+        "id": 4784,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 19098
+  },
+  {
+    "NAME": "SANTATOKENS",
+    "STARTER_ITEM": 20864,
+    "REQUIREMENTS": [
+      {
+        "id": 20864,
+        "amount": 100
+      }
+    ],
+    "SUCCESS_CHANCE": 35,
+    "END_ITEM": 20863
+  },
+  {
+    "NAME": "COLLECTORNECKLACE",
+    "STARTER_ITEM": 11423,
+    "REQUIREMENTS": [
+      {
+        "id": 11423,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 20871
+  },
+  {
+    "NAME": "COLLECTORNECKLACE",
+    "STARTER_ITEM": 11423,
+    "REQUIREMENTS": [
+      {
+        "id": 11423,
+        "amount": 1
+      }
+    ],
+    "SUCCESS_CHANCE": 50,
+    "END_ITEM": 20872
+  }
+  ]

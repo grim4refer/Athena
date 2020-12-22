@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Lx Client:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Lx_Client_jar</output-path>
-    <root id="archive" name="Lx Client.jar">
-      <element id="module-output" name="Athena Client" />
-    </root>
-  </artifact>
-</component>

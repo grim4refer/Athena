@@ -1,0 +1,60 @@
+[PATCH]
+patch: 0
+stage: 0
+minute: 27
+hour: 14
+day: 46
+year: 2020
+END PATCH
+
+[PATCH]
+patch: 1
+stage: 3
+minute: 14
+hour: 14
+day: 46
+year: 2020
+END PATCH
+
+[PATCH]
+patch: 2
+stage: 3
+minute: 13
+hour: 14
+day: 46
+year: 2020
+END PATCH
+
+[PATCH]
+patch: 3
+stage: 3
+minute: 14
+hour: 14
+day: 46
+year: 2020
+END PATCH
+
+[PLANT]
+patch: 2
+plant: 15
+stage: 4
+watered: -1
+harvested: 0
+minute: 20
+hour: 14
+day: 46
+year: 2020
+END PLANT
+
+[PLANT]
+patch: 3
+plant: 15
+stage: 4
+watered: -1
+harvested: 0
+minute: 21
+hour: 14
+day: 46
+year: 2020
+END PLANT
+

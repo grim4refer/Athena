@@ -21,6 +21,60 @@
     "interface": "FASTSPEED2"
   },
   {
+    "hash": 3065,
+    "item-id": 3065,
+    "interface": "FASTSPEED2"
+  },
+  {
+    "hash": 20805,
+    "item-id": 20805,
+    "interface": "SHORTBOW"
+  },{
+    "hash": 19098,
+    "item-id": 19098,
+    "interface": "CROSSBOW"
+  },
+  {
+      "hash": 20853,
+    "item-id": 20853,
+    "interface": "CROSSBOW"
+  },
+  {
+    "hash": 20854,
+    "item-id": 20854,
+    "interface": "CROSSBOW"
+  },
+  {
+    "hash": 20751,
+    "item-id": 20751,
+    "interface": "FASTSPEED2"
+  },
+  {
+    "hash": 21001,
+    "item-id": 21001,
+    "interface": "WHIP"
+  },
+  {
+    "hash": 20873,
+    "item-id": 20873,
+    "interface": "FASTSPEED2"
+  },
+  {
+    "hash": 21072,
+    "item-id": 21072,
+    "interface": "FASTSPEED2"
+  },
+  {
+    "hash": 21073,
+    "item-id": 21073,
+    "interface": "FASTSPEED2"
+  },
+  {
+    "hash": 20752,
+    "item-id": 20752,
+    "interface": "FASTSPEED2"
+  },
+  {
     "hash": 19067,
     "item-id": 19067,
     "interface": "FASTSPEED2"
@@ -45,6 +99,11 @@
   {
     "hash": 19055,
     "item-id": 19055,
+    "interface": "FASTSPEED2"
+  },
+  {
+    "hash": 20922,
+    "item-id": 20922,
     "interface": "FASTSPEED2"
   },
   {
@@ -131,6 +190,11 @@
     "item-id": 19004,
     "interface": "FASTSPEED3"
   },
+  {
+    "hash":21063,
+    "item-id": 21063,
+    "interface": "FASTSPEED3"
+  },
     {
     "hash": 19005,
     "item-id": 19005,
@@ -202,6 +266,31 @@
    {
     "hash": 20603,
     "item-id": 20603,
+    "interface": "SWORD"
+  },
+  {
+    "hash": 20510,
+    "item-id": 20510,
+    "interface": "SWORD"
+  },
+  {
+    "hash": 3717,
+    "item-id": 3717,
+    "interface": "SWORD"
+  },
+  {
+    "hash": 15665,
+    "item-id": 15665,
+    "interface": "CLAWS"
+  },
+  {
+    "hash": 20601,
+    "item-id": 20601,
+    "interface": "SWORD"
+  },
+  {
+    "hash": 6196,
+    "item-id": 6196,
     "interface": "SWORD"
   },
    {
@@ -315,14 +404,29 @@
     "item-id": 4151,
     "interface": "WHIP"
   },
+  {
+    "hash": 18911,
+    "item-id": 18911,
+    "interface": "WHIP"
+  },
   {    
 "hash": 20079,
     "item-id": 20079,
     "interface": "SPEAR"
   },
   {
+  "hash": 20862,
+    "item-id": 20862,
+    "interface": "SPEAR"
+  },
+  {
 "hash": 20089,
     "item-id": 20089,
+    "interface": "WHIP"
+  },
+  {
+    "hash": 18957,
+    "item-id": 18957,
     "interface": "WHIP"
   },
   {
@@ -365,6 +469,25 @@
   {
     "hash": 4170,
     "item-id": 4170,
+    "interface": "STAFF"
+  },{
+  "hash": 20838,
+  "item-id": 20838,
+  "interface": "STAFF"
+},
+  {
+    "hash": 20604,
+    "item-id": 20604,
+    "interface": "STAFF"
+  },
+  {
+      "hash": 20998,
+    "item-id": 20998,
+    "interface": "STAFF"
+  },
+  {
+    "hash": 1383,
+    "item-id": 1383,
     "interface": "STAFF"
   },
    {
@@ -434,8 +557,48 @@
     "interface": "SHORTBOW"
   },
   {
+    "hash": 18965,
+    "item-id": 18965,
+    "interface": "SHORTBOW"
+  },
+  {
       "hash": 896,
     "item-id": 896,
+    "interface": "MINIGUN"
+  },
+  {
+    "hash": 21077,
+    "item-id": 21077,
+    "interface": "MINIGUN"
+  },
+  {
+    "hash": 21038,
+    "item-id": 21038,
+    "interface": "MINIGUN"
+  },
+  {
+    "hash": 21039,
+    "item-id": 21039,
+    "interface": "MINIGUN"
+  },
+  {
+    "hash": 21040,
+    "item-id": 21040,
+    "interface": "MINIGUN"
+  },
+  {
+    "hash": 21041,
+    "item-id": 21041,
+    "interface": "MINIGUN"
+  },
+  {
+    "hash": 21042,
+    "item-id": 21042,
+    "interface": "MINIGUN"
+  },
+  {
+    "hash": 21043,
+    "item-id": 21043,
     "interface": "MINIGUN"
   },
   {
@@ -1021,6 +1184,11 @@
     "interface": "BATTLEAXE"
   },
   {
+    "hash": 20815,
+    "item-id": 20815,
+    "interface": "SWORD"
+  },
+  {
     "hash": 2402,
     "item-id": 2402,
     "interface": "UNARMED"
@@ -1163,6 +1331,16 @@
   {
     "hash": 1419,
     "item-id": 1419,
+    "interface": "SCYTHE"
+  },
+  {
+    "hash": 21061,
+    "item-id": 21061,
+    "interface": "SCYTHE"
+  },
+  {
+    "hash": 3666,
+    "item-id": 3666,
     "interface": "SCYTHE"
   },
   {
@@ -1820,6 +1998,17 @@
     "item-id": 4734,
     "interface": "CROSSBOW"
   },
+  {
+    "hash": 18889,
+    "item-id": 18889,
+    "interface": "CROSSBOW"
+  },
+  {
+    "hash": 18931,
+    "item-id": 18931,
+    "interface": "CROSSBOW"
+  },
+
   {    "hash": 19467,
     "item-id": 19467,
     "interface": "CROSSBOW"
@@ -1832,8 +2021,28 @@
     "item-id": 21079,
     "interface": "MINIGUN"
   },
+  {    "hash": 21062,
+    "item-id": 21062,
+    "interface": "MINIGUN"
+  },
   {    "hash": 21082,
     "item-id": 21082,
+    "interface": "MINIGUN"
+  },
+  {    "hash": 4784,
+    "item-id": 4784,
+    "interface": "MINIGUN"
+  },
+  {    "hash": 20932,
+    "item-id": 20932,
+    "interface": "MINIGUN"
+  },
+  {    "hash": 3961,
+    "item-id": 3961,
+    "interface": "MINIGUN"
+  },
+  {    "hash": 20695,
+    "item-id": 20695,
     "interface": "MINIGUN"
   },
   {
@@ -2499,11 +2708,7 @@
     "item-id": 11235,
     "interface": "LONGBOW"
   },
-  {
-    "hash": 18965,
-    "item-id": 18965,
-    "interface": "SHORTBOW"
-  },
+
   {
     "hash": 4706,
     "item-id": 4706,
