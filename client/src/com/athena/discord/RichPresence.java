@@ -19,7 +19,7 @@ public class RichPresence {
         lib.Discord_Initialize(CLIENT_ID, handlers, true, "");
         presence = new DiscordRichPresence();
         presence.startTimestamp = System.currentTimeMillis() / 1000;
-        presence.largeImageKey = "31e7481538b7ce210f39ef2389b6e7e9";
+        presence.largeImageKey = "discord1";
         presence.smallImageKey = "";
         presence.details = "Athena - Development";
         presence.state ="Your journey awaits you";

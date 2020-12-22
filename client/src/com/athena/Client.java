@@ -15290,7 +15290,7 @@ public class Client extends RSApplet {
 		int k = 0;
 		while (expectedCRCs[8] == 0) {
 			String s = "Unknown problem";
-			setLoadingText(10, "Connecting to LiquidX...");
+			setLoadingText(10, "Connecting to Athena...");
 			try {
 				DataInputStream datainputstream = openJagGrabInputStream(
 						"crc" + (int) (Math.random() * 99999999D) + "-" + 317);

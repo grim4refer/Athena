@@ -8,6 +8,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Phaser;
 
+import com.athena.net.discord.JavaCord;
 import com.athena.world.content.minigames.MinigameHandler2;
 import mysql.impl.Voting;
 import com.athena.world.content.minigames.impl.weapon.WeaponGame;
@@ -162,7 +163,7 @@ public class World {
                 break;
             Voting.handleQueuedReward(player);
         }
-        
+		JavaCord.init();
         FightPit.sequence();
 		//Cows.sequence();
 		//Cows.spawnMainNPCs();

@@ -22,207 +22,6 @@
     <list default="true" id="c8d1f07c-fade-4abe-adf0-c4e30d8b0824" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Athena Source.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.dropbox" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/1. Compiler.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/1. Run.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/Client.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/Play.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../client/Play.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/bin/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/bin/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/artifacts/Fantasy_Client_jar/Client.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Catalyst-Client/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Catalyst-Client/com/arlania/fxscenes/ItemEditorScene.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Catalyst-Client/com/arlania/images/1909839_924684590946341_7305863997171747979_n.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Catalyst-Client/com/arlania/images/3366503.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Catalyst-Client/com/arlania/images/House_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Catalyst-Client/com/arlania/images/Small-checkmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Catalyst-Client/com/arlania/images/cart_icon.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Catalyst-Client/com/arlania/images/discord.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Catalyst-Client/com/arlania/images/forums.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Catalyst-Client/com/arlania/images/hiscores.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Catalyst-Client/com/arlania/images/teamspeak.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Fantasy-Client/META-INF/Fantasy-Client.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Fantasy-Client/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Fantasy-Client/com/arlania/fxscenes/ItemEditorScene.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Fantasy-Client/com/arlania/images/1909839_924684590946341_7305863997171747979_n.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Fantasy-Client/com/arlania/images/3366503.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Fantasy-Client/com/arlania/images/House_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Fantasy-Client/com/arlania/images/Small-checkmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Fantasy-Client/com/arlania/images/cart_icon.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Fantasy-Client/com/arlania/images/discord.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Fantasy-Client/com/arlania/images/forums.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Fantasy-Client/com/arlania/images/hiscores.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Fantasy-Client/com/arlania/images/teamspeak.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/ImpunityX Client/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../client/out/production/ImpunityX Client/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Lx Client/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../client/out/production/Lx Client/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Lx Client/com/arlania/images/1909839_924684590946341_7305863997171747979_n.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Lx Client/com/arlania/images/3366503.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Lx Client/com/arlania/images/House_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Lx Client/com/arlania/images/Small-checkmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Lx Client/com/arlania/images/cart_icon.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Lx Client/com/arlania/images/discord.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Lx Client/com/arlania/images/forums.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Lx Client/com/arlania/images/hiscores.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/out/production/Lx Client/com/arlania/images/teamspeak.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ARGBTexture.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/ARGBTexture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Alert.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/AlertHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/AlphaPalettedTexture.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/AlphaPalettedTexture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Animable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Animable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/AnimatedSprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/AnimatedSprite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/AnimatedTextureStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/AnimatedTextureStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Animation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Animation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/BZ2Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/BZ2Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/BZ2InputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/BZ2InputStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Background.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/BackgroundPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/BackgroundPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ByteBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/ByteBuffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/CacheArchive.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/CacheArchive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/CacheDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/CacheDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Censor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Censor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/CollisionDetection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/CollisionDetection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ColorConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Countdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Countdown.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/CreateUID.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/CreateUID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/CullingCluster.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/CullingCluster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/CustomMinimapIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/CustomMinimapIcon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/CustomObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/CustomObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Decompressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Decompressor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Deque.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Deque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Download.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/DrawingArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/DrawingArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/DrawingArea474.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/DrawingArea474.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/DummyClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/DummyClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Envelope.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Envelope.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/FileOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/FileOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Filter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Flo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Flo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/FoodsAddon.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/FoodsAddon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/FrameReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/FrameReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/GameObjectSpawnRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/GameObjectSpawnRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/GamePreferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/GamePreferences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/GarbageCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/GarbageCollector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/GroundDecoration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/GroundDecoration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/GroundItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/GroundItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/HashTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Hitmask.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Hitmask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/HttpDownloadUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/HttpDownloadUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/IDK.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/IDK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ISAACRandomGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/ISAACRandomGen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/InteractableObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/InteractableObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/InterfaceConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/InterfaceNPC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ItemDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/ItemDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ItemDef_Jarrod_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/ItemDef_Jarrod_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ItemDef_Jarrod_2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ItemDef_Lewis_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/ItemDef_Lewis_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/JagexColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/JagexColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Jframe.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Jframe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/MagicInterfaces.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/MagicInterfaces.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/MapUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/MapUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/MemCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/MemCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ModelHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/ModelHeader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ModelUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/MouseDetection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/MouseDetection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/MysteryBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/MysteryBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/NPC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/NPCDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/NPCDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/NPCDef_2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ObjectDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/ObjectDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/ObjectManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ObjectOnTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/ObjectOnTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/OnDemandFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/OnDemandFetcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/OnDemandFetcherParent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/OnDemandFetcherParent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/OnDemandRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/OnDemandRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/OverLayFlo317.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/OverLayFlo317.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/PalettedTexture.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/PalettedTexture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Particle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Particle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ParticleAttachment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/ParticleAttachment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ParticleDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/ParticleDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ParticleVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/ParticleVector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/PlainTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/PlainTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/PointSpawnShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/PointSpawnShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Projectile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Projectile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/QueueNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/QueueNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/RGBTexture.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/RGBTexture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/RSApplet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/RSApplet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/RSFontSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/RSFontSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/RSFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/RSFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/RSImageProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/RSImageProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/RSInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/RSInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/RSSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/RSSocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/RandomColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/RandomColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Rasterizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Rasterizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/RealFont.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/RealFont.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ResourceLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/ResourceLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ScreenManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/ScreenManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/ShapedTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/ShapedTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/SimplicityMenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/SimplicityMenuBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Skill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Skills.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Skills.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/SkinList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/SkinList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/SoundPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/SoundPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Sounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Sounds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/SpawnShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/SpawnShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Splash.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Splash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/SpotAnim.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/SpotAnim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Sprite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/SpriteCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/SpriteCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/SpriteLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/SpriteLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Startup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/StillGraphic.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/StillGraphic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Stream.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Stream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/SuicsItemEditorApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/SwingUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/SwingUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Synthesizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Synthesizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/TaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/TextClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/TextClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/TextDrawingArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/TextDrawingArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/TextInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/TextInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Texture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/TextureAnimating.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/TextureAnimating.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/TextureDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/TextureDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/TextureLoader317.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/TextureLoader317.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/TextureLoader667.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/TextureLoader667.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/VarBit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/VarBit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Varp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Varp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/VertexNormal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/VertexNormal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/Viewport.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/Viewport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/WallDecoration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/WallDecoration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/WallObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/WallObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/WorldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/WorldController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/fxscenes/ItemEditorScene.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/fxscenes/ItemEditorSceneController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/images/1909839_924684590946341_7305863997171747979_n.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/images/1909839_924684590946341_7305863997171747979_n.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/images/3366503.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/images/3366503.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/images/House_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/images/House_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/images/Small-checkmark.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/images/Small-checkmark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/images/cart_icon.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/images/cart_icon.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/images/discord.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/images/discord.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/images/forums.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/images/forums.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/images/hiscores.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/images/hiscores.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/images/teamspeak.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/images/teamspeak.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/signlink.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/com/athena/signlink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/update/CacheDownloadType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/com/arlania/update/CacheDownloader.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
@@ -1204,7 +1003,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../client" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1lw6qhtl2L9buUhymCLEd5HHQ2N" />
   <component name="ProjectViewState">
@@ -1214,10 +1013,11 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550168907297" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../client/lib/trident.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/lombok.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.16503906" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RunManager" selected="Application.GameServer">
     <configuration name="GameServer" type="Application" factoryName="Application" nameIsGenerated="true">
@@ -1271,6 +1071,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="833" y="306" width="1038" height="851" key="#Project_Structure" timestamp="1608503895426">
@@ -1281,41 +1082,60 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="805" y="387" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1608503980177" />
+    <state x="1118" y="502" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608516495840">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1118" y="502" key="#com.intellij.fileTypes.FileTypeChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1608516495840" />
     <state x="1080" y="534" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1608503913951">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1080" y="534" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1608503913951" />
-    <state x="736" y="506" key="FileChooserDialogImpl" timestamp="1608504002864">
+    <state x="736" y="506" key="FileChooserDialogImpl" timestamp="1608516977886">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="736" y="506" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1608504002864" />
-    <state width="2057" height="398" key="GridCell.Tab.0.bottom" timestamp="1608504029484">
+    <state x="736" y="506" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1608516977886" />
+    <state width="2057" height="398" key="GridCell.Tab.0.bottom" timestamp="1608518963816">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="2057" height="398" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1608504029484" />
-    <state width="2057" height="398" key="GridCell.Tab.0.center" timestamp="1608504029484">
+    <state width="2057" height="398" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1608518963816" />
+    <state width="2057" height="398" key="GridCell.Tab.0.center" timestamp="1608518963815">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="2057" height="398" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1608504029484" />
-    <state width="2057" height="398" key="GridCell.Tab.0.left" timestamp="1608504029484">
+    <state width="2057" height="398" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1608518963815" />
+    <state width="2057" height="398" key="GridCell.Tab.0.left" timestamp="1608518963815">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="2057" height="398" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1608504029484" />
-    <state width="2057" height="398" key="GridCell.Tab.0.right" timestamp="1608504029484">
+    <state width="2057" height="398" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1608518963815" />
+    <state width="2057" height="398" key="GridCell.Tab.0.right" timestamp="1608518963816">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="2057" height="398" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1608504029484" />
+    <state width="2057" height="398" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1608518963816" />
     <state x="1016" y="436" key="NewModule_or_Project.wizard" timestamp="1608503764760">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1016" y="436" key="NewModule_or_Project.wizard/0.0.3440.1400@0.0.3440.1400" timestamp="1608503764760" />
-    <state x="831" y="306" key="SettingsEditor" timestamp="1608504019152">
+    <state x="1043" y="290" key="SettingsEditor" timestamp="1608517291632">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="831" y="306" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1608504019152" />
-    <state x="1014" y="351" width="672" height="678" key="search.everywhere.popup" timestamp="1608502817888">
+    <state x="1043" y="290" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1608517291632" />
+    <state x="1466" y="462" key="refactoring.ChangeSignatureDialog" timestamp="1608518551116">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1014" y="351" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1608502817888" />
+    <state x="1466" y="462" key="refactoring.ChangeSignatureDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1608518551116" />
+    <state x="1014" y="351" width="672" height="678" key="search.everywhere.popup" timestamp="1608517015874">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1014" y="351" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1608517015874" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/athena/net/discord/JavaCord.java</url>
+          <line>163</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
