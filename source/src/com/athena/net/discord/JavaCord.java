@@ -27,7 +27,7 @@ import java.util.concurrent.CompletableFuture;
  */
 @Log
 public class JavaCord {
-//updated for ruse
+//updated for ruse//
     private static String token = "NzQwOTM2MzY5NzM1NzI5MjM0.XywQxA.O-fMws5pMT3SfVf8fkC5-kV28wg";
 
     private static String serverName = "Athena";
