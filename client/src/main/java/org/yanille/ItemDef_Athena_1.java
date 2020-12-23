@@ -5,7 +5,7 @@ public class ItemDef_Athena_1 {
     public static ItemDef forDef(ItemDef itemDef, int ID) {
         ItemDef itemDef2;
         switch (ID) {
-        case 20086:
+            case 20086:
                 itemDef.modelID = 90631;
                 itemDef.name = "Dark Predator full helm";
                 itemDef.description = "A helmet once belonging to a mighty King";
@@ -3416,6 +3416,6 @@ public class ItemDef_Athena_1 {
                 itemDef.originalModelColor[0] = 32703;
                 break;
         }
-        return ItemDef_Tama.forDef(itemDef, ID);
+        return ItemDef_Jarrod_1.forDef(itemDef, ID);
     }
 }

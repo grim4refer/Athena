@@ -11,19 +11,19 @@ public class ItemDef_Lewis_1 {
 
         switch (ID){
 
-        case 20978:
-            itemDef.actions = new String[5];
-            itemDef.actions[0] = "Open";
-            itemDef.actions[4] = "Drop";
-            itemDef.colourRedefine2 = 95000;
-        	break;
+            case 20978:
+                itemDef.actions = new String[5];
+                itemDef.actions[0] = "Open";
+                itemDef.actions[4] = "Drop";
+                itemDef.colourRedefine2 = 95000;
+                break;
 
-        case 20979:
-            itemDef.actions = new String[5];
-            itemDef.actions[0] = "Open";
-            itemDef.actions[4] = "Drop";
-            itemDef.colourRedefine2 = 98000;
-        	break;
+            case 20979:
+                itemDef.actions = new String[5];
+                itemDef.actions[0] = "Open";
+                itemDef.actions[4] = "Drop";
+                itemDef.colourRedefine2 = 98000;
+                break;
 
             case 3230:
                 itemDef.modelID = 91355;
@@ -187,7 +187,7 @@ public class ItemDef_Lewis_1 {
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
-    			itemDef.rotationY = 307;
+                itemDef.rotationY = 307;
                 itemDef.rotationX = 978;
                 break;
 
@@ -207,7 +207,7 @@ public class ItemDef_Lewis_1 {
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
-            	break;
+                break;
 
             case 20808:
                 itemDef.modelID = 59083;
@@ -225,7 +225,7 @@ public class ItemDef_Lewis_1 {
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
-            	break;
+                break;
 
             case 20809:
                 itemDef.modelID = 59085;
@@ -243,7 +243,7 @@ public class ItemDef_Lewis_1 {
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
-            	break;
+                break;
 
             case 20810:
                 itemDef.modelID = 59087;
@@ -261,7 +261,7 @@ public class ItemDef_Lewis_1 {
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
-            	break;
+                break;
 
             case 20811:
                 itemDef.modelID = 59089;
@@ -279,7 +279,7 @@ public class ItemDef_Lewis_1 {
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
-            	break;
+                break;
 
             case 20812:
                 itemDef.modelID = 59091;
@@ -297,7 +297,7 @@ public class ItemDef_Lewis_1 {
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
-            	break;
+                break;
 
             case 20813:
                 itemDef.modelID = 59094;
@@ -315,7 +315,7 @@ public class ItemDef_Lewis_1 {
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
-            	break;
+                break;
 
             case 20814:
                 itemDef.modelID = 59093;
@@ -333,7 +333,7 @@ public class ItemDef_Lewis_1 {
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
-            	break;
+                break;
 
 
 
@@ -978,14 +978,14 @@ public class ItemDef_Lewis_1 {
                 break;
             case 2098:
                 itemDef.name = "@mag@Donkey Kong @yel@Pet @red@15dr";
-            	itemDef2 = ItemDef.forID(12458);
-            	itemDef.modelID = itemDef2.modelID;
-            	itemDef.modelOffset1 = itemDef2.modelOffset1;
-            	itemDef.modelOffsetX = itemDef2.modelOffsetX;
-            	itemDef.modelOffsetY = itemDef2.modelOffsetY;
-            	itemDef.modelZoom = itemDef2.modelZoom;
-            	itemDef.groundActions = new String[]{null, null, "Take", null, null};
-            	itemDef.actions = new String[]{null, null, "Summon", null, "Drop"};
+                itemDef2 = ItemDef.forID(12458);
+                itemDef.modelID = itemDef2.modelID;
+                itemDef.modelOffset1 = itemDef2.modelOffset1;
+                itemDef.modelOffsetX = itemDef2.modelOffsetX;
+                itemDef.modelOffsetY = itemDef2.modelOffsetY;
+                itemDef.modelZoom = itemDef2.modelZoom;
+                itemDef.groundActions = new String[]{null, null, "Take", null, null};
+                itemDef.actions = new String[]{null, null, "Summon", null, "Drop"};
                 break;
             // case 2095:
             //     itemDef.name = "Pet Callisto";
@@ -3611,7 +3611,7 @@ public class ItemDef_Lewis_1 {
                 itemDef.editedModelColor = new int[] {60,61,62,63,64,65,66,67,68,69,70,71,72,73};
                 itemDef.newModelColor = new int[]    {71,71,71,71,71,71,71,71,71,71,71,71,71,71};
                 break;
-                case 7124:
+            case 7124:
                 mbox = ItemDef.forID(6199);
                 itemDef.name = "Baphomet Mbox";
                 itemDef.modelID = 95152;
@@ -4305,7 +4305,7 @@ public class ItemDef_Lewis_1 {
                 itemDef.editedModelColor = new int[] {60};
                 itemDef.newModelColor = new int[]    {57};
                 break;
-                case 20901:
+            case 20901:
                 itemDef.name = "@red@Yanille @yel@key";
                 itemDef2 = ItemDef.forID(989);
                 itemDef.modelID = 67575;
@@ -4320,7 +4320,7 @@ public class ItemDef_Lewis_1 {
                 itemDef.editedModelColor = new int[] {60};
                 itemDef.newModelColor = new int[]    {55};
                 break;
-                case 21074:
+            case 21074:
                 itemDef.name = "@red@Raids @yel@key";
                 itemDef2 = ItemDef.forID(989);
                 itemDef.modelID = 67575;

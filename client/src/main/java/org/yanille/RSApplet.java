@@ -712,8 +712,9 @@ WindowListener {
 		}
 
 		if (hotKey == 508) {
-			if (i == KeyEvent.VK_ESCAPE) {
-				Client.setTab(3);
+			if (i == KeyEvent.VK_ESCAPE && Client.openInterfaceID != -1)  {
+				Client.instance.clearTopInterfaces();
+				//Client.setTab(10);
 			} else if (i == KeyEvent.VK_F1) {
 				Client.setTab(3);
 			} else if (i == KeyEvent.VK_F2) {
@@ -726,8 +727,9 @@ WindowListener {
 				Client.setTab(0);
 			}
 		} else {
-			if (i == KeyEvent.VK_ESCAPE) {
-				Client.setTab(0);
+			if (i == KeyEvent.VK_ESCAPE && Client.openInterfaceID != -1) {
+				Client.instance.clearTopInterfaces();
+				//Client.setTab(10); {
 			} else if (i == KeyEvent.VK_F1) {
 				Client.setTab(3);
 			} else if (i == KeyEvent.VK_F2) {

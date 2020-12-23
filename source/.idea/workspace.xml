@@ -1,611 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c3f53a77-2c04-4d4e-9086-b95d582e03a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Athena-Source.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/saves.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shops.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1. Run.bat" beforeDir="false" afterPath="$PROJECT_DIR$/1. Run.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1038.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1038.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1039.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1039.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1368.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1368.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1369.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1369.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1370.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1370.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1371.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1371.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1468.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1468.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1469.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1469.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1470.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1470.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1471.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1471.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1472.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1472.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1473.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1473.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1474.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1474.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1475.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1475.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1646.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1646.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1648.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1648.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1650.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1650.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1652.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1652.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1662.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1662.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1664.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1664.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/1666.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/1666.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/804.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/804.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/805.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/805.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/884.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/884.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/clipping/maps/885.gz" beforeDir="false" afterPath="$PROJECT_DIR$/data/clipping/maps/885.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/def/json/dialogues.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/def/json/dialogues.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/def/json/drops.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/def/json/drops.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/def/json/invention/dismantling.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/def/json/invention/dismantling.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/def/json/npc_definitions.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/def/json/npc_definitions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/def/json/slots.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/def/json/slots.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/def/json/upgrading.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/def/json/upgrading.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/def/json/weapon_interfaces.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/def/json/weapon_interfaces.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/def/json/world_npcs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/def/json/world_npcs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/def/json/world_shops.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/def/json/world_shops.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/def/txt/items.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/def/txt/items.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/pms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/pms.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/000000000000.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/0069.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/00nz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/0420quebec.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/0zone.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/2ufc.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Aaron.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Afk Soz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Afk.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Ags Spec.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Albe305.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Albion.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/An0nym00se.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Angrypirate.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Anubis.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Asookles.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Astinkypanda.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Atrafox.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Augment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Austin1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Baddj.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Baldblackmom.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Baldgod.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Bank Sale.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Beast M8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Beerbongbud.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Benjamin6676.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Bethsaida.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Big Chef.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Big Papa.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Bigbadt.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Bigbog.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Blazed.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Blazinbudz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Bo3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Boem.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Boembam.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Bonsly.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Bree.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Broadi.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Brokenarrow.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Brutal.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Bunin.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Burns.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/C2it.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Carver319.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Chan.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Charlie.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Checkmatte.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Chicken Poop.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Chitin.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Clavv.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Cmdrcarson.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Codplayer.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Corex1107.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Corosive.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Cottonpicker.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Crazyeights.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Croyzz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Cryptic.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Customer.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/D3vilsdivine.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Dabswax.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Dahmonstah.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Dandaman123.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Danishviking.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Dark Diivine.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Darklace43.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/David.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Davinci.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Days Gone.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Death.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Deathgambit.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Deathlylawl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Decibel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Deeks.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Deerjacker.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Delicious.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Demena.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Dillpickle.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Dipy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Djphil.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Dmkm2011.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Doodltu.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Doom.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Dork Squad.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Dragonfishes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Drizzt.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Druble.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Drugeliz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Dslater.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Durza.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Dustie.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Dustin.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Dusty.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Dyldawiss420.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Easy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Eddies Fan.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Edubs.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/El Panthera.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Elite.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Epicpvm1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Estvshow.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Facebook.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Fear.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Fedja328.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/First.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Fisnai.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Fjell.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Fluffyangel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Franz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Friendzone.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Froise.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Frozie.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Fubber.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Fuksas11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Fusil.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Gaarensappig.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Gavriil.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Genie.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Germ.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Gimmie Loots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Godx.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Goku.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Gold.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Gothic.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Green Ball.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Gustav.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Hamed473.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Hammer Prod.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Havesomemana.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Hazed.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Hc Done.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Hdultimate.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Helius.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Hentai.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Hiimawkward.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Hola.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Hootch.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Hugeables.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Hunglikekbd.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Huntingspins.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/I Rape U.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Ibrianrs.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Iceyyeet.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Ihop.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Im Hapsu.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Ingoston.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Iron Drop.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Isidorfreyr.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Jake Hurwitz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Jar Of Sperm.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Jared.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Jay Coal.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Jc1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Jente33.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Jimmy82795.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Jobbe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Jojoxx.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Jorik.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Josma.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Jpblunts.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Juergen.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Juoppo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Kaiyer.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Kellatha.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Kendall.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Khushi.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Khyroki.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Kidcrispy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Killingkong.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Kim Holland.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Kimkes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Kingcarleato.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Kiwisurf.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Knite.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Kobe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Koh.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Ksalisbury.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Kwiks.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Ladysheba.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Lambbones.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Laslooo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Lauren.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Lebronjames.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Lemmetry.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Liam.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Lickilicky.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Lier525.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Lilpenisgang.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Lindahl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Lodyyyy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Lois.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Lollapalooza.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Loner.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Lord Aizen.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Love.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Luffer.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Luke.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Luna Hpk.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Luolapeikko.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Lysolmax.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Malte.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Master9993.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Matthew.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Maybe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Meepo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Melancholy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Metoo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Meupy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Mi.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Mikki.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Misfit.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Mobrokas.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Moogz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Mr Biggles.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Mrostrich.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Murtanibo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Naruto1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Natty Daddy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Necro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Neeko.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Neph.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Nickw.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Niels.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Nightpnda.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Njnjnjnjnj.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Nocky.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Nuggzy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Nxblt.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Nzgunner.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/One.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Ottezen.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Pepidog.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Perseus.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Pidge.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Pisike.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Plunksna.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Polaris.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Polo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Pony.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Potato.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Powertank.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Prayer.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Primefire.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Protips.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Puchys.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Pure Z.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Pvmgrindee.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Pvmking.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Pyj.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Qkarma.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Quakesz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/R  N G.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Racc.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Rachel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Ragnarok117.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Raidenvich.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Range Owns6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Rangwer1234.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Rarest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Red Wagon.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Reggiemate.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Relisade.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Remaininsain.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Riddyp.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Rob.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Rooter666.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Rowot.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Russell.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Ryrker.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Sadsay1234.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Saint Vains.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Saituri.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Samuhlamb.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Satan.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Savauya.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Schehl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Sdr.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Senpai.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Serious Main.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Setsuna.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Sexymommy69.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Shadow Corey.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Shrimpie.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Silentblood.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Silver Rose.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Simonrs.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Sinfulsage.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Sir Spud.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Slair.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Slowbro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Snewgins.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Snow.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Snukebomb.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/So Dark.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Sofietje.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Solga3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Sopinhas.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Soul Shadow.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Spartanbrah.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Spencer.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Srdt Dragon.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Steeze.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Stephcurry.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Steve.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Stopmovin.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Stormriot.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Strider.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Suicideboy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Sun13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Sutpik123.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Sylrange.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Tadernuts.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Tavotevas99.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Taw120.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Teferi.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Tehkush.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Tenzy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Texown.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Titan.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Tkey.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/To High.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Tobbe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Tomski.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Tpmzeqin.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Trapaholics.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Treebeard.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Tsunade.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Turtlefrosty.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Unholy Lotus.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Unluckyrolo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Unskills.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Untoldtruth.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Vaheere.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Vaydorf.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Vendor.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Vo1dman95.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Wade.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Waffle.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Weapon Hero.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Wham.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Whipwolf.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Whiskey.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Whylegit.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Wildyyy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Wolfy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Woox.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/X.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Xavier Wulf.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Xforiez.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Xilent.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Xmas Tiger.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Xstarkerxo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Xtc.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Yack.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Yagrillanne.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Yeeticus.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Yellowdozer.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Yorkez.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Yoyo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Yummey.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Zach.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Zacksalem9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Zaqzy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Zarosium.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Zarzu.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Zee Best.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Zephyrus.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Zero.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Zinga.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Zo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Zombie.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Zomox.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Zozotheunit.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shops/Zyxex.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yanille-rsps/prices.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yanille-rsps/prices.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/GameLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/GameLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/GameServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/GameSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/GameSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/engine/task/impl/FuriousPotionTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/engine/task/impl/FuriousPotionTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/engine/task/impl/NPCDeathTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/engine/task/impl/NPCDeathTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/engine/task/impl/OverloadPotionTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/engine/task/impl/OverloadPotionTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/engine/task/impl/PlayerDeathTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/engine/task/impl/PlayerDeathTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/model/Locations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/model/Locations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/model/PlayerRights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/model/PlayerRights.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/model/RegionInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/model/RegionInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/model/container/ItemContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/model/container/ItemContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/model/container/impl/Equipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/model/container/impl/Equipment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/model/container/impl/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/model/container/impl/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/model/definitions/NPCDrops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/model/definitions/NPCDrops.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/model/definitions/WeaponAnimations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/model/definitions/WeaponAnimations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/model/input/impl/BuyShards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/model/input/impl/BuyShards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/model/input/impl/GambleAmount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/model/input/impl/GambleAmount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/model/input/impl/SellShards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/model/input/impl/SellShards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/PacketSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/PacketSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/ButtonClickPacketListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/ButtonClickPacketListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/ClickTextMenuPacketListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/ClickTextMenuPacketListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/CommandPacketListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/CommandPacketListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/EquipPacketListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/EquipPacketListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/ExamineNpcPacketListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/ExamineNpcPacketListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/IdleLogoutPacketListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/IdleLogoutPacketListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/ItemActionPacketListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/ItemActionPacketListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/ItemContainerActionPacketListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/ItemContainerActionPacketListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/NPCOptionPacketListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/NPCOptionPacketListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/ObjectActionPacketListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/ObjectActionPacketListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/UseItemPacketListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/net/packet/impl/UseItemPacketListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/services/discord/BotConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/services/discord/BotConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/services/discord/DiscordBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/services/discord/DiscordBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/services/discord/listeners/BotConfigListner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/services/discord/listeners/BotConfigListner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/services/discord/listeners/CommandListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/services/discord/listeners/CommandListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/services/discord/listeners/MessageEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/services/discord/listeners/MessageEventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/services/discord/server/commands/CommandsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/services/discord/server/commands/CommandsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/util/Misc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/util/Misc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/Achievements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/Achievements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/ChristmasPresent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/ChristmasPresent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/Consumables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/Consumables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/CustomObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/CustomObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/EvilTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/EvilTrees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/ItemForging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/ItemForging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/KeysEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/KeysEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/Lottery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/Lottery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/LoyaltyProgramme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/LoyaltyProgramme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/MoneyPouch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/MoneyPouch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/PetBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/PetBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/PlayersOnlineInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/PlayersOnlineInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/ProfileViewing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/ProfileViewing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/StaffList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/StaffList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/StartScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/StartScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/Trading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/Trading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/TriviaBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/TriviaBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/WellOfGoodwill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/WellOfGoodwill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/WellOfWealth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/WellOfWealth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/WildernessObelisks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/WildernessObelisks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/books/TestBook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/chests/CrystalChest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/chests/CrystalChest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/chests/WildyWyrmChest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/chests/WildyWyrmChest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/clan/ClanChatManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/clan/ClanChatManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/CombatBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/CombatBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/CombatFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/CombatFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/CombatHitTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/CombatHitTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/CombatHookTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/CombatHookTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/DesolaceFormulas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/DesolaceFormulas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/HitQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/HitQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/effect/EquipmentBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/effect/EquipmentBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/magic/CombatSpells.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/magic/CombatSpells.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/magic/CustomMagicStaff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/magic/CustomMagicStaff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/magic/MagicSpells.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/magic/MagicSpells.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/prayer/CurseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/prayer/CurseHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/prayer/PrayerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/prayer/PrayerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/pvp/PlayerKillingAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/pvp/PlayerKillingAttributes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/range/CombatRangedAmmo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/range/CombatRangedAmmo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/CombatStrategies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/CombatStrategies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/impl/DefaultMagicCombatStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/impl/DefaultMagicCombatStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/impl/DefaultMeleeCombatStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/impl/DefaultMeleeCombatStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/impl/DefaultRangedCombatStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/impl/DefaultRangedCombatStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/impl/Graardor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/impl/Graardor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/impl/HarLakkRiftsplitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/impl/HarLakkRiftsplitter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/impl/InfernoDragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/impl/InfernoDragon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/impl/Jad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/impl/Jad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/impl/Revenant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/impl/Revenant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/impl/Vorago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/strategy/impl/Vorago.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/weapon/CombatSpecial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/combat/weapon/CombatSpecial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/dialogue/DialogueOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/dialogue/DialogueOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/dialogue/impl/Tutorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/dialogue/impl/Tutorial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/AVATAR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/AVATAR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/BARRELS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/BARRELS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/BORKS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/BORKS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/CERB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/CERB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/CORP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/CORP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/DAGS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/DAGS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/GLAC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/GLAC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/GWD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/GWD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/KALPH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/KALPH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/KBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/KBD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/LIZARD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/LIZARD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/NEXX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/NEXX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/PHEON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/PHEON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/SKOT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/SKOT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/SLASHBASH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/SLASHBASH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/TDS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/droppreview/TDS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/gambling/GamblingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/gambling/GamblingManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/ganodermic/Ganodermic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/ganodermic/Ganodermic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/global/GlobalBossHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/global/GlobalBossHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/global/impl/Godzilla.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/global/impl/UndeadInfernalDragon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/global/impl/Vorago.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/itemopening/DonationBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/itemopening/DonationBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/itemopening/MemberScrolls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/itemopening/MemberScrolls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/itemopening/RUBoxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/itemopening/RUBoxes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/MinigameHandler2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/MinigameHandler2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/Barrows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/Barrows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/Dueling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/Dueling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/FightCave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/FightCave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/FightPit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/FightPit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/GodsRaid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/GodsRaid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/HerculesBay/BarrowsSpawning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/HerculesBay/BarrowsSpawning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/PestControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/PestControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/Raid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/Raid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/RecipeForDisaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/RecipeForDisaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/WarriorsGuild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/minigames/impl/WarriorsGuild.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/mysteryboxes/InfernalGroudonBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/mysteryboxes/InfernalGroudonBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/pos/PlayerOwnedShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/pos/PlayerOwnedShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/pos/PlayerOwnedShopManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/pos/PlayerOwnedShopManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/raids/immortal/ImmortalBoss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/raids/immortal/ImmortalBoss.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/raids/immortal/ImmortalRaid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/raids/immortal/ImmortalRaid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/SkillManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/SkillManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/agility/Agility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/agility/Agility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/agility/ObstacleData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/agility/ObstacleData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/dungeoneering/DungeoneeringParty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/dungeoneering/DungeoneeringParty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/firemaking/Firemaking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/firemaking/Firemaking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/fletching/Fletching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/fletching/Fletching.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/herblore/IngridientsBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/herblore/IngridientsBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/mining/Mining.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/mining/Mining.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/prayer/BonesOnAltar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/prayer/BonesOnAltar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/prayer/Prayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/prayer/Prayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/slayer/Slayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/slayer/Slayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/slayer/SlayerMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/slayer/SlayerMaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/slayer/SlayerTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/slayer/SlayerTasks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/smithing/Smelting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/smithing/Smelting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/smithing/SmithingData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/smithing/SmithingData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/summoning/BossPets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/summoning/BossPets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/summoning/SummoningData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/summoning/SummoningData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/thieving/Stalls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/thieving/Stalls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/woodcutting/Woodcutting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/skill/impl/woodcutting/Woodcutting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/teleportation/TeleportBosses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/teleportation/TeleportBosses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/teleportation/TeleportMinigames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/teleportation/TeleportMinigames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/teleportation/TeleportPlayerKilling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/teleportation/TeleportPlayerKilling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/teleportation/TeleportTraining.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/teleportation/TeleportTraining.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/teleportation/Teleporting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/teleportation/Teleporting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/teleportation/teleports/BossTeleport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/teleportation/teleports/BossTeleport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/teleportation/teleports/MinigameTeleport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/teleportation/teleports/MinigameTeleport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/teleportation/teleports/MinigamesTeleports.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/teleportation/teleports/MinigamesTeleports.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/teleportation/teleports/TrainingTeleport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/teleportation/teleports/TrainingTeleport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/upgrade/Upgrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/content/upgrade/Upgrade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/entity/impl/npc/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/entity/impl/npc/NPC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/entity/impl/npc/NpcAggression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/entity/impl/npc/NpcAggression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/entity/impl/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/entity/impl/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/entity/impl/player/PlayerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/entity/impl/player/PlayerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/entity/impl/player/PlayerLoading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/entity/impl/player/PlayerLoading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/entity/impl/player/PlayerProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/entity/impl/player/PlayerProcess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arlania/world/entity/impl/player/PlayerSaving.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arlania/world/entity/impl/player/PlayerSaving.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/MySQLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mysql/MySQLController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/impl/Highscores/HighscoresHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/impl/Hiscores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mysql/impl/Hiscores.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/impl/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mysql/impl/Donation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/impl/Voting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mysql/impl/Vote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/impl/donations/AutoDonations.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/impl/voting/Voting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/motivote/Incentive.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/motivote/Motivote.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/motivote/MotivoteHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/motivote/MotivoteThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/motivote/Reward.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/motivote/Vote.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yanille-rsps.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/org/yanille/ItemDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/org/yanille/ItemDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/org/yanille/ItemDef_Athena_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/org/yanille/ItemDef_Athena_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/org/yanille/ItemDef_Jarrod_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/org/yanille/ItemDef_Jarrod_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/org/yanille/ItemDef_Lewis_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/org/yanille/ItemDef_Lewis_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/org/yanille/ItemDef_Tama.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/org/yanille/ItemDef_Tama.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/org/yanille/RSApplet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/org/yanille/RSApplet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -613,7 +24,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -623,6 +34,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1lzmkXTb5TO01467L4sgg8D539G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -630,7 +42,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../client" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
@@ -655,21 +67,33 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="864" y="354" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608608564883">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state x="310" y="116" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608611501966">
+      <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="864" y="354" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1608608564883" />
-    <state x="1139" y="501" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1608608557982">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state x="310" y="116" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1707.920@0.0.1707.920" timestamp="1608611501966" />
+    <state x="635" y="216" key="FileChooserDialogImpl" timestamp="1608691735030">
+      <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="1139" y="501" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1608608557982" />
-    <state x="1296" y="434" width="440" height="654" key="FileChooserDialogImpl" timestamp="1608609162147">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state x="635" y="216" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1608691735030" />
+    <state width="724" height="172" key="GridCell.Tab.0.bottom" timestamp="1608676644477">
+      <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="1296" y="434" width="440" height="654" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1608609162147" />
-    <state x="1181" y="473" key="NewModule_or_Project.wizard" timestamp="1608608495939">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state width="724" height="172" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1608676644477" />
+    <state width="724" height="172" key="GridCell.Tab.0.center" timestamp="1608676644476">
+      <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="1181" y="473" key="NewModule_or_Project.wizard/0.0.3440.1400@0.0.3440.1400" timestamp="1608608495939" />
+    <state width="724" height="172" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1608676644476" />
+    <state width="724" height="172" key="GridCell.Tab.0.left" timestamp="1608676644476">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="724" height="172" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1608676644476" />
+    <state width="724" height="172" key="GridCell.Tab.0.right" timestamp="1608676644477">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="724" height="172" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1608676644477" />
+    <state x="364" y="106" key="SettingsEditor" timestamp="1608611548197">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="364" y="106" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1608611548197" />
   </component>
 </project>

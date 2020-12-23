@@ -8,14 +8,14 @@ import java.util.List;
 
 public final class ItemDef {
 
-    private static int[] prices;
-    public static Color clorDefcode;
+	private static int[] prices;
+	public static Color clorDefcode;
 	public int[] originalModelColors;
-    public int[] clorDefcodeTo = {0};
+	public int[] clorDefcodeTo = {0};
 	public int colourRedefine = 0;
 	public int colourRedefine2 = 0;
 	public int colourRedefine3 = 0;
-    private static List<Integer> untradeableItems = new ArrayList<Integer>();
+	private static List<Integer> untradeableItems = new ArrayList<Integer>();
 
 
 	public static void applyTexturing(Model model, int id) {
@@ -33,292 +33,292 @@ public final class ItemDef {
 			case 20079:
 				model.setTexture(59,3500,4318);
 				break;
-	case 20084:
-	case 20085:
-		model.setTexture(59);
-		break;
-		
-	case 15359:
-		model.setTexture(64,0,20562);
-		break;
-	case 15355:
-		model.setTexture(56,0,20562);
-		break;
-	case 15356:
-		model.setTexture(66,0,20562);
-		break;
-	case 15358:
-		model.setTexture(69,0,20562);
-		break;
-		
-	case 15243:
-	case 10551:
-	case 10548:
-	case 10549:
-	case 10550:
-		model.setTexture(17,0,20562);
-		model.setTexture(17,20563,300000);
-		break;
-	case 21000:
-		model.setTexture(49);
-		break;
-	case 21015:
-		model.setTexture(49);
-		break;
-	case 21017:
-		model.setTexture(49);
-		break;
-	case 21001:
-		model.setTexture(49);
-		break;
-	case 15241:
-		model.setTexture(17,0,20562);
-		model.setTexture(17,20563,300000);
-		break;
-		
-	case 20940:
-		model.setTexture(55);
-		break;
-		
-	case 20948:
-		model.setTexture(55);
-		break;
-		
-	case 2760:
-		model.setTexture(55);
-		break;
-		
-	case 20961:
-		model.setTexture(55);
-		break;
-		
-	case 20941:
-		model.setTexture(66);
-		break;
-		
-	case 20949:
-		model.setTexture(66);
-		break;
-		
-	case 2098:
-		model.setTexture(66);
-		break;
-		
-	case 20962:
-		model.setTexture(66);
-		break;
-		
-	case 20942:
-		model.setTexture(53);
-		break;
-		
-	case 20953:
-		model.setTexture(53);
-		break;
-		
-	case 20954:
-		model.setTexture(53);
-		break;
-		
-	case 20955:
-		model.setTexture(53);
-		break;
-		
-	case 20943:
-		model.setTexture(53);
-		break;
-		
-	case 20967:
-		model.setTexture(53);
-		break;
-		
-	case 20956:
-		model.setTexture(53);
-		break;
-		
-	case 20933:
-		model.setTexture(54);
-		break;
-		
-	case 20946:
-		model.setTexture(54);
-		break;
-		
-	case 20970:
-		model.setTexture(54);
-		break;
-		
-	case 20959:
-		model.setTexture(54);
-		break;
-		
-	case 20934:
-		model.setTexture(52);
-		break;
-		
-	case 20945:
-		model.setTexture(52);
-		break;
-		
-	case 20969:
-		model.setTexture(52);
-		break;
-		
-	case 20958:
-		model.setTexture(52);
-		break;
-		
-	case 20935:
-		model.setTexture(56);
-		break;
-		
-	case 20947:
-		model.setTexture(56);
-		break;
-		
-	case 2762:
-		model.setTexture(56);
-		break;
-		
-	case 20960:
-		model.setTexture(56);
-		break;
-		
-	case 20936:
-		model.setTexture(71);
-		break;
-		
-	case 20944:
-		model.setTexture(71);
-		break;
-		
-	case 20968:
-		model.setTexture(71);
-		break;
-		
-	case 20957:
-		model.setTexture(71);
-		break;
-		
-	case 20937:
-		model.setTexture(60);
-		break;
-		
-	case 16601:
-		model.setTexture(60);
-		break;
-		
-	case 20975:
-		model.setTexture(60);
-		break;
-		
-	case 20964:
-		model.setTexture(60);
-		break;
-		
-	case 20938:
-		model.setTexture(68);
-		break;
-		
-	case 16600:
-		model.setTexture(68);
-		break;
-		
-	case 20977:
-		model.setTexture(68);
-		break;
-		
-	case 20965:
-		model.setTexture(68);
-		break;
-		
-	case 20939:
-		model.setTexture(65);
-		break;
-		
-	case 16599:
-		model.setTexture(65);
-		break;
-		
-	case 2759:
-		model.setTexture(65);
-		break;
-		
-	case 20963:
-		model.setTexture(65);
-		break;
-		
-	case 15668:
-		model.setTexture(68);
-		break;
-		
-	case 15665:
-		model.setTexture(60,0,20562);
-		break;
-		
-	case 12425:
-	case 20931:
-		model.setTexture(55,0,20562);
-		model.setTexture(19,20563,300000);
-		break;
-		
-	case 20985:
-		model.setTexture(69,31,10000000);
-		break;
-		
-	case 20986:
-		model.setTexture(19,20563,300000);
-		model.setTexture(69,31,10000000);
-		break;
-	case 12424:
-		model.setTexture(60);
-		break;
-		
-	case 12423:
-		model.setTexture(53);
-		break;
-		
-	case 12422:
-		model.setTexture(66);
-		break;
-		
-	case 12421:
-		model.setTexture(65);
-		break;
-		
-	case 20751:	
-		model.setTexture(53,0,20562);
-		model.setTexture(13,20563,300000);
-		break;
-		
-		
-	case 20873:	
-		model.setTexture(60);
-		break;
-		
-	case 20829:	
-	case 20838:
-	case 20836:
-	case 20831:
-	case 20830:
-	case 20833:	
-	case 20832:
-	case 20834:
-		model.setTexture(52,0,20562);
-		model.setTexture(12,20563,300000);
-		break;
-		
+			case 20084:
+			case 20085:
+				model.setTexture(59);
+				break;
+
+			case 15359:
+				model.setTexture(64,0,20562);
+				break;
+			case 15355:
+				model.setTexture(56,0,20562);
+				break;
+			case 15356:
+				model.setTexture(66,0,20562);
+				break;
+			case 15358:
+				model.setTexture(69,0,20562);
+				break;
+
+			case 15243:
+			case 10551:
+			case 10548:
+			case 10549:
+			case 10550:
+				model.setTexture(17,0,20562);
+				model.setTexture(17,20563,300000);
+				break;
+			case 21000:
+				model.setTexture(49);
+				break;
+			case 21015:
+				model.setTexture(49);
+				break;
+			case 21017:
+				model.setTexture(49);
+				break;
+			case 21001:
+				model.setTexture(49);
+				break;
+			case 15241:
+				model.setTexture(17,0,20562);
+				model.setTexture(17,20563,300000);
+				break;
+
+			case 20940:
+				model.setTexture(55);
+				break;
+
+			case 20948:
+				model.setTexture(55);
+				break;
+
+			case 2760:
+				model.setTexture(55);
+				break;
+
+			case 20961:
+				model.setTexture(55);
+				break;
+
+			case 20941:
+				model.setTexture(66);
+				break;
+
+			case 20949:
+				model.setTexture(66);
+				break;
+
+			case 2098:
+				model.setTexture(66);
+				break;
+
+			case 20962:
+				model.setTexture(66);
+				break;
+
+			case 20942:
+				model.setTexture(53);
+				break;
+
+			case 20953:
+				model.setTexture(53);
+				break;
+
+			case 20954:
+				model.setTexture(53);
+				break;
+
+			case 20955:
+				model.setTexture(53);
+				break;
+
+			case 20943:
+				model.setTexture(53);
+				break;
+
+			case 20967:
+				model.setTexture(53);
+				break;
+
+			case 20956:
+				model.setTexture(53);
+				break;
+
+			case 20933:
+				model.setTexture(54);
+				break;
+
+			case 20946:
+				model.setTexture(54);
+				break;
+
+			case 20970:
+				model.setTexture(54);
+				break;
+
+			case 20959:
+				model.setTexture(54);
+				break;
+
+			case 20934:
+				model.setTexture(52);
+				break;
+
+			case 20945:
+				model.setTexture(52);
+				break;
+
+			case 20969:
+				model.setTexture(52);
+				break;
+
+			case 20958:
+				model.setTexture(52);
+				break;
+
+			case 20935:
+				model.setTexture(56);
+				break;
+
+			case 20947:
+				model.setTexture(56);
+				break;
+
+			case 2762:
+				model.setTexture(56);
+				break;
+
+			case 20960:
+				model.setTexture(56);
+				break;
+
+			case 20936:
+				model.setTexture(71);
+				break;
+
+			case 20944:
+				model.setTexture(71);
+				break;
+
+			case 20968:
+				model.setTexture(71);
+				break;
+
+			case 20957:
+				model.setTexture(71);
+				break;
+
+			case 20937:
+				model.setTexture(60);
+				break;
+
+			case 16601:
+				model.setTexture(60);
+				break;
+
+			case 20975:
+				model.setTexture(60);
+				break;
+
+			case 20964:
+				model.setTexture(60);
+				break;
+
+			case 20938:
+				model.setTexture(68);
+				break;
+
+			case 16600:
+				model.setTexture(68);
+				break;
+
+			case 20977:
+				model.setTexture(68);
+				break;
+
+			case 20965:
+				model.setTexture(68);
+				break;
+
+			case 20939:
+				model.setTexture(65);
+				break;
+
+			case 16599:
+				model.setTexture(65);
+				break;
+
+			case 2759:
+				model.setTexture(65);
+				break;
+
+			case 20963:
+				model.setTexture(65);
+				break;
+
+			case 15668:
+				model.setTexture(68);
+				break;
+
+			case 15665:
+				model.setTexture(60,0,20562);
+				break;
+
+			case 12425:
+			case 20931:
+				model.setTexture(55,0,20562);
+				model.setTexture(19,20563,300000);
+				break;
+
+			case 20985:
+				model.setTexture(69,31,10000000);
+				break;
+
+			case 20986:
+				model.setTexture(19,20563,300000);
+				model.setTexture(69,31,10000000);
+				break;
+			case 12424:
+				model.setTexture(60);
+				break;
+
+			case 12423:
+				model.setTexture(53);
+				break;
+
+			case 12422:
+				model.setTexture(66);
+				break;
+
+			case 12421:
+				model.setTexture(65);
+				break;
+
+			case 20751:
+				model.setTexture(53,0,20562);
+				model.setTexture(13,20563,300000);
+				break;
+
+
+			case 20873:
+				model.setTexture(60);
+				break;
+
+			case 20829:
+			case 20838:
+			case 20836:
+			case 20831:
+			case 20830:
+			case 20833:
+			case 20832:
+			case 20834:
+				model.setTexture(52,0,20562);
+				model.setTexture(12,20563,300000);
+				break;
+
 			case 20081:
 			case 20082:
 			case 20083:
 				model.setTexture(59,1000,55000);
 				break;
 			case 8839:
-                model.setTexture(65,31,100);
-                break;
+				model.setTexture(65,31,100);
+				break;
 			case 8840:
-                model.setTexture(65,31,100);
-                break;
+				model.setTexture(65,31,100);
+				break;
 			case 19787:
 			case 19788:
 				model.setTexture(53,31,150);
@@ -342,25 +342,25 @@ public final class ItemDef {
 			case 621:
 				model.setTexture(59,800,10000000);
 				break;
-				
-			case 7612:	
+
+			case 7612:
 			case 7610:
 			case 7611:
 			case 7613:
 				model.setTexture(59,800,10000000);
 				break;
-				
+
 			case 11665:
 			case 11663:
 			case 11664:
-                model.setTexture(65,31,10000000);
-                break;
+				model.setTexture(65,31,10000000);
+				break;
 
-                case 21056:
-                case 21057:
-                case 21058:
-                model.setTexture(53,31,10000000);
-                break;
+			case 21056:
+			case 21057:
+			case 21058:
+				model.setTexture(53,31,10000000);
+				break;
 			case 20841:
 			case 20842:
 			case 20843:
@@ -373,9 +373,9 @@ public final class ItemDef {
 				model.setTexture(53);
 				break;
 
-                case 20550:
-                model.setTexture(65,31,10000000);
-                break;
+			case 20550:
+				model.setTexture(65,31,10000000);
+				break;
 			case 8842:
 				model.setTexture(65);
 				break;
@@ -404,17 +404,17 @@ public final class ItemDef {
 			case 20451:
 				model.setTexture(52,0,10000000);
 				break;
-			 case 20452:
+			case 20452:
 				model.setTexture(60);
 				break;
-				case 20012:
-					model.setTexture(57,10,100);
+			case 20012:
+				model.setTexture(57,10,100);
 				break;
 			case 20010:
 			case 20011:
 				model.setTexture(57,30,55);
 				break;
-				case 20020:
+			case 20020:
 			case 20019:
 				model.setTexture(57);
 				break;
@@ -427,7 +427,7 @@ public final class ItemDef {
 				model.setTexture(57);
 				Texture.get(57);
 				break;
-							
+
 			case 19903:
 				model.setTexture(69);
 				break;
@@ -443,7 +443,7 @@ public final class ItemDef {
 			case 20096:
 			case 20097:
 			case 20098:
-            case 20450:
+			case 20450:
 			case 20099:
 			case 20100:
 			case 20101:
@@ -451,7 +451,7 @@ public final class ItemDef {
 				break;
 			case 17849:
 				model.setTexture(55);
-			break;
+				break;
 
 			case 13655:
 				model.setTexture(70,97000);
@@ -476,7 +476,7 @@ public final class ItemDef {
 				model.setTexture(55,0,20562);
 				model.setTexture(19,20563,300000);
 				break;
-				
+
 			case 15473:
 				model.setTexture(52,0,20562);
 				model.setTexture(12,20563,300000);
@@ -496,219 +496,219 @@ public final class ItemDef {
 		}
 	}
 
-    public static void nullLoader() {
-        modelCache = null;
-        spriteCache = null;
-        streamIndices = null;
-        cache = null;
-        stream = null;
-    }
+	public static void nullLoader() {
+		modelCache = null;
+		spriteCache = null;
+		streamIndices = null;
+		cache = null;
+		stream = null;
+	}
 
 	int[] originalModelColor;
-    
 
-    public boolean dialogueModelFetched(int j) {
-        int k = maleDialogue;
-        int l = maleDialogueModel;
-        if (j == 1) {
-            k = femaleDialogue;
-            l = femaleDialogueModel;
-        }
-        if (k == -1) {
-            return true;
-        }
-        boolean flag = true;
-        if (!Model.modelIsFetched(k)) {
-            flag = false;
-        }
-        if (l != -1 && !Model.modelIsFetched(l)) {
-            flag = false;
-        }
-        return flag;
-    }
 
-    public Model getDialogueModel(int gender) {
-        int k = maleDialogue;
-        int l = maleDialogueModel;
-        if (gender == 1) {
-            k = femaleDialogue;
-            l = femaleDialogueModel;
-        }
-        if (k == -1) {
-            return null;
-        }
-        Model model = Model.fetchModel(k);
-        if (l != -1) {
-            Model model_1 = Model.fetchModel(l);
-            Model models[] = {model, model_1};
-            model = new Model(2, models);
-        }
-        if (editedModelColor != null) {
-            for (int i1 = 0; i1 < editedModelColor.length; i1++) {
-                model.recolour(editedModelColor[i1], newModelColor[i1]);
-            }
-        }
+	public boolean dialogueModelFetched(int j) {
+		int k = maleDialogue;
+		int l = maleDialogueModel;
+		if (j == 1) {
+			k = femaleDialogue;
+			l = femaleDialogueModel;
+		}
+		if (k == -1) {
+			return true;
+		}
+		boolean flag = true;
+		if (!Model.modelIsFetched(k)) {
+			flag = false;
+		}
+		if (l != -1 && !Model.modelIsFetched(l)) {
+			flag = false;
+		}
+		return flag;
+	}
 
-        if (colourRedefine > 0)
-    		model.method1337(colourRedefine);
-    		if (colourRedefine2 != 0)
-    		model.method1338(colourRedefine2);
-    		if (colourRedefine3 != 0)
-    		model.method1339(colourRedefine3);
+	public Model getDialogueModel(int gender) {
+		int k = maleDialogue;
+		int l = maleDialogueModel;
+		if (gender == 1) {
+			k = femaleDialogue;
+			l = femaleDialogueModel;
+		}
+		if (k == -1) {
+			return null;
+		}
+		Model model = Model.fetchModel(k);
+		if (l != -1) {
+			Model model_1 = Model.fetchModel(l);
+			Model models[] = {model, model_1};
+			model = new Model(2, models);
+		}
+		if (editedModelColor != null) {
+			for (int i1 = 0; i1 < editedModelColor.length; i1++) {
+				model.recolour(editedModelColor[i1], newModelColor[i1]);
+			}
+		}
+
+		if (colourRedefine > 0)
+			model.method1337(colourRedefine);
+		if (colourRedefine2 != 0)
+			model.method1338(colourRedefine2);
+		if (colourRedefine3 != 0)
+			model.method1339(colourRedefine3);
 
 		applyTexturing(model, id);
 
 
 		return model;
-    }
+	}
 
-    public boolean equipModelFetched(int gender) {
-        int fistModel = maleEquip1;
-        int secondModel = maleEquip2;
-        int thirdModel = maleEquip3;
-        if (gender == 1) {
-            fistModel = femaleEquip1;
-            secondModel = femaleEquip2;
-            thirdModel = femaleEquip3;
-        }
-        if (fistModel == -1) {
-            return true;
-        }
-        boolean flag = true;
-        if (!Model.modelIsFetched(fistModel)) {
-            flag = false;
-        }
-        if (secondModel != -1 && !Model.modelIsFetched(secondModel)) {
-            flag = false;
-        }
-        if (thirdModel != -1 && !Model.modelIsFetched(thirdModel)) {
-            flag = false;
-        }
-        return flag;
-    }
+	public boolean equipModelFetched(int gender) {
+		int fistModel = maleEquip1;
+		int secondModel = maleEquip2;
+		int thirdModel = maleEquip3;
+		if (gender == 1) {
+			fistModel = femaleEquip1;
+			secondModel = femaleEquip2;
+			thirdModel = femaleEquip3;
+		}
+		if (fistModel == -1) {
+			return true;
+		}
+		boolean flag = true;
+		if (!Model.modelIsFetched(fistModel)) {
+			flag = false;
+		}
+		if (secondModel != -1 && !Model.modelIsFetched(secondModel)) {
+			flag = false;
+		}
+		if (thirdModel != -1 && !Model.modelIsFetched(thirdModel)) {
+			flag = false;
+		}
+		return flag;
+	}
 
-    public Model getEquipModel(int gender) {
-        int j = maleEquip1;
-        int k = maleEquip2;
-        int l = maleEquip3;
-        if (gender == 1) {
-            j = femaleEquip1;
-            k = femaleEquip2;
-            l = femaleEquip3;
-        }
-        if (j == -1) {
-            return null;
-        }
-        Model model = Model.fetchModel(j);
-        if (k != -1) {
-            if (l != -1) {
-                Model model_1 = Model.fetchModel(k);
-                Model model_3 = Model.fetchModel(l);
-                Model model_1s[] = {model, model_1, model_3};
-                model = new Model(3, model_1s);
-            } else {
-                Model model_2 = Model.fetchModel(k);
-                Model models[] = {model, model_2};
-                model = new Model(2, models);
-            }
-        }
-        //if (j == 62367)
-        //model.translate(68, 7, -8);
-        if (gender == 0 && maleYOffset != 0) {
-            model.translate(0, maleYOffset, 0);
-        } else if (gender == 1 && femaleYOffset != 0) {
-            model.translate(0, femaleYOffset, 0);
-        }
-        if (editedModelColor != null) {
-            for (int i1 = 0; i1 < editedModelColor.length; i1++) {
-                model.recolour(editedModelColor[i1], newModelColor[i1]);
-            }
-        }
+	public Model getEquipModel(int gender) {
+		int j = maleEquip1;
+		int k = maleEquip2;
+		int l = maleEquip3;
+		if (gender == 1) {
+			j = femaleEquip1;
+			k = femaleEquip2;
+			l = femaleEquip3;
+		}
+		if (j == -1) {
+			return null;
+		}
+		Model model = Model.fetchModel(j);
+		if (k != -1) {
+			if (l != -1) {
+				Model model_1 = Model.fetchModel(k);
+				Model model_3 = Model.fetchModel(l);
+				Model model_1s[] = {model, model_1, model_3};
+				model = new Model(3, model_1s);
+			} else {
+				Model model_2 = Model.fetchModel(k);
+				Model models[] = {model, model_2};
+				model = new Model(2, models);
+			}
+		}
+		//if (j == 62367)
+		//model.translate(68, 7, -8);
+		if (gender == 0 && maleYOffset != 0) {
+			model.translate(0, maleYOffset, 0);
+		} else if (gender == 1 && femaleYOffset != 0) {
+			model.translate(0, femaleYOffset, 0);
+		}
+		if (editedModelColor != null) {
+			for (int i1 = 0; i1 < editedModelColor.length; i1++) {
+				model.recolour(editedModelColor[i1], newModelColor[i1]);
+			}
+		}
 
-        if (colourRedefine > 0)
-    		model.method1337(colourRedefine);
-    		if (colourRedefine2 != 0)
-    		model.method1338(colourRedefine2);
-    		if (colourRedefine3 != 0)
-    		model.method1339(colourRedefine3);
+		if (colourRedefine > 0)
+			model.method1337(colourRedefine);
+		if (colourRedefine2 != 0)
+			model.method1338(colourRedefine2);
+		if (colourRedefine3 != 0)
+			model.method1339(colourRedefine3);
 
 		applyTexturing(model, id);
 
 		return model;
-    }
+	}
 
-    public void setDefaults() {
-        untradeable = false;
-        modelID = 0;
-        name = null;
-        description = null;
-        editedModelColor = null;
-        newModelColor = null;
-        clorDefcode = null;
-        clorDefcodeTo = null;
-        modelZoom = 2000;
-        rotationY = 0;
-        rotationX = 0;
-        modelOffsetX = 0;
-        modelOffset1 = 0;
-        modelOffsetY = 0;
-        stackable = false;
-        value = 0;
-        membersObject = false;
-        groundActions = null;
-        actions = null;
-        maleEquip1 = -1;
-        maleEquip2 = -1;
-        maleYOffset = 0;
-        maleXOffset = 0;
-        femaleEquip1 = -1;
-        femaleEquip2 = -1;
-        femaleYOffset = 0;
-        maleEquip3 = -1;
-        femaleEquip3 = -1;
-        maleDialogue = -1;
-        maleDialogueModel = -1;
-        femaleDialogue = -1;
-        femaleDialogueModel = -1;
-        stackIDs = null;
-        stackAmounts = null;
-        certID = -1;
-        certTemplateID = -1;
-        sizeX = 128;
-        sizeY = 128;
-        sizeZ = 128;
-        shadow = 0;
-        lightness = 0;
-        team = 0;
-        lendID = -1;
-        lentItemID = -1;
-        colourRedefine = 0;
-        colourRedefine2 = 0;
-        colourRedefine3 = 0;
-    }
+	public void setDefaults() {
+		untradeable = false;
+		modelID = 0;
+		name = null;
+		description = null;
+		editedModelColor = null;
+		newModelColor = null;
+		clorDefcode = null;
+		clorDefcodeTo = null;
+		modelZoom = 2000;
+		rotationY = 0;
+		rotationX = 0;
+		modelOffsetX = 0;
+		modelOffset1 = 0;
+		modelOffsetY = 0;
+		stackable = false;
+		value = 0;
+		membersObject = false;
+		groundActions = null;
+		actions = null;
+		maleEquip1 = -1;
+		maleEquip2 = -1;
+		maleYOffset = 0;
+		maleXOffset = 0;
+		femaleEquip1 = -1;
+		femaleEquip2 = -1;
+		femaleYOffset = 0;
+		maleEquip3 = -1;
+		femaleEquip3 = -1;
+		maleDialogue = -1;
+		maleDialogueModel = -1;
+		femaleDialogue = -1;
+		femaleDialogueModel = -1;
+		stackIDs = null;
+		stackAmounts = null;
+		certID = -1;
+		certTemplateID = -1;
+		sizeX = 128;
+		sizeY = 128;
+		sizeZ = 128;
+		shadow = 0;
+		lightness = 0;
+		team = 0;
+		lendID = -1;
+		lentItemID = -1;
+		colourRedefine = 0;
+		colourRedefine2 = 0;
+		colourRedefine3 = 0;
+	}
 
-    public static void unpackConfig(CacheArchive streamLoader) {
-        /*
+	public static void unpackConfig(CacheArchive streamLoader) {
+		/*
 		 * stream = new Stream(FileOperations.ReadFile("./Cache/obj.dat"));
 		 * Stream stream = new
 		 * Stream(FileOperations.ReadFile("./Cache/obj.idx"));
-         */
-        stream = new Stream(streamLoader.getDataForName("obj.dat"));
-        Stream stream = new Stream(streamLoader.getDataForName("obj.idx"));
-        totalItems = stream.readUnsignedWord();
-        streamIndices = new int[totalItems + 1000];
-        System.out.println(totalItems);
-        int i = 2;
-        for (int j = 0; j < totalItems; j++) {
-            streamIndices[j] = i;
-            i += stream.readUnsignedWord();
-        }
-        cache = new ItemDef[10];
-        for (int k = 0; k < 10; k++) {
-            cache[k] = new ItemDef();
-        }
-        setSettings();
-    }
+		 */
+		stream = new Stream(streamLoader.getDataForName("obj.dat"));
+		Stream stream = new Stream(streamLoader.getDataForName("obj.idx"));
+		totalItems = stream.readUnsignedWord();
+		streamIndices = new int[totalItems + 1000];
+		System.out.println(totalItems);
+		int i = 2;
+		for (int j = 0; j < totalItems; j++) {
+			streamIndices[j] = i;
+			i += stream.readUnsignedWord();
+		}
+		cache = new ItemDef[10];
+		for (int k = 0; k < 10; k++) {
+			cache[k] = new ItemDef();
+		}
+		setSettings();
+	}
 
 	public static ItemDef copyRotations(ItemDef itemDef, int id) {
 		ItemDef itemDef2 = ItemDef.forID(id);
@@ -915,8 +915,8 @@ public final class ItemDef {
 		BARROWS_PARTYHAT(1038, new int[] { 926, 0, 0, 0 }, new int[] { 10388, 0, 0, 0 }),  // 19076
 		LIME_PARTYHAT(1038, new int[] { 926, 0, 0, 0 }, new int[] { 17350, 0, 0, 0 }),  // 19077
 		LAVA_PARTYHAT(1038, new int[] { 926, 0, 0, 0 }, new int[] { 6073, 0, 0, 0 }),  // 19078
-		
-		
+
+
 		;
 
 		private int copy;
@@ -927,7 +927,7 @@ public final class ItemDef {
 		private int[] editedModelColor;
 		private int[] originalModelColor;
 		private boolean copyDef;
-		
+
 		CustomItems(int copy, int model, boolean weapon) {
 			this.setCopy(copy);
 			this.setInventory(model);
@@ -935,7 +935,7 @@ public final class ItemDef {
 			this.setMale(model);
 			this.setWeapon(weapon);
 		}
-		
+
 		CustomItems(int copy, int inventory, int wield, boolean weapon) {
 			this.setCopy(copy);
 			this.setInventory(inventory);
@@ -951,7 +951,7 @@ public final class ItemDef {
 			this.setMale(male);
 			this.setWeapon(weapon);
 		}
-		
+
 		CustomItems(int copy, int[] editedModelColor, int[] originalModelColor) {
 			setCopyDef(true);
 			this.setCopy(copy);
@@ -1032,41 +1032,41 @@ public final class ItemDef {
 		}
 		return str;
 	}
-    
-    public static ItemDef forID(int i) {
-        for (int j = 0; j < 10; j++) {
-            if (cache[j].id == i) {
-                return cache[j];
-            }
-        }
-        cacheIndex = (cacheIndex + 1) % 10;
-        ItemDef itemDef = cache[cacheIndex];
-        if (i >= streamIndices.length) {
-            itemDef.id = 1;
-            itemDef.setDefaults();
-            return itemDef;
-        }
-        stream.currentOffset = streamIndices[i];
-        itemDef.id = i;
-        itemDef.setDefaults();
-        itemDef.readValues(stream);
-        if (itemDef.certTemplateID != -1) {
-            itemDef.toNote();
-        }
-        if (itemDef.lentItemID != -1) {
-            itemDef.toLend();
-        }
-        if (itemDef.id == i && itemDef.editedModelColor == null) {
-            itemDef.editedModelColor = new int[1];
-            itemDef.newModelColor = new int[1];
-            itemDef.editedModelColor[0] = 0;
-            itemDef.newModelColor[0] = 1;
-        }
-        if (untradeableItems.contains(itemDef.id)) {
-            itemDef.untradeable = true;
-        }
-        itemDef.value = prices[itemDef.id];
-        int custom_start = 18888;
+
+	public static ItemDef forID(int i) {
+		for (int j = 0; j < 10; j++) {
+			if (cache[j].id == i) {
+				return cache[j];
+			}
+		}
+		cacheIndex = (cacheIndex + 1) % 10;
+		ItemDef itemDef = cache[cacheIndex];
+		if (i >= streamIndices.length) {
+			itemDef.id = 1;
+			itemDef.setDefaults();
+			return itemDef;
+		}
+		stream.currentOffset = streamIndices[i];
+		itemDef.id = i;
+		itemDef.setDefaults();
+		itemDef.readValues(stream);
+		if (itemDef.certTemplateID != -1) {
+			itemDef.toNote();
+		}
+		if (itemDef.lentItemID != -1) {
+			itemDef.toLend();
+		}
+		if (itemDef.id == i && itemDef.editedModelColor == null) {
+			itemDef.editedModelColor = new int[1];
+			itemDef.newModelColor = new int[1];
+			itemDef.editedModelColor[0] = 0;
+			itemDef.newModelColor[0] = 1;
+		}
+		if (untradeableItems.contains(itemDef.id)) {
+			itemDef.untradeable = true;
+		}
+		itemDef.value = prices[itemDef.id];
+		int custom_start = 18888;
 		//System.out.println("Custom items: "+CustomItems.values().length);	
 		for (CustomItems custom : CustomItems.values()) {
 			if (i == custom_start + custom.ordinal()) {
@@ -1084,8 +1084,8 @@ public final class ItemDef {
 					itemDef.maleEquip1 = custom.getMale();
 					itemDef.femaleEquip1 = custom.getFemale();
 				}
-                    itemDef.actions = new String[5];
-                    itemDef.actions[1] = custom.isWeapon() ? "Wield" : "Wear";
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = custom.isWeapon() ? "Wield" : "Wear";
 			}
 		}
 
@@ -1095,708 +1095,708 @@ public final class ItemDef {
 
 
 		}
-        return ItemDef_Jarrod_1.forDef(itemDef, i);
-    }
+		return ItemDef_Athena_1.forDef(itemDef, i);
+	}
 
-    private void readValues(Stream stream) {
-        do {
-            int i = stream.readUnsignedByte();
-            if (i == 0) {
-                return;
-            }
-            if (i == 1) {
-                modelID = stream.readUnsignedWord();
-            } else if (i == 2) {
-                name = stream.readString();
-            } else if (i == 3) {
-                description = stream.readString();
-            } else if (i == 4) {
-                modelZoom = stream.readUnsignedWord();
-            } else if (i == 5) {
-                rotationY = stream.readUnsignedWord();
-            } else if (i == 6) {
-                rotationX = stream.readUnsignedWord();
-            } else if (i == 7) {
-                modelOffset1 = stream.readUnsignedWord();
-                if (modelOffset1 > 32767) {
-                    modelOffset1 -= 0x10000;
-                }
-            } else if (i == 8) {
-                modelOffsetY = stream.readUnsignedWord();
-                if (modelOffsetY > 32767) {
-                    modelOffsetY -= 0x10000;
-                }
-            } else if (i == 10) {
-                stream.readUnsignedWord();
-            } else if (i == 11) {
-                stackable = true;
-            } else if (i == 12) {
-                value = stream.readUnsignedWord();
-            } else if (i == 16) {
-                membersObject = true;
-            } else if (i == 23) {
-                maleEquip1 = stream.readUnsignedWord();
-                maleYOffset = stream.readSignedByte();
-            } else if (i == 24) {
-                maleEquip2 = stream.readUnsignedWord();
-            } else if (i == 25) {
-                femaleEquip1 = stream.readUnsignedWord();
-                femaleYOffset = stream.readSignedByte();
-            } else if (i == 26) {
-                femaleEquip2 = stream.readUnsignedWord();
-            } else if (i >= 30 && i < 35) {
-                if (groundActions == null) {
-                    groundActions = new String[5];
-                }
-                groundActions[i - 30] = stream.readString();
-                if (groundActions[i - 30].equalsIgnoreCase("hidden")) {
-                    groundActions[i - 30] = null;
-                }
-            } else if (i >= 35 && i < 40) {
-                if (actions == null) {
-                    actions = new String[5];
-                }
-                actions[i - 35] = stream.readString();
-                if (actions[i - 35].equalsIgnoreCase("null")) {
-                    actions[i - 35] = null;
-                }
-            } else if (i == 40) {
-                int j = stream.readUnsignedByte();
-                editedModelColor = new int[j];
-                newModelColor = new int[j];
-                for (int k = 0; k < j; k++) {
-                    editedModelColor[k] = stream.readUnsignedWord();
-                    newModelColor[k] = stream.readUnsignedWord();
-                }
-            } else if (i == 78) {
-                maleEquip3 = stream.readUnsignedWord();
-            } else if (i == 79) {
-                femaleEquip3 = stream.readUnsignedWord();
-            } else if (i == 90) {
-                maleDialogue = stream.readUnsignedWord();
-            } else if (i == 91) {
-                femaleDialogue = stream.readUnsignedWord();
-            } else if (i == 92) {
-                maleDialogueModel = stream.readUnsignedWord();
-            } else if (i == 93) {
-                femaleDialogueModel = stream.readUnsignedWord();
-            } else if (i == 95) {
-                modelOffsetX = stream.readUnsignedWord();
-            } else if (i == 97) {
-                certID = stream.readUnsignedWord();
-            } else if (i == 98) {
-                certTemplateID = stream.readUnsignedWord();
-            } else if (i >= 100 && i < 110) {
-                if (stackIDs == null) {
-                    stackIDs = new int[10];
-                    stackAmounts = new int[10];
-                }
-                stackIDs[i - 100] = stream.readUnsignedWord();
-                stackAmounts[i - 100] = stream.readUnsignedWord();
-            } else if (i == 110) {
-                sizeX = stream.readUnsignedWord();
-            } else if (i == 111) {
-                sizeY = stream.readUnsignedWord();
-            } else if (i == 112) {
-                sizeZ = stream.readUnsignedWord();
-            } else if (i == 113) {
-                shadow = stream.readSignedByte();
-            } else if (i == 114) {
-                lightness = stream.readSignedByte() * 5;
-            } else if (i == 115) {
-                team = stream.readUnsignedByte();
-            } else if (i == 116) {
-                lendID = stream.readUnsignedWord();
-            } else if (i == 117) {
-                lentItemID = stream.readUnsignedWord();
-            }
-        } while (true);
-    }
+	private void readValues(Stream stream) {
+		do {
+			int i = stream.readUnsignedByte();
+			if (i == 0) {
+				return;
+			}
+			if (i == 1) {
+				modelID = stream.readUnsignedWord();
+			} else if (i == 2) {
+				name = stream.readString();
+			} else if (i == 3) {
+				description = stream.readString();
+			} else if (i == 4) {
+				modelZoom = stream.readUnsignedWord();
+			} else if (i == 5) {
+				rotationY = stream.readUnsignedWord();
+			} else if (i == 6) {
+				rotationX = stream.readUnsignedWord();
+			} else if (i == 7) {
+				modelOffset1 = stream.readUnsignedWord();
+				if (modelOffset1 > 32767) {
+					modelOffset1 -= 0x10000;
+				}
+			} else if (i == 8) {
+				modelOffsetY = stream.readUnsignedWord();
+				if (modelOffsetY > 32767) {
+					modelOffsetY -= 0x10000;
+				}
+			} else if (i == 10) {
+				stream.readUnsignedWord();
+			} else if (i == 11) {
+				stackable = true;
+			} else if (i == 12) {
+				value = stream.readUnsignedWord();
+			} else if (i == 16) {
+				membersObject = true;
+			} else if (i == 23) {
+				maleEquip1 = stream.readUnsignedWord();
+				maleYOffset = stream.readSignedByte();
+			} else if (i == 24) {
+				maleEquip2 = stream.readUnsignedWord();
+			} else if (i == 25) {
+				femaleEquip1 = stream.readUnsignedWord();
+				femaleYOffset = stream.readSignedByte();
+			} else if (i == 26) {
+				femaleEquip2 = stream.readUnsignedWord();
+			} else if (i >= 30 && i < 35) {
+				if (groundActions == null) {
+					groundActions = new String[5];
+				}
+				groundActions[i - 30] = stream.readString();
+				if (groundActions[i - 30].equalsIgnoreCase("hidden")) {
+					groundActions[i - 30] = null;
+				}
+			} else if (i >= 35 && i < 40) {
+				if (actions == null) {
+					actions = new String[5];
+				}
+				actions[i - 35] = stream.readString();
+				if (actions[i - 35].equalsIgnoreCase("null")) {
+					actions[i - 35] = null;
+				}
+			} else if (i == 40) {
+				int j = stream.readUnsignedByte();
+				editedModelColor = new int[j];
+				newModelColor = new int[j];
+				for (int k = 0; k < j; k++) {
+					editedModelColor[k] = stream.readUnsignedWord();
+					newModelColor[k] = stream.readUnsignedWord();
+				}
+			} else if (i == 78) {
+				maleEquip3 = stream.readUnsignedWord();
+			} else if (i == 79) {
+				femaleEquip3 = stream.readUnsignedWord();
+			} else if (i == 90) {
+				maleDialogue = stream.readUnsignedWord();
+			} else if (i == 91) {
+				femaleDialogue = stream.readUnsignedWord();
+			} else if (i == 92) {
+				maleDialogueModel = stream.readUnsignedWord();
+			} else if (i == 93) {
+				femaleDialogueModel = stream.readUnsignedWord();
+			} else if (i == 95) {
+				modelOffsetX = stream.readUnsignedWord();
+			} else if (i == 97) {
+				certID = stream.readUnsignedWord();
+			} else if (i == 98) {
+				certTemplateID = stream.readUnsignedWord();
+			} else if (i >= 100 && i < 110) {
+				if (stackIDs == null) {
+					stackIDs = new int[10];
+					stackAmounts = new int[10];
+				}
+				stackIDs[i - 100] = stream.readUnsignedWord();
+				stackAmounts[i - 100] = stream.readUnsignedWord();
+			} else if (i == 110) {
+				sizeX = stream.readUnsignedWord();
+			} else if (i == 111) {
+				sizeY = stream.readUnsignedWord();
+			} else if (i == 112) {
+				sizeZ = stream.readUnsignedWord();
+			} else if (i == 113) {
+				shadow = stream.readSignedByte();
+			} else if (i == 114) {
+				lightness = stream.readSignedByte() * 5;
+			} else if (i == 115) {
+				team = stream.readUnsignedByte();
+			} else if (i == 116) {
+				lendID = stream.readUnsignedWord();
+			} else if (i == 117) {
+				lentItemID = stream.readUnsignedWord();
+			}
+		} while (true);
+	}
 
-    public static void setSettings() {
-        try {
-            prices = new int[22694];
-            int index = 0;
-            for (String line : Files.readAllLines(Paths.get(signlink.findcachedir() + "data/data.txt"), Charset.defaultCharset())) {
-                prices[index] = Integer.parseInt(line);
-                index++;
-            }
-            for (int i : UNTRADEABLE_ITEMS) {
-                untradeableItems.add(i);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+	public static void setSettings() {
+		try {
+			prices = new int[22694];
+			int index = 0;
+			for (String line : Files.readAllLines(Paths.get(signlink.findcachedir() + "data/data.txt"), Charset.defaultCharset())) {
+				prices[index] = Integer.parseInt(line);
+				index++;
+			}
+			for (int i : UNTRADEABLE_ITEMS) {
+				untradeableItems.add(i);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
-    public void toNote() {
-        ItemDef itemDef = forID(certTemplateID);
-        modelID = itemDef.modelID;
-        modelZoom = itemDef.modelZoom;
-        rotationY = itemDef.rotationY;
-        rotationX = itemDef.rotationX;
-        modelOffsetX = itemDef.modelOffsetX;
-        modelOffset1 = itemDef.modelOffset1;
-        modelOffsetY = itemDef.modelOffsetY;
-        editedModelColor = itemDef.editedModelColor;
-        newModelColor = itemDef.newModelColor;
-        ItemDef itemDef_1 = forID(certID);
-        name = itemDef_1.name;
-        membersObject = itemDef_1.membersObject;
-        value = itemDef_1.value;
-        String s = "a";
-        char c = itemDef_1.name.charAt(0);
-        if (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U') {
-            s = "an";
-        }
-        description = ("Swap this note at any bank for " + s + " " + itemDef_1.name + ".");
-        stackable = true;
-    }
+	public void toNote() {
+		ItemDef itemDef = forID(certTemplateID);
+		modelID = itemDef.modelID;
+		modelZoom = itemDef.modelZoom;
+		rotationY = itemDef.rotationY;
+		rotationX = itemDef.rotationX;
+		modelOffsetX = itemDef.modelOffsetX;
+		modelOffset1 = itemDef.modelOffset1;
+		modelOffsetY = itemDef.modelOffsetY;
+		editedModelColor = itemDef.editedModelColor;
+		newModelColor = itemDef.newModelColor;
+		ItemDef itemDef_1 = forID(certID);
+		name = itemDef_1.name;
+		membersObject = itemDef_1.membersObject;
+		value = itemDef_1.value;
+		String s = "a";
+		char c = itemDef_1.name.charAt(0);
+		if (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U') {
+			s = "an";
+		}
+		description = ("Swap this note at any bank for " + s + " " + itemDef_1.name + ".");
+		stackable = true;
+	}
 
-    private void toLend() {
-        ItemDef itemDef = forID(lentItemID);
-        actions = new String[5];
-        modelID = itemDef.modelID;
-        modelOffset1 = itemDef.modelOffset1;
-        rotationX = itemDef.rotationX;
-        modelOffsetY = itemDef.modelOffsetY;
-        modelZoom = itemDef.modelZoom;
-        rotationY = itemDef.rotationY;
-        modelOffsetX = itemDef.modelOffsetX;
-        value = 0;
-        ItemDef itemDef_1 = forID(lendID);
-        maleDialogueModel = itemDef_1.maleDialogueModel;
-        editedModelColor = itemDef_1.editedModelColor;
-        clorDefcode= itemDef_1.clorDefcode;
-        clorDefcodeTo= itemDef_1.clorDefcodeTo;
-        maleEquip3 = itemDef_1.maleEquip3;
-        maleEquip2 = itemDef_1.maleEquip2;
-        femaleDialogueModel = itemDef_1.femaleDialogueModel;
-        maleDialogue = itemDef_1.maleDialogue;
-        groundActions = itemDef_1.groundActions;
-        maleEquip1 = itemDef_1.maleEquip1;
-        name = itemDef_1.name;
-        femaleEquip1 = itemDef_1.femaleEquip1;
-        membersObject = itemDef_1.membersObject;
-        femaleDialogue = itemDef_1.femaleDialogue;
-        femaleEquip2 = itemDef_1.femaleEquip2;
-        femaleEquip3 = itemDef_1.femaleEquip3;
-        newModelColor = itemDef_1.newModelColor;
-        team = itemDef_1.team;
-        if (itemDef_1.actions != null) {
+	private void toLend() {
+		ItemDef itemDef = forID(lentItemID);
+		actions = new String[5];
+		modelID = itemDef.modelID;
+		modelOffset1 = itemDef.modelOffset1;
+		rotationX = itemDef.rotationX;
+		modelOffsetY = itemDef.modelOffsetY;
+		modelZoom = itemDef.modelZoom;
+		rotationY = itemDef.rotationY;
+		modelOffsetX = itemDef.modelOffsetX;
+		value = 0;
+		ItemDef itemDef_1 = forID(lendID);
+		maleDialogueModel = itemDef_1.maleDialogueModel;
+		editedModelColor = itemDef_1.editedModelColor;
+		clorDefcode= itemDef_1.clorDefcode;
+		clorDefcodeTo= itemDef_1.clorDefcodeTo;
+		maleEquip3 = itemDef_1.maleEquip3;
+		maleEquip2 = itemDef_1.maleEquip2;
+		femaleDialogueModel = itemDef_1.femaleDialogueModel;
+		maleDialogue = itemDef_1.maleDialogue;
+		groundActions = itemDef_1.groundActions;
+		maleEquip1 = itemDef_1.maleEquip1;
+		name = itemDef_1.name;
+		femaleEquip1 = itemDef_1.femaleEquip1;
+		membersObject = itemDef_1.membersObject;
+		femaleDialogue = itemDef_1.femaleDialogue;
+		femaleEquip2 = itemDef_1.femaleEquip2;
+		femaleEquip3 = itemDef_1.femaleEquip3;
+		newModelColor = itemDef_1.newModelColor;
+		team = itemDef_1.team;
+		if (itemDef_1.actions != null) {
 
-                for (int i_33_ = 0; i_33_ < 4; i_33_++) {
-                    actions[i_33_] = itemDef_1.actions[i_33_];
-            }
-        }
-        actions[4] = "Discard";
-    }
+			for (int i_33_ = 0; i_33_ < 4; i_33_++) {
+				actions[i_33_] = itemDef_1.actions[i_33_];
+			}
+		}
+		actions[4] = "Discard";
+	}
 
-    public static Sprite getSprite(int i, int j, int k, int zoom) {
-        if (k == 0 && zoom != -1) {
-            Sprite sprite = (Sprite) spriteCache.get(i);
-            if (sprite != null && sprite.maxHeight != j && sprite.maxHeight != -1) {
-                sprite.unlink();
-                sprite = null;
-            }
-            if (sprite != null) {
-                return sprite;
-            }
-        }
-        ItemDef itemDef = forID(i);
-        if (itemDef.stackIDs == null) {
-            j = -1;
-        }
-        if (j > 1) {
-            int i1 = -1;
-            for (int j1 = 0; j1 < 10; j1++) {
-                if (j >= itemDef.stackAmounts[j1] && itemDef.stackAmounts[j1] != 0) {
-                    i1 = itemDef.stackIDs[j1];
-                }
-            }
+	public static Sprite getSprite(int i, int j, int k, int zoom) {
+		if (k == 0 && zoom != -1) {
+			Sprite sprite = (Sprite) spriteCache.get(i);
+			if (sprite != null && sprite.maxHeight != j && sprite.maxHeight != -1) {
+				sprite.unlink();
+				sprite = null;
+			}
+			if (sprite != null) {
+				return sprite;
+			}
+		}
+		ItemDef itemDef = forID(i);
+		if (itemDef.stackIDs == null) {
+			j = -1;
+		}
+		if (j > 1) {
+			int i1 = -1;
+			for (int j1 = 0; j1 < 10; j1++) {
+				if (j >= itemDef.stackAmounts[j1] && itemDef.stackAmounts[j1] != 0) {
+					i1 = itemDef.stackIDs[j1];
+				}
+			}
 
-            if (i1 != -1) {
-                itemDef = forID(i1);
-            }
-        }
-        Model model = itemDef.getItemModelFinalised(1);
-        if (model == null) {
-            return null;
-        }
-        Sprite sprite = null;
-        if (itemDef.certTemplateID != -1) {
-            sprite = getSprite(itemDef.certID, 10, -1);
-            if (sprite == null) {
-                return null;
-            }
-        }
-        if (itemDef.lendID != -1) {
-            sprite = getSprite(itemDef.lendID, 50, 0);
-            if (sprite == null) {
-                return null;
-            }
-        }
-        Sprite sprite2 = new Sprite(32, 32);
-        int k1 = Rasterizer.center_x;
-        int l1 = Rasterizer.center_y;
-        int ai[] = Rasterizer.lineOffsets;
-        int ai1[] = DrawingArea.pixels;
-        int i2 = DrawingArea.width;
-        int j2 = DrawingArea.height;
-        int k2 = DrawingArea.topX;
-        int l2 = DrawingArea.bottomX;
-        int i3 = DrawingArea.topY;
-        int j3 = DrawingArea.bottomY;
-        Rasterizer.notTextured = false;
-        DrawingArea.initDrawingArea(32, 32, sprite2.myPixels);
-        DrawingArea.drawPixels(32, 0, 0, 0, 32);
-        Rasterizer.setDefaultBounds();
-        int k3 = itemDef.modelZoom;
-        if (zoom != -1 && zoom != 0) {
-            k3 = (itemDef.modelZoom * 100) / zoom;
-        }
-        if (k == -1) {
-            k3 = (int) ((double) k3 * 1.5D);
-        }
-        if (k > 0) {
-            k3 = (int) ((double) k3 * 1.04D);
-        }
-        int l3 = Rasterizer.SINE[itemDef.rotationY] * k3 >> 16;
-        int i4 = Rasterizer.COSINE[itemDef.rotationY] * k3 >> 16;
-        model.renderSingle(itemDef.rotationX, itemDef.modelOffsetX, itemDef.rotationY, itemDef.modelOffset1, l3 + model.modelHeight / 2 + itemDef.modelOffsetY, i4 + itemDef.modelOffsetY);
-        for (int i5 = 31; i5 >= 0; i5--) {
-            for (int j4 = 31; j4 >= 0; j4--) {
-                if (sprite2.myPixels[i5 + j4 * 32] != 0) {
-                    continue;
-                }
-                if (i5 > 0 && sprite2.myPixels[(i5 - 1) + j4 * 32] > 1) {
-                    sprite2.myPixels[i5 + j4 * 32] = 1;
-                    continue;
-                }
-                if (j4 > 0 && sprite2.myPixels[i5 + (j4 - 1) * 32] > 1) {
-                    sprite2.myPixels[i5 + j4 * 32] = 1;
-                    continue;
-                }
-                if (i5 < 31 && sprite2.myPixels[i5 + 1 + j4 * 32] > 1) {
-                    sprite2.myPixels[i5 + j4 * 32] = 1;
-                    continue;
-                }
-                if (j4 < 31 && sprite2.myPixels[i5 + (j4 + 1) * 32] > 1) {
-                    sprite2.myPixels[i5 + j4 * 32] = 1;
-                }
-            }
+			if (i1 != -1) {
+				itemDef = forID(i1);
+			}
+		}
+		Model model = itemDef.getItemModelFinalised(1);
+		if (model == null) {
+			return null;
+		}
+		Sprite sprite = null;
+		if (itemDef.certTemplateID != -1) {
+			sprite = getSprite(itemDef.certID, 10, -1);
+			if (sprite == null) {
+				return null;
+			}
+		}
+		if (itemDef.lendID != -1) {
+			sprite = getSprite(itemDef.lendID, 50, 0);
+			if (sprite == null) {
+				return null;
+			}
+		}
+		Sprite sprite2 = new Sprite(32, 32);
+		int k1 = Rasterizer.center_x;
+		int l1 = Rasterizer.center_y;
+		int ai[] = Rasterizer.lineOffsets;
+		int ai1[] = DrawingArea.pixels;
+		int i2 = DrawingArea.width;
+		int j2 = DrawingArea.height;
+		int k2 = DrawingArea.topX;
+		int l2 = DrawingArea.bottomX;
+		int i3 = DrawingArea.topY;
+		int j3 = DrawingArea.bottomY;
+		Rasterizer.notTextured = false;
+		DrawingArea.initDrawingArea(32, 32, sprite2.myPixels);
+		DrawingArea.drawPixels(32, 0, 0, 0, 32);
+		Rasterizer.setDefaultBounds();
+		int k3 = itemDef.modelZoom;
+		if (zoom != -1 && zoom != 0) {
+			k3 = (itemDef.modelZoom * 100) / zoom;
+		}
+		if (k == -1) {
+			k3 = (int) ((double) k3 * 1.5D);
+		}
+		if (k > 0) {
+			k3 = (int) ((double) k3 * 1.04D);
+		}
+		int l3 = Rasterizer.SINE[itemDef.rotationY] * k3 >> 16;
+		int i4 = Rasterizer.COSINE[itemDef.rotationY] * k3 >> 16;
+		model.renderSingle(itemDef.rotationX, itemDef.modelOffsetX, itemDef.rotationY, itemDef.modelOffset1, l3 + model.modelHeight / 2 + itemDef.modelOffsetY, i4 + itemDef.modelOffsetY);
+		for (int i5 = 31; i5 >= 0; i5--) {
+			for (int j4 = 31; j4 >= 0; j4--) {
+				if (sprite2.myPixels[i5 + j4 * 32] != 0) {
+					continue;
+				}
+				if (i5 > 0 && sprite2.myPixels[(i5 - 1) + j4 * 32] > 1) {
+					sprite2.myPixels[i5 + j4 * 32] = 1;
+					continue;
+				}
+				if (j4 > 0 && sprite2.myPixels[i5 + (j4 - 1) * 32] > 1) {
+					sprite2.myPixels[i5 + j4 * 32] = 1;
+					continue;
+				}
+				if (i5 < 31 && sprite2.myPixels[i5 + 1 + j4 * 32] > 1) {
+					sprite2.myPixels[i5 + j4 * 32] = 1;
+					continue;
+				}
+				if (j4 < 31 && sprite2.myPixels[i5 + (j4 + 1) * 32] > 1) {
+					sprite2.myPixels[i5 + j4 * 32] = 1;
+				}
+			}
 
-        }
+		}
 
-        if (k > 0) {
-            for (int j5 = 31; j5 >= 0; j5--) {
-                for (int k4 = 31; k4 >= 0; k4--) {
-                    if (sprite2.myPixels[j5 + k4 * 32] != 0) {
-                        continue;
-                    }
-                    if (j5 > 0 && sprite2.myPixels[(j5 - 1) + k4 * 32] == 1) {
-                        sprite2.myPixels[j5 + k4 * 32] = k;
-                        continue;
-                    }
-                    if (k4 > 0 && sprite2.myPixels[j5 + (k4 - 1) * 32] == 1) {
-                        sprite2.myPixels[j5 + k4 * 32] = k;
-                        continue;
-                    }
-                    if (j5 < 31 && sprite2.myPixels[j5 + 1 + k4 * 32] == 1) {
-                        sprite2.myPixels[j5 + k4 * 32] = k;
-                        continue;
-                    }
-                    if (k4 < 31 && sprite2.myPixels[j5 + (k4 + 1) * 32] == 1) {
-                        sprite2.myPixels[j5 + k4 * 32] = k;
-                    }
-                }
+		if (k > 0) {
+			for (int j5 = 31; j5 >= 0; j5--) {
+				for (int k4 = 31; k4 >= 0; k4--) {
+					if (sprite2.myPixels[j5 + k4 * 32] != 0) {
+						continue;
+					}
+					if (j5 > 0 && sprite2.myPixels[(j5 - 1) + k4 * 32] == 1) {
+						sprite2.myPixels[j5 + k4 * 32] = k;
+						continue;
+					}
+					if (k4 > 0 && sprite2.myPixels[j5 + (k4 - 1) * 32] == 1) {
+						sprite2.myPixels[j5 + k4 * 32] = k;
+						continue;
+					}
+					if (j5 < 31 && sprite2.myPixels[j5 + 1 + k4 * 32] == 1) {
+						sprite2.myPixels[j5 + k4 * 32] = k;
+						continue;
+					}
+					if (k4 < 31 && sprite2.myPixels[j5 + (k4 + 1) * 32] == 1) {
+						sprite2.myPixels[j5 + k4 * 32] = k;
+					}
+				}
 
-            }
+			}
 
-        } else if (k == 0) {
-            for (int k5 = 31; k5 >= 0; k5--) {
-                for (int l4 = 31; l4 >= 0; l4--) {
-                    if (sprite2.myPixels[k5 + l4 * 32] == 0 && k5 > 0 && l4 > 0 && sprite2.myPixels[(k5 - 1) + (l4 - 1) * 32] > 0) {
-                        sprite2.myPixels[k5 + l4 * 32] = 0x302020;
-                    }
-                }
+		} else if (k == 0) {
+			for (int k5 = 31; k5 >= 0; k5--) {
+				for (int l4 = 31; l4 >= 0; l4--) {
+					if (sprite2.myPixels[k5 + l4 * 32] == 0 && k5 > 0 && l4 > 0 && sprite2.myPixels[(k5 - 1) + (l4 - 1) * 32] > 0) {
+						sprite2.myPixels[k5 + l4 * 32] = 0x302020;
+					}
+				}
 
-            }
+			}
 
-        }
-        if (itemDef.certTemplateID != -1) {
-            int l5 = sprite.maxWidth;
-            int j6 = sprite.maxHeight;
-            sprite.maxWidth = 32;
-            sprite.maxHeight = 32;
-            sprite.drawSprite(0, 0);
-            sprite.maxWidth = l5;
-            sprite.maxHeight = j6;
-        }
-        if (itemDef.lendID != -1) {
-            int l5 = sprite.maxWidth;
-            int j6 = sprite.maxHeight;
-            sprite.maxWidth = 32;
-            sprite.maxHeight = 32;
-            sprite.drawSprite(0, 0);
-            sprite.maxWidth = l5;
-            sprite.maxHeight = j6;
-        }
-        if (k == 0) {
-            spriteCache.put(sprite2, i);
-        }
-        DrawingArea.initDrawingArea(j2, i2, ai1);
-        DrawingArea.setDrawingArea(j3, k2, l2, i3);
-        Rasterizer.center_x = k1;
-        Rasterizer.center_y = l1;
-        Rasterizer.lineOffsets = ai;
-        Rasterizer.notTextured = true;
-        sprite2.maxWidth = itemDef.stackable ? 33 : 32;
-        sprite2.maxHeight = j;
-        return sprite2;
-    }
+		}
+		if (itemDef.certTemplateID != -1) {
+			int l5 = sprite.maxWidth;
+			int j6 = sprite.maxHeight;
+			sprite.maxWidth = 32;
+			sprite.maxHeight = 32;
+			sprite.drawSprite(0, 0);
+			sprite.maxWidth = l5;
+			sprite.maxHeight = j6;
+		}
+		if (itemDef.lendID != -1) {
+			int l5 = sprite.maxWidth;
+			int j6 = sprite.maxHeight;
+			sprite.maxWidth = 32;
+			sprite.maxHeight = 32;
+			sprite.drawSprite(0, 0);
+			sprite.maxWidth = l5;
+			sprite.maxHeight = j6;
+		}
+		if (k == 0) {
+			spriteCache.put(sprite2, i);
+		}
+		DrawingArea.initDrawingArea(j2, i2, ai1);
+		DrawingArea.setDrawingArea(j3, k2, l2, i3);
+		Rasterizer.center_x = k1;
+		Rasterizer.center_y = l1;
+		Rasterizer.lineOffsets = ai;
+		Rasterizer.notTextured = true;
+		sprite2.maxWidth = itemDef.stackable ? 33 : 32;
+		sprite2.maxHeight = j;
+		return sprite2;
+	}
 
-    public static void printItem(int mobId) {
-        /*Print out Grain*/
-        ItemDef dump = ItemDef.forID(mobId);
-        if (dump.name != null) {
-            System.out.println("Dumping: "+dump.name);
-        } else {
-            System.out.println("MobDefinition.get("+mobId+").name == null");
-        }
-                System.out.println("Male Model1: " + dump.maleEquip1);
-                System.out.println("Male Model2: " + dump.maleEquip2);
-                System.out.println("Male Model3: " + dump.maleEquip3);
-                System.out.println("Female Model1: " + dump.femaleEquip1);
-                System.out.println("Female Model2: " + dump.femaleEquip2);
-                System.out.println("Female Model3: " + dump.femaleEquip3);
-    }
+	public static void printItem(int mobId) {
+		/*Print out Grain*/
+		ItemDef dump = ItemDef.forID(mobId);
+		if (dump.name != null) {
+			System.out.println("Dumping: "+dump.name);
+		} else {
+			System.out.println("MobDefinition.get("+mobId+").name == null");
+		}
+		System.out.println("Male Model1: " + dump.maleEquip1);
+		System.out.println("Male Model2: " + dump.maleEquip2);
+		System.out.println("Male Model3: " + dump.maleEquip3);
+		System.out.println("Female Model1: " + dump.femaleEquip1);
+		System.out.println("Female Model2: " + dump.femaleEquip2);
+		System.out.println("Female Model3: " + dump.femaleEquip3);
+	}
 
-    public static Sprite getSprite(int i, int j, int k) {
+	public static Sprite getSprite(int i, int j, int k) {
 
-    	//switch(i) {
+		//switch(i) {
 		//	case 688:
 		//	case 689:
 		//	case 690:
 		//		return Client.spriteCache.get(1250);
 		//
 		//}
-        ItemDef itemDef = forID(i);
-        if (itemDef.stackIDs == null) {
-            j = -1;
-        }
-        if (j > 1) {
-            int i1 = -1;
-            for (int j1 = 0; j1 < 10; j1++) {
-                if (j >= itemDef.stackAmounts[j1] && itemDef.stackAmounts[j1] != 0) {
-                    i1 = itemDef.stackIDs[j1];
-                }
-            }
-            if (i1 != -1) {
-                itemDef = forID(i1);
-            }
-        }
-        Model model = itemDef.getItemModelFinalised(1);
-        if (model == null) {
-            return null;
-        }
-        Sprite sprite = null;
-        if (itemDef.certTemplateID != -1) {
-            sprite = getSprite(itemDef.certID, 10, -1);
-            if (sprite == null) {
-                return null;
-            }
-        }
-        if (itemDef.lentItemID != -1) {
-            sprite = getSprite(itemDef.lendID, 50, 0);
-            if (sprite == null) {
-                return null;
-            }
-        }
-        Sprite sprite2 = new Sprite(32, 32);
-        int k1 = Rasterizer.center_x;
-        int l1 = Rasterizer.center_y;
-        int ai[] = Rasterizer.lineOffsets;
-        int ai1[] = DrawingArea.pixels;
-        int i2 = DrawingArea.width;
-        int j2 = DrawingArea.height;
-        int k2 = DrawingArea.topX;
-        int l2 = DrawingArea.bottomX;
-        int i3 = DrawingArea.topY;
-        int j3 = DrawingArea.bottomY;
-        Rasterizer.notTextured = false;
-        DrawingArea.initDrawingArea(32, 32, sprite2.myPixels);
-        DrawingArea.drawPixels(32, 0, 0, 0, 32);
-        Rasterizer.setDefaultBounds();
-        int k3 = itemDef.modelZoom;
-        if (k == -1) {
-            k3 = (int) ((double) k3 * 1.5D);
-        }
-        if (k > 0) {
-            k3 = (int) ((double) k3 * 1.04D);
-        }
-        int l3 = Rasterizer.SINE[itemDef.rotationY] * k3 >> 16;
-        int i4 = Rasterizer.COSINE[itemDef.rotationY] * k3 >> 16;
-        model.renderSingle(itemDef.rotationX, itemDef.modelOffsetX, itemDef.rotationY, itemDef.modelOffset1, l3 + model.modelHeight / 2 + itemDef.modelOffsetY, i4 + itemDef.modelOffsetY);
-        for (int i5 = 31; i5 >= 0; i5--) {
-            for (int j4 = 31; j4 >= 0; j4--) {
-                if (sprite2.myPixels[i5 + j4 * 32] == 0) {
-                    if (i5 > 0 && sprite2.myPixels[(i5 - 1) + j4 * 32] > 1) {
-                        sprite2.myPixels[i5 + j4 * 32] = 1;
-                    } else if (j4 > 0 && sprite2.myPixels[i5 + (j4 - 1) * 32] > 1) {
-                        sprite2.myPixels[i5 + j4 * 32] = 1;
-                    } else if (i5 < 31 && sprite2.myPixels[i5 + 1 + j4 * 32] > 1) {
-                        sprite2.myPixels[i5 + j4 * 32] = 1;
-                    } else if (j4 < 31 && sprite2.myPixels[i5 + (j4 + 1) * 32] > 1) {
-                        sprite2.myPixels[i5 + j4 * 32] = 1;
-                    }
-                }
-            }
-        }
-        if (k > 0) {
-            for (int j5 = 31; j5 >= 0; j5--) {
-                for (int k4 = 31; k4 >= 0; k4--) {
-                    if (sprite2.myPixels[j5 + k4 * 32] == 0) {
-                        if (j5 > 0 && sprite2.myPixels[(j5 - 1) + k4 * 32] == 1) {
-                            sprite2.myPixels[j5 + k4 * 32] = k;
-                        } else if (k4 > 0 && sprite2.myPixels[j5 + (k4 - 1) * 32] == 1) {
-                            sprite2.myPixels[j5 + k4 * 32] = k;
-                        } else if (j5 < 31 && sprite2.myPixels[j5 + 1 + k4 * 32] == 1) {
-                            sprite2.myPixels[j5 + k4 * 32] = k;
-                        } else if (k4 < 31 && sprite2.myPixels[j5 + (k4 + 1) * 32] == 1) {
-                            sprite2.myPixels[j5 + k4 * 32] = k;
-                        }
-                    }
-                }
-            }
-        } else if (k == 0) {
-            for (int k5 = 31; k5 >= 0; k5--) {
-                for (int l4 = 31; l4 >= 0; l4--) {
-                    if (sprite2.myPixels[k5 + l4 * 32] == 0 && k5 > 0 && l4 > 0 && sprite2.myPixels[(k5 - 1) + (l4 - 1) * 32] > 0) {
-                        sprite2.myPixels[k5 + l4 * 32] = 0x302020;
-                    }
-                }
-            }
-        }
-        if (itemDef.certTemplateID != -1) {
-            int l5 = sprite.maxWidth;
-            int j6 = sprite.maxHeight;
-            sprite.maxWidth = 32;
-            sprite.maxHeight = 32;
-            sprite.drawSprite(0, 0);
-            sprite.maxWidth = l5;
-            sprite.maxHeight = j6;
-        }
-        if (itemDef.lentItemID != -1) {
-            int l5 = sprite.maxWidth;
-            int j6 = sprite.maxHeight;
-            sprite.maxWidth = 32;
-            sprite.maxHeight = 32;
-            sprite.drawSprite(0, 0);
-            sprite.maxWidth = l5;
-            sprite.maxHeight = j6;
-        }
-        if (k == 0) {
-            spriteCache.put(sprite2, i);
-        }
-        DrawingArea.initDrawingArea(j2, i2, ai1);
-        DrawingArea.setDrawingArea(j3, k2, l2, i3);
-        Rasterizer.center_x = k1;
-        Rasterizer.center_y = l1;
-        Rasterizer.lineOffsets = ai;
-        Rasterizer.notTextured = true;
-        if (itemDef.stackable) {
-            sprite2.maxWidth = 33;
-        } else {
-            sprite2.maxWidth = 32;
-        }
-        sprite2.maxHeight = j;
-        return sprite2;
-    }
+		ItemDef itemDef = forID(i);
+		if (itemDef.stackIDs == null) {
+			j = -1;
+		}
+		if (j > 1) {
+			int i1 = -1;
+			for (int j1 = 0; j1 < 10; j1++) {
+				if (j >= itemDef.stackAmounts[j1] && itemDef.stackAmounts[j1] != 0) {
+					i1 = itemDef.stackIDs[j1];
+				}
+			}
+			if (i1 != -1) {
+				itemDef = forID(i1);
+			}
+		}
+		Model model = itemDef.getItemModelFinalised(1);
+		if (model == null) {
+			return null;
+		}
+		Sprite sprite = null;
+		if (itemDef.certTemplateID != -1) {
+			sprite = getSprite(itemDef.certID, 10, -1);
+			if (sprite == null) {
+				return null;
+			}
+		}
+		if (itemDef.lentItemID != -1) {
+			sprite = getSprite(itemDef.lendID, 50, 0);
+			if (sprite == null) {
+				return null;
+			}
+		}
+		Sprite sprite2 = new Sprite(32, 32);
+		int k1 = Rasterizer.center_x;
+		int l1 = Rasterizer.center_y;
+		int ai[] = Rasterizer.lineOffsets;
+		int ai1[] = DrawingArea.pixels;
+		int i2 = DrawingArea.width;
+		int j2 = DrawingArea.height;
+		int k2 = DrawingArea.topX;
+		int l2 = DrawingArea.bottomX;
+		int i3 = DrawingArea.topY;
+		int j3 = DrawingArea.bottomY;
+		Rasterizer.notTextured = false;
+		DrawingArea.initDrawingArea(32, 32, sprite2.myPixels);
+		DrawingArea.drawPixels(32, 0, 0, 0, 32);
+		Rasterizer.setDefaultBounds();
+		int k3 = itemDef.modelZoom;
+		if (k == -1) {
+			k3 = (int) ((double) k3 * 1.5D);
+		}
+		if (k > 0) {
+			k3 = (int) ((double) k3 * 1.04D);
+		}
+		int l3 = Rasterizer.SINE[itemDef.rotationY] * k3 >> 16;
+		int i4 = Rasterizer.COSINE[itemDef.rotationY] * k3 >> 16;
+		model.renderSingle(itemDef.rotationX, itemDef.modelOffsetX, itemDef.rotationY, itemDef.modelOffset1, l3 + model.modelHeight / 2 + itemDef.modelOffsetY, i4 + itemDef.modelOffsetY);
+		for (int i5 = 31; i5 >= 0; i5--) {
+			for (int j4 = 31; j4 >= 0; j4--) {
+				if (sprite2.myPixels[i5 + j4 * 32] == 0) {
+					if (i5 > 0 && sprite2.myPixels[(i5 - 1) + j4 * 32] > 1) {
+						sprite2.myPixels[i5 + j4 * 32] = 1;
+					} else if (j4 > 0 && sprite2.myPixels[i5 + (j4 - 1) * 32] > 1) {
+						sprite2.myPixels[i5 + j4 * 32] = 1;
+					} else if (i5 < 31 && sprite2.myPixels[i5 + 1 + j4 * 32] > 1) {
+						sprite2.myPixels[i5 + j4 * 32] = 1;
+					} else if (j4 < 31 && sprite2.myPixels[i5 + (j4 + 1) * 32] > 1) {
+						sprite2.myPixels[i5 + j4 * 32] = 1;
+					}
+				}
+			}
+		}
+		if (k > 0) {
+			for (int j5 = 31; j5 >= 0; j5--) {
+				for (int k4 = 31; k4 >= 0; k4--) {
+					if (sprite2.myPixels[j5 + k4 * 32] == 0) {
+						if (j5 > 0 && sprite2.myPixels[(j5 - 1) + k4 * 32] == 1) {
+							sprite2.myPixels[j5 + k4 * 32] = k;
+						} else if (k4 > 0 && sprite2.myPixels[j5 + (k4 - 1) * 32] == 1) {
+							sprite2.myPixels[j5 + k4 * 32] = k;
+						} else if (j5 < 31 && sprite2.myPixels[j5 + 1 + k4 * 32] == 1) {
+							sprite2.myPixels[j5 + k4 * 32] = k;
+						} else if (k4 < 31 && sprite2.myPixels[j5 + (k4 + 1) * 32] == 1) {
+							sprite2.myPixels[j5 + k4 * 32] = k;
+						}
+					}
+				}
+			}
+		} else if (k == 0) {
+			for (int k5 = 31; k5 >= 0; k5--) {
+				for (int l4 = 31; l4 >= 0; l4--) {
+					if (sprite2.myPixels[k5 + l4 * 32] == 0 && k5 > 0 && l4 > 0 && sprite2.myPixels[(k5 - 1) + (l4 - 1) * 32] > 0) {
+						sprite2.myPixels[k5 + l4 * 32] = 0x302020;
+					}
+				}
+			}
+		}
+		if (itemDef.certTemplateID != -1) {
+			int l5 = sprite.maxWidth;
+			int j6 = sprite.maxHeight;
+			sprite.maxWidth = 32;
+			sprite.maxHeight = 32;
+			sprite.drawSprite(0, 0);
+			sprite.maxWidth = l5;
+			sprite.maxHeight = j6;
+		}
+		if (itemDef.lentItemID != -1) {
+			int l5 = sprite.maxWidth;
+			int j6 = sprite.maxHeight;
+			sprite.maxWidth = 32;
+			sprite.maxHeight = 32;
+			sprite.drawSprite(0, 0);
+			sprite.maxWidth = l5;
+			sprite.maxHeight = j6;
+		}
+		if (k == 0) {
+			spriteCache.put(sprite2, i);
+		}
+		DrawingArea.initDrawingArea(j2, i2, ai1);
+		DrawingArea.setDrawingArea(j3, k2, l2, i3);
+		Rasterizer.center_x = k1;
+		Rasterizer.center_y = l1;
+		Rasterizer.lineOffsets = ai;
+		Rasterizer.notTextured = true;
+		if (itemDef.stackable) {
+			sprite2.maxWidth = 33;
+		} else {
+			sprite2.maxWidth = 32;
+		}
+		sprite2.maxHeight = j;
+		return sprite2;
+	}
 
-    public Model getItemModelFinalised(int amount) {
-        if (stackIDs != null && amount > 1) {
-            int stackId = -1;
-            for (int k = 0; k < 10; k++) {
-                if (amount >= stackAmounts[k] && stackAmounts[k] != 0) {
-                    stackId = stackIDs[k];
-                }
-            }
-            if (stackId != -1) {
-                return forID(stackId).getItemModelFinalised(1);
-            }
-        }
-        Model model = (Model) modelCache.get(id);
-        if (model != null) {
-            return model;
-        }
-        model = Model.fetchModel(modelID);
-        if (model == null) {
-            return null;
-        }
-        if (sizeX != 128 || sizeY != 128 || sizeZ != 128) {
-            model.scaleT(sizeX, sizeZ, sizeY);
-        }
-        if (editedModelColor != null) {
+	public Model getItemModelFinalised(int amount) {
+		if (stackIDs != null && amount > 1) {
+			int stackId = -1;
+			for (int k = 0; k < 10; k++) {
+				if (amount >= stackAmounts[k] && stackAmounts[k] != 0) {
+					stackId = stackIDs[k];
+				}
+			}
+			if (stackId != -1) {
+				return forID(stackId).getItemModelFinalised(1);
+			}
+		}
+		Model model = (Model) modelCache.get(id);
+		if (model != null) {
+			return model;
+		}
+		model = Model.fetchModel(modelID);
+		if (model == null) {
+			return null;
+		}
+		if (sizeX != 128 || sizeY != 128 || sizeZ != 128) {
+			model.scaleT(sizeX, sizeZ, sizeY);
+		}
+		if (editedModelColor != null) {
 			for (int l = 0; l < editedModelColor.length; l++) {
 				model.recolour(editedModelColor[l], newModelColor[l]);
 			}
 		}
 
-        if (colourRedefine > 0)
-    		model.method1337(colourRedefine);
-    		if (colourRedefine2 != 0)
-    		model.method1338(colourRedefine2);
-    		if (colourRedefine3 != 0)
-    		model.method1339(colourRedefine3);
-    		modelCache.put(model, id);
+		if (colourRedefine > 0)
+			model.method1337(colourRedefine);
+		if (colourRedefine2 != 0)
+			model.method1338(colourRedefine2);
+		if (colourRedefine3 != 0)
+			model.method1339(colourRedefine3);
+		modelCache.put(model, id);
 
 		applyTexturing(model, id);
 
 		model.light(64 + shadow, 768 + lightness, -50, -10, -50, true);
-        model.rendersWithinOneTile = true;
-        modelCache.put(model, id);
-        return model;
-    }
-    
-    public static String itemModels(int itemID) {
-    	int inv = forID(itemID).modelID;
-    	int male = forID(itemID).maleEquip1;
-    	int female = forID(itemID).femaleEquip1;
-    	String name = forID(itemID).name;
-    	return "<col=225>"+name+"</col> (<col=800000000>"+itemID+"</col>) - [inv: <col=800000000>"+inv+"</col>] - [male: <col=800000000>"+male+"</col>] - [female: <col=800000000>"+female+"</col>]";
-    }
+		model.rendersWithinOneTile = true;
+		modelCache.put(model, id);
+		return model;
+	}
 
-    public Model getItemModel(int i) {
-        if (stackIDs != null && i > 1) {
-            int j = -1;
-            for (int k = 0; k < 10; k++) {
-                if (i >= stackAmounts[k] && stackAmounts[k] != 0) {
-                    j = stackIDs[k];
-                }
-            }
-            if (j != -1) {
-                return forID(j).getItemModel(1);
-            }
-        }
-        Model model = Model.fetchModel(modelID);
-        if (model == null) {
-            return null;
-        }
-        if (editedModelColor != null) {
-            for (int l = 0; l < editedModelColor.length; l++) {
-                model.recolour(editedModelColor[l], newModelColor[l]);
-            }
-        }
+	public static String itemModels(int itemID) {
+		int inv = forID(itemID).modelID;
+		int male = forID(itemID).maleEquip1;
+		int female = forID(itemID).femaleEquip1;
+		String name = forID(itemID).name;
+		return "<col=225>"+name+"</col> (<col=800000000>"+itemID+"</col>) - [inv: <col=800000000>"+inv+"</col>] - [male: <col=800000000>"+male+"</col>] - [female: <col=800000000>"+female+"</col>]";
+	}
 
-        if (colourRedefine > 0)
-    		model.method1337(colourRedefine);
-    		if (colourRedefine2 != 0)
-    		model.method1338(colourRedefine2);
-    		if (colourRedefine3 != 0)
-    		model.method1339(colourRedefine3);
+	public Model getItemModel(int i) {
+		if (stackIDs != null && i > 1) {
+			int j = -1;
+			for (int k = 0; k < 10; k++) {
+				if (i >= stackAmounts[k] && stackAmounts[k] != 0) {
+					j = stackIDs[k];
+				}
+			}
+			if (j != -1) {
+				return forID(j).getItemModel(1);
+			}
+		}
+		Model model = Model.fetchModel(modelID);
+		if (model == null) {
+			return null;
+		}
+		if (editedModelColor != null) {
+			for (int l = 0; l < editedModelColor.length; l++) {
+				model.recolour(editedModelColor[l], newModelColor[l]);
+			}
+		}
+
+		if (colourRedefine > 0)
+			model.method1337(colourRedefine);
+		if (colourRedefine2 != 0)
+			model.method1338(colourRedefine2);
+		if (colourRedefine3 != 0)
+			model.method1339(colourRedefine3);
 
 
 		applyTexturing(model, id);
 
 		return model;
-    }
+	}
 
-    public static final int[] UNTRADEABLE_ITEMS
-            = {13661, 13262,
-                6950, 1464, 2996, 2677, 2678, 2679, 2680, 2682,
-                2683, 2684, 2685, 2686, 2687, 2688, 2689, 2690,
-                6570, 12158, 12159, 12160, 12163, 12161, 12162,
-                19143, 19149, 19146, 19157, 19162, 19152, 4155,
-                8850, 10551, 8839, 8840, 8842, 11663, 11664,
-                11665, 3842, 3844, 3840, 8844, 8845, 8846, 8847,
-                8848, 8849, 8850, 10551, 7462, 7461, 7460,
-                7459, 7458, 7457, 7456, 7455, 7454, 7453, 8839,
-                8840, 8842, 11663, 11664, 11665, 10499, 9748,
-                9754, 9751, 9769, 9757, 9760, 9763, 9802, 9808,
-                9784, 9799, 9805, 9781, 9796, 9793, 9775, 9772,
-                9778, 9787, 9811, 9766, 9749, 9755, 9752, 9770,
-                9758, 9761, 9764, 9803, 9809, 9785, 9800, 9806,
-                9782, 9797, 9794, 9776, 9773, 9779, 9788, 9812,
-                9767, 9747, 9753, 9750, 9768, 9756, 9759, 9762,
-                9801, 9807, 9783, 9798, 9804, 9780, 9795, 9792,
-                9774, 9771, 9777, 9786, 9810, 9765, 9948, 9949,
-                9950, 12169, 12170, 12171, 20671, 14641, 14642,
-                6188, 10954, 10956, 10958,
-                3057, 3058, 3059, 3060, 3061,
-                7594, 7592, 7593, 7595, 7596,
-                14076, 14077, 14081,
-                10840, 10836, 6858, 6859, 10837, 10838, 10839,
-                9925, 9924, 9923, 9922, 9921,
-                4084, 4565, 20046, 20044, 20045,
-                1050, 14595, 14603, 14602, 14605, 11789,
-                19708, 19706, 19707,
-                4860, 4866, 4872, 4878, 4884, 4896, 4890, 4896, 4902,
-                4932, 4938, 4944, 4950, 4908, 4914, 4920, 4926, 4956,
-                4926, 4968, 4994, 4980, 4986, 4992, 4998,
-                18778, 18779, 18780, 18781,
-                13450, 13444, 13405, 15502,
-                10548, 10549, 10550, 10551, 10555, 10552, 10553, 2412, 2413, 2414,
-                20747,
-                18365, 18373, 18371, 15246, 12964, 12971, 12978, 14017,
-                757, 8851,
-                13855, 13848, 13857, 13856, 13854, 13853, 13852, 13851, 13850, 5509, 13653, 14021, 14020, 19111, 14019, 14022,
-                19785, 19786, 18782, 18351, 18349, 18353, 18357, 18355, 18359, 18335
-            };
+	public static final int[] UNTRADEABLE_ITEMS
+			= {13661, 13262,
+			6950, 1464, 2996, 2677, 2678, 2679, 2680, 2682,
+			2683, 2684, 2685, 2686, 2687, 2688, 2689, 2690,
+			6570, 12158, 12159, 12160, 12163, 12161, 12162,
+			19143, 19149, 19146, 19157, 19162, 19152, 4155,
+			8850, 10551, 8839, 8840, 8842, 11663, 11664,
+			11665, 3842, 3844, 3840, 8844, 8845, 8846, 8847,
+			8848, 8849, 8850, 10551, 7462, 7461, 7460,
+			7459, 7458, 7457, 7456, 7455, 7454, 7453, 8839,
+			8840, 8842, 11663, 11664, 11665, 10499, 9748,
+			9754, 9751, 9769, 9757, 9760, 9763, 9802, 9808,
+			9784, 9799, 9805, 9781, 9796, 9793, 9775, 9772,
+			9778, 9787, 9811, 9766, 9749, 9755, 9752, 9770,
+			9758, 9761, 9764, 9803, 9809, 9785, 9800, 9806,
+			9782, 9797, 9794, 9776, 9773, 9779, 9788, 9812,
+			9767, 9747, 9753, 9750, 9768, 9756, 9759, 9762,
+			9801, 9807, 9783, 9798, 9804, 9780, 9795, 9792,
+			9774, 9771, 9777, 9786, 9810, 9765, 9948, 9949,
+			9950, 12169, 12170, 12171, 20671, 14641, 14642,
+			6188, 10954, 10956, 10958,
+			3057, 3058, 3059, 3060, 3061,
+			7594, 7592, 7593, 7595, 7596,
+			14076, 14077, 14081,
+			10840, 10836, 6858, 6859, 10837, 10838, 10839,
+			9925, 9924, 9923, 9922, 9921,
+			4084, 4565, 20046, 20044, 20045,
+			1050, 14595, 14603, 14602, 14605, 11789,
+			19708, 19706, 19707,
+			4860, 4866, 4872, 4878, 4884, 4896, 4890, 4896, 4902,
+			4932, 4938, 4944, 4950, 4908, 4914, 4920, 4926, 4956,
+			4926, 4968, 4994, 4980, 4986, 4992, 4998,
+			18778, 18779, 18780, 18781,
+			13450, 13444, 13405, 15502,
+			10548, 10549, 10550, 10551, 10555, 10552, 10553, 2412, 2413, 2414,
+			20747,
+			18365, 18373, 18371, 15246, 12964, 12971, 12978, 14017,
+			757, 8851,
+			13855, 13848, 13857, 13856, 13854, 13853, 13852, 13851, 13850, 5509, 13653, 14021, 14020, 19111, 14019, 14022,
+			19785, 19786, 18782, 18351, 18349, 18353, 18357, 18355, 18359, 18335
+	};
 
-    public ItemDef() {
-        id = -1;
-    }
+	public ItemDef() {
+		id = -1;
+	}
 
-    public byte femaleYOffset;
-    public int value;
-    public int[] editedModelColor;
-    public int id;
-    public static MemCache spriteCache = new MemCache(200);
-    public static MemCache modelCache = new MemCache(100);
-    public int[] newModelColor;
-    public boolean membersObject;
-    public int femaleEquip3;
-    public int certTemplateID;
-    public int femaleEquip2;
-    public int maleEquip1;
-    public int maleDialogueModel;
-    public int sizeX;
-    public String groundActions[];
-    public int modelOffset1;
-    public String name;
-    public static ItemDef[] cache;
-    public int femaleDialogueModel;
-    public int modelID;
-    public int maleDialogue;
-    public boolean stackable;
-    public String description;
-    public int certID;
-    public static int cacheIndex;
-    public int modelZoom;
-    public static Stream stream;
-    public int lightness;
-    public int maleEquip3;
-    public int maleEquip2;
-    public String actions[];
-    public int rotationY;
-    public int sizeZ;
-    public int sizeY;
-    public int[] stackIDs;
-    public int modelOffsetY;
-    public static int[] streamIndices;
-    public int shadow;
-    public int femaleDialogue;
-    public int rotationX;
-    public int femaleEquip1;
-    public int[] stackAmounts;
-    public int team;
-    public static int totalItems;
-    public int modelOffsetX;
-    public byte maleYOffset;
-    public byte maleXOffset;
-    public int lendID;
-    public int lentItemID;
-    public boolean untradeable;
+	public byte femaleYOffset;
+	public int value;
+	public int[] editedModelColor;
+	public int id;
+	public static MemCache spriteCache = new MemCache(200);
+	public static MemCache modelCache = new MemCache(100);
+	public int[] newModelColor;
+	public boolean membersObject;
+	public int femaleEquip3;
+	public int certTemplateID;
+	public int femaleEquip2;
+	public int maleEquip1;
+	public int maleDialogueModel;
+	public int sizeX;
+	public String groundActions[];
+	public int modelOffset1;
+	public String name;
+	public static ItemDef[] cache;
+	public int femaleDialogueModel;
+	public int modelID;
+	public int maleDialogue;
+	public boolean stackable;
+	public String description;
+	public int certID;
+	public static int cacheIndex;
+	public int modelZoom;
+	public static Stream stream;
+	public int lightness;
+	public int maleEquip3;
+	public int maleEquip2;
+	public String actions[];
+	public int rotationY;
+	public int sizeZ;
+	public int sizeY;
+	public int[] stackIDs;
+	public int modelOffsetY;
+	public static int[] streamIndices;
+	public int shadow;
+	public int femaleDialogue;
+	public int rotationX;
+	public int femaleEquip1;
+	public int[] stackAmounts;
+	public int team;
+	public static int totalItems;
+	public int modelOffsetX;
+	public byte maleYOffset;
+	public byte maleXOffset;
+	public int lendID;
+	public int lentItemID;
+	public boolean untradeable;
 
 }
