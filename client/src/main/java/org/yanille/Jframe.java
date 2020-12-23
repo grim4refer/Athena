@@ -29,9 +29,14 @@ public class Jframe extends Client implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	public static JFrame frame;
+	public static TrayIcon trayIcon;
+
+	Image icon = Toolkit.getDefaultToolkit().getImage(signlink.findcachedir()+"/Interfaces/icon.png");
 
 	public Jframe(String[] args, int width, int height, boolean resizable) {
 		super();
+		toolkit = Toolkit.getDefaultToolkit();
+		setTray();
 		try {
 			signlink.startpriv(InetAddress.getByName(Configuration.HOST));
 			initUI(width, height, resizable);
@@ -39,8 +44,42 @@ public class Jframe extends Client implements ActionListener {
 			ex.printStackTrace();
 		}
 	}
+	public void setTray() {
+		if (SystemTray.isSupported()) {
+			trayIcon = new TrayIcon(icon, Configuration.CLIENT_NAME);
+			trayIcon.setImageAutoSize(true);
+			try {
+				SystemTray tray = SystemTray.getSystemTray();
+				tray.add(trayIcon);
+				trayIcon.displayMessage(Configuration.CLIENT_NAME, Configuration.CLIENT_NAME + " has been launched!",
+						TrayIcon.MessageType.INFO);
 
-	@SuppressWarnings("unused")
+				final MenuItem minimizeItem = new MenuItem("Hide " + Configuration.CLIENT_NAME);
+				new MenuItem("-");
+				MenuItem exitItem = new MenuItem("Quit");
+				ActionListener minimizeListener = new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						if (frame.isVisible()) {
+							frame.setVisible(false);
+							minimizeItem.setLabel("Show 1# " + Configuration.CLIENT_NAME + ".");
+						} else {
+							frame.setVisible(true);
+							minimizeItem.setLabel("Hide 1# " + Configuration.CLIENT_NAME + ".");
+						}
+					}
+				};
+				minimizeItem.addActionListener(minimizeListener);
+				ActionListener exitListener = new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						System.exit(0);
+					}
+				};
+				exitItem.addActionListener(exitListener);
+			} catch (AWTException e) {
+				System.err.println(e);
+			}
+		}
+	}
 	public void initUI(int width, int height, boolean resizable) {
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -49,15 +88,17 @@ public class Jframe extends Client implements ActionListener {
 			frame = new JFrame(Configuration.CLIENT_NAME);
 			frame.setLayout(new BorderLayout());
 			frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+			frame.setIconImage(icon);
 
+			frame.setAlwaysOnTop(Client.ALWAYS_ON_TOP);
 			frame.addWindowListener(new WindowAdapter() {
 				@Override
 				public void windowClosing(WindowEvent we) {
-					String options[] = { "Yes", "No" };
-					int userPrompt = JOptionPane.showOptionDialog(null, "Are you sure you wish to exit?", "Yanille",
-							JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[1]);
-					if (userPrompt == JOptionPane.YES_OPTION) {
-
+					String options[] = {"Yes", "No"};
+					int userPrompt = JOptionPane.showOptionDialog(null, "Are you sure you wish to exit?", "Volantis",
+							JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options , options[1]);
+					if(userPrompt == JOptionPane.YES_OPTION) {
+						// openURL("http://LiquidX.net");
 						System.exit(-1);
 						System.exit(0);
 					} else {
@@ -67,49 +108,28 @@ public class Jframe extends Client implements ActionListener {
 			});
 			setFocusTraversalKeysEnabled(false);
 			JPanel gamePanel = new JPanel();
-			Insets insets = this.getInsets();
-			if (System.getProperty("os.name").toLowerCase().indexOf("mac") >= 0) {
-				width += 10;
-				height += 10;
-			}
-			
-			super.setPreferredSize(new Dimension(width, height));
+			this.getInsets();
+			super.setPreferredSize(new Dimension(width - 10, height - 10));
 			frame.setLayout(new BorderLayout());
 			gamePanel.setLayout(new BorderLayout());
 			gamePanel.add(this);
 			gamePanel.setBackground(Color.BLACK);
-			URL icon64 = Jframe.class.getResource("/com/client/client/images/i64.png");
-			URL icon32 = Jframe.class.getResource("/com/client/client/images/i32.png");
-			URL icon16 = Jframe.class.getResource("/com/client/client/images/i16.png");
-			try {
-				Image whip64 = ImageIO.read(icon64.openStream());
-				Image whip32 = ImageIO.read(icon32.openStream());
-				Image whip16 = ImageIO.read(icon16.openStream());
-				ArrayList<Image> icons = new ArrayList<Image>();
-				icons.add(whip64);
-				icons.add(whip32);
-				icons.add(whip16);
-				frame.setIconImages(icons);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
 			initializeMenuBar();
 			frame.getContentPane().add(gamePanel, BorderLayout.CENTER);
 			frame.pack();
 			frame.setResizable(resizable);
 			init();
-			Jframe.super.graphics = getGameComponent().getGraphics();
+			graphics = getGameComponent().getGraphics();
 			frame.setLocationRelativeTo(null);
 			frame.setVisible(true);
-			frame.createBufferStrategy(2);
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	@SuppressWarnings("unused")
 	public void rebuildFrame(int width, int height, boolean resizable, boolean undecorated) {
+
 
 		JPopupMenu.setDefaultLightWeightPopupEnabled(false);
 		frame = new JFrame(Configuration.CLIENT_NAME);
@@ -119,9 +139,10 @@ public class Jframe extends Client implements ActionListener {
 			@Override
 			public void windowClosing(WindowEvent we) {
 				String options[] = {"Yes", "No"};
-				int userPrompt = JOptionPane.showOptionDialog(null, "Are you sure you wish to exit?", "Athena",
+				int userPrompt = JOptionPane.showOptionDialog(null, "Are you sure you wish to exit?", "Volantis",
 						JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options , options[1]);
 				if(userPrompt == JOptionPane.YES_OPTION) {
+					//	openURL("http://LiquidX.net");
 					System.exit(-1);
 					System.exit(0);
 				} else {
