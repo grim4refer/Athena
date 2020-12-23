@@ -16,13 +16,13 @@ public class ItemDef_Jarrod_1 {
 
 
 			case 4784:
-				itemDef.name = "@cya@Mana Minigun"; // name of the item
-				itemDef.modelID = 65241; // Model id of the inv (Inv models, drop models etcetcetc)
-				itemDef.maleEquip1 = 65242; // Equipment model for the item (Male)
-				itemDef.femaleEquip1 = 65242; // same as maleEquip but for female
-				itemDef.actions = new String[5]; // String array of 5 actions
-				itemDef.actions[1] = "Wear"; // Adding `Wear` option
-				break;
+			itemDef.name = "@cya@Mana Minigun"; // name of the item
+			itemDef.modelID = 65241; // Model id of the inv (Inv models, drop models etcetcetc)
+			itemDef.maleEquip1 = 65242; // Equipment model for the item (Male)
+			itemDef.femaleEquip1 = 65242; // same as maleEquip but for female
+			itemDef.actions = new String[5]; // String array of 5 actions
+			itemDef.actions[1] = "Wear"; // Adding `Wear` option
+			break;
 			case 20932:
 				itemDef.name = "@mag@Doflamingo @red@Minigun @gre@24dr"; // name of the item
 				itemDef.modelID = 90674; // Model id of the inv (Inv models, drop models etcetcetc)

@@ -164,7 +164,7 @@ public class ItemDef_Athena_1 {
                 break;
             case 19934:
                 itemDef.name = "Pet Box";
-                itemDef.actions = new String[]{"Open", null, null, null, null};
+                itemDef.actions = new String[] {"Open", null, null, null, null};
                 itemDef.colourRedefine2 = 1520696;
                 itemDef2 = ItemDef.forID(6199);
                 itemDef.modelID = itemDef2.modelID;
@@ -951,7 +951,7 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[4] = "Drop";
                 break;
             case 7606:
-                itemDef.name = "@yel@Gilded third-age platebody";
+                itemDef.name ="@yel@Gilded third-age platebody";
                 itemDef.maleEquip1 = 20154;
                 itemDef.femaleEquip1 = 20206;
                 itemDef.colourRedefine2 = 663333;
@@ -973,7 +973,7 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[4] = "Drop";
                 break;
             case 7607:
-                itemDef.name = "@yel@Gilded third-age platelegs";
+                itemDef.name ="@yel@Gilded third-age platelegs";
                 itemDef.maleEquip1 = 20138;
                 itemDef.femaleEquip1 = 20206;
                 itemDef.colourRedefine2 = 663333;
@@ -993,7 +993,7 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[4] = "Drop";
                 break;
             case 7608:
-                itemDef.name = "@yel@Gilded third-age full helmet";
+                itemDef.name ="@yel@Gilded third-age full helmet";
                 itemDef.maleEquip1 = 20134;
                 itemDef.femaleEquip1 = 20187;
                 itemDef.colourRedefine2 = 663333;
@@ -1013,7 +1013,7 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[4] = "Drop";
                 break;
             case 7609:
-                itemDef.name = "@yel@Gilded third-age kiteshield";
+                itemDef.name ="@yel@Gilded third-age kiteshield";
                 itemDef.maleEquip1 = 20167;
                 itemDef.femaleEquip1 = 20167;
                 itemDef.colourRedefine2 = 663333;
@@ -1033,7 +1033,7 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[4] = "Drop";
                 break;
             case 7610:
-                itemDef.name = "@cya@Secret third-age platebody";
+                itemDef.name ="@cya@Secret third-age platebody";
                 itemDef.maleEquip1 = 20154;
                 itemDef.femaleEquip1 = 20206;
                 itemDef.colourRedefine2 = 100000;
@@ -1055,7 +1055,7 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[4] = "Drop";
                 break;
             case 7611:
-                itemDef.name = "@cya@Secret third-age platelegs";
+                itemDef.name ="@cya@Secret third-age platelegs";
                 itemDef.maleEquip1 = 20138;
                 itemDef.femaleEquip1 = 20206;
                 itemDef.colourRedefine2 = 100000;
@@ -1075,7 +1075,7 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[4] = "Drop";
                 break;
             case 7612:
-                itemDef.name = "@cya@Secret third-age full helmet";
+                itemDef.name ="@cya@Secret third-age full helmet";
                 itemDef.maleEquip1 = 20134;
                 itemDef.femaleEquip1 = 20187;
                 itemDef.colourRedefine2 = 100000;
@@ -1095,7 +1095,7 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[4] = "Drop";
                 break;
             case 7613:
-                itemDef.name = "@cya@Secret third-age kiteshield";
+                itemDef.name ="@cya@Secret third-age kiteshield";
                 itemDef.maleEquip1 = 20167;
                 itemDef.femaleEquip1 = 20167;
                 itemDef.colourRedefine2 = 100000;
@@ -1189,6 +1189,7 @@ public class ItemDef_Athena_1 {
 			itemDef.rotationX = 333;
 			break;
              */
+
 
 
             case 20000:
@@ -1731,8 +1732,8 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[2] = "Check-charges";
                 itemDef.actions[4] = "Drop";
-                itemDef.editedModelColor = new int[]{40, 1, 24};
-                itemDef.newModelColor = new int[]{67, 64, 64};
+                itemDef.editedModelColor = new int[] {40,1,24};
+                itemDef.newModelColor = new int[]    {67,64,64};
                 break;
 
             case 20117:
@@ -1752,8 +1753,8 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[2] = "Check-charges";
                 itemDef.actions[4] = "Drop";
-                itemDef.editedModelColor = new int[]{40, 1, 24};
-                itemDef.newModelColor = new int[]{67, 64, 64};
+                itemDef.editedModelColor = new int[] {40,1,24};
+                itemDef.newModelColor = new int[]    {67,64,64};
                 break;
 
             case 20118:
@@ -1773,8 +1774,8 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[2] = "Check-charges";
                 itemDef.actions[4] = "Drop";
-                itemDef.editedModelColor = new int[]{40, 1, 24};
-                itemDef.newModelColor = new int[]{67, 64, 64};
+                itemDef.editedModelColor = new int[] {40,1,24};
+                itemDef.newModelColor = new int[]    {67,64,64};
                 break;
             case 20980:
                 itemDef.modelID = 93273;
@@ -1793,8 +1794,8 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[2] = "Check-charges";
                 itemDef.actions[4] = "Drop";
-                itemDef.editedModelColor = new int[]{51, 60, 40};
-                itemDef.newModelColor = new int[]{69, 69, 69};
+                itemDef.editedModelColor = new int[] {51,60,40};
+                itemDef.newModelColor = new int[]    {69,69,69};
                 break;
             case 3679:
                 itemDef.modelID = 93273;
@@ -1813,8 +1814,8 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[2] = "Check-charges";
                 itemDef.actions[4] = "Drop";
-                itemDef.editedModelColor = new int[]{40, 1, 24};
-                itemDef.newModelColor = new int[]{70, 69, 69};
+                itemDef.editedModelColor = new int[] {40,1,24};
+                itemDef.newModelColor = new int[]    {70,69,69};
                 break;
             case 20981:
                 itemDef.modelID = 93278;
@@ -1833,8 +1834,8 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[2] = "Check-charges";
                 itemDef.actions[4] = "Drop";
-                itemDef.editedModelColor = new int[]{51, 60, 40};
-                itemDef.newModelColor = new int[]{69, 69, 69};
+                itemDef.editedModelColor = new int[] {51,60,40};
+                itemDef.newModelColor = new int[]    {69,69,69};
                 break;
             case 20982:
                 itemDef.modelID = 93275;
@@ -1853,8 +1854,8 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[2] = "Check-charges";
                 itemDef.actions[4] = "Drop";
-                itemDef.editedModelColor = new int[]{51, 60, 40};
-                itemDef.newModelColor = new int[]{69, 69, 69};
+                itemDef.editedModelColor = new int[] {51,60,40};
+                itemDef.newModelColor = new int[]    {69,69,69};
                 break;
             case 3680:
                 itemDef.modelID = 93278;
@@ -1873,8 +1874,8 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[2] = "Check-charges";
                 itemDef.actions[4] = "Drop";
-                itemDef.editedModelColor = new int[]{40, 1, 24};
-                itemDef.newModelColor = new int[]{70, 69, 69};
+                itemDef.editedModelColor = new int[] {40,1,24};
+                itemDef.newModelColor = new int[]    {70,69,69};
                 break;
 
             case 3681:
@@ -1894,8 +1895,8 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[2] = "Check-charges";
                 itemDef.actions[4] = "Drop";
-                itemDef.editedModelColor = new int[]{40, 1, 24};
-                itemDef.newModelColor = new int[]{70, 69, 69};
+                itemDef.editedModelColor = new int[] {40,1,24};
+                itemDef.newModelColor = new int[]    {70,69,69};
                 break;
             case 20092:
                 itemDef.modelID = 93273;
@@ -1914,8 +1915,8 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[2] = "Check-charges";
                 itemDef.actions[4] = "Drop";
-                itemDef.editedModelColor = new int[]{40, 1, 24};
-                itemDef.newModelColor = new int[]{60, 40, 40};
+                itemDef.editedModelColor = new int[] {40,1,24};
+                itemDef.newModelColor = new int[]    {60,40,40};
                 break;
             case 20093:
                 itemDef.modelID = 93278;
@@ -1934,13 +1935,13 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[2] = "Check-charges";
                 itemDef.actions[4] = "Drop";
-                itemDef.editedModelColor = new int[]{40, 1, 24};
-                itemDef.newModelColor = new int[]{60, 40, 40};
+                itemDef.editedModelColor = new int[] {40,1,24};
+                itemDef.newModelColor = new int[]    {60,40,40};
                 break;
 
             case 20094:
                 itemDef.modelID = 93275;
-                itemDef.name = "Torva platelegs @red@(Magma ̰)";
+                itemDef.name = "Torva platelegs @red@(MagmaÂ Ì°)";
                 itemDef.description = "Torva platelegs imbued with lava";
                 itemDef.modelZoom = 1740;
                 itemDef.rotationY = 474;
@@ -1955,8 +1956,8 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[2] = "Check-charges";
                 itemDef.actions[4] = "Drop";
-                itemDef.editedModelColor = new int[]{40, 1, 24};
-                itemDef.newModelColor = new int[]{60, 40, 40};
+                itemDef.editedModelColor = new int[] {40,1,24};
+                itemDef.newModelColor = new int[]    {60,40,40};
                 break;
             case 14011:
                 itemDef.modelID = 62693;
@@ -2640,6 +2641,7 @@ public class ItemDef_Athena_1 {
                 break;
 
 
+
             case 906:
                 itemDef.modelID = 94495;
                 itemDef.name = "Depature mask";
@@ -2857,6 +2859,411 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wear";
                 break;
 
+            case 20886:
+                itemDef.modelID = 94267;
+                itemDef.name = "@blu@Avenger @whi@body";
+                itemDef.description = "It's a Avenger body.";
+                itemDef.modelZoom = 1000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 94267;
+                itemDef.femaleEquip1 = 94267;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+            case 20887:
+                itemDef.modelID = 94266;
+                itemDef.name = "@blu@Avenger @whi@legs";
+                itemDef.description = "It's a Avenger legs.";
+                itemDef.modelZoom = 1000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 94266;
+                itemDef.femaleEquip1 = 94266;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20903:
+                itemDef.modelID = 90689;
+                itemDef.name = "@blu@Avenger @whi@shield";
+                itemDef.description = "It's a Avenger shield.";
+                itemDef.modelZoom = 1579;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationX = 533;
+                itemDef.rotationY = 333;
+                itemDef.maleEquip1 = 90689;
+                itemDef.femaleEquip1 = 90689;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20904:
+                itemDef.modelID = 44758;
+                itemDef.name = "@blu@Avenger @whi@gloves";
+                itemDef.description = "It's a Avenger gloves.";
+                itemDef.modelZoom = 2000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 44758;
+                itemDef.femaleEquip1 = 44758;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20905:
+                itemDef.modelID = 44752;
+                itemDef.name = "@blu@Avenger @whi@boots";
+                itemDef.description = "It's a Avenger boots.";
+                itemDef.modelZoom = 1000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 44752;
+                itemDef.femaleEquip1 = 44752;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20906:
+                itemDef.modelID = 90741;
+                itemDef.name = "@red@Iron man @whi@mask";
+                itemDef.description = "It's a Iron man mask.";
+                itemDef.modelZoom = 1000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 90741;
+                itemDef.femaleEquip1 = 990741;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+            case 20907:
+                itemDef.modelID = 90743;
+                itemDef.name = "@red@Iron man @whi@body";
+                itemDef.description = "It's a Iron man body.";
+                itemDef.modelZoom = 1000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 90743;
+                itemDef.femaleEquip1 = 90743;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+            case 20908:
+                itemDef.modelID = 90745;
+                itemDef.name = "@red@Iron man @whi@legs";
+                itemDef.description = "It's a Iron man legs.";
+                itemDef.modelZoom = 1000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 90745;
+                itemDef.femaleEquip1 = 90745;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20909:
+                itemDef.modelID = 44758;
+                itemDef.name = "@red@Iron man @whi@gloves";
+                itemDef.description = "It's a Iron man gloves.";
+                itemDef.modelZoom = 2000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 44758;
+                itemDef.femaleEquip1 = 44758;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20910:
+                itemDef.modelID = 44752;
+                itemDef.name = "@red@Iron man @whi@boots";
+                itemDef.description = "It's a Iron man boots.";
+                itemDef.modelZoom = 1000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 44752;
+                itemDef.femaleEquip1 = 44752;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20916:
+                itemDef.modelID = 94274;
+                itemDef.name = "@cya@Ant man @mag@mask";
+                itemDef.description = "It's a Ant man mask.";
+                itemDef.modelZoom = 1000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 94274;
+                itemDef.femaleEquip1 = 94274;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20917:
+                itemDef.modelID = 94276;
+                itemDef.name = "@cya@Ant man @mag@body";
+                itemDef.description = "It's a Ant man body.";
+                itemDef.modelZoom = 1000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 94276;
+                itemDef.femaleEquip1 = 94276;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20918:
+                itemDef.modelID = 94275;
+                itemDef.name = "@cya@Ant man @mag@legs";
+                itemDef.description = "It's a Ant man legs.";
+                itemDef.modelZoom = 1000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 94275;
+                itemDef.femaleEquip1 = 94275;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20919:
+                itemDef.modelID = 44758;
+                itemDef.name = "@cya@Ant man @mag@gloves";
+                itemDef.description = "It's a Ant man gloves.";
+                itemDef.modelZoom = 2000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 44758;
+                itemDef.femaleEquip1 = 44758;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20920:
+                itemDef.modelID = 44752;
+                itemDef.name = "@cya@Ant man @mag@boots";
+                itemDef.description = "It's a Ant man boots.";
+                itemDef.modelZoom = 1000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 44752;
+                itemDef.femaleEquip1 = 44752;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20888:
+                itemDef.modelID = 94262;
+                itemDef.name = "@red@Spiderman @blu@mask";
+                itemDef.description = "It's a Spiderman mask.";
+                itemDef.modelZoom = 1000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 94262;
+                itemDef.femaleEquip1 = 94262;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20889:
+                itemDef.modelID = 94264;
+                itemDef.name = "@red@Spiderman @blu@body";
+                itemDef.description = "It's a Spiderman body.";
+                itemDef.modelZoom = 1000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 94264;
+                itemDef.femaleEquip1 = 94264;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+            case 20890:
+                itemDef.modelID = 94263;
+                itemDef.name = "@red@Spiderman @blu@legs";
+                itemDef.description = "It's a Spiderman legs.";
+                itemDef.modelZoom = 1000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 94263;
+                itemDef.femaleEquip1 = 94263;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20913:
+                itemDef.modelID = 90749;
+                itemDef.name = "@red@Spiderman @blu@gloves";
+                itemDef.description = "It's a Iron man gloves.";
+                itemDef.modelZoom = 2000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 90749;
+                itemDef.femaleEquip1 = 90749;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20914:
+                itemDef.modelID = 90747;
+                itemDef.name = "@red@Spiderman @blu@boots";
+                itemDef.description = "It's a Iron man boots.";
+                itemDef.modelZoom = 1000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 90747;
+                itemDef.femaleEquip1 = 90747;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20891:
+                itemDef.modelID = 94256;
+                itemDef.name = "@bla@Roy @whi@mask";
+                itemDef.description = "It's a Roy mask.";
+                itemDef.modelZoom = 1000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 94256;
+                itemDef.femaleEquip1 = 94256;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20892:
+                itemDef.modelID = 94258;
+                itemDef.name = "@bla@Roy @whi@body";
+                itemDef.description = "It's a Roy body.";
+                itemDef.modelZoom = 1000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 94258;
+                itemDef.femaleEquip1 = 94258;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20893:
+                itemDef.modelID = 94257;
+                itemDef.name = "@bla@Roy @whi@legs";
+                itemDef.description = "It's a Roy legs.";
+                itemDef.modelZoom = 1000;
+                itemDef.modelOffset1 = -4;
+                itemDef.modelOffsetY = 0;
+                itemDef.rotationY = 533;
+                itemDef.rotationX = 333;
+                itemDef.maleEquip1 = 94257;
+                itemDef.femaleEquip1 = 94257;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                break;
+
+            case 20877:
+                itemDef.modelID = 94155;
+                itemDef.name = "@gre@Mage @whi@gloves";
+                itemDef.description = "It's a Mage gloves.";
+                itemDef.modelZoom = 648;
+                itemDef.rotationY = 618;
+                itemDef.rotationX = 1143;
+                itemDef.modelOffset1 = 0;
+                itemDef.modelOffsetY = -5;
+                itemDef.maleEquip1 = 94156;
+                itemDef.femaleEquip1 = 94156;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                itemDef.actions[4] = "Drop";
+                break;
+
             case 20878:
                 itemDef.modelID = 94147;
                 itemDef.name = "@gre@Mage @whi@wings";
@@ -3061,7 +3468,7 @@ public class ItemDef_Athena_1 {
                 itemDef.modelOffsetY = -14;
                 itemDef.maleEquip1 = 95043;
                 itemDef.femaleEquip1 = 95043;
-                itemDef.groundActions = new String[]{null, null, "Take", null, null};
+                itemDef.groundActions = new String[] { null, null, "Take", null, null };
                 break;
             case 20089:
                 itemDef.modelID = 95061;
@@ -3173,8 +3580,8 @@ public class ItemDef_Athena_1 {
                 itemDef.modelOffsetY = -32;
                 itemDef.maleEquip1 = 95105;
                 itemDef.femaleEquip1 = 95105;
-                itemDef.groundActions = new String[]{null, null, "Take", null, null};
-                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.groundActions = new String[] { null, null, "Take", null, null };
+                itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
                 break;
             case 20704:
                 itemDef.colourRedefine2 = 51;
@@ -3188,97 +3595,97 @@ public class ItemDef_Athena_1 {
                 itemDef.modelOffsetY = 5;
                 itemDef.maleEquip1 = 95107;
                 itemDef.femaleEquip1 = 95107;
-                itemDef.groundActions = new String[]{null, null, "Take", null, null};
-                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.groundActions = new String[] { null, null, "Take", null, null };
+                itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
                 break;
             case 20695:
                 itemDef.name = "Dark mg";
                 itemDef.modelID = 95031;
                 itemDef.femaleEquip1 = 95032;
                 itemDef.maleEquip1 = 95032;
-                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
-                itemDef.editedModelColor = new int[]{51, 60};
-                itemDef.newModelColor = new int[]{57, 57};
+                itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
+                itemDef.editedModelColor = new int[] {51,60};
+                itemDef.newModelColor = new int[]    {57,57};
                 break;
             case 20450:
                 itemDef.name = "Bandos Avatar Soul";
                 itemDef.modelID = 91365;
-                itemDef.actions = new String[]{"eat", null, null, null, "Drop"};
+                itemDef.actions = new String[] { "eat", null, null, null, "Drop" };
                 break;
             case 20451:
                 itemDef.name = "Abbadon Soul";
                 itemDef.modelID = 91365;
-                itemDef.actions = new String[]{"eat", null, null, null, "Drop"};
+                itemDef.actions = new String[] { "eat", null, null, null, "Drop" };
                 break;
             case 20452:
                 itemDef.name = "Infernal Groudon Soul";
                 itemDef.modelID = 91365;
-                itemDef.actions = new String[]{"eat", null, null, null, "Drop"};
+                itemDef.actions = new String[] { "eat", null, null, null, "Drop" };
                 break;
             case 20453:
                 itemDef.name = "Baphomet Soul";
                 itemDef.modelID = 91365;
-                itemDef.actions = new String[]{"eat", null, null, null, "Drop"};
+                itemDef.actions = new String[] { "eat", null, null, null, "Drop" };
                 break;
             case 20956:
                 itemDef.name = "@mag@Lucario @yel@Soul";
                 itemDef.modelID = 91365;
-                itemDef.actions = new String[]{"eat", null, null, null, "Drop"};
+                itemDef.actions = new String[] { "eat", null, null, null, "Drop" };
                 break;
             case 20957:
                 itemDef.name = "@mag@MewTwo @yel@Soul";
                 itemDef.modelID = 91365;
-                itemDef.actions = new String[]{"eat", null, null, null, "Drop"};
+                itemDef.actions = new String[] { "eat", null, null, null, "Drop" };
                 break;
             case 20958:
                 itemDef.name = "@mag@Charmeleon @yel@Soul";
                 itemDef.modelID = 91365;
-                itemDef.actions = new String[]{"eat", null, null, null, "Drop"};
+                itemDef.actions = new String[] { "eat", null, null, null, "Drop" };
                 break;
             case 20959:
                 itemDef.name = "@mag@Squirtle @yel@Soul";
                 itemDef.modelID = 91365;
-                itemDef.actions = new String[]{"eat", null, null, null, "Drop"};
+                itemDef.actions = new String[] { "eat", null, null, null, "Drop" };
                 break;
             case 20960:
                 itemDef.name = "@mag@Pickachu @yel@Soul";
                 itemDef.modelID = 91365;
-                itemDef.actions = new String[]{"eat", null, null, null, "Drop"};
+                itemDef.actions = new String[] { "eat", null, null, null, "Drop" };
                 break;
             case 20961:
                 itemDef.name = "@mag@Sonic @yel@Soul";
                 itemDef.modelID = 91365;
-                itemDef.actions = new String[]{"eat", null, null, null, "Drop"};
+                itemDef.actions = new String[] { "eat", null, null, null, "Drop" };
                 break;
             case 20962:
                 itemDef.name = "@mag@Donkey Kong @yel@Soul";
                 itemDef.modelID = 91365;
-                itemDef.actions = new String[]{"eat", null, null, null, "Drop"};
+                itemDef.actions = new String[] { "eat", null, null, null, "Drop" };
                 break;
             case 20963:
                 itemDef.name = "@mag@Mr Krabs @yel@Soul";
                 itemDef.modelID = 91365;
-                itemDef.actions = new String[]{"eat", null, null, null, "Drop"};
+                itemDef.actions = new String[] { "eat", null, null, null, "Drop" };
                 break;
             case 20964:
                 itemDef.name = "@mag@Nutella @yel@Soul";
                 itemDef.modelID = 91365;
-                itemDef.actions = new String[]{"eat", null, null, null, "Drop"};
+                itemDef.actions = new String[] { "eat", null, null, null, "Drop" };
                 break;
             case 20965:
                 itemDef.name = "@mag@Mayonnaise @yel@Soul";
                 itemDef.modelID = 91365;
-                itemDef.actions = new String[]{"eat", null, null, null, "Drop"};
+                itemDef.actions = new String[] { "eat", null, null, null, "Drop" };
                 break;
             case 20966:
                 itemDef.name = "@bla@Roy @yel@Transformation";
                 itemDef.modelID = 91365;
-                itemDef.actions = new String[]{"@mag@Combine", null, null, null, "Drop"};
+                itemDef.actions = new String[] { "@mag@Combine", null, null, null, "Drop" };
                 break;
             case 20987:
                 itemDef.name = "@bla@Magic @yel@Tokens";
                 itemDef.modelID = 62834;
-                itemDef.actions = new String[]{null, null, null, null, "Drop"};
+                itemDef.actions = new String[] { null, null, null, null, "Drop" };
                 itemDef.modelZoom = 2006;
                 itemDef.rotationY = 473;
                 itemDef.rotationX = 1542;
@@ -3335,7 +3742,7 @@ public class ItemDef_Athena_1 {
                 itemDef.rotationY = 333;
                 itemDef.rotationY = 333;
                 itemDef.maleEquip1 = 77568;
-                itemDef.femaleEquip1 = 77568;
+                itemDef.femaleEquip1= 77568;
                 itemDef.groundActions = new String[5];
                 itemDef.groundActions[2] = "Take";
                 itemDef.actions = new String[5];
@@ -3354,6 +3761,7 @@ public class ItemDef_Athena_1 {
                 itemDef.rotationX = 0;
                 itemDef.rotationY = 320;
                 itemDef.modelZoom = 3000;
+
                 break;
             case 5018:
                 itemDef.name = "Abbadon Instance";
@@ -3367,8 +3775,8 @@ public class ItemDef_Athena_1 {
                 itemDef.modelOffset1 = -3;
                 itemDef.rotationX = 0;
                 itemDef.rotationY = 320;
-                itemDef.editedModelColor = new int[]{60, 51, 40};
-                itemDef.newModelColor = new int[]{52, 52, 52};
+                itemDef.editedModelColor = new int[] {60,51,40};
+                itemDef.newModelColor = new int[]    {52,52,52};
 
                 break;
             case 5016:
@@ -3383,16 +3791,16 @@ public class ItemDef_Athena_1 {
                 itemDef.rotationX = 0;
                 itemDef.rotationY = 320;
                 itemDef.modelZoom = 3000;
-                itemDef.editedModelColor = new int[]{40, 1, 24};
-                itemDef.newModelColor = new int[]{60, 40, 40};
+                itemDef.editedModelColor = new int[] {40,1,24};
+                itemDef.newModelColor = new int[]    {60,40,40};
                 break;
             case 20932:
-                itemDef.editedModelColor = new int[]{51, 60, 40};
-                itemDef.newModelColor = new int[]{69, 69, 69};
+                itemDef.editedModelColor = new int[] {51,60,40};
+                itemDef.newModelColor = new int[]    {69,69,69};
                 break;
             case 15450:
-                itemDef.editedModelColor = new int[]{24};
-                itemDef.newModelColor = new int[]{56};
+                itemDef.editedModelColor = new int[] {24};
+                itemDef.newModelColor = new int[]    {56};
                 break;
             case 83:
                 itemDef.modelID = 77561;

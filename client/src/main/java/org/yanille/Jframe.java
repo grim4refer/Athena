@@ -118,11 +118,10 @@ public class Jframe extends Client implements ActionListener {
 		frame.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent we) {
-				String options[] = { "Yes", "No" };
-				int userPrompt = JOptionPane.showOptionDialog(null, "Are you sure you wish to exit?", "Yanille",
-						JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[1]);
-				if (userPrompt == JOptionPane.YES_OPTION) {
-					
+				String options[] = {"Yes", "No"};
+				int userPrompt = JOptionPane.showOptionDialog(null, "Are you sure you wish to exit?", "Athena",
+						JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options , options[1]);
+				if(userPrompt == JOptionPane.YES_OPTION) {
 					System.exit(-1);
 					System.exit(0);
 				} else {
@@ -133,24 +132,22 @@ public class Jframe extends Client implements ActionListener {
 		frame.setUndecorated(undecorated);
 		setFocusTraversalKeysEnabled(false);
 		JPanel gamePanel = new JPanel();
-		Insets insets = this.getInsets();
+		this.getInsets();
 		super.setPreferredSize(new Dimension(width - 10, height - 10));
 		frame.setLayout(new BorderLayout());
 		gamePanel.setLayout(new BorderLayout());
-		gamePanel.add(this, BorderLayout.CENTER);
-		gamePanel.setBackground(Color.BLACK);
-		if (!undecorated) {
+		gamePanel.add(this, BorderLayout.CENTER);		gamePanel.setBackground(Color.BLACK);
+		if(!undecorated) {
 			frame.getContentPane().add(menuPanel, BorderLayout.NORTH);
 		}
 		frame.getContentPane().add(gamePanel, BorderLayout.CENTER);
 		frame.pack();
 		frame.setResizable(resizable);
-		// init();
+		//init();
 		graphics = getGameComponent().getGraphics();
-		frame.setLocation((screenWidth - width) / 2,
-				((screenHeight - height) / 2) - screenHeight == getMaxHeight() ? 0 : undecorated ? 0 : 70);
+		frame.setLocation((screenWidth - width) / 2, ((screenHeight - height) / 2) - screenHeight == Client.getMaxHeight() ? 0 : undecorated ? 0 : 70);
 		frame.setVisible(true);
-		frame.createBufferStrategy(2);
+
 
 		frame.addComponentListener(new ComponentAdapter() {
 
@@ -163,7 +160,7 @@ public class Jframe extends Client implements ActionListener {
 				gamePanel.setPreferredSize(dimension);
 				gamePanel.setSize(dimension);
 
-				Jframe.super.setPreferredSize(new Dimension(frame.getWidth() - 10, frame.getHeight() - 10));
+				Jframe.super.setPreferredSize(new Dimension(frame.getWidth() - 5, frame.getHeight() - 10));
 				Jframe.super.revalidate();
 				Jframe.super.repaint();
 

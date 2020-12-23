@@ -1,5 +1,5 @@
 {
-  "total-play-time-ms": 18952431,
+  "total-play-time-ms": 20382827,
   "username": "Joker",
   "password": "123",
   "email": "null",
@@ -12,8 +12,8 @@
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2536,
-    "y": 2534,
+    "x": 2532,
+    "y": 2530,
     "z": 1
   },
   "online-status": "ON",
@@ -28,8 +28,8 @@
   "achievement-points": 5,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 15550,
-  "total-loyalty-points": 15550.0,
+  "loyalty-points": 16735,
+  "total-loyalty-points": 16735.0,
   "voting-points": 0,
   "slayer-points": 0,
   "pk-points": 0,
@@ -54,8 +54,8 @@
   "auto-retaliate": true,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 55521916,
-  "fight-type": "WHIP_LASH",
+  "last-veng": 1608641269781,
+  "fight-type": "SHORTBOW_RAPID",
   "sol-effect": 0,
   "skull-timer": 0,
   "accept-aid": false,
@@ -607,23 +607,23 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 4151,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 11320,
+      "amount": 1111111111,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20886,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20872,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -704,8 +704,8 @@
   ],
   "equipment": [
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20885,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -719,7 +719,7 @@
       "slot": 0
     },
     {
-      "id": 4151,
+      "id": 21043,
       "amount": 1,
       "slot": 0
     },
@@ -769,8 +769,8 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 19903,
+      "amount": 22222,
       "slot": 0
     }
   ],

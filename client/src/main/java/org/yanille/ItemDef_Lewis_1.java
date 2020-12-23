@@ -4233,7 +4233,7 @@ public class ItemDef_Lewis_1 {
                 itemDef.actions = itemDef2.actions;
                 break;
             case 6196:
-                itemDef.name = "@gre@ Jane‘s Rapier";
+                itemDef.name = "@gre@ Janeâ€˜s Rapier";
                 itemDef.colourRedefine2 = 663333;
                 itemDef2 = ItemDef.forID(4068);
                 itemDef.modelID = itemDef2.modelID;
