@@ -1,10 +1,5 @@
 package mysql.impl;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -12,11 +7,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.concurrent.TimeUnit;
 
-import com.arlania.model.PlayerRights;
-import com.arlania.util.Misc;
-import com.arlania.world.World;
-import com.arlania.world.content.PlayerPanel;
-import com.arlania.world.entity.impl.player.Player;
+import com.athena.util.Misc;
+import com.athena.world.World;
+import com.athena.world.entity.impl.player.Player;
 
 /**
  * Using this class: To call this class, it's best to make a new thread. You can

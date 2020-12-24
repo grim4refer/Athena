@@ -1,5 +1,5 @@
 {
-  "total-play-time-ms": 20447151,
+  "total-play-time-ms": 20459745,
   "username": "Joker",
   "password": "123",
   "email": "null",
@@ -12,8 +12,8 @@
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2532,
-    "y": 2530,
+    "x": 2531,
+    "y": 2528,
     "z": 1
   },
   "online-status": "ON",
@@ -28,8 +28,8 @@
   "achievement-points": 5,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 16786,
-  "total-loyalty-points": 16786.0,
+  "loyalty-points": 16795,
+  "total-loyalty-points": 16795.0,
   "voting-points": 0,
   "slayer-points": 0,
   "pk-points": 0,
@@ -54,7 +54,7 @@
   "auto-retaliate": true,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 1608641483378,
+  "last-veng": 201592134,
   "fight-type": "SHORTBOW_RAPID",
   "sol-effect": 0,
   "skull-timer": 0,

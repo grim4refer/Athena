@@ -6,8 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.arlania.world.World;
-import com.arlania.world.entity.impl.player.Player;
+import com.athena.world.World;
+import com.athena.world.entity.impl.player.Player;
 
 
 public class Vote implements Runnable {

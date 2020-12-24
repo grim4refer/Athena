@@ -4,9 +4,7 @@ import java.sql.Connection;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import com.arlania.GameSettings;
-
-import mysql.impl.Donation;
+import com.athena.GameSettings;
 //import mysql.impl.Voting;
 //import mysql.motivote.Motivote;
 /**

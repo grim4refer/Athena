@@ -50,6 +50,9 @@ import javax.swing.colorchooser.AbstractColorChooserPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
+import com.athena.discord.RichPresence;
+
+
 @SuppressWarnings("all")
 public class Client extends RSApplet {
 
@@ -5981,7 +5984,7 @@ public class Client extends RSApplet {
 
 	public static void main(String args[]) {
 		try {
-
+		   //RichPresence.initiate();
 			nodeID = 10;
 			portOff = 0;
 			setHighMem();

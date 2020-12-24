@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Athena Source.iml" filepath="$PROJECT_DIR$/Athena Source.iml" />
       <module fileurl="file://$PROJECT_DIR$/saves.iml" filepath="$PROJECT_DIR$/saves.iml" />
       <module fileurl="file://$PROJECT_DIR$/shops.iml" filepath="$PROJECT_DIR$/shops.iml" />
-      <module fileurl="file://$PROJECT_DIR$/yanille-rsps.iml" filepath="$PROJECT_DIR$/yanille-rsps.iml" />
     </modules>
   </component>
 </project>
