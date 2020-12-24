@@ -72,7 +72,6 @@ public class Client extends RSApplet {
 
 	private static AnimatedSprite animatedLogin;
 
-
 	public void preloadModels() {
 		String cacheDir = signlink.findcachedir();
 		File file = new File(cacheDir + "data/raw/");
@@ -5984,6 +5983,7 @@ public class Client extends RSApplet {
 
 	public static void main(String args[]) {
 		try {
+
 			nodeID = 10;
 			portOff = 0;
 			setHighMem();
@@ -12145,7 +12145,7 @@ public class Client extends RSApplet {
 	void startUp() {
 		loadSettings();
 		
-		animatedLoading = new AnimatedSprite(ResourceLoader.getFile("loading.gif"));
+		animatedLoading = new AnimatedSprite(ResourceLoader.getFile("loading.png"));
 
 		try {
 			hash = ClassCheck.generate();
@@ -12203,7 +12203,7 @@ public class Client extends RSApplet {
 
 	public void load() {
 		try {
-			animatedLogin = new AnimatedSprite(ResourceLoader.getFile("bg.gif"));
+			animatedLogin = new AnimatedSprite(ResourceLoader.getFile("bg.png"));
 			titleStreamLoader = streamLoaderForName(1, "title screen", "title", expectedCRCs[1], 25);
 			smallText = new TextDrawingArea(false, "p11_full", titleStreamLoader);
 			smallHit = new TextDrawingArea(false, "hit_full", titleStreamLoader);
@@ -15661,7 +15661,7 @@ public class Client extends RSApplet {
 		setLoadingAndLoginHovers();
 
 
-		//spriteCache.get(1008).drawAdvancedSprite(257, loginScreenCursorPos == 0 ? 224 : 285);
+		spriteCache.get(1008).drawAdvancedSprite(257, loginScreenCursorPos == 0 ? 224 : 285);
 		spriteCache.get(loginScreenCursorPos == 0 ? 1229 : 1228).drawAdvancedSprite(254, 220);
 		spriteCache.get(loginScreenCursorPos == 1 ? 1229 : 1228).drawAdvancedSprite(254, 285);
 		spriteCache.get(loginButtonHover ? 1227 : 1226).drawAdvancedSprite(269, 372);
