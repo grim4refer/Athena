@@ -4,7 +4,7 @@
 	</jars>
 
 	<keep-names>
-		<class template="class org.yanille.Client"/>
+		<class template="class com.athena.Client"/>
 	</keep-names>
 
 	<ignore-classes>
