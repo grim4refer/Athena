@@ -1196,7 +1196,7 @@ public class Shop extends ItemContainer {
 							return new Object[] { 30, "Donation Points" };
 						case 17488:
 							return new Object[] { 21, "Donation Points" };
-						case 799:
+						case 3061:
 							return new Object[] { 21, "Donation Points" };
 						case 3062:
 							return new Object[] { 21, "Donation Points" };

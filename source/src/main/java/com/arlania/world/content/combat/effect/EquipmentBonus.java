@@ -56,7 +56,7 @@ public class EquipmentBonus {
 	public static int SLLegs = 1647;
 	public static int[] SLHelms = {1667};
 	public static int UGloves = 3063;
-	public static int UShirt = 799;
+	public static int UShirt = 3061;
 	public static int ULegs = 3062;
 	public static int[] UHelms = {17488};
 	

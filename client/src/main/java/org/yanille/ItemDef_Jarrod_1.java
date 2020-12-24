@@ -5311,7 +5311,7 @@ public class ItemDef_Jarrod_1 {
 				itemDef.actions[1] = "Wear";
 				itemDef.actions[4] = "Drop";
 				break;
-			case 799:
+			case 3061:
 				itemDef.modelID = 140092;
 				itemDef.name = "@red@Ultimatium @blu@Body";
 				itemDef.description = "It's a Ultimatium Body.";
