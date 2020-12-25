@@ -50,7 +50,7 @@ import javax.swing.colorchooser.AbstractColorChooserPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import com.athena.discord.RichPresence;
+//import com.athena.discord.RichPresence;
 
 
 @SuppressWarnings("all")
