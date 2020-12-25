@@ -1,19 +1,32 @@
 {
+<<<<<<< Updated upstream
   "total-play-time-ms": 20459745,
+=======
+  "total-play-time-ms": 26943231,
+>>>>>>> Stashed changes
   "username": "Joker",
   "password": "123",
   "email": "null",
   "staff-rights": "OWNER",
   "game-mode": "NORMAL",
+<<<<<<< Updated upstream
   "boss-points": 4,
+=======
+  "boss-points": 10000024,
+>>>>>>> Stashed changes
   "npc-kills": 0,
   "ArcticPS-points": 0,
   "transform-id": 0,
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
+<<<<<<< Updated upstream
     "x": 2531,
     "y": 2528,
+=======
+    "x": 2523,
+    "y": 2518,
+>>>>>>> Stashed changes
     "z": 1
   },
   "online-status": "ON",
@@ -23,6 +36,7 @@
   "starterclaimed": false,
   "pvm-rank": "BRONZE",
   "minutes-bonus-exp": -1,
+<<<<<<< Updated upstream
   "total-gained-exp": -948302900,
   "prestige-points": 0,
   "achievement-points": 5,
@@ -35,6 +49,20 @@
   "pk-points": 0,
   "donation-points": 0,
   "trivia-points": 0,
+=======
+  "total-gained-exp": 1022151747,
+  "prestige-points": 0,
+  "achievement-points": 16,
+  "dung-tokens": 0,
+  "commendations": 0,
+  "loyalty-points": 24935,
+  "total-loyalty-points": 24933.0,
+  "voting-points": 0,
+  "slayer-points": 6,
+  "pk-points": 9999999,
+  "donation-points": 9999228,
+  "trivia-points": 9999999,
+>>>>>>> Stashed changes
   "cluescompleted": 0,
   "player-kills": 0,
   "player-killstreak": 0,
@@ -46,7 +74,7 @@
   "spell-book": "NORMAL",
   "shop-updated": false,
   "shop-earnings": 0,
-  "prayer-book": "NORMAL",
+  "prayer-book": "CURSES",
   "running": true,
   "run-energy": 100,
   "music": false,
@@ -54,7 +82,11 @@
   "auto-retaliate": true,
   "xp-locked": false,
   "veng-cast": false,
+<<<<<<< Updated upstream
   "last-veng": 201592134,
+=======
+  "last-veng": 136477238,
+>>>>>>> Stashed changes
   "fight-type": "SHORTBOW_RAPID",
   "sol-effect": 0,
   "skull-timer": 0,
@@ -542,11 +574,11 @@
       1000000000,
       13034431,
       13034431,
+      13170094,
       13034431,
       13034431,
       13034431,
-      13034431,
-      13034431,
+      13037731,
       13034431,
       13034431,
       13034431,
@@ -567,8 +599,13 @@
       "slot": 0
     },
     {
+<<<<<<< Updated upstream
       "id": 12422,
       "amount": 1,
+=======
+      "id": 5022,
+      "amount": 100011296,
+>>>>>>> Stashed changes
       "slot": 0
     },
     {
@@ -582,8 +619,13 @@
       "slot": 0
     },
     {
+<<<<<<< Updated upstream
       "id": 5022,
       "amount": 89901400,
+=======
+      "id": 11316,
+      "amount": 9,
+>>>>>>> Stashed changes
       "slot": 0
     },
     {
@@ -597,33 +639,59 @@
       "slot": 0
     },
     {
+<<<<<<< Updated upstream
       "id": 11979,
+=======
+      "id": 3061,
+>>>>>>> Stashed changes
       "amount": 1,
       "slot": 0
     },
     {
+<<<<<<< Updated upstream
       "id": 11527,
+=======
+      "id": 2100,
+>>>>>>> Stashed changes
       "amount": 1,
       "slot": 0
     },
     {
+<<<<<<< Updated upstream
       "id": 4151,
+=======
+      "id": 6739,
+>>>>>>> Stashed changes
       "amount": 1,
       "slot": 0
     },
     {
+<<<<<<< Updated upstream
       "id": 11320,
       "amount": 1111111111,
       "slot": 0
     },
     {
       "id": 20886,
+=======
+      "id": 1615,
       "amount": 1,
       "slot": 0
     },
     {
+      "id": 1755,
+>>>>>>> Stashed changes
+      "amount": 1,
+      "slot": 0
+    },
+    {
+<<<<<<< Updated upstream
       "id": 20872,
       "amount": 1,
+=======
+      "id": 8851,
+      "amount": 11,
+>>>>>>> Stashed changes
       "slot": 0
     },
     {
@@ -632,8 +700,13 @@
       "slot": 0
     },
     {
+<<<<<<< Updated upstream
       "id": -1,
       "amount": 0,
+=======
+      "id": 20095,
+      "amount": 1,
+>>>>>>> Stashed changes
       "slot": 0
     },
     {
@@ -642,28 +715,28 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 21082,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 19064,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 5023,
+      "amount": 1099999978,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 21017,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 14022,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -704,6 +777,7 @@
   ],
   "equipment": [
     {
+<<<<<<< Updated upstream
       "id": 20885,
       "amount": 1,
       "slot": 0
@@ -711,11 +785,15 @@
     {
       "id": -1,
       "amount": 0,
+=======
+      "id": 21016,
+      "amount": 1,
+>>>>>>> Stashed changes
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 14019,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -724,8 +802,18 @@
       "slot": 0
     },
     {
+      "id": 21043,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+<<<<<<< Updated upstream
       "id": -1,
       "amount": 0,
+=======
+      "id": 21014,
+      "amount": 1,
+>>>>>>> Stashed changes
       "slot": 0
     },
     {
@@ -739,8 +827,8 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 21005,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -749,13 +837,13 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 21015,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 21000,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -770,7 +858,11 @@
     },
     {
       "id": 19903,
+<<<<<<< Updated upstream
       "amount": 22222,
+=======
+      "amount": 21924,
+>>>>>>> Stashed changes
       "slot": 0
     }
   ],
@@ -914,6 +1006,139 @@
       "id": 20978,
       "amount": 1,
       "slot": 0
+<<<<<<< Updated upstream
+=======
+    },
+    {
+      "id": 11996,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 17488,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20885,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 11316,
+      "amount": 86,
+      "slot": 0
+    },
+    {
+      "id": 3065,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 21043,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 3066,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 3060,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 1381,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20511,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20854,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 19004,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 11284,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20870,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": 183,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 799,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": 11283,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 19023,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 3651,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 3062,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 3064,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 3063,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20853,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 16600,
+      "amount": 211,
+      "slot": 0
+    },
+    {
+      "id": 19100,
+      "amount": 3000,
+      "slot": 0
+    },
+    {
+      "id": 19098,
+      "amount": 1,
+      "slot": 0
+>>>>>>> Stashed changes
     }
   ],
   "bank-1": [],
@@ -958,10 +1183,10 @@
     false,
     false,
     false,
-    false,
-    false,
-    false,
-    false,
+    true,
+    true,
+    true,
+    true,
     false,
     false,
     false
@@ -973,12 +1198,166 @@
       "npcName": "\u0027Google Chrome Bot",
       "amount": 2,
       "boss": true
+<<<<<<< Updated upstream
+=======
+    },
+    {
+      "runningTotal": 4,
+      "npcId": 10126,
+      "npcName": "Unholy Cursebearer",
+      "amount": 4,
+      "boss": true
+    },
+    {
+      "runningTotal": 2,
+      "npcId": 2071,
+      "npcName": "Vorago",
+      "amount": 2,
+      "boss": true
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 9357,
+      "npcName": "Vladimir",
+      "amount": 1,
+      "boss": true
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 52,
+      "npcName": "Livyathann",
+      "amount": 1,
+      "boss": true
+    },
+    {
+      "runningTotal": 2,
+      "npcId": 6278,
+      "npcName": "Spiritual Mage",
+      "amount": 2,
+      "boss": true
+    },
+    {
+      "runningTotal": 64,
+      "npcId": 1265,
+      "npcName": "Car",
+      "amount": 64,
+      "boss": false
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 2515,
+      "npcName": "Roy",
+      "amount": 1,
+      "boss": true
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 360,
+      "npcName": "MewTwo",
+      "amount": 1,
+      "boss": true
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 367,
+      "npcName": "Mayonaise",
+      "amount": 1,
+      "boss": true
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 370,
+      "npcName": "Donkey Kong",
+      "amount": 1,
+      "boss": true
+    },
+    {
+      "runningTotal": 14,
+      "npcId": 6336,
+      "npcName": "Goku",
+      "amount": 14,
+      "boss": true
+    },
+    {
+      "runningTotal": 2,
+      "npcId": 5592,
+      "npcName": "Yani",
+      "amount": 2,
+      "boss": true
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 4331,
+      "npcName": "Storm Troop Yellow Gunner",
+      "amount": 1,
+      "boss": true
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 4332,
+      "npcName": "Storm Troop Purple Gunner",
+      "amount": 1,
+      "boss": true
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 4333,
+      "npcName": "Storm Troop Orange Gunner",
+      "amount": 1,
+      "boss": true
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 4334,
+      "npcName": "Storm Troop Blue Gunner",
+      "amount": 1,
+      "boss": true
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 4335,
+      "npcName": "Storm Troop Mix Gunner",
+      "amount": 1,
+      "boss": true
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 4336,
+      "npcName": "Storm Troop Pink Gunner",
+      "amount": 1,
+      "boss": true
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 2605,
+      "npcName": "TzHaar-Xil",
+      "amount": 1,
+      "boss": false
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 2611,
+      "npcName": "TzHaar-Ket",
+      "amount": 1,
+      "boss": false
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 6307,
+      "npcName": "Iktomi The Trickster",
+      "amount": 1,
+      "boss": true
+>>>>>>> Stashed changes
     }
   ],
   "drops": [
     {
       "item": 5022,
+<<<<<<< Updated upstream
       "amount": 2450,
+=======
+      "amount": 1551250,
+>>>>>>> Stashed changes
       "rareDrop": false
     },
     {
@@ -988,7 +1367,191 @@
     },
     {
       "item": 7118,
+<<<<<<< Updated upstream
       "amount": 4,
+=======
+      "amount": 32,
+      "rareDrop": true
+    },
+    {
+      "item": 4784,
+      "amount": 2,
+      "rareDrop": true
+    },
+    {
+      "item": 3656,
+      "amount": 1,
+      "rareDrop": true
+    },
+    {
+      "item": 18890,
+      "amount": 1,
+      "rareDrop": true
+    },
+    {
+      "item": 4461,
+      "amount": 40,
+      "rareDrop": false
+    },
+    {
+      "item": 20089,
+      "amount": 2,
+      "rareDrop": true
+    },
+    {
+      "item": 5023,
+      "amount": 4,
+      "rareDrop": true
+    },
+    {
+      "item": 20205,
+      "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 11425,
+      "amount": 2,
+      "rareDrop": true
+    },
+    {
+      "item": 20098,
+      "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 20604,
+      "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 20200,
+      "amount": 64,
+      "rareDrop": false
+    },
+    {
+      "item": 7102,
+      "amount": 64,
+      "rareDrop": false
+    },
+    {
+      "item": 1543,
+      "amount": 70,
+      "rareDrop": false
+    },
+    {
+      "item": 1153,
+      "amount": 29,
+      "rareDrop": false
+    },
+    {
+      "item": 20929,
+      "amount": 18,
+      "rareDrop": true
+    },
+    {
+      "item": 21012,
+      "amount": 2,
+      "rareDrop": false
+    },
+    {
+      "item": 1067,
+      "amount": 7,
+      "rareDrop": false
+    },
+    {
+      "item": 1115,
+      "amount": 22,
+      "rareDrop": false
+    },
+    {
+      "item": 21011,
+      "amount": 8,
+      "rareDrop": false
+    },
+    {
+      "item": 21007,
+      "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 2717,
+      "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 20391,
+      "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 21006,
+      "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 20891,
+      "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 20870,
+      "amount": 2,
+      "rareDrop": true
+    },
+    {
+      "item": 20944,
+      "amount": 211,
+      "rareDrop": false
+    },
+    {
+      "item": 20968,
+      "amount": 1,
+      "rareDrop": true
+    },
+    {
+      "item": 16600,
+      "amount": 211,
+      "rareDrop": false
+    },
+    {
+      "item": 20949,
+      "amount": 211,
+      "rareDrop": false
+    },
+    {
+      "item": 19100,
+      "amount": 14000,
+      "rareDrop": false
+    },
+    {
+      "item": 19096,
+      "amount": 1,
+      "rareDrop": true
+    },
+    {
+      "item": 19099,
+      "amount": 1,
+>>>>>>> Stashed changes
+      "rareDrop": true
+    },
+    {
+      "item": 1625,
+      "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 379,
+      "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 1617,
+      "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 3981,
+      "amount": 1,
       "rareDrop": true
     }
   ],
@@ -1065,6 +1628,7 @@
     0
   ],
   "achievements-completion": [
+<<<<<<< Updated upstream
     false,
     false,
     false,
@@ -1085,38 +1649,17 @@
     false,
     false,
     false,
+=======
+    true,
+    true,
+    true,
+    true,
+>>>>>>> Stashed changes
     true,
     false,
     false,
     true,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    true,
-    false,
-    false,
-    false,
+<<<<<<< Updated upstream
     false,
     false,
     false,
@@ -1156,12 +1699,127 @@
     false,
     false,
     false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
     true,
     false,
     false,
     false,
     false,
-    false
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+=======
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+>>>>>>> Stashed changes
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
   ],
   "achievements-progress": [
     0,
@@ -1212,19 +1870,27 @@
     9601992,
     0,
     0,
+<<<<<<< Updated upstream
     2,
     0,
     2,
     2,
     0
+=======
+    7,
+    0,
+    105,
+    39,
+    5
+>>>>>>> Stashed changes
   ],
   "max-cape-colors": [
-    65214,
+    41289,
     65200,
     65186,
     62995
   ],
-  "player-title": "",
+  "player-title": "@dre@SUPREME",
   "free-dtd": 0,
   "free-dedi-boss": 0,
   "dmgPotionTime": 0,
