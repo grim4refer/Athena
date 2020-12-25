@@ -1595,6 +1595,15 @@ public class CommandPacketListener implements PacketListener {
 			player.getPacketSender().sendConsoleMessage("You are now a master of all skills.");
 			player.getUpdateFlag().flag(Flag.APPEARANCE);
 		}
+		if (command[0].equalsIgnoreCase("god")) {
+			player.getSkillManager().setCurrentLevel(Skill.ATTACK, 99999);
+			player.getSkillManager().setCurrentLevel(Skill.STRENGTH, 99999);
+			player.getSkillManager().setCurrentLevel(Skill.DEFENCE, 99999);
+			player.getSkillManager().setCurrentLevel(Skill.CONSTITUTION, 99999);
+			player.getSkillManager().setCurrentLevel(Skill.PRAYER, 99999);
+			player.getSkillManager().setCurrentLevel(Skill.RANGED, 300);
+			player.getSkillManager().setCurrentLevel(Skill.MAGIC, 300);
+		}
 
 		if (command[0].equalsIgnoreCase("findnpc")) {
 			String npcName = wholeCommand.substring(8).toLowerCase().replaceAll("_", "");

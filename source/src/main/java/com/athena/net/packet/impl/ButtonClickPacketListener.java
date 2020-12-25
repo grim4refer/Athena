@@ -739,7 +739,7 @@ public class ButtonClickPacketListener implements PacketListener {
 //		case -26376:
             // PlayersOnlineInterface.showInterface(player);
 //			break;
-            case -26372:
+            case -26349:
                 player.getPacketSender().sendTabInterface(GameSettings.QUESTS_TAB, 46343);
                 StaffList.updateInterface(player);
                 break;
@@ -835,17 +835,17 @@ public class ButtonClickPacketListener implements PacketListener {
                                     + " coins before becoming full.");
                 }
                 break;
-            case -26368:
+            case -26345:
                 if(!player.getClickDelay().elapsed(600)) {
                     return;
                 }
                 player.getClickDelay().reset();
                 DropLookup.open(player);
                 break;
-            case -26370:
+            case -26347:
                 KillsTracker.open(player);
                 break;
-            case -26369:
+            case -26346:
                 DropLog.open(player);
                 break;
 
@@ -901,7 +901,7 @@ public class ButtonClickPacketListener implements PacketListener {
                 player.getPacketSender().sendString(1, "www.yanille.net");
                 player.getPacketSender().sendMessage("Attempting to open: www.yanille.net");
                 break;
-            case -26327:
+            case -26344:
                 player.setTimer(0);
                 break;
             case -26328:
@@ -914,7 +914,7 @@ public class ButtonClickPacketListener implements PacketListener {
             case -26332:
                 Nomad.openQuestLog(player);
                 break;
-            case -26371:
+            case -26348:
                 ProfileViewing.view(player, player);
                 break;
             case 350:

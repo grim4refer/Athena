@@ -1,5 +1,5 @@
 {
-  "total-play-time-ms": 283211,
+  "total-play-time-ms": 371999,
   "username": "123",
   "password": "123",
   "email": "null",
@@ -12,8 +12,8 @@
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2532,
-    "y": 2534,
+    "x": 2531,
+    "y": 2528,
     "z": 1
   },
   "online-status": "ON",
@@ -28,8 +28,8 @@
   "achievement-points": 0,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 77,
-  "total-loyalty-points": 77.0,
+  "loyalty-points": 101,
+  "total-loyalty-points": 101.0,
   "voting-points": 0,
   "slayer-points": 0,
   "pk-points": 0,
@@ -54,7 +54,7 @@
   "auto-retaliate": false,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 1608755666557,
+  "last-veng": 1608803904981,
   "fight-type": "UNARMED_PUNCH",
   "sol-effect": 0,
   "skull-timer": 0,
