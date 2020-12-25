@@ -1,6 +1,7 @@
 package com.athena.world.content;
 
 import com.athena.GameLoader;
+import com.athena.GameServer;
 import com.athena.model.definitions.NPCDrops;
 import com.athena.util.Misc;
 import com.athena.world.content.minigames.impl.Nomad;
@@ -14,10 +15,6 @@ public class PlayerPanel {
 	public static void refreshPanel(Player player) {
 
 		int counter = 39159;
-		player.getPacketSender().sendString(counter++, "@or3@-@whi@ Droprates");
-		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Droprate: "+NPCDrops.getDroprate(player));
-		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Double drop chance: "+NPCDrops.getDoubleDr(player));
-		player.getPacketSender().sendString(counter++, "");
 
 		player.getPacketSender().sendString(counter++, "@or3@-@whi@ Tools");
 		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Staff Online");
@@ -37,7 +34,7 @@ public class PlayerPanel {
 		player.getPacketSender().sendString(counter++, "");
 
 		player.getPacketSender().sendString(counter++, "@or3@-@whi@ General Information");
-		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Server Time: @yel@"+Misc.getCurrentServerTime());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Server Time: [" +GameLoader.day() + "] " +Misc.getCurrentServerTime());
 		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Time Played: @yel@"+Misc.getHoursPlayed((player.getTotalPlayTime() + player.getRecordedLogin().elapsed())));
 		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Username: @yel@"+player.getUsername());
 		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Rank: @yel@"+player.getRights().toString());
@@ -48,6 +45,8 @@ public class PlayerPanel {
 		
 //		player.getPacketSender().sendString(counter++, "");
 		player.getPacketSender().sendString(counter++, "@or3@-@whi@ Player Statistics");
+		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Droprate: "+NPCDrops.getDroprate(player));
+		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Double drop chance: "+NPCDrops.getDoubleDr(player));
 		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Prestige Points:@yel@ "+player.getPointsHandler().getPrestigePoints());
 		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Trivia Points:@yel@ "+player.getPointsHandler().getTriviaPoints());
 		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Voting Points:@yel@ "+player.getPointsHandler().getVotingPoints());

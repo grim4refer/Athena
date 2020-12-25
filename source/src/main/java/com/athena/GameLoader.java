@@ -69,6 +69,26 @@ public final class GameLoader {
 		Calendar calendar = new GregorianCalendar();
 		return calendar.get(Calendar.DAY_OF_WEEK);
 	}
+
+	public static String day() {
+		switch(getDay()) {
+			case MONDAY:
+				return "Monday";
+			case TUESDAY:
+				return "Tuesday";
+			case WEDNESDAY:
+				return "Wednesday";
+			case THURSDAY:
+				return "Thursday";
+			case FRIDAY:
+				return "Friday";
+			case SATURDAY:
+				return "Saturday";
+			case SUNDAY:
+				return "Sunday";
+		}
+		return "";
+	}
 			//events for each day
 	public static String getSpecialDay() {
 		switch (getDay()) {
