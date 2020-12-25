@@ -1,5 +1,7 @@
 package com.athena.engine.task;
 
+import com.athena.world.entity.impl.player.Player;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -11,9 +13,12 @@ public final class TaskManager {
 
 	private final static List<Task> activeTasks = new LinkedList<>();
 
+	public Player player;
+
 	private TaskManager() {
 		throw new UnsupportedOperationException(
 				"This class cannot be instantiated!");
+
 	}
 
 	public static void sequence() {
@@ -23,6 +28,7 @@ public final class TaskManager {
 				if (t.isRunning()) {
 					activeTasks.add(t);
 				}
+
 			}
 
 			Iterator<Task> it = activeTasks.iterator();
@@ -35,6 +41,7 @@ public final class TaskManager {
 		} catch(Throwable e) {
 			e.printStackTrace();
 		}
+		
 	}
 
 	public static void submit(Task task) {
