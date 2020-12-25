@@ -700,8 +700,6 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/com/athena/world/entity/updating/PlayerUpdateSequence.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/athena/world/entity/updating/PlayerUpdating.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/athena/world/entity/updating/UpdateSequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/resources/loading.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/resources/loading.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/main/java/com/athena/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/com/athena/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/1. Run.bat" beforeDir="false" afterPath="$PROJECT_DIR$/1. Run.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
@@ -1847,7 +1845,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../client" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20344828" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
@@ -1895,36 +1893,36 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1190" y="422" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1608839842824" />
-    <state x="1030" y="299" key="FileChooserDialogImpl" timestamp="1608851627619">
+    <state x="1030" y="299" key="FileChooserDialogImpl" timestamp="1608855761761">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="635" y="216" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1608691735030" />
-    <state x="1030" y="299" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1608851627619" />
-    <state width="2065" height="231" key="GridCell.Tab.0.bottom" timestamp="1608844917715">
+    <state x="1030" y="299" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1608855761761" />
+    <state width="2065" height="231" key="GridCell.Tab.0.bottom" timestamp="1608854019965">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state width="724" height="172" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1608694452739" />
-    <state width="2065" height="231" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1608844917715" />
-    <state width="2065" height="231" key="GridCell.Tab.0.center" timestamp="1608844917714">
+    <state width="2065" height="231" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1608854019965" />
+    <state width="2065" height="231" key="GridCell.Tab.0.center" timestamp="1608854019965">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state width="724" height="172" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1608694452739" />
-    <state width="2065" height="231" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1608844917714" />
-    <state width="2065" height="231" key="GridCell.Tab.0.left" timestamp="1608844917714">
+    <state width="2065" height="231" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1608854019965" />
+    <state width="2065" height="231" key="GridCell.Tab.0.left" timestamp="1608854019965">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state width="724" height="172" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1608694452739" />
-    <state width="2065" height="231" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1608844917714" />
-    <state width="2065" height="231" key="GridCell.Tab.0.right" timestamp="1608844917714">
+    <state width="2065" height="231" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1608854019965" />
+    <state width="2065" height="231" key="GridCell.Tab.0.right" timestamp="1608854019965">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state width="724" height="172" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1608694452739" />
-    <state width="2065" height="231" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1608844917714" />
-    <state x="865" y="290" key="SettingsEditor" timestamp="1608844953120">
+    <state width="2065" height="231" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1608854019965" />
+    <state x="865" y="290" key="SettingsEditor" timestamp="1608855465891">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="-5" y="30" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1608693938631" />
-    <state x="865" y="290" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1608844953120" />
+    <state x="865" y="290" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1608855465891" />
     <state x="1203" y="521" width="672" height="678" key="search.everywhere.popup" timestamp="1608853800274">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
