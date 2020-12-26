@@ -258,6 +258,7 @@ public class CommandPacketListener implements PacketListener {
 			player.sendMessage("You have sucessfully claimed your 2 free Death Touch Darts!");
 			player.sendMessage("they have been added to your " + (space ? "inventory" : "bank") + ".");
 			player.sendMessage("You can use this command again in another 24hours!");
+		        player.save();
 			return;
 
 		case "dediboss":
@@ -304,7 +305,6 @@ public class CommandPacketListener implements PacketListener {
 		case "claim":
 			new Thread(new Donation(player)).start();
 			return;
-			
 		
 		case "redeem": {
 
@@ -348,12 +348,13 @@ public class CommandPacketListener implements PacketListener {
 				final String[] names = new String[] {
 						"You have sucessfully redeemed code: " + World.notifyName + " has recieved...",
 						"... " + item.getAmount() + "x " + item.getDefinition().getName()+ " which has been added to your " + (bank ? "bank" : "inventory") };
-				player.sendMessage("- Yanille Code -");
+				player.sendMessage("- Athena Code -");
 				player.sendMessage(names[0]);
 				player.sendMessage(names[1]);
+				player.save();
 
 			} catch (Exception e) {
-				player.sendMessage("Invalid input! try using ::redeem codenamehere");
+				player.sendMessage("Invalid input! Try using ::redeem codenamehere");
 			}
 			return;
 		}
@@ -458,7 +459,7 @@ public class CommandPacketListener implements PacketListener {
 								// World.sendMessage("<img=10> <col=008FB2>The Vote Boss Has Just Been
 								// Activated! Do ::voteboss To Join The Fight!");
 								World.sendMessage(
-										"<img=10> <col=008FB2>Another 15 votes have been claimed! Vote now using the ::vote command!");
+										"<img=10> <col=008FB2>Another 15 votes have been claimed! Vote now using ::vote");
 								VOTES = 0;
 								// Voting.VOTES = 15;
 							}
@@ -479,81 +480,80 @@ public class CommandPacketListener implements PacketListener {
 		}
 		if (command[0].equalsIgnoreCase("npckills")) {
 			player.getPacketSender()
-					.sendMessage("@red@You currently have " + KillsTracker.getTotalKills(player) + " NPC kills.");
+			.sendMessage("@red@You currently have " + KillsTracker.getTotalKills(player) + " NPC kills.");
 		}
 		if (command[0].equalsIgnoreCase("tdkills")) {
 			player.getPacketSender().sendMessage("@red@You currently have "
-					+ KillsTracker.getTotalKillsForNpc(8349, player) + " Tormented Demon kills.");
+			+ KillsTracker.getTotalKillsForNpc(8349, player) + " Tormented Demon kills.");
 		}
 		if (command[0].equalsIgnoreCase("dustkills")) {
 			player.getPacketSender().sendMessage(
-					"@blu@You currently have " + KillsTracker.getTotalKillsForNpc(1624, player) + " Dust Devil kills.");
+			"@blu@You currently have " + KillsTracker.getTotalKillsForNpc(1624, player) + " Dust Devil kills.");
 		}
 		if (command[0].equalsIgnoreCase("thermykills")) {
 			player.getPacketSender().sendMessage(
-					"@red@You currently have " + KillsTracker.getTotalKillsForNpc(499, player) + " Thermy kills.");
+			"@red@You currently have " + KillsTracker.getTotalKillsForNpc(499, player) + " Thermy kills.");
 		}
 		if (command[0].equalsIgnoreCase("skotizokills")) {
 			player.getPacketSender().sendMessage(
-					"@red@You currently have " + KillsTracker.getTotalKillsForNpc(7286, player) + " Skotizo kills.");
+			"@red@You currently have " + KillsTracker.getTotalKillsForNpc(7286, player) + " Skotizo kills.");
 		}
 		if (command[0].equalsIgnoreCase("kbdkills")) {
 			player.getPacketSender().sendMessage(
-					"@red@You currently have " + KillsTracker.getTotalKillsForNpc(50, player) + " KBD kills.");
+			"@red@You currently have " + KillsTracker.getTotalKillsForNpc(50, player) + " KBD kills.");
 		}
 		if (command[0].equalsIgnoreCase("kqkills")) {
 			player.getPacketSender().sendMessage(
-					"@red@You currently have " + KillsTracker.getTotalKillsForNpc(1160, player) + " KQ kills.");
+			"@red@You currently have " + KillsTracker.getTotalKillsForNpc(1160, player) + " KQ kills.");
 		}
 		if (command[0].equalsIgnoreCase("slashkills")) {
 			player.getPacketSender().sendMessage(
-					"@red@You currently have " + KillsTracker.getTotalKillsForNpc(2060, player) + " Slash Bash kills.");
+			"@red@You currently have " + KillsTracker.getTotalKillsForNpc(2060, player) + " Slash Bash kills.");
 		}
 		if (command[0].equalsIgnoreCase("cerbkills")) {
 			player.getPacketSender().sendMessage(
-					"@red@You currently have " + KillsTracker.getTotalKillsForNpc(1999, player) + " Cerberus kills.");
+			"@red@You currently have " + KillsTracker.getTotalKillsForNpc(1999, player) + " Cerberus kills.");
 		}
 		if (command[0].equalsIgnoreCase("phoenixkills")) {
 			player.getPacketSender().sendMessage(
-					"@red@You currently have " + KillsTracker.getTotalKillsForNpc(8549, player) + " Phoenix kills.");
+			"@red@You currently have " + KillsTracker.getTotalKillsForNpc(8549, player) + " Phoenix kills.");
 		}
 		if (command[0].equalsIgnoreCase("shamankills")) {
 			player.getPacketSender().sendMessage(
-					"@red@You currently have " + KillsTracker.getTotalKillsForNpc(6766, player) + " Shaman kills.");
-
+			"@red@You currently have " + KillsTracker.getTotalKillsForNpc(6766, player) + " Shaman kills.");
 		}
 		if (command[0].equalsIgnoreCase("dwolfkills")) {
 			player.getPacketSender().sendMessage(
-					"@red@You currently have " + KillsTracker.getTotalKillsForNpc(4413, player) + " Dire Wolf kills.");
+			"@red@You currently have " + KillsTracker.getTotalKillsForNpc(4413, player) + " Dire Wolf kills.");
 		}
 		if (command[0].equalsIgnoreCase("glacorkills")) {
 			player.getPacketSender().sendMessage(
-					"@red@You currently have " + KillsTracker.getTotalKillsForNpc(1382, player) + " Glacor kills.");
+			"@red@You currently have " + KillsTracker.getTotalKillsForNpc(1382, player) + " Glacor kills.");
 		}
 		if (command[0].equalsIgnoreCase("yetikills")) {
 			player.getPacketSender().sendMessage(
-					"@red@You currently have " + KillsTracker.getTotalKillsForNpc(130, player) + " Yeti kills.");
+			"@red@You currently have " + KillsTracker.getTotalKillsForNpc(130, player) + " Yeti kills.");
 		}
 		if (command[0].equalsIgnoreCase("cyrisuskills")) {
 			player.getPacketSender().sendMessage(
-					"@red@You currently have " + KillsTracker.getTotalKillsForNpc(433, player) + " Cyrisus kills.");
+			"@red@You currently have " + KillsTracker.getTotalKillsForNpc(433, player) + " Cyrisus kills.");
 		}
 		if (command[0].equalsIgnoreCase("frostkills")) {
 			player.getPacketSender().sendMessage(
-					"@red@You currently have " + KillsTracker.getTotalKillsForNpc(51, player) + " Frost Dragon kills.");
+			"@red@You currently have " + KillsTracker.getTotalKillsForNpc(51, player) + " Frost Dragon kills.");
 		}
 		if (command[0].equalsIgnoreCase("nazakills")) {
 			player.getPacketSender().sendMessage(
-					"@red@You currently have " + KillsTracker.getTotalKillsForNpc(509, player) + " Nazastarool kills.");
+			"@red@You currently have " + KillsTracker.getTotalKillsForNpc(509, player) + " Nazastarool kills.");
 		}
 		if (command[0].equalsIgnoreCase("abbadonkills")) {
 			player.getPacketSender().sendMessage(
-					"@red@You currently have " + KillsTracker.getTotalKillsForNpc(6303, player) + " Abbadon kills.");
+			"@red@You currently have " + KillsTracker.getTotalKillsForNpc(6303, player) + " Abbadon kills.");
 		}
 		
 		if (command[0].equals("players")) {
 			player.getPacketSender()
-					.sendMessage("There are currently " + (int) (World.getPlayers().size() * 1) + " players online!");
+			.sendMessage("There are currently " + (int) (World.getPlayers().size() * 1) + " players online!");
 		}
 		if (command[0].equals("pointzone") || command[0].equals("pointszone")) {
 			TeleportHandler.teleportPlayer(player, new Position(2766, 2799), player.getSpellbook().getTeleportType());
@@ -634,6 +634,7 @@ public class CommandPacketListener implements PacketListener {
 		//
 		// }
 		if (command[0].equalsIgnoreCase("gee")) {
+			player.getSkillManager().stopSkilling();
 			GrandExchange.open(player);
 		}
 		if (command[0].equals("tree")) {
@@ -761,9 +762,9 @@ public class CommandPacketListener implements PacketListener {
 			player.getPacketSender().sendString(1, "http://yanille.net/forums/index.php?/topic/" + threadId);
 		}
 		if (command[0].equalsIgnoreCase("prices")) {
-			player.getPacketSender().sendMessage("Opening prices: " + 2668);
-			player.getPacketSender().sendString(1,
-					"https://yanille.net/forums/index.php?/topic/268-official-price-guide");
+			player.getPacketSender().sendMessage("Feature Coming Soon...");
+			//player.getPacketSender().sendString(1,
+					//"https://yanille.net/forums/index.php?/topic/268-official-price-guide");
 		}
 		if (command[0].equalsIgnoreCase("train")) {
 			TeleportHandler.teleportPlayer(player, new Position(2505, 2507, 1), player.getSpellbook().getTeleportType());
@@ -802,6 +803,7 @@ public class CommandPacketListener implements PacketListener {
 			// Achievements.finishAchievement(player,
 			// AchievementData.SET_AN_EMAIL_ADDRESS);
 			PlayerPanel.refreshPanel(player);
+			player.save();
 		}
 
 		if (command[0].equalsIgnoreCase("changepassword")) {
@@ -816,6 +818,7 @@ public class CommandPacketListener implements PacketListener {
 			}
 			player.setPassword(syntax);
 			player.getPacketSender().sendMessage("Your new password is: [" + syntax + "] Write it down!");
+			player.save();
 
 		}
 
@@ -856,12 +859,12 @@ public class CommandPacketListener implements PacketListener {
 			player.getPacketSender().sendMessage("Your progress has been saved.");
 		}
 		if (command[0].equals("vote")) {
-			player.getPacketSender().sendString(1, "http://Yanille.net/vote/");
-			player.getPacketSender().sendMessage("Attempting to open Yanille voting");
+			//player.getPacketSender().sendString(1, "http://Yanille.net/vote/");
+			player.getPacketSender().sendMessage("Voting Coming Soon...");
 		}
 		if (command[0].equals("benefits")) {
-			player.getPacketSender().sendString(1, "http://yanille.net/store/");
-			player.getPacketSender().sendMessage("Attempting to open Yanille Rank Benefits");
+			//player.getPacketSender().sendString(1, "http://yanille.net/store/");
+			player.getPacketSender().sendMessage("Store Coming Soon...");
 		}
 		if (command[0].equals("help")) {
 			if (player.getLastYell().elapsed(30000)) {
@@ -1035,6 +1038,7 @@ public class CommandPacketListener implements PacketListener {
 					|| player.getLocation() == Location.RECIPE_FOR_DISASTER
 					|| player.getLocation() == Location.WILDERNESS) {
 				player.getPacketSender().sendMessage("You cannot open your bank here!");
+				World.sendStaffMessage("" + player.getUsername()+ " has tried opening their bank in" + player.getLocation();
 				return;
 			}
 			player.getBank(player.getCurrentBankTab()).open();
@@ -1158,7 +1162,7 @@ public class CommandPacketListener implements PacketListener {
 			String player2 = wholeCommand.substring(5);
 			Player playerToKick = World.getPlayerByName(player2);
 			if (playerToKick == null) {
-				player.getPacketSender().sendConsoleMessage("Player " + player2 + " couldn't be found on Yanille.");
+				player.getPacketSender().sendConsoleMessage("Player " + player2 + " couldn't be found on Athena.");
 				return;
 			} else if (playerToKick.getLocation() != Location.WILDERNESS) {
 				World.deregister(playerToKick);
@@ -1166,6 +1170,7 @@ public class CommandPacketListener implements PacketListener {
 				player.getPacketSender().sendConsoleMessage("Kicked " + playerToKick.getUsername() + ".");
 				PlayerLogs.log(player.getUsername(),
 						"" + player.getUsername() + " just kicked " + playerToKick.getUsername() + "!");
+				
 			}
 		}
 
@@ -1175,6 +1180,7 @@ public class CommandPacketListener implements PacketListener {
 					|| player.getLocation() == Location.RECIPE_FOR_DISASTER
 					|| player.getLocation() == Location.WILDERNESS) {
 				player.getPacketSender().sendMessage("You cannot open your bank here!");
+				World.sendStaffMessage("[Staff] " + player.getUsername()+ " has tried opening their bank in" + player.getLocation();
 				return;
 			}
 			player.getBank(player.getCurrentBankTab()).open();
@@ -1194,6 +1200,7 @@ public class CommandPacketListener implements PacketListener {
 							"" + player.getUsername() + " just jailed " + player2.getUsername() + "!");
 					player.getPacketSender().sendMessage("Jailed player: " + player2.getUsername() + "");
 					player2.getPacketSender().sendMessage("You have been jailed by " + player.getUsername() + ".");
+					World.sendStaffMessage("[Staff] " + player2.getUsername()+ " has been jailed by" + player.getusername();
 				} else {
 					player.getPacketSender().sendConsoleMessage("Jail is currently full.");
 				}
@@ -1204,7 +1211,6 @@ public class CommandPacketListener implements PacketListener {
 
 		if (command[0].equalsIgnoreCase("mmz")) {
 			TeleportHandler.teleportPlayer(player, new Position(2038, 4497), TeleportType.NORMAL);
-
 		}
 
 		if (command[0].equals("remindvote")) {
@@ -1460,8 +1466,8 @@ public class CommandPacketListener implements PacketListener {
 							.sendConsoleMessage("Teleporting player to you: " + player2.getUsername() + "");
 					player2.getPacketSender().sendMessage("You're being teleported to " + player.getUsername() + "...");
 				} else {
-					player.getPacketSender().sendConsoleMessage(
-							"You can not teleport that player at the moment. Maybe you or they are in a minigame?");
+					player.getPacketSender().sendConsoleMessage("You can not teleport that player at the moment. Maybe you or they are in a minigame?");
+					player2.getPacketSender().sendMessage("You were not teleported at this moment...");
 				}
 			}
 		}
@@ -1479,8 +1485,8 @@ public class CommandPacketListener implements PacketListener {
 					player2.getPacketSender().sendMessage("You've been moved to " + player.getUsername());
 					player2.moveTo(player.getPosition().copy());
 				} else {
-					player.getPacketSender()
-							.sendConsoleMessage("Failed to move player to your coords. Are you or them in a minigame?");
+					player.getPacketSender().sendConsoleMessage("Failed to move player to your coords. Are you or them in a minigame?");
+					player2.getPacketSender().sendMessage("You were not teleported at this moment...");
 				}
 			}
 		}
@@ -1488,14 +1494,14 @@ public class CommandPacketListener implements PacketListener {
 			String player2 = wholeCommand.substring(5);
 			Player playerToKick = World.getPlayerByName(player2);
 			if (playerToKick == null) {
-				player.getPacketSender().sendConsoleMessage("Player " + player2 + " couldn't be found on Yanille.");
+				player.getPacketSender().sendConsoleMessage("Player " + player2 + " couldn't be found on Athena.");
 				return;
+			
 			} else if (playerToKick.getLocation() != Location.WILDERNESS) {
 				World.deregister(playerToKick);
 				PlayerHandler.handleLogout(playerToKick);
 				player.getPacketSender().sendConsoleMessage("Kicked " + playerToKick.getUsername() + ".");
-				PlayerLogs.log(player.getUsername(),
-						"" + player.getUsername() + " just kicked " + playerToKick.getUsername() + "!");
+				PlayerLogs.log(player.getUsername(),"" + player.getUsername() + " just kicked " + playerToKick.getUsername() + "!");
 			}
 		}
 	}
