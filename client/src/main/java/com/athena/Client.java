@@ -613,7 +613,7 @@ public class Client extends RSApplet {
 			newBoldFont.drawCenteredString(inputTitle != null ? inputTitle : "Enter amount:", 259 + offsetX,
 					60 + offsetY, 0, -1);
 			newBoldFont.drawCenteredString(amountOrNameInput + "*", 259 + offsetX, 80 + offsetY, 128, -1);
-		} else if (inputDialogState == 2) {
+			} else if (inputDialogState == 2) {
 			spriteCache.get(64).drawSprite(0 + offsetX, 0 + offsetY);
 			newBoldFont.drawCenteredString(inputTitle != null ? inputTitle : "Enter name:", 259 + offsetX, 60 + offsetY,
 					0, -1);
