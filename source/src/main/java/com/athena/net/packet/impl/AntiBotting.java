@@ -15,7 +15,9 @@ public class AntiBotting {
 	private static String currentAnswer;
 	
 	private static final String[][] QUESTION_DATA = {
-			{"What is the name of this server", "Yanille"}
+			{"What is the name of this server", "Athena"}
+			{"What game is Athena created from? ( Hint: RuneScape )", "RuneScape"}
+			{"What currency is used in Athena? ( Hint: Gold )", "Gold"}
 	};
 	
 	
