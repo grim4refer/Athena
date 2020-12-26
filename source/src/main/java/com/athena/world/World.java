@@ -52,7 +52,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 public class World {
 
 
-	private static final Logger logger = Logger.getLogger("Arlania");
+	private static final Logger logger = Logger.getLogger("Athena");
 
 
 	/** All of the registered players. */

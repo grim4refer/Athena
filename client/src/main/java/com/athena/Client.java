@@ -11367,16 +11367,16 @@ public class Client extends RSApplet {
 				return;
 			}
 			if (loginCode == 6) {
-				loginMessages = new String[] { "Yanille is currently being updated.",
+				loginMessages = new String[] { "Athena is currently being updated.",
 						"Please try again in 60 seconds.." };
 				return;
 			}
 			if (loginCode == 7) {
-				loginMessages = new String[] { "Yanille is currently busy.", "Please try again." };
+				loginMessages = new String[] { "Athena is currently busy.", "Please try again." };
 				return;
 			}
 			if (loginCode == 8) {
-				loginMessages = new String[] { "Yanille login server is down.",
+				loginMessages = new String[] { "Athena login server is down.",
 						"Please try again in 60 seconds.." };
 				return;
 			}
@@ -11401,12 +11401,12 @@ public class Client extends RSApplet {
 				return;
 			}
 			if (loginCode == 14) {
-				loginMessages = new String[] { "Yanille is currently being updated.",
+				loginMessages = new String[] { "Athena is currently being updated.",
 						"Please try again in 60 seconds.." };
 				return;
 			}
 			if (loginCode == 23) {
-				loginMessages = new String[] { "Yanille is currently being launched.",
+				loginMessages = new String[] { "Athena is currently being launched.",
 						"Please try again in 60 seconds.." };
 				return;
 			}
@@ -11432,7 +11432,7 @@ public class Client extends RSApplet {
 				return;
 			}
 			if (loginCode == 30) {
-				loginMessages = new String[] { "Yanille has been updated!",
+				loginMessages = new String[] { "Athena has been updated!",
 						isWebclient() ? "Refresh this page." : "Download the latest client." };
 				return;
 			}
@@ -12639,7 +12639,7 @@ public class Client extends RSApplet {
 			g.setFont(new Font("Helvetica", 1, 16));
 			g.setColor(Color.yellow);
 			int k = 35;
-			g.drawString("Sorry, an error has occured whilst loading Yanille", 30, k);
+			g.drawString("Sorry, an error has occured whilst loading Athena", 30, k);
 			k += 50;
 			g.setColor(Color.white);
 			g.drawString("To fix this try the following (in order):", 30, k);
@@ -12660,7 +12660,7 @@ public class Client extends RSApplet {
 			g.setFont(new Font("Helvetica", 1, 20));
 			g.setColor(Color.white);
 			g.drawString("Error - unable to load game!", 50, 50);
-			g.drawString("To play Yanille make sure you play from", 50, 100);
+			g.drawString("To play Athena make sure you play from", 50, 100);
 			g.drawString("http://www.Yanille.net", 50, 150);
 		}
 	}
@@ -15396,7 +15396,7 @@ public class Client extends RSApplet {
 		int k = 0;
 		while (expectedCRCs[8] == 0) {
 			String s = "Unknown problem";
-			setLoadingText(10, "Connecting to Yanille...");
+			setLoadingText(10, "Connecting to Athena...");
 			try {
 				DataInputStream datainputstream = openJagGrabInputStream(
 						"crc" + (int) (Math.random() * 99999999D) + "-" + 317);
