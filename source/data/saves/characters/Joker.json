@@ -1,5 +1,5 @@
 {
-  "total-play-time-ms": 833384,
+  "total-play-time-ms": 894322,
   "username": "Joker",
   "password": "123",
   "email": "null",
@@ -13,7 +13,7 @@
   "loyalty-title": "NONE",
   "position": {
     "x": 2529,
-    "y": 2526,
+    "y": 2527,
     "z": 1
   },
   "online-status": "ON",
@@ -28,8 +28,8 @@
   "achievement-points": 4,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 1163,
-  "total-loyalty-points": 1163.0,
+  "loyalty-points": 1484,
+  "total-loyalty-points": 1484.0,
   "voting-points": 0,
   "slayer-points": 0,
   "pk-points": 0,
@@ -54,7 +54,7 @@
   "auto-retaliate": false,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 80546678,
+  "last-veng": 1608915265867,
   "fight-type": "UNARMED_PUNCH",
   "sol-effect": 0,
   "skull-timer": 0,
@@ -479,13 +479,13 @@
   ],
   "skills": {
     "level": [
-      99988,
-      99988,
-      99988,
-      99988,
-      289,
+      99984,
+      99984,
+      99984,
+      99984,
+      285,
       99999,
-      289,
+      285,
       99,
       99,
       99,
@@ -592,8 +592,8 @@
       "slot": 0
     },
     {
-      "id": 21051,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
@@ -682,8 +682,8 @@
       "slot": 0
     },
     {
-      "id": 773,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
@@ -692,8 +692,8 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 15707,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -724,8 +724,8 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 21051,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -764,8 +764,8 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 773,
+      "amount": 1,
       "slot": 0
     },
     {

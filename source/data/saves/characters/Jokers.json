@@ -1,5 +1,5 @@
 {
-  "total-play-time-ms": 57599,
+  "total-play-time-ms": 81598,
   "username": "Jokers",
   "password": "123",
   "email": "null",
@@ -28,8 +28,8 @@
   "achievement-points": 0,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 15,
-  "total-loyalty-points": 15.0,
+  "loyalty-points": 21,
+  "total-loyalty-points": 21.0,
   "voting-points": 0,
   "slayer-points": 0,
   "pk-points": 0,
@@ -54,8 +54,8 @@
   "auto-retaliate": false,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 1608863952315,
-  "fight-type": "UNARMED_PUNCH",
+  "last-veng": 131971341,
+  "fight-type": "SWORD_STAB",
   "sol-effect": 0,
   "skull-timer": 0,
   "accept-aid": false,
@@ -597,43 +597,43 @@
       "slot": 0
     },
     {
-      "id": 11536,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 11538,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 11539,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 11543,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 11540,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 11541,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 11542,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 11544,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
@@ -709,8 +709,18 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 11543,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 11542,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 11539,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -719,8 +729,8 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 11538,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -729,8 +739,8 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 11536,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -739,8 +749,13 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 11541,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 11540,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -749,23 +764,8 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
+      "id": 11544,
+      "amount": 1,
       "slot": 0
     },
     {
