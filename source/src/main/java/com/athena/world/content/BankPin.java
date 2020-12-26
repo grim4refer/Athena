@@ -71,6 +71,7 @@ public class BankPin {
 				player.getBankPinAttributes().setHasBankPin(true).setHasEnteredBankPin(true).setBankPin(player.getBankPinAttributes().getEnteredBankPin());
 				player.getPacketSender().sendMessage("You've created a bank-pin. Your digit is "+player.getBankPinAttributes().getEnteredBankPin()[0]+"-"+player.getBankPinAttributes().getEnteredBankPin()[1]+"-"+player.getBankPinAttributes().getEnteredBankPin()[2]+"-"+player.getBankPinAttributes().getEnteredBankPin()[3]+". Please write it down.");
 				player.getPacketSender().sendInterfaceRemoval();
+				player.save();
 				return;
 			}
 			for(int i = 0; i < player.getBankPinAttributes().getEnteredBankPin().length; i++) {
