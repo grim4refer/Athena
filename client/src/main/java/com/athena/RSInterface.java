@@ -166,7 +166,7 @@ public class RSInterface {
 		addText(29045,"Check Rewards", 0xFF981F, true, true, -1, 1);
 		setBounds(29045, 305, 283, 9, widget);
 
-		addText(29046,"@whi@Match 3 Yanille Capes to win a prize!", 0xFF981F, true, true, -1, 1);
+		addText(29046,"@whi@Match 3 Athena Capes to win a prize!", 0xFF981F, true, true, -1, 1);
 		setBounds(29046, 256, 53, 10, widget);
 
 		addText(29047,"", 0xFF981F, true, true, -1, 2);
@@ -862,7 +862,7 @@ public class RSInterface {
      addHoveredButton(3226, "Pets/Pack", 8, 101, 74, 20885);
      addHoverButton(3235, "Pets/Pack", 9, 100, 74, "Value @or2@Legendary Package", -1, 3236, 1);
      addHoveredButton(3236, "Pets/Pack", 10, 101, 74, 20886);
-     addText(3210, "Yanille Point Shop", atextdrawingarea, 3, 0xffcc33, false, true);
+     addText(3210, "Athena Point Shop", atextdrawingarea, 3, 0xffcc33, false, true);
      addText(3211, "RP:", atextdrawingarea, 3, 0xffcc33, false, true);
      addHoverButton(3215, "Pets/Pack", 3, 100, 74, "Value @or2@Extreme Package", -1, 3216, 1);
      addHoveredButton(3216, "Pets/Pack", 4, 101, 74, 3217);
@@ -882,7 +882,7 @@ public class RSInterface {
      addText(3273, "Donator Box", atextdrawingarea, 0, 0xffcc33, false, true);
      addText(3274, "Uncommon Package", atextdrawingarea, 0, 0xffcc33, false, true);
      addText(3275, "Learn More", atextdrawingarea, 0, 0x19f50e, false, true);
-     addText(3276, "Kill ::pointzone To Obtain Yanille Points!", atextdrawingarea, 3, 0xffcc33, false, true);
+     addText(3276, "Kill ::pointzone To Obtain Athena Points!", atextdrawingarea, 3, 0xffcc33, false, true);
      rsinterface.totalChildren(34);
      rsinterface.child(0, 3201, 12, 46);
      rsinterface.child(1, 3202, 475, 51);
@@ -1007,7 +1007,7 @@ public class RSInterface {
 	 * 
 	 */
 
-	scroll.addText(50300, "Yanille Rules", 0x09f3f7, true, true, 100, tda, 2);
+	scroll.addText(50300, "Athena Rules", 0x09f3f7, true, true, 100, tda, 2);
 	scroll.addText(50301, "Starter Guide", 0x09f3f7, true, true, 100, tda, 2);
 	scroll.addText(50302, "Melee Gear Guide", 0x09f3f7, true, true, 100, tda, 2);
 	scroll.addText(50303, "Range Gear Guide", 0x09f3f7, true, true, 100, tda, 2);
@@ -1382,7 +1382,7 @@ public class RSInterface {
 	public static void newStarter(TextDrawingArea[] tda) {
 		RSInterface tab = addInterface(52750);
 		addSpriteLoader(52751, 960);
-		addText(52752, "Yanille Account Setup", 0xff9933, true, true, 52, tda, 3);
+		addText(52752, "Athena Account Setup", 0xff9933, true, true, 52, tda, 3);
 		addText(52753, "Starter Items:", 0xff9933, false, true, 52, tda, 1);
 		addText(52754, "Modes: ", 0xff9933, false, true, 52, tda, 1);
 		addText(52755, "Mode Description:", 0xff9933, true, true, 52, tda, 2);
@@ -1394,7 +1394,7 @@ public class RSInterface {
 		addText(52761, "Normal", 0xff9933, false, true, 52, tda, 0);
 		addText(52762, "  Ironman", 0xff9933, false, true, 52, tda, 0);
 		addText(52763, "  Ultimate Iron", 0xff9933, false, true, 52, tda, 0);
-		addText(52764, "Play Yanille as an Iron man.", 0xff9933, true, true, 52, tda, 0);
+		addText(52764, "Play Athena as an Iron man.", 0xff9933, true, true, 52, tda, 0);
 		addText(52765, "You will be restricted from trading, staking and looting items from killed players.", 0xff9933, true, true, 52, tda, 0);
 		addText(52766, "You will not get a npc drop if another player has done more damage.", 0xff9933, true, true, 52, tda, 0);
 		addText(52767, "You will have to rely on your starter, skilling, pvming, and shops.", 0xff9933, true, true, 52, tda, 0);
@@ -1584,7 +1584,7 @@ public class RSInterface {
 	addHoveredButton(37437, "Interfaces/Tele/TBUTTONS/BH", 11, 81, 34, 37638);
 	
 
-					addText(50430, "Yanille Teleports", fonts, 2, 0xff9040, true, true); //rename it whatever
+					addText(50430, "Athena Teleports", fonts, 2, 0xff9040, true, true); //rename it whatever
 	
 	int last = 33;
 	RSinterface.children = new int[last];
@@ -1689,7 +1689,7 @@ public class RSInterface {
 
 	
 
-					addText(50430, "Yanille Teleports", fonts, 2, 0xff9040, true, true);
+					addText(50430, "Athena Teleports", fonts, 2, 0xff9040, true, true);
 	
 	int last = 29;
 	RSinterface.children = new int[last];
@@ -1800,7 +1800,7 @@ public static void TeleTAB3_1() {
 	//addHoverButton(41440, "Interfaces/Tele/ARROW", 0, 29, 24, "Back", -1, 41441, 1);
 	
 	
-	addText(50430, "Yanille Teleports", fonts, 2, 0xff9040, true, true);
+	addText(50430, "Athena Teleports", fonts, 2, 0xff9040, true, true);
 	
 	int last = 34;
 	RSinterface.children = new int[last];
@@ -1906,7 +1906,7 @@ public static void TeleTAB3_2() {
 	addHoverButton(42440, "Interfaces/Tele/ARROW", 0, 29, 24, "Back", -1, 42441, 1);
 	
 	
-	addText(50430, "Yanille Teleports", fonts, 2, 0xff9040, true, true);
+	addText(50430, "Athena Teleports", fonts, 2, 0xff9040, true, true);
 	
 	int last = 35;
 	RSinterface.children = new int[last];
@@ -2019,7 +2019,7 @@ public static void TeleTAB3_2() {
 	addHoverButton(43440, "Interfaces/Tele/ARROW", 0, 29, 24, "Back", -1, 43441, 1);
 	
 	
-	addText(50430, "Yanille Teleports", fonts, 2, 0xff9040, true, true);
+	addText(50430, "Athena Teleports", fonts, 2, 0xff9040, true, true);
 	
 	int last = 24;
 	RSinterface.children = new int[last];
@@ -2118,7 +2118,7 @@ public static void TeleTAB4() {
 	addHoveredButton(39429, "Interfaces/Tele/MBUTTONS/BH", 7, 81, 34, 39630);					
 	
 
-					addText(50430, "Yanille Teleports", fonts, 2, 0xff9040, true, true);
+					addText(50430, "Athena Teleports", fonts, 2, 0xff9040, true, true);
 					
 	
 	int last = 25;
@@ -2219,7 +2219,7 @@ public static void TeleTAB5() {
 
 	
 	
-	addText(50430, "Yanille Teleports", fonts, 2, 0xff9040, true, true);
+	addText(50430, "Athena Teleports", fonts, 2, 0xff9040, true, true);
 	
 	int last = 25;
 	RSinterface.children = new int[last];
@@ -2404,7 +2404,7 @@ public static void TeleTAB5() {
 		addSpriteLoader(57001, 805);
 		addText(57002, "Players Online", 0xff9933, true, true, -1, tda, 2);
 		addText(57003, "", 0xff9933, true, true, -1, tda, 1);
-		addText(57007, "Yanille", 0xff9933, true, true, -1, tda, 0);
+		addText(57007, "Athena", 0xff9933, true, true, -1, tda, 0);
 		addText(57008, "", 0xff9933, true, true, -1, tda, 3);
 		addText(57009, "", 0xff9933, false, true, -1, tda, 0);
 		addText(57010, "", 0xff9933, false, true, -1, tda, 0);
@@ -3440,9 +3440,9 @@ public static void TeleTAB5() {
 			}
 			if (rsInterface.type == 4) {
 				rsInterface.message = stream.readString().replaceAll(
-						"RuneScape", "Yanille");
-				if(rsInterface.message.toLowerCase().equals("the bank of Yanille")) {
-					rsInterface.message = "        The Bank of Yanille";
+						"RuneScape", "Athena");
+				if(rsInterface.message.toLowerCase().equals("the bank of Athena")) {
+					rsInterface.message = "        The Bank of Athena";
 				}
 				rsInterface.enabledMessage = stream.readString();
 			}
@@ -4815,7 +4815,7 @@ public static void TeleTAB5() {
         addScroll(id + 160, 190, 100, 200, 10);
         addSprite(id + 2, 0, directory);
  
-        addText(id + 3, "Yanille", 0xAF6A1B, false, true, 0, tda, 2);
+        addText(id + 3, "Athena", 0xAF6A1B, false, true, 0, tda, 2);
         addText(id + 4, "100% Drops", 0xAF6A1B, false, true, 0, tda, 2);
         addText(id + 5, "Regular Drops: 20", 0xAF6A1B, true, true, 0, tda, 2);
         addText(id + 6, "Rare Drops: 10", 0xAF6A1B, true, true, 0, tda, 2);
@@ -5004,7 +5004,7 @@ public static void TeleTAB5() {
 	private static void questTabInterface() {
 		RSInterface tab = addTabInterface(639);
 		RSInterface scroll = addTabInterface(15016);
-		addText(39155, "@red@Yanille.net", fonts, 2, 16750623, false, true);
+		addText(39155, "@whi@Athena - Stage: Dev", fonts, 2, 16750623, false, true);
 		addSpriteLoader(39156, 722);
 		addSpriteLoader(39157, 723);
 		addSpriteLoader(39158, 722);

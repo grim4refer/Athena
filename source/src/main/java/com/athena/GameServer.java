@@ -10,7 +10,6 @@ import com.athena.model.container.impl.Bank;
 import com.athena.util.ShutdownHook;
 import com.athena.world.entity.impl.player.Player;
 import com.athena.world.entity.impl.player.PlayerLoading;
-import com.athena.services.discord.DiscordBot;
 /**
  * The starting point of Athena.
  * @author Gabriel
@@ -21,9 +20,6 @@ public class GameServer {
 	private static final GameLoader loader = new GameLoader(GameSettings.GAME_PORT);
 	private static final Logger logger = Logger.getLogger("Athena");
 	private static boolean updating;
-
-	public static DiscordBot bot;
-
 
 	static long totalEco = 0;
 
@@ -90,13 +86,6 @@ public class GameServer {
 			logger.info("Initializing the loader...");
 			loader.init();
 			loader.finish();
-			try {
-			    bot = new DiscordBot("NzQwOTM2MzY5NzM1NzI5MjM0.XywQxA.O-fMws5pMT3SfVf8fkC5-kV28wg");
-			} catch (Exception e) {
-				System.out.println("Failed to startup Discord BOT! re-try!");
-				System.exit(1);
-				return;
-			}
 			logger.info("The loader has finished loading utility tasks.");
 			logger.info("Athena is now online on port "+ com.athena.GameSettings.GAME_PORT+"!");
 			//checkServersEco(null);
