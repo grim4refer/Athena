@@ -1,11 +1,11 @@
 package com.athena;
 
-import com.athena.teleport.hierarchy.TeleportChatbox;
-
 import java.applet.Applet;
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
@@ -24,12 +24,14 @@ import java.awt.event.MouseWheelListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
-import javax.swing.*;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
 
 @SuppressWarnings("all")
 public class RSApplet extends Applet implements Runnable, MouseListener,
-MouseMotionListener, MouseWheelListener, KeyListener, FocusListener,
-WindowListener {
+		MouseMotionListener, MouseWheelListener, KeyListener, FocusListener,
+		WindowListener {
 
 	public static int hotKey = 508;
 	public boolean resizing;
@@ -83,7 +85,7 @@ WindowListener {
 		return mainFrame;
 	}
 	public void rebuildFrame(boolean undecorated, int width, int height,
-			boolean resizable, boolean full) {
+							 boolean resizable, boolean full) {
 		boolean webc = Client.webclient && Jframe.frame == null;
 		if(webc) {
 			if(mainFrame != null)
@@ -105,19 +107,19 @@ WindowListener {
 			frame.setPreferredSize(new Dimension(width, height));
 			frame.setResizable(resizable);
 			frame.setUndecorated(undecorated);*/
-			
-			
+
+
 			if(Client.instance instanceof Jframe) {
-				
+
 				Jframe frame = (Jframe) Client.instance;
-				
+
 				frame.rebuildFrame(width, height, resizable, undecorated);
-				
+
 			} else {
 				mainFrame = new RSFrame(this, width, height, undecorated, resizable);
 				mainFrame.addWindowListener(this);
 			}
-			
+
 		}
 		graphics = (webc || Jframe.frame != null ? this : mainFrame).getGraphics();
 		if(getGameComponent().getMouseListeners().length == 0) {
@@ -140,7 +142,7 @@ WindowListener {
 		fullGameScreen = new RSImageProducer(myWidth, myHeight, getGameComponent());
 		startRunnable(this, 1);
 	}
-	
+
 	@Override
 	public int getHeight()
 	{
@@ -336,7 +338,6 @@ WindowListener {
 
 	public void mouseWheelMoved(MouseWheelEvent event) {
 		int rotation = event.getWheelRotation();
-		handleInterfaceScrolling(event);
 		if (mouseX > 0 && mouseX < 512
 				&& mouseY > Client.getClient().clientHeight - 165
 				&& mouseY < Client.getClient().clientHeight - 25) {
@@ -352,7 +353,8 @@ WindowListener {
 				Client.anInt1089 = scrollPos;
 				Client.inputTaken = true;
 			}
-		}  else if(Client.loggedIn) {
+		} else if (handleInterfaceScrolling(event)) {
+		} else if(Client.loggedIn) {
 			boolean zoom = Client.clientSize == 0 ? (mouseX < 512) : (mouseX < Client.clientWidth - 200);
 			if(zoom && Client.openInterfaceID == -1) {
 				Client.clientZoom += rotation * 30;
@@ -369,179 +371,89 @@ WindowListener {
 		}
 	}
 
-
-	private void handleInterfaceScrolling(MouseWheelEvent e) {
-		try {
-
-			int Rotation = e.getWheelRotation();
-			int TAB = 0, WINDOW = 1;
-			int POSX = 0, POSY = 1, WIDTH = 2, HEIGHT = 3, OFFX = 4, OFFY = 5, CHILD = 6, SENSITIVITY = 7;
-			int offsetX = 0;
-			int offsetY = 0;
-			int tabInterfaceID = Client.getClient().tabInterfaceIDs[Client.getClient().tabID];
-			if(tabInterfaceID == 11000)
-				tabInterfaceID = 1151;
-			int[] InterfaceID = { tabInterfaceID,
-					Client.openInterfaceID};
-			int[] InterfaceSetting = { 0, 0, /* positionX, positionY */
-					0, 0, /* Width, Height */
-					offsetX, offsetY, /* offsetX, offsetY */
-					0, 15 /* Child ID, Sensitivity */
-			};
-			int[] IS = InterfaceSetting;
-
-			if (InterfaceID[TAB] != -1) {
-				RSInterface tab = RSInterface.interfaceCache[tabInterfaceID];
-				if (tab == null || tab.children == null) {
-					return;
-				}
-
-				InterfaceSetting[OFFX] = Client.instance.isFixed() ? Client.getClient().clientWidth - 218 : (Client.instance.isFixed() ? 28 : Client.getClient().clientWidth - 197);
-				InterfaceSetting[OFFY] = Client.instance.isFixed() ? Client.getClient().clientHeight - 298 : (Client.instance.isFixed() ? 37 : Client.getClient().clientHeight - (Client.getClient().clientWidth >= 1000 ? 37 : 74) - 267);
-
-				//InterfaceSetting[OFFX] = getRealScreenWidth() - 218;
-				//InterfaceSetting[OFFY] = getRealScreenHeight() - 298;
-
-				for (int Index = 0; Index < tab.children.length; Index++) {
-
-					if (RSInterface.interfaceCache[tab.children[Index]].scrollMax > 0) {
-
-						InterfaceSetting[CHILD] = Index;
-						InterfaceSetting[POSX] = tab.childX[Index];
-						InterfaceSetting[POSY] = tab.childY[Index];
-						InterfaceSetting[WIDTH] = getChildWidth(tab, Index);
-						InterfaceSetting[HEIGHT] = getChildHeight(tab, Index);
-						//break;
-
-						if (mouseX > IS[OFFX] + IS[POSX] && mouseY > IS[OFFY] + IS[POSY] && mouseX < IS[OFFX] + IS[POSX] + IS[WIDTH] && mouseY < IS[OFFY] + IS[POSY] + IS[HEIGHT]) {
-							switch (InterfaceID[TAB]) {
-								case 962: /* Music Tab */
-									IS[SENSITIVITY] = 30;
-									break;
-
-								case 638: /* Quest Tab */
-									IS[SENSITIVITY] = 30;
-									break;
-
-								case 1151: /* Magic Tab */
-									IS[SENSITIVITY] = 7;
-									break;
-
-								case 147: /* Emote Tab */
-									IS[SENSITIVITY] = 15;
-									break;
-
-								default:
-									IS[SENSITIVITY] = 15;
-									break;
-							}
-
-							switch (Rotation) {
-								case -1:
-									if (RSInterface.interfaceCache[tab.children[IS[CHILD]]].scrollPosition != 0) {
-										RSInterface.interfaceCache[tab.children[IS[CHILD]]].scrollPosition += Rotation * IS[SENSITIVITY];
-										Client.needDrawTabArea = true;
-									}
-									break;
-
-								case 1:
-									if (RSInterface.interfaceCache[tab.children[IS[CHILD]]].scrollPosition != RSInterface.interfaceCache[tab.children[IS[CHILD]]].scrollMax - RSInterface.interfaceCache[tab.children[IS[CHILD]]].height) {
-										RSInterface.interfaceCache[tab.children[IS[CHILD]]].scrollPosition += Rotation * IS[SENSITIVITY];
-										Client.needDrawTabArea = true;
-									}
-							}
-						}
-					}
+	public boolean handleInterfaceScrolling(MouseWheelEvent event) {
+		int rotation = event.getWheelRotation();
+		int positionX = 0;
+		int positionY = 0;
+		int width = 0;
+		int height = 0;
+		int offsetX = 0;
+		int offsetY = 0;
+		int childID = 0;
+		/* Tab interface scrolling */
+		int tabInterfaceID = Client.getClient().tabInterfaceIDs[Client.getClient().tabID];
+		if(tabInterfaceID == 11000)
+			tabInterfaceID = 1151;
+		if (tabInterfaceID != -1) {
+			RSInterface tab = RSInterface.interfaceCache[tabInterfaceID];
+			offsetX = Client.getClient().clientSize == 0 ? Client.getClient().clientWidth - 218
+					: (Client.getClient().clientSize == 0 ? 28 : Client
+					.getClient().clientWidth - 197);
+			offsetY = Client.getClient().clientSize == 0 ? Client.getClient().clientHeight - 298
+					: (Client.getClient().clientSize == 0 ? 37 : Client
+					.getClient().clientHeight
+					- (Client.getClient().clientWidth >= 900 ? 37 : 74)
+					- 267);
+			if (tab.children == null) {
+				return false;
+			}
+			for (int index = 0; index < tab.children.length; index++) {
+				if (RSInterface.interfaceCache[tab.children[index]].scrollMax > 0) {
+					childID = index;
+					positionX = tab.childX[index];
+					positionY = tab.childY[index];
+					width = RSInterface.interfaceCache[tab.children[index]].width;
+					height = RSInterface.interfaceCache[tab.children[index]].height;
+					break;
 				}
 			}
-
-			if (InterfaceID[WINDOW] != -1) {
-				RSInterface Window = RSInterface.interfaceCache[InterfaceID[WINDOW]];
-				int w = 512, h = 334;
-				int x = (Client.getClient().clientWidth / 2) - 256;
-				int y = (Client.getClient().clientHeight / 2) - 167;
-				int count = !Client.needDrawTabArea ? 4 : 3;
-				if (!Client.instance.isFixed()) {
-					for (int i = 0; i < count; i++) {
-						if (x + w > (Client.getClient().clientWidth - 225)) {
-							x = x - 30;
-							if (x < 0) {
-								x = 0;
-							}
-						}
-						if (y + h > (Client.getClient().clientHeight - 182)) {
-							y = y - 30;
-							if (y < 0) {
-								y = 0;
-							}
-						}
-					}
-				}
-				if (InterfaceID[WINDOW]== 5292) {
-					offsetX = Client.instance.isFixed() ? 4 : (Client.getClient().clientWidth / 2) - 356;
-					offsetY = Client.instance.isFixed() ? 4 : (Client.getClient().clientHeight / 2) - 230;
+			if (mouseX > offsetX + positionX && mouseY > offsetY + positionY
+					&& mouseX < offsetX + positionX + width
+					&& mouseY < offsetY + positionY + height) {
+				if (RSInterface.interfaceCache[tab.children[childID]].scrollPosition > 0) {
+					RSInterface.interfaceCache[tab.children[childID]].scrollPosition += rotation * 30;
+					return true;
 				} else {
-					offsetX = Client.instance.isFixed() ? 4 : x;
-					offsetY = Client.instance.isFixed() ? 4 : y;
-				}
-
-				InterfaceSetting[OFFX] = 4;
-				InterfaceSetting[OFFY] = 4;
-
-				for (int Index = 0; Index < Window.children.length; Index++) {
-					if (RSInterface.interfaceCache[Window.children[Index]].scrollMax > 0) {
-
-						InterfaceSetting[CHILD] = Index;
-						InterfaceSetting[POSX] = Window.childX[Index];
-						InterfaceSetting[POSY] = Window.childY[Index];
-						InterfaceSetting[WIDTH] = getChildWidth(Window, Index);
-						InterfaceSetting[HEIGHT] = getChildHeight(Window, Index);
-						//break;
-						if (mouseX > IS[OFFX] + IS[POSX] && mouseY > IS[OFFY] + IS[POSY] && mouseX < IS[OFFX] + IS[POSX] + IS[WIDTH] && mouseY < IS[OFFY] + IS[POSY] + IS[HEIGHT]) {
-
-							switch (InterfaceID[WINDOW]) {
-								default:
-									IS[SENSITIVITY] = 30;
-									break;
-							}
-
-							switch (Rotation) {
-								case -1:
-									if (RSInterface.interfaceCache[Window.children[IS[CHILD]]].scrollPosition != 0) {
-										RSInterface.interfaceCache[Window.children[IS[CHILD]]].scrollPosition += Rotation * IS[SENSITIVITY];
-										Client.needDrawTabArea = true;
-									}
-									break;
-
-								case 1:
-									if (RSInterface.interfaceCache[Window.children[IS[CHILD]]].scrollPosition != RSInterface.interfaceCache[Window.children[IS[CHILD]]].scrollMax - RSInterface.interfaceCache[Window.children[IS[CHILD]]].height) {
-										RSInterface.interfaceCache[Window.children[IS[CHILD]]].scrollPosition += Rotation * IS[SENSITIVITY];
-									}
-							}
-
-							RSInterface.interfaceCache[Window.children[InterfaceSetting[CHILD]]].scrollPosition += Rotation * 30;
-						}
+					if (rotation > 0) {
+						RSInterface.interfaceCache[tab.children[childID]].scrollPosition += rotation * 30;
+						return true;
 					}
 				}
-
-
 			}
-			if(Client.instance.searchingDrops) {
-				Client.getClient().itemResultScrollPos += Rotation * 10;
-			}
-		} catch (Exception ex) {
-			ex.printStackTrace();
 		}
+		/* Main interface scrolling */
+		if (Client.openInterfaceID != -1) {
+			RSInterface rsi = RSInterface.interfaceCache[Client.openInterfaceID];
+			offsetX = Client.getClient().clientSize == 0 ? 4 : (Client
+					.getClient().clientWidth / 2) - 256;
+			offsetY = Client.getClient().clientSize == 0 ? 4 : (Client
+					.getClient().clientHeight / 2) - 167;
+			for (int index = 0; index < rsi.children.length; index++) {
+				if (RSInterface.interfaceCache[rsi.children[index]].scrollMax > 0) {
+					childID = index;
+					positionX = rsi.childX[index];
+					positionY = rsi.childY[index];
+					width = RSInterface.interfaceCache[rsi.children[index]].width;
+					height = RSInterface.interfaceCache[rsi.children[index]].height;
+					break;
+				}
+			}
+			if (mouseX > offsetX + positionX && mouseY > offsetY + positionY
+					&& mouseX < offsetX + positionX + width
+					&& mouseY < offsetY + positionY + height) {
+				if (RSInterface.interfaceCache[rsi.children[childID]].scrollPosition > 0) {
+					RSInterface.interfaceCache[rsi.children[childID]].scrollPosition += rotation * 30;
+					return true;
+				} else {
+					if (rotation > 0) {
+						RSInterface.interfaceCache[rsi.children[childID]].scrollPosition += rotation * 30;
+						return true;
+					}
+				}
+			}
+		}
+		return false;
 	}
-
-	private int getChildHeight(RSInterface Interface, int Index) {
-		return RSInterface.interfaceCache[Interface.children[Index]].height;
-	}
-
-	private int getChildWidth(RSInterface Interface, int Index) {
-		return RSInterface.interfaceCache[Interface.children[Index]].width;
-	}
-
 
 	public int clickType;
 	public final static int LEFT = 0;
@@ -572,7 +484,6 @@ WindowListener {
 			}
 		}
 		if (SwingUtilities.isMiddleMouseButton(e)) {
-
 			mouseWheelDown = true;
 			mouseWheelX = x;
 			mouseWheelY = y;
@@ -587,7 +498,6 @@ WindowListener {
 			clickMode1 = 2;
 			clickMode2 = 2;
 		} else if(SwingUtilities.isLeftMouseButton(e)){
-
 			clickType = LEFT;
 			clickMode1 = 1;
 			clickMode2 = 1;
@@ -680,41 +590,38 @@ WindowListener {
 	}
 
 	int lastB = -1;
-	private long lastEnterKey;
+
 
 	public final void keyPressed(KeyEvent keyevent) {
-		idleTime = 0;
+		this.idleTime = 0;
 		int i = keyevent.getKeyCode();
 		int j = keyevent.getKeyChar();
-		
-		if(i == 17)
-			lastB = 1;
-		else if(i != 83)
-			lastB = 0;
-		if(i == 83 && lastB > 0) {
-			if(Client.loggedIn) {
-				if(Client.openInterfaceID == -1) {
-					Client.stream.createFrame(185);
-					Client.stream.writeWord(10000);
-				}
+		if (i == 17) {
+			this.lastB = 1;
+		} else if (i != 83 && i != 66) {
+			this.lastB = 0;
+		}  if (i == 83 && this.lastB > 0) {
+			if (Client.loggedIn &&
+					Client.openInterfaceID == -1) {
+				Client.stream.createFrame(185);
+				Client.stream.writeWord(10000);
 			}
+
+		} else if (i == 66 && this.lastB > 0 &&
+				Client.loggedIn &&
+				Client.openInterfaceID == -1) {
+
+			String command = "::bank";
+			Client.stream.createFrame(103);
+			Client.stream.writeWordBigEndian(command.length() - 1);
+			Client.stream.writeString(command.substring(2));
 		}
 		if(i == KeyEvent.VK_SHIFT) {
 			shiftDown = true;
 		}
-
-		if (i== KeyEvent.VK_ENTER && Client.instance.inputString.length() <= 0) {//TODO settings check
-			if (System.currentTimeMillis() - lastEnterKey < 200) {
-				TeleportChatbox.open(-1);
-				return;
-			}
-			lastEnterKey = System.currentTimeMillis();
-		}
-
 		if (hotKey == 508) {
-			if (i == KeyEvent.VK_ESCAPE && Client.openInterfaceID != -1)  {
-				Client.instance.clearTopInterfaces();
-				//Client.setTab(10);
+			if (i == KeyEvent.VK_ESCAPE) {
+				Client.setTab(3);
 			} else if (i == KeyEvent.VK_F1) {
 				Client.setTab(3);
 			} else if (i == KeyEvent.VK_F2) {
@@ -727,9 +634,8 @@ WindowListener {
 				Client.setTab(0);
 			}
 		} else {
-			if (i == KeyEvent.VK_ESCAPE && Client.openInterfaceID != -1) {
-				Client.instance.clearTopInterfaces();
-				//Client.setTab(10); {
+			if (i == KeyEvent.VK_ESCAPE) {
+				Client.setTab(0);
 			} else if (i == KeyEvent.VK_F1) {
 				Client.setTab(3);
 			} else if (i == KeyEvent.VK_F2) {
@@ -785,7 +691,7 @@ WindowListener {
 
 	}
 	public final void keyReleased(KeyEvent keyevent) {
-		
+
 		idleTime = 0;
 		int i = keyevent.getKeyCode();
 		char c = keyevent.getKeyChar();
@@ -869,9 +775,9 @@ WindowListener {
 	}
 
 	public final void windowClosing(WindowEvent windowevent) {
-		 if(RSFrame.destroy) {
-			 destroy();
-		 }
+		if(RSFrame.destroy) {
+			destroy();
+		}
 
 	}
 
@@ -975,7 +881,7 @@ WindowListener {
 		return ((0xff00ff00 & (0xff00ff & src) * src_alpha | 0xff0000
 				& (src & 0xff00) * src_alpha) >>> 8)
 				+ (((0xff0000 & src_delta * (dst & 0xff00) | src_delta
-						* (dst & 0xff00ff) & 0xff00ff00) >>> 8));
+				* (dst & 0xff00ff) & 0xff00ff00) >>> 8));
 	}
 
 	private static final Color BACKGROUND_COLOR = Color.black;
@@ -998,7 +904,7 @@ WindowListener {
 		graphics.setFont(font);
 		graphics.setColor(Color.white);
 	}
-	
+
 	void resetGraphic() {
 		graphics = (isApplet ? this : mainFrame).getGraphics();
 		try {

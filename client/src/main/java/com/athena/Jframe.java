@@ -157,9 +157,6 @@ public class Jframe extends Client implements ActionListener {
 		frame.setLayout(new BorderLayout());
 		gamePanel.setLayout(new BorderLayout());
 		gamePanel.add(this, BorderLayout.CENTER);		gamePanel.setBackground(Color.BLACK);
-		if(!undecorated) {
-			frame.getContentPane().add(menuPanel, BorderLayout.NORTH);
-		}
 		frame.getContentPane().add(gamePanel, BorderLayout.CENTER);
 		frame.pack();
 		frame.setResizable(resizable);
@@ -203,7 +200,6 @@ public class Jframe extends Client implements ActionListener {
 	/**
 	 * Our jpanel for the menu bar
 	 */
-	private static JPanel menuPanel;
 
 	/**
 	 * Initializes the menu bar

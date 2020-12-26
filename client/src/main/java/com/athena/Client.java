@@ -499,7 +499,6 @@ public class Client extends RSApplet {
 	}
 
 
-
 	public boolean isWebclient() {
 		return mainFrame == null && Client.webclient;
 	}
