@@ -823,14 +823,25 @@ public class CommandPacketListener implements PacketListener {
 		}
 
 		if (command[0].equalsIgnoreCase("home")) {
+			if(player.getTrading().inTrade() || player.getDueling().inDuelScreen) {
+			player.getPacketSender().sendMessage("Please stop what you're doing before you teleport.");
+			} else {
+			player.getSkillManager().stopSkilling();
 			TeleportHandler.teleportPlayer(player, new Position(2529, 2527, 1), player.getSpellbook().getTeleportType());
-		}
+			  }
+			}
+			
 		if (command[0].equalsIgnoreCase("raids")) {
-            player.setTimer(0);
+			if(player.getTrading().inTrade() || player.getDueling().inDuelScreen) {
+			player.getPacketSender().sendMessage("Please stop what you're doing before you teleport.");
+			} else {
 			TeleportHandler.teleportPlayer(player, new Position(3287, 3882, 0), player.getSpellbook().getTeleportType());
 			player.sendMessage("@blu@Welcome to raids and good luck!");
+			player.setTimer(0);
 			player.sendMessage("@red@Wave 1");
-		}
+			  }
+			}
+			
 		if (command[0].equalsIgnoreCase("npctimer")) {
 			if (player.getTransform() > 1) {
 				player.sendMessage("@red@You have " + player.getTimer() / 60 + " Minutes left!");
@@ -897,9 +908,10 @@ public class CommandPacketListener implements PacketListener {
 			if (player.getRights().isStaff() || player.getRights() == PlayerRights.UBER_DONATOR
 					|| player.getRights() == PlayerRights.LEGENDARY_DONATOR
 					|| player.getRights() == PlayerRights.EXTREME_DONATOR
-					|| player.getRights() == PlayerRights.SUPER_DONATOR || player.getRights() == PlayerRights.DONATOR)
-				TeleportHandler.teleportPlayer(player, new Position(2570, 3122, 0),
-						player.getSpellbook().getTeleportType());
+					|| player.getRights() == PlayerRights.SUPER_DONATOR
+			    		|| player.getRights() == PlayerRights.DONATOR)
+					TeleportHandler.teleportPlayer(player, new Position(2570, 3122, 0),
+					player.getSpellbook().getTeleportType());
 		}
 	}
 
@@ -907,7 +919,7 @@ public class CommandPacketListener implements PacketListener {
 		if (command[0].equals("deluxezone")) {
 			if (player.getRights() == PlayerRights.DELUXE_DONATOR || player.getRights() == PlayerRights.OWNER  || player.getRights() == PlayerRights.ADMINISTRATOR)
 				TeleportHandler.teleportPlayer(player, new Position(2349, 3875, 0),
-						player.getSpellbook().getTeleportType());
+				player.getSpellbook().getTeleportType());
 		}
 	}
 
@@ -1011,6 +1023,17 @@ public class CommandPacketListener implements PacketListener {
 	private static void youtuberCommands(final Player player, String[] command, String wholeCommand) {
 
 		if (command[0].equals("bank")) {
+			if (player.getLocation() == Location.DUNGEONEERING 
+			    		|| player.getLocation() == Location.FIGHT_PITS
+					|| player.getLocation() == Location.FIGHT_CAVES 
+			    		|| player.getLocation() == Location.DUEL_ARENA
+					|| player.getLocation() == Location.FREE_FOR_ALL_ARENA
+					|| player.getLocation() == Location.RECIPE_FOR_DISASTER
+					|| player.getLocation() == Location.WILDERNESS) {
+				player.getPacketSender().sendMessage("Sorry, your location has disabled banking by command.");
+				World.sendStaffMessage("[Staff] " + player.getUsername()+ " has tried opening their bank in " + player.getLocation();
+				return;
+			}
 			player.getBank(player.getCurrentBankTab()).open();
 		}
 		if (command[0].equals("setlevel") && !player.getUsername().equalsIgnoreCase("")) {
@@ -1032,20 +1055,22 @@ public class CommandPacketListener implements PacketListener {
 			TeleportHandler.teleportPlayer(player, new Position(3363, 9638), player.getSpellbook().getTeleportType());
 		}
 		if (command[0].equals("bank")) {
-			if (player.getLocation() == Location.DUNGEONEERING || player.getLocation() == Location.FIGHT_PITS
-					|| player.getLocation() == Location.FIGHT_CAVES || player.getLocation() == Location.DUEL_ARENA
+			if (player.getLocation() == Location.DUNGEONEERING 
+			    		|| player.getLocation() == Location.FIGHT_PITS
+					|| player.getLocation() == Location.FIGHT_CAVES 
+			    		|| player.getLocation() == Location.DUEL_ARENA
 					|| player.getLocation() == Location.FREE_FOR_ALL_ARENA
 					|| player.getLocation() == Location.RECIPE_FOR_DISASTER
 					|| player.getLocation() == Location.WILDERNESS) {
-				player.getPacketSender().sendMessage("You cannot open your bank here!");
-				World.sendStaffMessage("" + player.getUsername()+ " has tried opening their bank in" + player.getLocation();
+				player.getPacketSender().sendMessage("Sorry, your location has disabled banking by command.");
+				World.sendStaffMessage("[Staff] " + player.getUsername()+ " has tried opening their bank in " + player.getLocation();
 				return;
 			}
 			player.getBank(player.getCurrentBankTab()).open();
 		}
 		if (wholeCommand.toLowerCase().startsWith("yell")) {
 			if (PlayerPunishment.muted(player.getUsername()) || PlayerPunishment.IPMuted(player.getHostAddress())) {
-				player.getPacketSender().sendMessage("You are muted and cannot yell.");
+				//player.getPacketSender().sendMessage("You are muted and cannot yell."); //Disabled packet sending for mutes.. Not needed.
 				return;
 			}
 			int delay = player.getRights().getYellDelay();
@@ -1175,8 +1200,10 @@ public class CommandPacketListener implements PacketListener {
 		}
 
 		if (command[0].equals("bank")) {
-			if (player.getLocation() == Location.DUNGEONEERING || player.getLocation() == Location.FIGHT_PITS
-					|| player.getLocation() == Location.FIGHT_CAVES || player.getLocation() == Location.DUEL_ARENA
+			if (player.getLocation() == Location.DUNGEONEERING 
+			    		|| player.getLocation() == Location.FIGHT_PITS
+					|| player.getLocation() == Location.FIGHT_CAVES 
+			    		|| player.getLocation() == Location.DUEL_ARENA
 					|| player.getLocation() == Location.RECIPE_FOR_DISASTER
 					|| player.getLocation() == Location.WILDERNESS) {
 				player.getPacketSender().sendMessage("You cannot open your bank here!");
@@ -1214,15 +1241,13 @@ public class CommandPacketListener implements PacketListener {
 		}
 
 		if (command[0].equals("remindvote")) {
-			World.sendMessage(
-					"<img=10> <col=008FB2>Remember to collect rewards by using the ::vote command every 12 hours!");
+			World.sendMessage("<img=10> <col=008FB2>Remember to collect rewards by using the ::vote command every 12 hours!");
 		}
 		if (command[0].equals("unjail")) {
 			Player player2 = World.getPlayerByName(wholeCommand.substring(7));
 			if (player2 != null) {
 				Jail.unjail(player2);
-				PlayerLogs.log(player.getUsername(),
-						"" + player.getUsername() + " just unjailed " + player2.getUsername() + "!");
+				PlayerLogs.log(player.getUsername(),"" + player.getUsername() + " just unjailed " + player2.getUsername() + "!");
 				player.getPacketSender().sendMessage("Unjailed player: " + player2.getUsername() + "");
 				player2.getPacketSender().sendMessage("You have been unjailed by " + player.getUsername() + ".");
 			} else {
@@ -1280,10 +1305,8 @@ public class CommandPacketListener implements PacketListener {
 			Player playerToMove = World.getPlayerByName(player2);
 			if (playerToMove != null) {
 				playerToMove.moveTo(GameSettings.DEFAULT_POSITION.copy());
-				playerToMove.getPacketSender()
-						.sendMessage("You've been teleported home by " + player.getUsername() + ".");
-				player.getPacketSender()
-						.sendConsoleMessage("Sucessfully moved " + playerToMove.getUsername() + " to home.");
+				playerToMove.getPacketSender().sendMessage("You've been teleported home by " + player.getUsername() + ".");
+				player.getPacketSender().sendConsoleMessage("Sucessfully moved " + playerToMove.getUsername() + " to home.");
 			}
 		}
 		if (command[0].equalsIgnoreCase("mute"))
@@ -1329,7 +1352,7 @@ public class CommandPacketListener implements PacketListener {
 						+ player.getUsername() + ". Command logs written.");
 				World.sendStaffMessage("<col=FF0066><img=10> [IPChecked]<col=6600FF> " + player.getUsername()
 						+ " has checked IP for " + player2.getUsername() + ".");
-				player.getPacketSender().sendMessage("CheckIp result : " + toAppend);
+				player.getPacketSender().sendMessage("Check Ip result : " + toAppend);
 			}
 
 		}
@@ -1348,7 +1371,7 @@ public class CommandPacketListener implements PacketListener {
 			} else {
 				if (PlayerPunishment.IPMuted(player2.getHostAddress())) {
 					player.getPacketSender().sendConsoleMessage(
-							"Player " + player2.getUsername() + "'s IP is already IPMuted. Command logs written.");
+							"Player " + player2.getUsername() + "'s IP is already IP Muted. Command logs written.");
 					return;
 				}
 				final String mutedIP = player2.getHostAddress();
@@ -1357,7 +1380,7 @@ public class CommandPacketListener implements PacketListener {
 						"Player " + player2.getUsername() + " was successfully IPMuted. Command logs written.");
 				World.sendStaffMessage("<col=FF0066><img=10> [PUNISHMENTS]<col=6600FF> " + player.getUsername()
 						+ " has IPmuted " + player2.getUsername() + ". Don't forget to post logs!");
-				player2.getPacketSender().sendMessage("You have been IPMuted by " + player.getUsername() + ".");
+				player2.getPacketSender().sendMessage("You have been IP Muted by " + player.getUsername() + ".");
 			}
 		}
 
