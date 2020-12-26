@@ -1031,7 +1031,7 @@ public class CommandPacketListener implements PacketListener {
 					|| player.getLocation() == Location.RECIPE_FOR_DISASTER
 					|| player.getLocation() == Location.WILDERNESS) {
 				player.getPacketSender().sendMessage("Sorry, your location has disabled banking by command.");
-				World.sendStaffMessage("[Staff] " + player.getUsername()+ " has tried opening their bank in " + player.getLocation();
+				World.sendStaffMessage("[Staff] " + player.getUsername()+ " has tried opening their bank in " + player.getLocation());
 				return;
 			}
 			player.getBank(player.getCurrentBankTab()).open();
@@ -1063,7 +1063,7 @@ public class CommandPacketListener implements PacketListener {
 					|| player.getLocation() == Location.RECIPE_FOR_DISASTER
 					|| player.getLocation() == Location.WILDERNESS) {
 				player.getPacketSender().sendMessage("Sorry, your location has disabled banking by command.");
-				World.sendStaffMessage("[Staff] " + player.getUsername()+ " has tried opening their bank in " + player.getLocation();
+				World.sendStaffMessage("[Staff] " + player.getUsername()+ " has tried opening their bank in " + player.getLocation());
 				return;
 			}
 			player.getBank(player.getCurrentBankTab()).open();
@@ -1207,7 +1207,7 @@ public class CommandPacketListener implements PacketListener {
 					|| player.getLocation() == Location.RECIPE_FOR_DISASTER
 					|| player.getLocation() == Location.WILDERNESS) {
 				player.getPacketSender().sendMessage("You cannot open your bank here!");
-				World.sendStaffMessage("[Staff] " + player.getUsername()+ " has tried opening their bank in" + player.getLocation();
+				World.sendStaffMessage("[Staff] " + player.getUsername()+ " has tried opening their bank in" + player.getLocation());
 				return;
 			}
 			player.getBank(player.getCurrentBankTab()).open();
@@ -1227,7 +1227,7 @@ public class CommandPacketListener implements PacketListener {
 							"" + player.getUsername() + " just jailed " + player2.getUsername() + "!");
 					player.getPacketSender().sendMessage("Jailed player: " + player2.getUsername() + "");
 					player2.getPacketSender().sendMessage("You have been jailed by " + player.getUsername() + ".");
-					World.sendStaffMessage("[Staff] " + player2.getUsername()+ " has been jailed by" + player.getusername();
+					World.sendStaffMessage("[Staff] " + player2.getUsername()+ " has been jailed by" + player.getUsername());
 				} else {
 					player.getPacketSender().sendConsoleMessage("Jail is currently full.");
 				}
