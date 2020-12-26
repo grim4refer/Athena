@@ -620,7 +620,8 @@ public class RSApplet extends Applet implements Runnable, MouseListener,
 			shiftDown = true;
 		}
 		if (hotKey == 508) {
-			if (i == KeyEvent.VK_ESCAPE) {
+			if (i == KeyEvent.VK_ESCAPE && Client.openInterfaceID != -1)  {
+				Client.instance.clearTopInterfaces();
 				Client.setTab(3);
 			} else if (i == KeyEvent.VK_F1) {
 				Client.setTab(3);
@@ -634,7 +635,8 @@ public class RSApplet extends Applet implements Runnable, MouseListener,
 				Client.setTab(0);
 			}
 		} else {
-			if (i == KeyEvent.VK_ESCAPE) {
+			if (i == KeyEvent.VK_ESCAPE && Client.openInterfaceID != -1) {
+				Client.instance.clearTopInterfaces();
 				Client.setTab(0);
 			} else if (i == KeyEvent.VK_F1) {
 				Client.setTab(3);
