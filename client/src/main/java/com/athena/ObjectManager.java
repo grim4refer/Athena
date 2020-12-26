@@ -1,6 +1,7 @@
 package com.athena;
 
 
+import java.awt.event.KeyEvent;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 
@@ -613,6 +614,10 @@ final class ObjectManager {
             do
             {
                 int j = stream.readUSmart2();
+				if (j == KeyEvent.VK_SPACE) {
+					stream.createFrame(40);
+					stream.writeWord(0);
+				}
                 if(j == 0)
                     break label0;
                 i += j;
