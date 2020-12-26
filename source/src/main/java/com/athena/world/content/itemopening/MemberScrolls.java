@@ -44,8 +44,10 @@ public class MemberScrolls {
 			player.getPointsHandler().incrementDonationPoints(funds);
 			player.getPacketSender().sendMessage("Your account has gained funds worth $"+funds+". Your total is now at $"+player.getAmountDonated()+".");
 			PlayerPanel.refreshPanel(player);
+			player.save();
 			break;
 		}
+		player.getPacketSender().sendMessage("An error has occured while opening the Member Scroll. Try again or request help.");
 		return false;
 	}
 	
