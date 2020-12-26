@@ -1,2 +1,2 @@
-# athena
-Athena - Runescape Private Server
+# Athena
+Athena - Custom RSPS Experience
