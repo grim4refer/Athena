@@ -23,7 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3f53a77-2c04-4d4e-9086-b95d582e03a2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../client/src/main/java/com/athena/NPCDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/com/athena/NPCDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/com/athena/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/com/athena/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/com/athena/DrawingArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/com/athena/DrawingArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tools/better-sprite-packer-3.0.4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tools/better-sprite-packer-3.0.4/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,40 +105,44 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1190" y="422" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1608865435492" />
-    <state x="635" y="216" key="FileChooserDialogImpl" timestamp="1609087363080">
+    <state x="1030" y="299" key="FileChooserDialogImpl" timestamp="1609092076975">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="635" y="216" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1609023486894" />
+    <state x="1030" y="299" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1609092076975" />
+    <state width="1664" height="184" key="GridCell.Tab.0.bottom" timestamp="1609029504459">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="635" y="216" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1609087363080" />
-    <state x="1030" y="299" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1608995196758" />
-    <state width="808" height="185" key="GridCell.Tab.0.bottom" timestamp="1609097510454">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="808" height="185" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1609097510454" />
+    <state width="1664" height="184" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1609029504459" />
     <state width="1674" height="213" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1609021464562" />
-    <state width="808" height="185" key="GridCell.Tab.0.center" timestamp="1609097510454">
+    <state width="1664" height="184" key="GridCell.Tab.0.center" timestamp="1609029504459">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="808" height="185" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1609097510454" />
+    <state width="1664" height="184" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1609029504459" />
     <state width="1674" height="213" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1609021464562" />
-    <state width="808" height="185" key="GridCell.Tab.0.left" timestamp="1609097510454">
+    <state width="1664" height="184" key="GridCell.Tab.0.left" timestamp="1609029504459">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="808" height="185" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1609097510454" />
+    <state width="1664" height="184" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1609029504459" />
     <state width="1674" height="213" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1609021464562" />
-    <state width="808" height="185" key="GridCell.Tab.0.right" timestamp="1609097510454">
+    <state width="1664" height="184" key="GridCell.Tab.0.right" timestamp="1609029504459">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="808" height="185" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1609097510454" />
+    <state width="1664" height="184" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1609029504459" />
     <state width="1674" height="213" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1609021464562" />
+    <state x="532" y="404" key="NewModule_or_Project.wizard" timestamp="1609092086971">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="532" y="404" key="NewModule_or_Project.wizard/0.0.3440.1400@0.0.3440.1400" timestamp="1609092086971" />
     <state x="865" y="290" key="SettingsEditor" timestamp="1608855465891">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="-5" y="30" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1608693938631" />
     <state x="865" y="290" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1608855465891" />
-    <state x="325" y="126" width="1321" height="737" key="find.popup" timestamp="1609094549458">
+    <state x="551" y="114" width="581" height="534" key="find.popup" timestamp="1609030376001">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="325" y="126" width="1321" height="737" key="find.popup/0.0.1707.920@0.0.1707.920" timestamp="1609094549458" />
+    <state x="551" y="114" width="581" height="534" key="find.popup/0.0.1707.920@0.0.1707.920" timestamp="1609030376001" />
     <state x="1376" y="330" key="run.anything.popup" timestamp="1608863020678">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>

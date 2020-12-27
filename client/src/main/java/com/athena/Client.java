@@ -5,17 +5,9 @@ import com.athena.teleport.hierarchy.HierarchyChatboxDrawing;
 import com.athena.teleport.hierarchy.HierarchyOption;
 
 import java.applet.AppletContext;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Cursor;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Image;
-import java.awt.Point;
-import java.awt.RenderingHints;
-import java.awt.Toolkit;
+import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.awt.geom.Area;
 import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
@@ -209,6 +201,10 @@ public class Client extends RSApplet {
 			int l2 = RSInterface.interfaceCache[35649].valueIndexArray[0][1];
 			variousSettings[l2] = 1 - variousSettings[l2];
 		}
+		if (getOption("skill_status_bars")) {
+			int l2 = RSInterface.interfaceCache[35649].valueIndexArray[0][1];
+			variousSettings[l2] = 1 - variousSettings[l2];
+		}
 		if (!musicEnabled)
 			stopMidi();
 	}
@@ -227,10 +223,11 @@ public class Client extends RSApplet {
 			options.put("old_frame", true);
 			options.put("smilies", true);
 			options.put("censor_active", false);
-			options.put("fog_active", true);
+			options.put("fog_active", false);
 			options.put("absorb_damage", true);
 			options.put("anti_a", false);
 			options.put("save_input", true);
+			options.put("skill_status_bars", true);
 			shadowIndex = 4;
 			SoundPlayer.setVolume(4);
 			saveSettings();
@@ -263,6 +260,7 @@ public class Client extends RSApplet {
 			options.put("fog_active", in.readByte() == 1);
 			options.put("absorb_damage", in.readByte() == 1);
 			options.put("anti_a", in.readByte() == 1);
+			options.put("skill_status_bars", in.readByte() == 1);
 			options.put("save_input", in.readByte() == 1);
 			shadowIndex = in.readInt();
 			/*
@@ -293,6 +291,7 @@ public class Client extends RSApplet {
 			options.put("fog_active", true);
 			options.put("absorb_damage", true);
 			options.put("anti_a", false);
+			options.put("skill_status_bars", true);
 			options.put("save_input", true);
 			shadowIndex = 4;
 			SoundPlayer.setVolume(4);
@@ -320,6 +319,7 @@ public class Client extends RSApplet {
 			out.write(getOption("fog_active") ? 1 : 0);
 			out.write(getOption("absorb_damage") ? 1 : 0);
 			out.write(getOption("anti_a") ? 1 : 0);
+			out.write(getOption("skill_status_bars") ? 1 : 0);
 			out.write(getOption("save_input") ? 1 : 0);
 			out.writeInt(shadowIndex);
 			/*
@@ -2485,13 +2485,64 @@ public class Client extends RSApplet {
 			}
 		}
 	}
+	private void drawSkillStatus(int x, int y, int skillId, int icon, int barHeight, Color barColor) {
+		try {
+			drawingArea.drawAlphaGradient(x, y, 20, barHeight + 1, 0, 0, 180);
 
+			Graphics2D g2d = DrawingArea.createGraphics(true);
+
+			int currentLevel = currentStats[skillId];
+
+			int maxLevel = currentMaxStats[skillId];
+
+			double percentage = 100 - ((double) currentLevel / (double) maxLevel * (double) 100);
+
+			Area shape = new Area(new Rectangle(x + 1, y + 1, 18, barHeight));
+
+			shape.subtract(new Area(new Rectangle(x + 1, y + 1, 18, (int) ((double) barHeight / (double) 100 * percentage))));
+
+			if (skillId == 3) {
+				spriteCache.get(721).drawSprite(x + 2, y + 6);
+			}else
+				if (skillId == 5) {
+					spriteCache.get(720).drawSprite(x + 2, y + 6);
+				}
+
+			g2d.setColor(barColor);
+
+			g2d.fill(shape);
+
+			g2d.setColor(Color.white);
+
+			if (skillId == 5 && currentLevel < 100) {
+				drawingArea.drawCenteredString(g2d, "0." + Integer.toString(currentLevel / 10), new Rectangle(x + 5, y + 24, 9, 14), new Font("Arial", Font.PLAIN, 11));
+			} else {
+				drawingArea.drawCenteredString(g2d, Integer.toString(currentLevel / 100), new Rectangle(x + 5, y + 24, 9, 14), new Font("Arial", Font.PLAIN, 11));
+			}
+
+		} catch (Exception e) {
+			System.out.println("Error drawing skill status for skill: " + skillId);
+		}
+	}
 	private void drawTabArea() {
 		if (clientSize == 0) {
 			tabAreaIP.initDrawingArea();
 		}
 		Rasterizer.lineOffsets = anIntArray1181;
 		handleTabArea(clientSize == 0);
+
+		if (getOption("skill_status_bars")) {
+			if (clientSize == 0) {
+				drawSkillStatus(8, 41, 3, 1323, 250, new Color(255, 0, 0, 75));
+				drawSkillStatus(218, 41, 5, 1324, 250, new Color(0, 255, 255, 75));
+			} else {
+				boolean small = clientWidth > smallTabs;
+
+				drawSkillStatus(!showTab ? clientWidth - 50 : clientWidth - 255, small ? clientHeight - 312 : clientHeight - 350, 3, 1323, small ? 271 : 271, new Color(255, 0, 0, 75));
+				drawSkillStatus(!showTab ? clientWidth - 25 : clientWidth - 230, small ? clientHeight - 312 : clientHeight - 350, 5, 1324, small ? 271 : 271, new Color(0, 255, 255, 75));
+			}
+		}
+
 		int y = clientWidth >= smallTabs ? 37 : 74;
 		if (showTab) {
 			if (invOverlayInterfaceID != -1) {
@@ -2513,6 +2564,7 @@ public class Client extends RSApplet {
 		gameScreenIP.initDrawingArea();
 		Rasterizer.lineOffsets = anIntArray1182;
 	}
+
 
 	private void processTabAreaTooltips(int TabHoverId) {
 		if (getOption("old_frame")) {
