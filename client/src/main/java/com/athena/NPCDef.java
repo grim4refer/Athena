@@ -452,7 +452,7 @@ public final class NPCDef {
     			npc.squaresNeeded = 3;
     			npc.drawMinimapDot = true;
     			break;
-            case 5592:
+            case 515:
                 npc.name = "@red@Yani";
                 npc.models[0] = 91010;
                 npc.models[1] = 91012;

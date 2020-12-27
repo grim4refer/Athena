@@ -94,7 +94,7 @@ public class DefaultMeleeCombatStrategy implements CombatStrategy {
             if(npc.getId() == 2506) {
                 npc.performGraphic(new Graphic(1194));
             }
-            if(npc.getId() == 5592) {
+            if(npc.getId() == 515) {
                 npc.performGraphic(new Graphic(1669));
             }
             if(npc.getId() == 2) {

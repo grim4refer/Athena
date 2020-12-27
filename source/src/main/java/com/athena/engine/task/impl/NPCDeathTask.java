@@ -43,7 +43,7 @@ public class NPCDeathTask extends Task {
 	private Set<Integer> BOSSES = new HashSet<>(Arrays.asList(
 			9939,6307,10126,3053,5588,13447,6306, 433,
 
-			13458,132,2070,2071,3915,8528,7,6336,389,53,170,360,359,361,365,363,370,362,368,367, 2502, 2506, 2509, 8, 2511, 2, 2515, 2518, 3, 1299, 2088, 15, 18, 19,4331,4332,4333,4334,4335,4336,4330,4329,5592)); //use this array of npcs to change the npcs you want to give boss points
+			13458,132,2070,2071,3915,8528,7,6336,389,53,170,360,359,361,365,363,370,362,368,367, 2502, 2506, 2509, 8, 2511, 2, 2515, 2518, 3, 1299, 2088, 15, 18, 19,4331,4332,4333,4334,4335,4336,4330,4329,515)); //use this array of npcs to change the npcs you want to give boss points
 	
 	/**
 	 * The NPCDeathTask constructor.

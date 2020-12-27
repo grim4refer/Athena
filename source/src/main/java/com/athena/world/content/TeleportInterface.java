@@ -49,7 +49,7 @@ public class TeleportInterface {
 		MAYONAISE(50624, "Mayonnaise", "@red@Mayonnaise Npc!", "@yel@Drops Mayonaise items!", "", "", "", 367, new int[] { 2588, 2564, 1 }),
 		INFERNO(50625, "Inferno", "@red@Undead Npc!", "@yel@Drops Inferno Undead items!", "@cya@THIS NPC IS IN MULTI!", "", "", 53, new int[] { 2724, 4777, 0 }),
 		VORAGO(50626, "Vorago", "@red@Vorago Npc!", "@yel@Drops Vorago items!", "@cya@THIS IS EPIC BOSS!", "", "", 2071, new int[] { 2535, 2567, 1 }),
-		YANI(50627, "Yani", "@red@Yani Npc!", "@yel@Drops Yani items!", "@cya@THIS NPC IS IN MULTI!", "", "", 5592, new int[] { 2272, 4693, 0 });
+		YANI(50627, "Yani", "@red@Yani Npc!", "@yel@Drops Yani items!", "@cya@THIS NPC IS IN MULTI!", "", "", 515, new int[] { 2272, 4693, 0 });
 		
 		Bosses(int textId, String name, String description1, String description2, String description3,
 				String description4, String description5, int npcId, int[] teleportCords) {

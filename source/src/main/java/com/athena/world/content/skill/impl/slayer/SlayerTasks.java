@@ -54,7 +54,7 @@ public enum SlayerTasks {
 	 *
 	 * Elite
 	 */
-	YANI(SlayerMaster.SUMONA, 5592, "Yani can be found in the Bosss Teleport.", 100000, new Position(2272, 4693, 0))
+	YANI(SlayerMaster.SUMONA, 515, "Yani can be found in the Bosss Teleport.", 100000, new Position(2272, 4693, 0))
 	//PLANEFREEZER(SlayerMaster.SUMONA, 9939, "Planefreezer can be found in Boss Teleports 2.", 100000, new Position(2903, 5203));
 	;
 
