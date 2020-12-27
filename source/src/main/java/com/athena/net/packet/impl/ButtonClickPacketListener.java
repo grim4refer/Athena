@@ -739,9 +739,9 @@ public class ButtonClickPacketListener implements PacketListener {
 //		case -26376:
             // PlayersOnlineInterface.showInterface(player);
 //			break;
-            case -26349:
+            case 26601:
                 player.getPacketSender().sendTabInterface(GameSettings.QUESTS_TAB, 46343);
-                StaffList.updateInterface(player);
+                StaffList.updateInterface(player);//staff online button
                 break;
             case 32388:
                 player.getPacketSender().sendTabInterface(GameSettings.QUESTS_TAB, 639); // 26600
@@ -842,9 +842,9 @@ public class ButtonClickPacketListener implements PacketListener {
                 player.getClickDelay().reset();
                 DropLookup.open(player);
                 break;
-            case -26347:
+            case 26604:
                 KillsTracker.open(player);
-                break;
+                break;//kill log tracker quest tab
             case -26346:
                 DropLog.open(player);
                 break;
@@ -854,7 +854,7 @@ public class ButtonClickPacketListener implements PacketListener {
                 break;
             case 26614:
                 DropLog.open(player);
-                break;
+                break;//quest tab drop log
 
             case -10531:
                 if (player.isKillsTrackerOpen()) {
@@ -914,9 +914,9 @@ public class ButtonClickPacketListener implements PacketListener {
             case -26332:
                 Nomad.openQuestLog(player);
                 break;
-            case -26348:
+            case 26611:
                 ProfileViewing.view(player, player);
-                break;
+                break;//quest tab player planel
             case 350:
                 player.getPacketSender()
                         .sendMessage("To autocast a spell, please right-click it and choose the autocast option.")
