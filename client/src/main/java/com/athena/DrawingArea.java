@@ -1,6 +1,10 @@
 package com.athena;
 
 
+import java.awt.*;
+import java.awt.image.*;
+import java.util.Hashtable;
+
 public class DrawingArea extends QueueNode {
 
 	public static void initDrawingArea(int i, int j, int ai[])
@@ -25,6 +29,33 @@ public class DrawingArea extends QueueNode {
 		for(int j1 = 0; j1 < k; j1++)
 			pixels[i1 + j1] = j;
 
+	}
+
+	public void drawCenteredString(Graphics g, String text, Rectangle rect, Font font) {
+		// Get the FontMetrics
+		FontMetrics metrics = g.getFontMetrics(font);
+		// Determine the X coordinate for the text
+		int x = rect.x + (rect.width - metrics.stringWidth(text)) / 2;
+		// Determine the Y coordinate for the text (note we add the ascent, as
+		// in java 2d 0 is top of the screen)
+		int y = rect.y + ((rect.height - metrics.getHeight()) / 2) + metrics.getAscent();
+		// Set the font
+		g.setFont(font);
+		// Draw the String
+		g.drawString(text, x, y);
+	}
+	private static final ColorModel COLOR_MODEL = new DirectColorModel(32, 0xff0000, 0xff00, 0xff);
+	public static Graphics2D createGraphics(boolean renderingHints) {
+		Graphics2D g2d = createGraphics(pixels, width, height);
+		if (renderingHints) {
+			g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+		}
+		return g2d;
+	}
+
+	public static Graphics2D createGraphics(int[] pixels, int width, int height) {
+		return new BufferedImage(COLOR_MODEL, Raster.createWritableRaster(COLOR_MODEL.createCompatibleSampleModel(width, height), new DataBufferInt(pixels, width * height), null), false,
+				new Hashtable<Object, Object>()).createGraphics();
 	}
 
 	public static void drawPixelsWithOpacity(int color, int yPos, int pixelWidth, int pixelHeight, int opacityLevel, int xPos) {

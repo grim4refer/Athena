@@ -7,3 +7,9 @@ client/resources/icon.png
 source/.idea/workspace.xml
 source/data/saves/logs/Joker.txt
 source/data/saves/characters/Joker.json
+source/data/saves/characters/Athena.json
+source/data/saves/construction/Athena.obj
+source/data/saves/logs/Athena.txt
+source/data/saves/logs/Athenas.txt
+tools/better-sprite-packer-3.0.4/.idea/misc.xml
+source/.idea/workspace.xml
