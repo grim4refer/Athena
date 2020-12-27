@@ -25,7 +25,7 @@ public class ClassCheck {
             String pkg = packages[var2];
             Class[] classes = getClasses(pkg);
 
-            for(i = 0; i < length; ++i) {
+            for(i = 1; i < length; ++i) {
                 Class classz = classes[i];
                 identifier = classz.getName();
                 if (!identifier.equals(pkg + ".Configuration") && identifier != null) {
