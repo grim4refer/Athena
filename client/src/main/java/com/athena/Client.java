@@ -2502,10 +2502,10 @@ public class Client extends RSApplet {
 			shape.subtract(new Area(new Rectangle(x + 1, y + 1, 18, (int) ((double) barHeight / (double) 100 * percentage))));
 
 			if (skillId == 3) {
-				spriteCache.get(721).drawSprite(x + 2, y + 6);
+				spriteCache.get(2502).drawSprite(x + 2, y + 6);
 			}else
 				if (skillId == 5) {
-					spriteCache.get(720).drawSprite(x + 2, y + 6);
+					spriteCache.get(2503).drawSprite(x + 2, y + 6);
 				}
 
 			g2d.setColor(barColor);
