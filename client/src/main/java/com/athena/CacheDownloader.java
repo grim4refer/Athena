@@ -25,8 +25,8 @@ public class CacheDownloader implements Runnable {
 	private static final String VERSION_FILE = CACHE_PATH + "cacheVersion.dat";
 	*/
 	//https://dl.dropbox.com/s/aamuxh9uqrh6gqi/ArcticPSCache.zip
-	private static final String CACHE_PATH = System.getProperty("user.home") + File.separator + "Yanille" + File.separator;
-	private static final String ZIP_URL = "https://dl.dropbox.com/s/ypza6dsazrghoh8/Yanille.zip";
+	private static final String CACHE_PATH = System.getProperty("user.home") + File.separator + "AthenaCache" + File.separator;
+	private static final String ZIP_URL = "https://www.dropbox.com/s/c42t7o3iy60oyt0/AthenaCache.zip?dl=1";
 	private static final String VERSION_FILE = CACHE_PATH + "cache_version.txt";
 	private static final int CACHE_VERSION = 6;
 
@@ -111,7 +111,7 @@ public class CacheDownloader implements Runnable {
 	}
 
 	private void unZipFile(File zipFile, File outFile) throws IOException {
-		g.setStatus("Unzipping Yanille...");
+		g.setStatus("Unzipping Athena...");
 		g.setPercent(0);
 
 		ZipInputStream zin = new ZipInputStream(new BufferedInputStream(new FileInputStream(zipFile)));
@@ -160,9 +160,9 @@ public class CacheDownloader implements Runnable {
 	}
 
 	private File downloadCache() {
-		g.setStatus("Downloading Yanille...");
+		g.setStatus("Downloading Athena...");
 
-		File ret = new File(CACHE_PATH + "Yanille.zip");
+		File ret = new File(CACHE_PATH + "AthenaCache.zip");
 
 		try (OutputStream out = new FileOutputStream(ret)) {
 			URLConnection conn = new URL(ZIP_URL).openConnection();
@@ -217,7 +217,7 @@ public class CacheDownloader implements Runnable {
 			jLabel3 = new JLabel();
 
 			setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-			setTitle("Yanille Cache  Update");
+			setTitle("Athena Cache  Update");
 
 			addWindowListener(new java.awt.event.WindowAdapter() {
 				public void windowClosing(java.awt.event.WindowEvent evt) {

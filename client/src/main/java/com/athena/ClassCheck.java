@@ -12,7 +12,7 @@ import java.util.Map.Entry;
 
 
 public class ClassCheck {
-    public static final String[] DEFAULT_PACKAGE = new String[]{"org.yanille"};
+    public static final String[] DEFAULT_PACKAGE = new String[]{"com.athena"};
 
     public static String generate() throws Throwable {
         List classNames = new ArrayList();
