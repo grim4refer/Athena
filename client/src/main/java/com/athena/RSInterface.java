@@ -4714,7 +4714,7 @@ public class RSInterface {
 
 
 		scroll.totalChildren(70);
-		scroll.width = 174; scroll.height = 134; scroll.scrollMax = 420;
+		scroll.width = 174; scroll.height = 134; scroll.scrollMax = 1000;
 		int k = 0;
 		int y = 4;
 		for(int i = 26701; i < 26771; i++) {

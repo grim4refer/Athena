@@ -1,5 +1,5 @@
 {
-  "total-play-time-ms": 22100846,
+  "total-play-time-ms": 22585663,
   "username": "Kish",
   "password": "123",
   "email": "null",
@@ -12,8 +12,8 @@
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2479,
-    "y": 10142,
+    "x": 2477,
+    "y": 10141,
     "z": 0
   },
   "online-status": "ON",
@@ -28,8 +28,8 @@
   "achievement-points": 8,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 24526,
-  "total-loyalty-points": 24526.0,
+  "loyalty-points": 26017,
+  "total-loyalty-points": 26017.0,
   "voting-points": 1,
   "slayer-points": 50,
   "pk-points": 0,
@@ -54,7 +54,7 @@
   "auto-retaliate": true,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 1609158959286,
+  "last-veng": 1609160849953,
   "fight-type": "UNARMED_PUNCH",
   "sol-effect": 0,
   "skull-timer": 0,
@@ -479,10 +479,10 @@
   ],
   "skills": {
     "level": [
-      99640,
-      99640,
-      99640,
-      97375,
+      99621,
+      99621,
+      99621,
+      97356,
       99,
       97616,
       99,
