@@ -391,7 +391,7 @@
         "lines": 4,
         "line1": "Please! You must help me, adventurer!",
         "line2": "The Culinaromancer is back!",
-        "line3": "He's going to destroy Yanille!",
+        "line3": "He's going to destroy Athena!",
         "line4": "Will you help defeat him?",
         "next": 44,
         "npcId": 3385
@@ -807,7 +807,7 @@
         "type": "NPC_STATEMENT",
         "anim": "NORMAL",
         "lines": 2,
-        "line1": "Welcome to Yanille!",
+        "line1": "Welcome to Athena!",
         "line2": "Which mode would you like to play as?",
         "next": 82,
         "npcId": 6139

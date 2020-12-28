@@ -190,7 +190,7 @@ public class StartScreen {
 				PlayerPunishment.addIpToStarterList1(player.getHostAddress());
 				PlayerPunishment.addIpToStarter1(player.getHostAddress());		
 				World.sendMessage("<col=6600CC>[NEW PLAYER]: "+player.getUsername()+" has logged into Athena for the first time!");
-				ClanChatManager.join(player, "Saint");
+				ClanChatManager.join(player, "Athena");
 			}
 			else if(PlayerPunishment.hasRecieved1stStarter(player.getHostAddress()) && !PlayerPunishment.hasRecieved2ndStarter(player.getHostAddress())) {
 				player.getPacketSender().sendInterfaceRemoval();
@@ -205,7 +205,7 @@ public class StartScreen {
 				PlayerPunishment.addIpToStarterList2(player.getHostAddress());
 				PlayerPunishment.addIpToStarter2(player.getHostAddress());			
 				World.sendMessage("<col=6600CC>[NEW PLAYER]: "+player.getUsername()+" has logged into Athena for the first time!");
-				ClanChatManager.join(player, "Saint");
+				ClanChatManager.join(player, "Athena");
 			}
 			else if(PlayerPunishment.hasRecieved1stStarter(player.getHostAddress()) && PlayerPunishment.hasRecieved2ndStarter(player.getHostAddress())) {
 				//player.getPacketSender().sendInterfaceRemoval();
@@ -216,7 +216,7 @@ public class StartScreen {
 				player.setNewPlayer(false);
 				player.getPacketSender().sendMessage("You've received to many starters.");
 				World.sendMessage("<col=6600CC>[NEW PLAYER]: "+player.getUsername()+" has logged into Athena for the first time!");
-				ClanChatManager.join(player, "Saint");
+				ClanChatManager.join(player, "Athena");
 			}
 			//DialogueManager.start(player, 81);
 			//return true;

@@ -1,20 +1,20 @@
 {
-  "total-play-time-ms": 3670758,
+  "total-play-time-ms": 22100846,
   "username": "Kish",
   "password": "123",
   "email": "null",
   "staff-rights": "OWNER",
   "game-mode": "NORMAL",
-  "boss-points": 8,
+  "boss-points": 18,
   "npc-kills": 0,
   "ArcticPS-points": 0,
   "transform-id": 0,
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2528,
-    "y": 2518,
-    "z": 1
+    "x": 2479,
+    "y": 10142,
+    "z": 0
   },
   "online-status": "ON",
   "given-starter": true,
@@ -23,15 +23,15 @@
   "starterclaimed": false,
   "pvm-rank": "BRONZE",
   "minutes-bonus-exp": -1,
-  "total-gained-exp": 521212146,
+  "total-gained-exp": 1151740030,
   "prestige-points": 0,
-  "achievement-points": 5,
+  "achievement-points": 8,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 4481,
-  "total-loyalty-points": 4481.0,
+  "loyalty-points": 24526,
+  "total-loyalty-points": 24526.0,
   "voting-points": 1,
-  "slayer-points": 0,
+  "slayer-points": 50,
   "pk-points": 0,
   "donation-points": 0,
   "trivia-points": 0,
@@ -41,7 +41,7 @@
   "player-deaths": 0,
   "target-percentage": 0,
   "bh-rank": -1,
-  "beta-tester": false,
+  "beta-tester": true,
   "gender": "MALE",
   "spell-book": "NORMAL",
   "shop-updated": false,
@@ -50,11 +50,11 @@
   "running": true,
   "run-energy": 100,
   "music": false,
-  "sounds": false,
+  "sounds": true,
   "auto-retaliate": true,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 2394863,
+  "last-veng": 1609158959286,
   "fight-type": "UNARMED_PUNCH",
   "sol-effect": 0,
   "skull-timer": 0,
@@ -365,16 +365,16 @@
       "slot": 0
     }
   ],
-  "clanchat": "Saint",
+  "clanchat": "Athena",
   "autocast": false,
   "autocast-spell": -1,
   "dfs-charges": 0,
   "coins-gambled": 0,
-  "slayer-master": "VANNAKA",
+  "slayer-master": "SUMONA",
   "slayer-task": "NO_TASK",
-  "prev-slayer-task": "NO_TASK",
+  "prev-slayer-task": "IKTOMI",
   "task-amount": 0,
-  "task-streak": 0,
+  "task-streak": 1,
   "duo-partner": "null",
   "double-slay-xp": false,
   "recoil-deg": 0,
@@ -479,13 +479,13 @@
   ],
   "skills": {
     "level": [
-      99933,
-      99933,
-      99933,
-      97668,
-      234,
-      99884,
-      234,
+      99640,
+      99640,
+      99640,
+      97375,
+      99,
+      97616,
+      99,
       99,
       99,
       99,
@@ -536,7 +536,7 @@
       2000000000,
       1000000000,
       1000000000,
-      426531601,
+      1057002983,
       1000000000,
       1000000000,
       1000000000,
@@ -551,7 +551,7 @@
       13034431,
       13034431,
       13034431,
-      13034431,
+      13090933,
       13034431,
       13034431,
       13034431,
@@ -562,48 +562,48 @@
   },
   "inventory": [
     {
-      "id": 11316,
-      "amount": 13,
-      "slot": 0
-    },
-    {
-      "id": 4461,
-      "amount": 10,
-      "slot": 0
-    },
-    {
-      "id": 11993,
+      "id": 20850,
       "amount": 1,
       "slot": 0
     },
     {
-      "id": 11996,
+      "id": 20902,
       "amount": 1,
       "slot": 0
     },
     {
-      "id": 12004,
+      "id": 20861,
       "amount": 1,
       "slot": 0
     },
     {
-      "id": 11981,
+      "id": 11555,
       "amount": 1,
       "slot": 0
     },
     {
-      "id": 20257,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 19670,
-      "amount": 3,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 5022,
-      "amount": 13000,
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
@@ -704,7 +704,7 @@
   ],
   "equipment": [
     {
-      "id": 3651,
+      "id": 19052,
       "amount": 1,
       "slot": 0
     },
@@ -724,7 +724,7 @@
       "slot": 0
     },
     {
-      "id": 20850,
+      "id": 4644,
       "amount": 1,
       "slot": 0
     },
@@ -754,8 +754,8 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20090,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -968,38 +968,24 @@
   ],
   "kills": [
     {
-      "runningTotal": 1,
-      "npcId": 5596,
-      "npcName": "Jubster",
-      "amount": 1,
-      "boss": false
+      "runningTotal": 8,
+      "npcId": 6307,
+      "npcName": "Iktomi The Trickster",
+      "amount": 8,
+      "boss": true
     },
     {
-      "runningTotal": 4,
+      "runningTotal": 6,
       "npcId": 515,
       "npcName": "Yani",
-      "amount": 4,
+      "amount": 6,
       "boss": true
     },
     {
-      "runningTotal": 1,
-      "npcId": 2437,
-      "npcName": "Yanille Artillery",
-      "amount": 1,
-      "boss": false
-    },
-    {
-      "runningTotal": 1,
-      "npcId": 1459,
-      "npcName": "Nature Sword",
-      "amount": 1,
-      "boss": true
-    },
-    {
-      "runningTotal": 1,
-      "npcId": 6305,
-      "npcName": "Yanille Guardian",
-      "amount": 1,
+      "runningTotal": 2,
+      "npcId": 8507,
+      "npcName": "Ultimatium",
+      "amount": 2,
       "boss": true
     },
     {
@@ -1011,16 +997,16 @@
     },
     {
       "runningTotal": 1,
-      "npcId": 53,
-      "npcName": "Undead Inferno Dragon",
+      "npcId": 1459,
+      "npcName": "Nature Sword",
       "amount": 1,
       "boss": true
     },
     {
-      "runningTotal": 2,
-      "npcId": 8507,
-      "npcName": "Ultimatium",
-      "amount": 2,
+      "runningTotal": 1,
+      "npcId": 53,
+      "npcName": "Undead Inferno Dragon",
+      "amount": 1,
       "boss": true
     },
     {
@@ -1029,28 +1015,74 @@
       "npcName": "Vanquisher",
       "amount": 1,
       "boss": true
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 6305,
+      "npcName": "Yanille Guardian",
+      "amount": 1,
+      "boss": true
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 5596,
+      "npcName": "Jubster",
+      "amount": 1,
+      "boss": false
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 2437,
+      "npcName": "Yanille Artillery",
+      "amount": 1,
+      "boss": false
     }
   ],
   "drops": [
+    {
+      "item": 3230,
+      "amount": 10,
+      "rareDrop": true
+    },
+    {
+      "item": 7118,
+      "amount": 79,
+      "rareDrop": true
+    },
+    {
+      "item": 20827,
+      "amount": 1,
+      "rareDrop": true
+    },
+    {
+      "item": 20819,
+      "amount": 1,
+      "rareDrop": true
+    },
     {
       "item": 20850,
       "amount": 2,
       "rareDrop": true
     },
     {
-      "item": 7100,
-      "amount": 28,
-      "rareDrop": true
-    },
-    {
-      "item": 7118,
-      "amount": 46,
-      "rareDrop": true
-    },
-    {
       "item": 4461,
-      "amount": 50,
+      "amount": 70,
       "rareDrop": false
+    },
+    {
+      "item": 5022,
+      "amount": 1936800,
+      "rareDrop": false
+    },
+    {
+      "item": 7100,
+      "amount": 38,
+      "rareDrop": true
+    },
+    {
+      "item": 20089,
+      "amount": 2,
+      "rareDrop": true
     },
     {
       "item": 19788,
@@ -1058,22 +1090,27 @@
       "rareDrop": false
     },
     {
-      "item": 5023,
-      "amount": 12,
+      "item": 4784,
+      "amount": 3,
       "rareDrop": true
     },
     {
-      "item": 5022,
-      "amount": 48000,
-      "rareDrop": false
+      "item": 3645,
+      "amount": 1,
+      "rareDrop": true
     },
     {
-      "item": 6199,
-      "amount": 3,
-      "rareDrop": false
+      "item": 3644,
+      "amount": 1,
+      "rareDrop": true
     },
     {
-      "item": 895,
+      "item": 11425,
+      "amount": 6,
+      "rareDrop": true
+    },
+    {
+      "item": 13197,
       "amount": 1,
       "rareDrop": false
     },
@@ -1083,7 +1120,27 @@
       "rareDrop": false
     },
     {
+      "item": 11316,
+      "amount": 300,
+      "rareDrop": false
+    },
+    {
       "item": 21045,
+      "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 895,
+      "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 6199,
+      "amount": 3,
+      "rareDrop": false
+    },
+    {
+      "item": 7108,
       "amount": 1,
       "rareDrop": false
     },
@@ -1093,44 +1150,19 @@
       "rareDrop": false
     },
     {
-      "item": 7108,
-      "amount": 1,
-      "rareDrop": false
+      "item": 5023,
+      "amount": 16,
+      "rareDrop": true
     },
     {
-      "item": 13197,
-      "amount": 1,
-      "rareDrop": false
-    },
-    {
-      "item": 20089,
+      "item": 21006,
       "amount": 2,
-      "rareDrop": true
-    },
-    {
-      "item": 3230,
-      "amount": 10,
-      "rareDrop": true
-    },
-    {
-      "item": 20819,
-      "amount": 1,
-      "rareDrop": true
-    },
-    {
-      "item": 20827,
-      "amount": 1,
-      "rareDrop": true
-    },
-    {
-      "item": 11316,
-      "amount": 300,
       "rareDrop": false
     },
     {
-      "item": 11425,
-      "amount": 6,
-      "rareDrop": true
+      "item": 21007,
+      "amount": 1,
+      "rareDrop": false
     }
   ],
   "tasks-completion": [
@@ -1225,7 +1257,7 @@
     false,
     false,
     false,
-    false,
+    true,
     true,
     false,
     false,
@@ -1280,8 +1312,8 @@
     false,
     false,
     false,
-    false,
-    false,
+    true,
+    true,
     true,
     false,
     false,
@@ -1353,10 +1385,10 @@
     134871,
     0,
     0,
-    2,
+    4,
     0,
-    14,
-    12,
+    24,
+    22,
     1
   ],
   "max-cape-colors": [

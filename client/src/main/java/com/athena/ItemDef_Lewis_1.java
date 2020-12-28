@@ -4060,8 +4060,8 @@ public class ItemDef_Lewis_1 {
                 break;
             case 20090:
                 itemDef.modelID = 95064;
-                itemDef.name = "@yel@Yanille Boots";
-                itemDef.description = "It is the Yanille boots!";
+                itemDef.name = "@yel@Athena Boots";
+                itemDef.description = "It is the Athena boots!";
                 itemDef.modelZoom = 1616;
                 itemDef.rotationY = 396;
                 itemDef.rotationX = 1050;
@@ -4250,7 +4250,7 @@ public class ItemDef_Lewis_1 {
             case 13196:
                 itemDef.modelID = 62714;
                 itemDef.name = "Nature Torva full helm";
-                itemDef.description = "Yanille full helm";
+                itemDef.description = "Nature Torva";
                 itemDef.colourRedefine2 = 663333;
                 itemDef.modelZoom = 672;
                 itemDef.rotationY = 85;
@@ -4306,7 +4306,7 @@ public class ItemDef_Lewis_1 {
                 itemDef.newModelColor = new int[]    {57};
                 break;
             case 20901:
-                itemDef.name = "@red@Yanille @yel@key";
+                itemDef.name = "@red@Athena @yel@key";
                 itemDef2 = ItemDef.forID(989);
                 itemDef.modelID = 67575;
                 itemDef.maleEquip1 = itemDef2.maleEquip1;
@@ -4409,7 +4409,7 @@ public class ItemDef_Lewis_1 {
             case 13197:
                 itemDef.modelID = 62699;
                 itemDef.name = "Nature Torva platebody";
-                itemDef.description = "Yanille platebody";
+                itemDef.description = "Athena platebody";
                 itemDef.colourRedefine2 = 663333;
                 itemDef.modelZoom = 1506;
                 itemDef.rotationY = 473;
@@ -4429,7 +4429,7 @@ public class ItemDef_Lewis_1 {
             case 13198:
                 itemDef.modelID = 62701;
                 itemDef.name = "Nature Torva platelegs";
-                itemDef.description = "Yanille platelegs";
+                itemDef.description = "Athena platelegs";
                 itemDef.colourRedefine2 = 663333;
                 itemDef.modelZoom = 1740;
                 itemDef.rotationY = 474;

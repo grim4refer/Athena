@@ -157,7 +157,7 @@ public class ItemDef_Jarrod_1 {
 				itemDef.rotationX = 978;
 				break;
 			case 20751:
-				itemDef.name = "@red@Yanille glaive @gre@15dr"; // name of the item
+				itemDef.name = "@red@Athena glaive @gre@15dr"; // name of the item
 				itemDef.modelID = 91693; // Model id of the inv (Inv models, drop models etcetcetc)
 				itemDef.maleEquip1 = 91694; // Equipment model for the item (Male)
 				itemDef.femaleEquip1 = 91694; // same as maleEquip but for female
@@ -245,7 +245,7 @@ public class ItemDef_Jarrod_1 {
 				itemDef.editedModelColor[0] = 40;
 				itemDef.newModelColor[0] = 56;
 				itemDef.modelID = 91610;
-				itemDef.name = "@yel@Yanille Body";
+				itemDef.name = "@yel@Athena Body";
 				itemDef.description = "Simply onfire";
 				itemDef.modelZoom = 1579;
 				itemDef.modelOffset1 = -4;
@@ -270,7 +270,7 @@ public class ItemDef_Jarrod_1 {
 				itemDef.rotationY = itemDef2.rotationY;
 				itemDef.rotationX = itemDef2.rotationX;
 				itemDef.modelZoom = itemDef2.modelZoom;
-				itemDef.name = "@yel@Yanille Gloves";
+				itemDef.name = "@yel@Athena Gloves";
 				itemDef.colourRedefine2 = 326;
 				itemDef.groundActions = new String[5];
 				itemDef.actions[2] = "Take";
@@ -382,7 +382,7 @@ public class ItemDef_Jarrod_1 {
 				itemDef.editedModelColor[0] = 40;
 				itemDef.newModelColor[0] = 56;
 				itemDef.modelID = 91606;
-				itemDef.name = "@yel@Yanille Legs";
+				itemDef.name = "@yel@Athena Legs";
 				itemDef.description = "Simply onfire";
 				itemDef.modelZoom = 1579;
 				itemDef.modelOffset1 = -4;
@@ -402,7 +402,7 @@ public class ItemDef_Jarrod_1 {
 				itemDef.editedModelColor[0] = 40;
 				itemDef.newModelColor[0] = 56;
 				itemDef.modelID = 91608;
-				itemDef.name = "@yel@Yanille Helm";
+				itemDef.name = "@yel@Athena Helm";
 				itemDef.description = "Simply onfire";
 				itemDef.modelZoom = 1100;
 				itemDef.modelOffset1 = 16;
@@ -602,7 +602,7 @@ public class ItemDef_Jarrod_1 {
 				break;
 
 			case 3981:
-				itemDef.name = "@mag@Yanille Cape";
+				itemDef.name = "@mag@Athena Cape";
 				itemDef.actions = new String[5];
 				itemDef.actions[1] = "Wear";
 				itemDef.editedModelColor = new int[1];
@@ -1426,7 +1426,7 @@ public class ItemDef_Jarrod_1 {
 			case 11546:
 				itemDef.name = "Lime Slayer helmet[3]";
 				itemDef.modelID = 56474;
-				itemDef.description = "Yanille full helm";
+				itemDef.description = "Athena full helm";
 				itemDef.maleEquip1 = 56473;
 				itemDef.femaleEquip1 = 56473;
 				itemDef2 = ItemDef.forID(13263);
@@ -1443,7 +1443,7 @@ public class ItemDef_Jarrod_1 {
 			case 11547:
 				itemDef.name = "Aqua Slayer helmet[4]";
 				itemDef.modelID = 56474;
-				itemDef.description = "Yanille full helm";
+				itemDef.description = "Aqua Slayer helmet";
 				itemDef.maleEquip1 = 56473;
 				itemDef.femaleEquip1 = 56473;
 				itemDef2 = ItemDef.forID(13263);
@@ -1495,7 +1495,7 @@ public class ItemDef_Jarrod_1 {
 			case 11548:
 				itemDef.name = "Corrupt Slayer helmet[5]";
 				itemDef.modelID = 56474;
-				itemDef.description = "Yanille full helm";
+				itemDef.description = "Corrupt Slayer helmet";
 				itemDef.maleEquip1 = 56473;
 				itemDef.femaleEquip1 = 56473;
 				itemDef2 = ItemDef.forID(13263);
@@ -1512,7 +1512,7 @@ public class ItemDef_Jarrod_1 {
 			case 11550:
 				itemDef.name = "Lava Slayer helmet[1]";
 				itemDef.modelID = 56474;
-				itemDef.description = "Yanille full helm";
+				itemDef.description = "Lava Slayer helmet";
 				itemDef.maleEquip1 = 56473;
 				itemDef.femaleEquip1 = 56473;
 				itemDef2 = ItemDef.forID(13263);
@@ -1529,7 +1529,7 @@ public class ItemDef_Jarrod_1 {
 			case 11549:
 				itemDef.name = "Golden Slayer helmet[2]";
 				itemDef.modelID = 56474;
-				itemDef.description = "Yanille full helm";
+				itemDef.description = "Golden Slayer helmet";
 				itemDef.maleEquip1 = 56473;
 				itemDef.femaleEquip1 = 56473;
 				itemDef2 = ItemDef.forID(13263);
@@ -4831,8 +4831,8 @@ public class ItemDef_Jarrod_1 {
 			case 20870:
 				itemDef.actions = new String[5];
 				itemDef.actions[0] = "Claim Prize";
-				itemDef.name = "@yel@Yanille @yel@Mystery @yel@Box";
-				itemDef.description = "@yel@It's a Yanille Mystery Box!";
+				itemDef.name = "@yel@Athena @yel@Mystery @yel@Box";
+				itemDef.description = "@yel@It's a Athena Mystery Box!";
 				itemDef.editedModelColor = new int[1];
 				itemDef.newModelColor = new int[1];
 				itemDef.editedModelColor[0] = 22464;

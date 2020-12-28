@@ -575,14 +575,14 @@ public class NPCOptionPacketListener implements PacketListener {
 						break;
 					case 4657:
 						if(player.getRights() == PlayerRights.PLAYER) {
-							player.getPacketSender().sendMessage("You need to be a member to teleport to this zone.").sendMessage("To become a member, visit www.yanille.net/store/ and purchase a scroll.");
+							player.getPacketSender().sendMessage("You need to be a member to teleport to this zone.").sendMessage("To become a member, message Array and purchase a scroll.");
 							return;
 						}
 						TeleportHandler.teleportPlayer(player, new Position(3363, 9638), player.getSpellbook().getTeleportType());
 						break;
 					case 2088:
 						if(player.getRights() == PlayerRights.PLAYER) {
-							player.getPacketSender().sendMessage("You need to be a member to teleport to this zone.").sendMessage("To become a member, visit www.yanille.net/store/ and purchase a scroll.");
+							player.getPacketSender().sendMessage("You need to be a member to teleport to this zone.").sendMessage("To become a member, message Array and purchase a scroll.");
 							return;
 						}
 						break;
@@ -644,7 +644,7 @@ public class NPCOptionPacketListener implements PacketListener {
 				switch(npc.getId()) {
 					case 4657:
 						if(player.getRights() == PlayerRights.PLAYER) {
-							player.getPacketSender().sendMessage("You need to be a member to teleport to this zone.").sendMessage("To become a member, visit www.yanille.net/store and purchase a scroll.");
+							player.getPacketSender().sendMessage("You need to be a member to teleport to this zone.").sendMessage("To become a member, message Array and purchase a scroll.");
 							return;
 						}
 						TeleportHandler.teleportPlayer(player, new Position(3363, 9638), player.getSpellbook().getTeleportType());

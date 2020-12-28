@@ -1323,7 +1323,7 @@ public class ItemDef_Tama {
                 break;
             case 20871:
                 itemDef.modelID = 140032;
-                itemDef.name = "@cya@Yanille Power A @red@15dr";
+                itemDef.name = "@cya@Athena Power A @red@15dr";
                 itemDef.description = "It's a " + itemDef.name + ".";
                 itemDef.modelZoom = 1000;
                 itemDef.modelOffset1 = 0;
@@ -1340,7 +1340,7 @@ public class ItemDef_Tama {
                 break;
             case 20872:
                 itemDef.modelID = 140033;
-                itemDef.name = "@cya@Yanille Power B @red@15dr";
+                itemDef.name = "@cya@Athena Power B @red@15dr";
                 itemDef.description = "It's a " + itemDef.name + ".";
                 itemDef.modelZoom = 1000;
                 itemDef.modelOffset1 = 0;
@@ -2001,8 +2001,8 @@ public class ItemDef_Tama {
 
             case 8851:
                 itemDef = itemDef.forID(8851);
-                itemDef.name = "Yanille Token";
-                itemDef.description = "a Yanille Token";
+                itemDef.name = "Athena Token";
+                itemDef.description = "a Athena Token";
                 break;
         }
         return itemDef;

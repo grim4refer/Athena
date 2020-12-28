@@ -16,7 +16,7 @@ public class StarterTasks {
 				"At the start", ""),
 		DEFEAT_10_CARS("Destroy 10 Cars", 53208, "10 Cars", new int[] { 0, 10 }, "Destroy 10 Cars",
 				"Drops Starter Items!", "", ""),
-		DEFEAT_10_CRASH("Defeat 10 Crash", 53209, "10 Crash", new int[] { 1, 10 }, "Defeat 10 Yanille Artillery", "Drops guns!", "", ""),
+		DEFEAT_10_CRASH("Defeat 10 Crash", 53209, "10 Crash", new int[] { 1, 10 }, "Defeat 10 Athena Artillery", "Drops guns!", "", ""),
 		DEFEAT_10_TERROR_DOGS("Defeat 10 Terror Dogs", 53210, "10 Terror Dogs", new int[] { 2, 10 }, "Defeat 10 Terror Dogs",
 				"Drops Deadly Dragonslayer pieces!", "", ""),
 		DEFEAT_10_PINGUINS("Defeat 10 Pinguins", 53211, "10 Pinguins", new int[] { 3, 10 }, "Defeat 10 Pinguins", "Drops Dark Predator pieces!",

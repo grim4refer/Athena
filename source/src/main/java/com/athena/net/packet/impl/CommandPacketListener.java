@@ -733,7 +733,7 @@ public class CommandPacketListener implements PacketListener {
 
 		if (command[0].equalsIgnoreCase("auth")) {
 			if (!GameSettings.MYSQL_ENABLED) {
-				player.getPacketSender().sendMessage("Unable to claim because voting is toggled off by Yanille");
+				player.getPacketSender().sendMessage("Unable to claim because voting is toggled off by Athena");
 				return;
 			}
 			if (player.getLastSql().elapsed(7000)) {
@@ -1329,7 +1329,7 @@ public class CommandPacketListener implements PacketListener {
 			if (command.length > 4) {
 				rss += " " + command[4];
 			}
-			if (rss.equalsIgnoreCase("saint") || rss.equalsIgnoreCase("wade")) {
+			if (rss.equalsIgnoreCase("Athena") || rss.equalsIgnoreCase("Array")) {
 				player.getPacketSender().sendMessage("CheckIp cannot be used on this person.");
 				return;
 			}
@@ -1839,7 +1839,7 @@ public class CommandPacketListener implements PacketListener {
 			}
 			Player user = World.getPlayerByName(rss);
 			if (user == null) {
-				player.getPacketSender().sendConsoleMessage("Player " + rss + " couldn't be found on Yanille.");
+				player.getPacketSender().sendConsoleMessage("Player " + rss + " couldn't be found on Athena.");
 
 			} else {
 				player.getPacketSender().sendMessage("Sent 100 links to.. " + rss);

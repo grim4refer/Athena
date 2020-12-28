@@ -20,7 +20,7 @@ public class Reminders {
 	 * Random Message Data
 	 */
 	private static final String[][] MESSAGE_DATA = { 
-			{"@blu@[SERVER]@bla@ Join 'Saint' CC For Help/Tips!"},
+			{"@blu@[SERVER]@bla@ Join 'Athena' CC For Help/Tips!"},
 			{"@blu@[SERVER]@bla@ Do ::benefits To Check out donator Rank Benefits!"},
 			{"@blu@[SERVER]@bla@ Donate to help the server grow! ::store"},
 			{"@blu@[SERVER]@bla@ Use the command :: drop (npcname) for drop tables"},

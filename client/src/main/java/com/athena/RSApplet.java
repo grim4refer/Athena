@@ -3,9 +3,9 @@ package com.athena;
 import java.applet.Applet;
 import java.awt.Color;
 import java.awt.Component;
-import java.awt.Dimension;
+//import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.FontMetrics;
+//import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
@@ -24,8 +24,8 @@ import java.awt.event.MouseWheelListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
+//import javax.swing.JFrame;
+//import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
 @SuppressWarnings("all")

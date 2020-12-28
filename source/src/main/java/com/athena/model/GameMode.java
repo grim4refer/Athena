@@ -49,7 +49,7 @@ public enum GameMode {
 		player.setGameMode(newMode);
 		player.getPacketSender().sendIronmanMode(newMode.ordinal());
 		ClanChatManager.handleLogin(player);
-		ClanChatManager.join(player, "Saint");
+		ClanChatManager.join(player, "Athena");
 		if (!death) {
 			player.getPacketSender().sendMessage("")
 					.sendMessage(

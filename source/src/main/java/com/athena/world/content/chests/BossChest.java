@@ -13,41 +13,41 @@ public class BossChest {
 		if(!p.getClickDelay().elapsed(2000)) 
 			return;
 		if(!p.getInventory().contains(20901)) {
-			p.getPacketSender().sendMessage("This chest can only be opened with a Yanille key.");
+			p.getPacketSender().sendMessage("This chest can only be opened with a Athena key.");
 			return;
 		}
 		p.performAnimation(new Animation(827));
 		if (p.getRights() == PlayerRights.DONATOR) {
 			if (Misc.getRandom(15) == 5) {
-				p.getPacketSender().sendMessage("Yanille Key has been saved as a donator benefit");
+				p.getPacketSender().sendMessage("Athena Key has been saved as a donator benefit");
 			} else {
 				p.getInventory().delete(20901, 1);
 			}
 		}
 		if (p.getRights() == PlayerRights.SUPER_DONATOR || p.getRights() == PlayerRights.SUPPORT) {
 			if (Misc.getRandom(12) == 5) {
-				p.getPacketSender().sendMessage("Yanille Key has been saved as a donator benefit");
+				p.getPacketSender().sendMessage("Athena Key has been saved as a donator benefit");
 			} else {
 				p.getInventory().delete(20901, 1);
 			}
 		}
 		if (p.getRights() == PlayerRights.EXTREME_DONATOR || p.getRights() == PlayerRights.MODERATOR) {
 			if (Misc.getRandom(9) == 5) {
-				p.getPacketSender().sendMessage("Yanille Key has been saved as a donator benefit");
+				p.getPacketSender().sendMessage("Athena Key has been saved as a donator benefit");
 			} else {
 				p.getInventory().delete(20901, 1);
 			}
 		}
 		if (p.getRights() == PlayerRights.LEGENDARY_DONATOR  || p.getRights() == PlayerRights.ADMINISTRATOR) {
 			if (Misc.getRandom(6) == 5) {
-				p.getPacketSender().sendMessage("Yanille Key has been saved as a donator benefit");
+				p.getPacketSender().sendMessage("Athena Key has been saved as a donator benefit");
 			} else {
 				p.getInventory().delete(20901, 1);
 			}
 		}
 		if (p.getRights() == PlayerRights.UBER_DONATOR || p.getRights() == PlayerRights.DELUXE_DONATOR) {
 			if (Misc.getRandom(3) == 2) {
-				p.getPacketSender().sendMessage("Yanille Key has been saved as a donator benefit");
+				p.getPacketSender().sendMessage("Athena Key has been saved as a donator benefit");
 			} else {
 				p.getInventory().delete(20901, 1);
 			}

@@ -1019,7 +1019,7 @@
   {
     "id": 35,
     "name": "Soldier",
-    "examine": "A soldier of the town of Yanille.",
+    "examine": "A soldier of the town of Athena.",
     "combat": 28,
     "size": 1,
     "attackable": true,
@@ -53886,8 +53886,8 @@
   },
   {
     "id": 2436,
-    "name": "Yanille",
-    "examine": "An Yanille Warrior.",
+    "name": "Athena",
+    "examine": "An Athena Warrior.",
     "combat": 464,
     "size": 1,
     "attackable": true,
@@ -53908,7 +53908,7 @@
   },
   {
     "id": 2437,
-    "name": "Yanille Artillery",
+    "name": "Athena Artillery",
     "examine": "A Fremennik raider.",
     "combat": 0,
     "size": 1,
@@ -138306,8 +138306,8 @@
   },
   {
     "id": 6305,
-    "name": "Yanille Guardian",
-    "examine": "Yanille's protector",
+    "name": "Athena Guardian",
+    "examine": "Athena's protector",
     "combat": 3982,
     "size": 5,
     "attackable": true,

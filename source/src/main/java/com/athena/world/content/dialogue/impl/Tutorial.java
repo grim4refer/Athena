@@ -69,7 +69,7 @@ public class Tutorial {
 
 				@Override
 				public String[] dialogue() {
-					return new String[]{"You can earn money doing many different things in", "Yanille. For example, see those Thieving stalls infront of ", "you? You can steal items from them and sell them to the", "merchant whose standing over there."};
+					return new String[]{"You can earn money doing many different things in", "Athena. For example, see those Thieving stalls infront of ", "you? You can steal items from them and sell them to the", "merchant whose standing over there."};
 				};
 
 				@Override
@@ -310,7 +310,7 @@ public class Tutorial {
 
 				@Override
 				public String[] dialogue() {
-					return new String[]{"Yanille also has a lot of enjoyable minigames.", "This is the Graveyard Arena, an area that's been run over", "by Zombies. Your job is to simply to kill them all.", "Sounds like fun, don't you think?"};
+					return new String[]{"Athena also has a lot of enjoyable minigames.", "This is the Graveyard Arena, an area that's been run over", "by Zombies. Your job is to simply to kill them all.", "Sounds like fun, don't you think?"};
 				};
 
 				@Override
@@ -412,7 +412,7 @@ public class Tutorial {
 
 				@Override
 				public String[] dialogue() {
-					return new String[]{"Yanille is a competitive game. Next to you is a scoreboard", "which you can use to track other players and their progress."};
+					return new String[]{"Athena is a competitive game. Next to you is a scoreboard", "which you can use to track other players and their progress."};
 				};
 
 				@Override
@@ -537,8 +537,8 @@ public class Tutorial {
 					p.getPacketSender().sendInterface(3559);
 					p.getAppearance().setCanChangeAppearance(true);
 					p.setPlayerLocked(false);
-					ClanChatManager.join(p, "saint");
-					World.sendMessage("<img=10> <col=6600CC>[NEW PLAYER]: "+p.getUsername()+" has logged into Yanille for the first time!");
+					ClanChatManager.join(p, "Athena");
+					World.sendMessage("<img=10> <col=6600CC>[NEW PLAYER]: "+p.getUsername()+" has logged into Athena for the first time!");
 
 					//reset interface?
 					//resetInterface(player);

@@ -176,12 +176,12 @@ public class PlayerHandler {
             // player.setReceivedStarter(true);
         }
         // DialogueManager.start(player, 177);
-        player.getPacketSender().sendMessage("@blu@Welcome to Yanille!@bla@ Visit our website at: www.yanille.net");
-        player.getPacketSender().sendMessage("@red@We hope you enjoy your stay at Yanille");
+        player.getPacketSender().sendMessage("@blu@Welcome to Athena!@bla@");
+        player.getPacketSender().sendMessage("@red@We hope you enjoy your stay at Athena");
 
         if (player.getBetaTester()) {
             World.sendMessage(
-                    "@bla@[@or2@Besta tester@bla@] @or2@" + player.getUsername() + "@bla@ has just logged in!");
+                    "@bla@[@or2@Beta tester@bla@] @or2@" + player.getUsername() + "@bla@ has just logged in!");
         }
         if (player.experienceLocked()) {
             player.getPacketSender().sendMessage("@red@Warning: your experience is currently locked.");
@@ -189,11 +189,11 @@ public class PlayerHandler {
 
         if (!player.newPlayer()) {
             ClanChatManager.handleLogin(player);
-            ClanChatManager.join(player, "Saint");
+            ClanChatManager.join(player, "Athena");
         }
         if (GameSettings.BONUS_EXP) {
             player.getPacketSender().sendMessage(
-                    "<img=10> <col=008FB2>Yanille currently has a bonus experience event going on, make sure to use it!");
+                    "<img=10> <col=008FB2>Athena currently has a bonus experience event going on, make sure to use it!");
         }
         if (WellOfWealth.isActive()) {
             player.getPacketSender()

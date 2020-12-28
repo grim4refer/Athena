@@ -41,7 +41,7 @@ public enum SlayerTasks {
 	BROLY(SlayerMaster.KURADEL, 7, "Broly can be found in the Bosses Teleport", 14000, new Position(1941, 4687, 0)),
 	PLANEFREEZER(SlayerMaster.KURADEL, 9939, "Planefreezer can be found in Boss Teleports.", 14000, new Position(2490, 9947, 0)),
 	NEX(SlayerMaster.KURADEL, 13447, "Nex can be found in the Boss Teleport", 14000, new Position(2903, 5203, 0)),
-	YANILLE_GUARDIAN(SlayerMaster.KURADEL, 6305, "Yanille Guardian can be found in the Monster Teleport", 14000, new Position(2479, 10144, 0)),
+	YANILLE_GUARDIAN(SlayerMaster.KURADEL, 6305, "Athena Guardian can be found in the Monster Teleport", 14000, new Position(2479, 10144, 0)),
 	/**
 	 * Hard tasks
 	 */

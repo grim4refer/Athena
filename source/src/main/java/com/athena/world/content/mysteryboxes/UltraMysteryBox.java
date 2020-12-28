@@ -147,10 +147,10 @@ public class UltraMysteryBox {
 			World.sendMessage("<shad=58384383>[Ultra box] @blu@"+plr.getUsername()+"@gre@ has just received @bla@God Void Knight Gloves!");
 		}
 		if(rewards0[rewardGrade][rewardPos] == 20871) {
-			World.sendMessage("<shad=58384383>[Ultra box] @blu@"+plr.getUsername()+"@gre@ has just received @cya@AWESOME REWARD @red@Yanille <shad=38384383>POWER A!");
+			World.sendMessage("<shad=58384383>[Ultra box] @blu@"+plr.getUsername()+"@gre@ has just received @cya@AWESOME REWARD @red@Athena <shad=38384383>POWER A!");
 		}
 		if(rewards0[rewardGrade][rewardPos] == 20872) {
-			World.sendMessage("<shad=58384383>[Ultra box] @blu@"+plr.getUsername()+"@gre@ has just received @cya@AWESOME REWARD @red@Yanille <shad=38384383>POWER B!");
+			World.sendMessage("<shad=58384383>[Ultra box] @blu@"+plr.getUsername()+"@gre@ has just received @cya@AWESOME REWARD @red@Athena <shad=38384383>POWER B!");
 		}
 		if(rewards0[rewardGrade][rewardPos] == 20823) {
 			World.sendMessage("<shad=58384383>[Ultra box] @blu@"+plr.getUsername()+"@gre@ has just received @bla@Hell Fiend Chainskirt!");
@@ -174,19 +174,19 @@ public class UltraMysteryBox {
 			World.sendMessage("<shad=58384383>[Ultra box] @blu@"+plr.getUsername()+"@gre@ has just received @mag@Raids <shad=48384383>CAPE!");
 		}
 		if(rewards0[rewardGrade][rewardPos] == 4646) {
-			World.sendMessage("<shad=58384383>[Ultra box] @blu@"+plr.getUsername()+"@bla@ has just received @yel@SUPER RARE @red@Yanille <shad=88384383>HELM!");
+			World.sendMessage("<shad=58384383>[Ultra box] @blu@"+plr.getUsername()+"@bla@ has just received @yel@SUPER RARE @red@Athena <shad=88384383>HELM!");
 		}
 		if(rewards0[rewardGrade][rewardPos] == 4644) {
-			World.sendMessage("<shad=58384383>[Ultra box] @blu@"+plr.getUsername()+"@bla@ has just received @yel@SUPER RARE @red@Yanille <shad=88384383>PLATEBODY!");
+			World.sendMessage("<shad=58384383>[Ultra box] @blu@"+plr.getUsername()+"@bla@ has just received @yel@SUPER RARE @red@Athena <shad=88384383>PLATEBODY!");
 		}
 		if(rewards0[rewardGrade][rewardPos] == 4645) {
-			World.sendMessage("<shad=58384383>[Ultra box] @blu@"+plr.getUsername()+"@bla@ has just received @yel@SUPER RARE @red@Yanille <shad=88384383>PLATELEGS!");
+			World.sendMessage("<shad=58384383>[Ultra box] @blu@"+plr.getUsername()+"@bla@ has just received @yel@SUPER RARE @red@Athena <shad=88384383>PLATELEGS!");
 		}
 		if(rewards0[rewardGrade][rewardPos] == 20090) {
-			World.sendMessage("<shad=58384383>[Ultra box] @blu@"+plr.getUsername()+"@bla@ has just received @yel@SUPER RARE @red@Yanille <shad=88384383>Boots!");
+			World.sendMessage("<shad=58384383>[Ultra box] @blu@"+plr.getUsername()+"@bla@ has just received @yel@SUPER RARE @red@Athena <shad=88384383>Boots!");
 		}
 		if(rewards0[rewardGrade][rewardPos] == 11552) {
-			World.sendMessage("<shad=58384383>[Ultra box] @blu@"+plr.getUsername()+"@bla@ has just received @yel@SUPER RARE @red@Yanille <shad=88384383>Gloves!");
+			World.sendMessage("<shad=58384383>[Ultra box] @blu@"+plr.getUsername()+"@bla@ has just received @yel@SUPER RARE @red@Athena <shad=88384383>Gloves!");
 		}
 		if(rewards0[rewardGrade][rewardPos] == 20750) {
 			World.sendMessage("<shad=58384383>[Ultra box] @blu@"+plr.getUsername()+"@bla@ has just received @yel@SUPER RARE @red@Owner <shad=88384383>CAPE!");

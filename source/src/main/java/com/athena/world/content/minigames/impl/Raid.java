@@ -302,7 +302,7 @@ public abstract class Raid extends Minigame2 {
 			
 			if(Misc.random(1000) == 1) {
 					players[i].getInventory().add(20870,1);
-					World.sendMessage("<shad=0>@bla@[@mag@Yanille Mystery Box@bla@]@mag@ "+players[i].getUsername()+ "@bla@ has just received a @mag@Yanille Mystery Box!@bla@");
+					World.sendMessage("<shad=0>@bla@[@mag@Athena Mystery Box@bla@]@mag@ "+players[i].getUsername()+ "@bla@ has just received a @mag@Athena Mystery Box!@bla@");
 					
 				}
 		}

@@ -134,10 +134,10 @@ public class ButtonClickPacketListener implements PacketListener {
 		case -15024:
 			player.getTeleportInterface().handleTeleports();
 			break;
-		case -15333:
-			player.getPacketSender().sendString(1,
-					"http://yanille.net/forums/index.php?/topic/24-yanille-rules/");
-			break;
+		//case -15333:
+			//player.getPacketSender().sendString(1,
+					//"http://yanille.net/forums/index.php?/topic/24-yanille-rules/");
+			//break;
 
 		case -15313:
 			player.getPacketSender().sendString(1, "http://yanille.net/forums/index.php?/topic/26-starter-guide/");
@@ -254,7 +254,7 @@ public class ButtonClickPacketListener implements PacketListener {
                 if (player.getBox() == 20870) {
                     int amount = player.getInventory().getAmount(20870);
                     if (amount >= 1) {
-                        YanilleMysteryBox mysteryBox = new YanilleMysteryBox(player);
+                        AthenaMysteryBox mysteryBox = new AthenaMysteryBox(player);
                         mysteryBox.process();
                     }
                 }
@@ -373,7 +373,7 @@ public class ButtonClickPacketListener implements PacketListener {
                             player.getPacketSender().sendMessage("You need more inventory spaces!");
                             return;
                         }
-                        YanilleMysteryBox mysteryBox = new YanilleMysteryBox(player);
+                        AthenaMysteryBox mysteryBox = new AthenaMysteryBox(player);
                         mysteryBox.process();
                     }
 
@@ -744,26 +744,26 @@ public class ButtonClickPacketListener implements PacketListener {
                 StaffList.updateInterface(player);//staff online button
                 break;
             case 32388:
-                player.getPacketSender().sendTabInterface(GameSettings.QUESTS_TAB, 639); // 26600
+                player.getPacketSender().sendTabInterface(GameSettings.QUESTS_TAB, 26600); // 26600
                 break;
-            case -26359:
+            case 27658:
                 player.setExperienceLocked(!player.experienceLocked());
                 player.sendMessage("Your experience is now: " + (player.experienceLocked() ? "locked" : "unlocked"));
                 break;
             case 3229:
-                player.sendMessage("Pet Box Costs 1250 Yanille Points.");
+                player.sendMessage("Pet Box Costs 1250 Athena Points.");
                 break;
             case 3218:
-                player.sendMessage("Uncommon Package Costs 100 Yanille Points.");
+                player.sendMessage("Uncommon Package Costs 100 Athena Points.");
                 break;
             case 3215:
-                player.sendMessage("Extreme Package Costs 200 Yanille Points.");
+                player.sendMessage("Extreme Package Costs 200 Athena Points.");
                 break;
             case 3221:
-                player.sendMessage("Rare Package Costs 150 Yanille Points.");
+                player.sendMessage("Rare Package Costs 150 Athena Points.");
                 break;
             case 3235:
-                player.sendMessage("Donor Box Costs 2500 Yanille Points.");
+                player.sendMessage("Donor Box Costs 2500 Athena Points.");
                 break;
             case 3204:
                 if (player.getArcticPSPoints() >= 150) {
@@ -823,7 +823,7 @@ public class ButtonClickPacketListener implements PacketListener {
             case 1013:
                 player.getSkillManager().setTotalGainedExp(0);
                 break;
-            case 391:
+            case -26368:
                 if (WellOfGoodwill.isActive()) {
                     player.getPacketSender().sendMessage(
                             "<img=10> <col=008FB2>The Well of Goodwill is granting 30% bonus experience for another "
@@ -1349,7 +1349,7 @@ public class ButtonClickPacketListener implements PacketListener {
                 DropLog.openRare(player);
                 break;
 
-            case -26355:
+            case -26370:
                 player.setExperienceLocked(!player.experienceLocked());
                 String type = player.experienceLocked() ? "locked" : "unlocked";
                 player.getPacketSender().sendMessage("Your experience is now " + type + ".");

@@ -462,7 +462,7 @@ public final class NPCDef {
                 npc.models[6] = 91019;
                 npc.actions = new String[5];
                 npc.actions[1] = "Attack";
-                npc.description = "Creator of the Yanille";
+                npc.description = "Creator of the Athena";
                 npc.sizeXZ = 250;
                 npc.sizeY = 250;
                 npc.combatLevel = 999;
@@ -1420,7 +1420,7 @@ public final class NPCDef {
                 npc.squaresNeeded = 3;
                 break;
             case 3192:
-                npc.name = "Yanille Shop";
+                npc.name = "Athena Shop";
                 npc.combatLevel = 999;
                 npc.actions = new String[]{"Trade", null, null, null, null};
                 break;
@@ -1446,7 +1446,7 @@ public final class NPCDef {
                 npc.actions[4] = null;
                 break;
             case 2436:
-                npc.name = "Yanille Warriors";
+                npc.name = "Athena Warriors";
                 npc.walkAnim = 1660;
                 npc.standAnim = 11973;
                 npc.models = new int[9];
@@ -1960,8 +1960,8 @@ public final class NPCDef {
                 npc.combatLevel = 188;
                 break;
             case 6305:
-                npc.name = "Yanille Guardian";
-                npc.description = "Guardian of Yanille";
+                npc.name = "Athena Guardian";
+                npc.description = "Guardian of Athena";
                 npc.combatLevel = 3892;
                 npc.standAnim = 808;
                 npc.walkAnim = 819;
@@ -2763,7 +2763,7 @@ public final class NPCDef {
             	 break;
             case 2579:
                 npc.name = "Veteran";
-                npc.description = "One of Yanille's veterans.";
+                npc.description = "One of Athena's veterans.";
                 npc.combatLevel = 200;
                 npc.actions = new String[5];
                 npc.actions[0] = "Talk-to";

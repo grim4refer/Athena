@@ -7,7 +7,7 @@ public class TeleportBosses extends Teleporting  {
 		TELEPORT_2(new String[] {"Abbadon", ""}, new int[] {2516,5173,0}),
 		TELEPORT_3(new String[] {"Infernal", "Groudon"}, new int[] {1240,1227,0}),
 		TELEPORT_4(new String[] {"Baphomet", ""}, new int[] {2461,10156,0}),
-		TELEPORT_5(new String[] {"Yanille Guardian", ""}, new int[] {2489, 10147, 0}),
+		TELEPORT_5(new String[] {"Athena Guardian", ""}, new int[] {2489, 10147, 0}),
 		TELEPORT_6(new String[] {"@red@Abyzou", "Heartwrencher"}, new int[] {2720, 9971, 0 }),
 		TELEPORT_7(new String[] {"Le'Fosh", ""}, new int[] {3620, 3534, 0}),//3495, 9937, 0
 		TELEPORT_8(new String[] {"Alien", ""}, new int[] {2420, 4690, 0}),

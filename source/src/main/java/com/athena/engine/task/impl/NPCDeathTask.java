@@ -125,7 +125,7 @@ public class NPCDeathTask extends Task {
 					}
 					if(npc.getId() == 2436) {
 						killer.setArcticPSPoints(killer.getArcticPSPoints() + 10);
-						killer.sendMessage("<img=0>You now have @red@" + killer.getArcticPSPoints() + " Yanille Points!");
+						killer.sendMessage("<img=0>You now have @red@" + killer.getArcticPSPoints() + " Athena Points!");
 					}
 					if(npc.getId() == 6305) { //<-- CHANGE THIS.
 						//Voting.VOTES = 0;

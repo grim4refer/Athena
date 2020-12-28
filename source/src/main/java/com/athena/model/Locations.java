@@ -69,7 +69,7 @@ public class Locations {
 		DUNGEONEERING(new int[]{3433, 3459, 2421, 2499}, new int[]{3694, 3729, 4915, 4990}, true, false, true, false, true, false) {
 			@Override
 			public void login(Player player) {
-				player.getPacketSender().sendDungeoneeringTabIcon(true).sendTabInterface(GameSettings.QUESTS_TAB, 26600).sendTab(GameSettings.QUESTS_TAB);
+				player.getPacketSender().sendDungeoneeringTabIcon(true).sendTabInterface(GameSettings.QUESTS_TAB, 639).sendTab(GameSettings.QUESTS_TAB);//26600
 			}
 			
 			@Override

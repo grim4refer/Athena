@@ -33,9 +33,9 @@ public class SlotMachineRewards {
         }
         else{
             player.getPacketSender().sendInterface(29050);
-            player.getPacketSender().sendItemsOnInterface(TIER1_REWARD_CONTAINER, 25,  YanilleTier1_REWARDS, true);
-            player.getPacketSender().sendItemsOnInterface(TIER2_REWARD_CONTAINER, 25,  YanilleTier2_REWARDS, true);
-            player.getPacketSender().sendItemsOnInterface(TIER3_REWARD_CONTAINER, 25,  YanilleTier3_REWARDS, true);
+            player.getPacketSender().sendItemsOnInterface(TIER1_REWARD_CONTAINER, 25,  AthenaTier1_REWARDS, true);
+            player.getPacketSender().sendItemsOnInterface(TIER2_REWARD_CONTAINER, 25,  AthenaTier2_REWARDS, true);
+            player.getPacketSender().sendItemsOnInterface(TIER3_REWARD_CONTAINER, 25,  AthenaTier3_REWARDS, true);
 
         }
 
@@ -47,9 +47,9 @@ public class SlotMachineRewards {
     private static final List<Item> TIER1_REWARDS = new ArrayList<>();
     private static final List<Item> TIER2_REWARDS = new ArrayList<>();
     private static final List<Item> TIER3_REWARDS = new ArrayList<>();
-    private static final List<Item> YanilleTier1_REWARDS  = new ArrayList<>();
-    private static final List<Item> YanilleTier2_REWARDS = new ArrayList<>();
-    private static final List<Item> YanilleTier3_REWARDS = new ArrayList<>();
+    private static final List<Item> AthenaTier1_REWARDS  = new ArrayList<>();
+    private static final List<Item> AthenaTier2_REWARDS = new ArrayList<>();
+    private static final List<Item> AthenaTier3_REWARDS = new ArrayList<>();
 
     public static Item getRandomItem(SlotMachine.SlotGameType type) {
         switch (type) {
@@ -59,12 +59,12 @@ public class SlotMachineRewards {
                 return Misc.randomElement(TIER2_REWARDS);
             case TIER_3:
                 return Misc.randomElement(TIER3_REWARDS);
-            case YanilleToken1:
-                return Misc.randomElement(YanilleTier1_REWARDS);
-            case YanilleToken2:
-                return Misc.randomElement(YanilleTier2_REWARDS);
-            case YanilleToken3:
-                return Misc.randomElement(YanilleTier3_REWARDS);
+            case AthenaToken1:
+                return Misc.randomElement(AthenaTier1_REWARDS);
+            case AthenaToken2:
+                return Misc.randomElement(AthenaTier2_REWARDS);
+            case AthenaToken3:
+                return Misc.randomElement(AthenaTier3_REWARDS);
             default:
                 return null;
         }
@@ -89,14 +89,14 @@ public class SlotMachineRewards {
                     case TIER_3:
                         TIER3_REWARDS.add(reward);
                         break;
-                    case YanilleToken1:
-                        YanilleTier1_REWARDS.add(reward);
+                    case AthenaToken1:
+                        AthenaTier1_REWARDS.add(reward);
                         break;
-                    case YanilleToken2:
-                        YanilleTier2_REWARDS.add(reward);
+                    case AthenaToken2:
+                        AthenaTier2_REWARDS.add(reward);
                         break;
-                    case YanilleToken3:
-                        YanilleTier3_REWARDS.add(reward);
+                    case AthenaToken3:
+                        AthenaTier3_REWARDS.add(reward);
                         break;
                 }
             }
@@ -105,7 +105,7 @@ public class SlotMachineRewards {
                 return "./data/def/json/slots.json";
             }
         }.load();
-        System.out.println("Loaded "+(YanilleTier1_REWARDS.size()+YanilleTier2_REWARDS.size()+YanilleTier3_REWARDS.size())+" slot rewards");
+        System.out.println("Loaded "+(AthenaTier1_REWARDS.size()+AthenaTier2_REWARDS.size()+AthenaTier3_REWARDS.size())+" slot rewards");
         System.out.println("Loaded "+(TIER1_REWARDS.size()+TIER2_REWARDS.size()+TIER3_REWARDS.size())+" slot rewards");
     }
 

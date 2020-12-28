@@ -1705,11 +1705,11 @@ public class Shop extends ItemContainer {
 				switch (item) {
 
 					case 15471:
-						return new Object[] { 1000, "Yanille Ticket" };
+						return new Object[] { 1000, "Athena Ticket" };
 					case 15472:
-						return new Object[] { 2500, "Yanille Ticket" };
+						return new Object[] { 2500, "Athena Ticket" };
 					case 15473:
-						return new Object[] { 5000, "Yanille Ticket" };
+						return new Object[] { 5000, "Athena Ticket" };
 				}
 			}
 			return null;

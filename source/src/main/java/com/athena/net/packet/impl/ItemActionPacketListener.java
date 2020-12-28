@@ -224,7 +224,7 @@ public class ItemActionPacketListener implements PacketListener {
 				for (int i = 8145; i <= 8195; i++) {
 					player.getPacketSender().sendString(i, "");
 				}
-				player.getPacketSender().sendString(8146, "@dre@Yanille Small Guide");
+				player.getPacketSender().sendString(8146, "@dre@Athena`s Small Guide");
 				player.getPacketSender().sendString(8147, "@dre@Start by going to ::train");
 				player.getPacketSender().sendString(8148, "@dre@Make sure to ::vote and then type ::reward to claim it.");
 				player.getPacketSender().sendString(8149, "@dre@Make sure to use the Forums Guide List.");
@@ -1278,8 +1278,8 @@ public class ItemActionPacketListener implements PacketListener {
 			break;
 
 		case 20870:
-			YanilleMysteryBox YanillemysteryBox = new YanilleMysteryBox(player);
-			YanillemysteryBox.openInterface();
+			AthenaMysteryBox AthenaMysteryBox = new AthenaMysteryBox(player);
+			AthenaMysteryBox.openInterface();
 			player.setBox(20870);
 			break;	
 

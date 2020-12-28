@@ -97,9 +97,9 @@ public class SlotMachine {
         TIER_1(691, 30),
         TIER_2(692, 20),
         TIER_3(693, 15),
-        YanilleToken1(15471,30),
-        YanilleToken2(15472,20),
-        YanilleToken3(15473,15);
+        AthenaToken1(15471,30),
+        AthenaToken2(15472,20),
+        AthenaToken3(15473,15);
 
         private int id;
         private int rarity;
