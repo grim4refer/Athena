@@ -13545,7 +13545,7 @@ public class RSInterface {
 		frame++;
 		id++;
 	}
-	
+
 	public static void gambleItems(int childId, int interfaceId, String[] options) {
 		RSInterface rsi = interfaceCache[childId] = new RSInterface();
 		rsi.actions = new String[10];

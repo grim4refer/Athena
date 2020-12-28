@@ -3,12 +3,12 @@ public class Configuration {
 
 
 
-	public static final boolean LIVE = false; // if its online just put it true
+	public static final boolean LIVE = true; // if its online just put it true
 
 	
-	public final static String HOST = !LIVE ? "localhost" : "51.91.51.88";
+	public final static String HOST = LIVE ? "51.68.196.34" : "51.68.196.34";
 	//public final static String HOST = "localhost";
-	public final static String JAGGRAB_HOST = "localhost"; //dev
+	public final static String JAGGRAB_HOST = "51.68.196.34"; //dev
 
 
 	public final static int PORT = LIVE ? 43595 : 43595; // dev 13376    /13377
