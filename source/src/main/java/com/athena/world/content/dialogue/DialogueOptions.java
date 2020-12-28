@@ -25,7 +25,6 @@ import com.athena.world.content.Achievements.AchievementData;
 import com.athena.world.content.clan.ClanChatManager;
 import com.athena.world.content.dialogue.impl.AgilityTicketExchange;
 import com.athena.world.content.dialogue.impl.Mandrith;
-import com.athena.world.content.gambling.GamblingManager;
 import com.athena.world.content.itemopening.MemberScrolls;
 import com.athena.world.content.minigames.impl.Graveyard;
 import com.athena.world.content.minigames.impl.Nomad;

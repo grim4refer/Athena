@@ -12,6 +12,7 @@ import com.athena.model.input.impl.*;
 import com.athena.net.packet.Packet;
 import com.athena.net.packet.PacketListener;
 import com.athena.world.content.*;
+import com.athena.world.content.gamblinginterface.GamblingInterface;
 import com.athena.util.Misc;
 import com.athena.world.World;
 import com.athena.world.content.TeleportInterface.Bosses;
@@ -1115,14 +1116,22 @@ public class ButtonClickPacketListener implements PacketListener {
                 if (System.currentTimeMillis() - player.getTrading().lastAction <= 300)
                     return;
                 player.getTrading().lastAction = System.currentTimeMillis();
-                
                 if (player.getTrading().inTrade()) {
                     player.getTrading().acceptTrade(id == 3546 ? 2 : 1);
-                } else if (player.getGambling().inGamble()) {
-                	player.getGambling().acceptGamble(player);
                 } else {
                     player.getPacketSender().sendInterfaceRemoval();
                 }
+                break;
+            case -8384:
+                if (System.currentTimeMillis() - player.getGambling().lastAction <= 300)
+                    return;
+                player.getGambling().lastAction = System.currentTimeMillis();
+                if (player.getGambling().inGamble() && player.getGambling().getGamblingMode() != null) {
+                    player.getGambling().acceptGamble(1);
+                } else {
+                    player.sendMessage("@red@Game mode not set, set 1 to play");
+                }
+                System.out.println("In gamble: " + player.getGambling().inGamble());
                 break;
             case 10162:
             case -18269:

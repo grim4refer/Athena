@@ -4,7 +4,6 @@ import com.athena.model.Animation;
 import com.athena.model.Position;
 import com.athena.net.packet.Packet;
 import com.athena.net.packet.PacketListener;
-import com.athena.world.content.gambling.GamblingManager.GambleStage;
 import com.athena.world.content.minigames.impl.Dueling;
 import com.athena.world.content.minigames.impl.Dueling.DuelRule;
 import com.athena.world.entity.impl.player.Player;

@@ -11,8 +11,8 @@ import com.athena.model.container.ItemContainer;
 import com.athena.model.container.impl.Shop;
 import com.athena.net.packet.Packet.PacketType;
 import com.athena.world.content.CustomObjects;
-import com.athena.world.content.gambling.GamblingManager;
-import com.athena.world.content.gambling.GamblingManager.GambleStage;
+//import com.athena.world.content.gambling.GamblingManager;
+// com.athena.world.content.gambling.GamblingManager.GambleStage;
 import com.athena.world.content.skill.impl.construction.Palette;
 import com.athena.world.content.skill.impl.construction.ConstructionData.Furniture;
 import com.athena.world.content.skill.impl.construction.Palette.PaletteTile;
@@ -594,9 +594,9 @@ public class PacketSender {
             player.setResting(false);
             player.performAnimation(new Animation(11788));
         }
-        if (!player.getGambling().getStage().equals(GambleStage.OFFLINE)
-                && !player.getGambling().getStage().equals(GambleStage.IN_PROGRESS)) {
-            GamblingManager.resetGamble(player);
+        if (player.getGambling().inGamble() && player.getGambling().gamblingStatus != 3) {
+            sendClientRightClickRemoval();
+            player.getGambling().declineGamble(true);
         }
         /*
          if(player.getMinigameAttributes().getFishingTrawlerAttributes().isViewingInterface()) {

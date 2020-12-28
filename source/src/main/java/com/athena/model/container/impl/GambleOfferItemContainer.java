@@ -2,7 +2,6 @@ package com.athena.model.container.impl;
 
 import java.util.Objects;
 
-import com.athena.world.content.gambling.GamblingManager;
 import com.athena.world.entity.impl.player.Player;
 
 /**

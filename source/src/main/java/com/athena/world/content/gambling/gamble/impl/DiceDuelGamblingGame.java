@@ -1,6 +1,5 @@
 package com.athena.world.content.gambling.gamble.impl;
 
-import com.athena.world.content.gambling.GamblingManager;
 import com.athena.world.content.gambling.gamble.GamblingGame;
 import com.athena.engine.task.Task;
 import com.athena.engine.task.TaskManager;

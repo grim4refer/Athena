@@ -2,7 +2,6 @@ package com.athena.net.packet.impl;
 
 import com.athena.model.Item;
 import com.athena.model.input.EnterAmount;
-import com.athena.world.content.gambling.GamblingManager;
 import com.athena.world.entity.impl.player.Player;
 
 /**

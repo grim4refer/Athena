@@ -80,15 +80,15 @@ public class ItemContainerActionPacketListener implements PacketListener {
 				player.getTrading().tradeItem(id, 1, slot);
 			} else if(Dueling.checkDuel(player, 1) || Dueling.checkDuel(player, 2)) {
 				player.getDueling().stakeItem(id, 1, slot);
-			} else if (player.getGambling().inGamble()) {
-				player.getGambling().gambleItem(player, id, 1, slot);
 			}
+			if(player.getGambling().inGamble()) {
+				player.getGambling().gambleItem(id, 1, slot);
+			}
+			//player.getGambling().gambleItem(id, 1, slot);
 			break;
 		case Trading.INTERFACE_REMOVAL_ID:
 			if(player.getTrading().inTrade())
 				player.getTrading().removeTradedItem(id, 1);
-			if(player.getGambling().inGamble())
-				player.getGambling().removeGambledItem(player, id, 1);
 			break;
 		case Dueling.INTERFACE_REMOVAL_ID:
 			if(Dueling.checkDuel(player, 1) || Dueling.checkDuel(player, 2)) {
@@ -229,15 +229,14 @@ public class ItemContainerActionPacketListener implements PacketListener {
 				player.getTrading().tradeItem(id, 5, slot);
 			} else if(Dueling.checkDuel(player, 1) || Dueling.checkDuel(player, 2)) {
 				player.getDueling().stakeItem(id, 5, slot);
-			} else if (player.getGambling().inGamble()) {
-				player.getGambling().gambleItem(player, id, 5, slot);
+			}
+			if(player.getGambling().inGamble()) {
+				player.getGambling().gambleItem(id, 5, slot);
 			}
 			break;
 		case Trading.INTERFACE_REMOVAL_ID:
 			if(player.getTrading().inTrade())
 				player.getTrading().removeTradedItem(id, 5);
-			if(player.getGambling().inGamble())
-				player.getGambling().removeGambledItem(player, id, 5);
 			break;
 		case Dueling.INTERFACE_REMOVAL_ID:
 			if(Dueling.checkDuel(player, 1) || Dueling.checkDuel(player, 2)) {
@@ -368,15 +367,14 @@ public class ItemContainerActionPacketListener implements PacketListener {
 				player.getTrading().tradeItem(id, 10, slot);
 			} else if(Dueling.checkDuel(player, 1) || Dueling.checkDuel(player, 2)) {
 				player.getDueling().stakeItem(id, 10, slot);
-			} else if (player.getGambling().inGamble()) {
-				player.getGambling().gambleItem(player, id, 10, slot);
+			}
+			if(player.getGambling().inGamble()) {
+				player.getGambling().gambleItem(id, 10, slot);
 			}
 			break;
 		case Trading.INTERFACE_REMOVAL_ID:
 			if(player.getTrading().inTrade())
 				player.getTrading().removeTradedItem(id, 10);
-			if(player.getGambling().inGamble())
-				player.getGambling().removeGambledItem(player, id, 10);
 			break;
 		case Dueling.INTERFACE_REMOVAL_ID:
 			if(Dueling.checkDuel(player, 1) || Dueling.checkDuel(player, 2)) {
@@ -489,8 +487,9 @@ public class ItemContainerActionPacketListener implements PacketListener {
 				player.getTrading().tradeItem(id, player.getInventory().getAmount(id), slot);
 			} else if(Dueling.checkDuel(player, 1) || Dueling.checkDuel(player, 2)) {
 				player.getDueling().stakeItem(id, player.getInventory().getAmount(id), slot);
-			} else if (player.getGambling().inGamble()) {
-				player.getGambling().gambleItem(player, id, player.getInventory().getAmount(id), slot);
+			}
+			if(player.getGambling().inGamble()) {
+				player.getGambling().gambleItem(id, player.getInventory().getAmount(id), slot);
 			}
 			break;
 		case Trading.INTERFACE_REMOVAL_ID:
@@ -503,9 +502,9 @@ public class ItemContainerActionPacketListener implements PacketListener {
 					}
 				}
 			} else if(player.getGambling().inGamble()) {
-				for(Item item: player.getGambling().offeredItems) {
+				for(Item item: player.getDueling().stakedItems) {
 					if(item != null && item.getId() == id) {
-						player.getGambling().removeGambledItem(player, id, item.getAmount());
+						player.getDueling().removeStakedItem(id, item.getAmount());
 						if(ItemDefinition.forId(id) != null && ItemDefinition.forId(id).isStackable())
 							break;
 					}

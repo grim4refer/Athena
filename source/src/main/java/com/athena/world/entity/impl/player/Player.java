@@ -85,7 +85,7 @@ import com.athena.world.content.transportation.TeleportHandler;
 import com.athena.world.entity.impl.Character;
 import com.athena.world.entity.impl.npc.NPC;
 import com.athena.model.container.impl.GambleOfferItemContainer;
-import com.athena.world.content.gambling.GamblingManager;
+import com.athena.world.content.gamblinginterface.GamblingInterface;
 
 import javax.security.auth.callback.Callback;
 
@@ -1610,6 +1610,11 @@ public class Player extends Character {
 	private Equipment equipment = new Equipment(this);
 	private PriceChecker priceChecker = new PriceChecker(this);
 	private Trading trading = new Trading(this);
+	private GamblingInterface gambling = new GamblingInterface(this);
+
+	public GamblingInterface getGambling() {
+		return gambling;
+	}
 	private Dueling dueling = new Dueling(this);
 	private Slayer slayer = new Slayer(this);
 
@@ -2579,9 +2584,9 @@ public class Player extends Character {
 		return noteWithdrawal;
 	}
 
-	public GamblingManager getGambling() {
-		return gamblingManager;
-	}
+	//public GamblingManager getGambling() {
+		//return gamblingManager;
+	//}
 
 	public GambleOfferItemContainer getGambleOffer() {
 		return gambleOffer;

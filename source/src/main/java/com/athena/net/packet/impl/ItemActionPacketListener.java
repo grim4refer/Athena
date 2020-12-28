@@ -9,6 +9,7 @@ import com.athena.model.definitions.ItemDefinition;
 import com.athena.net.packet.Packet;
 import com.athena.net.packet.PacketListener;
 import com.athena.util.Misc;
+import com.athena.world.content.Gambling;
 import com.athena.util.RandomUtility;
 import com.athena.world.World;
 import com.athena.world.content.*;
@@ -1195,14 +1196,23 @@ public class ItemActionPacketListener implements PacketListener {
 				player.getPacketSender().sendMessage("The casket was empty.");
 			break;
 		case 15084:
-			Gambling.rollDice(player);
+			if(player.getTotalPlayTime() >= 36000000 * 3) {
+				Gambling.rollDice(player);
+			} else {
+				player.sendMessage("@red@You need to play for atleast 30 hours before u can gamble");
+				return;
+			}
 			break;
 		case 6307:
 			player.setDialogueActionId(79);
 			DialogueManager.start(player, 0);
 			break;
 		case 299:
-			Gambling.plantSeed(player);
+			if(player.getTotalPlayTime() >= 36000000 * 3) {
+				Gambling.plantSeed(player);
+			} else {
+				player.sendMessage("@red@You need to play for atleast 50 hours before u can gamble");
+			}
 			break;
 		case 4155:
 			if(player.getSlayer().getSlayerTask() == SlayerTasks.NO_TASK) {

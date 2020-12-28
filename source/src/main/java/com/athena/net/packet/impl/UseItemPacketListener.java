@@ -22,7 +22,6 @@ import com.athena.world.World;
 import com.athena.world.content.ItemForging;
 import com.athena.world.content.dialogue.DialogueManager;
 import com.athena.world.content.dialogue.impl.DungPartyInvitation;
-import com.athena.world.content.gambling.GamblingManager;
 import com.athena.world.content.gambling.GamblingNpc;
 import com.athena.world.content.minigames.impl.HerculesBay.BarrowsSpawning;
 import com.athena.world.content.skill.impl.cooking.Cooking;
