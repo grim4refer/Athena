@@ -1199,14 +1199,12 @@ public class DialogueOptions {
 				case 66:
 					player.getPacketSender().sendInterfaceRemoval();
 					
-					/**
-					 * Asks 2 times if wants to gamble
-					 */
-					if(player.getLocation() == Location.GAMBLING_ZONE) {
+
+					/*if(player.getLocation() == Location.GAMBLING_ZONE) {
 						Player otherPlayer = player.getGambling().getRequested();
 						if(otherPlayer != null)
 							GamblingManager.sendInvitation(player, otherPlayer);
-					}
+					}*/
 					
 					if(player.getLocation() == Location.DUNGEONEERING && player.getMinigameAttributes().getDungeoneeringAttributes().getParty() == null) {
 						if(player.getMinigameAttributes().getDungeoneeringAttributes().getPartyInvitation() != null) {
@@ -1329,14 +1327,14 @@ public class DialogueOptions {
 					player.getPacketSender().sendInterfaceRemoval();
 					break;
 				case 200:
-					if(!player.getClickDelay().elapsed(2000))
+					if (!player.getClickDelay().elapsed(2000))
 						return;
 					TutorialSystem.startTutorial(player);
 					break;
 				case 66:
 					player.getPacketSender().sendInterfaceRemoval();
 					
-					if(player.getLocation() == Location.GAMBLING_ZONE) {
+					/*if(player.getLocation() == Location.GAMBLING_ZONE) {
 						Player otherPlayer = player.getGambling().getRequested();
 						if(otherPlayer != null) {
 							otherPlayer.sendMessage(player.getUsername() + " has declined your invitation.");
@@ -1345,8 +1343,8 @@ public class DialogueOptions {
 							player.getGambling().setRequested(null);
 							otherPlayer.getGambling().setRequested(null);
 						}
-					}
-					
+					}*/
+
 					if(player.getMinigameAttributes().getDungeoneeringAttributes().getPartyInvitation() != null && player.getMinigameAttributes().getDungeoneeringAttributes().getPartyInvitation().getOwner() != null)
 						player.getMinigameAttributes().getDungeoneeringAttributes().getPartyInvitation().getOwner().getPacketSender().sendMessage(""+player.getUsername()+" has declined your invitation.");
 					player.getMinigameAttributes().getDungeoneeringAttributes().setPartyInvitation(null);

@@ -98,10 +98,6 @@ public class MovementPacketListener implements PacketListener {
 				player.getPacketSender().sendMessage("Movement has been turned off in this duel!");
 			return false;
 		}
-		if (!player.getGambling().getStage().equals(GambleStage.OFFLINE)
-				&& !player.getGambling().getStage().equals(GambleStage.SENDING_OFFER)) {
-			return false;
-		}
 		if(player.isResting()) {
 			player.setResting(false);
 			player.performAnimation(new Animation(11788));

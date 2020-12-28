@@ -22,7 +22,7 @@ import com.athena.world.World;
 import com.athena.world.content.ItemForging;
 import com.athena.world.content.dialogue.DialogueManager;
 import com.athena.world.content.dialogue.impl.DungPartyInvitation;
-import com.athena.world.content.gambling.GamblingNpc;
+import com.athena.world.content.GamblingAction;
 import com.athena.world.content.minigames.impl.HerculesBay.BarrowsSpawning;
 import com.athena.world.content.skill.impl.cooking.Cooking;
 import com.athena.world.content.skill.impl.cooking.CookingData;
@@ -351,12 +351,8 @@ public class UseItemPacketListener implements PacketListener {
 		
 		Item usedItem = player.getInventory().forSlot(slot);
 		switch (index) {
-		case 648:
-
-			GamblingNpc.init(player, usedItem.getId(), usedItem.getAmount(),index);
-			break;
 		}
-	}
+		}
 
 	@SuppressWarnings("unused")
 	private static void itemOnPlayer(Player player, Packet packet) {
@@ -398,9 +394,7 @@ public class UseItemPacketListener implements PacketListener {
 			 */
 			break;
 			
-		case 15098:
-			GamblingManager.sendInvitation(player, target);
-			break;
+
 
 		case 15707:
 			Player partyDung = World.getPlayers().get(targetIndex);

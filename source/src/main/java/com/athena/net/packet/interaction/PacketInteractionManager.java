@@ -27,8 +27,8 @@ public class PacketInteractionManager {
 	 * Loads all the packet interaction
 	 */
 	public static void init() {
-		load("com.ruthlessps.world.content.gambling");
-		load("com.ruthlessps.world.content.minigame.impl");
+		load("com.athena.world.content.gambling");
+		load("com.athena.world.content.minigame.impl");
 
 	}
 

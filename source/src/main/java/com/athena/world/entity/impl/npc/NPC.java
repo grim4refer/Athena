@@ -18,7 +18,6 @@ import com.athena.world.content.combat.strategy.CombatStrategies;
 import com.athena.world.content.combat.strategy.CombatStrategy;
 import com.athena.world.content.combat.strategy.impl.KalphiteQueen;
 import com.athena.world.content.combat.strategy.impl.Nex;
-import com.athena.world.content.gambling.GamblingNpc;
 import com.athena.world.content.minigames.impl.Cows;
 import com.athena.world.content.skill.impl.hunter.Hunter;
 import com.athena.world.content.skill.impl.hunter.PuroPuro;
@@ -204,7 +203,6 @@ public class NPC extends Character {
 
 		Nex.spawn();
 		PuroPuro.spawn();
-		GamblingNpc.SpawnNpc();
 		DesoSpan.spawn();
 		Cows.spawnMainNPCs();
 

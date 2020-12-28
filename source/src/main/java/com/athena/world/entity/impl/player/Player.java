@@ -84,7 +84,6 @@ import com.athena.world.content.skill.impl.summoning.Summoning;
 import com.athena.world.content.transportation.TeleportHandler;
 import com.athena.world.entity.impl.Character;
 import com.athena.world.entity.impl.npc.NPC;
-import com.athena.model.container.impl.GambleOfferItemContainer;
 import com.athena.world.content.gamblinginterface.GamblingInterface;
 
 import javax.security.auth.callback.Callback;
@@ -265,14 +264,7 @@ public class Player extends Character {
 		this.session = playerIO;
 	}
 
-	/**
-	 * The gambling manager
-	 */
-	private final GamblingManager gamblingManager = new GamblingManager();
-	/**
-	 * The gambling offer container
-	 */
-	private final GambleOfferItemContainer gambleOffer = new GambleOfferItemContainer(this);
+
 
 	private Map<String, Object> attributes = new HashMap<>();
 
@@ -1615,6 +1607,7 @@ public class Player extends Character {
 	public GamblingInterface getGambling() {
 		return gambling;
 	}
+
 	private Dueling dueling = new Dueling(this);
 	private Slayer slayer = new Slayer(this);
 
@@ -2584,13 +2577,6 @@ public class Player extends Character {
 		return noteWithdrawal;
 	}
 
-	//public GamblingManager getGambling() {
-		//return gamblingManager;
-	//}
-
-	public GambleOfferItemContainer getGambleOffer() {
-		return gambleOffer;
-	}
 
 	public void setSwapMode(boolean swapMode) {
 		this.swapMode = swapMode;
