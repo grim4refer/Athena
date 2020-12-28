@@ -429,7 +429,7 @@ public class Client extends RSApplet {
 	private int paneOpacity = 0;
 	public static int paneClosed = 0;
 	public static int clientSize = 0;
-	public static int clientWidth = 765, clientWidth2 = 765, clientHeight = 503, clientHeight2 = 503;// 503
+	public static int clientWidth = 774, clientWidth2 = 774, clientHeight = 513, clientHeight2 = 513;// 503
 	// -
 	// original
 	public static int chatAreaHeight = 0;
@@ -447,7 +447,7 @@ public class Client extends RSApplet {
 	}
 
 	public static int cameraZoom = 600;
-	public static int REGULAR_WIDTH = 765, REGULAR_HEIGHT = 503;
+	public static int REGULAR_WIDTH = 774, REGULAR_HEIGHT = 513;
 
 	public void toggleSize(int size) {
 
@@ -456,12 +456,12 @@ public class Client extends RSApplet {
 			return;
 		}
 		clientSize = size;
-		int width = 765;
-		int height = 503;
+		int width = 774;
+		int height = 513;
 		if (size == 0) {
 			size = 0;
-			width = 765;
-			height = 503;
+			width = 774;
+			height = 513;
 			showChat = true;
 			showTab = true;
 			clientZoom = 0;

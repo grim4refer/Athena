@@ -33,7 +33,7 @@ public class SwingUI extends Client implements ActionListener {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 			JFrame.setDefaultLookAndFeelDecorated(true);
 			JPopupMenu.setDefaultLightWeightPopupEnabled(false);
-			frame = new JFrame("Simplicity");
+			frame = new JFrame("Athena");
 			frame.setLayout(new BorderLayout());
 			frame.setResizable(false);
 			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
