@@ -429,7 +429,7 @@ public class Client extends RSApplet {
 	private int paneOpacity = 0;
 	public static int paneClosed = 0;
 	public static int clientSize = 0;
-	public static int clientWidth = 765, clientWidth2 = 765, clientHeight = 503, clientHeight2 = 503;// 503
+	public static int clientWidth = 771, clientWidth2 = 771, clientHeight = 513, clientHeight2 = 513;// 503
 	// -
 	// original
 	public static int chatAreaHeight = 0;

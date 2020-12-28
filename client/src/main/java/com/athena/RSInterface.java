@@ -1,5 +1,6 @@
 package com.athena;
 
+import java.awt.*;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -16,6 +17,29 @@ public class RSInterface {
 		rsi.width = width;
 		rsi.enabledColor = color;
 	}
+
+	private static void addToggleButton1(int id, int sprite, int setconfig, int width, int height, String s) {
+		RSInterface rsi = addInterface(id);
+		rsi.disabledSprite = Client.spriteCache.get(sprite);
+		rsi.enabledSprite = Client.spriteCache.get(sprite + 1);
+		rsi.requiredValues = new int[1];
+		rsi.requiredValues[0] = 1;
+		rsi.valueCompareType = new int[1];
+		rsi.valueCompareType[0] = 1;
+		rsi.valueIndexArray = new int[1][3];
+		rsi.valueIndexArray[0][0] = 5;
+		rsi.valueIndexArray[0][1] = setconfig;
+		rsi.valueIndexArray[0][2] = 0;
+		rsi.atActionType = 4;
+		rsi.width = width;
+		rsi.hoverType = -1;
+		rsi.parentID = id;
+		rsi.id = id;
+		rsi.type = 5;
+		rsi.height = height;
+		rsi.tooltip = s;
+	}
+
 	public static void addHoverableText(int id, String text, String tooltip, TextDrawingArea tda[], int idx,
 										boolean center, boolean textShadowed, int width, int disabledColor, int enabledColor) {
 		RSInterface widget = addInterface(id);
@@ -3280,6 +3304,107 @@ public class RSInterface {
 		tab.child(4, 28505, 404, 288 - 20);
 		tab.child(5, 28505, 404, 325 - 20);
 	}
+	public static void gamblingInterface(TextDrawingArea[] tda) {
+
+		RSInterface main = addInterface(57150);
+
+		// main sprite
+		addSpriteLoader(57151, 1075);
+		main.totalChildren(21);
+		main.child(0, 57151, 10, 10);
+		main.child(1, 57152, 235, 63);
+		main.child(2, 57153, 235, 113);
+		main.child(3, 57154, 17, 20);
+		main.child(4, 57155, 72, 177);
+		main.child(5, 57156, 200, 177);
+
+		main.child(6, 57157, 200, 200);
+		main.child(7, 57158, 200, 235);
+		main.child(8, 57159, 200, 270);
+		// scroll(right side item scroll)
+		main.child(9, 57170, 0, 45);
+		// scroll (left side item scroll)
+		main.child(10, 57180, 0, 45);
+		main.child(11, 57175, 191, 150);
+
+		// game types
+		main.child(12, 57190, 20, 200);
+		main.child(13, 57191, 20, 220);
+
+		main.child(14, 57192, 43, 202);
+		main.child(15, 57193, 43, 222);
+
+		main.child(16, 57194, 20, 240);
+
+		main.child(17, 57195, 43, 242);
+
+		main.child(18, 57196, 20, 260);
+
+		main.child(19, 57197, 43, 262);
+
+		main.child(20, 57198, 205, 295);
+
+		// accept, deciline clickable text
+		addClickableText(57152, "Accept", "Select", tda, 1, 0x00C000, 45, 13);
+		addClickableText(57153, "Deciline", "Select", tda, 1, 0xC00000, 45, 13);
+
+		// gambling with child
+		addText(57154, "Gambling with: name", 0xff9933, false, true, 52, tda, 2); // first true to false TODO: ->
+
+		// Select a game type child
+		addText(57155, "Select a game type", 0xff9933, true, true, 52, tda, 1);
+		// -Player name has accepted-
+		addText(57175, "---a", tda, 0, 0xFFFFFF, true, true);
+
+		// rules for "game"
+		final String rules = " \"Game Name\" ";
+		addText(57156, "Rules for" + rules, 0xff9933, false, true, 52, tda, 1);
+		// description fields(under rules)
+		addText(57157, "First Line description(can use a extra line)", tda, 0, 0xFFFFFF, true, true);
+		addText(57158, "Second Line(can use a extra line)", tda, 0, 0xFFFFFF, true, true);
+		addText(57159, "Third Line(can use a extra line)", tda, 0, 0xFFFFFF, true, true);
+
+		// right side item scroll
+		RSInterface rightScroll = addInterface(57170);
+		rightScroll.width = 154;
+		rightScroll.height = 121;
+		rightScroll.scrollMax = 250;
+		rightScroll.totalChildren(1);
+		rightScroll.child(0, 57171, 18, 0);
+		addToItemGroup(57171, 3, 10, 14, 16, true,
+				new String[] { "Remove 1", "Remove 5", "Remove 10", "Remove All", "Remove X" });
+
+		// left side item scroll
+		RSInterface leftScroll = addInterface(57180);
+		leftScroll.width = 475;
+		leftScroll.height = 121;
+		leftScroll.scrollMax = 250;
+		leftScroll.totalChildren(1);
+		leftScroll.child(0, 57181, 340, 0);
+		addToItemGroup(57181, 3, 10, 14, 16, true,
+				new String[] { "Remove 1", "Remove 5", "Remove 10", "Remove All", "Remove X" });
+
+		// game types
+		// addConfigButtonWSpriteLoader(57190, 57150, 1077, 1078, 119, 15, "Select
+		// 55x2(U host)", 1700, 1, 1430);
+		// addConfigButtonWSpriteLoader(57191, 57150, 1077, 1078, 119, 15, "Select
+		// 55x2(Other player hosts)", 1701, 1, 1430);
+		// int id, int sprite, int setconfig, int width, int height, String s
+		addToggleButton1(57190, 1077, 1700, 119, 15, "Flower Poker");
+		addToggleButton1(57191, 1077, 1701, 119, 15, "Dice Duel(ft3)");
+
+		// game type descriptions
+		addText(57192, "Flower poker)", tda, 0, 0xFFFFFF, true, true);
+		addText(57193, "Dice Duel(ft3)", tda, 0, 0xFFFFFF, true, true);
+		addToggleButton1(57194, 1077, 1702, 119, 15, "Blackjack");
+		addText(57195, "Blackjack (playername hosts)", tda, 0, 0xFFFFFF, true, true);
+		addToggleButton1(57196, 1077, 1703, 119, 15, "Blackjack");
+		addText(57197, "55x2 (playername hosts)", tda, 0, 0xFFFFFF, true, true);
+		addText(57198, "55x2 (playername hosts)", tda, 0, 0xFFFFFF, true, true);
+
+
+	}
+
 
 	public static void questInterface(TextDrawingArea[] TDA) {
 		RSInterface Interface = addInterface(8134);
@@ -13420,336 +13545,7 @@ public class RSInterface {
 		frame++;
 		id++;
 	}
-
-	public static void gambleInterfaces(TextDrawingArea[] tda) {
-//				hungerGamesInterface(tda);
-		int id = 28345;
-		int frame = 0;
-
-		RSInterface setup = addTabInterface(id);
-		setChildren(12, setup);
-		id++;
-
-		addSpriteLoader(id, 966);
-
-		setBounds(id, 69, 1, frame, setup);
-		frame++;
-		id++;
-		addText(id, id + "XXXXXXXXXXXXXXXXX", tda, 2, 0xffffff, true, true);
-		setBounds(id, 103 + 69, 51, frame, setup);
-		frame++;
-		id++;
-		addText(id, id + "XXXXXXXXXXXXXXXXX", tda, 2, 0x465f33, true, true);
-		setBounds(id, 264 + 69, 51, frame, setup);
-		frame++;
-		id++;
-		addText(id, id + "XXXXXXXXXXXXXXXXX has accepted the gamble...", tda, 0, 0xfff380, true, true);
-		setBounds(id, 264, 255, frame, setup);
-		frame++;
-		id++;
-
-		setBounds(id, 88, 74, frame, setup);
-		frame++;
-		RSInterface scroll1 = addTabInterface(id);
-		scroll1.width = 117;
-		scroll1.height = 210;
-		scroll1.scrollMax = 275;
-		setChildren(1, scroll1);
-
-		id++;
-
-		final String[] remove = { "Remove 1", "Remove 5", "Remove 10", "Remove All", "Remove X" };
-//				gambleItems(id, 28345, remove);
-		setBounds(id, 0, 0, 0, scroll1);
-		id++;
-		setBounds(id, 265, 74, frame, setup);
-
-		RSInterface scroll2 = addTabInterface(id);
-		scroll2.width = 117;
-		scroll2.height = 185;
-		scroll2.scrollMax = 290;
-		setChildren(1, scroll2);
-
-		id++;
-
-		final String[] examine = {};
-//				gambleItems(id, 28345, examine);
-		setBounds(id, 0, 0, 0, scroll2);
-		id++;
-
-		addText(id, "Accept", tda, 0, 0x808000, true, true);
-		setBounds(id, 193, 289, frame, setup);
-		frame++;
-		id++;
-
-		addText(id, "Decline", tda, 0, 0xff0000, true, true);
-		setBounds(id, 318, 289, frame, setup);
-		frame++;
-		id++;
-
-		addHoverButtonWSpriteLoader(id, 970, 93, 16, "Accept the gamble offer", -1, id + 100, 5);
-		setBounds(id, 154, 291, frame, setup);
-		frame++;
-		addHoveredImageWSpriteLoaderTrans(id + 100, 973, 100, 22, id + 101, 64);
-		setBounds(id + 100, 147, 285, frame, setup);
-		frame++;
-		id++;
-
-		addHoverButtonWSpriteLoader(id, 970, 93, 16, "Decline the gamble offer", -1, id + 200, 5);
-		setBounds(id, 272, 291, frame, setup);
-		frame++;
-		addHoveredImageWSpriteLoaderTrans(id + 200, 973, 100, 22, id + 101, 64);
-		setBounds(id + 200, 263, 284, frame, setup);
-		frame++;
-		id++;
-
-		RSInterface game = addTabInterface(id);
-		frame = 0;
-		setChildren(43, game);
-		id++;
-
-		addSpriteLoader(id, 965);
-		setBounds(id, 13, 14, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "Ruthless Gambling Games Selection", tda, 2, 0xCB8814, true, true);
-		setBounds(id, 254, 38, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "Dice Duel", tda, 2, 0xD5A043, false, true);
-		setBounds(id, 48, 70, frame, game);
-		frame++;
-		id++;
-		addHoverButtonWSpriteLoader(id, 970, 116, 96, "Select @gre@Dice duel", -1, id + 100, 5);
-		setBounds(id, 23, 60, frame, game);
-		frame++;
-		addHoveredImageWSpriteLoaderTrans(id + 100, 969, 116, 96, id + 101, 32);
-		setBounds(id + 100, 23, 60, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "55x2", tda, 2, 0xD5A043, false, true);
-		setBounds(id, 180, 70, frame, game);
-		frame++;
-		id++;
-
-		addHoverButtonWSpriteLoader(id, 970, 116, 96, "Select @gre@55x2", -1, id + 100, 5);
-		setBounds(id, 145, 60, frame, game);
-		frame++;
-		addHoveredImageWSpriteLoaderTrans(id + 100, 969, 116, 96, id + 101, 32);
-		setBounds(id + 100, 142, 60, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "Black Jack", tda, 2, 0xD5A043, false, true);
-		setBounds(id, 285, 70, frame, game);
-		frame++;
-		id++;
-
-		addHoverButtonWSpriteLoader(id, 970, 116, 96, "Select @gre@Black Jack", -1, id + 100, 5);
-		setBounds(id, 275, 90, frame, game);
-		frame++;
-
-		addHoveredImageWSpriteLoaderTrans(id + 100, 969, 116, 96, id + 101, 32);
-		setBounds(id + 100, 260, 60, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "Frosty Flowers", tda, 2, 0xD5A043, false, true);
-		setBounds(id, 384, 70, frame, game);
-		frame++;
-		id++;
-		addHoverButtonWSpriteLoader(id, 970, 116, 96, "Select @gre@Frosty Flowers", -1, id + 100, 5);
-		setBounds(id, 387, 60, frame, game);
-		frame++;
-		addHoveredImageWSpriteLoaderTrans(id + 100, 969, 116, 96, id + 101, 32);
-		setBounds(id + 100, 377, 60, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "Flower Poker", tda, 2, 0xD5A043, false, true);
-		setBounds(id, 42, 168, frame, game);
-		frame++;
-		id++;
-
-		addHoverButtonWSpriteLoader(id, 970, 116, 96, "Select @gre@Flower Poker", -1, id + 100, 5);
-		setBounds(id, 27, 158, frame, game);
-		frame++;
-		addHoveredImageWSpriteLoaderTrans(id + 100, 971, 116, 113, id + 101, 32);
-		setBounds(id + 100, 22, 158, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "ABC Flowers", tda, 2, 0xD5A043, false, true);
-		setBounds(id, 163, 168, frame, game);
-		frame++;
-		id++;
-		addHoverButtonWSpriteLoader(id, 970, 116, 96, "Select @gre@ABC Flowers", -1, id + 100, 5);
-		setBounds(id, 150, 158, frame, game);
-		frame++;
-		addHoveredImageWSpriteLoaderTrans(id + 100, 971, 116, 113, id + 101, 32);
-		setBounds(id + 100, 139, 158, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "Hot or Cold", tda, 2, 0xD5A043, false, true);
-		setBounds(id, 283, 168, frame, game);
-		frame++;
-		id++;
-
-		addHoverButtonWSpriteLoader(id, 970, 116, 96, "Select @gre@Hot or Cold", -1, id + 100, 5);
-		setBounds(id, 250, 158, frame, game);
-		frame++;
-		addHoveredImageWSpriteLoaderTrans(id + 100, 971, 116, 113, id + 101, 32);
-		setBounds(id + 100, 260, 158, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "Random Game", tda, 2, 0xD5A043, false, true);
-		setBounds(id, 391, 168, frame, game);
-		frame++;
-		id++;
-
-		addHoverButtonWSpriteLoader(id, 970, 116, 96, "Select @gre@Random Game", -1, id + 100, 5);
-		setBounds(id, 360, 158, frame, game);
-		frame++;
-		addHoveredImageWSpriteLoaderTrans(id + 100, 971, 116, 113, id + 101, 32);
-		setBounds(id + 100, 375, 158, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "Duel your partner in\\n" + "a dice gamble. There\\n" + "are 3 rounds. Beat\\n"
-				+ "your opponent by\\n" + "rolling a higher\\n" + "number than them.", tda, 0, 0xA26D10, true, true);
-		setBounds(id, 80, 90, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "A very quick game\\n" + "where the dice is\\n" + "rolled. If the number\\n" + "is lower than 55\\n"
-				+ "then the opponent\\n" + "wins the game.", tda, 0, 0xA26D10, true, true);
-		setBounds(id, 200, 90, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "Hit and stand in\\n" + "this game trying to\\n" + "stay below 100 but\\n" + "having a number\\n"
-				+ "that is larger than\\n" + "your opponents.", tda, 0, 0xA26D10, true, true);
-		setBounds(id, 320, 90, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "A basic game where\\n" + "the aim is to get\\n" + "a flower that is\\n" + "considered to be\\n"
-				+ "within the nature\\n" + "of being cold", tda, 0, 0xA26D10, true, true);
-		setBounds(id, 435, 90, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "Plant 5 flowers\\n" + "and use the rules\\n" + "of poker to play\\n" + "and determine the\\n"
-				+ "winner of the game.\\n", tda, 0, 0xA26D10, true, true);
-		setBounds(id, 80, 190, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "Plant 1 flower\\n" + "and use the first\\n" + "letter of the _minimapColour\\n"
-				+ "of the flower and\\n" + "try to get close to A\\n", tda, 0, 0xA26D10, true, true);
-		setBounds(id, 200, 190, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "", tda, 0, 0xA26D10, true, true);
-		setBounds(id, 200, 190, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "Host plants a flower.\\n" + "Pick either hot\\n" + "or cold. You'll win\\n"
-				+ "whether the flower\\n" + "_minimapColour is hot or cold\\n", tda, 0, 0xA26D10, true, true);
-		setBounds(id, 320, 190, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "Not sure what to\\n" + "play? Let a game be\\n" + "selected for you.\\n", tda, 0, 0xA26D10, true,
-				true);
-		setBounds(id, 435, 200, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "Accept", tda, 2, 0x808000, true, true);
-		setBounds(id, 434, 286, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "Decline", tda, 2, 0xff0000, true, true);
-		setBounds(id, 80, 286, frame, game);
-		frame++;
-		id++;
-
-		addHoverButtonWSpriteLoader(id, 970, 100, 22, "Accept the game selection", -1, id + 1100, 5);
-		setBounds(id, 388, 280, frame, game);
-		frame++;
-		addHoveredImageWSpriteLoaderTrans(id + 1100, 972, 100, 22, id + 1101, 64);
-		setBounds(id + 1100, 388, 280, frame, game);
-		frame++;
-		id++;
-
-		addHoverButtonWSpriteLoader(id, 970, 100, 22, "Decline Invitation", -1, id + 100, 5);
-		setBounds(id, 33, 280, frame, game);
-		frame++;
-		addHoveredImageWSpriteLoaderTrans(id + 100, 973, 100, 22, id + 101, 128);
-		setBounds(id + 100, 29, 283, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "You have selected: @gre@XXXXXXXXXXXXXX", tda, 0, 0xA28D16, true, true);
-		setBounds(id, 254, 280, frame, game);
-		frame++;
-		id++;
-
-		addText(id + 100, "Other player has selected: @gre@XXXXXXXXXXXXXX", tda, 0, 0xA28D32, true, true);
-		setBounds(id + 100, 254, 300, frame, game);
-		frame++;
-		id++;
-
-		game = addTabInterface(id);
-		frame = 0;
-		setChildren(7, game);
-		id++;
-
-		addSpriteLoader(id, 968);
-		setBounds(id, 140, 291, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "Cold", tda, 2, 0x808000, true, true);
-		setBounds(id, 191, 294, frame, game);
-		frame++;
-		id++;
-
-		addText(id, "Hot", tda, 2, 0x808000, true, true);
-		setBounds(id, 312, 294, frame, game);
-		frame++;
-		id++;
-
-		addHoverButtonWSpriteLoader(id, 970, 100, 25, "Select Option One", -1, id + 100, 5);
-		setBounds(id, 140, 291, frame, game);
-		frame++;
-		addHoveredImageWSpriteLoaderTrans(id + 100, 972, 100, 22, id + 101, 128);
-		setBounds(id + 100, 140, 291, frame, game);
-		frame++;
-		id++;
-
-		addHoverButtonWSpriteLoader(id, 970, 100, 25, "Select Option Two", -1, id + 200, 5);
-		setBounds(id, 265, 291, frame, game);
-		frame++;
-		addHoveredImageWSpriteLoaderTrans(id + 200, 973, 100, 22, id + 201, 64);
-		setBounds(id + 200, 262, 291, frame, game);
-		frame++;
-		id++;
-
-		//gambleNewInterfaces(tda);
-	}
-
-
-
+	
 	public static void gambleItems(int childId, int interfaceId, String[] options) {
 		RSInterface rsi = interfaceCache[childId] = new RSInterface();
 		rsi.actions = new String[10];
