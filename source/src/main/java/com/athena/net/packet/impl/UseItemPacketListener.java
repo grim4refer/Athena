@@ -41,6 +41,9 @@ import com.athena.world.content.skill.impl.slayer.SlayerTasks;
 import com.athena.world.content.skill.impl.smithing.EquipmentMaking;
 import com.athena.world.entity.impl.player.Player;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * This packet listener is called when a player 'uses' an item on another
  * entity.
@@ -348,11 +351,37 @@ public class UseItemPacketListener implements PacketListener {
 		int index = packet.readUnsignedShortA(); //OK I WILL BE FURIOUS IF THIS DOESNT WORK, R U SURE? no this is what i had first time HM !
 		final int slot = packet.readLEShort();
 		int lastItemSelectedInterface = packet.readUnsignedShortA();
-		
+
 		Item usedItem = player.getInventory().forSlot(slot);
 		switch (index) {
+			case 367:
+				int itemGambled = itemId;
+				if (!isGambleable(player, itemGambled)) {
+					return;
+				}
+				int chance = RandomUtility.exclusiveRandom(100);
+				if (player.getInventory().contains(itemGambled)) {
+					player.getInventory().delete(itemGambled, 1);
+					player.performGraphic(new Graphic(2009));
+					if (chance > 60) {
+						player.getInventory().add(itemGambled, 2);
+						player.sendMessage("U were lucky - Roll: @red@" + chance);
+					} else {
+						player.sendMessage("U were unlucky - Roll: @red@" + chance);
+					}
+					break;
+				}
 		}
+	}
+	public static boolean isGambleable(Player player, int itemId) {
+		List<Integer> notGambleAbleItems = Arrays.asList(19475, 19476, 19477, 19478, 19936, 19938, 19935, 19937, 3820,
+				3821, 3822, 4773, 3990, 5081);
+		if (notGambleAbleItems.contains(itemId)) {
+			player.sendMessage("This item is not gambleable");
+			return false;
 		}
+		return true;
+	}
 
 	@SuppressWarnings("unused")
 	private static void itemOnPlayer(Player player, Packet packet) {

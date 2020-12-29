@@ -718,14 +718,12 @@ public class CommandPacketListener implements PacketListener {
 		// }
 		// }
 
-		// if (command[0].equalsIgnoreCase("gamble")) {
-		// TeleportHandler.teleportPlayer(player, new Position(2441, 3090, 0),
-		// player.getSpellbook().getTeleportType());
-		// player.getPacketSender().sendMessage("@red@Video evidence is required to file
-		// a report.");
-		// player.g-etPacketSender().sendMessage("@red@Only Staff + Ranked Players in
-		// 'Dice' Can Middleman! No MM = No Refunds.");
-		// }
+		 if (command[0].equalsIgnoreCase("gamble")) {
+		 TeleportHandler.teleportPlayer(player, new Position(2737, 3472, 0),
+		 player.getSpellbook().getTeleportType());
+		 player.getPacketSender().sendMessage("@red@Video evidence is required to file a report.");
+		 player.getPacketSender().sendMessage("@red@Only Staff + Ranked Players in 'Dice' Can Middleman! No MM = No Refunds.");
+		 }
 
 		/*
 		 * Sql commands start
@@ -1053,6 +1051,15 @@ public class CommandPacketListener implements PacketListener {
 	private static void memberCommands(final Player player, String[] command, String wholeCommand) {
 		if (command[0].equals("dzone")) {
 			TeleportHandler.teleportPlayer(player, new Position(3363, 9638), player.getSpellbook().getTeleportType());
+		}
+		if (command[0].equalsIgnoreCase("gambleint")) {
+			// Player player2 = World.getPlayerByName("Suicnew");
+			// player.getGambling().openGamble(player, player2);
+		}
+
+		if (command[0].equalsIgnoreCase("requestgamble")) {
+			Player playerName = World.getPlayerByName(command[1]);
+			player.getGambling().requestGamble(playerName);
 		}
 		if (command[0].equals("bank")) {
 			if (player.getLocation() == Location.DUNGEONEERING 

@@ -1,14 +1,10 @@
 package com.athena.world.content.dialogue;
 
 import com.athena.GameLoader;
+import com.athena.engine.task.Task;
+import com.athena.engine.task.TaskManager;
 import com.athena.engine.task.impl.BonusExperienceTask;
-import com.athena.model.Animation;
-import com.athena.model.GameMode;
-import com.athena.model.GameObject;
-import com.athena.model.Item;
-import com.athena.model.PlayerRights;
-import com.athena.model.Position;
-import com.athena.model.Skill;
+import com.athena.model.*;
 import com.athena.model.Locations.Location;
 import com.athena.model.container.impl.Shop.ShopManager;
 import com.athena.model.input.impl.BuyShards;
@@ -17,6 +13,7 @@ import com.athena.model.input.impl.DonateToWell;
 import com.athena.model.input.impl.SellShards;
 import com.athena.model.input.impl.SetEmail;
 import com.athena.model.movement.MovementQueue;
+import com.athena.util.RandomUtility;
 import com.athena.world.content.*;
 import com.athena.world.content.Gambling.FlowersData;
 import com.athena.util.Misc;
@@ -880,6 +877,32 @@ public class DialogueOptions {
 						//
 					//
 					break;
+				case 920:
+					int random = RandomUtility.inclusiveRandom(1, 100);
+					player.getGambling().bjScore += random;
+					player.forceChat("I roll a " + random + " and my score is now: " + player.getGambling().bjScore);
+					player.getPacketSender().sendInterfaceRemoval();
+					if (player.getGambling().bjScore < 100) {
+						TaskManager.submit(new Task(3) {
+							@Override
+							protected void execute() {
+								player.setDialogueActionId(920);
+								DialogueManager.start(player, 185);
+								stop();
+								return;
+							}
+						});
+					} else {
+						if (player.getGambling().bjTurn == 1) {
+							player.getGambling().setHostTurn();
+						} else {
+							player.getGambling().getBlackjackWinner();
+							System.out.println("Blackjack has ended ->");
+						}
+					}
+					player.performAnimation(new Animation(11900));
+					player.performGraphic(new Graphic(2075));
+					break;
 				case 5:
 					player.getPacketSender().sendInterfaceRemoval();
 //				MySQLController.getStore().claim(player);
@@ -951,6 +974,16 @@ public class DialogueOptions {
 						//System.err.println("Users last click was: " + player.getClickDelay() + " MS ago");
 						//return;
 				//	}
+					break;
+				case 920:
+					player.getPacketSender().sendInterfaceRemoval();
+					if (player.getGambling().bjTurn == 1) {
+						player.getGambling().setHostTurn();
+					} else {
+						player.getGambling().getBlackjackWinner();
+						System.out.println("Declaring winner");
+					}
+
 					break;
 				case 5:
 					DialogueManager.start(player, MemberScrolls.getTotalFunds(player));

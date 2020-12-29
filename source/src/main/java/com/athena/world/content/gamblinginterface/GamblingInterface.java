@@ -1,37 +1,26 @@
 package com.athena.world.content.gamblinginterface;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.CopyOnWriteArrayList;
-
 import com.athena.engine.task.Task;
 import com.athena.engine.task.TaskManager;
-import com.athena.model.Animation;
-import com.athena.model.Direction;
-import com.athena.model.GameMode;
-import com.athena.model.GameObject;
-import com.athena.model.Graphic;
-import com.athena.model.Item;
-import com.athena.model.Locations;
-import com.athena.model.PlayerRights;
-import com.athena.model.Position;
+import com.athena.model.*;
 import com.athena.model.Locations.Location;
 import com.athena.model.definitions.ItemDefinition;
 import com.athena.model.movement.MovementQueue;
 import com.athena.util.Misc;
 import com.athena.util.RandomUtility;
-//import com.athena.util.StringUtils;
+import com.athena.util.StringUtils;
 import com.athena.world.World;
 import com.athena.world.content.BankPin;
 import com.athena.world.content.CustomObjects;
-import com.athena.world.content.Gambling;
-import com.athena.world.content.PlayerLogs;
 import com.athena.world.content.Gambling.FlowersData;
 import com.athena.world.content.dialogue.DialogueManager;
 import com.athena.world.entity.impl.player.Player;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  *
@@ -41,7 +30,7 @@ import com.athena.world.entity.impl.player.Player;
 
 public class GamblingInterface {
 
-        private Player player;
+        private final Player player;
 
         public GamblingInterface(Player p) {
                 this.player = p;
@@ -557,7 +546,7 @@ public class GamblingInterface {
         }
 
         public enum GamblingMode {
-                FLOWER_POKER, DICE_DUEL, BLACKJACK, FIFTY_FIVE_X2;
+                FLOWER_POKER, DICE_DUEL, BLACKJACK, FIFTY_FIVE_X2
 
         }
 
@@ -611,7 +600,7 @@ public class GamblingInterface {
                 }
         }
 
-        private List<Integer> flowerList = new ArrayList<>();
+        private final List<Integer> flowerList = new ArrayList<>();
 
         private void startFlowerPoker() {
 
@@ -632,8 +621,8 @@ public class GamblingInterface {
                 player.getPacketSender().sendInterfaceRemoval();
                 player2.getPacketSender().sendInterfaceRemoval();
 
-                player.moveTo(new Position(2332, 3631));
-                player2.moveTo(new Position(2332, 3632));
+                player.moveTo(new Position(2744, 3465));
+                player2.moveTo(new Position(2744, 3464));
 
                 TaskManager.submit(new Task(6) {
                         @Override
@@ -706,8 +695,8 @@ public class GamblingInterface {
                 gamblingStatus = 3;
                 player2.getGambling().gamblingStatus = 3;
 
-                player.moveTo(new Position(2339, 3632));
-                player2.moveTo(new Position(2337, 3632));
+                player.moveTo(new Position(2743, 3474));
+                player2.moveTo(new Position(2743, 3472));
 
                 player.setDirection(Direction.EAST);
                 player2.setDirection(Direction.WEST);
@@ -833,7 +822,7 @@ public class GamblingInterface {
 
         }
 
-        private List<GameObject> plants = new ArrayList<>();
+        private final List<GameObject> plants = new ArrayList<>();
 
         private void getFPWinner() {
                 Player player2 = World.getPlayers().get(getGambleWith());
@@ -1103,9 +1092,9 @@ public class GamblingInterface {
                 return count == 2;
         }
 
-        //private String formatGamemode(String gm) {
-                //return StringUtils.capitalizeFirst(gm).replace("Fifty_five_x2", "55x2").replaceAll("_", " ");
-        //}
+        private String formatGamemode(String gm) {
+                return StringUtils.capitalizeFirst(gm).replace("Fifty_five_x2", "55x2").replaceAll("_", " ");
+        }
 
 }
 

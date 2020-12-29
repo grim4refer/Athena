@@ -1,19 +1,19 @@
 {
-  "total-play-time-ms": 22601252,
+  "total-play-time-ms": 29673008,
   "username": "Kish",
   "password": "123",
   "email": "null",
   "staff-rights": "OWNER",
   "game-mode": "NORMAL",
-  "boss-points": 18,
+  "boss-points": 19,
   "npc-kills": 0,
   "ArcticPS-points": 0,
   "transform-id": 0,
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2477,
-    "y": 10141,
+    "x": 2737,
+    "y": 3463,
     "z": 0
   },
   "online-status": "ON",
@@ -23,13 +23,13 @@
   "starterclaimed": false,
   "pvm-rank": "BRONZE",
   "minutes-bonus-exp": -1,
-  "total-gained-exp": 1151740030,
+  "total-gained-exp": -2069485443,
   "prestige-points": 0,
-  "achievement-points": 8,
+  "achievement-points": 9,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 26029,
-  "total-loyalty-points": 26029.0,
+  "loyalty-points": 36139,
+  "total-loyalty-points": 36139.0,
   "voting-points": 1,
   "slayer-points": 50,
   "pk-points": 0,
@@ -54,7 +54,7 @@
   "auto-retaliate": true,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 35047537,
+  "last-veng": 48773606,
   "fight-type": "UNARMED_PUNCH",
   "sol-effect": 0,
   "skull-timer": 0,
@@ -479,10 +479,10 @@
   ],
   "skills": {
     "level": [
-      99621,
-      99621,
-      99621,
-      97356,
+      99476,
+      99476,
+      99476,
+      97211,
       99,
       97616,
       99,
@@ -536,7 +536,7 @@
       2000000000,
       1000000000,
       1000000000,
-      1057002983,
+      2000000000,
       1000000000,
       1000000000,
       1000000000,
@@ -562,18 +562,18 @@
   },
   "inventory": [
     {
-      "id": 20850,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 20902,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 20861,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
@@ -997,6 +997,13 @@
     },
     {
       "runningTotal": 1,
+      "npcId": 367,
+      "npcName": "Mayonaise",
+      "amount": 1,
+      "boss": true
+    },
+    {
+      "runningTotal": 1,
       "npcId": 1459,
       "npcName": "Nature Sword",
       "amount": 1,
@@ -1050,18 +1057,23 @@
       "rareDrop": true
     },
     {
-      "item": 20827,
+      "item": 20819,
       "amount": 1,
       "rareDrop": true
     },
     {
-      "item": 20819,
+      "item": 20827,
       "amount": 1,
       "rareDrop": true
     },
     {
       "item": 20850,
       "amount": 2,
+      "rareDrop": true
+    },
+    {
+      "item": 20977,
+      "amount": 1,
       "rareDrop": true
     },
     {
@@ -1080,6 +1092,11 @@
       "rareDrop": true
     },
     {
+      "item": 16600,
+      "amount": 211,
+      "rareDrop": false
+    },
+    {
       "item": 20089,
       "amount": 2,
       "rareDrop": true
@@ -1095,12 +1112,12 @@
       "rareDrop": true
     },
     {
-      "item": 3645,
+      "item": 3644,
       "amount": 1,
       "rareDrop": true
     },
     {
-      "item": 3644,
+      "item": 3645,
       "amount": 1,
       "rareDrop": true
     },
@@ -1326,7 +1343,7 @@
     false,
     false,
     false,
-    false,
+    true,
     false,
     false,
     true,
@@ -1385,10 +1402,10 @@
     134871,
     0,
     0,
-    4,
+    5,
     0,
-    24,
-    22,
+    25,
+    23,
     1
   ],
   "max-cape-colors": [

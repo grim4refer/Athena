@@ -67,10 +67,14 @@ public class PacketConstants {
 		PACKETS[MagicOnItemsPacketListener.MAGIC_ON_ITEMS] = new MagicOnItemsPacketListener();
 		PACKETS[MagicOnItemsPacketListener.MAGIC_ON_GROUNDITEMS] = new MagicOnItemsPacketListener();
 		PACKETS[249] = new MagicOnPlayerPacketListener();
+		PACKETS[GambleInvititationPacketListener.GAMBLE_OPCODE] = new GambleInvititationPacketListener();
+		PACKETS[GambleInvititationPacketListener.CHATBOX_GAMBLE_OPCODE] = new GambleInvititationPacketListener();
 		PACKETS[153] = new PlayerOptionPacketListener();
 		PACKETS[DuelAcceptancePacketListener.OPCODE] = new DuelAcceptancePacketListener();
 		PACKETS[204] = new GESelectItemPacketListener();
+		//PACKETS[193] = new GambleInvititationPacketListener();
 		PACKETS[222] = new ClickTextMenuPacketListener();
+		PACKETS[194] = new AddGambleItemPacketListener();
 		PACKETS[223] = new PrestigeSkillPacketListener();
 		PACKETS[229] = new HeightCheckPacketListener();
 		PACKETS[186] = new ItemColorCustomization();

@@ -1,20 +1,23 @@
 package com.athena.net.packet.impl;
 
 import com.athena.GameSettings;
+import com.athena.model.Locations.Location;
 import com.athena.model.PlayerRights;
 import com.athena.model.Position;
-import com.athena.model.Locations.Location;
 import com.athena.model.container.impl.Bank;
 import com.athena.model.container.impl.Bank.BankSearchAttributes;
 import com.athena.model.definitions.NPCDrops;
 import com.athena.model.definitions.WeaponInterfaces.WeaponInterface;
-import com.athena.model.input.impl.*;
+import com.athena.model.input.impl.EnterClanChatToJoin;
+import com.athena.model.input.impl.EnterSyntaxToBankSearchFor;
+import com.athena.model.input.impl.NpcSearch;
+import com.athena.model.input.impl.PosInput;
 import com.athena.net.packet.Packet;
 import com.athena.net.packet.PacketListener;
-import com.athena.world.content.*;
-import com.athena.world.content.gamblinginterface.GamblingInterface;
 import com.athena.util.Misc;
+import com.athena.world.SlotMachineRewards;
 import com.athena.world.World;
+import com.athena.world.content.*;
 import com.athena.world.content.TeleportInterface.Bosses;
 import com.athena.world.content.TeleportInterface.Monsters;
 import com.athena.world.content.clan.ClanChat;
@@ -27,23 +30,7 @@ import com.athena.world.content.combat.weapon.CombatSpecial;
 import com.athena.world.content.combat.weapon.FightType;
 import com.athena.world.content.dialogue.DialogueManager;
 import com.athena.world.content.dialogue.DialogueOptions;
-import com.athena.world.content.StarterTasks;
-import com.athena.world.content.droppreview.AVATAR;
-import com.athena.world.content.droppreview.BARRELS;
-import com.athena.world.content.droppreview.BORKS;
-import com.athena.world.content.droppreview.CERB;
-import com.athena.world.content.droppreview.CORP;
-import com.athena.world.content.droppreview.DAGS;
-import com.athena.world.content.droppreview.GLAC;
-import com.athena.world.content.droppreview.GWD;
-import com.athena.world.content.droppreview.KALPH;
-import com.athena.world.content.droppreview.KBD;
-import com.athena.world.content.droppreview.LIZARD;
-import com.athena.world.content.droppreview.NEXX;
-import com.athena.world.content.droppreview.PHEON;
-import com.athena.world.content.droppreview.SKOT;
-import com.athena.world.content.droppreview.SLASHBASH;
-import com.athena.world.content.droppreview.TDS;
+import com.athena.world.content.droppreview.*;
 import com.athena.world.content.grandexchange.GrandExchange;
 import com.athena.world.content.minigames.impl.Dueling;
 import com.athena.world.content.minigames.impl.Nomad;
@@ -66,7 +53,6 @@ import com.athena.world.content.teleportation.Teleporting;
 import com.athena.world.content.transportation.TeleportHandler;
 import com.athena.world.content.upgrade.Upgrade;
 import com.athena.world.entity.impl.player.Player;
-import com.athena.world.SlotMachineRewards;
 
 import java.util.List;
 
@@ -110,6 +96,8 @@ public class ButtonClickPacketListener implements PacketListener {
         if (id >= 32410 && id <= 32460) {
             StaffList.handleButton(player, id);
         }
+        player.getGambling().handleChoice(id);
+
         if( id >= -27885 && id <= -27719) {
 
             int base_button = -27885;
@@ -235,6 +223,10 @@ public class ButtonClickPacketListener implements PacketListener {
             case -27928:
                 player.setInputHandling(new NpcSearch());
                 player.getPacketSender().sendEnterInputPrompt("Enter an Npc name, or part of it.");
+                break;
+            case -3203:
+                System.out.println("-");
+                // player.getGambling().sendGambleScreen();
                 break;
     		case -12307:
     			if (!StarterTasks.claimReward(player)) {
@@ -1132,6 +1124,10 @@ public class ButtonClickPacketListener implements PacketListener {
                     player.sendMessage("@red@Game mode not set, set 1 to play");
                 }
                 System.out.println("In gamble: " + player.getGambling().inGamble());
+                break;
+            case -8383:
+                if (player.getGambling().inGamble())
+                    player.getGambling().declineGamble(true);
                 break;
             case 10162:
             case -18269:

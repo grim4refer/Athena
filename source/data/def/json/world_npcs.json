@@ -2,7 +2,7 @@
 
 	{
         "npc-id": 2000,
-		"face": EAST,
+		"face": "EAST",
         "position": {
         	"x": 3353,
         	"y": 3737,
@@ -28,7 +28,7 @@
 	},
 	{
 		"npc-id": 3,
-		"face": SOUTH,
+		"face": "SOUTH",
         "position": {
         	"x": 2420,
         	"y": 5105,
@@ -8973,10 +8973,10 @@
     },
 	{
         "npc-id": 4249,
-		"face": WEST,
+		"face": "SOUTH",
         "position": {
-        	"x": 2445,
-        	"y": 3091,
+        	"x": 2730,
+        	"y": 3474,
         	"z": 0
         },
          "walking-policy": {
@@ -16272,7 +16272,7 @@
     },
 	{
         "npc-id": 4249,
-		"face": WEST,
+		"face": "NORTH",
         "position": {
         	"x": 3186,
         	"y": 3434,

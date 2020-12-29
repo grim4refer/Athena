@@ -4405,7 +4405,12 @@ public class Client extends RSApplet {
 													} else if (child.parentID == 3321 && openInterfaceID == 2700) {
 														s = s.replaceAll("Offer", "Store");
 														interfaceId = 2700;
+													} else if (openInterfaceID == 57150) {
+														s = s.replaceAll("Offer", "Gamble");
 													}
+
+													System.out.println("S is: " + s);
+
 													menuActionName[menuActionRow] = s;
 													if (j4 == 0) {
 														menuActionID[menuActionRow] = 632;
@@ -8147,8 +8152,32 @@ public class Client extends RSApplet {
 					flag9 = true;
 					break;
 				}
+			}
 
-				if (!flag9) {
+		}
+		if (l == 1673) {
+			System.out.println("called gamble one " + l);
+			String s1 = menuActionName[i];
+			System.out.println("s1(name) is: " + s1);
+			int l1 = s1.indexOf("@whi@");
+			if (l1 != -1) {
+				s1 = s1.substring(l1 + 5).trim();
+				String s7 = TextClass.fixName(TextClass.nameForLong(TextClass.longForName(s1)));
+				boolean flag9 = false;
+				for (int j3 = 0; j3 < playerCount; j3++) {
+					Player class30_sub2_sub4_sub1_sub2_7 = playerArray[playerIndices[j3]];
+					if (class30_sub2_sub4_sub1_sub2_7 == null || class30_sub2_sub4_sub1_sub2_7.name == null
+							|| !class30_sub2_sub4_sub1_sub2_7.name.equalsIgnoreCase(s7)) {
+						continue;
+					}
+					doWalkTo(2, 0, 1, 0, myPlayer.pathY[0], 1, 0, class30_sub2_sub4_sub1_sub2_7.pathY[0],
+							myPlayer.pathX[0], false, class30_sub2_sub4_sub1_sub2_7.pathX[0]);
+					stream.createFrame(193);
+					stream.writeUnsignedWordBigEndian(playerIndices[j3]);
+					flag9 = true;
+					break;
+				}
+		if (!flag9) {
 					pushMessage("Unable to find " + s7 + ".", 0, "");
 				}
 			}
@@ -8275,6 +8304,21 @@ public class Client extends RSApplet {
 			stream.writeUnsignedWordBigEndian(interfaceId + baseY);
 			stream.writeWord(nodeId);
 			stream.writeUnsignedWordA(slot + baseX);
+		}
+		System.out.println("L was: " + l);
+		if (l == 6300) {
+			Player player = playerArray[nodeId]; // player index in the player array
+			if (player != null) {
+				doWalkTo(2, 0, 1, 0, myPlayer.pathY[0], 1, 0, player.pathY[0], myPlayer.pathX[0], false,
+						player.pathX[0]);
+				crossX = super.saveClickX;
+				crossY = super.saveClickY;
+				crossType = 2;
+				crossIndex = 0;
+				stream.createFrame(191);
+				stream.writeWord(nodeId);
+				System.out.println("player index there: " + nodeId);
+			}
 		}
 		if (l == 632) {
 			if (openInterfaceID == 53700 || openInterfaceID == 54700) {
@@ -10197,10 +10241,10 @@ public class Client extends RSApplet {
 				}
 				l++;
 			}
-			if (j1 == 9) {
+			if (j1 == 21) {
 				if (j > k1 - 14 && j <= k1) {
 					menuActionName[menuActionRow] = "Accept gamble @whi@" + name;
-					menuActionID[menuActionRow] = 485;
+					menuActionID[menuActionRow] = 1673;
 					menuActionRow++;
 				}
 				l++;
@@ -10338,6 +10382,14 @@ public class Client extends RSApplet {
 					menuActionRow++;
 				}
 				l++;
+			}
+				if (j1 == 21) {
+					if (j > k1 - 14 && j <= k1) {
+						menuActionName[menuActionRow] = "Accept gamble @whi@" + name;
+						menuActionID[menuActionRow] = 1673;
+						menuActionRow++;
+					}
+					l++;
 			}
 		}
 	}
@@ -14256,6 +14308,7 @@ public class Client extends RSApplet {
 			player.interactingEntity = stream.ig2();
 			if (player.interactingEntity == 65535) {
 				player.interactingEntity = -1;
+				System.out.println("CALLED ->>223232>>");
 			}
 		}
 		if ((i & 0x10) != 0) {
@@ -17479,21 +17532,7 @@ public class Client extends RSApplet {
 						opCode = -1;
 						return true;
 					}
-
-					if (s.contains(":gamblereq:")) {
-						String s3 = s.substring(0, s.indexOf(":"));
-						long l17 = TextClass.longForName(s3);
-						boolean flag2 = false;
-						for (int j27 = 0; j27 < ignoreCount; j27++) {
-							if (ignoreListAsLongs[j27] != l17)
-								continue;
-							flag2 = true;
-
-						}
-						if (!flag2 && s3.length() >= 2)
-							pushMessage("wishes to gamble with you. Click here to accept the invitation.", 8, s3);
-
-					} else if (s.contains(":instancereq:")) {
+					 else if (s.contains(":instancereq:")) {
 						String s3 = s.substring(0, s.indexOf(":"));
 						long l17 = TextClass.longForName(s3);
 						boolean flag2 = false;
@@ -17507,19 +17546,35 @@ public class Client extends RSApplet {
 							pushMessage("wishes to boss instance with you. Click here to accept the invitation.", 8, s3);
 
 
-					} else if (s.endsWith(":tradereq:")) {
+					}
+					if (s.endsWith(":tradereq:")) {
 						String s3 = s.substring(0, s.indexOf(":"));
 						long l17 = TextClass.longForName(s3);
 						boolean flag2 = false;
 						for (int j27 = 0; j27 < ignoreCount; j27++) {
-							if (ignoreListAsLongs[j27] != l17)
+							if (ignoreListAsLongs[j27] != l17) {
 								continue;
+							}
 							flag2 = true;
 
 						}
-						if (!flag2 && s3.length() >= 2)
+						if (!flag2 && s3.length() >= 2) {
 							pushMessage("wishes to trade with you. Click here to accept the invitation.", 4, s3);
-					
+						}
+					} else if (s.endsWith(":gamblereq:")) {
+						String s21 = s.substring(0, s.indexOf(":"));
+						long l21 = TextClass.longForName(s21);
+						boolean flag2 = false;
+						for (int j27 = 0; j27 < ignoreCount; j27++) {
+							if (ignoreListAsLongs[j27] != l21) {
+								continue;
+							}
+							flag2 = true;
+
+						}
+						if (!flag2 && s21.length() >= 2) {
+							pushMessage("wishes to gamble with you. Click here to accept the invitation.", 21, s21);
+						}
 					}else if(s.startsWith(":resetBox")) {
 
 					} else if (s.endsWith("::")) {

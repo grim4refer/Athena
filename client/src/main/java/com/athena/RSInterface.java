@@ -3390,16 +3390,18 @@ public class RSInterface {
 		// addConfigButtonWSpriteLoader(57191, 57150, 1077, 1078, 119, 15, "Select
 		// 55x2(Other player hosts)", 1701, 1, 1430);
 		// int id, int sprite, int setconfig, int width, int height, String s
-		addToggleButton1(57190, 1077, 1700, 119, 15, "Flower Poker");
-		addToggleButton1(57191, 1077, 1701, 119, 15, "Dice Duel(ft3)");
+		addToggleButton1(57190, 1184, 1700, 130, 15, "Flower Poker");
+		addToggleButton1(57191, 1184, 1701, 119, 15, "Dice Duel(ft3)");
 
 		// game type descriptions
 		addText(57192, "Flower poker)", tda, 0, 0xFFFFFF, true, true);
 		addText(57193, "Dice Duel(ft3)", tda, 0, 0xFFFFFF, true, true);
-		addToggleButton1(57194, 1077, 1702, 119, 15, "Blackjack");
+
+		addToggleButton1(57194, 1184, 1702, 119, 15, "Blackjack");
 		addText(57195, "Blackjack (playername hosts)", tda, 0, 0xFFFFFF, true, true);
-		addToggleButton1(57196, 1077, 1703, 119, 15, "Blackjack");
+		addToggleButton1(57196, 1184, 1703, 119, 15, "Blackjack");
 		addText(57197, "55x2 (playername hosts)", tda, 0, 0xFFFFFF, true, true);
+
 		addText(57198, "55x2 (playername hosts)", tda, 0, 0xFFFFFF, true, true);
 
 
@@ -3687,6 +3689,7 @@ public class RSInterface {
 		BuyandSell(textDrawingAreas);
 		collectSell(textDrawingAreas);
 		collectBuy(textDrawingAreas);
+		gamblingInterface(textDrawingAreas);
 		dungeonInfo();
 		formParty(textDrawingAreas);
 		dungParty(textDrawingAreas);
@@ -3768,7 +3771,7 @@ public class RSInterface {
 		playerOwnedShopInterface3(textDrawingAreas);
 		customization(textDrawingAreas);
 		mysteryBox(textDrawingAreas);
-		gambleNewInterfaces(textDrawingAreas);
+		//gambleNewInterfaces(textDrawingAreas);
 
 
 		/**
@@ -13323,7 +13326,7 @@ public class RSInterface {
 		frame++;
 		id++;
 	}
-	public static void gambleBlackJack(TextDrawingArea[] tda) {
+	/*public static void gambleBlackJack(TextDrawingArea[] tda) {
 		int index = 28392;
 		RSInterface main = addTabInterface(index);
 		int frame = 0;
@@ -13358,7 +13361,7 @@ public class RSInterface {
 		setBoundry(frame, index, 315, 288, main);
 	}
 
-	public static void gambleNewInterfaces(TextDrawingArea[] tda) {
+	/*public static void gambleNewInterfaces(TextDrawingArea[] tda) {
 
 		int id = 30891;
 
@@ -13519,7 +13522,7 @@ public class RSInterface {
 		 * 90, 195 + 284, 19, frame, tab); frame++; id++;
 		 */
 
-		addHoverButtonWSpriteLoader(id, 1147, 62, 22, "Accept", -1, id + 190, 5);
+		/*addHoverButtonWSpriteLoader(id, 1147, 62, 22, "Accept", -1, id + 190, 5);
 		setBounds(id, 261, 279, frame, tab);
 		frame++;
 		addHoveredImageWSpriteLoader(id + 190, 1148, 62, 22, id + 191);
@@ -13544,9 +13547,9 @@ public class RSInterface {
 		setBounds(id, 292, 281, frame, tab);
 		frame++;
 		id++;
-	}
+	}*/
 
-	public static void gambleItems(int childId, int interfaceId, String[] options) {
+	/*public static void gambleItems(int childId, int interfaceId, String[] options) {
 		RSInterface rsi = interfaceCache[childId] = new RSInterface();
 		rsi.actions = new String[10];
 		rsi.spritesX = new int[30];
@@ -13576,7 +13579,7 @@ public class RSInterface {
 		rsi.parentID = interfaceId;
 		rsi.id = childId;
 		rsi.type = 2;
-	}
+	}*/
 
 	/*
 	 * Ignore list tab interface

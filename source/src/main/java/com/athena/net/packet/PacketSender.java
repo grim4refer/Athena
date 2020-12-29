@@ -77,10 +77,12 @@ public class PacketSender {
 
     /**
      * Sends the combat/entity information required to redraw the interface
-     * @param flag - player flag, 1 = player, 0 = npc
-     * @param maxHealth - maximum health of entity
+     *
+     * @param flag          - player flag, 1 = player, 0 = npc
+     * @param maxHealth     - maximum health of entity
      * @param currentHealth - current health of entity
      * @return
+     */
 
     public PacketSender sendEntityInterface(int flag, int maxHealth, int currentHealth, String entityName) {
         PacketBuilder out = new PacketBuilder(207);
@@ -93,7 +95,7 @@ public class PacketSender {
         player.sendParallellInterfaceVisibility(41020, true);
         return this;
 
-    }*/
+    }
 
     public PacketSender sendCombatBoxData(Entity character) {
         PacketBuilder out = new PacketBuilder(125);
@@ -261,9 +263,9 @@ public class PacketSender {
     /**
      * Sends a configuration button's state.
      *
-     * @param configId	The id of the configuration button.
-     * @param state	The state to set it to.
-     * @return	The PacketSender instance.
+     * @param configId The id of the configuration button.
+     * @param state    The state to set it to.
+     * @return The PacketSender instance.
      */
     public PacketSender sendConfig(int id, int state) {
         PacketBuilder out = new PacketBuilder(36);
@@ -586,6 +588,10 @@ public class PacketSender {
             sendClientRightClickRemoval();
             player.getTrading().declineTrade(true);
         }
+        if (player.getGambling().inGamble() && player.getGambling().gamblingStatus != 3) {
+            sendClientRightClickRemoval();
+            player.getGambling().declineGamble(true);
+        }
         if (player.getDueling().inDuelScreen && player.getDueling().duelingStatus != 5) {
             sendClientRightClickRemoval();
             player.getDueling().declineDuel(player.getDueling().duelingWith >= 0 ? true : false);
@@ -594,10 +600,7 @@ public class PacketSender {
             player.setResting(false);
             player.performAnimation(new Animation(11788));
         }
-        if (player.getGambling().inGamble() && player.getGambling().gamblingStatus != 3) {
-            sendClientRightClickRemoval();
-            player.getGambling().declineGamble(true);
-        }
+
         /*
          if(player.getMinigameAttributes().getFishingTrawlerAttributes().isViewingInterface()) {
          sendClientRightClickRemoval().sendItemsOnInterface(Shop.INTERFACE_ID, new Item[]{new Item(-1)});

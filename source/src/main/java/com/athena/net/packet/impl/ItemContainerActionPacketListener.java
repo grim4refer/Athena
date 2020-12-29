@@ -86,6 +86,14 @@ public class ItemContainerActionPacketListener implements PacketListener {
 			}
 			//player.getGambling().gambleItem(id, 1, slot);
 			break;
+			case -8365:
+				if(player.getGambling().inGamble()) {
+					player.getGambling().removeGambledItem(id, 1);
+				}
+				break;
+			case 57150:
+				System.out.println("xd ok k");
+				break;
 		case Trading.INTERFACE_REMOVAL_ID:
 			if(player.getTrading().inTrade())
 				player.getTrading().removeTradedItem(id, 1);

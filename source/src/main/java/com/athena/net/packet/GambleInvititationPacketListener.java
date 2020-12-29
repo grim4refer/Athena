@@ -5,6 +5,7 @@ import com.athena.engine.task.impl.WalkToTask.FinalizedMovementTask;
 import com.athena.model.Locations;
 import com.athena.model.Locations.Location;
 import com.athena.world.World;
+import com.athena.world.content.gamblinginterface.GamblingInterface;
 import com.athena.world.entity.impl.player.Player;
 
 public class GambleInvititationPacketListener implements PacketListener {
