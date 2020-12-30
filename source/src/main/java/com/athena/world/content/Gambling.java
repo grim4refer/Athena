@@ -41,7 +41,7 @@ public class Gambling {
 		if(player.getClanChatName() == null) {
 			player.sendMessage("You need to be in a clanchat channel to roll a dice.");
 			return;
-		} else if(player.getClanChatName().equalsIgnoreCase("help")) {
+		} else if(player.getClanChatName().equalsIgnoreCase("Athena")) {
 			player.sendMessage("You can't roll a dice in this clanchat channel!");
 			return;
 		}

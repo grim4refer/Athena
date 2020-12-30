@@ -61,6 +61,7 @@ import com.athena.world.content.combat.weapon.FightType;
 import com.athena.world.content.dialogue.Dialogue;
 import com.athena.world.content.dialogue.DialogueExpression;
 import com.athena.world.content.dialogue.DialogueType;
+import com.athena.world.content.gamblinginterface.GamblingInterface;
 import com.athena.world.content.grandexchange.GrandExchangeSlot;
 import com.athena.world.content.itemloading.BlowpipeLoading;
 import com.athena.world.content.itemloading.DragonRageLoading;
@@ -84,23 +85,23 @@ import com.athena.world.content.skill.impl.summoning.Summoning;
 import com.athena.world.content.transportation.TeleportHandler;
 import com.athena.world.entity.impl.Character;
 import com.athena.world.entity.impl.npc.NPC;
-import com.athena.world.content.gamblinginterface.GamblingInterface;
+
 
 import javax.security.auth.callback.Callback;
 
 public class Player extends Character {
-	
+
 	public boolean inRaid;
-	
+
 	private com.athena.world.content.TeleportInterface teleportInterface = new com.athena.world.content.TeleportInterface(this);
-	
+
 	public boolean isVoting = false;
-	
+
 	public TeleportInterface getTeleportInterface() {
 		return this.teleportInterface;
 	}
 
-	private int[] maxCapeColors = { 65214, 65200, 65186, 62995 };
+	private int[] maxCapeColors = {65214, 65200, 65186, 62995};
 	private PVMRanking pvmRanking = new PVMRanking(this);
 
 	public int[] getMaxCapeColors() {
@@ -119,7 +120,7 @@ public class Player extends Character {
 	/**
 	 * Kc system
 	 */
-	
+
 	public Map<Integer, Integer> getNpcKillCount() {
 		return npcKillCountMap;
 	}
@@ -133,10 +134,11 @@ public class Player extends Character {
 	}
 
 	private Map<Integer, Integer> npcKillCountMap = new HashMap<>();
-	
+
 	public int getNpcKillCount(int npcId) {
 		return npcKillCountMap.get(npcId) == null ? 0 : npcKillCountMap.get(npcId);
 	}
+
 	private int winstreak;
 	// public boolean toggledPets;
 
@@ -182,7 +184,7 @@ public class Player extends Character {
 	private boolean active;
 
 	private boolean Invited = false;
-	private int[] InvitedCoords = new int[] { 0, 0, 0 };
+	private int[] InvitedCoords = new int[]{0, 0, 0};
 	private boolean shopUpdated;
 
 	private boolean indung;
@@ -232,8 +234,8 @@ public class Player extends Character {
 		return this;
 	}
 
-	public static int[] guns = { 21062, 20695, 18931, 3650, 18889, 21082, 20695, 4784, 20932, 21077, 21079, 894, 21044, 700, 701,
-			895, 896, 2867, 21080, 20805, 19098, 20853, 20854, 21038, 21039, 21040, 21041, 21042, 21043 };
+	public static int[] guns = {21062, 20695, 18931, 3650, 18889, 21082, 20695, 4784, 20932, 21077, 21079, 894, 21044, 700, 701,
+			895, 896, 2867, 21080, 20805, 19098, 20853, 20854, 21038, 21039, 21040, 21041, 21042, 21043};
 
 	public static int[] getGuns() {
 		return guns;
@@ -263,7 +265,6 @@ public class Player extends Character {
 		super(GameSettings.DEFAULT_POSITION.copy());
 		this.session = playerIO;
 	}
-
 
 
 	private Map<String, Object> attributes = new HashMap<>();
@@ -395,21 +396,21 @@ public class Player extends Character {
 
 	/*
 	 * Variables for DropTable & Player Profiling
-	 * 
+	 *
 	 * @author Levi Patton
-	 * 
+	 *
 	 * @www.rune-server.org/members/auguryps
 	 */
 	public Player dropLogPlayer;
 	public boolean dropLogOrder;
 	private PlayerDropLog playerDropLog = new PlayerDropLog();
 	private ProfileViewing profile = new ProfileViewing();
-	
+
 	//public AuraManager auraManager = new AuraManager(this);
 
 	/*
 	 * Variables for the DropLog
-	 * 
+	 *
 	 * @author Levi Patton
 	 */
 	public PacketSender getPA() {
@@ -459,9 +460,9 @@ public class Player extends Character {
 			setConstitution(skillManager.getCurrentLevel(Skill.CONSTITUTION) + amount);
 		}
 	}
-	
+
 	public void raidsHeal(int amount) {
-	   setConstitution(skillManager.getCurrentLevel(Skill.CONSTITUTION) + amount);
+		setConstitution(skillManager.getCurrentLevel(Skill.CONSTITUTION) + amount);
 	}
 
 	@Override
@@ -490,7 +491,7 @@ public class Player extends Character {
 	/**
 	 * Loops through the associated player's {@code localPlayer} list and updates
 	 * them.
-	 * 
+	 *
 	 * @return The PlayerUpdating instance.
 	 */
 	// public boolean hasPet() {
@@ -504,7 +505,7 @@ public class Player extends Character {
 		updateMovement(player, packet);
 		appendUpdates(player, update, player, false, true);
 		packet.putBits(8, player.getLocalPlayers().size());
-		for (Iterator<Player> playerIterator = player.getLocalPlayers().iterator(); playerIterator.hasNext();) {
+		for (Iterator<Player> playerIterator = player.getLocalPlayers().iterator(); playerIterator.hasNext(); ) {
 			Player otherPlayer = playerIterator.next();
 			if (World.getPlayers().get(otherPlayer.getIndex()) != null && otherPlayer.isVisible()
 					&& otherPlayer.getPosition().isWithinDistance(player.getPosition())
@@ -546,11 +547,9 @@ public class Player extends Character {
 
 	/**
 	 * Adds a new player to the associated player's client.
-	 * 
-	 * @param target
-	 *            The player to add to the other player's client.
-	 * @param builder
-	 *            The packet builder to write information on.
+	 *
+	 * @param target  The player to add to the other player's client.
+	 * @param builder The packet builder to write information on.
 	 * @return The PlayerUpdating instance.
 	 */
 	private static void addPlayer(Player player, Player target, PacketBuilder builder) {
@@ -565,9 +564,8 @@ public class Player extends Character {
 
 	/**
 	 * Updates the associated player's movement queue.
-	 * 
-	 * @param builder
-	 *            The packet builder to write information on.
+	 *
+	 * @param builder The packet builder to write information on.
 	 * @return The PlayerUpdating instance.
 	 */
 	private static void updateMovement(Player player, PacketBuilder builder) {
@@ -606,88 +604,86 @@ public class Player extends Character {
 			builder.putBits(7, player.getPosition().getLocalY(player.getLastKnownRegion()));
 			builder.putBits(7, player.getPosition().getLocalX(player.getLastKnownRegion()));
 		} else /*
-				 * Otherwise, check if the player moved.
-				 */
-		if (player.getPrimaryDirection().toInteger() == -1) {
-			/*
-			 * The player didn't move. Check if an update is required.
-			 */
-			if (player.getUpdateFlag().isUpdateRequired()) {
+		 * Otherwise, check if the player moved.
+		 */
+			if (player.getPrimaryDirection().toInteger() == -1) {
 				/*
-				 * Signifies an update is required.
+				 * The player didn't move. Check if an update is required.
 				 */
-				builder.putBits(1, 1);
+				if (player.getUpdateFlag().isUpdateRequired()) {
+					/*
+					 * Signifies an update is required.
+					 */
+					builder.putBits(1, 1);
 
-				/*
-				 * But signifies that we didn't move.
-				 */
-				builder.putBits(2, 0);
-			} else
-				/*
-				 * Signifies that nothing changed.
-				 */
-				builder.putBits(1, 0);
-		} else /*
-				 * Check if the player was running.
-				 */
-		if (player.getSecondaryDirection().toInteger() == -1) {
-
-			/*
-			 * The player walked, an update is required.
+					/*
+					 * But signifies that we didn't move.
+					 */
+					builder.putBits(2, 0);
+				} else
+					/*
+					 * Signifies that nothing changed.
+					 */
+					builder.putBits(1, 0);
+			} else /*
+			 * Check if the player was running.
 			 */
-			builder.putBits(1, 1);
+				if (player.getSecondaryDirection().toInteger() == -1) {
 
-			/*
-			 * This indicates the player only walked.
-			 */
-			builder.putBits(2, 1);
+					/*
+					 * The player walked, an update is required.
+					 */
+					builder.putBits(1, 1);
 
-			/*
-			 * This is the player's walking direction.
-			 */
+					/*
+					 * This indicates the player only walked.
+					 */
+					builder.putBits(2, 1);
 
-			builder.putBits(3, player.getPrimaryDirection().toInteger());
+					/*
+					 * This is the player's walking direction.
+					 */
 
-			/*
-			 * This flag indicates an update block is appended.
-			 */
-			builder.putBits(1, player.getUpdateFlag().isUpdateRequired() ? 1 : 0);
-		} else {
+					builder.putBits(3, player.getPrimaryDirection().toInteger());
 
-			/*
-			 * The player ran, so an update is required.
-			 */
-			builder.putBits(1, 1);
+					/*
+					 * This flag indicates an update block is appended.
+					 */
+					builder.putBits(1, player.getUpdateFlag().isUpdateRequired() ? 1 : 0);
+				} else {
 
-			/*
-			 * This indicates the player ran.
-			 */
-			builder.putBits(2, 2);
+					/*
+					 * The player ran, so an update is required.
+					 */
+					builder.putBits(1, 1);
 
-			/*
-			 * This is the walking direction.
-			 */
-			builder.putBits(3, player.getPrimaryDirection().toInteger());
+					/*
+					 * This indicates the player ran.
+					 */
+					builder.putBits(2, 2);
 
-			/*
-			 * And this is the running direction.
-			 */
-			builder.putBits(3, player.getSecondaryDirection().toInteger());
+					/*
+					 * This is the walking direction.
+					 */
+					builder.putBits(3, player.getPrimaryDirection().toInteger());
 
-			/*
-			 * And this flag indicates an update block is appended.
-			 */
-			builder.putBits(1, player.getUpdateFlag().isUpdateRequired() ? 1 : 0);
-		}
+					/*
+					 * And this is the running direction.
+					 */
+					builder.putBits(3, player.getSecondaryDirection().toInteger());
+
+					/*
+					 * And this flag indicates an update block is appended.
+					 */
+					builder.putBits(1, player.getUpdateFlag().isUpdateRequired() ? 1 : 0);
+				}
 	}
 
 	/**
 	 * Updates another player's movement queue.
-	 * 
-	 * @param builder
-	 *            The packet builder to write information on.
-	 * @param target
-	 *            The player to update movement for.
+	 *
+	 * @param builder The packet builder to write information on.
+	 * @param target  The player to update movement for.
 	 * @return The PlayerUpdating instance.
 	 */
 	private static void updateOtherPlayerMovement(PacketBuilder builder, Player target) {
@@ -763,19 +759,15 @@ public class Player extends Character {
 
 	/**
 	 * Appends a player's update mask blocks.
-	 * 
-	 * @param builder
-	 *            The packet builder to write information on.
-	 * @param target
-	 *            The player to update masks for.
-	 * @param updateAppearance
-	 *            Update the player's appearance without the flag being set?
-	 * @param noChat
-	 *            Do not allow player to chat?
+	 *
+	 * @param builder          The packet builder to write information on.
+	 * @param target           The player to update masks for.
+	 * @param updateAppearance Update the player's appearance without the flag being set?
+	 * @param noChat           Do not allow player to chat?
 	 * @return The PlayerUpdating instance.
 	 */
 	private static void appendUpdates(Player player, PacketBuilder builder, Player target, boolean updateAppearance,
-			boolean noChat) {
+									  boolean noChat) {
 		if (!target.getUpdateFlag().isUpdateRequired() && !updateAppearance)
 			return;
 		/*
@@ -864,11 +856,9 @@ public class Player extends Character {
 
 	/**
 	 * This update block is used to update player chat.
-	 * 
-	 * @param builder
-	 *            The packet builder to write information on.
-	 * @param target
-	 *            The player to update chat for.
+	 *
+	 * @param builder The packet builder to write information on.
+	 * @param target  The player to update chat for.
 	 * @return The PlayerUpdating instance.
 	 */
 	private static void updateChat(PacketBuilder builder, Player target) {
@@ -883,11 +873,9 @@ public class Player extends Character {
 
 	/**
 	 * This update block is used to update forced player chat.
-	 * 
-	 * @param builder
-	 *            The packet builder to write information on.
-	 * @param target
-	 *            The player to update forced chat for.
+	 *
+	 * @param builder The packet builder to write information on.
+	 * @param target  The player to update forced chat for.
 	 * @return The PlayerUpdating instance.
 	 */
 	private static void updateForcedChat(PacketBuilder builder, Player target) {
@@ -896,11 +884,9 @@ public class Player extends Character {
 
 	/**
 	 * This update block is used to update forced player movement.
-	 * 
-	 * @param builder
-	 *            The packet builder to write information on.
-	 * @param target
-	 *            The player to update forced movement for.
+	 *
+	 * @param builder The packet builder to write information on.
+	 * @param target  The player to update forced movement for.
 	 * @return The PlayerUpdating instance.
 	 */
 	private static void updateForcedMovement(Player player, PacketBuilder builder, Player target) {
@@ -921,11 +907,9 @@ public class Player extends Character {
 
 	/**
 	 * This update block is used to update a player's animation.
-	 * 
-	 * @param builder
-	 *            The packet builder to write information on.
-	 * @param target
-	 *            The player to update animations for.
+	 *
+	 * @param builder The packet builder to write information on.
+	 * @param target  The player to update animations for.
 	 * @return The PlayerUpdating instance.
 	 */
 	private static void updateAnimation(PacketBuilder builder, Player target) {
@@ -935,11 +919,9 @@ public class Player extends Character {
 
 	/**
 	 * This update block is used to update a player's graphics.
-	 * 
-	 * @param builder
-	 *            The packet builder to write information on.
-	 * @param target
-	 *            The player to update graphics for.
+	 *
+	 * @param builder The packet builder to write information on.
+	 * @param target  The player to update graphics for.
 	 * @return The PlayerUpdating instance.
 	 */
 	private static void updateGraphics(PacketBuilder builder, Player target) {
@@ -950,11 +932,9 @@ public class Player extends Character {
 
 	/**
 	 * This update block is used to update a player's single hit.
-	 * 
-	 * @param builder
-	 *            The packet builder used to write information on.
-	 * @param target
-	 *            The player to update the single hit for.
+	 *
+	 * @param builder The packet builder used to write information on.
+	 * @param target  The player to update the single hit for.
 	 * @return The PlayerUpdating instance.
 	 */
 	private static void updateSingleHit(PacketBuilder builder, Player target) {
@@ -968,11 +948,9 @@ public class Player extends Character {
 
 	/**
 	 * This update block is used to update a player's double hit.
-	 * 
-	 * @param builder
-	 *            The packet builder used to write information on.
-	 * @param target
-	 *            The player to update the double hit for.
+	 *
+	 * @param builder The packet builder used to write information on.
+	 * @param target  The player to update the double hit for.
 	 * @return The PlayerUpdating instance.
 	 */
 	private static void updateDoubleHit(PacketBuilder builder, Player target) {
@@ -986,11 +964,9 @@ public class Player extends Character {
 
 	/**
 	 * This update block is used to update a player's face position.
-	 * 
-	 * @param builder
-	 *            The packet builder to write information on.
-	 * @param target
-	 *            The player to update face position for.
+	 *
+	 * @param builder The packet builder to write information on.
+	 * @param target  The player to update face position for.
 	 * @return The PlayerUpdating instance.
 	 */
 	private static void updateFacingPosition(PacketBuilder builder, Player target) {
@@ -1003,11 +979,9 @@ public class Player extends Character {
 
 	/**
 	 * This update block is used to update a player's entity interaction.
-	 * 
-	 * @param builder
-	 *            The packet builder to write information on.
-	 * @param target
-	 *            The player to update entity interaction for.
+	 *
+	 * @param builder The packet builder to write information on.
+	 * @param target  The player to update entity interaction for.
 	 * @return The PlayerUpdating instance.
 	 */
 	private static void updateEntityInteraction(PacketBuilder builder, Player target) {
@@ -1025,7 +999,7 @@ public class Player extends Character {
 	/**
 	 * Resets the associated player's flags that will need to be removed upon
 	 * completion of a single update.
-	 * 
+	 *
 	 * @return The PlayerUpdating instance.
 	 */
 	public static void resetFlags(Player player) {
@@ -1042,9 +1016,8 @@ public class Player extends Character {
 	 * This update block is used to update a player's appearance, this includes
 	 * their equipment, clothing, combat level, gender, head icons, user name and
 	 * animations.
-	 * 
-	 * @param target
-	 *            The player to update appearance for.
+	 *
+	 * @param target The player to update appearance for.
 	 * @return The PlayerUpdating instance.
 	 */
 	public static void updateAppearance(Player player, PacketBuilder out, Player target) {
@@ -1232,7 +1205,7 @@ public class Player extends Character {
 		if (weaponId == 21062) {
 			speed = 1;
 		}
-		if (weaponId == 18932 || weaponId == 20838 || weaponId == 20998 || weaponId == 21082 || weaponId == 20818 ||  weaponId == 19004 || weaponId == 20819
+		if (weaponId == 18932 || weaponId == 20838 || weaponId == 20998 || weaponId == 21082 || weaponId == 20818 || weaponId == 19004 || weaponId == 20819
 				|| weaponId == 20815 || weaponId == 20820 || weaponId == 18931 || weaponId == 18911 || weaponId == 19057
 				|| weaponId == 18965 || weaponId == 3666 || weaponId == 20695 || weaponId == 20751 || weaponId == 18898 || weaponId == 20752
 				|| weaponId == 21062 || weaponId == 20115 || weaponId == 20601 || weaponId == 20510 || weaponId == 3717 || weaponId == 3065 || weaponId == 6196
@@ -1290,8 +1263,8 @@ public class Player extends Character {
 
 		} else if (weaponId != 6522 && weaponId != 15241
 				&& (fightType == FightType.SHORTBOW_RAPID || fightType == FightType.DART_RAPID
-						|| fightType == FightType.KNIFE_RAPID || fightType == FightType.THROWNAXE_RAPID
-						|| fightType == FightType.JAVELIN_RAPID)
+				|| fightType == FightType.KNIFE_RAPID || fightType == FightType.THROWNAXE_RAPID
+				|| fightType == FightType.JAVELIN_RAPID)
 				|| weaponId == 11730) {
 			speed -= 2;
 		}
@@ -1481,14 +1454,13 @@ public class Player extends Character {
 	}
 
 	/**
-	 * @author Stan van der Bend
-	 *
-	 *         This method will ensure this {@link Player} will receive the item(s)
-	 *         defined by the params. 1): first try inventory 2): then try bank 3):
-	 *         then try refund box 4): otherwise send error message
-	 *
 	 * @param itemId
 	 * @param itemAmount
+	 * @author Stan van der Bend
+	 * <p>
+	 * This method will ensure this {@link Player} will receive the item(s)
+	 * defined by the params. 1): first try inventory 2): then try bank 3):
+	 * then try refund box 4): otherwise send error message
 	 */
 	public void giveItem(int itemId, int itemAmount) {
 

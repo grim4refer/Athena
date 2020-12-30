@@ -50,6 +50,7 @@ import com.athena.world.content.skill.impl.hunter.Hunter;
 import com.athena.world.content.skill.impl.slayer.Slayer;
 import com.athena.world.entity.impl.npc.NPC;
 
+
 public class PlayerHandler {
 
     public static Player getPlayerForName(String name) {
@@ -119,7 +120,7 @@ public class PlayerHandler {
                 .sendConfig(player.getFightType().getParentId(), player.getFightType().getChildId()).sendRunStatus()
                 .sendRunEnergy(player.getRunEnergy()).sendString(8135, "" + player.getMoneyInPouch())
                 .sendInteractionOption("Follow", 3, false).sendInteractionOption("Trade With", 4, false)
-                .sendInteractionOption("Gamble With", 2, false).sendInterfaceRemoval()
+                .sendInteractionOption("Gamble With", 5, false).sendInterfaceRemoval()
                 .sendString(39173, "@or2@Server time: @or2@[ @yel@" + Misc.getCurrentServerTime() + "@or2@ ]");
 
         Autocasting.onLogin(player);

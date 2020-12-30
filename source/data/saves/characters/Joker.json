@@ -1,5 +1,5 @@
 {
-  "total-play-time-ms": 42457272,
+  "total-play-time-ms": 4461878860,
   "username": "Joker",
   "password": "123",
   "email": "null",
@@ -12,8 +12,8 @@
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2737,
-    "y": 3472,
+    "x": 2739,
+    "y": 3464,
     "z": 0
   },
   "online-status": "ON",
@@ -23,13 +23,13 @@
   "starterclaimed": false,
   "pvm-rank": "BRONZE",
   "minutes-bonus-exp": -1,
-  "total-gained-exp": 567346,
+  "total-gained-exp": 37145308,
   "prestige-points": 0,
-  "achievement-points": 2,
+  "achievement-points": 4,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 33161,
-  "total-loyalty-points": 33161.0,
+  "loyalty-points": 50477,
+  "total-loyalty-points": 50477.0,
   "voting-points": 0,
   "slayer-points": 0,
   "pk-points": 0,
@@ -54,7 +54,7 @@
   "auto-retaliate": true,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 113043731,
+  "last-veng": 131010257,
   "fight-type": "UNARMED_PUNCH",
   "sol-effect": 0,
   "skull-timer": 0,
@@ -479,12 +479,12 @@
   ],
   "skills": {
     "level": [
+      99772,
+      99772,
+      99772,
+      99772,
       99,
-      99,
-      99,
-      990,
-      99,
-      990,
+      99999,
       99,
       99,
       99,
@@ -533,10 +533,10 @@
       99
     ],
     "experience": [
-      1000346048,
+      1022615728,
       1000000000,
       1000000000,
-      1000221298,
+      1014529580,
       1000000000,
       1000000000,
       1000000000,
@@ -563,7 +563,7 @@
   "inventory": [
     {
       "id": 15473,
-      "amount": 11078,
+      "amount": 11060,
       "slot": 0
     },
     {
@@ -587,12 +587,7 @@
       "slot": 0
     },
     {
-      "id": 19097,
-      "amount": 1,
-      "slot": 0
-    },
-    {
-      "id": 19095,
+      "id": 11423,
       "amount": 1,
       "slot": 0
     },
@@ -602,7 +597,7 @@
       "slot": 0
     },
     {
-      "id": 19099,
+      "id": 4644,
       "amount": 1,
       "slot": 0
     },
@@ -617,8 +612,13 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 11316,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 11320,
+      "amount": 25,
       "slot": 0
     },
     {
@@ -704,8 +704,28 @@
   ],
   "equipment": [
     {
+      "id": 19099,
+      "amount": 1,
+      "slot": 0
+    },
+    {
       "id": -1,
       "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": 20845,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -734,28 +754,8 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
+      "id": 19095,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -830,8 +830,13 @@
     0,
     0
   ],
-  "friends": [],
-  "ignores": [],
+  "friends": [
+    570215
+  ],
+  "ignores": [
+    2770636158119522406,
+    60518221366804485
+  ],
   "loyalty-titles": [
     false,
     false,
@@ -853,6 +858,13 @@
       "npcName": "Car",
       "amount": 2,
       "boss": false
+    },
+    {
+      "runningTotal": 3,
+      "npcId": 4413,
+      "npcName": "Dire Wolf",
+      "amount": 3,
+      "boss": true
     }
   ],
   "drops": [
@@ -863,7 +875,7 @@
     },
     {
       "item": 5022,
-      "amount": 200,
+      "amount": 2900,
       "rareDrop": false
     },
     {
@@ -889,6 +901,21 @@
     {
       "item": 1115,
       "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 2093,
+      "amount": 1,
+      "rareDrop": true
+    },
+    {
+      "item": 11320,
+      "amount": 75,
+      "rareDrop": false
+    },
+    {
+      "item": 2572,
+      "amount": 3,
       "rareDrop": false
     }
   ],
@@ -916,7 +943,7 @@
     0,
     0,
     0,
-    0,
+    3,
     0,
     0,
     0,
@@ -1013,6 +1040,7 @@
     false,
     false,
     false,
+    true,
     false,
     false,
     false,
@@ -1059,8 +1087,7 @@
     false,
     false,
     false,
-    false,
-    false,
+    true,
     false
   ],
   "achievements-progress": [
@@ -1087,7 +1114,7 @@
     0,
     0,
     0,
-    2229,
+    68136,
     0,
     0,
     2,
@@ -1109,13 +1136,13 @@
     0,
     0,
     0,
-    2229,
+    145673,
     0,
     0,
     0,
     0,
-    2,
-    0,
+    5,
+    3,
     0
   ],
   "max-cape-colors": [

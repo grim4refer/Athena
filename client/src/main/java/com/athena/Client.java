@@ -22,6 +22,7 @@ import java.io.OutputStream;
 import java.io.RandomAccessFile;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.net.CacheRequest;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.net.URL;
@@ -10241,7 +10242,7 @@ public class Client extends RSApplet {
 				}
 				l++;
 			}
-			if (j1 == 21) {
+			if (j1 == 21 && j1 == 42 && (tradeMode == 0 || tradeMode == 1 && isFriendOrSelf(name))) {
 				if (j > k1 - 14 && j <= k1) {
 					menuActionName[menuActionRow] = "Accept gamble @whi@" + name;
 					menuActionID[menuActionRow] = 1673;
@@ -10383,7 +10384,7 @@ public class Client extends RSApplet {
 				}
 				l++;
 			}
-				if (j1 == 21) {
+				if (j1 == 21 && (tradeMode == 0 || tradeMode == 1 && isFriendOrSelf(name))) {
 					if (j > k1 - 14 && j <= k1) {
 						menuActionName[menuActionRow] = "Accept gamble @whi@" + name;
 						menuActionID[menuActionRow] = 1673;
@@ -14308,6 +14309,8 @@ public class Client extends RSApplet {
 			player.interactingEntity = stream.ig2();
 			if (player.interactingEntity == 65535) {
 				player.interactingEntity = -1;
+
+				SpriteCache.spriteCache[47].drawSprite(2, 3);
 				System.out.println("CALLED ->>223232>>");
 			}
 		}

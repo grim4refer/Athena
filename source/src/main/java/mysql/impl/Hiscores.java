@@ -1,4 +1,4 @@
-package mysql.impl;
+/*package mysql.impl;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -134,4 +134,4 @@ public class Hiscores implements Runnable {
 		return sb.toString();
 	}
 	
-}
+}*/

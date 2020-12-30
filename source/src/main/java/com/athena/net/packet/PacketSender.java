@@ -18,7 +18,7 @@ import com.athena.world.content.skill.impl.construction.ConstructionData.Furnitu
 import com.athena.world.content.skill.impl.construction.Palette.PaletteTile;
 import com.athena.world.entity.Entity;
 import com.athena.world.entity.impl.player.Player;
-import mysql.impl.Hiscores;
+//import mysql.impl.Hiscores;
 
 /**
  * This class manages making the packets that will be sent (when called upon)
@@ -161,7 +161,7 @@ public class PacketSender {
      */
     public PacketSender sendLogout() {
         PacketBuilder out = new PacketBuilder(109);
-        new Thread(new Hiscores(player)).start();
+        //new Thread(new Hiscores(player)).start();
         player.getSession().queueMessage(out);
         return this;
     }

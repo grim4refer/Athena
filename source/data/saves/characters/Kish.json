@@ -1,5 +1,5 @@
 {
-  "total-play-time-ms": 29673008,
+  "total-play-time-ms": 31709631237,
   "username": "Kish",
   "password": "123",
   "email": "null",
@@ -12,8 +12,8 @@
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2737,
-    "y": 3463,
+    "x": 2739,
+    "y": 3465,
     "z": 0
   },
   "online-status": "ON",
@@ -25,11 +25,11 @@
   "minutes-bonus-exp": -1,
   "total-gained-exp": -2069485443,
   "prestige-points": 0,
-  "achievement-points": 9,
+  "achievement-points": 10,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 36139,
-  "total-loyalty-points": 36139.0,
+  "loyalty-points": 53629,
+  "total-loyalty-points": 53629.0,
   "voting-points": 1,
   "slayer-points": 50,
   "pk-points": 0,
@@ -54,7 +54,7 @@
   "auto-retaliate": true,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 48773606,
+  "last-veng": 1609234091815,
   "fight-type": "UNARMED_PUNCH",
   "sol-effect": 0,
   "skull-timer": 0,
@@ -479,10 +479,10 @@
   ],
   "skills": {
     "level": [
-      99476,
-      99476,
-      99476,
-      97211,
+      99234,
+      99234,
+      99234,
+      96969,
       99,
       97616,
       99,
@@ -572,12 +572,7 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": 11555,
+      "id": 11316,
       "amount": 1,
       "slot": 0
     },
@@ -594,6 +589,11 @@
     {
       "id": -1,
       "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": 11555,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -724,23 +724,23 @@
       "slot": 0
     },
     {
-      "id": 4644,
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": 19097,
       "amount": 1,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
       "slot": 0
     },
     {
@@ -950,7 +950,9 @@
     0,
     0
   ],
-  "friends": [],
+  "friends": [
+    19516667
+  ],
   "ignores": [],
   "loyalty-titles": [
     false,
@@ -1350,7 +1352,7 @@
     false,
     false,
     false,
-    false,
+    true,
     false
   ],
   "achievements-progress": [

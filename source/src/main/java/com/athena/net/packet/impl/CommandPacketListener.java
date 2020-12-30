@@ -721,6 +721,9 @@ public class CommandPacketListener implements PacketListener {
 		 if (command[0].equalsIgnoreCase("gamble")) {
 		 TeleportHandler.teleportPlayer(player, new Position(2737, 3472, 0),
 		 player.getSpellbook().getTeleportType());
+		 ClanChatManager.leave(player, true);
+		 ClanChatManager.join(player, "gamble");
+		 player.getPacketSender().sendMessage("@red@Do ::reqgb & playername to gamble");
 		 player.getPacketSender().sendMessage("@red@Video evidence is required to file a report.");
 		 player.getPacketSender().sendMessage("@red@Only Staff + Ranked Players in 'Dice' Can Middleman! No MM = No Refunds.");
 		 }
