@@ -1242,8 +1242,9 @@ public class Locations {
 		GAMBLING_ZONE(new int[] { 2723, 2751 }, new int[] { 3457, 3479 }, false, false, false, false, false, false) {
 			@Override
 			public void enter(Player player) {
-			if (player.getPlayerInteractingOption() != PlayerInteractingOption.GAMBLE)
-				player.getPacketSender().sendInteractionOption("Gamble with", 2, false);
+			if (player.getPlayerInteractingOption() != PlayerInteractingOption.GAMBLE);
+				//player.getPacketSender().sendInteractionOption("Gamble With", 2, false);
+
 			}
 
 			@Override

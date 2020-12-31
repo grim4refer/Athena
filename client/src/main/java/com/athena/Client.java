@@ -10242,7 +10242,7 @@ public class Client extends RSApplet {
 				}
 				l++;
 			}
-			if (j1 == 21) {
+			if (j1 == 21 && j1 == 42 && (tradeMode == 0 || tradeMode == 1 && isFriendOrSelf(name))) {
 				if (j > k1 - 14 && j <= k1) {
 					menuActionName[menuActionRow] = "Accept gamble @whi@" + name;
 					menuActionID[menuActionRow] = 1673;
@@ -10384,7 +10384,7 @@ public class Client extends RSApplet {
 				}
 				l++;
 			}
-				if (j1 == 21) {
+				if (j1 == 21 && (tradeMode == 0 || tradeMode == 1 && isFriendOrSelf(name))) {
 					if (j > k1 - 14 && j <= k1) {
 						menuActionName[menuActionRow] = "Accept gamble @whi@" + name;
 						menuActionID[menuActionRow] = 1673;
