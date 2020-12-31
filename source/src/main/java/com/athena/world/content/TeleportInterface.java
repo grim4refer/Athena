@@ -318,7 +318,7 @@ public class TeleportInterface {
 /*
  * Dungeons here
  */
-	public enum Cities {
+	public enum Cities { //events tab
 		TEST(50601, "Roy", "@bla@Roy", "@mag@It's a Multi Boss!", "@yel@Spawns every 1 minute!", "@yel@Teleport once he Spawns!", "", 2515, new int[] { 2580, 2572, 1 }),
 		GANO(50602, "Gano", "@red@Take this boss down!", "@mag@Gano's drops are invisible.", "", "", "", /*Replace this ID*/2070/*Replace this id*/,
 				new int[] { 3170, 2991, 0 }),

@@ -8173,10 +8173,10 @@ public class Client extends RSApplet {
 					}
 					doWalkTo(2, 0, 1, 0, myPlayer.pathY[0], 1, 0, class30_sub2_sub4_sub1_sub2_7.pathY[0],
 							myPlayer.pathX[0], false, class30_sub2_sub4_sub1_sub2_7.pathX[0]);
-					stream.createFrame(193);
-					stream.writeUnsignedWordBigEndian(playerIndices[j3]);
-					flag9 = true;
-					break;
+						stream.createFrame(193);
+						stream.writeUnsignedWordBigEndian(playerIndices[j3]);
+						System.out.println("Hello!");
+
 				}
 		if (!flag9) {
 					pushMessage("Unable to find " + s7 + ".", 0, "");
@@ -10242,13 +10242,14 @@ public class Client extends RSApplet {
 				}
 				l++;
 			}
-			if (j1 == 21 && j1 == 42 && (tradeMode == 0 || tradeMode == 1 && isFriendOrSelf(name))) {
+			if (j1 == 21) {
 				if (j > k1 - 14 && j <= k1) {
 					menuActionName[menuActionRow] = "Accept gamble @whi@" + name;
 					menuActionID[menuActionRow] = 1673;
 					menuActionRow++;
 				}
-				l++;
+
+				++l;
 			}
 			if (j1 == 12) {
 				if (j > k1 - 14 && j <= k1) {
@@ -10384,13 +10385,13 @@ public class Client extends RSApplet {
 				}
 				l++;
 			}
-				if (j1 == 21 && (tradeMode == 0 || tradeMode == 1 && isFriendOrSelf(name))) {
-					if (j > k1 - 14 && j <= k1) {
-						menuActionName[menuActionRow] = "Accept gamble @whi@" + name;
-						menuActionID[menuActionRow] = 1673;
-						menuActionRow++;
-					}
-					l++;
+			if (j1 == 21) {
+				if (j > k1 - 14 && j <= k1) {
+					menuActionName[menuActionRow] = "Accept gamble @whi@" + name;
+					menuActionID[menuActionRow] = 1673;
+					menuActionRow++;
+				}
+				l++;
 			}
 		}
 	}
@@ -17564,18 +17565,23 @@ public class Client extends RSApplet {
 						if (!flag2 && s3.length() >= 2) {
 							pushMessage("wishes to trade with you. Click here to accept the invitation.", 4, s3);
 						}
-					} else if (s.endsWith(":gamblereq:")) {
+						//TODO - This isn't being reached
+					}  if (s.endsWith(":gamblereq:")) {
 						String s21 = s.substring(0, s.indexOf(":"));
 						long l21 = TextClass.longForName(s21);
 						boolean flag2 = false;
-						for (int j27 = 0; j27 < ignoreCount; j27++) {
+						System.out.println("s21 reached");
+						for (int j27 = 0; j27 < ignoreCount; j27++) { //Idk what this loop is trying to do either
 							if (ignoreListAsLongs[j27] != l21) {
+								System.out.println("Reached j27;");
 								continue;
 							}
+							System.out.println("flag 2 true");
 							flag2 = true;
 
 						}
 						if (!flag2 && s21.length() >= 2) {
+							System.out.println("Sent gamble message");
 							pushMessage("wishes to gamble with you. Click here to accept the invitation.", 21, s21);
 						}
 					}else if(s.startsWith(":resetBox")) {

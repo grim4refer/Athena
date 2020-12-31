@@ -5,10 +5,13 @@ import com.athena.engine.task.impl.WalkToTask.FinalizedMovementTask;
 import com.athena.model.Locations;
 import com.athena.model.Locations.Location;
 import com.athena.world.World;
-import com.athena.world.content.gamblinginterface.GamblingInterface;
+//import com.athena.world.content.gamblinginterface.GamblingInterface;
 import com.athena.world.entity.impl.player.Player;
 
 public class GambleInvititationPacketListener implements PacketListener {
+
+	public static final int GAMBLE_OPCODE = 191;
+	public static final int CHATBOX_GAMBLE_OPCODE = 193;
 
 	@Override
 	public void handleMessage(Player player, Packet packet) {
@@ -27,8 +30,8 @@ public class GambleInvititationPacketListener implements PacketListener {
 			return;
 		Player target = World.getPlayers().get(index);
 
-		// System.out.println("Index: " + index);
-		// System.out.println("Name: " + target.getUsername());
+		System.out.println("Index: " + index);
+		System.out.println(": " + target.getUsername());
 		if (target == null || !Locations.goodDistance(player.getPosition(), target.getPosition(), 13))
 			return;
 		player.setWalkToTask(
@@ -45,7 +48,4 @@ public class GambleInvititationPacketListener implements PacketListener {
 					}
 				}));
 	}
-
-	public static final int GAMBLE_OPCODE = 191;
-	public static final int CHATBOX_GAMBLE_OPCODE = 193;
 }

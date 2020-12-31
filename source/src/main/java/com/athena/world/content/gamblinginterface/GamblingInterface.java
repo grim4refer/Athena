@@ -114,12 +114,11 @@ public class GamblingInterface {
                 if (getGambleWith() == player.getIndex())
                         return;
                 if (!Locations.goodDistance(player.getPosition().getX(), player.getPosition().getY(),
-                        player2.getPosition().getX(), player2.getPosition().getY(), 2)) {
+                        player2.getPosition().getX(), player2.getPosition().getY(), 10)) {
                         player.getPacketSender().sendMessage("Please get closer to request a gamble.");
                         return;
                 }
-                if (!inGamble() && player2.getGambling().gambleRequested()
-                        && player2.getGambling().getGambleWith() == player.getIndex()) {
+                if (!inGamble() && player2.getGambling().gambleRequested() && player2.getGambling().getGambleWith() == player.getIndex()) {
                         openGamble();
                         player2.getGambling().openGamble();
                 }

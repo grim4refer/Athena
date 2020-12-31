@@ -117,12 +117,12 @@ public class PlayerOwnedShopManager {
 			return;
 		}
 
-		if(KillsTracker.getTotalKills(player) < 100){
-			player.getPacketSender().sendMessage("You must have at least 100 npc kills to open pos.");
-			player.getPacketSender().sendInterfaceRemoval();
-			return;
-		}
-		player.getPacketSender().sendString(32610, "Player Owned Shops");
+		//if(KillsTracker.getTotalKills(player) < 100){
+			//player.getPacketSender().sendMessage("You must have at least 100 npc kills to open pos.");
+			//player.getPacketSender().sendInterfaceRemoval();
+			//return;
+		//}
+		//player.getPacketSender().sendString(32610, "Player Owned Shops");
 
 		int i = 0;
 		filtered.clear();
