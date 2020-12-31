@@ -227,7 +227,7 @@ public class PlayerHandler {
                 || player.getRights() == PlayerRights.ADMINISTRATOR) {
             World.sendMessage("<img=" + player.getRights().ordinal() + "><col=6600CC> "
                     + Misc.formatText(player.getRights().toString().toLowerCase()) + " " + player.getUsername()
-                    + " has just logged in, feel free to message them for support.");
+                    + " has just logged in, feel free to message me for support!");
         }
         if (player.getRights() == PlayerRights.DELUXE_DONATOR) {
             World.sendMessage("<img=" + player.getRights().ordinal() + "<shad=000066CC>"
