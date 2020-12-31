@@ -15789,17 +15789,17 @@ public class Client extends RSApplet {
 			chatTextDrawingArea.drawRegularText(true, (clientWidth - chatTextDrawingArea.getTextWidth(s) - 15) / 2,
 					16777215, s, y);
 		}
-
+// USERNAME + PASSWORD DRAWING LOCATIONS
 		if (loginScreenCursorPos == 0 && loopCycle % 45 < 10) {
-			chatTextDrawingArea.drawRegularText(true, 277, 0xffffff, myUsername + "|", 245);
+			chatTextDrawingArea.drawRegularText(true, 266, 0xffffff, myUsername + "|", 244);
 		} else {
-			chatTextDrawingArea.drawRegularText(true, 277, 0xffffff, myUsername, 245);
+			chatTextDrawingArea.drawRegularText(true, 266, 0xffffff, myUsername, 244);
 		}
 
 		if (loginScreenCursorPos == 1 && loopCycle % 45 < 10) {
-			chatTextDrawingArea.drawRegularText(true, 277, 0xffffff, getStars(myPassword) + "|", 313);
+			chatTextDrawingArea.drawRegularText(true, 266, 0xffffff, getStars(myPassword) + "|", 311);
 		} else {
-			chatTextDrawingArea.drawRegularText(true, 277, 0xffffff, getStars(myPassword), 313);
+			chatTextDrawingArea.drawRegularText(true, 266, 0xffffff, getStars(myPassword), 311);
 		}
 
 		// soundButton[muted ? 1 : 0].drawAdvancedSprite(clientWidth - 49 - 10,
