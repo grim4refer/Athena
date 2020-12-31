@@ -179,11 +179,7 @@ public class PlayerHandler {
         // DialogueManager.start(player, 177);
         player.getPacketSender().sendMessage("@blu@Welcome to Athena!@bla@");
         player.getPacketSender().sendMessage("@red@We hope you enjoy your stay at Athena");
-
-        if (player.getBetaTester()) {
-            World.sendMessage(
-                    "@bla@[@or2@Beta tester@bla@] @or2@" + player.getUsername() + "@bla@ has just logged in!");
-        }
+        
         if (player.experienceLocked()) {
             player.getPacketSender().sendMessage("@red@Warning: your experience is currently locked.");
         }
