@@ -1,34 +1,27 @@
 package com.athena;
+
 public class Configuration {
 
+	//True = Live | False = Local
+	public static final boolean LIVE = false;
 
-
-	public static final boolean LIVE = false; // if its online just put it true
-
-
+	//!Live = Local | Live = Live
 	public final static String HOST = !LIVE ? "localhost" : "51.91.51.88";
+
 	//public final static String HOST = "localhost";
-	public final static String JAGGRAB_HOST = "localhost"; //dev
+	public final static String JAGGRAB_HOST = "localhost";
 
+	// Port Server Will Be Running On
+	public final static int PORT = LIVE ? 43595 : 43595;
 
-	public final static int PORT = LIVE ? 43595 : 43595; // dev 13376    /13377
+	//Client Version
 	public final static int CLIENT_VERSION = 5;
+
+	//Client Name
 	public final static String CLIENT_NAME = "Athena";
 
-
-	/**
-	 * The NPC bits.
-	 * 12 = 317/377
-	 * 14 = 474+
-	 * 16 = 600+
-	 */
 	public final static int NPC_BITS = 18;
 
-
-	/*
-	 * Update-server enabled?
-	 * 94
-	 */
 	public static final boolean JAGCACHED_ENABLED = false;
 
 	public static int[] ITEMS_WITH_BLACK = {
@@ -42,8 +35,6 @@ public class Configuration {
 	public static int FOG_BEGIN_DEPTH = 3200;
 
 	public static int FOG_END_DEPTH = 3700;
-	
-	
 
 	public static final int[] packetSizes = {
 			0, 0, 0, 1, 6, 0, 0, 0, 4, 0, //0
@@ -74,5 +65,6 @@ public class Configuration {
 	        -1, 0, 0, -1, 6, 0, 0//250
 
 		};
+
 	public static  boolean upscaling = true;
 }
