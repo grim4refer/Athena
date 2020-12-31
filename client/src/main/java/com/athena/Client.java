@@ -15788,7 +15788,7 @@ public class Client extends RSApplet {
 			chatTextDrawingArea.drawRegularText(true, (clientWidth - chatTextDrawingArea.getTextWidth(s) - 15) / 2,
 					16777215, s, y);
 		}
-
+// USERNAME + PASSWORD DRAWING
 		if (loginScreenCursorPos == 0 && loopCycle % 45 < 10) {
 			chatTextDrawingArea.drawRegularText(true, 266, 0xffffff, myUsername + "|", 244);
 		} else {
