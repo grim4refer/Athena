@@ -4788,75 +4788,75 @@ public class RSInterface {
 		}
 		rsi.child(87, 18535, 472, 21);
 	}
-	private static void questTabInterfaceNew() {
-		RSInterface tab = addTabInterface(26600);
-		RSInterface scroll = addTabInterface(26700);
-		addHoverButtonWSpriteLoader(26601, 965, 85, 20, "Staff Online", -1, 26602, 1);
-		addHoveredImageWSpriteLoader(26602, 964, 85, 20, 26603);
-		addText(26609, "Staff Online", fonts, 0, 16750623, false, true);
-		addHoverButtonWSpriteLoader(26604, 965, 85, 20, "Kill Log", -1, 26605, 1);
-		addHoveredImageWSpriteLoader(26605, 964, 85, 20, 26606);
-		addText(26610, "Kill Log", fonts, 0, 16750623, false, true);
-		addSpriteLoader(26607, 967);
-		addText(26608, "Players Online: @gre@30", fonts, 2, 16750623, false, true);
-		addHoverButtonWSpriteLoader(26611, 965, 85, 20, "Player Profiles", -1, 26612, 1);
-		addHoveredImageWSpriteLoader(26612, 964, 85, 20, 26613);
-		addText(26617, "Player Panel", fonts, 0, 16750623, false, true);
-		addHoverButtonWSpriteLoader(26614, 965, 85, 20, "Drop Log", -1, 26615, 1);
-		addHoveredImageWSpriteLoader(26615, 964, 85, 20, 26616);
-		addText(26618, "Drop Log", fonts, 0, 16750623, false, true);
-		addSpriteLoader(26619, 722);
+		private static void questTabInterfaceNew() {
+			RSInterface tab = addTabInterface(26600);
+			RSInterface scroll = addTabInterface(26700);
+			addHoverButtonWSpriteLoader(26601, 965, 85, 20, "Staff Online", -1, 26602, 1);
+			addHoveredImageWSpriteLoader(26602, 964, 85, 20, 26603);
+			addText(26609, "Staff Online", fonts, 0, 16750623, false, true);
+			addHoverButtonWSpriteLoader(26604, 965, 85, 20, "Kill Log", -1, 26605, 1);
+			addHoveredImageWSpriteLoader(26605, 964, 85, 20, 26606);
+			addText(26610, "Kill Log", fonts, 0, 16750623, false, true);
+			addSpriteLoader(26607, 967);
+			addText(26608, "Players Online: @gre@30", fonts, 2, 16750623, false, true);
+			addHoverButtonWSpriteLoader(26611, 965, 85, 20, "Player Profiles", -1, 26612, 1);
+			addHoveredImageWSpriteLoader(26612, 964, 85, 20, 26613);
+			addText(26617, "Player Panel", fonts, 0, 16750623, false, true);
+			addHoverButtonWSpriteLoader(26614, 965, 85, 20, "Drop Log", -1, 26615, 1);
+			addHoveredImageWSpriteLoader(26615, 964, 85, 20, 26616);
+			addText(26618, "Drop Log", fonts, 0, 16750623, false, true);
+			addSpriteLoader(26619, 722);
 
-		addSpriteLoader(26624, 722);
+			addSpriteLoader(26624, 722);
 
-		addSpriteLoader(26621, 966);
-		addText(26622, "@or2@Crashed Star: @gre@ Home", fonts, 0, 16750623, false, true);
-		addText(26623, "@or2@Well of Goodwill: @gre@ Active", fonts, 0, 16750623, false, true);
-		addText(26625, "@or2@Evil Tree:@gre@ Home", fonts, 0, 16750623, false, true);
-		addText(26626, "@or2@Bonus:@gre@ Active", fonts, 0, 16750623, false, true);
-
-
-		tab.totalChildren(22);
-		tab.child(0, 26601, 7, 25);
-		tab.child(1, 26602, 7, 25);
-		tab.child(2, 26604, 7, 47);
-		tab.child(3, 26605, 7, 47);
-		tab.child(4, 26607, 1 / 2, -3);
-		tab.child(5, 26608, 33, 3);
-		tab.child(6, 26609, 16, 29);
-		tab.child(7, 26610, 30, 50);
-		tab.child(8, 26611, 100, 25);
-		tab.child(9, 26612, 100, 25);
-		tab.child(10, 26614, 100, 47);
-		tab.child(11, 26615, 100, 47);
-		tab.child(12, 26617, 112, 29);
-		tab.child(13, 26618, 122, 50);
-		tab.child(14, 26621, 0, 125);
-		tab.child(15, 26700, 0, 127);
-		tab.child(16, 26619, 0, 125);
-		tab.child(17, 26622, 5, 86);
-		tab.child(18, 26623, 5, 99);
-		tab.child(19, 26624, 0, 69);
-		tab.child(20, 26625, 5, 73);
-		tab.child(21, 26626, 5, 112);
+			addSpriteLoader(26621, 966);
+			addText(26622, "@or2@Crashed Star: @gre@ Home", fonts, 0, 16750623, false, true);
+			addText(26623, "@or2@Well of Goodwill: @gre@ Active", fonts, 0, 16750623, false, true);
+			addText(26625, "@or2@Evil Tree:@gre@ Home", fonts, 0, 16750623, false, true);
+			addText(26626, "@or2@Bonus:@gre@ Active", fonts, 0, 16750623, false, true);
 
 
-		scroll.totalChildren(70);
-		scroll.width = 174; scroll.height = 134; scroll.scrollMax = 1000;
-		int k = 0;
-		int y = 4;
-		for(int i = 26701; i < 26771; i++) {
-			scroll.child(k, i, 6, y);
-			y += 17;
-			k++;
-			if(i == 26723 || i == 26724) {
-				addClickableText(i, "test", "Open Quest Log", fonts, 0, 0xff0000, 167, 13);
-			} else {
+			tab.totalChildren(22);
+			tab.child(0, 26601, 7, 25);
+			tab.child(1, 26602, 7, 25);
+			tab.child(2, 26604, 7, 47);
+			tab.child(3, 26605, 7, 47);
+			tab.child(4, 26607, 1 / 2, -3);
+			tab.child(5, 26608, 33, 3);
+			tab.child(6, 26609, 16, 29);
+			tab.child(7, 26610, 30, 50);
+			tab.child(8, 26611, 100, 25);
+			tab.child(9, 26612, 100, 25);
+			tab.child(10, 26614, 100, 47);
+			tab.child(11, 26615, 100, 47);
+			tab.child(12, 26617, 112, 29);
+			tab.child(13, 26618, 122, 50);
+			tab.child(14, 26621, 0, 125);
+			tab.child(15, 26700, 0, 127);
+			tab.child(16, 26619, 0, 125);
+			tab.child(17, 26622, 5, 86);
+			tab.child(18, 26623, 5, 99);
+			tab.child(19, 26624, 0, 69);
+			tab.child(20, 26625, 5, 73);
+			tab.child(21, 26626, 5, 112);
 
-				addText(i, " ", fonts, 0, 0xff0000, false, true);
+
+			scroll.totalChildren(70);
+			scroll.width = 174; scroll.height = 134; scroll.scrollMax = 420;
+			int k = 0;
+			int y = 4;
+			for(int i = 26701; i < 26771; i++) {
+				scroll.child(k, i, 6, y);
+				y += 17;
+				k++;
+				if(i == 26723 || i == 26724) {
+					addClickableText(i, "test", "Open Quest Log", fonts, 0, 0xff0000, 167, 13);
+				} else {
+
+					addText(i, " ", fonts, 0, 0xff0000, false, true);
+				}
 			}
 		}
-	}
 	/*
 	 * Quest tab [PLAYER PANEL]
 	 */
@@ -5129,144 +5129,39 @@ public class RSInterface {
 	}
 
 	//End of Drop Table Interfaces
-	public static void questInterface() {
-		RSInterface Interface = addInterface(8134);
-		Interface.centerText = true;
-		addSprite(8135, 0, "QuestTab/QUESTBG");
-		addSprite(8136, 1, "QuestTab/QUESTBG");
-		addText(8144, "Quest Name", 0x000000, true, false, 52, fonts, 3);// 249 18
-		addHover(8137, 3, 0, 8138, 0, "QuestTab/CLOSE", 26, 23, "Close");
-		addHovered(8138, 1, "QuestTab/CLOSE", 26, 23, 8139);
-		setChildren(6, Interface);
-		setBounds(8136, 18, 4, 0, Interface);
-		setBounds(8135, 18, 62, 1, Interface);
-		setBounds(8144, 260, 15, 2, Interface);
-		setBounds(8140, 50, 86, 3, Interface);
-		setBounds(8137, 452, 63, 4, Interface);
-		setBounds(8138, 452, 63, 5, Interface);
-		Interface = addInterface(8140);
-		Interface.height = 217;
-		Interface.width = 404;
-		Interface.scrollMax = 1300;
-		setChildren(51, Interface);
-		int Ypos = 18;
-		int frameID = 0;
-		for (int iD = 8145; iD <= 8195; iD++) {
-			addText(iD, "j", 0x000080, true, false, 52, fonts, 1);
-			setBounds(iD, 202, Ypos, frameID, Interface);
-			frameID++;
-			Ypos += 19;
-			Ypos++;
-		}
-	}
-	//End of Drop Table Interfaces
 	private static void questTabInterface() {
 		RSInterface tab = addTabInterface(639);
 		RSInterface scroll = addTabInterface(15016);
-		addHoverButtonWSpriteLoader(26601, 965, 85, 20, "Staff Online", -1, 26602, 1);
-		addHoveredImageWSpriteLoader(26602, 964, 85, 20, 26603);
-		addText(26609, "Staff Online", fonts, 0, 16750623, false, true);
-		addHoverButtonWSpriteLoader(26604, 965, 85, 20, "Kill Log", -1, 26605, 1);
-		addHoveredImageWSpriteLoader(26605, 964, 85, 20, 26606);
-		addText(26610, "Kill Log", fonts, 0, 16750623, false, true);
-		addSpriteLoader(26607, 967);
-		addText(26608, "Players Online: @gre@30", fonts, 2, 16750623, false, true);
-		addHoverButtonWSpriteLoader(26611, 965, 85, 20, "Player Profiles", -1, 26612, 1);
-		addHoveredImageWSpriteLoader(26612, 964, 85, 20, 26613);
-		addText(26617, "Player Panel", fonts, 0, 16750623, false, true);
-		addHoverButtonWSpriteLoader(26614, 965, 85, 20, "Drop Log", -1, 26615, 1);
-		addHoveredImageWSpriteLoader(26615, 964, 85, 20, 26616);
-		addText(26618, "Drop Log", fonts, 0, 16750623, false, true);
-		addSpriteLoader(26619, 722);
-
-		addSpriteLoader(26624, 722);
-
-		addSpriteLoader(26621, 966);
-
-
-		tab.totalChildren(22);
-		tab.child(0, 26601, 7, 25);
-		tab.child(1, 26602, 7, 25);
-		tab.child(2, 26604, 7, 47);
-		tab.child(3, 26605, 7, 47);
-		tab.child(4, 26607, 1 / 2, -3);
-		tab.child(5, 26608, 33, 3);
-		tab.child(6, 26609, 16, 29);
-		tab.child(7, 26610, 30, 50);
-		tab.child(8, 26611, 100, 25);
-		tab.child(9, 26612, 100, 25);
-		tab.child(10, 26614, 100, 47);
-		tab.child(11, 26615, 100, 47);
-		tab.child(12, 26617, 112, 29);
-		tab.child(13, 26618, 122, 50);
-		tab.child(14, 26621, 0, 125);
-		tab.child(15, 26700, 0, 127);
-		tab.child(16, 26619, 0, 125);
-		tab.child(17, 26622, 5, 86);
-		tab.child(18, 26623, 5, 99);
-		tab.child(19, 26624, 0, 69);
-		tab.child(20, 26625, 5, 73);
-		tab.child(21, 26626, 5, 112);
-
-
-		scroll.totalChildren(70);
-		scroll.width = 174; scroll.height = 134; scroll.scrollMax = 420;
-		int k = 0;
-		int y = 4;
-		for(int i = 26701; i < 26771; i++) {
-			scroll.child(k, i, 6, y);
-			y += 17;
-			k++;
-			if(i == 26723 || i == 26724) {
-				addClickableText(i, "test", "Open Quest Log", fonts, 0, 0xff0000, 167, 13);
-			} else {
-
-				addText(i, " ", fonts, 0, 0xff0000, false, true);
-			}
-		}
-	}
-	/*	private static void questTabInterface() {
-		RSInterface tab = addTabInterface(639);
-		RSInterface scroll = addTabInterface(15016);
-		addText(39155, "Player Panel", fonts, 2, 16750623, false, true);
+		addText(39155, "Athena", fonts, 2, 16750623, false, true);
 		addSpriteLoader(39156, 722);
 		addSpriteLoader(39157, 723);
 		addSpriteLoader(39158, 722);
-		addButtonWSpriteLoader(39150, 229, "Staff Tab");
+//		addButtonWSpriteLoader(39150, 229, "Staff Tab");
 
 		scroll.totalChildren(55);
-		scroll.width = 174; scroll.height = 224; scroll.scrollMax = 810;
+		scroll.width = 174; scroll.height = 224; scroll.scrollMax = 810; // ok run client and check if it works.
+		addButtonWSpriteLoader(52800, 1222, "Refresh Player Panel");
 		tab.totalChildren(6);
 
-		tab.child(0, 39155, 5, 3);
+		tab.child(0, 39155, 5, 3); //got new pc today so when its set up youll be able to do work quicker ;p
 		tab.child(1, 39156, 0, 22);
-		tab.child(2, 39157, 0, 25);
+		tab.child(2, 39157, 0, 25); //whats the best way too learn about interfaces?  just play around?
 		tab.child(3, 39158, 0, 249);
 		tab.child(4, 15016, 0, 25);
-		tab.child(5, 39150, 170, 6);
+		tab.child(5, 52800, 140, 22); // open ur cache and show me what sprite u want as the refresh button.
+//		tab.child(5, 39150, 170, 6);   i aint got one lols.. well what button am i supposed to use xD  god knows, i might be able to find something  what size would it need to be?, sorta small.
 
 		int k = 0;
 		int y = 0;
 		for(int i = 39159; i < 39214; i++) {
-			scroll.child(k, i, 6, y);
+			scroll.child(k++, i, 6, y);
 			y += 16;
-			k++;
-			if(i == 39160) {
-				addClickableText(i, "", "View", fonts, 1, 0xff0000, 167, 13);
-			} else if(i == 39163) {
-				addClickableText(i, "", "Check", fonts, 1, 0xff0000, 167, 13);
-			} else if(i == 39171 || i == 39172) {
-				addClickableText(i, "", "Toggle", fonts, 1, 0xff0000, 167, 13);
-			} else if(i == 39199 || i == 39200) {
-				addClickableText(i, "", "Open Quest Log", fonts, 1, 0xff0000, 167, 13);
-			} else if(i == 39190 || i ==39191 || i >= 39203 && i <= 39208) {
-				addClickableText(i, "", "Open", fonts, 1, 0xff0000, 167, 13);
-			} else {
-				addText(i, "", fonts, 1, 0xff0000, false, true);
-			}
+//			k++;
+			addClickableText(i, "", "Select", fonts, 0, 0xff0000, false, true, 150);
 		}
 	}
-*/
+	//End of Drop Table Interfaces
+
 	private static void questTabInterface2() {
 		RSInterface tab = addTabInterface(55000);
 		RSInterface scroll = addTabInterface(55010);
