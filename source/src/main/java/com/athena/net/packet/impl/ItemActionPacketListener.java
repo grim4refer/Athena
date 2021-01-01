@@ -1199,7 +1199,7 @@ public class ItemActionPacketListener implements PacketListener {
 			if(player.getTotalPlayTime() >= 36000000 * 3) {
 				Gambling.rollDice(player);
 			} else {
-				player.sendMessage("@red@You need to play for atleast 30 hours before u can gamble");
+				player.sendMessage("@red@You need to play for at least 30 hours before u can gamble");
 				return;
 			}
 			break;
@@ -1211,7 +1211,7 @@ public class ItemActionPacketListener implements PacketListener {
 			if(player.getTotalPlayTime() >= 36000000 * 3) {
 				Gambling.plantSeed(player);
 			} else {
-				player.sendMessage("@red@You need to play for atleast 50 hours before u can gamble");
+				player.sendMessage("@red@You need to play for at least 50 hours before u can gamble");
 			}
 			break;
 		case 4155:
@@ -1238,17 +1238,15 @@ public class ItemActionPacketListener implements PacketListener {
 				return;
 			}
 
-			int[] items = itemId == 11858 ? new int[] {10350, 10348, 10346, 10352} : 
-				itemId == 11860 ? new int[]{10334, 10330, 10332, 10336} : 
-					itemId == 11862 ? new int[]{10342, 10338, 10340, 10344} : 
-						itemId == 11848 ? new int[]{4716, 4720, 4722, 4718} : 
-							itemId == 11856 ? new int[]{4753, 4757, 4759, 4755} : 
-								itemId == 11850 ? new int[]{4724, 4728, 4730, 4726} : 
-									itemId == 11854 ? new int[]{4745, 4749, 4751, 4747} : 
-										itemId == 11852 ? new int[]{4732, 4734, 4736, 4738} : 
-											itemId == 11846 ? new int[]{4708, 4712, 4714, 4710} :
-												new int[]{itemId};
-
+			int[] items = itemId == 11858 ? new int[] {10350, 10348, 10346, 10352} :
+				itemId == 11860 ? new int[]{10334, 10330, 10332, 10336} :
+					itemId == 11862 ? new int[]{10342, 10338, 10340, 10344} :
+						itemId == 11848 ? new int[]{4716, 4720, 4722, 4718} :
+							itemId == 11856 ? new int[]{4753, 4757, 4759, 4755} :
+								itemId == 11850 ? new int[]{4724, 4728, 4730, 4726} :
+									itemId == 11854 ? new int[]{4745, 4749, 4751, 4747} :
+										itemId == 11852 ? new int[]{4732, 4734, 4736, 4738} :
+												new int[]{4708, 4712, 4714, 4710};
 											if(player.getInventory().getFreeSlots() < items.length) {
 												player.getPacketSender().sendMessage("You do not have enough space in your inventory.");
 												return;
@@ -1300,7 +1298,7 @@ public class ItemActionPacketListener implements PacketListener {
 			break;
 			
 			case 7100:
-				int rewards3[][] = {
+				int[][] rewards3 = {
 						{11995,11996,11997,12001,12002,12003,12004,2771,2771,19935,12005,12006,11990,11981,11979,2090,2091}, //Uncommon, 0
 						{11991,11992,11993,11994,11989,11988,11987,11986,11985,11984,2759,2760,2761,2762,11983,11982,}, //Rare, 1
 						{2104,2758,2095,2096,2097,2098}
@@ -1445,7 +1443,7 @@ public class ItemActionPacketListener implements PacketListener {
 //        Dark_Lord_Body(3652, new Item[] {new Item(11316,250)}, 10, 3687),
 //        Dark_Lord_Legs(3653, new Item[] {new Item(11316,250)}, 10, 3688),
 //        Dark_Lord_Boots(3654, new
-                int rewards5[][] = {
+                int[][] rewards5 = {
                         {3651,3652,3653,3654,20511, 20257,11533}, //Uncommon, 0
                         { 18911,21059,21058,21057,21056,19787,19788,12424, 18989, 20089, 11423,11533, 3981, 20054, 18908, 11556 }, //Rare, 1
                         {18890,18891,18931,3692,2101,83,11533,3687,3688,3689, 19057,12424, 12425, 20089, 18989,13215, 3642, 3643,3644, 3645, 3647, 3648, 18890,11555}
@@ -1820,6 +1818,7 @@ public class ItemActionPacketListener implements PacketListener {
 		case 5509:
 		case 5510:
 		case 5512:
+			assert RunecraftingPouch.forId(itemId) != null;
 			RunecraftingPouches.check(player, RunecraftingPouch.forId(itemId));
 			break;
 		/*case 5023:
@@ -2099,7 +2098,7 @@ public class ItemActionPacketListener implements PacketListener {
 				}
 				break;
 				case 12423:
-				if(player.getRights() == PlayerRights.DELUXE_DONATOR || player.getRights() == PlayerRights.EXTREME_DONATOR || player.getRights() == PlayerRights.YOUTUBER || player.getRights() == PlayerRights.LEGENDARY_DONATOR ||player.getRights() == PlayerRights.UBER_DONATOR || player.getRights() == PlayerRights.SUPPORT || player.getRights() == PlayerRights.MODERATOR){
+				if(player.getRights() == PlayerRights.DELUXE_DONATOR || player.getRights() == PlayerRights.EXTREME_DONATOR || player.getRights() == PlayerRights.YOUTUBER || player.getRights() == PlayerRights.LEGENDARY_DONATOR ||player.getRights() == PlayerRights.UBER_DONATOR || player.getRights() == PlayerRights.OWNER || player.getRights() == PlayerRights.ADMINISTRATOR || player.getRights() == PlayerRights.FORUM_DEVELOPER || player.getRights() == PlayerRights.SUPPORT || player.getRights() == PlayerRights.MODERATOR){
 					player.sendMessage("You already have a higher tier donator rank!");
 				} else {
 					player.setRights(PlayerRights.EXTREME_DONATOR);
@@ -2109,7 +2108,7 @@ public class ItemActionPacketListener implements PacketListener {
 				}
 				break;
 				case 12424:
-				if(player.getRights() == PlayerRights.DELUXE_DONATOR || player.getRights() == PlayerRights.LEGENDARY_DONATOR || player.getRights() == PlayerRights.YOUTUBER || player.getRights() == PlayerRights.UBER_DONATOR || player.getRights() == PlayerRights.SUPPORT || player.getRights() == PlayerRights.MODERATOR){
+				if(player.getRights() == PlayerRights.DELUXE_DONATOR || player.getRights() == PlayerRights.LEGENDARY_DONATOR || player.getRights() == PlayerRights.YOUTUBER || player.getRights() == PlayerRights.UBER_DONATOR || player.getRights() == PlayerRights.SUPPORT || player.getRights() == PlayerRights.OWNER || player.getRights() == PlayerRights.ADMINISTRATOR || player.getRights() == PlayerRights.FORUM_DEVELOPER || player.getRights() == PlayerRights.MODERATOR){
 					player.sendMessage("You already have a higher tier donator rank!");
 				} else {
 					player.setRights(PlayerRights.LEGENDARY_DONATOR);
@@ -2120,7 +2119,7 @@ public class ItemActionPacketListener implements PacketListener {
 				break;
 
 				case 12425:
-				if(player.getRights() == PlayerRights.DELUXE_DONATOR || player.getRights() == PlayerRights.UBER_DONATOR || player.getRights() == PlayerRights.SUPPORT || player.getRights() == PlayerRights.YOUTUBER || player.getRights() == PlayerRights.MODERATOR){
+				if(player.getRights() == PlayerRights.DELUXE_DONATOR || player.getRights() == PlayerRights.UBER_DONATOR || player.getRights() == PlayerRights.SUPPORT || player.getRights() == PlayerRights.YOUTUBER || player.getRights() == PlayerRights.OWNER || player.getRights() == PlayerRights.ADMINISTRATOR || player.getRights() == PlayerRights.FORUM_DEVELOPER || player.getRights() == PlayerRights.MODERATOR){
 					player.sendMessage("You already have a higher tier donator rank!");
 				} else {
 					player.setRights(PlayerRights.UBER_DONATOR);
@@ -2130,7 +2129,7 @@ public class ItemActionPacketListener implements PacketListener {
 				}
 				break;
 				case 20985:
-				if(player.getRights() == PlayerRights.DELUXE_DONATOR || player.getRights() == PlayerRights.YOUTUBER || player.getRights() == PlayerRights.SUPPORT || player.getRights() == PlayerRights.MODERATOR){
+				if(player.getRights() == PlayerRights.DELUXE_DONATOR || player.getRights() == PlayerRights.YOUTUBER || player.getRights() == PlayerRights.SUPPORT || player.getRights() == PlayerRights.OWNER || player.getRights() == PlayerRights.ADMINISTRATOR || player.getRights() == PlayerRights.FORUM_DEVELOPER || player.getRights() == PlayerRights.MODERATOR){
 					player.sendMessage("You already have a higher tier donator rank!");
 				} else {
 					player.setRights(PlayerRights.DELUXE_DONATOR);
