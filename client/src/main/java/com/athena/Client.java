@@ -4265,7 +4265,9 @@ public class Client extends RSApplet {
 											menuActionCmd3[menuActionRow] = child.id;
 											menuActionRow++;
 										}
-									} else {
+									}
+									//shift dropping method
+									else {
 										int dropActionIndex = -1;
 										for(int act = 0; act < itemDef.actions.length; act++) {
 											if(itemDef.actions != null && itemDef.actions[act] != null &&
