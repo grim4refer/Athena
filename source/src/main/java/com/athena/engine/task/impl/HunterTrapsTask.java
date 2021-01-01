@@ -1,7 +1,5 @@
 package com.athena.engine.task.impl;
 
-import java.util.Iterator;
-
 import com.athena.engine.task.Task;
 import com.athena.engine.task.TaskManager;
 import com.athena.world.content.skill.impl.hunter.Hunter;
@@ -16,9 +14,7 @@ public class HunterTrapsTask extends Task {
 
 	@Override
 	protected void execute() {
-		final Iterator<Trap> iterator = Hunter.traps.iterator();
-		while (iterator.hasNext()) {
-			final Trap trap = iterator.next();
+		for (Trap trap : Hunter.traps) {
 			if (trap == null)
 				continue;
 			if (trap.getOwner() == null || !trap.getOwner().isRegistered())

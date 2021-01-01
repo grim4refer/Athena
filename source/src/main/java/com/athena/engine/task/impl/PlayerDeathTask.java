@@ -102,7 +102,7 @@ public class PlayerDeathTask extends Task {
 					boolean spawnItems = loc != Location.NOMAD && !(loc == Location.GODWARS_DUNGEON && player.getMinigameAttributes().getGodwarsDungeonAttributes().hasEnteredRoom());
 					if(dropItems) {
 						itemsToKeep = ItemsKeptOnDeath.getItemsToKeep(player);
-						final CopyOnWriteArrayList<Item> playerItems = new CopyOnWriteArrayList<Item>();
+						final CopyOnWriteArrayList<Item> playerItems = new CopyOnWriteArrayList<>();
 						playerItems.addAll(player.getInventory().getValidItems());
 						playerItems.addAll(player.getEquipment().getValidItems());
 						final Position position = player.getPosition();
@@ -114,7 +114,7 @@ public class PlayerDeathTask extends Task {
 								continue;
 							}
 							if(spawnItems) {
-								if(item != null && item.getId() > 0 && item.getAmount() > 0) {
+								if(item.getId() > 0 && item.getAmount() > 0) {
 									GroundItemManager.spawnGroundItem((killer != null && killer.getGameMode() == GameMode.NORMAL ? killer : player), new GroundItem(item, position, killer != null ? killer.getUsername() : player.getUsername(), player.getHostAddress(), false, 150, true, 150));
 								}
 							}
@@ -194,35 +194,19 @@ public class PlayerDeathTask extends Task {
 	
 
 	public static String randomDeath(String name) {
-		switch (RandomUtility.getRandom(8)) {
-		case 0:
-			return "There is no escape, " + Misc.formatText(name)
-					+ "...";
-		case 1:
-			return "Muahahahaha!";
-		case 2:
-			return "You belong to me!";
-		case 3:
-			return "Beware mortals, " + Misc.formatText(name)
-					+ " travels with me!";
-		case 4:
-			return "Your time here is over, " + Misc.formatText(name)
-					+ "!";
-		case 5:
-			return "Now is the time you die, " + Misc.formatText(name)
-					+ "!";
-		case 6:
-			return "I claim " + Misc.formatText(name) + " as my own!";
-		case 7:
-			return "" + Misc.formatText(name) + " is mine!";
-		case 8:
-			return "Let me escort you back to Edgeville, "
-					+ Misc.formatText(name) + "!";
-		case 9:
-			return "I have come for you, " + Misc.formatText(name)
-					+ "!";
-		}
-		return "";
+		return switch (RandomUtility.getRandom(8)) {
+			case 0 -> "There is no escape, " + Misc.formatText(name) + "...";
+			case 1 -> "Muahahahaha!";
+			case 2 -> "You belong to me!";
+			case 3 -> "Beware mortals, " + Misc.formatText(name) + " travels with me!";
+			case 4 -> "Your time here is over, " + Misc.formatText(name) + "!";
+			case 5 -> "Now is the time you die, " + Misc.formatText(name) + "!";
+			case 6 -> "I claim " + Misc.formatText(name) + " as my own!";
+			case 7 -> "" + Misc.formatText(name) + " is mine!";
+			case 8 -> "Let me escort you back to Edgeville, " + Misc.formatText(name) + "!";
+			case 9 -> "I have come for you, " + Misc.formatText(name) + "!";
+			default -> "";
+		};
 	}
 
 }

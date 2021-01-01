@@ -63,7 +63,7 @@ public class NPCDeathTask extends Task {
 	/**
 	 * The amount of ticks on the task.
 	 */
-	private int ticks = 2;
+	private int ticks;
 
 	/**
 	 * The player who killed the NPC
@@ -87,7 +87,6 @@ public class NPCDeathTask extends Task {
 				npc.getMovementQueue().setLockMovement(true).reset();
 				if(npc.getId() == 2070) {
 					Ganodermic.ganoAlive = false;
-					/** not done yet **/
 					Ganodermic.handleDrop(npc);
 					World.sendMessage("[<col=01701d>PVM</col>] @red@The beast has been slain!");
 					for(int i = 0; i < GanodermicNPC.messagesSent.length; i++) {
@@ -127,10 +126,9 @@ public class NPCDeathTask extends Task {
 						killer.setArcticPSPoints(killer.getArcticPSPoints() + 10);
 						killer.sendMessage("<img=0>You now have @red@" + killer.getArcticPSPoints() + " Athena Points!");
 					}
-					if(npc.getId() == 6305) { //<-- CHANGE THIS.
-						//Voting.VOTES = 0;
+					//<-- CHANGE THIS.
+					//Voting.VOTES = 0;
 					//	Voting.handleKilledVotingBoss(killer);
-					}
 					Achievements.doProgress(killer, AchievementData.DEFEAT_10000_MONSTERS);
 					if(npc.getId() == 8528) {
 						Achievements.finishAchievement(killer, AchievementData.DEFEAT_NOMAD);

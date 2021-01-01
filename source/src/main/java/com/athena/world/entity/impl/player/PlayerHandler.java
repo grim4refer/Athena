@@ -166,17 +166,14 @@ public class PlayerHandler {
         VotingContest.onLogin(player);
         Locations.login(player);
 
-        if (!player.didReceiveStarter()) {
-            // player.getInventory().add(995, 1000000).add(15501, 1).add(1153, 1).add(1115,
-            // 1).add(1067, 1).add(1323, 1).add(1191, 1).add(841, 1).add(882, 50).add(1167,
-            // 1).add(1129, 1).add(1095, 1).add(1063, 1).add(579, 1).add(577, 1).add(1011,
-            // 1).add(1379, 1).add(556, 50).add(558, 50).add(557, 50).add(555, 50).add(1351,
-            // 1).add(1265, 1).add(1712, 1).add(11118, 1).add(1007, 1).add(1061,
-            // 1).add(1419, 1);
-
-            // player.setReceivedStarter(true);
-        }
-        // DialogueManager.start(player, 177);
+        player.didReceiveStarter();// player.getInventory().add(995, 1000000).add(15501, 1).add(1153, 1).add(1115,
+// 1).add(1067, 1).add(1323, 1).add(1191, 1).add(841, 1).add(882, 50).add(1167,
+// 1).add(1129, 1).add(1095, 1).add(1063, 1).add(579, 1).add(577, 1).add(1011,
+// 1).add(1379, 1).add(556, 50).add(558, 50).add(557, 50).add(555, 50).add(1351,
+// 1).add(1265, 1).add(1712, 1).add(11118, 1).add(1007, 1).add(1061,
+// 1).add(1419, 1);
+// player.setReceivedStarter(true);
+// DialogueManager.start(player, 177);
         player.getPacketSender().sendMessage("@blu@Welcome to Athena!@bla@");
         ///player.getPacketSender().sendMessage("@red@We hope you enjoy your stay at Athena");
         

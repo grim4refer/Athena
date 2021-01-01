@@ -6,5 +6,5 @@ public enum GraphicHeight {
 	
 	MIDDLE,
 	
-	HIGH;
+	HIGH
 }

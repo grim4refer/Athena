@@ -9,5 +9,5 @@ package com.athena.model;
 public enum Gender {
 	
 	MALE,
-	FEMALE;
+	FEMALE
 }

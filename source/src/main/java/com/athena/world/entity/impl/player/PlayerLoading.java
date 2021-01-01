@@ -6,13 +6,7 @@ import java.io.FileReader;
 import java.io.ObjectInputStream;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Deque;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 import java.util.stream.Stream;
 
 import com.athena.engine.task.impl.FamiliarSpawnTask;
@@ -144,7 +138,7 @@ public class PlayerLoading {
 					int defaultLength = player.getStarterTaskAttributes().getCompletion().length;
 				//	System.out.println("load length: "+ loadedCompletion.length + " default: " + defaultLength);
 					if (loadedCompletion.length < defaultLength) {
-						System.out.println("load length: "+ loadedCompletion + " default: " + defaultLength);
+						System.out.println("load length: "+ Arrays.toString(loadedCompletion) + " default: " + defaultLength);
 						for (int index = 0; index < defaultLength - 1; index++) {
 							if (index < loadedCompletion.length) {
 								System.out.println("what is this: " + index);
@@ -313,7 +307,7 @@ public class PlayerLoading {
 				player.setFightType(FightType.valueOf(reader.get("fight-type").getAsString()));
 			}
 			if (reader.has("sol-effect")) {
-				player.setStaffOfLightEffect(Integer.valueOf(reader.get("sol-effect").getAsInt()));
+				player.setStaffOfLightEffect(reader.get("sol-effect").getAsInt());
 			}
 			if (reader.has("skull-timer")) {
 				player.setSkullTimer(reader.get("skull-timer").getAsInt());
@@ -411,7 +405,7 @@ public class PlayerLoading {
                     if(object.getId() > 0)
                         filter.add(object);
                 });
-                KillsTracker.submit(player, filter.toArray(new KillsEntry[filter.size()]));
+                KillsTracker.submit(player, filter.toArray(new KillsEntry[0]));
             }
 
 			if (reader.has("drops")) {
@@ -468,11 +462,10 @@ public class PlayerLoading {
 			}
 
 			if (reader.has("killed-players")) {
-				List<String> list = new ArrayList<String>();
+				List<String> list = new ArrayList<>();
 				String[] killed_players = builder.fromJson(reader.get("killed-players").getAsJsonArray(),
 						String[].class);
-				for (String s : killed_players)
-					list.add(s);
+				Collections.addAll(list, killed_players);
 				player.getPlayerKillingAttributes().setKilledPlayers(list);
 			}
 

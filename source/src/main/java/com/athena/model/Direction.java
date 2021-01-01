@@ -57,15 +57,6 @@ public enum Direction {
 	 */
 	public static final Direction[] EMPTY_DIRECTION_ARRAY = new Direction[0];
 
-	// // north west
-	// // north
-	// // north east
-	// , west
-	// , east
-	// // south west
-	// // south
-	// // south east
-
 	/**
 	 * Creates a direction from the differences between X and Y.
 	 * 
@@ -123,31 +114,22 @@ public enum Direction {
 	 * @param intValue
 	 *            The direction as an integer.
 	 */
-	private Direction(int intValue) {
+	Direction(int intValue) {
 		this.intValue = intValue;
 	}
 
 	public int[] getDirectionDelta() {
-		switch (this) {
-		case NORTH:
-			return new int[] { 0, 1 };
-		case NORTH_EAST:
-			return new int[] { 1, 1 }; // TODO: check
-		case EAST:
-			return new int[] { 1, 0 };
-		case SOUTH_EAST:
-			return new int[] { 1, -1 }; // TODO: check
-		case SOUTH:
-			return new int[] { 0, -1 };
-		case SOUTH_WEST:
-			return new int[] { -1, -1 }; // TODO: check
-		case WEST:
-			return new int[] { -1, 0 };
-		case NORTH_WEST:
-			return new int[] { -1, 1 }; // TODO: check
-		default:
-			return new int[] { 0, 0 };
-		}
+		return switch (this) {
+			case NORTH -> new int[]{0, 1};
+			case NORTH_EAST -> new int[]{1, 1};
+			case EAST -> new int[]{1, 0};
+			case SOUTH_EAST -> new int[]{1, -1};
+			case SOUTH -> new int[]{0, -1};
+			case SOUTH_WEST -> new int[]{-1, -1};
+			case WEST -> new int[]{-1, 0};
+			case NORTH_WEST -> new int[]{-1, 1};
+			default -> new int[]{0, 0};
+		};
 	}
 
 	/**
@@ -161,7 +143,6 @@ public enum Direction {
 	public int getX() {
 		return intValue;
 	}
-
 	public int getY() {
 		return intValue;
 	}

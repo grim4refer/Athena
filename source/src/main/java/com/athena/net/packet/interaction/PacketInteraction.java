@@ -35,7 +35,7 @@ public abstract class PacketInteraction {
 
 		ITEM_ON_GROUND_ITEM,
 
-		ITEM_ON_PLAYER;
+		ITEM_ON_PLAYER
 	}
 
 	/**

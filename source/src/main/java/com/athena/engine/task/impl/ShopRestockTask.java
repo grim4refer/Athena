@@ -37,7 +37,7 @@ public class ShopRestockTask extends Task {
 		} else {
 			for(Item it : shop.getValidItems()) {
 				int delete = getDeleteRatio(it.getAmount());
-				shop.delete(it.getId(), delete > 1 ? delete : 1);
+				shop.delete(it.getId(), Math.max(delete, 1));
 			}
 		}
 		shop.publicRefresh();

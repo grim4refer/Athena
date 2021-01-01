@@ -17,14 +17,6 @@ public class Hit {
     
     private CombatIcon combatIcon;
 
-    /**
-     * Create a new {@link Hit}.
-     * 
-     * @param damage
-     *            the amount of damage in this hit.
-     * @param type
-     *            the type of hit this is.
-     */
     public Hit(int damage, Hitmask hitmask, CombatIcon combatIcon) {
         this.damage = damage;
         this.hitmask = hitmask;
@@ -33,19 +25,13 @@ public class Hit {
         this.modify();
     }
 
-    /**
-     * Create a new {@link Hit} with a default {@link HitType} of
-     * <code>NORMAL</code>.
-     * 
-     * @param damage
-     *            the amount of damage in this hit.
-     */
     public Hit(int damage) {
         this(damage, Hitmask.RED, CombatIcon.MELEE);
     }
 
     @Override
-    public Hit clone() {
+    public Hit clone() throws CloneNotSupportedException {
+        Hit clone = (Hit) super.clone();
         return new Hit(damage, hitmask, combatIcon);
     }
 
@@ -54,7 +40,6 @@ public class Hit {
         if (!(o instanceof Hit)) {
             return false;
         }
-
         Hit hit = (Hit) o;
         return (hit.damage == damage && hit.hitmask == hitmask && hit.combatIcon == combatIcon);
     }

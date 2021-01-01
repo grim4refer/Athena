@@ -55,86 +55,85 @@ public class PlayerSaving {
 			object.addProperty("loyalty-title", player.getLoyaltyTitle().name());
 			object.add("position", builder.toJsonTree(player.getPosition()));
 			object.addProperty("online-status", player.getRelations().getStatus().name());
-			object.addProperty("given-starter", new Boolean(player.didReceiveStarter()));
-			object.addProperty("money-pouch", new Long(player.getMoneyInPouch()));
-			object.addProperty("donated", new Long(player.getAmountDonated()));
-			object.addProperty("starterclaimed", new Boolean(player.starterClaimed));
+			object.addProperty("given-starter", player.didReceiveStarter());
+			object.addProperty("money-pouch", player.getMoneyInPouch());
+			object.addProperty("donated", (long) player.getAmountDonated());
+			object.addProperty("starterclaimed", player.starterClaimed);
 
 			object.addProperty("pvm-rank", player.getPvMRanking().getRank());
 
-			object.addProperty("minutes-bonus-exp", new Integer(player.getMinutesBonusExp()));
-			object.addProperty("total-gained-exp", new Long(player.getSkillManager().getTotalGainedExp()));
-			object.addProperty("prestige-points", new Integer(player.getPointsHandler().getPrestigePoints()));
-			object.addProperty("achievement-points", new Integer(player.getPointsHandler().getAchievementPoints()));
-			object.addProperty("dung-tokens", new Integer(player.getPointsHandler().getDungeoneeringTokens()));
-			object.addProperty("commendations", new Integer(player.getPointsHandler().getCommendations()));
-			object.addProperty("loyalty-points", new Integer(player.getPointsHandler().getLoyaltyPoints()));
-			object.addProperty("total-loyalty-points",
-					new Double(player.getAchievementAttributes().getTotalLoyaltyPointsEarned()));
-			object.addProperty("voting-points", new Integer(player.getPointsHandler().getVotingPoints()));
-			object.addProperty("slayer-points", new Integer(player.getPointsHandler().getSlayerPoints()));
+			object.addProperty("minutes-bonus-exp", player.getMinutesBonusExp());
+			object.addProperty("total-gained-exp", player.getSkillManager().getTotalGainedExp());
+			object.addProperty("prestige-points", player.getPointsHandler().getPrestigePoints());
+			object.addProperty("achievement-points", player.getPointsHandler().getAchievementPoints());
+			object.addProperty("dung-tokens", player.getPointsHandler().getDungeoneeringTokens());
+			object.addProperty("commendations", (player.getPointsHandler().getCommendations()));
+			object.addProperty("loyalty-points", (player.getPointsHandler().getLoyaltyPoints()));
+			object.addProperty("total-loyalty-points", (player.getAchievementAttributes().getTotalLoyaltyPointsEarned()));
+			object.addProperty("voting-points", (player.getPointsHandler().getVotingPoints()));
+			object.addProperty("slayer-points", (player.getPointsHandler().getSlayerPoints()));
 		
 
-			object.addProperty("pk-points", new Integer(player.getPointsHandler().getPkPoints()));
-			object.addProperty("donation-points", new Integer(player.getPointsHandler().getDonationPoints()));
-			object.addProperty("trivia-points", new Integer(player.getPointsHandler().getTriviaPoints()));
-			object.addProperty("cluescompleted", new Integer(ClueScrolls.getCluesCompleted()));
+			object.addProperty("pk-points", (player.getPointsHandler().getPkPoints()));
+			object.addProperty("donation-points", (player.getPointsHandler().getDonationPoints()));
+			object.addProperty("trivia-points", (player.getPointsHandler().getTriviaPoints()));
+			object.addProperty("cluescompleted", (ClueScrolls.getCluesCompleted()));
 
-			object.addProperty("player-kills", new Integer(player.getPlayerKillingAttributes().getPlayerKills()));
+			object.addProperty("player-kills", (player.getPlayerKillingAttributes().getPlayerKills()));
 			object.addProperty("player-killstreak",
-					new Integer(player.getPlayerKillingAttributes().getPlayerKillStreak()));
-			object.addProperty("player-deaths", new Integer(player.getPlayerKillingAttributes().getPlayerDeaths()));
+					(player.getPlayerKillingAttributes().getPlayerKillStreak()));
+			object.addProperty("player-deaths", player.getPlayerKillingAttributes().getPlayerDeaths());
 			object.addProperty("target-percentage",
-					new Integer(player.getPlayerKillingAttributes().getTargetPercentage()));
-			object.addProperty("bh-rank", new Integer(player.getAppearance().getBountyHunterSkull()));
-			object.addProperty("beta-tester", new Boolean(player.getBetaTester()));
+					player.getPlayerKillingAttributes().getTargetPercentage());
+			object.addProperty("bh-rank", player.getAppearance().getBountyHunterSkull());
+			object.addProperty("beta-tester", player.getBetaTester());
 			object.addProperty("gender", player.getAppearance().getGender().name());
 			object.addProperty("spell-book", player.getSpellbook().name());
-			object.addProperty("shop-updated", new Boolean(player.isShopUpdated()));
-			object.addProperty("shop-earnings", new Long(player.getPlayerOwnedShopManager().getEarnings()));
+			object.addProperty("shop-updated", player.isShopUpdated());
+			object.addProperty("shop-earnings", player.getPlayerOwnedShopManager().getEarnings());
 			object.addProperty("prayer-book", player.getPrayerbook().name());
-			object.addProperty("running", new Boolean(player.isRunning()));
-			object.addProperty("run-energy", new Integer(player.getRunEnergy()));
-			object.addProperty("music", new Boolean(player.musicActive()));
-			object.addProperty("sounds", new Boolean(player.soundsActive()));
-			object.addProperty("auto-retaliate", new Boolean(player.isAutoRetaliate()));
-			object.addProperty("xp-locked", new Boolean(player.experienceLocked()));
-			object.addProperty("veng-cast", new Boolean(player.hasVengeance()));
-			object.addProperty("last-veng", new Long(player.getLastVengeance().elapsed()));
+			object.addProperty("running", (player.isRunning()));
+			object.addProperty("run-energy", player.getRunEnergy());
+			object.addProperty("music", player.musicActive());
+			object.addProperty("sounds", player.soundsActive());
+			object.addProperty("auto-retaliate", (player.isAutoRetaliate()));
+			object.addProperty("xp-locked", (player.experienceLocked()));
+			object.addProperty("veng-cast", (player.hasVengeance()));
+			object.addProperty("last-veng", (player.getLastVengeance().elapsed()));
 			object.addProperty("fight-type", player.getFightType().name());
-			object.addProperty("sol-effect", new Integer(player.getStaffOfLightEffect()));
-			object.addProperty("skull-timer", new Integer(player.getSkullTimer()));
-			object.addProperty("accept-aid", new Boolean(player.isAcceptAid()));
-			object.addProperty("poison-damage", new Integer(player.getPoisonDamage()));
-			object.addProperty("poison-immunity", new Integer(player.getPoisonImmunity()));
-			object.addProperty("overload-timer", new Integer(player.getOverloadPotionTimer()));
-			object.addProperty("fire-immunity", new Integer(player.getFireImmunity()));
-			object.addProperty("fire-damage-mod", new Integer(player.getFireDamageModifier()));
-			object.addProperty("prayer-renewal-timer", new Integer(player.getPrayerRenewalPotionTimer()));
-			object.addProperty("teleblock-timer", new Integer(player.getTeleblockTimer()));
-			object.addProperty("special-amount", new Integer(player.getSpecialPercentage()));
+			object.addProperty("sol-effect", (player.getStaffOfLightEffect()));
+			object.addProperty("skull-timer", (player.getSkullTimer()));
+			object.addProperty("accept-aid", (player.isAcceptAid()));
+			object.addProperty("poison-damage", (player.getPoisonDamage()));
+			object.addProperty("poison-immunity", (player.getPoisonImmunity()));
+			object.addProperty("overload-timer", (player.getOverloadPotionTimer()));
+			object.addProperty("fire-immunity", (player.getFireImmunity()));
+			object.addProperty("fire-damage-mod", (player.getFireDamageModifier()));
+			object.addProperty("prayer-renewal-timer", (player.getPrayerRenewalPotionTimer()));
+			object.addProperty("teleblock-timer", (player.getTeleblockTimer()));
+			object.addProperty("special-amount", (player.getSpecialPercentage()));
 			object.addProperty("entered-gwd-room",
-					new Boolean(player.getMinigameAttributes().getGodwarsDungeonAttributes().hasEnteredRoom()));
+					(player.getMinigameAttributes().getGodwarsDungeonAttributes().hasEnteredRoom()));
 			object.addProperty("gwd-altar-delay",
-					new Long(player.getMinigameAttributes().getGodwarsDungeonAttributes().getAltarDelay()));
+					(player.getMinigameAttributes().getGodwarsDungeonAttributes().getAltarDelay()));
 			object.add("gwd-killcount",
 					builder.toJsonTree(player.getMinigameAttributes().getGodwarsDungeonAttributes().getKillcount()));
-			object.addProperty("lastDonationClaim", new Long(player.lastDonationClaim));
-			object.addProperty("effigy", new Integer(player.getEffigy()));
-			object.addProperty("summon-npc", new Integer(player.getSummoning().getFamiliar() != null
+			object.addProperty("lastDonationClaim", (player.lastDonationClaim));
+			object.addProperty("effigy", (player.getEffigy()));
+			object.addProperty("summon-npc", (player.getSummoning().getFamiliar() != null
 					? player.getSummoning().getFamiliar().getSummonNpc().getId() : -1));
-			object.addProperty("summon-death", new Integer(player.getSummoning().getFamiliar() != null
+			object.addProperty("summon-death", (player.getSummoning().getFamiliar() != null
 					? player.getSummoning().getFamiliar().getDeathTimer() : -1));
-			object.addProperty("process-farming", new Boolean(player.shouldProcessFarming()));
-			object.addProperty("indung", new Boolean(player.isInDung()));
+			object.addProperty("process-farming", (player.shouldProcessFarming()));
+			object.addProperty("indung", (player.isInDung()));
 			object.add("hcimdunginventory", builder.toJsonTree(player.getDungeoneeringIronInventory().getItems()));
 			object.add("hcimdungequipment", builder.toJsonTree(player.getDungeoneeringIronEquipment().getItems()));	
 			object.addProperty("clanchat", player.getClanChatName() == null ? "null" : player.getClanChatName().trim());
-			object.addProperty("autocast", new Boolean(player.isAutocast()));
+			object.addProperty("autocast", (player.isAutocast()));
 			object.addProperty("autocast-spell",
 					player.getAutocastSpell() != null ? player.getAutocastSpell().spellId() : -1);
 			object.addProperty("dfs-charges", player.getDfsCharges());
-			object.addProperty("coins-gambled", new Integer(player.getAchievementAttributes().getCoinsGambled()));
+			object.addProperty("coins-gambled", (player.getAchievementAttributes().getCoinsGambled()));
 			object.addProperty("slayer-master", player.getSlayer().getSlayerMaster().name());
 			object.addProperty("slayer-task", player.getSlayer().getSlayerTask().name());
 			object.addProperty("prev-slayer-task", player.getSlayer().getLastTask().name());
@@ -143,7 +142,7 @@ public class PlayerSaving {
 			object.addProperty("duo-partner",
 					player.getSlayer().getDuoPartner() == null ? "null" : player.getSlayer().getDuoPartner());
 			object.addProperty("double-slay-xp", player.getSlayer().doubleSlayerXP);
-			object.addProperty("recoil-deg", new Integer(player.getRecoilCharges()));
+			object.addProperty("recoil-deg", (player.getRecoilCharges()));
 			object.add("brawler-deg", builder.toJsonTree(player.getBrawlerChargers()));
 			object.add("killed-players", builder.toJsonTree(player.getPlayerKillingAttributes().getKilledPlayers()));
 			object.add("killed-gods", builder.toJsonTree(player.getAchievementAttributes().getGodsKilled()));
@@ -151,20 +150,20 @@ public class PlayerSaving {
 			object.add("barrows-brother",
 					builder.toJsonTree(player.getMinigameAttributes().getBarrowsMinigameAttributes().getBarrowsData()));
 			object.addProperty("random-coffin",
-					new Integer(player.getMinigameAttributes().getBarrowsMinigameAttributes().getRandomCoffin()));
+					player.getMinigameAttributes().getBarrowsMinigameAttributes().getRandomCoffin());
 			object.addProperty("barrows-killcount",
-					new Integer(player.getMinigameAttributes().getBarrowsMinigameAttributes().getKillcount()));
+					player.getMinigameAttributes().getBarrowsMinigameAttributes().getKillcount());
 			object.add("nomad",
 					builder.toJsonTree(player.getMinigameAttributes().getNomadAttributes().getQuestParts()));
 			object.add("recipe-for-disaster", builder
 					.toJsonTree(player.getMinigameAttributes().getRecipeForDisasterAttributes().getQuestParts()));
 			object.addProperty("recipe-for-disaster-wave",
-					new Integer(player.getMinigameAttributes().getRecipeForDisasterAttributes().getWavesCompleted()));
-			object.addProperty("rune-ess", new Integer(player.getStoredRuneEssence()));
-			object.addProperty("pure-ess", new Integer(player.getStoredPureEssence()));
-			object.addProperty("has-bank-pin", new Boolean(player.getBankPinAttributes().hasBankPin()));
-			object.addProperty("last-pin-attempt", new Long(player.getBankPinAttributes().getLastAttempt()));
-			object.addProperty("invalid-pin-attempts", new Integer(player.getBankPinAttributes().getInvalidAttempts()));
+					player.getMinigameAttributes().getRecipeForDisasterAttributes().getWavesCompleted());
+			object.addProperty("rune-ess", player.getStoredRuneEssence());
+			object.addProperty("pure-ess", player.getStoredPureEssence());
+			object.addProperty("has-bank-pin", (player.getBankPinAttributes().hasBankPin()));
+			object.addProperty("last-pin-attempt", player.getBankPinAttributes().getLastAttempt());
+			object.addProperty("invalid-pin-attempts", (player.getBankPinAttributes().getInvalidAttempts()));
 			object.add("npc-kc-data", builder.toJsonTree(player.getNpcKillCount()));
 			object.add("bank-pin", builder.toJsonTree(player.getBankPinAttributes().getBankPin()));
 			object.add("appearance", builder.toJsonTree(player.getAppearance().getLook()));
@@ -191,24 +190,24 @@ public class PlayerSaving {
 			object.add("charm-imp", builder.toJsonTree(player.getSummoning().getCharmImpConfigs()));
 
 			for (Entry<Integer> dartItem : player.getBlowpipeLoading().getContents().entrySet()) {
-				object.addProperty("blowpipe-charge-item", new Integer(dartItem.getElement()));
+				object.addProperty("blowpipe-charge-item", dartItem.getElement());
 				object.addProperty("blowpipe-charge-amount",
-						new Integer(player.getBlowpipeLoading().getContents().count(dartItem.getElement())));
+						player.getBlowpipeLoading().getContents().count(dartItem.getElement()));
 			}
 			for (Entry<Integer> dartItem : player.getDragonRageLoading().getContents().entrySet()) {
-				object.addProperty("DragonRage-charge-item", new Integer(dartItem.getElement()));
+				object.addProperty("DragonRage-charge-item", dartItem.getElement());
 				object.addProperty("DragonRage-charge-amount",
-						new Integer(player.getDragonRageLoading().getContents().count(dartItem.getElement())));
+						player.getDragonRageLoading().getContents().count(dartItem.getElement()));
 			}
 			for (Entry<Integer> crystalItem : player.getCorruptBandagesLoading().getContents().entrySet()) {
-				object.addProperty("CorruptBandages-charge-item", new Integer(crystalItem.getElement()));
+				object.addProperty("CorruptBandages-charge-item", crystalItem.getElement());
 				object.addProperty("CorruptBandages-charge-amount",
-						new Integer(player.getCorruptBandagesLoading().getContents().count(crystalItem.getElement())));
+						player.getCorruptBandagesLoading().getContents().count(crystalItem.getElement()));
 			}
 			for (Entry<Integer> ammunitionItem : player.getMinigunLoading().getContents().entrySet()) {
-				object.addProperty("Minigun-charge-item", new Integer(ammunitionItem.getElement()));
+				object.addProperty("Minigun-charge-item", ammunitionItem.getElement());
 				object.addProperty("Minigun-charge-amount",
-						new Integer(player.getMinigunLoading().getContents().count(ammunitionItem.getElement())));
+						player.getMinigunLoading().getContents().count(ammunitionItem.getElement()));
 			}
 			object.add("friends", builder.toJsonTree(player.getRelations().getFriendList().toArray()));
 			object.add("ignores", builder.toJsonTree(player.getRelations().getIgnoreList().toArray()));
@@ -222,7 +221,7 @@ public class PlayerSaving {
 					builder.toJsonTree(player.getAchievementAttributes().getCompletion()));
 			object.add("achievements-progress", builder.toJsonTree(player.getAchievementAttributes().getProgress()));
 			object.add("max-cape-colors", builder.toJsonTree(player.getMaxCapeColors()));
-			object.addProperty("player-title", new String(player.getTitle()));
+			object.addProperty("player-title", player.getTitle());
 			object.add("free-dtd", builder.toJsonTree(player.freeDTD));
 			object.add("free-dedi-boss", builder.toJsonTree(player.freeDediBoss));
 			object.add("dmgPotionTime", builder.toJsonTree(player.dmgPotionTime));
@@ -231,7 +230,6 @@ public class PlayerSaving {
 			object.addProperty("Payment-Method", player.getMethod());
 			
 			writer.write(builder.toJson(object));
-			writer.close();
 		} catch (Exception e) {
 			// An error happened while saving.
 			GameServer.getLogger().log(Level.WARNING, "An error has occured while saving a character file!", e);

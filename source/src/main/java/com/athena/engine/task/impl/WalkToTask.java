@@ -13,7 +13,7 @@ import com.athena.world.entity.impl.player.Player;
 public class WalkToTask {
 
 	public interface FinalizedMovementTask {
-		public void execute();
+		void execute();
 	}
 	
 	/**
@@ -29,7 +29,7 @@ public class WalkToTask {
 		this.distance = distance;
 	}
 	
-	private int distance = -1;
+	private int distance;
 	
 	/**
 	 * The associated game character.

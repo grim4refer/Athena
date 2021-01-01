@@ -42,7 +42,7 @@ public enum Skill {
 	DUNGEONEERING(10267, 5, 24),
 	//INVENTION(10267, 5, 25);
 ;
-	private Skill(int chatboxInterface, int prestigePoints, int prestigeId) {
+	Skill(int chatboxInterface, int prestigePoints, int prestigeId) {
 		this.chatboxInterface = chatboxInterface;
 		this.prestigePoints = prestigePoints;
 		this.prestigeId = prestigeId;
@@ -149,24 +149,16 @@ public enum Skill {
 	 * @return multiplier.
 	 */
 	public int getExperienceMultiplier() {
-		switch(this) {
-		case ATTACK:
-			return ATTACK_MODIFIER;
-		case DEFENCE:
-			return DEFENCE_MODIFIER;
-		case STRENGTH:
-			return STRENGTH_MODIFIER;
-		case CONSTITUTION:
-			return CONSTITUTION_MODIFIER;
-		case RANGED:
-			return RANGED_MODIFIER;
-		case PRAYER:
-			return PRAYER_MODIFIER;
-		case MAGIC:
-			return MAGIC_MODIFIER;
-		default:
-			return 1;
-		}
+		return switch (this) {
+			case ATTACK -> ATTACK_MODIFIER;
+			case DEFENCE -> DEFENCE_MODIFIER;
+			case STRENGTH -> STRENGTH_MODIFIER;
+			case CONSTITUTION -> CONSTITUTION_MODIFIER;
+			case RANGED -> RANGED_MODIFIER;
+			case PRAYER -> PRAYER_MODIFIER;
+			case MAGIC -> MAGIC_MODIFIER;
+			default -> 1;
+		};
 	}
 
 	/**

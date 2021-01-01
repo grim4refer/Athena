@@ -8,9 +8,6 @@ public class AntiBottingInput extends EnterAmount {
 	
 	@Override
 	public void handleSyntax(Player player, String syntax) {
-		String attempt = syntax;
-		
-		
 	}
 	
 	

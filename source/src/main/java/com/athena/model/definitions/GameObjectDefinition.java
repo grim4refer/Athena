@@ -32,7 +32,7 @@ public final class GameObjectDefinition {
 	}
 	
 	public static boolean removedObject(int id) {
-		return id == 2956 || id == 463 || id == 462 || id == 25026 || id == 25020 || id == 25019 || id == 25024 || id == 25025 || id == 25016 || id == 10527 || id == 10529 || id == 40257 || id == 296 || id == 300 || id == 1747 || id == 7332 || id == 7326 || id == 7325 || id == 7385 || id == 7331 || id == 7385 || id == 7320 || id == 7317 || id == 7323 || id == 7354 || id == 1536 || id == 1537 || id == 5126 || id == 1551 || id == 1553 || id == 1516 || id == 1519 || id == 1557 || id == 1558 || id == 7126 || id == 733 || id == 14233 || id == 14235 || id == 1596 || id == 1597 || id == 14751 || id == 14752 || id == 14923 || id == 36844 || id == 30864 || id == 2514 || id == 1805 || id == 15536 || id == 2399 || id == 14749 || id == 29315 || id == 29316 || id == 29319 || id == 29320 || id == 29360 || id == 1528 || id == 36913 || id == 36915 || id == 15516 ||id == 35549 || id == 35551 || id == 26808 || id == 26910 || id == 26913 || id == 24381 || id == 15514 || id == 25891 || id == 26082 || id == 26081 || id == 1530 || id == 16776 || id == 16778 || id == 28589 || id == 1533 || id == 17089 || id == 1600 || id == 1601 || id == 11707 || id == 24376 || id == 24378 || id == 40108 || id == 59 || id == 2069 || id == 36846;	
+		return id == 2956 || id == 463 || id == 462 || id == 25026 || id == 25020 || id == 25019 || id == 25024 || id == 25025 || id == 25016 || id == 10527 || id == 10529 || id == 40257 || id == 296 || id == 300 || id == 1747 || id == 7332 || id == 7326 || id == 7325 || id == 7331 || id == 7385 || id == 7320 || id == 7317 || id == 7323 || id == 7354 || id == 1536 || id == 1537 || id == 5126 || id == 1551 || id == 1553 || id == 1516 || id == 1519 || id == 1557 || id == 1558 || id == 7126 || id == 733 || id == 14233 || id == 14235 || id == 1596 || id == 1597 || id == 14751 || id == 14752 || id == 14923 || id == 36844 || id == 30864 || id == 2514 || id == 1805 || id == 15536 || id == 2399 || id == 14749 || id == 29315 || id == 29316 || id == 29319 || id == 29320 || id == 29360 || id == 1528 || id == 36913 || id == 36915 || id == 15516 || id == 35549 || id == 35551 || id == 26808 || id == 26910 || id == 26913 || id == 24381 || id == 15514 || id == 25891 || id == 26082 || id == 26081 || id == 1530 || id == 16776 || id == 16778 || id == 28589 || id == 1533 || id == 17089 || id == 1600 || id == 1601 || id == 11707 || id == 24376 || id == 24378 || id == 40108 || id == 59 || id == 2069 || id == 36846;
 	}
 	
 	private static GameObjectDefinition forId667(int id) {
@@ -82,7 +82,7 @@ public final class GameObjectDefinition {
 		
 		dataBuffer525.currentOffset = streamIndices525[i];
 		/*Removing doors etc*/
-		boolean removeObject = i == 7332 || i == 7326 || i == 7325 || i == 7385 || i == 7331 || i == 7385 || i == 7320 || i == 7317 || i == 7323 || i == 7354 || i == 1536 || i == 1537 || i == 5126 || i == 1551 || i == 1553 || i == 1516 || i == 1519 || i == 1557 || i == 1558 || i == 7126 || i == 733 || i == 14233 || i == 14235 || i == 1596 || i == 1597 || i == 14751 || i == 14752 || i == 14923 || i == 36844 || i == 30864 || i == 2514 || i == 1805 || i == 15536 || i == 2399 || i == 14749 || i == 29315 || i == 29316 || i == 29319 || i == 29320 || i == 29360 || i == 1528 || i == 36913 || i == 36915 || i == 15516 ||i == 35549 || i == 35551 || i == 26808 || i == 26910 || i == 26913 || i == 24381 || i == 15514 || i == 25891 || i == 26082 || i == 26081 || i == 1530 || i == 16776 || i == 16778 || i == 28589 || i == 1533 || i == 17089 || i == 1600 || i == 1601 || i == 11707 || i == 24376 || i == 24378 || i == 40108 || i == 59 || i == 2069 || i == 36846;
+		boolean removeObject = i == 7332 || i == 7326 || i == 7325 || i == 7331 || i == 7385 || i == 7320 || i == 7317 || i == 7323 || i == 7354 || i == 1536 || i == 1537 || i == 5126 || i == 1551 || i == 1553 || i == 1516 || i == 1519 || i == 1557 || i == 1558 || i == 7126 || i == 733 || i == 14233 || i == 14235 || i == 1596 || i == 1597 || i == 14751 || i == 14752 || i == 14923 || i == 36844 || i == 30864 || i == 2514 || i == 1805 || i == 15536 || i == 2399 || i == 14749 || i == 29315 || i == 29316 || i == 29319 || i == 29320 || i == 29360 || i == 1528 || i == 36913 || i == 36915 || i == 15516 || i == 35549 || i == 35551 || i == 26808 || i == 26910 || i == 26913 || i == 24381 || i == 15514 || i == 25891 || i == 26082 || i == 26081 || i == 1530 || i == 16776 || i == 16778 || i == 28589 || i == 1533 || i == 17089 || i == 1600 || i == 1601 || i == 11707 || i == 24376 || i == 24378 || i == 40108 || i == 59 || i == 2069 || i == 36846;
 		if(removeObject) {
 			class46.unwalkable = false;
 			return class46;
@@ -105,13 +105,13 @@ public final class GameObjectDefinition {
 			   11470,11471,136,11528,11529,11530,11531,1854,1000,9265,9264,1591,11708,11709,11851};
 			       public void setSolid(int type) {
 			   	aBoolean779 = false;
-			   		for(int i = 0; i < solidObjects.length;i++) {
-			   			if(type == solidObjects[i]) {
-			   				unwalkable = true;
-			   				aBoolean779 = true;
-			   				continue;
-			   			}
-			   		}
+					   for (int solidObject : solidObjects) {
+						   if (type == solidObject) {
+							   unwalkable = true;
+							   aBoolean779 = true;
+							   break;
+						   }
+					   }
 
 			       }
 
@@ -245,9 +245,8 @@ public final class GameObjectDefinition {
 							modelArray = new int[l];
 							for (int l1 = 0; l1 < l; l1++)
 								modelArray[l1] = buffer.readUnsignedWord();
-						} else {
-							;// buffer.currentOffset += l * 2;
 						}
+
 				} else if (opcode == 14)
 					tileSizeX = buffer.readUnsignedByte();
 				else if (opcode == 15)
@@ -385,8 +384,6 @@ public final class GameObjectDefinition {
 							modelArray = new int[l];
 							for (int l1 = 0; l1 < l; l1++)
 								modelArray[l1] = buffer.readUnsignedWord();
-						} else {
-							;//buffer.offset += l * 2;
 						}
 				} else if (opcode == 14)
 					tileSizeX = buffer.readUnsignedByte();
@@ -527,7 +524,7 @@ public final class GameObjectDefinition {
 	public static int[] streamIndices667;
 	public boolean impenetrable;
 	public int anInt758;
-	public int childrenIDs[];
+	public int[] childrenIDs;
 	public int anInt760;
 	public int tileSizeY;
 	public boolean aBoolean762;
@@ -542,14 +539,14 @@ public final class GameObjectDefinition {
 	public int anInt774;
 	public int anInt775;
 	public int[] objectModelType;
-	public byte description[];
+	public byte[] description;
 	public boolean interactive;
 	public boolean aBoolean779;
 	public int anInt781;
 	public static GameObjectDefinition[] cache;
 	public int anInt783;
 	public int[] modifiedModelColors;
-	public String actions[];
+	public String[] actions;
 	public static MemoryArchive archive;
 
 	public int actionCount() {

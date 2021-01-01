@@ -13,7 +13,7 @@ import com.athena.net.packet.Packet;
 public class LoginEncoder extends OneToOneEncoder {
 
 	@Override
-	protected Object encode(ChannelHandlerContext context, Channel channel, Object message) throws Exception {
+	protected Object encode(ChannelHandlerContext context, Channel channel, Object message) {
 		return ((Packet)message).getBuffer();
 	}
 }

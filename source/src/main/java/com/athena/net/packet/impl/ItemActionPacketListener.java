@@ -81,7 +81,7 @@ public class ItemActionPacketListener implements PacketListener {
 			player.getPacketSender().sendMessage("A magical spell is blocking you from teleporting.");
 			return false;
 		}
-		if(player.getLocation() != null && !player.getLocation().canTeleport(player))
+		if(player.getLocation() != null && player.getLocation().canTeleport(player))
 			return false;
 		if(player.isPlayerLocked() || player.isCrossingObstacle()) {
 			player.getPacketSender().sendMessage("You cannot teleport right now.");

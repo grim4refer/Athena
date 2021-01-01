@@ -25,7 +25,6 @@ public class Graphic {
 		this.id = id;
 		this.delay = 0;
 		this.height = GraphicHeight.LOW;
-		this.position = position;
 	}
 	
 	/**
@@ -75,7 +74,6 @@ public class Graphic {
 	 */
 	private final GraphicHeight height;
 
-	private Position position;
 	/**
 	 * Gets the graphic's id.
 	 * @return	id.

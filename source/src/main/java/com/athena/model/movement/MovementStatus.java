@@ -11,5 +11,5 @@ public enum MovementStatus {
 	MOVING,
 	FROZEN,
 	STUNNED,
-	CANNOT_MOVE;
+	CANNOT_MOVE
 }

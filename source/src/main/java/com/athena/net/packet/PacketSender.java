@@ -594,7 +594,7 @@ public class PacketSender {
         }
         if (player.getDueling().inDuelScreen && player.getDueling().duelingStatus != 5) {
             sendClientRightClickRemoval();
-            player.getDueling().declineDuel(player.getDueling().duelingWith >= 0 ? true : false);
+            player.getDueling().declineDuel(player.getDueling().duelingWith >= 0);
         }
         if (player.isResting()) {
             player.setResting(false);
@@ -832,9 +832,7 @@ public class PacketSender {
         out.putString(option);
         player.getSession().queueMessage(out);
         PlayerInteractingOption interactingOption = PlayerInteractingOption.forName(option);
-        if (option != null) {
-            player.setPlayerInteractingOption(interactingOption);
-        }
+        player.setPlayerInteractingOption(interactingOption);
         return this;
     }
 
@@ -1113,8 +1111,7 @@ public class PacketSender {
     public int getRegionOffset(Position position) {
         int x = position.getX() - (position.getRegionX() << 4);
         int y = position.getY() - (position.getRegionY() & 0x7);
-        int offset = ((x & 0x7)) << 4 + (y & 0x7);
-        return offset;
+        return ((x & 0x7)) << 4 + (y & 0x7);
     }
 
     public PacketSender(Player player) {
@@ -1198,9 +1195,9 @@ public class PacketSender {
         PacketBuilder builder = new PacketBuilder(53, PacketType.SHORT);
         builder.putShort(38274);
         builder.putShort(items.size());
-        for (int i = 0; i < items.size(); i++) {
+        for (Furniture item : items) {
             builder.put(1);
-            builder.putShort(items.get(i).getItemId() + 1, ValueType.A, ByteOrder.LITTLE);
+            builder.putShort(item.getItemId() + 1, ValueType.A, ByteOrder.LITTLE);
         }
         player.getSession().queueMessage(builder);
         return this;

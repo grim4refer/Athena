@@ -271,8 +271,7 @@ public class Position {
 
 
 	public Position randomAround(int offsetX, int offsetY) {
-		Position pos = this.copy().move(Misc.random(offsetX), Misc.random(offsetY));
-		return pos;
+		return this.copy().move(Misc.random(offsetX), Misc.random(offsetY));
 	}
 
 	@Override

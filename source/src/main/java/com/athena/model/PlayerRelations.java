@@ -28,12 +28,12 @@ public class PlayerRelations {
 	/**
 	 * This map contains the player's friends list.
 	 */
-	private List<Long> friendList = new ArrayList<Long>(200);
+	private List<Long> friendList = new ArrayList<>(200);
 
 	/**
 	 * This map contains the player's ignore list.
 	 */
-	private List<Long> ignoreList = new ArrayList<Long>(100);
+	private List<Long> ignoreList = new ArrayList<>(100);
 
 	/**
 	 * The player's current private message index.
@@ -270,7 +270,7 @@ public class PlayerRelations {
 	 * Represents a player's friends list status, whether
 	 * others will be able to see them online or not.
 	 */
-	public static enum PrivateChatStatus {
+	public enum PrivateChatStatus {
 		ON(990),
 		FRIENDS_ONLY(991),
 		OFF(992);

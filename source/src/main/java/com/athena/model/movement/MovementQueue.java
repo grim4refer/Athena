@@ -76,7 +76,7 @@ public final class MovementQueue {
 	/**
 	 * The queue of directions.
 	 */
-	private final Deque<Point> points = new ArrayDeque<Point>();
+	private final Deque<Point> points = new ArrayDeque<>();
 
 	/**
 	 * The following task
@@ -245,7 +245,7 @@ public final class MovementQueue {
 		boolean movement = !lockMovement && !character.isFrozen();
 		
 		if(movement) {
-			Point walkPoint = null;
+			Point walkPoint;
 			Point runPoint = null;
 
 			walkPoint = points.poll();
@@ -286,6 +286,7 @@ public final class MovementQueue {
 			}
 			if(runPoint != null && runPoint.direction != Direction.NONE) {
 				if (followCharacter != null) {
+					assert walkPoint != null;
 					if (walkPoint.equals(followCharacter.getPosition())) {
 						return;
 					}

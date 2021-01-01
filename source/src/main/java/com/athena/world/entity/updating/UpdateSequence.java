@@ -10,7 +10,7 @@ public interface UpdateSequence<T extends Character> {
 	 * @param t
 	 * the entity that is being prepared for updating.
 	 */
-	public void executePreUpdate(T t);
+	void executePreUpdate(T t);
 	/**
 	 * The main stage of the update sequence that performs parallelized updating
 	 * on the entity.
@@ -18,7 +18,7 @@ public interface UpdateSequence<T extends Character> {
 	 * @param t
 	 * the entity that is being updated.
 	 */
-	public void executeUpdate(T t);
+	void executeUpdate(T t);
 	/**
 	 * The last stage of the update sequence that resets the entity and prepares
 	 * it for the next cycle.
@@ -26,5 +26,5 @@ public interface UpdateSequence<T extends Character> {
 	 * @param t
 	 * the entity that is being reset for the next cycle.
 	 */
-	public void executePostUpdate(T t);
+	void executePostUpdate(T t);
 }

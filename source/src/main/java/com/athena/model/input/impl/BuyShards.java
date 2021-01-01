@@ -26,9 +26,9 @@ public class BuyShards extends EnterAmount {
 			player.getPacketSender().sendMessage("You do not have enough money in your @red@inventory@bla@ to buy that amount.");
 			return;
 		}
-		player.getInventory().delete(5022, (int) cost);
+		player.getInventory().delete(5022, cost);
 		player.getInventory().add(18016, (int) canBeBought);
-		player.getPacketSender().sendMessage("You've bought "+canBeBought+" Spirit Shards for "+Misc.insertCommasToNumber(""+(int)cost)+"B tickets.");
+		player.getPacketSender().sendMessage("You've bought "+canBeBought+" Spirit Shards for "+Misc.insertCommasToNumber(""+ cost)+"B tickets.");
 	}
 
 }

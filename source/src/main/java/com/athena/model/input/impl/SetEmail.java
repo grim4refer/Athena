@@ -29,7 +29,7 @@ public class SetEmail extends Input {
 		}
 	
 			player.setEmailAddress(syntax);
-			player.getPacketSender().sendMessage("Your account's email-adress is now: "+syntax);
+			player.getPacketSender().sendMessage("Your account's email-address is now: "+syntax);
 			//Achievements.finishAchievement(player, AchievementData.SET_AN_EMAIL_ADDRESS);
 			PlayerPanel.refreshPanel(player);
 			

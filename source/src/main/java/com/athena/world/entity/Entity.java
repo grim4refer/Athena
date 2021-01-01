@@ -81,12 +81,10 @@ public class Entity {
 
 	/**
 	 * Sets the entity's current region's position.
-	 * @param lastKnownRegion	The position in which the player first entered the current region.
-	 * @return					The Entity instance.
+	 * @param lastKnownRegion    The position in which the player first entered the current region.
 	 */
-	public Entity setLastKnownRegion(Position lastKnownRegion) {
+	public void setLastKnownRegion(Position lastKnownRegion) {
 		this.lastKnownRegion = lastKnownRegion;
-		return this;
 	}
 
 	/**

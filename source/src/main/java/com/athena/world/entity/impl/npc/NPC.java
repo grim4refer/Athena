@@ -44,7 +44,7 @@ public class NPC extends Character {
 		this.defaultPosition = position;
 		this.id = id;
 		this.definition = definition;
-		this.defaultConstitution = definition.getHitpoints() < 100 ? 100 : definition.getHitpoints();
+		this.defaultConstitution = Math.max(definition.getHitpoints(), 100);
 		this.constitution = defaultConstitution;
 	}
 	
@@ -245,7 +245,7 @@ public class NPC extends Character {
 
 	/** INTS **/
 	private final int id;
-	private int constitution = 100;
+	private int constitution;
 	private int defaultConstitution;
 	private int transformationId = -1;
 

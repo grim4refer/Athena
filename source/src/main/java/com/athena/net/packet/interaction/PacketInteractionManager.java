@@ -21,7 +21,7 @@ public class PacketInteractionManager {
 	/**
 	 * Represents all the packet interactions
 	 */
-	private static final ArrayList<PacketInteraction> interactions = new ArrayList<PacketInteraction>();
+	private static final ArrayList<PacketInteraction> interactions = new ArrayList<>();
 
 	/**
 	 * Loads all the packet interaction
@@ -108,9 +108,6 @@ public class PacketInteractionManager {
 				 * The instance
 				 */
 				Object o = c.newInstance();
-				if (o == null) {
-					continue;
-				}
 				/**
 				 * Not game interface
 				 */
@@ -133,25 +130,26 @@ public class PacketInteractionManager {
 		assert classLoader != null;
 		String path = packageName.replace('.', '/');
 		Enumeration<URL> resources = classLoader.getResources(path);
-		List<File> dirs = new ArrayList<File>();
+		List<File> dirs = new ArrayList<>();
 		while (resources.hasMoreElements()) {
 			URL resource = resources.nextElement();
 			dirs.add(new File(resource.getFile().replaceAll("%20", " ")));
 		}
-		ArrayList<Class> classes = new ArrayList<Class>();
+		ArrayList<Class> classes = new ArrayList<>();
 		for (File directory : dirs) {
 			classes.addAll(findClasses(directory, packageName));
 		}
-		return classes.toArray(new Class[classes.size()]);
+		return classes.toArray(new Class[0]);
 	}
 
 	@SuppressWarnings("rawtypes")
 	private static List<Class> findClasses(File directory, String packageName) {
-		List<Class> classes = new ArrayList<Class>();
+		List<Class> classes = new ArrayList<>();
 		if (!directory.exists()) {
 			return classes;
 		}
 		File[] files = directory.listFiles();
+		assert files != null;
 		for (File file : files) {
 			if (file.isDirectory()) {
 				assert !file.getName().contains(".");
@@ -159,7 +157,7 @@ public class PacketInteractionManager {
 				try {
 					classes.add(Class
 							.forName(packageName + '.' + file.getName().substring(0, file.getName().length() - 6)));
-				} catch (Throwable e) {
+				} catch (Throwable ignored) {
 
 				}
 			}

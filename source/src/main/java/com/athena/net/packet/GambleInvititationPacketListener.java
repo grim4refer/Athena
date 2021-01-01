@@ -1,12 +1,12 @@
 package com.athena.net.packet;
 
 import com.athena.engine.task.impl.WalkToTask;
-import com.athena.engine.task.impl.WalkToTask.FinalizedMovementTask;
 import com.athena.model.Locations;
 import com.athena.model.Locations.Location;
 import com.athena.world.World;
-//import com.athena.world.content.gamblinginterface.GamblingInterface;
 import com.athena.world.entity.impl.player.Player;
+
+//import com.athena.world.content.gamblinginterface.GamblingInterface;
 
 public class GambleInvititationPacketListener implements PacketListener {
 
@@ -35,15 +35,12 @@ public class GambleInvititationPacketListener implements PacketListener {
 		if (target == null || !Locations.goodDistance(player.getPosition(), target.getPosition(), 13))
 			return;
 		player.setWalkToTask(
-				new WalkToTask(player, target.getPosition(), target.getSize(), new FinalizedMovementTask() {
-					@Override
-					public void execute() {
-						if (target.getIndex() != player.getIndex()) {
-							if ((player.getTotalPlayTime() >= 1)) {
-								player.getGambling().requestGamble(target);
-							} else {
-								player.sendMessage("@red@You need a gamblers pass and 5hours of playtime to gamble");
-							}
+				new WalkToTask(player, target.getPosition(), target.getSize(), () -> {
+					if (target.getIndex() != player.getIndex()) {
+						if ((player.getTotalPlayTime() >= 1)) {
+							player.getGambling().requestGamble(target);
+						} else {
+							player.sendMessage("@red@You need a gamblers pass and 5hours of playtime to gamble");
 						}
 					}
 				}));

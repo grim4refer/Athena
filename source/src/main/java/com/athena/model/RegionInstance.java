@@ -25,7 +25,7 @@ public class RegionInstance {
 		CONSTRUCTION_HOUSE,
 		CONSTRUCTION_DUNGEON,
 		ZULRAHS_SHRINE, 
-		VLADIMIR;
+		VLADIMIR
 	}
 	
 	private Player owner;
@@ -36,9 +36,9 @@ public class RegionInstance {
 	public RegionInstance(Player p, RegionInstanceType type) {
 		this.owner = p;
 		this.type = type;
-		this.npcsList = new CopyOnWriteArrayList<NPC>();
+		this.npcsList = new CopyOnWriteArrayList<>();
 		if(type == RegionInstanceType.CONSTRUCTION_HOUSE) {
-			this.playersList = new CopyOnWriteArrayList<Player>();
+			this.playersList = new CopyOnWriteArrayList<>();
 		}
 	}
 
@@ -74,12 +74,12 @@ public class RegionInstance {
 	public void remove(Character c) {
 		if(type == RegionInstanceType.CONSTRUCTION_HOUSE) {
 			if(c.isPlayer()) {
-				playersList.remove((Player)c);
-				if(owner == ((Player)c)) {
+				playersList.remove(c);
+				if(owner == c) {
 					destruct();
 				}
 			} else if(c.isNpc()) {
-				npcsList.remove((NPC)c);
+				npcsList.remove(c);
 			}
 
 			if(c.getRegionInstance() != null && c.getRegionInstance() == this) {
@@ -110,6 +110,6 @@ public class RegionInstance {
 	
 	@Override
 	public boolean equals(Object other) {
-		return (RegionInstanceType)other == type;
+		return other == type;
 	}
 }

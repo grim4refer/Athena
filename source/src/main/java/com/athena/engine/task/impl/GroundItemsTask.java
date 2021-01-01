@@ -33,7 +33,6 @@ public class GroundItemsTask extends Task {
 				gi.setRefreshNeeded(true);
 			} else if(showDelay == 0 && !gi.shouldGoGlobal() || showDelay == 0 && gi.isGlobal() || gi.hasBeenPickedUp()) {
 				GroundItemManager.remove(gi, true); //The timer is 0 and it shouldn't go global, so remove it
-				continue;
 			}
 		}
 		if(GroundItemManager.getGroundItems().isEmpty())

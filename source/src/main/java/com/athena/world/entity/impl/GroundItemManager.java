@@ -21,7 +21,7 @@ public class GroundItemManager {
 	 * Our list which holds all grounditems, used an CopyOnWriteArrayList to prevent modification issues
 	 * TODO: Change into a queue of some sort
 	 */
-	private static CopyOnWriteArrayList<GroundItem> groundItems = new CopyOnWriteArrayList<GroundItem>();
+	private static CopyOnWriteArrayList<GroundItem> groundItems = new CopyOnWriteArrayList<>();
 
 	/**
 	 * Removes a grounditem from the world
@@ -74,7 +74,7 @@ public class GroundItemManager {
 		if(ItemDefinition.forId(item.getId()).isStackable()) {
 			GroundItem it = getGroundItem(p, item, g.getPosition());
 			if(it != null) {
-				it.getItem().setAmount(it.getItem().getAmount() + g.getItem().getAmount() > Integer.MAX_VALUE ? Integer.MAX_VALUE : it.getItem().getAmount() + g.getItem().getAmount());
+				it.getItem().setAmount(Math.min(it.getItem().getAmount() + g.getItem().getAmount(), Integer.MAX_VALUE));
 				if(it.getItem().getAmount() <= 0)
 					remove(it, true);
 				else
@@ -132,7 +132,8 @@ public class GroundItemManager {
 		}
 		GroundItem gt = getGroundItem(p, item, position);
 		if(gt == null || gt.hasBeenPickedUp() || !groundItems.contains(gt)) //last one isn't needed, but hey, just trying to be safe
-			return;
+		{
+		}
 		else {
 			/*	if(p.getHostAdress().equals(gt.getFromIP()) && !p.getUsername().equals(gt.getOwner())) { //Transferring items by IP..
 

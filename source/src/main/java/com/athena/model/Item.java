@@ -104,9 +104,7 @@ public class Item {
 			if(id == i)
 				return false;
 		}
-		if(Effigies.isEffigy(id))
-			return false;
-		return true;
+		return !Effigies.isEffigy(id);
 	}
 
 	public boolean sellable() {
@@ -122,9 +120,7 @@ public class Item {
 			if(id == i)
 				return false;
 		}
-		if(Effigies.isEffigy(id))
-			return false;
-		return true;
+		return !Effigies.isEffigy(id);
 	}
 	
 	public static Item getNoted(int id, int amount) {
@@ -176,9 +172,6 @@ public class Item {
 	 * Increment the amount by 1.
 	 */
 	public void incrementAmount() {
-		if ((amount + 1) > Integer.MAX_VALUE) {
-			return;
-		}
 		amount++;
 	}
 
@@ -196,11 +189,7 @@ public class Item {
 	 * Increment the amount by the specified amount.
 	 */
 	public void incrementAmountBy(int amount) {
-		if ((this.amount + amount) > Integer.MAX_VALUE) {
-			this.amount = Integer.MAX_VALUE;
-		} else {
-			this.amount += amount;
-		}
+		this.amount += amount;
 	}
 
 	/**

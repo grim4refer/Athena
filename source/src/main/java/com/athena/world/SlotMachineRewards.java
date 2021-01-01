@@ -52,22 +52,15 @@ public class SlotMachineRewards {
     private static final List<Item> AthenaTier3_REWARDS = new ArrayList<>();
 
     public static Item getRandomItem(SlotMachine.SlotGameType type) {
-        switch (type) {
-            case TIER_1:
-                return Misc.randomElement(TIER1_REWARDS);
-            case TIER_2:
-                return Misc.randomElement(TIER2_REWARDS);
-            case TIER_3:
-                return Misc.randomElement(TIER3_REWARDS);
-            case AthenaToken1:
-                return Misc.randomElement(AthenaTier1_REWARDS);
-            case AthenaToken2:
-                return Misc.randomElement(AthenaTier2_REWARDS);
-            case AthenaToken3:
-                return Misc.randomElement(AthenaTier3_REWARDS);
-            default:
-                return null;
-        }
+        return switch (type) {
+            case TIER_1 -> Misc.randomElement(TIER1_REWARDS);
+            case TIER_2 -> Misc.randomElement(TIER2_REWARDS);
+            case TIER_3 -> Misc.randomElement(TIER3_REWARDS);
+            case AthenaToken1 -> Misc.randomElement(AthenaTier1_REWARDS);
+            case AthenaToken2 -> Misc.randomElement(AthenaTier2_REWARDS);
+            case AthenaToken3 -> Misc.randomElement(AthenaTier3_REWARDS);
+            default -> null;
+        };
 
     }
 

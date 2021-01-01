@@ -3,7 +3,6 @@ package com.athena.engine.task;
 import java.util.Objects;
 
 /**
- * Represents a periodic task that can be scheduled with a {@link TaskScheduler}.
  * @author Graham
  */
 public abstract class Task {

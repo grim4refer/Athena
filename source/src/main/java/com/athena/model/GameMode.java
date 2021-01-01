@@ -58,10 +58,6 @@ public enum GameMode {
 		} else {
 			player.getPacketSender().sendMessage("Your account progress has been reset.");
 		}
-		if(player.newPlayer()) {
-			player.setPlayerLocked(true);
-		} else {
-			player.setPlayerLocked(false);
-		}
+		player.setPlayerLocked(player.newPlayer());
 	}
 }

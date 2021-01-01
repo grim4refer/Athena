@@ -50,5 +50,5 @@ public enum Hitmask {
 	/*
 	 * No hitmask
 	 */
-	NONE;
+	NONE
 }

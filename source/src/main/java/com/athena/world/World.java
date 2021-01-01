@@ -78,8 +78,7 @@ public class World {
     
     public static MinigameHandler2 minigameHandler;
     
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public static Map<String, String> claimedCodeUsers = new HashMap<String, String>();
+    public static Map<String, String> claimedCodeUsers = new HashMap<>();
 
 	public static String notifyName = null;
 
@@ -101,17 +100,17 @@ public class World {
 
 	public static Player getPlayerByName(String username) {
 		Optional<Player> op = players.search(p -> p != null && p.getUsername().equals(Misc.formatText(username)));
-		return op.isPresent() ? op.get() : null;
+		return op.orElse(null);
 	}
 	
 	public static Player getPlayerByIndex(int username) {
 		Optional<Player> op = players.search(p -> p != null && p.getIndex() == username);
-		return op.isPresent() ? op.get() : null;
+		return op.orElse(null);
 	}
 
 	public static Player getPlayerByLong(long encodedName) {
 		Optional<Player> op = players.search(p -> p != null && p.getLongUsername().equals(encodedName));
-		return op.isPresent() ? op.get() : null;
+		return op.orElse(null);
 	}
 
 	public static void sendMessage(String message) {
@@ -128,8 +127,8 @@ public class World {
 
 	public static void updatePlayersOnline() {
 		//players.forEach(p-> p.getPacketSender().sendString(39173, PlayerPanel.LINE_START + "@or1@Players Online: @yel@"+players.size()));
-		players.forEach(p -> p.getPacketSender().sendString(26608, "@or2@Players Online: @gre@"+(int)(players.size() * 1 )+""));
-		players.forEach(p -> p.getPacketSender().sendString(57003, "Players:  @gre@"+(int)(World.getPlayers().size() * 1 )+""));
+		players.forEach(p -> p.getPacketSender().sendString(26608, "@or2@Players Online: @gre@"+ (players.size()) +""));
+		players.forEach(p -> p.getPacketSender().sendString(57003, "Players:  @gre@"+ (World.getPlayers().size()) +""));
 		updateStaffList();
 	}
 
@@ -137,7 +136,7 @@ public class World {
 		TaskManager.submit(new Task(false) {
 			@Override
 			protected void execute() {
-				players.forEach(p -> StaffList.updateInterface(p));
+				players.forEach(StaffList::updateInterface);
 				stop();
 			}
 		});
@@ -155,7 +154,7 @@ public class World {
 	}
 
 	public static void savePlayers() {
-		players.forEach(p -> p.save());
+		players.forEach(Player::save);
 	}
 
 	public static CharacterList<Player> getPlayers() {

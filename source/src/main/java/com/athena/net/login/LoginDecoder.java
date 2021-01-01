@@ -1,17 +1,5 @@
 package com.athena.net.login;
 
-import java.math.BigInteger;
-import java.net.InetSocketAddress;
-import java.security.SecureRandom;
-
-import org.jboss.netty.buffer.ChannelBuffer;
-import org.jboss.netty.buffer.ChannelBuffers;
-import org.jboss.netty.channel.Channel;
-import org.jboss.netty.channel.ChannelFuture;
-import org.jboss.netty.channel.ChannelFutureListener;
-import org.jboss.netty.channel.ChannelHandlerContext;
-import org.jboss.netty.handler.codec.frame.FrameDecoder;
-
 import com.athena.GameSettings;
 import com.athena.net.PlayerSession;
 import com.athena.net.packet.PacketBuilder;
@@ -22,6 +10,15 @@ import com.athena.util.Misc;
 import com.athena.util.NameUtils;
 import com.athena.world.World;
 import com.athena.world.entity.impl.player.Player;
+import org.jboss.netty.buffer.ChannelBuffer;
+import org.jboss.netty.buffer.ChannelBuffers;
+import org.jboss.netty.channel.Channel;
+import org.jboss.netty.channel.ChannelHandlerContext;
+import org.jboss.netty.handler.codec.frame.FrameDecoder;
+
+import java.math.BigInteger;
+import java.net.InetSocketAddress;
+import java.security.SecureRandom;
 
 /**
  * A {@link org.niobe.net.StatefulFrameDecoder} which decodes
@@ -171,12 +168,7 @@ public final class LoginDecoder extends FrameDecoder {
 	}
 
 	public static void sendReturnCode(final Channel channel, final int code) {
-		channel.write(new PacketBuilder().put((byte) code).toPacket()).addListener(new ChannelFutureListener() {
-			@Override
-			public void operationComplete(final ChannelFuture arg0) throws Exception {
-				arg0.getChannel().close();
-			}
-		});
+		channel.write(new PacketBuilder().put((byte) code).toPacket()).addListener(arg0 -> arg0.getChannel().close());
 	}
 
 }

@@ -12,7 +12,7 @@ import com.athena.world.entity.impl.player.PlayerLoading;
 
 public final class LoginResponses {
 
-	public static final int getResponse(Player player, LoginDetailsMessage msg) {
+	public static int getResponse(Player player, LoginDetailsMessage msg) {
 		if (World.getPlayers().isFull()) {
 			return LOGIN_WORLD_FULL;
 		}

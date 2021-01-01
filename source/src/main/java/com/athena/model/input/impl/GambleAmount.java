@@ -24,9 +24,8 @@ public class GambleAmount extends EnterAmount {
 		}
 
 		player.getPacketSender().sendInterfaceRemoval();
-		int cost = amount;
 
-		if(player.getInventory().getAmount(995) < cost) {
+		if(player.getInventory().getAmount(995) < amount) {
 			player.getPacketSender().sendMessage("You do not have enough money in your @red@inventory@bla@ to gamble that amount.");
 			return;
 		}

@@ -115,7 +115,7 @@ public class Player extends Character {
 	private String title = "";
 	private boolean infinityHealth = false;
 
-	public ArrayList<String> slowEvents = new ArrayList<String>();
+	public ArrayList<String> slowEvents = new ArrayList<>();
 
 	/**
 	 * Kc system
@@ -210,7 +210,7 @@ public class Player extends Character {
 	}
 
 	public void setSpinning(boolean Spinning) {
-		this.Spinning = Spinning;
+		Player.Spinning = Spinning;
 
 	}
 
@@ -454,11 +454,7 @@ public class Player extends Character {
 	@Override
 	public void heal(int amount) {
 		int level = skillManager.getMaxLevel(Skill.CONSTITUTION) + immortalRaidsCompleted;
-		if ((skillManager.getCurrentLevel(Skill.CONSTITUTION) + amount) >= level) {
-			setConstitution(level);
-		} else {
-			setConstitution(skillManager.getCurrentLevel(Skill.CONSTITUTION) + amount);
-		}
+		setConstitution(Math.min((skillManager.getCurrentLevel(Skill.CONSTITUTION) + amount), level));
 	}
 
 	public void raidsHeal(int amount) {
@@ -1021,9 +1017,6 @@ public class Player extends Character {
 	 * @return The PlayerUpdating instance.
 	 */
 	public static void updateAppearance(Player player, PacketBuilder out, Player target) {
-		for (Player p : World.getPlayers()) {
-
-		}
 		Appearance appearance = target.getAppearance();
 		Equipment equipment = target.getEquipment();
 		PacketBuilder properties = new PacketBuilder();
@@ -1061,8 +1054,8 @@ public class Player extends Character {
 					// System.out.println("Updating: "+Arrays.toString(modelColors));
 					if (modelColors != null) {
 						properties.put(modelColors.length);
-						for (int i = 0; i < modelColors.length; i++) {
-							properties.putInt(modelColors[i]);
+						for (int modelColor : modelColors) {
+							properties.putInt(modelColor);
 						}
 					} else {
 						properties.put(0);
@@ -1411,6 +1404,7 @@ public class Player extends Character {
 		boolean debugMessage = false;
 		int[] playerXP = new int[Skill.VALUES.size()];
 		for (int i = 0; i < Skill.VALUES.size(); i++) {
+			assert Skill.forId(i) != null;
 			playerXP[i] = this.getSkillManager().getExperience(Skill.forId(i));
 		}
 		if (getCombatBuilder().isBeingAttacked()) {
@@ -1509,8 +1503,7 @@ public class Player extends Character {
 	private String clanChatName;
 
 	private HouseLocation houseLocation;
-	private String claimedat = Misc.println_debug("");
-	private String method = "Paypal";
+	private final String claimedat = Misc.println_debug("");
 	private HouseTheme houseTheme;
 
 	/**
@@ -1543,12 +1536,12 @@ public class Player extends Character {
 	/**
 	 * * INSTANCES **
 	 */
-	private final CopyOnWriteArrayList<KillsEntry> killsTracker = new CopyOnWriteArrayList<KillsEntry>();
-	private final CopyOnWriteArrayList<DropLogEntry> dropLog = new CopyOnWriteArrayList<DropLogEntry>();
-	private ArrayList<HouseFurniture> houseFurniture = new ArrayList<HouseFurniture>();
+	private final CopyOnWriteArrayList<KillsEntry> killsTracker = new CopyOnWriteArrayList<>();
+	private final CopyOnWriteArrayList<DropLogEntry> dropLog = new CopyOnWriteArrayList<>();
+	private ArrayList<HouseFurniture> houseFurniture = new ArrayList<>();
 	private ArrayList<Portal> housePortals = new ArrayList<>();
-	private final List<Player> localPlayers = new LinkedList<Player>();
-	private final List<NPC> localNpcs = new LinkedList<NPC>();
+	private final List<Player> localPlayers = new LinkedList<>();
+	private final List<NPC> localNpcs = new LinkedList<>();
 
 	private PlayerSession session;
 	private final PlayerProcess process = new PlayerProcess(this);
@@ -1685,7 +1678,7 @@ public class Player extends Character {
 	/**
 	 * * BOOLEANS **
 	 */
-	private boolean unlockedLoyaltyTitles[] = new boolean[12];
+	private boolean[] unlockedLoyaltyTitles = new boolean[12];
 	private boolean[] crossedObstacles = new boolean[7];
 	private boolean processFarming;
 	private boolean crossingObstacle;
@@ -1808,7 +1801,7 @@ public class Player extends Character {
 		return claimedat;
 	}
 	public String getMethod() {
-		return method;
+		return "Paypal";
 	}
 
 	public Player setHostAddress(String hostAddress) {
@@ -1973,11 +1966,7 @@ public class Player extends Character {
 	}
 
 	public boolean checkItem(int slot, int id) {
-		if (this.getEquipment().getItems()[slot].getId() == id) {
-			return true;
-		} else {
-			return false;
-		}
+		return this.getEquipment().getItems()[slot].getId() == id;
 	}
 
 	/**
@@ -2176,15 +2165,13 @@ public class Player extends Character {
 	public long freeDTD, freeDediBoss, dmgPotionTime;
 
 	public void resetInterfaces() {
-		walkableInterfaceList.stream().filter((i) -> !(i == 41005 || i == 41000)).forEach((i) -> {
-			getPacketSender().sendWalkableInterface(i, false);
-		});
+		walkableInterfaceList.stream().filter((i) -> !(i == 41005 || i == 41000)).forEach((i) -> getPacketSender().sendWalkableInterface(i, false));
 
 		walkableInterfaceList.clear();
 	}
 
 	public void sendParallellInterfaceVisibility(int interfaceId, boolean visible) {
-		if (this != null && this.getPacketSender() != null) {
+		if (this.getPacketSender() != null) {
 			if (visible) {
 				if (walkableInterfaceList.contains(interfaceId)) {
 					return;
@@ -2727,10 +2714,7 @@ public class Player extends Character {
 	 * Construction instancing Arlania
 	 */
 	public boolean isVisible() {
-		if (getLocation() == Locations.Location.CONSTRUCTION) {
-			return false;
-		}
-		return true;
+		return getLocation() != Locations.Location.CONSTRUCTION;
 	}
 
 	public void setHouseFurtinture(ArrayList<HouseFurniture> houseFurniture) {
@@ -3386,8 +3370,8 @@ public class Player extends Character {
 	}
 
 	public boolean hasRights(PlayerRights... hasRights) {
-		for (int i = 0; i < hasRights.length; i++) {
-			if (rights == hasRights[i]) {
+		for (PlayerRights hasRight : hasRights) {
+			if (rights == hasRight) {
 				return true;
 			}
 		}
@@ -3455,7 +3439,7 @@ public class Player extends Character {
 		
 		if (lastDmgPotionTick == 0) {
 
-			Skill sk = null;
+			Skill sk;
 			for (int i = 0; i < 7; i++) {
 				if (i == 3 || i == 5)
 					continue;

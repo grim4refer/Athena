@@ -20,6 +20,7 @@ public class EntityHandler {
 				World.getLoginQueue().add(player);
 			}
 		} if(entity.isNpc()) {
+			assert entity instanceof NPC;
 			NPC npc = (NPC) entity;
 			World.getNpcs().add(npc);
 		} else if(entity.isGameObject()) {

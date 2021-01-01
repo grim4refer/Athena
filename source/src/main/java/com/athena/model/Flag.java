@@ -16,5 +16,5 @@ public enum Flag {
 	GRAPHIC,
 	SINGLE_HIT,
 	DOUBLE_HIT,
-	TRANSFORM;
+	TRANSFORM
 }

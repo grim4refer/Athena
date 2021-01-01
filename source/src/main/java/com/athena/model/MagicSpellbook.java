@@ -19,7 +19,7 @@ public enum MagicSpellbook {
 	 * @param interfaceId	The spellbook's interface id.
 	 * @param message		The message received upon switching to said spellbook.
 	 */
-	private MagicSpellbook(int interfaceId, TeleportType teleportType) {
+	MagicSpellbook(int interfaceId, TeleportType teleportType) {
 		this.interfaceId = interfaceId;
 		this.teleportType = teleportType;
 	}
@@ -32,7 +32,7 @@ public enum MagicSpellbook {
 	/**
 	 * The spellbook's teleport type
 	 */
-	private TeleportType teleportType;
+	private final TeleportType teleportType;
 	
 	/**
 	 * Gets the interface to switch tab interface to.

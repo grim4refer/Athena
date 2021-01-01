@@ -17,6 +17,7 @@ public class PlayerSpecialAmountTask extends Task {
 	@Override
 	public void execute() {
 		if (player == null || !player.isRegistered() || player.getSpecialPercentage() >= 100 || !player.isRecoveringSpecialAttack()) {
+			assert player != null;
 			player.setRecoveringSpecialAttack(false);
 			stop();
 			return;

@@ -400,7 +400,7 @@ public class Locations {
 			public boolean canTeleport(Player player) {
 				World.getNpcs().forEach(n -> n.removeInstancedNpcs(Locations.Location.ZULRAH, player.getPosition().getZ()));
 
-				return true;
+				return false;
 			}
 			@Override
 			public void logout(Player player) {
@@ -419,7 +419,7 @@ public class Locations {
 			public boolean canTeleport(Player player) {
 				World.getNpcs().forEach(n -> n.removeInstancedNpcs(Locations.Location.ZULRAH, player.getPosition().getZ()));
 
-				return true;
+				return false;
 			}
 			@Override
 			public void logout(Player player) {
@@ -438,7 +438,7 @@ public class Locations {
 			public boolean canTeleport(Player player) {
 				World.getNpcs().forEach(n -> n.removeInstancedNpcs(Locations.Location.ZULRAH, player.getPosition().getZ()));
 
-				return true;
+				return false;
 			}
 			@Override
 			public void logout(Player player) {
@@ -457,7 +457,7 @@ public class Locations {
 			public boolean canTeleport(Player player) {
 				World.getNpcs().forEach(n -> n.removeInstancedNpcs(Locations.Location.ZULRAH, player.getPosition().getZ()));
 
-				return true;
+				return false;
 			}
 			@Override
 			public void logout(Player player) {
@@ -476,7 +476,7 @@ public class Locations {
 			public boolean canTeleport(Player player) {
 				World.getNpcs().forEach(n -> n.removeInstancedNpcs(Locations.Location.ZULRAH, player.getPosition().getZ()));
 
-				return true;
+				return false;
 			}
 			@Override
 			public void logout(Player player) {
@@ -495,7 +495,7 @@ public class Locations {
 			public boolean canTeleport(Player player) {
 				World.getNpcs().forEach(n -> n.removeInstancedNpcs(Locations.Location.ZULRAH, player.getPosition().getZ()));
 
-				return true;
+				return false;
 			}
 			@Override
 			public void logout(Player player) {
@@ -514,7 +514,7 @@ public class Locations {
 			public boolean canTeleport(Player player) {
 				World.getNpcs().forEach(n -> n.removeInstancedNpcs(Locations.Location.ZULRAH, player.getPosition().getZ()));
 
-				return true;
+				return false;
 			}
 			@Override
 			public void logout(Player player) {
@@ -533,7 +533,7 @@ public class Locations {
 			public boolean canTeleport(Player player) {
 				World.getNpcs().forEach(n -> n.removeInstancedNpcs(Locations.Location.ZULRAH, player.getPosition().getZ()));
 
-				return true;
+				return false;
 			}
 			@Override
 			public void logout(Player player) {
@@ -552,7 +552,7 @@ public class Locations {
 			@Override
 			public boolean canTeleport(Player player) {
 				World.getNpcs().forEach(n -> n.removeInstancedNpcs(Locations.Location.ZULRAH, player.getPosition().getZ()));
-				return true;
+				return false;
 			}
 			@Override
 			public void logout(Player player) {
@@ -610,13 +610,13 @@ public class Locations {
 				if(player.getWildernessLevel() > 20) {
 					if(player.getRights() == PlayerRights.OWNER) {
 						player.getPacketSender().sendMessage("@red@You've teleported out of deep Wilderness, logs have been written.");
-						return true;
+						return false;
 					}
 					player.getPacketSender().sendMessage("Teleport spells are blocked in this level of Wilderness.");
 					player.getPacketSender().sendMessage("You must be below level 20 of Wilderness to use teleportation spells.");
-					return false;
+					return true;
 				}
-				return true;
+				return false;
 			}
 
 			@Override
@@ -662,7 +662,7 @@ public class Locations {
 
 			@Override
 			public boolean canTeleport(Player player) {
-				return true;
+				return false;
 			}
 			
 			@Override
@@ -685,7 +685,7 @@ public class Locations {
 
 			@Override
 			public boolean canTeleport(Player player) {
-				return true;
+				return false;
 			}
 
 			@Override
@@ -713,7 +713,7 @@ public class Locations {
 			@Override
 			public boolean canTeleport(Player player) {
 				player.getPacketSender().sendMessage("Teleport spells are blocked on this island. Wait for the game to finish!");
-				return false;
+				return true;
 			}
 
 			@Override
@@ -746,7 +746,7 @@ public class Locations {
 			@Override
 			public boolean canTeleport(Player player) {
 				player.getPacketSender().sendMessage("You must leave the boat before teleporting.");
-				return false;
+				return true;
 			}
 
 			@Override
@@ -770,7 +770,7 @@ public class Locations {
 			@Override
 			public boolean canTeleport(Player player) {
 				player.getPacketSender().sendMessage("If you wish to leave, you must use the portal in your team's lobby.");
-				return false;
+				return true;
 			}
 
 			@Override
@@ -810,7 +810,7 @@ public class Locations {
 			
 			@Override
 			public boolean canTeleport(Player player) {
-				return false;
+				return true;
 			}
 			
 			@Override
@@ -908,7 +908,7 @@ public class Locations {
 		WEAPON_GAME_LOBBY(new int[] {3146, 3189}, new int[] {9739, 9776}, true, false, true, false, false, true) {
 			@Override
 			public boolean canTeleport(Player player) {
-				return false;
+				return true;
 			}
 
 			@Override
@@ -944,7 +944,7 @@ public class Locations {
 			@Override
 			public boolean canTeleport(Player player) {
 				player.getPacketSender().sendMessage("You must leave the waiting room before being able to teleport.");
-				return false;
+				return true;
 			}
 
 			@Override
@@ -985,9 +985,9 @@ public class Locations {
 				if(player.getMinigameAttributes().getGraveyardAttributes().hasEntered()) {
 					player.getPacketSender().sendInterfaceRemoval().sendMessage("A spell teleports you out of the graveyard.");
 					Graveyard.leave(player);
-					return false;
+					return true;
 				}
-				return true;
+				return false;
 			}
 
 			@Override
@@ -1020,7 +1020,7 @@ public class Locations {
 			@Override
 			public boolean canTeleport(Player player) {
 				player.getPacketSender().sendMessage("Teleport spells are blocked here. If you'd like to leave, use the northern exit.");
-				return false;
+				return true;
 			}
 
 			@Override
@@ -1056,7 +1056,7 @@ public class Locations {
 			@Override
 			public boolean canTeleport(Player player) {
 				player.getPacketSender().sendMessage("Teleport spells are blocked here. If you'd like to leave, use the northern exit.");
-				return false;
+				return true;
 			}
 
 			@Override
@@ -1094,16 +1094,16 @@ public class Locations {
 			public boolean canTeleport(Player player) {
 				if(player.getDueling().duelingStatus == 5) {
 					player.getPacketSender().sendMessage("To forfiet a duel, run to the west and use the trapdoor.");
-					return false;
+					return true;
 				}
-				return true;
+				return false;
 			}
 
 			@Override
 			public void logout(Player player) {
 				boolean dc = false;
 				if(player.getDueling().inDuelScreen && player.getDueling().duelingStatus != 5) {
-					player.getDueling().declineDuel(player.getDueling().duelingWith > 0 ? true : false);
+					player.getDueling().declineDuel(player.getDueling().duelingWith > 0);
 				} else if(player.getDueling().duelingStatus == 5) {
 					if(player.getDueling().duelingWith > -1) {
 						Player duelEnemy = World.getPlayers().get(player.getDueling().duelingWith);
@@ -1175,7 +1175,7 @@ public class Locations {
 
 			@Override
 			public boolean canTeleport(Player player) {
-				return true;
+				return false;
 			}
 
 			@Override
@@ -1219,7 +1219,7 @@ public class Locations {
 			@Override
 			public boolean canTeleport(Player player) {
 				player.getPacketSender().sendMessage("Teleport spells are blocked here. If you'd like to leave, use the southern exit.");
-				return false;
+				return true;
 			}
 
 			@Override
@@ -1242,7 +1242,6 @@ public class Locations {
 		GAMBLING_ZONE(new int[] { 2723, 2751 }, new int[] { 3457, 3479 }, false, false, false, false, false, false) {
 			@Override
 			public void enter(Player player) {
-			if (player.getPlayerInteractingOption() != PlayerInteractingOption.GAMBLE);
 				//player.getPacketSender().sendInteractionOption("Gamble With", 2, false);
 
 			}
@@ -1257,7 +1256,7 @@ public class Locations {
 			@Override
 			public boolean canTeleport(Player player) {
 				player.getPacketSender().sendMessage("Teleport spells are blocked here. If you'd like to leave, logout.");
-				return false;
+				return true;
 			}
 
 			@Override
@@ -1282,7 +1281,7 @@ public class Locations {
 			@Override
 			public boolean canTeleport(Player player) {
 				player.getPacketSender().sendMessage("Teleport spells are blocked here, if you wish to teleport, use the portal.");
-				return false;
+				return true;
 			}
 
 			@Override
@@ -1312,7 +1311,7 @@ public class Locations {
 			@Override
 			public boolean canTeleport(Player player) {
 				player.getPacketSender().sendMessage("Teleport spells are blocked here, if you wish to teleport, use the portal.");
-				return false;
+				return true;
 			}
 
 			@Override
@@ -1488,7 +1487,7 @@ public class Locations {
 		}
 
 		public boolean canTeleport(Player player) {
-			return true;
+			return false;
 		}
 
 		public void login(Player player) {
@@ -1570,8 +1569,7 @@ public class Locations {
 				} else if ((objectX - i) == playerX
 						&& ((objectY + j) == playerY || (objectY - j) == playerY || objectY == playerY)) {
 					return true;
-				} else if (objectX == playerX
-						&& ((objectY + j) == playerY || (objectY - j) == playerY || objectY == playerY)) {
+				} else if (objectX == playerX && (objectY + j == playerY || objectY - j == playerY)) {
 					return true;
 				}
 			}
@@ -1605,6 +1603,6 @@ public class Locations {
 			distY = 0;
 		if (distX == distY)
 			return distX + 1;
-		return distX > distY ? distX : distY;
+		return Math.max(distX, distY);
 	}
 }
