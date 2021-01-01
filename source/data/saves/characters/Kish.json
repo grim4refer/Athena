@@ -28,8 +28,8 @@
   "achievement-points": 10,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 64798,
-  "total-loyalty-points": 64798.0,
+  "loyalty-points": 65527,
+  "total-loyalty-points": 65527.0,
   "voting-points": 1,
   "slayer-points": 50,
   "pk-points": 0,
@@ -54,7 +54,7 @@
   "auto-retaliate": true,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 158833346,
+  "last-veng": 1609366673673,
   "fight-type": "WHIP_LASH",
   "sol-effect": 0,
   "skull-timer": 0,
@@ -479,13 +479,13 @@
   ],
   "skills": {
     "level": [
-      131,
-      131,
-      131,
+      120,
+      120,
+      120,
       990,
-      131,
+      120,
       97616,
-      131,
+      120,
       99,
       99,
       99,
@@ -977,17 +977,17 @@
       "boss": true
     },
     {
+      "runningTotal": 7,
+      "npcId": 25,
+      "npcName": "Bad Santa",
+      "amount": 7,
+      "boss": true
+    },
+    {
       "runningTotal": 6,
       "npcId": 515,
       "npcName": "Yani",
       "amount": 6,
-      "boss": true
-    },
-    {
-      "runningTotal": 2,
-      "npcId": 8507,
-      "npcName": "Ultimatium",
-      "amount": 2,
       "boss": true
     },
     {
@@ -1002,6 +1002,27 @@
       "npcId": 367,
       "npcName": "Mayonaise",
       "amount": 2,
+      "boss": true
+    },
+    {
+      "runningTotal": 2,
+      "npcId": 8507,
+      "npcName": "Ultimatium",
+      "amount": 2,
+      "boss": true
+    },
+    {
+      "runningTotal": 2,
+      "npcId": 6305,
+      "npcName": "Yanille Guardian",
+      "amount": 2,
+      "boss": true
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 4540,
+      "npcName": "Bandos Avatar",
+      "amount": 1,
       "boss": true
     },
     {
@@ -1026,13 +1047,6 @@
       "boss": true
     },
     {
-      "runningTotal": 2,
-      "npcId": 6305,
-      "npcName": "Yanille Guardian",
-      "amount": 2,
-      "boss": true
-    },
-    {
       "runningTotal": 1,
       "npcId": 5596,
       "npcName": "Jubster",
@@ -1045,20 +1059,6 @@
       "npcName": "Yanille Artillery",
       "amount": 1,
       "boss": false
-    },
-    {
-      "runningTotal": 1,
-      "npcId": 4540,
-      "npcName": "Bandos Avatar",
-      "amount": 1,
-      "boss": true
-    },
-    {
-      "runningTotal": 7,
-      "npcId": 25,
-      "npcName": "Bad Santa",
-      "amount": 7,
-      "boss": true
     }
   ],
   "drops": [

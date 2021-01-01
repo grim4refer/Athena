@@ -18,7 +18,7 @@ public class PlayerPanel {
 
 		player.getPacketSender().sendString(counter++, "");
 
-		player.getPacketSender().sendString(counter++, "@or3@<img=10>@whi@ General Information");
+		player.getPacketSender().sendString(counter++, "@or3@-@whi@ General Information");
 		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Time: [ " +GameLoader.day() + " ], " +Misc.getCurrentServerTime());
 		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Time Played: @yel@"+Misc.getHoursPlayed((player.getTotalPlayTime() + player.getRecordedLogin().elapsed())));
 		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Username: @yel@"+player.getUsername());
