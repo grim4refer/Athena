@@ -17,7 +17,7 @@ public class Packet {
 	public enum PacketType {
 		FIXED,
 		BYTE,
-		SHORT;
+		SHORT
 	}
 	
 	/**
@@ -91,7 +91,7 @@ public class Packet {
 		byte b = 0;
 		try {
 			b = buffer.readByte();
-		} catch(IndexOutOfBoundsException e) {
+		} catch(IndexOutOfBoundsException ignored) {
 
 		}
 		return b;
@@ -324,7 +324,8 @@ public class Packet {
 	 * @return	The smart value.
 	 */
 	public int readSmart() {
-		return buffer.getByte(buffer.readerIndex()) < 128 ? readByte() & 0xFF : (readShort() & 0xFFFF) - 32768;
+		buffer.getByte(buffer.readerIndex());
+		return readByte() & 0xFF;
 	}
 
 	/**
@@ -332,7 +333,8 @@ public class Packet {
 	 * @return	The signed smart value.
 	 */
 	public int readSignedSmart() {
-		return buffer.getByte(buffer.readerIndex()) < 128 ? (readByte() & 0xFF) - 64 : (readShort() & 0xFFFF) - 49152;
+		buffer.getByte(buffer.readerIndex());
+		return (readByte() & 0xFF) - 64;
 	}
 
 	@Override

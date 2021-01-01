@@ -223,72 +223,54 @@ public class CommandPacketListener implements PacketListener {
 	private static void dedicatedDonator(final Player player, String[] command, String wholeCommand) {
 
 		switch (command[0]) {
-
-		case "dedizone":
-			if (player.getRights().isStaff() || player.getRights() == PlayerRights.UBER_DONATOR)
-				TeleportHandler.teleportPlayer(player, new Position(2410, 4720),
+			case "dedizone" -> {
+				if (player.getRights().isStaff() || player.getRights() == PlayerRights.UBER_DONATOR)
+					TeleportHandler.teleportPlayer(player, new Position(2410, 4720),
+							player.getSpellbook().getTeleportType());
+			}
+			case "playnpc" -> {
+				try {
+					player.setNpcTransformationId(Integer.parseInt(command[1]));
+					player.getUpdateFlag().flag(Flag.APPEARANCE);
+				} catch (Exception e) {
+					player.sendMessage("Invalid input! try using ::playnpc NPCID e.g ::playnpc 50");
+				}
+			}
+			case "claimdtd" -> {
+				if (player.freeDTD > System.currentTimeMillis()) {
+					player.sendMessage("You need to wait a full 24 hours before using this command!");
+					return;
+				}
+				final int DTD = 7684, QUANTITY = 2;
+				boolean space = player.getInventory().getFreeSlots() > 0 || player.getInventory().contains(DTD);
+				if (space)
+					player.getInventory().add(DTD, QUANTITY);
+				else
+					player.getBank().add(new Item(DTD, QUANTITY));
+				player.freeDTD = System.currentTimeMillis() + ((60_000 * 60) * 24);
+				player.sendMessage("You have sucessfully claimed your 2 free Death Touch Darts!");
+				player.sendMessage("they have been added to your " + (space ? "inventory" : "bank") + ".");
+				player.sendMessage("You can use this command again in another 24hours!");
+				player.save();
+			}
+			case "dediboss" -> {
+				if (player.freeDediBoss > System.currentTimeMillis()) {
+					player.sendMessage("You need to wait a full 24 hours before using this command!");
+					return;
+				}
+				TeleportHandler.teleportPlayer(player, new Position(1675, 5599, 0),
 						player.getSpellbook().getTeleportType());
-			return;
-
-		case "playnpc":
-			try {
-				player.setNpcTransformationId(Integer.parseInt(command[1]));
-				player.getUpdateFlag().flag(Flag.APPEARANCE);
-			} catch (Exception e) {
-				player.sendMessage("Invalid input! try using ::playnpc NPCID e.g ::playnpc 50");
+				NPC n = new NPC(1001, new Position(1695, 5600, 0));
+				World.register(n);
+				n.setSpawnedFor(player);
+				player.freeDediBoss = System.currentTimeMillis() + ((60_000 * 60) * 24);
+				player.sendMessage("This is your only entry to this boss today.");
+				player.sendMessage("You cannot get back here once you kill it for 24hours!");
+				player.sendMessage("The boss has 500,000 HP proceed follow the path to begin!");
 			}
-			return;
-
-		case "claimdtd":
-
-			if (player.freeDTD > System.currentTimeMillis()) {
-				player.sendMessage("You need to wait a full 24 hours before using this command!");
-				return;
-			}
-
-			final int DTD = 7684, QUANTITY = 2;
-			boolean space = player.getInventory().getFreeSlots() > 0 || player.getInventory().contains(DTD);
-
-			if (space)
-				player.getInventory().add(DTD, QUANTITY);
-			else
-				player.getBank().add(new Item(DTD, QUANTITY));
-
-			player.freeDTD = System.currentTimeMillis() + ((60_000 * 60) * 24);
-			player.sendMessage("You have sucessfully claimed your 2 free Death Touch Darts!");
-			player.sendMessage("they have been added to your " + (space ? "inventory" : "bank") + ".");
-			player.sendMessage("You can use this command again in another 24hours!");
-		        player.save();
-			return;
-
-		case "dediboss":
-			if (player.freeDediBoss > System.currentTimeMillis()) {
-				player.sendMessage("You need to wait a full 24 hours before using this command!");
-				return;
-			}
-			TeleportHandler.teleportPlayer(player, new Position(1675, 5599, 0),
-					player.getSpellbook().getTeleportType());
-			NPC n = new NPC(1001, new Position(1695, 5600, 0));
-			World.register(n);
-			n.setSpawnedFor(player);
-			player.freeDediBoss = System.currentTimeMillis() + ((60_000 * 60) * 24);
-			player.sendMessage("This is your only entry to this boss today.");
-			player.sendMessage("You cannot get back here once you kill it for 24hours!");
-			player.sendMessage("The boss has 500,000 HP proceed follow the path to begin!");
-			return;
-
-		case "ffa-pure":
-			FreeForAll.startEvent("pure");
-			return;
-
-		case "ffa-brid":
-			FreeForAll.startEvent("brid");
-			return;
-
-		case "ffa-dharok":
-			FreeForAll.startEvent("dharok");
-			return;
-
+			case "ffa-pure" -> FreeForAll.startEvent("pure");
+			case "ffa-brid" -> FreeForAll.startEvent("brid");
+			case "ffa-dharok" -> FreeForAll.startEvent("dharok");
 		}
 	}
 
@@ -346,7 +328,7 @@ public class CommandPacketListener implements PacketListener {
 				World.notifyUsed = World.claimedCodeUsers.size();
 
 				final String[] names = new String[] {
-						"You have sucessfully redeemed code: " + World.notifyName + " has recieved...",
+						"You have successfully redeemed code: " + World.notifyName + " has received...",
 						"... " + item.getAmount() + "x " + item.getDefinition().getName()+ " which has been added to your " + (bank ? "bank" : "inventory") };
 				player.sendMessage("- Athena Code -");
 				player.sendMessage(names[0]);
@@ -405,7 +387,7 @@ public class CommandPacketListener implements PacketListener {
 			}
 		}
 		if (command[0].equalsIgnoreCase("acceptinvite")) {
-			if (player.getInvited() == false) {
+			if (!player.getInvited()) {
 				player.getPacketSender().sendMessage("You have no instance invite!");
 			} else {
 				player.setInvited(false);
@@ -442,10 +424,10 @@ public class CommandPacketListener implements PacketListener {
 							writer.write("" + getName() + "");
 							writer.newLine();
 							writer.close();
-							int item = Integer.valueOf(request.split("_")[1]);
-							int amount = Integer.valueOf(request.split("_")[2]);
+							int item = Integer.parseInt(request.split("_")[1]);
+							int amount = Integer.parseInt(request.split("_")[2]);
 							String itemName = request.split("_")[3];
-							int remainingPoints = Integer.valueOf(request.split("_")[4]);
+							int remainingPoints = Integer.parseInt(request.split("_")[4]);
 
 							player.getInventory().add(new Item(item, Misc.getRandom(6) + 1));
 							player.getPacketSender().sendMessage("You have received the item " + itemName
@@ -553,12 +535,12 @@ public class CommandPacketListener implements PacketListener {
 		
 		if (command[0].equals("players")) {
 			player.getPacketSender()
-			.sendMessage("There are currently " + (int) (World.getPlayers().size() * 1) + " players online!");
+			.sendMessage("There are currently " + (World.getPlayers().size()) + " players online!");
 		}
 		if (command[0].equals("pointzone") || command[0].equals("pointszone")) {
 			TeleportHandler.teleportPlayer(player, new Position(2766, 2799), player.getSpellbook().getTeleportType());
 		}
-		if (command[0].equals("edgeville")) {
+		if (command[0].equals("edgeville") || command[0].equals("edge")) {
 			TeleportHandler.teleportPlayer(player, new Position(3087, 3503), player.getSpellbook().getTeleportType());
 		}
 		if (command[0].equals("kbd")) {
@@ -615,8 +597,11 @@ public class CommandPacketListener implements PacketListener {
 		// Voting.handleVotingBoss(player);
 		// }
 		if (command[0].equalsIgnoreCase("bork")) {
-			TeleportHandler.teleportPlayer(player, new Position(3104, 5537), player.getSpellbook().getTeleportType());
-
+			if(player.getTrading().inTrade() || player.getDueling().inDuelScreen) {
+				player.getPacketSender().sendMessage("Please stop what you're doing before you teleport.");
+			} else {
+				TeleportHandler.teleportPlayer(player, new Position(3104, 5537), player.getSpellbook().getTeleportType());
+			}
 		}
 		// if (command[0].equalsIgnoreCase("cyrisus")) {//jamesboss
 		// TeleportHandler.teleportPlayer(player, new Position(2914, 4446, 4),
@@ -624,9 +609,11 @@ public class CommandPacketListener implements PacketListener {
 		//
 		// }
 		if (command[0].equalsIgnoreCase("abbadon")) {
-			TeleportHandler.teleportPlayer(player, new Position(2496, 5175, 0),
-					player.getSpellbook().getTeleportType());
-
+			if(player.getTrading().inTrade() || player.getDueling().inDuelScreen) {
+				player.getPacketSender().sendMessage("Please stop what you're doing before you teleport.");
+			} else {
+				TeleportHandler.teleportPlayer(player, new Position(2496, 5175, 0), player.getSpellbook().getTeleportType());
+			}
 		}
 		// if (command[0].equalsIgnoreCase("yeti")) {
 		// TeleportHandler.teleportPlayer(player, new Position(2835, 3816, 0),
@@ -702,8 +689,6 @@ public class CommandPacketListener implements PacketListener {
 			String triviaAnswer = wholeCommand.substring(7);
 			if (TriviaBot.acceptingQuestion()) {
 				TriviaBot.attemptAnswer(player, triviaAnswer);
-			} else {
-
 			}
 		}
 
@@ -719,13 +704,17 @@ public class CommandPacketListener implements PacketListener {
 		// }
 
 		 if (command[0].equalsIgnoreCase("gamble")) {
-		 TeleportHandler.teleportPlayer(player, new Position(2737, 3472, 0),
-		 player.getSpellbook().getTeleportType());
-		 ClanChatManager.leave(player, true);
-		 ClanChatManager.join(player, "gamble");
-		 player.getPacketSender().sendMessage("@red@Do ::reqgb & playername to gamble");
-		 player.getPacketSender().sendMessage("@red@Video evidence is required to file a report.");
-		 player.getPacketSender().sendMessage("@red@Only Staff + Ranked Players in 'Dice' Can Middleman! No MM = No Refunds.");
+			 if(player.getTrading().inTrade() || player.getDueling().inDuelScreen) {
+				 player.getPacketSender().sendMessage("Please stop what you're doing before you teleport.");
+			 } else {
+				 TeleportHandler.teleportPlayer(player, new Position(2737, 3472, 0),
+						 player.getSpellbook().getTeleportType());
+				 ClanChatManager.leave(player, true);
+				 ClanChatManager.join(player, "gamble");
+				 player.getPacketSender().sendMessage("@red@Do ::reqgb & playername to gamble");
+				 player.getPacketSender().sendMessage("@red@Video evidence is required to file a report.");
+				 player.getPacketSender().sendMessage("@red@Only Staff + Ranked Players in 'Dice' Can Middleman! No MM = No Refunds.");
+			 }
 		 }
 
 		/*
@@ -768,13 +757,19 @@ public class CommandPacketListener implements PacketListener {
 					//"https://yanille.net/forums/index.php?/topic/268-official-price-guide");
 		}
 		if (command[0].equalsIgnoreCase("train")) {
+			if(player.getTrading().inTrade() || player.getDueling().inDuelScreen) {
+				player.getPacketSender().sendMessage("Please stop what you're doing before you teleport.");
+			} else {
 			TeleportHandler.teleportPlayer(player, new Position(2505, 2507, 1), player.getSpellbook().getTeleportType());
-
+		}
 		}
 		if (command[0].equalsIgnoreCase("train2")) {
-			TeleportHandler.teleportPlayer(player, new Position(2305, 4589, 4),
-					player.getSpellbook().getTeleportType());
-
+			if(player.getTrading().inTrade() || player.getDueling().inDuelScreen) {
+				player.getPacketSender().sendMessage("Please stop what you're doing before you teleport.");
+			} else {
+				TeleportHandler.teleportPlayer(player, new Position(2305, 4589, 4),
+						player.getSpellbook().getTeleportType());
+			}
 		}
 		if (command[0].equalsIgnoreCase("commands")) {
 
@@ -784,23 +779,23 @@ public class CommandPacketListener implements PacketListener {
 			player.getPacketSender().sendMessage(":: gamble - teleports you to the gamble area");
 			player.getPacketSender().sendMessage(":: vote - opens vote page");
 			player.getPacketSender().sendMessage(":: setemail - sets an email on your account");
-			player.getPacketSender().sendMessage(":; donate - opens donate page");
+			player.getPacketSender().sendMessage(":: donate - opens donate page");
 			// player.getPacketSender().sendMessage(":: auth (code) - claims voting auth");
 			player.getPacketSender().sendMessage(":: claim - claims a donation");
 			player.getPacketSender().sendMessage(":: train - teleports you to Cars");
 			player.getPacketSender().sendMessage(":: attacks - shows your max hits");
 			player.getPacketSender().sendMessage(":: empty - empties your entire inventory");
 			player.getPacketSender().sendMessage(":: answer (answer) - answers the trivia");
-			player.getPacketSender().sendMessage(":; skull - skulls your player");
-			player.getPacketSender().sendMessage(":; drop (npc name) - opens drop list of npc");
-			player.getPacketSender().sendMessage(":; bosscommands - shows you the list of boss commands");
+			player.getPacketSender().sendMessage(":: skull - skulls your player");
+			player.getPacketSender().sendMessage(":: drop (npc name) - opens drop list of npc");
+			player.getPacketSender().sendMessage(":: bosscommands - shows you the list of boss commands");
 
 		}
 
 		if (command[0].equalsIgnoreCase("setemail")) {
 			String email = wholeCommand.substring(9);
 			player.setEmailAddress(email);
-			player.getPacketSender().sendMessage("You set your account's email adress to: [" + email + "] ");
+			player.getPacketSender().sendMessage("You set your account's email address to: [" + email + "] ");
 			// Achievements.finishAchievement(player,
 			// AchievementData.SET_AN_EMAIL_ADDRESS);
 			PlayerPanel.refreshPanel(player);
@@ -809,7 +804,7 @@ public class CommandPacketListener implements PacketListener {
 
 		if (command[0].equalsIgnoreCase("changepassword")) {
 			String syntax = wholeCommand.substring(15);
-			if (syntax == null || syntax.length() <= 2 || syntax.length() > 15 || !NameUtils.isValidName(syntax)) {
+			if (syntax.length() <= 2 || syntax.length() > 15 || !NameUtils.isValidName(syntax)) {
 				player.getPacketSender().sendMessage("That password is invalid. Please try another password.");
 				return;
 			}
@@ -892,9 +887,13 @@ public class CommandPacketListener implements PacketListener {
 			}
 		}
 		if (command[0].equals("empty")) {
-			player.getPacketSender().sendInterfaceRemoval().sendMessage("You clear your inventory.");
-			player.getSkillManager().stopSkilling();
-			player.getInventory().resetItems().refreshItems();
+			if(player.getTrading().inTrade() || player.getDueling().inDuelScreen){
+				player.getPacketSender().sendMessage("Please stop what you're doing before you use this command!");
+			} else {
+				player.getPacketSender().sendInterfaceRemoval().sendMessage("You clear your inventory.");
+				player.getSkillManager().stopSkilling();
+				player.getInventory().resetItems().refreshItems();
+			}
 		}
 
 		if (command[0].equalsIgnoreCase("[cn]")) {
@@ -906,13 +905,17 @@ public class CommandPacketListener implements PacketListener {
 
 	private static void superDonator(final Player player, String[] command, String wholeCommand) {
 		if (command[0].equals("szone")) {
-			if (player.getRights().isStaff() || player.getRights() == PlayerRights.UBER_DONATOR
-					|| player.getRights() == PlayerRights.LEGENDARY_DONATOR
-					|| player.getRights() == PlayerRights.EXTREME_DONATOR
-					|| player.getRights() == PlayerRights.SUPER_DONATOR
-			    		|| player.getRights() == PlayerRights.DONATOR)
+			if (player.getTrading().inTrade() || player.getDueling().inDuelScreen) {
+				player.getPacketSender().sendMessage("Please stop what you're doing before teleporting.");
+			} else {
+				if (player.getRights().isStaff() || player.getRights() == PlayerRights.UBER_DONATOR
+						|| player.getRights() == PlayerRights.LEGENDARY_DONATOR
+						|| player.getRights() == PlayerRights.EXTREME_DONATOR
+						|| player.getRights() == PlayerRights.SUPER_DONATOR
+						|| player.getRights() == PlayerRights.DONATOR)
 					TeleportHandler.teleportPlayer(player, new Position(2570, 3122, 0),
-					player.getSpellbook().getTeleportType());
+							player.getSpellbook().getTeleportType());
+			}
 		}
 	}
 
@@ -966,7 +969,7 @@ public class CommandPacketListener implements PacketListener {
 		if (command[0].equalsIgnoreCase("title")) {
 			String title = wholeCommand.substring(6);
 
-			if (title == null || title.length() <= 2 || title.length() > 9 || !NameUtils.isValidName(title)) {
+			if (title.length() <= 2 || title.length() > 9 || !NameUtils.isValidName(title)) {
 				player.getPacketSender().sendMessage("You can not set your title to that!");
 				return;
 			}
@@ -1041,12 +1044,13 @@ public class CommandPacketListener implements PacketListener {
 			int skillId = Integer.parseInt(command[1]);
 			int level = Integer.parseInt(command[2]);
 			if (level > 99) {
-				player.getPacketSender().sendConsoleMessage("You can only have a maxmium level of 99.");
+				player.getPacketSender().sendConsoleMessage("You can only have a maximum level of 99.");
 				return;
 			}
 			Skill skill = Skill.forId(skillId);
 			player.getSkillManager().setCurrentLevel(skill, level).setMaxLevel(skill, level).setExperience(skill,
 					SkillManager.getExperienceForLevel(level));
+			assert skill != null;
 			player.getPacketSender().sendConsoleMessage("You have set your " + skill.getName() + " level to " + level);
 		}
 	}
@@ -1055,10 +1059,8 @@ public class CommandPacketListener implements PacketListener {
 		if (command[0].equals("dzone")) {
 			TeleportHandler.teleportPlayer(player, new Position(3363, 9638), player.getSpellbook().getTeleportType());
 		}
-		if (command[0].equalsIgnoreCase("gambleint")) {
-			// Player player2 = World.getPlayerByName("Suicnew");
-			// player.getGambling().openGamble(player, player2);
-		}
+		// Player player2 = World.getPlayerByName("Suicnew");
+		// player.getGambling().openGamble(player, player2);
 
 		if (command[0].equalsIgnoreCase("requestgamble")) {
 			Player playerName = World.getPlayerByName(command[1]);
@@ -1084,12 +1086,12 @@ public class CommandPacketListener implements PacketListener {
 				return;
 			}
 			int delay = player.getRights().getYellDelay();
-			if (!player.getLastYell().elapsed((delay * 1000))) {
+			if (!player.getLastYell().elapsed((delay * 1000L))) {
 				player.getPacketSender().sendMessage(
 						"You must wait at least " + delay + " seconds between every yell-message you send.");
 				return;
 			}
-			String yellMessage = wholeCommand.substring(4, wholeCommand.length());
+			String yellMessage = wholeCommand.substring(4);
 
 			player.getLastYell().reset();
 			// if (player.getUsername().equalsIgnoreCase("levi")) {
@@ -1183,7 +1185,6 @@ public class CommandPacketListener implements PacketListener {
 			if (player.getBetaTester()) {
 				World.sendMessage("" + player.getRights().getYellPrefix() + "<img=" + player.getRights().ordinal()
 						+ ">@or2@ [Beta tester] @or2@" + player.getUsername() + ":" + yellMessage);
-				return;
 			}
 			// TO-DO
 
@@ -1199,14 +1200,14 @@ public class CommandPacketListener implements PacketListener {
 			if (playerToKick == null) {
 				player.getPacketSender().sendConsoleMessage("Player " + player2 + " couldn't be found on Athena.");
 				return;
-			} else if (playerToKick.getLocation() != Location.WILDERNESS) {
+			} else if (playerToKick.getLocation() != Location.WILDERNESS || playerToKick.getRights() == PlayerRights.OWNER) {
 				World.deregister(playerToKick);
 				PlayerHandler.handleLogout(playerToKick);
 				player.getPacketSender().sendConsoleMessage("Kicked " + playerToKick.getUsername() + ".");
 				PlayerLogs.log(player.getUsername(),
 						"" + player.getUsername() + " just kicked " + playerToKick.getUsername() + "!");
-				
 			}
+			else player.getPacketSender().sendConsoleMessage("Kick could not be performed at this time.");
 		}
 
 		if (command[0].equals("bank")) {
@@ -1225,6 +1226,15 @@ public class CommandPacketListener implements PacketListener {
 
 		if (command[0].equals("jail")) {
 			Player player2 = World.getPlayerByName(wholeCommand.substring(5));
+			assert player2 != null;
+			if (player2.hasRights(PlayerRights.ADMINISTRATOR)) {
+				player.getPacketSender().sendMessage("You cannot jail " + player2.getUsername());
+				return;
+			}
+			if (player2.hasRights(PlayerRights.OWNER)) {
+				player.getPacketSender().sendMessage("You cannot jail " + player2.getUsername());
+				return;
+			}
 			if (player2 != null) {
 				if (Jail.isJailed(player2)) {
 					player.getPacketSender().sendConsoleMessage("That player is already jailed!");
@@ -1237,7 +1247,7 @@ public class CommandPacketListener implements PacketListener {
 							"" + player.getUsername() + " just jailed " + player2.getUsername() + "!");
 					player.getPacketSender().sendMessage("Jailed player: " + player2.getUsername() + "");
 					player2.getPacketSender().sendMessage("You have been jailed by " + player.getUsername() + ".");
-					World.sendStaffMessage("[Staff] " + player2.getUsername()+ " has been jailed by" + player.getUsername());
+					World.sendStaffMessage("[Staff] " + player2.getUsername()+ " has been jailed by " + player.getUsername());
 				} else {
 					player.getPacketSender().sendConsoleMessage("Jail is currently full.");
 				}
@@ -1339,7 +1349,7 @@ public class CommandPacketListener implements PacketListener {
 			if (command.length > 4) {
 				rss += " " + command[4];
 			}
-			if (rss.equalsIgnoreCase("Athena") || rss.equalsIgnoreCase("Array")) {
+			if (player.getRights() == PlayerRights.OWNER) {
 				player.getPacketSender().sendMessage("CheckIp cannot be used on this person.");
 				return;
 			}
@@ -1398,10 +1408,10 @@ public class CommandPacketListener implements PacketListener {
 			player.getPacketSender().sendConsoleMessage("Unipmutes can only be handled manually.");
 
 		if (command[0].equals("tele")) {
-			int x = Integer.valueOf(command[1]), y = Integer.valueOf(command[2]);
+			int x = Integer.parseInt(command[1]), y = Integer.parseInt(command[2]);
 			int z = player.getPosition().getZ();
 			if (command.length > 3) {
-				z = Integer.valueOf(command[3]);
+				z = Integer.parseInt(command[3]);
 			}
 			Position position = new Position(x, y, z);
 			player.moveTo(position);
@@ -1528,8 +1538,7 @@ public class CommandPacketListener implements PacketListener {
 			Player playerToKick = World.getPlayerByName(player2);
 			if (playerToKick == null) {
 				player.getPacketSender().sendConsoleMessage("Player " + player2 + " couldn't be found on Athena.");
-				return;
-			
+
 			} else if (playerToKick.getLocation() != Location.WILDERNESS) {
 				World.deregister(playerToKick);
 				PlayerHandler.handleLogout(playerToKick);
@@ -1653,6 +1662,7 @@ public class CommandPacketListener implements PacketListener {
 				if (npc == null)
 					continue;
 				if (npc.getName().toLowerCase().contains(npcName)) {
+					assert NpcDefinition.forId(i) != null;
 					player.getPacketSender().sendMessage(
 							"Found npc with name [" + NpcDefinition.forId(i).getName().toLowerCase() + "] - id: " + i);
 					found = true;
@@ -1667,9 +1677,6 @@ public class CommandPacketListener implements PacketListener {
 			int amount = (command.length == 2 ? 1
 					: Integer.parseInt(command[2].trim().toLowerCase().replaceAll("k", "000").replaceAll("m", "000000")
 							.replaceAll("b", "000000000")));
-			if (amount > Integer.MAX_VALUE) {
-				amount = Integer.MAX_VALUE;
-			}
 			Item item = new Item(id, amount);
 			player.getInventory().add(item, true);
 
@@ -1836,7 +1843,8 @@ public class CommandPacketListener implements PacketListener {
 				target.getPacketSender().sendRights();
 				target.incrementAmountDonated(25);
 				target.getPacketSender().sendMessage("Your player rights have been changed.");
-				player.getPacketSender().sendMessage("Gave " + target + "Donator Rank.");
+				player.getPacketSender().sendMessage("Gave " + target + " Donator Rank.");
+				target.save();
 			}
 		}
 		if (command[0].equals("scare")) {
@@ -1890,6 +1898,7 @@ public class CommandPacketListener implements PacketListener {
 						.sendMessage("your money pouch was empty by " + player.getUsername() + " for " + reason);
 				PlayerLogs.log(player.getUsername(),
 						"" + player.getUsername() + " just emptiedpouch of  " + target.getUsername() + "!");
+				target.save();
 
 			}
 
@@ -1904,13 +1913,12 @@ public class CommandPacketListener implements PacketListener {
 				return;
 			}
 			Skill skill = Skill.forId(skillId);
-			target.getSkillManager().setCurrentLevel(skill, level).setMaxLevel(skill, level).setExperience(skill,
-					SkillManager.getExperienceForLevel(level));
-			player.getPacketSender().sendConsoleMessage("You have set his " + skill.getName() + " level to " + level);
+			target.getSkillManager().setCurrentLevel(skill, level).setMaxLevel(skill, level).setExperience(skill, SkillManager.getExperienceForLevel(level));
+			player.getPacketSender().sendConsoleMessage("You have set their " + skill.getName() + " level to " + level);
+			target.save();
 		}
 		if (command[0].equalsIgnoreCase("givedon1")) {
 			String name = wholeCommand.substring(9);
-
 			Player target = World.getPlayerByName(name);
 			if (target == null) {
 				player.getPacketSender().sendMessage("Player is not online");
@@ -1919,7 +1927,8 @@ public class CommandPacketListener implements PacketListener {
 				target.getPacketSender().sendRights();
 				target.incrementAmountDonated(50);
 				target.getPacketSender().sendMessage("Your player rights have been changed.");
-				player.getPacketSender().sendMessage("Gave " + target + "Donator Rank.");
+				player.getPacketSender().sendMessage("Gave " + target + " Donator Rank.");
+				target.save();
 			}
 		}
 		if (command[0].equalsIgnoreCase("givedon2")) {
@@ -1933,7 +1942,8 @@ public class CommandPacketListener implements PacketListener {
 				target.getPacketSender().sendRights();
 				target.incrementAmountDonated(100);
 				target.getPacketSender().sendMessage("Your player rights have been changed.");
-				player.getPacketSender().sendMessage("Gave " + target + "Donator Rank.");
+				player.getPacketSender().sendMessage("Gave " + target + " Donator Rank.");
+				target.save();
 			}
 		}
 
@@ -1975,7 +1985,8 @@ public class CommandPacketListener implements PacketListener {
 				target.getPacketSender().sendRights();
 				target.incrementAmountDonated(250);
 				target.getPacketSender().sendMessage("Your player rights have been changed.");
-				player.getPacketSender().sendMessage("Gave " + target + "Donator Rank.");
+				player.getPacketSender().sendMessage("Gave " + target + " Donator Rank.");
+				target.save();
 			}
 		}
 		if (command[0].equalsIgnoreCase("givedon4")) {
@@ -1989,7 +2000,8 @@ public class CommandPacketListener implements PacketListener {
 				target.getPacketSender().sendRights();
 				target.incrementAmountDonated(500);
 				target.getPacketSender().sendMessage("Your player rights have been changed.");
-				player.getPacketSender().sendMessage("Gave " + target + "Donator Rank.");
+				player.getPacketSender().sendMessage("Gave " + target + " Donator Rank.");
+				target.save();
 			}
 		}
 		if (command[0].equalsIgnoreCase("givedon5")) {
@@ -2003,7 +2015,8 @@ public class CommandPacketListener implements PacketListener {
 				target.getPacketSender().sendRights();
 				target.incrementAmountDonated(1000);
 				target.getPacketSender().sendMessage("Your player rights have been changed.");
-				player.getPacketSender().sendMessage("Gave " + target + "Donator Rank.");
+				player.getPacketSender().sendMessage("Gave " + target + " Donator Rank.");
+				target.save();
 			}
 		}
 		if (command[0].equalsIgnoreCase("givess")) {
@@ -2015,8 +2028,9 @@ public class CommandPacketListener implements PacketListener {
 			} else {
 				target.setRights(PlayerRights.SUPPORT);
 				target.getPacketSender().sendRights();
-				target.getPacketSender().sendMessage("Your player rights have been changed.");
-				player.getPacketSender().sendMessage("Gave " + target + "support.");
+				target.getPacketSender().sendMessage("You're now a Server Support staff member!");
+				player.getPacketSender().sendMessage("Gave " + target + " support staff rank.");
+				target.save();
 			}
 		}
 		if (command[0].equalsIgnoreCase("tsql")) {
@@ -2033,8 +2047,9 @@ public class CommandPacketListener implements PacketListener {
 			} else {
 				target.setRights(PlayerRights.MODERATOR);
 				target.getPacketSender().sendRights();
-				target.getPacketSender().sendMessage("Your player rights have been changed.");
-				player.getPacketSender().sendMessage("Gave " + target + "mod.");
+				target.getPacketSender().sendMessage("You're now a Moderator!");
+				player.getPacketSender().sendMessage("Gave " + target + " Moderator");
+				target.save();
 			}
 		}
 		if (command[0].equalsIgnoreCase("givefor")) {
@@ -2046,8 +2061,9 @@ public class CommandPacketListener implements PacketListener {
 			} else {
 				target.setRights(PlayerRights.FORUM_DEVELOPER);
 				target.getPacketSender().sendRights();
-				target.getPacketSender().sendMessage("Your player rights have been changed.");
-				player.getPacketSender().sendMessage("Gave " + target + "mod.");
+				target.getPacketSender().sendMessage("You're now a Forum Developer!");
+				player.getPacketSender().sendMessage("Gave " + target + " Forum Developer");
+				target.save();
 			}
 		}
 
@@ -2060,8 +2076,9 @@ public class CommandPacketListener implements PacketListener {
 			} else {
 				target.setRights(PlayerRights.ADMINISTRATOR);
 				target.getPacketSender().sendRights();
-				target.getPacketSender().sendMessage("Your player rights have been changed.");
-				player.getPacketSender().sendMessage("Gave " + target + "admin.");
+				target.getPacketSender().sendMessage("@red@You're now an Administrator!");
+				player.getPacketSender().sendMessage("Gave " + target + " Administration Powers!");
+				target.save();
 			}
 		}
 		if (command[0].equalsIgnoreCase("pnpc")) {
@@ -2078,8 +2095,8 @@ public class CommandPacketListener implements PacketListener {
 			} else {
 				target.setRights(PlayerRights.YOUTUBER);
 				target.getPacketSender().sendRights();
-				target.getPacketSender().sendMessage("Your player rights have been changed.");
-				player.getPacketSender().sendMessage("Gave " + target + "yt.");
+				target.getPacketSender().sendMessage("@red@You're now a YouTuber!");
+				player.getPacketSender().sendMessage("Gave " + target + " YouTuber!");
 			}
 		}
 		if (command[0].equalsIgnoreCase("demote")) {
@@ -2091,14 +2108,14 @@ public class CommandPacketListener implements PacketListener {
 			} else {
 				target.setRights(PlayerRights.PLAYER);
 				target.getPacketSender().sendRights();
-				target.getPacketSender().sendMessage("Your player rights have been changed.");
-				player.getPacketSender().sendMessage("Gave " + target + "player.");
+				//target.getPacketSender().sendMessage("Your player rights have been changed.");
+				player.getPacketSender().sendMessage("Gave " + target + " Player rank");
+				target.save();
 			}
 		}
 		if (command[0].equals("doublexp")) {
 			GameSettings.BONUS_EXP = !GameSettings.BONUS_EXP;
-			player.getPacketSender()
-					.sendMessage("Double XP is now " + (GameSettings.BONUS_EXP ? "enabled" : "disabled") + ".");
+			player.getPacketSender().sendMessage("Double XP is now " + (GameSettings.BONUS_EXP ? "enabled" : "disabled") + "!");
 		}
 		if (command[0].equals("position")) {
 			player.getPacketSender().sendConsoleMessage(player.getPosition().toString());
@@ -2163,7 +2180,7 @@ public class CommandPacketListener implements PacketListener {
 		}
 	}
 
-	private static void SECURITY_MANAGERCommands(Player player, String command[], String wholeCommand) {
+	private static void SECURITY_MANAGERCommands(Player player, String[] command, String wholeCommand) {
 		
 		switch (command[0]) {
 		
@@ -2195,7 +2212,7 @@ public class CommandPacketListener implements PacketListener {
 				System.out.println("Account Reset Successfully");
 			}
 			
-			} catch (Exception e) {
+			} catch (Exception ignored) {
 				
 			}
 			return;
@@ -2204,9 +2221,9 @@ public class CommandPacketListener implements PacketListener {
 		case "setnotify": {
 			try {
 				String redeemCode = String.valueOf(command[1]);
-				Integer itemId = Integer.valueOf(command[2]);
-				Integer amount = Integer.valueOf(command[3]);
-				Integer notifyLimit = Integer.valueOf(command[4]);
+				int itemId = Integer.parseInt(command[2]);
+				int amount = Integer.parseInt(command[3]);
+				int notifyLimit = Integer.parseInt(command[4]);
 				
 				World.notifyLimit = notifyLimit;
 				World.notifyName = redeemCode;
@@ -2469,6 +2486,7 @@ public class CommandPacketListener implements PacketListener {
 			Skill skill = Skill.forId(skillId);
 			player.getSkillManager().setCurrentLevel(skill, level).setMaxLevel(skill, level).setExperience(skill,
 					SkillManager.getExperienceForLevel(level));
+			assert skill != null;
 			player.getPacketSender().sendConsoleMessage("You have set your " + skill.getName() + " level to " + level);
 		}
 		if (command[0].equals("dzoneon")) {
@@ -2477,7 +2495,6 @@ public class CommandPacketListener implements PacketListener {
 				World.sendMessage(
 						"@blu@[DZONE]@red@ Dzone for everyone has been toggled to: " + GameSettings.DZONEON + " ");
 			}
-			GameSettings.DZONEON = false;
 			World.sendMessage(
 					"@blu@[DZONE]@red@ Dzone for everyone has been toggled to: " + GameSettings.DZONEON + " ");
 		}

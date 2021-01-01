@@ -46,7 +46,7 @@ public class ExperienceLamps {
 						break;
 					}
 				}
-			} catch(Exception e) {}
+			} catch(Exception ignored) {}
 			return true;
 		} else {
 			Interface_Buttons interfaceButton = Interface_Buttons.forButton(button);
@@ -57,7 +57,7 @@ public class ExperienceLamps {
 				return true;
 			player.setUsableObject(1, skill);
 			player.getPacketSender().sendString(38006, Misc.formatText(interfaceButton.toString().toLowerCase()));
-			boolean prestige = player.getUsableObject()[0] != null && player.getUsableObject()[0] instanceof String && ((String)(player.getUsableObject()[0])).equals("prestige");
+			boolean prestige = player.getUsableObject()[0] != null && player.getUsableObject()[0] instanceof String && player.getUsableObject()[0].equals("prestige");
 			if(prestige) {
 				int pts = SkillManager.getPrestigePoints(player, skill);
 				player.getPacketSender().sendMessage("<img=10> <col=996633>You will receive "+pts+" Prestige point"+(pts > 1 ? "s" : "")+" if you prestige in "+skill.getFormatName()+".");

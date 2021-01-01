@@ -3,6 +3,8 @@ package com.athena.world.content;
 import com.athena.util.Misc;
 import com.athena.world.entity.impl.player.Player;
 
+import java.util.Arrays;
+
 /**
  * bank-pin
  * @author Gabriel Hannason
@@ -38,8 +40,7 @@ public class BankPin {
 		player.getPacketSender().sendString(14916, "?");
 		sendPins(player);
 		player.getPacketSender().sendInterface(7424);
-		for(int i = 0; i < player.getBankPinAttributes().getEnteredBankPin().length; i++)
-			player.getBankPinAttributes().getEnteredBankPin()[i] = -1;
+		Arrays.fill(player.getBankPinAttributes().getEnteredBankPin(), -1);
 	}
 
 	public static void clickedButton(Player player, int button) {
@@ -171,13 +172,13 @@ public class BankPin {
 		sendPins(player);
 	}
 
-	private static final int stringIds[] = { 
+	private static final int[] stringIds = {
 		14883, 14884, 14885, 14886, 
 		14887, 14888, 14889, 14890, 
 		14891, 14892
 	};
 
-	private static final int actionButtons[] = { 
+	private static final int[] actionButtons = {
 		14873, 14874, 14875, 14876, 
 		14877, 14878, 14879, 14880, 
 		14881, 14882
@@ -190,7 +191,7 @@ public class BankPin {
 		private boolean hasEnteredBankPin;
 		private int[] bankPin = new int[4];
 		private int[] enteredBankPin = new int[4];
-		private int bankPins[] = {
+		private int[] bankPins = {
 				0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 		};
 		private int invalidAttempts;

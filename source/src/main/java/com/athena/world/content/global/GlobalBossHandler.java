@@ -41,7 +41,7 @@ public abstract class GlobalBossHandler {
         final long millisTillRespawn = TimeUnit.MINUTES.toMillis(globalBoss.minutesTillRespawn());
         final int cyclesTillRespawn = Math.toIntExact(millisTillRespawn / GameSettings.GAME_PROCESSING_CYCLE_RATE);
 
-        System.out.println("A "+globalBoss.getDefinition().getName()+" will spawn in "+cyclesTillRespawn+" cycles.");
+        //System.out.println("A "+globalBoss.getDefinition().getName()+" will spawn in "+cyclesTillRespawn+" cycles.");
 
         TaskManager.submit(new Task(cyclesTillRespawn, false) {
             @Override

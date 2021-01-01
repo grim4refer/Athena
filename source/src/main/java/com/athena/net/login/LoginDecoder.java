@@ -124,7 +124,8 @@ public final class LoginDecoder extends FrameDecoder {
 				String username = Misc.readString(rsaBuffer);
 				String password = Misc.readString(rsaBuffer);
 				String serial = Misc.readString(rsaBuffer);
-				System.out.println(username+" "+password+" "+serial);
+				// No need to use system memory on logins!
+				//System.out.println(username+ " has logged in!");
 				if (username.length() > 12 || password.length() > 20) {
 					System.out.println("Username or password length too long");
 					return null;

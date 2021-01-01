@@ -134,7 +134,7 @@ public class PlayerLoading {
 	                Map<Integer, Integer> kcData = builder.fromJson(reader.get("npc-kc-data"),
 	                        new TypeToken<Map<Integer, Integer>>() {
 	                        }.getType());
-	                System.out.println("hello data: " + kcData);
+	                //System.out.println("hello data: " + kcData);
 	                player.setNpcKillCount(kcData);
 	            }
 				

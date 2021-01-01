@@ -64,8 +64,8 @@ public class PlayerHandler {
     }
 
     public static void handleLogin(Player player) {
-        System.out.println("[World] Registering player - [username, host] : [" + player.getUsername() + ", "
-                + player.getHostAddress() + "]");
+        //System.out.println("[World] Registering player - [username, host] : [" + player.getUsername() + ", "
+        //        + player.getHostAddress() + "]");
         player.getPlayerOwnedShopManager().hookShop();
         player.setActive(true);
         ConnectionHandler.add(player.getHostAddress());
@@ -178,7 +178,7 @@ public class PlayerHandler {
         }
         // DialogueManager.start(player, 177);
         player.getPacketSender().sendMessage("@blu@Welcome to Athena!@bla@");
-        player.getPacketSender().sendMessage("@red@We hope you enjoy your stay at Athena");
+        ///player.getPacketSender().sendMessage("@red@We hope you enjoy your stay at Athena");
         
         if (player.experienceLocked()) {
             player.getPacketSender().sendMessage("@red@Warning: your experience is currently locked.");
@@ -239,7 +239,7 @@ public class PlayerHandler {
         }
         
 		if (player.isInDung()) {
-			System.out.println(player.getUsername()+" logged in from a bad dungeoneering session.");
+			//System.out.println(player.getUsername()+" logged in from a bad dungeoneering session.");
 			PlayerLogs.log(player.getUsername(), " logged in from a bad dungeoneering session. Inv/equipment wiped.");
 			player.getInventory().resetItems().refreshItems();
 			player.getEquipment().resetItems().refreshItems();
@@ -283,8 +283,8 @@ public class PlayerHandler {
                     || World.getLogoutQueue().contains(player) && player.getLogoutTimer().elapsed(600000);
             if (player.logout() || exception) {
                 // new Thread(new HighscoresHandler(player)).start();
-                System.out.println("[World] Deregistering player - [username, host] : [" + player.getUsername() + ", "
-                        + player.getHostAddress() + ", " + player.getSerialNumber() + "]");
+                //System.out.println("[World] Deregistering player - [username, host] : [" + player.getUsername() + ", "
+                       // + player.getHostAddress() + ", " + player.getSerialNumber() + "]");
                 player.getSession().setState(SessionState.LOGGING_OUT);
                 ConnectionHandler.remove(player.getHostAddress());
                 player.setTotalPlayTime(player.getTotalPlayTime() + player.getRecordedLogin().elapsed());

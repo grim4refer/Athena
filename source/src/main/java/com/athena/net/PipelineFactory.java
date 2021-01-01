@@ -23,7 +23,7 @@ public class PipelineFactory implements ChannelPipelineFactory {
 	}
 
 	@Override
-	public ChannelPipeline getPipeline() throws Exception {
+	public ChannelPipeline getPipeline() {
 		final ChannelPipeline pipeline = new DefaultChannelPipeline();
 		pipeline.addLast("timeout", new IdleStateHandler(timer, GameSettings.IDLE_TIME, 0, 0));
 		pipeline.addLast("encoder", new LoginEncoder()); //Replaced by the PacketEncoder after login

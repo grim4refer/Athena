@@ -39,13 +39,13 @@ public class ChannelHandler extends IdleStateAwareChannelUpstreamHandler {
 	@Override
 	public void exceptionCaught(ChannelHandlerContext ctx, ExceptionEvent e) {
 		if(!(e.getCause() instanceof IOException)) { //Because there's no more data to read (happens when client has been forcibly exited via task manager)
-			logger.log(Level.WARNING, "Exception occured for channel: " + e.getChannel() + ", closing...", e.getCause());
+			logger.log(Level.WARNING, "Exception occurred for channel: " + e.getChannel() + ", closing...", e.getCause());
 			ctx.getChannel().close();
 		}
 	}
 
 	@Override
-	public void channelIdle(ChannelHandlerContext ctx, IdleStateEvent e) throws Exception {
+	public void channelIdle(ChannelHandlerContext ctx, IdleStateEvent e) {
 		e.getChannel().close();
 	}
 
@@ -57,16 +57,14 @@ public class ChannelHandler extends IdleStateAwareChannelUpstreamHandler {
 				if(player == null)
 					player = (Player) e.getMessage();
 			} else if (msg.getClass() == Packet.class) {
-				if (msg instanceof Packet) {
-					Packet packet = (Packet)msg;
-					player.getSession().handleIncomingMessage(packet);
-				}
+				Packet packet = (Packet)msg;
+				player.getSession().handleIncomingMessage(packet);
 			}
 		}
 	}
 
 	@Override
-	public void channelClosed(ChannelHandlerContext ctx, ChannelStateEvent e) throws Exception {
+	public void channelClosed(ChannelHandlerContext ctx, ChannelStateEvent e) {
 		if(player != null) {
 			if(player.getSession().getState() != SessionState.LOGGED_OUT) {
 				if(!World.getLogoutQueue().contains(player)) {
