@@ -1,5 +1,5 @@
 {
-  "total-play-time-ms": 31719638330,
+  "total-play-time-ms": 31721989694,
   "username": "Kish",
   "password": "123",
   "email": "null",
@@ -12,9 +12,9 @@
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2739,
-    "y": 3464,
-    "z": 0
+    "x": 2527,
+    "y": 2523,
+    "z": 1
   },
   "online-status": "ON",
   "given-starter": true,
@@ -28,8 +28,8 @@
   "achievement-points": 10,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 62128,
-  "total-loyalty-points": 62128.0,
+  "loyalty-points": 64798,
+  "total-loyalty-points": 64798.0,
   "voting-points": 1,
   "slayer-points": 50,
   "pk-points": 0,
@@ -54,7 +54,7 @@
   "auto-retaliate": true,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 110031754,
+  "last-veng": 158833346,
   "fight-type": "WHIP_LASH",
   "sol-effect": 0,
   "skull-timer": 0,
@@ -479,13 +479,13 @@
   ],
   "skills": {
     "level": [
-      99137,
-      99137,
-      99137,
-      96872,
-      99,
+      131,
+      131,
+      131,
+      990,
+      131,
       97616,
-      99,
+      131,
       99,
       99,
       99,
@@ -1073,13 +1073,13 @@
       "rareDrop": true
     },
     {
-      "item": 20819,
-      "amount": 1,
+      "item": 20827,
+      "amount": 2,
       "rareDrop": true
     },
     {
-      "item": 20827,
-      "amount": 2,
+      "item": 20819,
+      "amount": 1,
       "rareDrop": true
     },
     {
@@ -1103,18 +1103,23 @@
       "rareDrop": false
     },
     {
-      "item": 7100,
-      "amount": 40,
-      "rareDrop": true
-    },
-    {
       "item": 16600,
       "amount": 422,
       "rareDrop": false
     },
     {
+      "item": 7100,
+      "amount": 40,
+      "rareDrop": true
+    },
+    {
       "item": 20089,
       "amount": 3,
+      "rareDrop": true
+    },
+    {
+      "item": 11988,
+      "amount": 1,
       "rareDrop": true
     },
     {
@@ -1128,12 +1133,12 @@
       "rareDrop": true
     },
     {
-      "item": 3644,
+      "item": 3645,
       "amount": 1,
       "rareDrop": true
     },
     {
-      "item": 3645,
+      "item": 3644,
       "amount": 1,
       "rareDrop": true
     },
@@ -1143,6 +1148,11 @@
       "rareDrop": true
     },
     {
+      "item": 20864,
+      "amount": 7,
+      "rareDrop": false
+    },
+    {
       "item": 13197,
       "amount": 1,
       "rareDrop": false
@@ -1150,6 +1160,11 @@
     {
       "item": 21044,
       "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 7112,
+      "amount": 4,
       "rareDrop": false
     },
     {
@@ -1170,6 +1185,11 @@
     {
       "item": 6199,
       "amount": 3,
+      "rareDrop": false
+    },
+    {
+      "item": 20205,
+      "amount": 1,
       "rareDrop": false
     },
     {
@@ -1195,26 +1215,6 @@
     {
       "item": 21007,
       "amount": 1,
-      "rareDrop": false
-    },
-    {
-      "item": 7112,
-      "amount": 4,
-      "rareDrop": false
-    },
-    {
-      "item": 20205,
-      "amount": 1,
-      "rareDrop": false
-    },
-    {
-      "item": 11988,
-      "amount": 1,
-      "rareDrop": true
-    },
-    {
-      "item": 20864,
-      "amount": 7,
       "rareDrop": false
     }
   ],

@@ -732,12 +732,12 @@ public class ButtonClickPacketListener implements PacketListener {
 //		case -26376:
             // PlayersOnlineInterface.showInterface(player);
 //			break;
-            case 26601:
+            case -26349:
                 player.getPacketSender().sendTabInterface(GameSettings.QUESTS_TAB, 46343);
                 StaffList.updateInterface(player);//staff online button
                 break;
             case 32388:
-                player.getPacketSender().sendTabInterface(GameSettings.QUESTS_TAB, 26600); // 26600
+                player.getPacketSender().sendTabInterface(GameSettings.QUESTS_TAB, 639); // 26600
                 break;
             case 27658:
                 player.setExperienceLocked(!player.experienceLocked());
@@ -835,7 +835,7 @@ public class ButtonClickPacketListener implements PacketListener {
                 player.getClickDelay().reset();
                 DropLookup.open(player);
                 break;
-            case 26604:
+            case -26347:
                 KillsTracker.open(player);
                 break;//kill log tracker quest tab
             case -26346:
@@ -907,7 +907,7 @@ public class ButtonClickPacketListener implements PacketListener {
             case -26332:
                 Nomad.openQuestLog(player);
                 break;
-            case 26611:
+            case -26348:
                 ProfileViewing.view(player, player);
                 break;//quest tab player planel
             case 350:

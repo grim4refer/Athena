@@ -5140,7 +5140,7 @@ public class RSInterface {
 
 		scroll.totalChildren(55);
 		scroll.width = 174; scroll.height = 224; scroll.scrollMax = 810; // ok run client and check if it works.
-		addButtonWSpriteLoader(52800, 1222, "Refresh Player Panel");
+		addButtonWSpriteLoader(52800, 1225, "Refresh Player Panel");
 		tab.totalChildren(6);
 
 		tab.child(0, 39155, 5, 3); //got new pc today so when its set up youll be able to do work quicker ;p
