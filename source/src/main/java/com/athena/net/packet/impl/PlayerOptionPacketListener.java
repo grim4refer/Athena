@@ -6,6 +6,7 @@ import com.athena.net.packet.Packet;
 import com.athena.net.packet.PacketListener;
 import com.athena.world.World;
 import com.athena.world.content.combat.CombatFactory;
+import com.athena.world.content.gamblinginterface.GamblingInterface;
 import com.athena.world.content.skill.impl.dungeoneering.UltimateIronmanHandler;
 import com.athena.world.entity.impl.player.Player;
 
@@ -57,8 +58,8 @@ public class PlayerOptionPacketListener implements PacketListener {
 		}
 		
 		//if(player.getLocation() == Location.GAMBLING_ZONE) {
-		//	GamblingManager.sendInvitation(player, attacked);
-		//	return;
+			//GamblingInterface.!get(player, attacked);
+			//return;
 		//}
 		
 		if (UltimateIronmanHandler.hasItemsStored(player) && player.getLocation() != Location.DUNGEONEERING) {

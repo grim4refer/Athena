@@ -1,5 +1,5 @@
 {
-  "total-play-time-ms": 4481665512,
+  "total-play-time-ms": 4482476725,
   "username": "Joker",
   "password": "123",
   "email": "null",
@@ -12,9 +12,9 @@
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2532,
-    "y": 2532,
-    "z": 1
+    "x": 2739,
+    "y": 3465,
+    "z": 0
   },
   "online-status": "ON",
   "given-starter": false,
@@ -23,13 +23,13 @@
   "starterclaimed": false,
   "pvm-rank": "BRONZE",
   "minutes-bonus-exp": -1,
-  "total-gained-exp": -12395243130,
+  "total-gained-exp": 489658758,
   "prestige-points": 0,
   "achievement-points": 19,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 68741,
-  "total-loyalty-points": 68741.0,
+  "loyalty-points": 69389,
+  "total-loyalty-points": 69389.0,
   "voting-points": 0,
   "slayer-points": 6,
   "pk-points": 0,
@@ -54,7 +54,7 @@
   "auto-retaliate": true,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 1609244648564,
+  "last-veng": 202485179,
   "fight-type": "SWORD_LUNGE",
   "sol-effect": 0,
   "skull-timer": 0,
@@ -1026,7 +1026,8 @@
     0
   ],
   "friends": [
-    570215
+    570215,
+    38845084474804708
   ],
   "ignores": [
     2770636158119522406,

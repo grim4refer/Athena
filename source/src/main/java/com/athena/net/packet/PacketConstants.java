@@ -1,6 +1,8 @@
 package com.athena.net.packet;
 
 import com.athena.net.packet.impl.*;
+import com.athena.net.packet.impl.TradeInvitationPacketListener;
+import com.athena.net.packet.GambleInvititationPacketListener;
 import com.athena.world.entity.impl.player.Player;
 
 public class PacketConstants {
