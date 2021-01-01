@@ -15,7 +15,7 @@ import com.athena.model.definitions.WeaponInterfaces;
 import com.athena.model.input.Input;
 import com.athena.model.input.impl.EnterAmountToBank;
 import com.athena.model.input.impl.EnterAmountToBuyFromShop;
-//import com.arlania.model.input.impl.EnterAmountToGamble;
+//import com.athena.model.input.impl.EnterAmountToGamble;
 import com.athena.model.input.impl.EnterAmountToPriceCheck;
 import com.athena.model.input.impl.EnterAmountToRemoveFromBank;
 import com.athena.model.input.impl.EnterAmountToRemoveFromBob;

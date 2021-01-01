@@ -8177,14 +8177,17 @@ public class Client extends RSApplet {
 					}
 					doWalkTo(2, 0, 1, 0, myPlayer.pathY[0], 1, 0, class30_sub2_sub4_sub1_sub2_7.pathY[0],
 							myPlayer.pathX[0], false, class30_sub2_sub4_sub1_sub2_7.pathX[0]);
-						stream.createFrame(193);
-						stream.writeUnsignedWordBigEndian(playerIndices[j3]);
-						System.out.println("Hello!");
-
+					stream.createFrame(193);
+					stream.writeUnsignedWordBigEndian(playerIndices[j3]);
+					flag9 = true;
+					break;
 				}
-		if (!flag9) {
+
+				if (!flag9) {
 					pushMessage("Unable to find " + s7 + ".", 0, "");
 				}
+			} else {
+				System.out.println("l1 was: " + l1);
 			}
 		}
 		if (l == 870) {
@@ -17570,7 +17573,7 @@ public class Client extends RSApplet {
 							pushMessage("wishes to trade with you. Click here to accept the invitation.", 4, s3);
 						}
 						//TODO - This isn't being reached
-					}  if (s.endsWith(":gamblereq:")) {
+					} else if (s.endsWith(":gamblereq:")) {
 						String s21 = s.substring(0, s.indexOf(":"));
 						long l21 = TextClass.longForName(s21);
 						boolean flag2 = false;

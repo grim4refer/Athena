@@ -125,7 +125,7 @@ public class GamblingInterface {
                  else if (!inGamble()) {
                         setGambleRequested(true);
                         player.getPacketSender().sendMessage("You've sent a gamble request to " + player2.getUsername() + ".");
-                        player2.getPacketSender().sendMessage(player.getUsername() + ":gamblereq:");
+                        player2.getPacketSender().sendMessage(player.getUsername() +":gamblereq:");
                 }
                 lastGambleSent = System.currentTimeMillis();
 
