@@ -41,7 +41,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../servers/Vortex/Vortex Latest" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20344828" />
@@ -86,6 +86,37 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="635" y="216" key="FileChooserDialogImpl" timestamp="1609525730069">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="635" y="216" key="FileChooserDialogImpl/0.0.1707.920/3840.0.1920.1040@0.0.1707.920" timestamp="1609525730069" />
+    <state x="635" y="216" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1609470547606" />
+    <state width="1664" height="216" key="GridCell.Tab.0.bottom" timestamp="1609525954468">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="216" key="GridCell.Tab.0.bottom/0.0.1707.920/3840.0.1920.1040@0.0.1707.920" timestamp="1609525954468" />
+    <state width="1664" height="216" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1609474409605" />
+    <state width="1664" height="216" key="GridCell.Tab.0.center" timestamp="1609525954468">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="216" key="GridCell.Tab.0.center/0.0.1707.920/3840.0.1920.1040@0.0.1707.920" timestamp="1609525954468" />
+    <state width="1664" height="216" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1609474409604" />
+    <state width="1664" height="216" key="GridCell.Tab.0.left" timestamp="1609525954467">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="216" key="GridCell.Tab.0.left/0.0.1707.920/3840.0.1920.1040@0.0.1707.920" timestamp="1609525954467" />
+    <state width="1664" height="216" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1609474409604" />
+    <state width="1664" height="216" key="GridCell.Tab.0.right" timestamp="1609525954468">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="216" key="GridCell.Tab.0.right/0.0.1707.920/3840.0.1920.1040@0.0.1707.920" timestamp="1609525954468" />
+    <state width="1664" height="216" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1609474409605" />
+    <state x="175" y="98" width="1191" height="619" key="find.popup" timestamp="1609524103719">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="175" y="98" width="1191" height="619" key="find.popup/0.0.1707.920/3840.0.1920.1040@0.0.1707.920" timestamp="1609524103719" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/source$GameServer.ic" NAME="GameServer Coverage Results" MODIFIED="1609275684536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
