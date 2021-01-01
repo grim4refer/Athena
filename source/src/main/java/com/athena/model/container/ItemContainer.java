@@ -742,6 +742,12 @@ public abstract class ItemContainer {
 		return delete(item.getId(), item.getAmount());
 	}
 
+	public void deleteVial(Item item) {
+		int VIAL = 229;
+		player.getInventory().delete(VIAL, 1);
+
+	}
+
 	/**
 	 * Deletes an item from the item container.
 	 *

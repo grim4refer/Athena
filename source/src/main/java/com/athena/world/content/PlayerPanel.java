@@ -1,13 +1,16 @@
 package com.athena.world.content;
 
 import com.athena.GameLoader;
+import com.athena.model.Item;
 import com.athena.model.definitions.NPCDrops;
 import com.athena.util.Misc;
+import com.athena.world.content.skill.impl.herblore.Herblore;
 import com.athena.world.entity.impl.player.Player;
 
 public class PlayerPanel {
 
 	public static final String LINE_START = "   > ";
+	private static final int VIAL = 229;
 
 	public static void refreshPanel(Player player) {
 
@@ -26,6 +29,7 @@ public class PlayerPanel {
 		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Well of Goodwill: @yel@"+(WellOfGoodwill.isActive() ? WellOfGoodwill.getMinutesRemaining() + " mins" : "N/A"));
 		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Crashed Star: @yel@"+(ShootingStar.getLocation() != null ?ShootingStar.getLocation().playerPanelFrame : "N/A"));
 		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Bonus: @yel@"+GameLoader.getSpecialDay());
+
 
 		player.getPacketSender().sendString(counter++, "");
 
@@ -51,6 +55,7 @@ public class PlayerPanel {
 		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Kill Log");
 		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Drop Log");
 		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Npc Drops");
+
 		player.getPacketSender().sendString(counter++, LINE_START +"@mag@ End soul buff!");
 
 		player.getPacketSender().sendString(counter++, "");

@@ -14,6 +14,7 @@ import com.athena.world.entity.impl.player.Player;
 public class Herblore {
 
 	public static final int VIAL = 227;
+	public static final int EMPTY_VIAL = 229;
 	private static final Animation ANIMATION = new Animation(363);
 
 	public static boolean cleanHerb(final Player player, final int herbId) {
@@ -143,6 +144,14 @@ public class Herblore {
 			return null;
 		}
 	}
+
+	public static void removeVial(Player p) {
+		if(p.getInventory().contains(229)) {
+			p.getInventory().delete(229, 1);
+			return;
+			}
+		}
+
 
 	public static void handleSpecialPotion(Player p, int item1, int item2) {
 		if(item1 == item2)
