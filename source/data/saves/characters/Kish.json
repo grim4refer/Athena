@@ -1,19 +1,19 @@
 {
-  "total-play-time-ms": 31709631237,
+  "total-play-time-ms": 31718600261,
   "username": "Kish",
   "password": "123",
   "email": "null",
   "staff-rights": "OWNER",
   "game-mode": "NORMAL",
-  "boss-points": 19,
+  "boss-points": 202,
   "npc-kills": 0,
   "ArcticPS-points": 0,
   "transform-id": 0,
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2739,
-    "y": 3465,
+    "x": 2481,
+    "y": 10148,
     "z": 0
   },
   "online-status": "ON",
@@ -23,13 +23,13 @@
   "starterclaimed": false,
   "pvm-rank": "BRONZE",
   "minutes-bonus-exp": -1,
-  "total-gained-exp": -2069485443,
+  "total-gained-exp": 77998203,
   "prestige-points": 0,
   "achievement-points": 10,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 53629,
-  "total-loyalty-points": 53629.0,
+  "loyalty-points": 61291,
+  "total-loyalty-points": 61291.0,
   "voting-points": 1,
   "slayer-points": 50,
   "pk-points": 0,
@@ -54,8 +54,8 @@
   "auto-retaliate": true,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 1609234091815,
-  "fight-type": "UNARMED_PUNCH",
+  "last-veng": 86843754,
+  "fight-type": "WHIP_LASH",
   "sol-effect": 0,
   "skull-timer": 0,
   "accept-aid": false,
@@ -431,17 +431,17 @@
     false
   ],
   "recipe-for-disaster": [
+    true,
+    true,
     false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
+    true,
+    true,
+    true,
+    true,
+    true,
     false
   ],
-  "recipe-for-disaster-wave": 0,
+  "recipe-for-disaster-wave": 5,
   "rune-ess": 0,
   "pure-ess": 0,
   "has-bank-pin": false,
@@ -479,10 +479,10 @@
   ],
   "skills": {
     "level": [
-      99234,
-      99234,
-      99234,
-      96969,
+      99143,
+      99143,
+      99143,
+      96878,
       99,
       97616,
       99,
@@ -534,8 +534,8 @@
     ],
     "experience": [
       2000000000,
-      1000000000,
-      1000000000,
+      2000000000,
+      2000000000,
       2000000000,
       1000000000,
       1000000000,
@@ -562,33 +562,18 @@
   },
   "inventory": [
     {
-      "id": -1,
-      "amount": 0,
+      "id": 5223,
+      "amount": 2,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 5023,
+      "amount": 10000000,
       "slot": 0
     },
     {
       "id": 11316,
-      "amount": 1,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
+      "amount": 12,
       "slot": 0
     },
     {
@@ -597,8 +582,48 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 19095,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 11988,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20827,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 5022,
+      "amount": 311290,
+      "slot": 0
+    },
+    {
+      "id": 20205,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 11988,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 12421,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20604,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 7100,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -607,33 +632,8 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
+      "id": 20864,
+      "amount": 7,
       "slot": 0
     },
     {
@@ -714,13 +714,13 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 11423,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 17849,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -991,17 +991,17 @@
       "boss": true
     },
     {
-      "runningTotal": 2,
+      "runningTotal": 3,
       "npcId": 2071,
       "npcName": "Vorago",
-      "amount": 2,
+      "amount": 3,
       "boss": true
     },
     {
-      "runningTotal": 1,
+      "runningTotal": 2,
       "npcId": 367,
       "npcName": "Mayonaise",
-      "amount": 1,
+      "amount": 2,
       "boss": true
     },
     {
@@ -1026,10 +1026,10 @@
       "boss": true
     },
     {
-      "runningTotal": 1,
+      "runningTotal": 2,
       "npcId": 6305,
       "npcName": "Yanille Guardian",
-      "amount": 1,
+      "amount": 2,
       "boss": true
     },
     {
@@ -1045,6 +1045,20 @@
       "npcName": "Yanille Artillery",
       "amount": 1,
       "boss": false
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 4540,
+      "npcName": "Bandos Avatar",
+      "amount": 1,
+      "boss": true
+    },
+    {
+      "runningTotal": 7,
+      "npcId": 25,
+      "npcName": "Bad Santa",
+      "amount": 7,
+      "boss": true
     }
   ],
   "drops": [
@@ -1055,7 +1069,7 @@
     },
     {
       "item": 7118,
-      "amount": 79,
+      "amount": 83,
       "rareDrop": true
     },
     {
@@ -1065,7 +1079,7 @@
     },
     {
       "item": 20827,
-      "amount": 1,
+      "amount": 2,
       "rareDrop": true
     },
     {
@@ -1080,27 +1094,27 @@
     },
     {
       "item": 4461,
-      "amount": 70,
+      "amount": 75,
       "rareDrop": false
     },
     {
       "item": 5022,
-      "amount": 1936800,
+      "amount": 2247900,
       "rareDrop": false
     },
     {
       "item": 7100,
-      "amount": 38,
+      "amount": 40,
       "rareDrop": true
     },
     {
       "item": 16600,
-      "amount": 211,
+      "amount": 422,
       "rareDrop": false
     },
     {
       "item": 20089,
-      "amount": 2,
+      "amount": 3,
       "rareDrop": true
     },
     {
@@ -1181,6 +1195,26 @@
     {
       "item": 21007,
       "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 7112,
+      "amount": 4,
+      "rareDrop": false
+    },
+    {
+      "item": 20205,
+      "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 11988,
+      "amount": 1,
+      "rareDrop": true
+    },
+    {
+      "item": 20864,
+      "amount": 7,
       "rareDrop": false
     }
   ],
@@ -1406,8 +1440,8 @@
     0,
     5,
     0,
-    25,
-    23,
+    41,
+    34,
     1
   ],
   "max-cape-colors": [

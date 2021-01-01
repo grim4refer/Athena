@@ -617,9 +617,9 @@ public class ButtonClickPacketListener implements PacketListener {
                 KBD.closeInterface(player);
                 break;
 
-//            case -11438:
-//                player.getPlayerOwnedShopManager().openEditor();
-//                break;
+            case -11438:
+                player.getPlayerOwnedShopManager().openEditor();
+                break;
 
             case -17629:
                 if (player.getLocation() == Location.KING_BLACK_DRAGON) {

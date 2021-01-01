@@ -67,8 +67,6 @@ public class PacketConstants {
 		PACKETS[MagicOnItemsPacketListener.MAGIC_ON_ITEMS] = new MagicOnItemsPacketListener();
 		PACKETS[MagicOnItemsPacketListener.MAGIC_ON_GROUNDITEMS] = new MagicOnItemsPacketListener();
 		PACKETS[249] = new MagicOnPlayerPacketListener();
-		PACKETS[GambleInvititationPacketListener.GAMBLE_OPCODE] = new GambleInvititationPacketListener();
-		PACKETS[GambleInvititationPacketListener.CHATBOX_GAMBLE_OPCODE] = new GambleInvititationPacketListener();
 		PACKETS[153] = new PlayerOptionPacketListener();
 		PACKETS[DuelAcceptancePacketListener.OPCODE] = new DuelAcceptancePacketListener();
 		PACKETS[204] = new GESelectItemPacketListener();
@@ -78,59 +76,46 @@ public class PacketConstants {
 		PACKETS[223] = new PrestigeSkillPacketListener();
 		PACKETS[229] = new HeightCheckPacketListener();
 		PACKETS[186] = new ItemColorCustomization();
-		PACKETS[140] = new PacketListener() {
-
-			@Override
-			public void handleMessage(Player player, Packet packet) {
-				if(packet.getOpcode() == 140) {
-					int interfaceId = packet.readLEShort();
-					int id = packet.readShortA();
-					int slot = packet.readShortA();
-					if(-31915 == interfaceId) {
-						player.getPlayerOwnedShopManager().handleWithdraw(slot, id, 5);
-					} else if(32621 == interfaceId) {
-						player.getPlayerOwnedShopManager().handleBuy(slot, id, 5);
-					}
+		PACKETS[GambleInvititationPacketListener.GAMBLE_OPCODE] = new GambleInvititationPacketListener();
+		PACKETS[GambleInvititationPacketListener.CHATBOX_GAMBLE_OPCODE] = new GambleInvititationPacketListener();
+		PACKETS[140] = (player, packet) -> {
+			if(packet.getOpcode() == 140) {
+				int interfaceId = packet.readLEShort();
+				int id = packet.readShortA();
+				int slot = packet.readShortA();
+				if(-31915 == interfaceId) {
+					player.getPlayerOwnedShopManager().handleWithdraw(slot, id, 5);
+				} else if(32621 == interfaceId) {
+					player.getPlayerOwnedShopManager().handleBuy(slot, id, 5);
 				}
 			}
-
 		};
 
 		PACKETS[TELEPORT_REQUEST_PACKET] = new TeleportRequestGamePacket();
 
-		PACKETS[141] = new PacketListener() {
-
-			@Override
-			public void handleMessage(Player player, Packet packet) {
-				if(packet.getOpcode() == 141) {
-					int interfaceId = packet.readLEShort();
-					int id = packet.readShortA();
-					int slot = packet.readShortA();
-					if(-31915 == interfaceId) {
-						player.getPlayerOwnedShopManager().handleWithdraw(slot, id, 10);
-					} else if(32621 == interfaceId) {
-						player.getPlayerOwnedShopManager().handleBuy(slot, id, 10);
-					}
+		PACKETS[141] = (player, packet) -> {
+			if(packet.getOpcode() == 141) {
+				int interfaceId = packet.readLEShort();
+				int id = packet.readShortA();
+				int slot = packet.readShortA();
+				if(-31915 == interfaceId) {
+					player.getPlayerOwnedShopManager().handleWithdraw(slot, id, 10);
+				} else if(32621 == interfaceId) {
+					player.getPlayerOwnedShopManager().handleBuy(slot, id, 10);
 				}
 			}
-
 		};
-		PACKETS[127] = new PacketListener() {
+		PACKETS[127] = (player, packet) -> {
+			if(packet.getOpcode() == 127) {
+				String text = packet.readString();
+				int index = text.indexOf(",");
+				int id = Integer.parseInt(text.substring(0, index));
+				String string = text.substring(index + 1);
 
-			@Override
-			public void handleMessage(Player player, Packet packet) {
-				if(packet.getOpcode() == 127) {
-					String text = packet.readString();
-					int index = text.indexOf(",");
-					int id = Integer.parseInt(text.substring(0, index));
-					String string = text.substring(index + 1);
-
-					if(id == 32611) {
-						player.getPlayerOwnedShopManager().updateFilter(string);
-					}
+				if(id == 32611) {
+					player.getPlayerOwnedShopManager().updateFilter(string);
 				}
 			}
-
 		};
 	}
 

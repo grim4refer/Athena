@@ -78,15 +78,10 @@ public final class PlayerSession {
 	 * polling the internal queue, and then handling them via the handleInputMessage.
 	 */
 	public void handleQueuedMessages() {
-		long start = System.currentTimeMillis();
 		handlePrioritizedMessageQueue();
 		Packet msg;
 		while ((msg = messageQueue.poll()) != null) {
 			handleInputMessage(msg);
-			long elapsed = System.currentTimeMillis() - start;
-			if(elapsed > 100) {
-				System.err.println("Slow event for "+player.getUsername()+ " [OPCODE]:"+msg.getOpcode()+" [ELAPSED]:"+elapsed);
-			}
 		}
 	}
 
