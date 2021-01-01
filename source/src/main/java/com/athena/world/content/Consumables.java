@@ -19,6 +19,7 @@ import com.athena.world.content.Sounds.Sound;
 import com.athena.world.content.minigames.impl.Dueling;
 import com.athena.world.content.minigames.impl.Dueling.DuelRule;
 import com.athena.world.content.skill.SkillManager;
+import com.athena.world.content.skill.impl.herblore.Herblore;
 import com.athena.world.entity.impl.player.Player;
 
 /**
@@ -599,7 +600,8 @@ public class Consumables {
 				break;
 			case 12146: //Summoning pot 1
 				player.performAnimation(new Animation(829));
-				player.getInventory().getItems()[slot] = new Item(229, 1);
+				player.getInventory().getItems()[slot] = new Item(-1, 0);
+				player.getInventory().getItems()[slot] = new Item(-1, 0);
 				player.getInventory().refreshItems();
 				player.getSkillManager().setCurrentLevel(Skill.SUMMONING, (int) (player.getSkillManager().getCurrentLevel(Skill.SUMMONING) + (player.getSkillManager().getMaxLevel(Skill.SUMMONING) * 0.25)));
 				if(player.getSkillManager().getCurrentLevel(Skill.SUMMONING) > player.getSkillManager().getMaxLevel(Skill.SUMMONING)) 

@@ -43,7 +43,7 @@ import javax.swing.colorchooser.AbstractColorChooserPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-//import com.athena.discord.RichPresence;
+import com.athena.RichPresence;
 
 
 @SuppressWarnings("all")
@@ -65,6 +65,8 @@ public class Client extends RSApplet {
 	private static AnimatedSprite animatedLoading;
 
 	private static AnimatedSprite animatedLogin;
+
+	public static final RichPresence RICH_PRESENCE = new RichPresence();
 
 	public void preloadModels() {
 		String cacheDir = signlink.findcachedir();
@@ -6043,7 +6045,7 @@ public class Client extends RSApplet {
 
 	public static void main(String args[]) {
 		try {
-		   //RichPresence.initiate();
+			RICH_PRESENCE.initiate();
 			nodeID = 10;
 			portOff = 0;
 			setHighMem();

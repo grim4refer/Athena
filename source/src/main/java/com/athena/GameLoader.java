@@ -12,11 +12,13 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 import com.athena.database.Database;
+import com.athena.model.Item;
 import com.athena.world.World;
 import com.athena.world.content.*;
 import com.athena.world.content.skill.impl.invention.InventionHandler;
 import com.athena.world.content.upgrade.Upgrade;
 
+import com.athena.world.entity.impl.player.Player;
 import org.jboss.netty.bootstrap.ServerBootstrap;
 import org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory;
 import org.jboss.netty.util.HashedWheelTimer;
@@ -49,6 +51,8 @@ import com.athena.world.SlotMachineRewards;
  * Credit: lare96, Gabbe
  */
 public final class GameLoader {
+
+	public static final int VIALSMASH =1;
 	/*
 	 * Daily events
 	 * Handles the checking of the day to represent
