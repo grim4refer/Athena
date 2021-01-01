@@ -1,29 +1,6 @@
 package com.athena;
 
-import java.io.IOException;
-import java.net.InetSocketAddress;
-import java.sql.Time;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-import java.util.Timer;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
-
 import com.athena.database.Database;
-import com.athena.model.Item;
-import com.athena.world.World;
-import com.athena.world.content.*;
-import com.athena.world.content.skill.impl.invention.InventionHandler;
-import com.athena.world.content.upgrade.Upgrade;
-
-import com.athena.world.entity.impl.player.Player;
-import org.jboss.netty.bootstrap.ServerBootstrap;
-import org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory;
-import org.jboss.netty.util.HashedWheelTimer;
-
-import com.athena.world.content.minigames.MinigameHandler2;
 import com.athena.engine.GameEngine;
 import com.athena.engine.task.TaskManager;
 import com.athena.engine.task.impl.ServerTimeUpdateTask;
@@ -34,18 +11,35 @@ import com.athena.model.definitions.NpcDefinition;
 import com.athena.model.definitions.WeaponInterfaces;
 import com.athena.net.PipelineFactory;
 import com.athena.net.security.ConnectionHandler;
+import com.athena.world.SlotMachineRewards;
+import com.athena.world.World;
 import com.athena.world.clip.region.RegionClipping;
+import com.athena.world.content.*;
 import com.athena.world.content.clan.ClanChatManager;
 import com.athena.world.content.combat.effect.CombatPoisonEffect.CombatPoisonData;
 import com.athena.world.content.combat.strategy.CombatStrategies;
 import com.athena.world.content.dialogue.DialogueManager;
 import com.athena.world.content.global.GlobalBossHandler;
 import com.athena.world.content.grandexchange.GrandExchangeOffers;
+import com.athena.world.content.minigames.MinigameHandler2;
 import com.athena.world.content.pos.PlayerOwnedShopManager;
+import com.athena.world.content.skill.impl.invention.InventionHandler;
+import com.athena.world.content.upgrade.Upgrade;
 import com.athena.world.entity.impl.npc.NPC;
 import com.google.common.base.Preconditions;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
-import com.athena.world.SlotMachineRewards;
+import org.jboss.netty.bootstrap.ServerBootstrap;
+import org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory;
+import org.jboss.netty.util.HashedWheelTimer;
+
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Credit: lare96, Gabbe
@@ -77,52 +71,38 @@ public final class GameLoader {
 	}
 
 	public static String day() {
-		switch(getDay()) {
-			case MONDAY:
-				return "Monday";
-			case TUESDAY:
-				return "Tuesday";
-			case WEDNESDAY:
-				return "Wednesday";
-			case THURSDAY:
-				return "Thursday";
-			case FRIDAY:
-				return "Friday";
-			case SATURDAY:
-				return "Saturday";
-			case SUNDAY:
-				return "Sunday";
-		}
-		return "";
+		return switch (getDay()) {
+			case MONDAY -> "Monday";
+			case TUESDAY -> "Tuesday";
+			case WEDNESDAY -> "Wednesday";
+			case THURSDAY -> "Thursday";
+			case FRIDAY -> "Friday";
+			case SATURDAY -> "Saturday";
+			case SUNDAY -> "Sunday";
+			default -> "";
+		};
 	}
 			//events for each day
 	public static String getSpecialDay() {
-		switch (getDay()) {
-		case MONDAY:
-			return "X2 Vote Points";
-		case TUESDAY: //this one make it x2 boss points for tuesday
-			return "X2 Boss Points";
-		case WEDNESDAY:
-			return "X2 Slayer Points";
-		case THURSDAY:
-			return "X2 PC Points";
-		case FRIDAY:
-			return "X2 Exp. & Lottery"; 
-		case SATURDAY: //this one make it x2 trivia points
-			return "X2 Trivia Points";
-		case SUNDAY: //this one make it x2 damage
-			return "x2 Damage Points";
-		}
-		return "X2 Exp. & Lottery";
-	} //did the 3 you said, double boss points, double trivia points and double damage(max hit).
+		return switch (getDay()) {
+			case MONDAY -> "X2 Vote Points";
+			case TUESDAY -> "X2 Boss Points";
+			case WEDNESDAY -> "X2 Slayer Points";
+			case THURSDAY -> "X2 PC Points";
+			case FRIDAY -> "X2 Exp. & Lottery";
+			case SATURDAY -> "X2 Trivia Points";
+			case SUNDAY -> "x2 Damage Points";
+			default -> "X2 Exp. & Lottery";
+		};
+	}
 	public static boolean doubleBossPoints() {
-		return new GregorianCalendar().get(Calendar.DAY_OF_WEEK) == TUESDAY;
+		return new GregorianCalendar().get(Calendar.DAY_OF_WEEK) == Calendar.TUESDAY;
 	}
 	public static boolean doubleTriviaPoints() {
-		return new GregorianCalendar().get(Calendar.DAY_OF_WEEK) == SATURDAY;
+		return new GregorianCalendar().get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY;
 	}
 	public static boolean doubleDamage() {
-		return new GregorianCalendar().get(Calendar.DAY_OF_WEEK) == SUNDAY;
+		return new GregorianCalendar().get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY;
 	}
 
 	private final ExecutorService serviceLoader = Executors.newSingleThreadExecutor(new ThreadFactoryBuilder().setNameFormat("GameLoadingThread").build());

@@ -2,6 +2,7 @@ package com.athena;
 
 import java.io.File;
 import java.text.NumberFormat;
+import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -33,7 +34,7 @@ public class GameServer {
 			else
 				player.sendMessage("Check total $ in eco..");
 
-			for (File file : new File("data/saves/characters/").listFiles()) {
+			for (File file : Objects.requireNonNull(new File("data/saves/characters/").listFiles())) {
 				Player p = new Player(null);
 
 				p.setUsername(file.getName().substring(0, file.getName().length() - 5));

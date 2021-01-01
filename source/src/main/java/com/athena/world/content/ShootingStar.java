@@ -60,7 +60,7 @@ public class ShootingStar {
 		LOCATION_21(new Position(2740, 3501), "near the camelot bank", "Camelot Bank"),*/
 		LOCATION_22(new Position(2198, 3558), "near the lake at home", "Home");
 
-		private LocationData(Position spawnPos, String clue, String playerPanelFrame) {
+		LocationData(Position spawnPos, String clue, String playerPanelFrame) {
 			this.spawnPos = spawnPos;
 			this.clue = clue;
 			this.playerPanelFrame = playerPanelFrame;
@@ -75,8 +75,7 @@ public class ShootingStar {
 	}
 
 	public static LocationData getRandom() {
-		LocationData star = LocationData.values()[Misc.getRandom(LocationData.values().length - 1)];
-		return star;
+		return LocationData.values()[Misc.getRandom(LocationData.values().length - 1)];
 	}
 
 	public static void sequence() {

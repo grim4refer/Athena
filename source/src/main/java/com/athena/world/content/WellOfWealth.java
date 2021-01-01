@@ -206,6 +206,6 @@ public class WellOfWealth {
 
 	public enum WellState {
 		EMPTY,
-		FULL;
+		FULL
 	}
 }

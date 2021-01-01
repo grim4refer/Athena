@@ -127,7 +127,7 @@ public class GameSettings {
      * Unsellable items
      * Items which cannot be sold to shops
      */
-    public static int UNSELLABLE_ITEMS[] = new int[]
+    public static int[] UNSELLABLE_ITEMS = new int[]
     		{  19804, 19803, 19790, 19789,  19786, 19785, 12422, 12423, 12424, 12425,20985,5022,5023,18016,995 };
 
     public static final String[] INVALID_NAMES = {"mod", "boby", "moderator", "admin", "administrator", "owner", "developer",

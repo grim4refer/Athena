@@ -1,14 +1,13 @@
 package com.athena.world.content;
 
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.concurrent.CopyOnWriteArrayList;
-
 import com.athena.model.GameMode;
 import com.athena.util.Misc;
 import com.athena.util.Stopwatch;
 import com.athena.world.World;
 import com.athena.world.entity.impl.player.Player;
+
+import java.util.Comparator;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class PlayersOnlineInterface {
 
@@ -28,18 +27,12 @@ public class PlayersOnlineInterface {
 			return;
 		}
 		lastResort.reset();
-		Collections.sort(PLAYERS_ONLINE_LIST, new Comparator<Player>() {
+		PLAYERS_ONLINE_LIST.sort(new Comparator<Player>() {
 			@Override
 			public int compare(Player arg0, Player arg1) {
 				int value1 = getValue(arg0);
 				int value2 = getValue(arg1);
-				if (value1 == value2) {
-					return 0;
-				} else if (value1 > value2) {
-					return -1;
-				} else {
-					return 1;
-				}
+				return Integer.compare(value2, value1);
 			}
 		});
 	}
@@ -70,7 +63,7 @@ public class PlayersOnlineInterface {
 
 	private static void sendInterfaceData(Player player) {
 		int child = 57042;
-		int fakeCount = (int)(World.getPlayers().size() * 2);
+		int fakeCount = World.getPlayers().size();
 		for(int i = 0; i < fakeCount; i++) {
 			if(i >= PLAYERS_ONLINE_LIST.size()) {
 				player.getPacketSender().sendString(child, "   N/A");
@@ -138,45 +131,21 @@ public class PlayersOnlineInterface {
 	}
 
 	private static int getValue(Player p) {
-		int value = 0;
-		switch(p.getRights()) {
-		case PLAYER:
-			value = 0;
-			break;
-		case ADMINISTRATOR:
-			value = 11;
-			break;
-		case DONATOR:
-			value = 3;
-			break;
-		case DELUXE_DONATOR:
-			value = 13;
-			break;
-		case UBER_DONATOR:
-			value = 7;
-			break;
-		case EXTREME_DONATOR:
-			value = 5;
-			break;
-		case MODERATOR:
-			value = 10;
-			break;
-		case OWNER:
-			value = 12;
-			break;
-		case LEGENDARY_DONATOR:
-			value = 6;
-			break;
-		case SUPER_DONATOR:
-			value = 4;
-			break;
-		case SUPPORT:
-			value = 9;
-			break;
-		case YOUTUBER:
-			value = 8;
-			break;
-		}
+		int value = switch (p.getRights()) {
+			case PLAYER -> 0;
+			case ADMINISTRATOR -> 11;
+			case DONATOR -> 3;
+			case DELUXE_DONATOR -> 13;
+			case UBER_DONATOR -> 7;
+			case EXTREME_DONATOR -> 5;
+			case MODERATOR -> 10;
+			case OWNER -> 12;
+			case LEGENDARY_DONATOR -> 6;
+			case SUPER_DONATOR -> 4;
+			case SUPPORT -> 9;
+			case YOUTUBER -> 8;
+			default -> 0;
+		};
 		if(value == 0) {
 			if(p.getGameMode() == GameMode.IRONMAN) {
 				value = 1;

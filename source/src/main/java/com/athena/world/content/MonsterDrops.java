@@ -25,7 +25,8 @@ public class MonsterDrops {
 		try {
 			NPCDrops.getDrops().entrySet().stream().filter(Objects::nonNull)
 					.filter($d -> $d.getKey() > 0 && NpcDefinition.forId($d.getKey()) != null).forEach($d -> {
-						npcDrops.put(NpcDefinition.forId($d.getKey()).getName().toLowerCase(), $d.getValue());
+				assert NpcDefinition.forId($d.getKey()) != null;
+				npcDrops.put(NpcDefinition.forId($d.getKey()).getName().toLowerCase(), $d.getValue());
 //						System.out.println("Added: " + $d.getValue().toString() + " " + $d.getKey());
 					});
 			System.out.println("MonsterDrops has been initialized: size " + npcDrops.size());
@@ -40,7 +41,7 @@ public class MonsterDrops {
 		NPCDrops drops = npcDrops.get(name);
 		if (drops == null) {
 			player.sendMessage(
-					"No drop table found for " + name + " " + id + " " + NpcDefinition.forName(name).getId());
+					"No drop table found for " + name + " " + id + " " + Objects.requireNonNull(NpcDefinition.forName(name)).getId());
 			return;
 		}
 		if(!player.getClickDelay().elapsed(600)) {

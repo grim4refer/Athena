@@ -105,13 +105,7 @@ public class ItemsKeptOnDeath {
 			public int compare(Item item, Item item2) {
 				int value1 = item.getDefinition().getValue();
 				int value2 = item2.getDefinition().getValue();
-				if (value1 == value2) {
-					return 0;
-				} else if (value1 > value2) {
-					return -1;
-				} else {
-					return 1;
-				}
+				return Integer.compare(value2, value1);
 			}
 		});
 		ArrayList<Item> toKeep = new ArrayList<Item>();

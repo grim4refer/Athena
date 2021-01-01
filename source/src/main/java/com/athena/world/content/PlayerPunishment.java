@@ -1,5 +1,3 @@
-/** @@@@ Replace the whole PlayerPunishments.java with the following @@@@ **/
-
 package com.athena.world.content;
 
 import java.io.BufferedReader;
@@ -46,7 +44,7 @@ public class PlayerPunishment {
 	public static void initializeList(String directory, String file, ArrayList<String> list) {
 		try {
 			BufferedReader in = new BufferedReader(new FileReader(""+directory+""+file+".txt"));
-			String data = null;
+			String data;
 			while ((data = in.readLine()) != null) {
 				list.add(data);
 			}
@@ -202,19 +200,16 @@ public class PlayerPunishment {
 				}
 				w.flush();
 				w.close();
-			} catch (Exception e) {}
+			} catch (Exception ignored) {}
 		});
 	}
 
 	public static void addToFile(String file, String data) {
 		GameServer.getLoader().getEngine().submit(() -> {
 			try {
-				BufferedWriter out = new BufferedWriter(new FileWriter(file, true));
-				try {
+				try (BufferedWriter out = new BufferedWriter(new FileWriter(file, true))) {
 					out.newLine();
 					out.write(data);
-				} finally {
-					out.close();
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -232,39 +227,19 @@ public class PlayerPunishment {
 				return false;
 			}
 			p.setPlayerLocked(true);
-			Position pos = null;
-			switch(emptyCell) {
-			case 0:
-				pos = new Position(3095, 3930);
-				break;
-			case 1:
-				pos = new Position(3095, 3937);
-				break;
-			case 2:
-				pos = new Position(3100, 3930);
-				break;
-			case 3:
-				pos = new Position(3100, 3937);
-				break;
-			case 4:
-				pos = new Position(3105, 3930);
-				break;
-			case 5:
-				pos = new Position(3105, 3937);
-				break;
-			case 6:
-				pos = new Position(3110, 3930);
-				break;
-			case 7:
-				pos = new Position(3110, 3937);
-				break;
-			case 8:
-				pos = new Position(3115, 3930);
-				break;
-			case 9:
-				pos = new Position(3115, 3937);
-				break;
-			}
+			Position pos = switch (emptyCell) {
+				case 0 -> new Position(3095, 3930);
+				case 1 -> new Position(3095, 3937);
+				case 2 -> new Position(3100, 3930);
+				case 3 -> new Position(3100, 3937);
+				case 4 -> new Position(3105, 3930);
+				case 5 -> new Position(3105, 3937);
+				case 6 -> new Position(3110, 3930);
+				case 7 -> new Position(3110, 3937);
+				case 8 -> new Position(3115, 3930);
+				case 9 -> new Position(3115, 3937);
+				default -> null;
+			};
 			p.moveTo(pos);
 			JAILED_PLAYERS[emptyCell] = p;
 			return true;

@@ -68,16 +68,12 @@ public class StaffList {
 	}
 
 	public static void login(Player player) {
-		if (staff.contains(getPrefix(player) + " @red@" + player.getUsername())) {
-			staff.remove(getPrefix(player) + " @red@" + player.getUsername());
-		}
+		staff.remove(getPrefix(player) + " @red@" + player.getUsername());
 		staff.add(getPrefix(player) + " @gre@" + player.getUsername());
 	}
 
 	public static void logout(Player player) {
-		if (staff.contains(getPrefix(player) + " @gre@" + player.getUsername())) {
-			staff.remove(getPrefix(player) + " @gre@" + player.getUsername());
-		}
+		staff.remove(getPrefix(player) + " @gre@" + player.getUsername());
 		staff.add(getPrefix(player) + " @red@" + player.getUsername());
 	}
 
