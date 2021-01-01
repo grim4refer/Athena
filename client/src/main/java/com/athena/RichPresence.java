@@ -11,6 +11,8 @@ public class RichPresence {
     private DiscordRPC lib;
     private DiscordRichPresence presence;
 
+    //Discord
+
     public void initiate() {
         lib = DiscordRPC.INSTANCE;
         DiscordEventHandlers handlers = new DiscordEventHandlers();
