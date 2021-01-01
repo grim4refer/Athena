@@ -32,7 +32,7 @@ import javax.swing.SwingUtilities;
 public class RSApplet extends Applet implements Runnable, MouseListener,
 		MouseMotionListener, MouseWheelListener, KeyListener, FocusListener,
 		WindowListener {
-
+	public static boolean shiftDown = false;
 	public static int hotKey = 508;
 	public boolean resizing;
 	private int anInt4;
@@ -58,7 +58,6 @@ public class RSApplet extends Applet implements Runnable, MouseListener,
 	private long clickTime;
 	public int clickMode3;
 	public int saveClickX;
-	public static boolean shiftDown = false;
 	public int saveClickY;
 	long aLong29;
 	final int keyArray[] = new int[128];
@@ -596,6 +595,9 @@ public class RSApplet extends Applet implements Runnable, MouseListener,
 		this.idleTime = 0;
 		int i = keyevent.getKeyCode();
 		int j = keyevent.getKeyChar();
+		if(j == KeyEvent.VK_SHIFT) {
+			shiftDown = true;
+		}
 		if (i == 17) {
 			this.lastB = 1;
 		} else if (i != 83 && i != 66) {
@@ -702,6 +704,10 @@ public class RSApplet extends Applet implements Runnable, MouseListener,
 		}
 		if (i == 17) {
 			resizing = false;
+		}
+
+		if(i == KeyEvent.VK_SHIFT) {
+			shiftDown = false;
 		}
 		if (c < '\036') {
 			c = '\0';
