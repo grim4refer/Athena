@@ -607,7 +607,7 @@ public class TeleportInterface {
 		player.currentTabs = 0;
 		player.getTeleportInterface().clearData();
 		resetOldData();
-		player.getPacketSender().sendString(CATEGORY_NAME_ID, "Boss Names");
+		player.getPacketSender().sendString(CATEGORY_NAME_ID, "Bosses");
 		for (Bosses data : Bosses.values()) {
 			player.getPacketSender().sendString(data.textId, data.name);
 		}

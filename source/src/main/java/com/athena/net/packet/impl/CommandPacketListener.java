@@ -81,7 +81,7 @@ public class CommandPacketListener implements PacketListener {
 
 	public static int config;
 	private static final File CONTESTERS_FILE_LOCATION = new File("./data/saves/voting/votes.txt");
-	public static final List<String> CONTESTERS = new ArrayList<String>();
+	public static final List<String> CONTESTERS = new ArrayList<>();
 
 	@Override
 	public void handleMessage(Player player, Packet packet) {
@@ -1235,24 +1235,20 @@ public class CommandPacketListener implements PacketListener {
 				player.getPacketSender().sendMessage("You cannot jail " + player2.getUsername());
 				return;
 			}
-			if (player2 != null) {
-				if (Jail.isJailed(player2)) {
-					player.getPacketSender().sendConsoleMessage("That player is already jailed!");
-					player.getPacketSender().sendMessage("That player is already jailed!");
-					return;
-				}
-				if (Jail.jailPlayer(player2)) {
-					player2.getSkillManager().stopSkilling();
-					PlayerLogs.log(player.getUsername(),
-							"" + player.getUsername() + " just jailed " + player2.getUsername() + "!");
-					player.getPacketSender().sendMessage("Jailed player: " + player2.getUsername() + "");
-					player2.getPacketSender().sendMessage("You have been jailed by " + player.getUsername() + ".");
-					World.sendStaffMessage("[Staff] " + player2.getUsername()+ " has been jailed by " + player.getUsername());
-				} else {
-					player.getPacketSender().sendConsoleMessage("Jail is currently full.");
-				}
+			if (Jail.isJailed(player2)) {
+				player.getPacketSender().sendConsoleMessage("That player is already jailed!");
+				player.getPacketSender().sendMessage("That player is already jailed!");
+				return;
+			}
+			if (Jail.jailPlayer(player2)) {
+				player2.getSkillManager().stopSkilling();
+				PlayerLogs.log(player.getUsername(),
+						"" + player.getUsername() + " just jailed " + player2.getUsername() + "!");
+				player.getPacketSender().sendMessage("Jailed player: " + player2.getUsername() + "");
+				player2.getPacketSender().sendMessage("You have been jailed by " + player.getUsername() + ".");
+				World.sendStaffMessage("[Staff] " + player2.getUsername() + " has been jailed by " + player.getUsername());
 			} else {
-				player.getPacketSender().sendConsoleMessage("Could not find that player online.");
+				player.getPacketSender().sendConsoleMessage("Jail is currently full.");
 			}
 		}
 
@@ -1361,11 +1357,11 @@ public class CommandPacketListener implements PacketListener {
 			} else {
 
 				final String IP = player2.getHostAddress();
-				String toAppend = player2.getUsername();
+				StringBuilder toAppend = new StringBuilder(player2.getUsername());
 				for (int i = 1; i < World.getPlayers().size(); i++) {
 					Player x = World.getPlayers().get(i);
 					if (x.getHostAddress().equals(IP) && !(x.getUsername().equals(player2.getUsername()))) {
-						toAppend += ", " + x.getUsername();
+						toAppend.append(", ").append(x.getUsername());
 					}
 				}
 				player.getPacketSender().sendConsoleMessage("Player IP" + player2.getUsername() + " was checked by "
@@ -1952,8 +1948,8 @@ public class CommandPacketListener implements PacketListener {
 					{ Equipment.AMULET_SLOT, 1725 }, { Equipment.WEAPON_SLOT, 4587 }, { Equipment.BODY_SLOT, 1129 },
 					{ Equipment.SHIELD_SLOT, 1540 }, { Equipment.LEG_SLOT, 2497 }, { Equipment.HANDS_SLOT, 7459 },
 					{ Equipment.FEET_SLOT, 3105 }, { Equipment.RING_SLOT, 2550 }, { Equipment.AMMUNITION_SLOT, 9244 } };
-			for (int i = 0; i < data.length; i++) {
-				int slot = data[i][0], id = data[i][1];
+			for (int[] datum : data) {
+				int slot = datum[0], id = datum[1];
 				player.getEquipment().setItem(slot, new Item(id, id == 9244 ? 500 : 1));
 			}
 			BonusManager.update(player);
@@ -2286,7 +2282,7 @@ public class CommandPacketListener implements PacketListener {
 		}
 		if (command[0].equalsIgnoreCase("title")) {
 			String title = wholeCommand.substring(6);
-			if (title == null || title.length() <= 2 || title.length() > 9 || !NameUtils.isValidName(title)) {
+			if (title.length() <= 2 || title.length() > 9 || !NameUtils.isValidName(title)) {
 				player.getPacketSender().sendMessage("You can not set your title to that!");
 				return;
 			}
