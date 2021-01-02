@@ -354,7 +354,7 @@ public class Trading {
 			return;
 		setCanOffer(false);
 		player.getInventory().refreshItems();
-		String SendTrade = "Absolutely nothing!";
+		StringBuilder SendTrade = new StringBuilder("Absolutely nothing!");
 		String SendAmount;
 		int Count = 0;
 		for (Item item : offeredItems) {
@@ -366,16 +366,16 @@ public class Trading {
 				SendAmount = "" + Misc.format(item.getAmount());
 			}
 			if (Count == 0) {
-				SendTrade = item.getDefinition().getName().replaceAll("_", " ");
+				SendTrade = new StringBuilder(item.getDefinition().getName().replaceAll("_", " "));
 			} else
-				SendTrade = SendTrade + "\\n" + item.getDefinition().getName().replaceAll("_", " ");
+				SendTrade.append("\\n").append(item.getDefinition().getName().replaceAll("_", " "));
 			if (item.getDefinition().isStackable())
-				SendTrade = SendTrade + " x " + SendAmount;
+				SendTrade.append(" x ").append(SendAmount);
 			Count++;
 		}
 
-		player.getPacketSender().sendString(3557, SendTrade);
-		SendTrade = "Absolutely nothing!";
+		player.getPacketSender().sendString(3557, SendTrade.toString());
+		SendTrade = new StringBuilder("Absolutely nothing!");
 		SendAmount = "";
 		Count = 0;
 		for (Item item : player2.getTrading().offeredItems) {
@@ -387,14 +387,14 @@ public class Trading {
 				SendAmount = "" + Misc.format(item.getAmount());
 			}
 			if (Count == 0) {
-				SendTrade = item.getDefinition().getName().replaceAll("_", " ");
+				SendTrade = new StringBuilder(item.getDefinition().getName().replaceAll("_", " "));
 			} else
-				SendTrade = SendTrade + "\\n" + item.getDefinition().getName().replaceAll("_", " ");
+				SendTrade.append("\\n").append(item.getDefinition().getName().replaceAll("_", " "));
 			if (item.getDefinition().isStackable())
-				SendTrade = SendTrade + " x " + SendAmount;
+				SendTrade.append(" x ").append(SendAmount);
 			Count++;
 		}
-		player.getPacketSender().sendString(3558, SendTrade);
+		player.getPacketSender().sendString(3558, SendTrade.toString());
 		player.getPacketSender().sendInterfaceSet(3443, 3321);
 		player.getPacketSender().sendItemContainer(player.getInventory(), 3322);
 		/*
@@ -451,7 +451,7 @@ public class Trading {
 		return tradeConfirmed = player2.getTrading().tradeConfirmed = false;
 	}
 
-	public CopyOnWriteArrayList<Item> offeredItems = new CopyOnWriteArrayList<Item>();
+	public CopyOnWriteArrayList<Item> offeredItems = new CopyOnWriteArrayList<>();
 	private boolean inTrade = false;
 	private boolean tradeRequested = false;
 	private int tradeWith = -1;

@@ -30,15 +30,13 @@ public class WellOfGoodwill {
 	public static void init() {
 		try {
 			BufferedReader in = new BufferedReader(new FileReader("./data/saves/edgeville-well.txt"));
-			if(in != null) {
-				String line = in.readLine();
-				if(line != null) {
-					long startTimer = Long.parseLong(line);
-					if(startTimer > 0) {
-						STATE = WellState.FULL;
-						START_TIMER = startTimer;
-						MONEY_IN_WELL = AMOUNT_NEEDED;
-					}
+			String line = in.readLine();
+			if(line != null) {
+				long startTimer = Long.parseLong(line);
+				if(startTimer > 0) {
+					STATE = WellState.FULL;
+					START_TIMER = startTimer;
+					MONEY_IN_WELL = AMOUNT_NEEDED;
 				}
 			}
 			in.close();

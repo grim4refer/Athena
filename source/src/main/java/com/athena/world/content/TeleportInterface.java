@@ -478,14 +478,12 @@ public class TeleportInterface {
 		if (!(buttonID >= -14935 && buttonID <= -14836)) {
 			return false;
 		}
-		int index = -1;
+		int index;
 
-		if (buttonID >= -14935) {
-			index = 14935 + buttonID;
-		}
+		index = 14935 + buttonID;
 		if (player.currentTabs == 0) {
-			if (index >= 0 && index < Bosses.values().length) {
-				System.out.println("Handled boss data [As index was 0]");
+			if (index < Bosses.values().length) {
+				//System.out.println("Handled boss data [As index was 0]");
 				Bosses bossData = Bosses.values()[index];
 				//currentClickIndex = index;
 				player.clickindex = index;
@@ -495,8 +493,8 @@ public class TeleportInterface {
 			}
 		}
 		if (player.currentTabs == 1) {
-			if (index >= 0 && index < Monsters.values().length) {
-				System.out.println("Handled monster data [As index was 1]");
+			if (index < Monsters.values().length) {
+				//System.out.println("Handled monster data [As index was 1]");
 				Monsters monsterData = Monsters.values()[index];
 				//currentClickIndex = index;
 				player.clickindex = index;
@@ -505,8 +503,8 @@ public class TeleportInterface {
 			}
 		}
 		if (player.currentTabs == 2) {
-			if (index >= 0 && index < Wilderness.values().length) {
-				System.out.println("Handled monster data [As index was 1]");
+			if (index < Wilderness.values().length) {
+				//System.out.println("Handled monster data [As index was 1]");
 				Wilderness wildyData = Wilderness.values()[index];
 				//currentClickIndex = index;
 				player.clickindex = index;
@@ -515,8 +513,8 @@ public class TeleportInterface {
 			}
 		}
 		if (player.currentTabs == 3) {
-			if (index >= 0 && index < Skilling.values().length) {
-				System.out.println("Handled monster data [As index was 1]");
+			if (index < Skilling.values().length) {
+				//System.out.println("Handled monster data [As index was 1]");
 				Skilling skillingData = Skilling.values()[index];
 				//currentClickIndex = index;
 				player.clickindex = index;
@@ -525,8 +523,8 @@ public class TeleportInterface {
 			}
 		}
 		if (player.currentTabs == 4) {
-			if (index >= 0 && index < Minigames.values().length) {
-				System.out.println("Handled monster data [As index was 1]");
+			if (index < Minigames.values().length) {
+				//System.out.println("Handled monster data [As index was 1]");
 				Minigames minigamesData = Minigames.values()[index];
 				//currentClickIndex = index;
 				player.clickindex = index;
@@ -535,8 +533,8 @@ public class TeleportInterface {
 			}
 		}
 		if (player.currentTabs == 5) {
-			if (index >= 0 && index < Cities.values().length) {
-				System.out.println("Handled monster data [As index was 1]");
+			if (index < Cities.values().length) {
+				//System.out.println("Handled monster data [As index was 1]");
 				Cities cityData = Cities.values()[index];
 				//currentClickIndex = index;
 				player.clickindex = index;
@@ -620,7 +618,7 @@ public class TeleportInterface {
 		player.getPacketSender().sendInterface(50500);
 		player.currentTabs  = 1;
 		player.getTeleportInterface().clearData();
-		player.getPacketSender().sendString(CATEGORY_NAME_ID, "Monster Names");
+		player.getPacketSender().sendString(CATEGORY_NAME_ID, "Monsters");
 		for (Monsters data : Monsters.values()) {
 			player.getPacketSender().sendString(data.textId, data.name);
 		}
@@ -640,7 +638,7 @@ public class TeleportInterface {
 		player.getPacketSender().sendInterface(50500);
 		player.currentTabs = 3;
 		player.getTeleportInterface().clearData();
-		player.getPacketSender().sendString(CATEGORY_NAME_ID, "Skilling Names");
+		player.getPacketSender().sendString(CATEGORY_NAME_ID, "Shops");
 		for (Skilling data : Skilling.values()) {
 			player.getPacketSender().sendString(data.textId, data.name);
 		}
@@ -650,7 +648,7 @@ public class TeleportInterface {
 		player.getPacketSender().sendInterface(50500);
 		player.currentTabs = 4;
 		player.getTeleportInterface().clearData();
-		player.getPacketSender().sendString(CATEGORY_NAME_ID, "Minigames Names");
+		player.getPacketSender().sendString(CATEGORY_NAME_ID, "Minigames");
 		for (Minigames data : Minigames.values()) {
 			player.getPacketSender().sendString(data.textId, data.name);
 		}
@@ -660,7 +658,7 @@ public class TeleportInterface {
 		player.getPacketSender().sendInterface(50500);
 		player.currentTabs = 5;
 		player.getTeleportInterface().clearData();
-		player.getPacketSender().sendString(CATEGORY_NAME_ID, "Cities Names");
+		player.getPacketSender().sendString(CATEGORY_NAME_ID, "Events");
 		for (Cities data : Cities.values()) {
 			player.getPacketSender().sendString(data.textId, data.name);
 		}

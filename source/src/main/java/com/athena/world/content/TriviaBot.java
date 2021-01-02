@@ -63,7 +63,6 @@ public class TriviaBot {
 				didSend = false;
 				botTimer = TIMER;
 				answerCount = 0;
-				return;
 			}
 		} else {
 			if(attempt.contains("question") || attempt.contains("repeat")){
@@ -74,7 +73,6 @@ public class TriviaBot {
 			//attempts.add(attempt); // need to add a filter for bad strings (advs, curses)
 			p.getPacketSender().sendMessage("@blu@[TRIVIA]@red@ Sorry! Wrong answer! The current question is: +");
 			p.getPacketSender().sendMessage("@blu@[TRIVIA]@red@ "+(currentQuestion));
-			return;
 		}
 		
 	}
