@@ -1,5 +1,5 @@
 {
-  "total-play-time-ms": 31725569402,
+  "total-play-time-ms": 31726002001,
   "username": "Kish",
   "password": "123",
   "email": "null",
@@ -12,9 +12,9 @@
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2531,
-    "y": 2520,
-    "z": 1
+    "x": 2272,
+    "y": 4701,
+    "z": 0
   },
   "online-status": "ON",
   "given-starter": true,
@@ -25,11 +25,11 @@
   "minutes-bonus-exp": -1,
   "total-gained-exp": 78012255,
   "prestige-points": 0,
-  "achievement-points": 17,
+  "achievement-points": 21,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 90000000,
-  "total-loyalty-points": 80224.0,
+  "loyalty-points": 90001752,
+  "total-loyalty-points": 81976.0,
   "voting-points": 1,
   "slayer-points": 50,
   "pk-points": 0,
@@ -54,8 +54,8 @@
   "auto-retaliate": true,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 1609384528086,
-  "fight-type": "BATTLEAXE_HACK",
+  "last-veng": 240687924,
+  "fight-type": "CROSSBOW_RAPID",
   "sol-effect": 0,
   "skull-timer": 0,
   "accept-aid": false,
@@ -479,13 +479,13 @@
   ],
   "skills": {
     "level": [
-      99998,
-      99998,
-      99998,
-      99998,
-      299,
+      99976,
+      99976,
+      99976,
+      990,
+      277,
       99999,
-      299,
+      277,
       99,
       99,
       99,
@@ -562,28 +562,28 @@
   },
   "inventory": [
     {
-      "id": 11316,
-      "amount": 6,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 5022,
-      "amount": 966600,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 5023,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 7100,
-      "amount": 3,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 7118,
-      "amount": 3,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
@@ -704,7 +704,7 @@
   ],
   "equipment": [
     {
-      "id": 19052,
+      "id": 20855,
       "amount": 1,
       "slot": 0
     },
@@ -719,7 +719,17 @@
       "slot": 0
     },
     {
-      "id": 1359,
+      "id": 20853,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20856,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20854,
       "amount": 1,
       "slot": 0
     },
@@ -729,17 +739,7 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": 19097,
+      "id": 20857,
       "amount": 1,
       "slot": 0
     },
@@ -749,12 +749,12 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20858,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": 20090,
+      "id": 20859,
       "amount": 1,
       "slot": 0
     },
@@ -797,7 +797,7 @@
     },
     {
       "id": 5022,
-      "amount": 201,
+      "amount": 566802,
       "slot": 0
     },
     {
@@ -927,7 +927,7 @@
     },
     {
       "id": 11316,
-      "amount": 2,
+      "amount": 13,
       "slot": 0
     },
     {
@@ -947,6 +947,96 @@
     },
     {
       "id": 1067,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 5023,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 7100,
+      "amount": 3,
+      "slot": 0
+    },
+    {
+      "id": 7118,
+      "amount": 3,
+      "slot": 0
+    },
+    {
+      "id": 19052,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 1359,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 19097,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20090,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 15473,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 15472,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 619,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20451,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20452,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 21059,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 2759,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 989,
+      "amount": 5,
+      "slot": 0
+    },
+    {
+      "id": 995,
+      "amount": 100000000,
+      "slot": 0
+    },
+    {
+      "id": 15371,
+      "amount": 5,
+      "slot": 0
+    },
+    {
+      "id": 19936,
       "amount": 1,
       "slot": 0
     }
@@ -1368,37 +1458,9 @@
     0
   ],
   "achievements-completion": [
-    false,
     true,
     true,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
     true,
-    true,
-    false,
-    false,
-    true,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
     false,
     false,
     false,
@@ -1419,6 +1481,7 @@
     true,
     false,
     false,
+    true,
     false,
     false,
     false,
@@ -1444,6 +1507,33 @@
     false,
     true,
     true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
     true,
     false,
     false,
@@ -1458,7 +1548,7 @@
     false,
     true,
     false,
-    false,
+    true,
     true,
     false,
     true,

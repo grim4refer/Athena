@@ -1682,6 +1682,7 @@ public class CustomObjects {
 			{38660, 2518, 2516, 1, 2}, //good rock
 			{2654, 2539, 2516, 1, 0}, //Restore fountain
 			{3422, 2532, 2534, 1, 1}, //upgrade
+			{884, 2534, 2523, 1, 1}, //well of goodwill
 			{2213, 3333, 3333, 0, 1}, //bank test 3333 3333
 			{2213, 2270, 5351, 0, 1}, //bank test 3333 3333
 			

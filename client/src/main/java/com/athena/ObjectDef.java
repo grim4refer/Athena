@@ -331,7 +331,11 @@ public final class ObjectDef {
 			objectDef.actions = new String[] { "Dump-weeds", null, null, null, null };
 			objectDef.name = "Compost bin";
 		}
-		if (i == 884) {
+		if (i == 884) {// at ::edge well of goodwill
+			objectDef.actions = new String[] { "Investigate", "Contribute", null, null, null };
+			objectDef.name = "Well of Goodwill";
+		}
+		if (i == 885) {
 			objectDef.actions = new String[] { "Investigate", "Contribute", null, null, null };
 			objectDef.name = "Well of Goodwill";
 		}
