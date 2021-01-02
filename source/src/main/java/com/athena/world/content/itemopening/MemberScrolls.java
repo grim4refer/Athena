@@ -47,7 +47,6 @@ public class MemberScrolls {
 			player.save();
 			break;
 		}
-		player.getPacketSender().sendMessage("An error has occured while opening the Member Scroll. Try again or request help.");
 		return false;
 	}
 	

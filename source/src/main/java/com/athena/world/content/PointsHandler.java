@@ -30,7 +30,7 @@ public class PointsHandler {
 		p.getPacketSender().sendString(26704, "@or2@Voting Points: @gre@ "+votingPoints);
 		p.getPacketSender().sendString(26705, "@or2@Slayer Points: @gre@"+slayerPoints);
 		p.getPacketSender().sendString(26709, "@or2@Pk Points: @gre@"+pkPoints);
-		p.getPacketSender().sendString(26708, "@or2@Donation Points: @gre@"+donationPoints);
+		p.getPacketSender().sendString(26708, "@or2@Donation Points: @gre@$"+donationPoints);
 
 		p.getPacketSender().sendString(26711, "@or2@Wilderness Killstreak: @gre@"+p.getPlayerKillingAttributes().getPlayerKillStreak());
 		p.getPacketSender().sendString(26712, "@or2@Wilderness Kills: @gre@"+p.getPlayerKillingAttributes().getPlayerKills());		
