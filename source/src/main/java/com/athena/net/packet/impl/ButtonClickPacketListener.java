@@ -12,6 +12,8 @@ import com.athena.model.input.impl.EnterClanChatToJoin;
 import com.athena.model.input.impl.EnterSyntaxToBankSearchFor;
 import com.athena.model.input.impl.NpcSearch;
 import com.athena.model.input.impl.PosInput;
+import com.athena.world.content.Achievements;
+import com.athena.world.content.Achievements.AchievementData;
 import com.athena.net.packet.Packet;
 import com.athena.net.packet.PacketListener;
 import com.athena.util.Misc;
@@ -582,6 +584,18 @@ public class ButtonClickPacketListener implements PacketListener {
     		case -15030:
     			player.getTeleportInterface().sendCitiesTab();
     			break;
+            case -23771:
+                Achievements.openInterface(player, AchievementData.DEFEAT_10_CARS);// easy achievement tab button
+                break;
+            case -23770:
+                Achievements.openInterface(player, AchievementData.DEFEAT_GOKU);// medium achievement tab button
+                break;
+            case -23769:
+                Achievements.openInterface(player, AchievementData.FISH_2000_ROCKTAILS);// hard achievement tab button
+                break;
+            case -23768:
+                Achievements.openInterface(player, AchievementData.DEFEAT_10000_MONSTERS);// elite achievement tab button
+                break;
             case 26113:
                 player.dropLogOrder = !player.dropLogOrder;
                 if (player.dropLogOrder) {
@@ -606,6 +620,7 @@ public class ButtonClickPacketListener implements PacketListener {
             case -27454:
             case -27534:
             case -18519:
+            case -23775://achievement interface x button
             case -17606:
             case 5384:
             case 12729:

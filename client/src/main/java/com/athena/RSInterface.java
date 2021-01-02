@@ -3751,6 +3751,7 @@ public class RSInterface {
 		playerProfile(textDrawingAreas);
 
 		loyaltyBox(textDrawingAreas);
+		achievements(textDrawingAreas);
 		playerPanel(textDrawingAreas);
 		warriorGuild(textDrawingAreas);
 		dropPreview(textDrawingAreas);
@@ -4019,7 +4020,117 @@ public class RSInterface {
 		rsi.child(72, 43120, 195, 43);
 		rsi.child(73, 43121, 466, 19);
 	}
+	public static void achievements(TextDrawingArea[] tda) {
+		RSInterface tab = addTabInterface(41750);
+		RSInterface options = addTabInterface(41800);
+		RSInterface points = addTabInterface(41880);
+		RSInterface rewards = addTabInterface(41900);
 
+		int id = 41760;
+		int c = 0;
+		int x = 10;
+		int y = 10;
+		tab.totalChildren(24);
+		addSpriteLoader(id, 2506);
+		tab.child(c++, id++, 0 + x, 0 + y);
+
+		addHoverButtonWSpriteLoader(id, 2268, 16, 16, "Close Window", 0, id + 1, 1);
+		tab.child(c++, id++, 460 + x, 3 + y);
+		addHoveredImageWSpriteLoader(id, 2269, 16, 16, id + 1);
+		tab.child(c++, id++, 460 + x, 3 + y);
+
+		id++;
+
+		addText(id, "Achievements", 0xff9b00, true, true, 100, tda, 2);
+		tab.child(c++, id++, 240 + x, 5 + y);
+
+		addConfigButtonWSpriteLoader(id, 41750, 2507, 2508, 119, 21, "Easy", 0, 5, 1090);
+		tab.child(c++, id++, 8 + x, 22 + y);
+		addConfigButtonWSpriteLoader(id, 41750, 2507, 2508, 119, 19, "Medium", 1, 5, 1090);
+		tab.child(c++, id++, 124 + x, 22 + y);
+		addConfigButtonWSpriteLoader(id, 41750, 2507, 2508, 119, 19, "Hard", 2, 5, 1090);
+		tab.child(c++, id++, 242 + x, 22 + y);
+		addConfigButtonWSpriteLoader(id, 41750, 2507, 2508, 119, 19, "Elite", 3, 5, 1090);
+		tab.child(c++, id++, 360 + x, 22 + y);
+
+		addText(id, "Easy", 0xff9b00, true, true, 100, tda, 1);
+		tab.child(c++, id++, 65 + x, 24 + y);
+		addText(id, "Medium", 0xff9b00, true, true, 100, tda, 1);
+		tab.child(c++, id++, 182 + x, 24 + y);
+		addText(id, "Hard", 0xff9b00, true, true, 100, tda, 1);
+		tab.child(c++, id++, 300 + x, 24 + y);
+		addText(id, "Elite", 0xff9b00, true, true, 100, tda, 1);
+		tab.child(c++, id++, 418 + x, 24 + y);
+
+		addText(id, "" + id, 0xff9b00, true, true, 100, tda, 2);
+		tab.child(c++, id++, 90 + x, 56 + y);
+		addText(id, "" + id, 0xff9b00, true, true, 100, tda, 2);
+		tab.child(c++, id++, 320 + x, 65 + y);
+
+		addText(id, "" + id, 0xffffff, false, true, 100, tda, 1);
+		tab.child(c++, id++, 215 + x, 85 + y);
+
+		for (int i = 0; i < 6; i++) {
+			addText(id, "" + id, 0xffffff, false, true, 100, tda, 0);
+			tab.child(c++, id++, 215 + x, 108 + y);
+			y += 13;
+		}
+		y = 10;
+
+		tab.child(c++, 41800, 10 + x, 77 + y);
+		tab.child(c++, 41880, 180 + x, 222 + y);
+		tab.child(c++, 41900, 339 + x, 222 + y);
+
+		options.width = 144;
+		options.height = 218;
+		options.scrollMax = 800;
+		options.totalChildren(60);
+
+		c = 0;
+		id = 41805;
+		y = 0;
+		for (int i = 0; i < 60; i++) {
+			// addText(id, "", 0xff9b00, false, true, 100, tda, 1);
+			addClickableText(id, "" + id, "Select", tda, 0, 0xeb981f, false, true, 632);
+			options.child(c++, id++, 3, y + 2);
+
+			y += 15;
+		}
+
+		points.width = 121;
+		points.height = 72;
+		points.scrollMax = 165;
+		points.totalChildren(15);
+
+		c = 0;
+		id = 41881;
+		y = 0;
+		for (int i = 0; i < 15; i++) {
+			addText(id, "" + id, 0xffffff, false, true, 100, tda, 0);
+			points.child(c++, id++, 3, y + 2);
+
+			y += 15;
+		}
+
+		rewards.width = 121;
+		rewards.height = 72;
+		rewards.scrollMax = 150;
+		rewards.totalChildren(9);
+
+		c = 0;
+		id = 41901;
+		y = 0;
+		for (int i = 0; i < 3; i++) {
+			itemGroup(id, 1, 1, 5, 5);
+			rewards.child(c++, id++, 3, y + 2);
+			itemGroup(id, 1, 1, 5, 5);
+			rewards.child(c++, id++, 35, y + 2);
+			itemGroup(id, 1, 1, 5, 5);
+			rewards.child(c++, id++, 70, y + 2);
+			y += 30;
+		}
+
+	}
 	public static void achievementsInterface() {
 		RSInterface tab = addTabInterface(45000);
 		RSInterface scroll = addTabInterface(45999);

@@ -29,6 +29,7 @@ import com.athena.model.definitions.WeaponAnimations;
 import com.athena.model.definitions.WeaponInterfaces;
 import com.athena.model.definitions.WeaponInterfaces.WeaponInterface;
 import com.athena.model.input.Input;
+import com.athena.world.content.gamblinginterface.GamblingInterface;
 import com.athena.net.PlayerSession;
 import com.athena.net.SessionState;
 import com.athena.util.FrameUpdater;
@@ -37,6 +38,7 @@ import com.athena.util.Stopwatch;
 import com.athena.world.World;
 import com.athena.world.content.*;
 import com.athena.world.content.Achievements.AchievementAttributes;
+import com.athena.world.content.Achievements.Difficulty;
 import com.athena.world.content.BankPin.BankPinAttributes;
 import com.athena.world.content.DropLog.DropLogEntry;
 import com.athena.world.content.KillsTracker.KillsEntry;
@@ -61,7 +63,7 @@ import com.athena.world.content.combat.weapon.FightType;
 import com.athena.world.content.dialogue.Dialogue;
 import com.athena.world.content.dialogue.DialogueExpression;
 import com.athena.world.content.dialogue.DialogueType;
-import com.athena.world.content.gamblinginterface.GamblingInterface;
+//import com.athena.world.content.gamblinginterface.GamblingInterface;
 import com.athena.world.content.grandexchange.GrandExchangeSlot;
 import com.athena.world.content.itemloading.BlowpipeLoading;
 import com.athena.world.content.itemloading.DragonRageLoading;
@@ -90,6 +92,7 @@ import com.athena.world.entity.impl.npc.NPC;
 import javax.security.auth.callback.Callback;
 
 public class Player extends Character {
+	public Difficulty difficulty;
 
 	public boolean inRaid;
 

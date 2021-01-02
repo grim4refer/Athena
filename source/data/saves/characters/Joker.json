@@ -1,5 +1,5 @@
 {
-  "total-play-time-ms": 4464541030,
+  "total-play-time-ms": 4465012497,
   "username": "Joker",
   "password": "123",
   "email": "null",
@@ -12,9 +12,9 @@
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2739,
-    "y": 3464,
-    "z": 0
+    "x": 2526,
+    "y": 2534,
+    "z": 1
   },
   "online-status": "ON",
   "given-starter": false,
@@ -25,11 +25,11 @@
   "minutes-bonus-exp": -1,
   "total-gained-exp": 37145308,
   "prestige-points": 0,
-  "achievement-points": 4,
+  "achievement-points": 5,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 53480,
-  "total-loyalty-points": 53480.0,
+  "loyalty-points": 53870,
+  "total-loyalty-points": 53870.0,
   "voting-points": 0,
   "slayer-points": 0,
   "pk-points": 0,
@@ -54,7 +54,7 @@
   "auto-retaliate": true,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 141628214,
+  "last-veng": 166858791,
   "fight-type": "UNARMED_PUNCH",
   "sol-effect": 0,
   "skull-timer": 0,
@@ -479,10 +479,10 @@
   ],
   "skills": {
     "level": [
-      99729,
-      99729,
-      99729,
-      99729,
+      99724,
+      99724,
+      99724,
+      99724,
       99,
       990,
       99,
@@ -562,63 +562,63 @@
   },
   "inventory": [
     {
-      "id": 15473,
-      "amount": 11060,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 19095,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 20861,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 20902,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 11423,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 11423,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 19096,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 20845,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 227,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 15530,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 15330,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": 14209,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
@@ -787,7 +787,7 @@
     },
     {
       "id": 5022,
-      "amount": 10,
+      "amount": 2973,
       "slot": 0
     },
     {
@@ -797,6 +797,106 @@
     },
     {
       "id": 229,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 15473,
+      "amount": 11060,
+      "slot": 0
+    },
+    {
+      "id": 19095,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20861,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20902,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 11423,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 19096,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20845,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 227,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 15530,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 15330,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 14209,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 989,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 987,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 4153,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 4587,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 2581,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 1359,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 1631,
+      "amount": 5,
+      "slot": 0
+    },
+    {
+      "id": 2591,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 5023,
       "amount": 1,
       "slot": 0
     }
@@ -1090,7 +1190,7 @@
     false,
     false,
     false,
-    false,
+    true,
     false,
     true,
     false

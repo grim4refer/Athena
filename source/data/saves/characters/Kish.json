@@ -1,19 +1,19 @@
 {
-  "total-play-time-ms": 31721989694,
+  "total-play-time-ms": 31725569402,
   "username": "Kish",
   "password": "123",
   "email": "null",
   "staff-rights": "OWNER",
   "game-mode": "NORMAL",
-  "boss-points": 202,
+  "boss-points": 499,
   "npc-kills": 0,
   "ArcticPS-points": 0,
   "transform-id": 0,
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2527,
-    "y": 2523,
+    "x": 2531,
+    "y": 2520,
     "z": 1
   },
   "online-status": "ON",
@@ -23,13 +23,13 @@
   "starterclaimed": false,
   "pvm-rank": "BRONZE",
   "minutes-bonus-exp": -1,
-  "total-gained-exp": 77998203,
+  "total-gained-exp": 78012255,
   "prestige-points": 0,
-  "achievement-points": 10,
+  "achievement-points": 17,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 65527,
-  "total-loyalty-points": 65527.0,
+  "loyalty-points": 90000000,
+  "total-loyalty-points": 80224.0,
   "voting-points": 1,
   "slayer-points": 50,
   "pk-points": 0,
@@ -54,8 +54,8 @@
   "auto-retaliate": true,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 1609366673673,
-  "fight-type": "WHIP_LASH",
+  "last-veng": 1609384528086,
+  "fight-type": "BATTLEAXE_HACK",
   "sol-effect": 0,
   "skull-timer": 0,
   "accept-aid": false,
@@ -479,13 +479,13 @@
   ],
   "skills": {
     "level": [
-      120,
-      120,
-      120,
-      990,
-      120,
-      97616,
-      120,
+      99998,
+      99998,
+      99998,
+      99998,
+      299,
+      99999,
+      299,
       99,
       99,
       99,
@@ -541,7 +541,7 @@
       1000000000,
       1000000000,
       13034431,
-      13034431,
+      13048483,
       13034431,
       13034431,
       13034431,
@@ -562,68 +562,28 @@
   },
   "inventory": [
     {
-      "id": 5223,
-      "amount": 2,
-      "slot": 0
-    },
-    {
-      "id": 5023,
-      "amount": 10000000,
-      "slot": 0
-    },
-    {
       "id": 11316,
-      "amount": 12,
-      "slot": 0
-    },
-    {
-      "id": 11555,
-      "amount": 1,
-      "slot": 0
-    },
-    {
-      "id": 19095,
-      "amount": 1,
-      "slot": 0
-    },
-    {
-      "id": 11988,
-      "amount": 1,
-      "slot": 0
-    },
-    {
-      "id": 20827,
-      "amount": 1,
+      "amount": 6,
       "slot": 0
     },
     {
       "id": 5022,
-      "amount": 311290,
+      "amount": 966600,
       "slot": 0
     },
     {
-      "id": 20205,
-      "amount": 1,
-      "slot": 0
-    },
-    {
-      "id": 11988,
-      "amount": 1,
-      "slot": 0
-    },
-    {
-      "id": 12421,
-      "amount": 1,
-      "slot": 0
-    },
-    {
-      "id": 20604,
+      "id": 5023,
       "amount": 1,
       "slot": 0
     },
     {
       "id": 7100,
-      "amount": 1,
+      "amount": 3,
+      "slot": 0
+    },
+    {
+      "id": 7118,
+      "amount": 3,
       "slot": 0
     },
     {
@@ -632,8 +592,48 @@
       "slot": 0
     },
     {
-      "id": 20864,
-      "amount": 7,
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
@@ -709,8 +709,8 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 3692,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -719,7 +719,7 @@
       "slot": 0
     },
     {
-      "id": 17849,
+      "id": 1359,
       "amount": 1,
       "slot": 0
     },
@@ -797,7 +797,7 @@
     },
     {
       "id": 5022,
-      "amount": 1,
+      "amount": 201,
       "slot": 0
     },
     {
@@ -914,6 +914,41 @@
       "id": 20978,
       "amount": 1,
       "slot": 0
+    },
+    {
+      "id": 1153,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20929,
+      "amount": 4,
+      "slot": 0
+    },
+    {
+      "id": 11316,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20200,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 7102,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 1543,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 1067,
+      "amount": 1,
+      "slot": 0
     }
   ],
   "bank-1": [],
@@ -956,17 +991,17 @@
   "ignores": [],
   "loyalty-titles": [
     false,
-    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
     true,
     false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false
+    true
   ],
   "kills": [
     {
@@ -1012,10 +1047,10 @@
       "boss": true
     },
     {
-      "runningTotal": 2,
+      "runningTotal": 8,
       "npcId": 6305,
       "npcName": "Yanille Guardian",
-      "amount": 2,
+      "amount": 8,
       "boss": true
     },
     {
@@ -1059,6 +1094,13 @@
       "npcName": "Yanille Artillery",
       "amount": 1,
       "boss": false
+    },
+    {
+      "runningTotal": 12,
+      "npcId": 1265,
+      "npcName": "Car",
+      "amount": 12,
+      "boss": false
     }
   ],
   "drops": [
@@ -1069,7 +1111,7 @@
     },
     {
       "item": 7118,
-      "amount": 83,
+      "amount": 85,
       "rareDrop": true
     },
     {
@@ -1099,7 +1141,7 @@
     },
     {
       "item": 5022,
-      "amount": 2247900,
+      "amount": 3215700,
       "rareDrop": false
     },
     {
@@ -1109,7 +1151,7 @@
     },
     {
       "item": 7100,
-      "amount": 40,
+      "amount": 43,
       "rareDrop": true
     },
     {
@@ -1204,7 +1246,7 @@
     },
     {
       "item": 5023,
-      "amount": 16,
+      "amount": 17,
       "rareDrop": true
     },
     {
@@ -1216,11 +1258,46 @@
       "item": 21007,
       "amount": 1,
       "rareDrop": false
+    },
+    {
+      "item": 20200,
+      "amount": 12,
+      "rareDrop": false
+    },
+    {
+      "item": 7102,
+      "amount": 12,
+      "rareDrop": false
+    },
+    {
+      "item": 1543,
+      "amount": 12,
+      "rareDrop": false
+    },
+    {
+      "item": 1153,
+      "amount": 5,
+      "rareDrop": false
+    },
+    {
+      "item": 20929,
+      "amount": 6,
+      "rareDrop": true
+    },
+    {
+      "item": 1067,
+      "amount": 3,
+      "rareDrop": false
+    },
+    {
+      "item": 1115,
+      "amount": 4,
+      "rareDrop": false
     }
   ],
   "tasks-completion": [
     true,
-    false,
+    true,
     false,
     false,
     false,
@@ -1234,7 +1311,7 @@
     false
   ],
   "tasks-progress": [
-    0,
+    9,
     1,
     0,
     0,
@@ -1292,8 +1369,8 @@
   ],
   "achievements-completion": [
     false,
-    false,
-    false,
+    true,
+    true,
     false,
     false,
     false,
@@ -1338,34 +1415,6 @@
     false,
     false,
     false,
-    false,
-    true,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    true,
     true,
     true,
     false,
@@ -1379,17 +1428,51 @@
     false,
     false,
     false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
     true,
     false,
     false,
     true,
     false,
-    false,
+    true,
     false,
     true,
     false
   ],
   "achievements-progress": [
+    9,
+    0,
+    0,
+    0,
+    0,
+    12,
     0,
     0,
     0,
@@ -1410,13 +1493,7 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    12,
     1,
     0,
     0,
@@ -1440,9 +1517,9 @@
     0,
     5,
     0,
-    41,
+    499,
     34,
-    1
+    10
   ],
   "max-cape-colors": [
     65214,
@@ -1450,7 +1527,7 @@
     65186,
     62995
   ],
-  "player-title": "",
+  "player-title": "@blu@WARCHIEF",
   "free-dtd": 0,
   "free-dedi-boss": 0,
   "dmgPotionTime": 0,

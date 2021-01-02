@@ -1631,6 +1631,10 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wield";
                 itemDef.actions[4] = "Drop";
                 itemDef.stackable = false;
+                itemDef.editedModelColor = new int[1];
+                itemDef.newModelColor = new int[1];
+                itemDef.editedModelColor[0] = 40;
+                itemDef.newModelColor[0] = 64;
                 break;
             case 20112:
                 itemDef.modelID = 94495;
