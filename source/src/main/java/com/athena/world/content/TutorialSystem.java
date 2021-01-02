@@ -18,7 +18,7 @@ public class TutorialSystem {
 		private int height;
 		private int updateAreaTick;
 		
-		private TutorialAreas(String area, int absX, int absY, int height, String text, int updateAreaTick) {
+		TutorialAreas(String area, int absX, int absY, int height, String text, int updateAreaTick) {
 			this.area = area;
 			this.absX = absX;
 			this.absY = absY;
@@ -37,7 +37,7 @@ public class TutorialSystem {
 			@Override
 			public void execute() {
 				if (tick == 1 || tick == 6) {
-					tutArea = TutorialAreas.values()[(int) TutorialAreas.values().length - times];
+					tutArea = TutorialAreas.values()[TutorialAreas.values().length - times];
 					player.getPacketSender().sendInterfaceRemoval();
 					player.getPacketSender().sendMessage(tutArea.text);
 					player.moveTo(new Position(tutArea.absX, tutArea.absY, tutArea.height));

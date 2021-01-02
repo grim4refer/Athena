@@ -108,7 +108,7 @@ public class Emotes {
 						return false;
 					}
 				}
-				if(!player.getEmoteDelay().elapsed(data.delay * 1000)) {
+				if(!player.getEmoteDelay().elapsed(data.delay * 800L)) {
 					player.getPacketSender().sendMessage("You must wait a bit before performing another skillcape emote.");
 					return true;
 				}
@@ -257,7 +257,7 @@ public class Emotes {
 																																																						QUEST_POINT(new int[] {9813, 9814, 10662},
 																																																								4945, 816, 19);
 
-		private Skillcape_Data(int[] itemId, int animationId, int graphicId, int delay) {
+		Skillcape_Data(int[] itemId, int animationId, int graphicId, int delay) {
 			item = new Item[itemId.length];
 			for (int i = 0; i < itemId.length; i++) {
 				item[i] = new Item(itemId[i]);
@@ -275,7 +275,7 @@ public class Emotes {
 
 		private final int delay;
 
-		private static Map<Integer, Skillcape_Data> dataMap = new HashMap<Integer, Skillcape_Data>();
+		private static Map<Integer, Skillcape_Data> dataMap = new HashMap<>();
 		
 		public boolean isWearingCape(Player p)
 		{

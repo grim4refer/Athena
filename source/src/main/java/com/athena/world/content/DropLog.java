@@ -1,7 +1,5 @@
 package com.athena.world.content;
 
-import java.util.Collections;
-
 import com.athena.model.definitions.ItemDefinition;
 import com.athena.model.definitions.NPCDrops;
 import com.athena.world.entity.impl.player.Player;
@@ -32,17 +30,17 @@ public class DropLog {
 			}
 			player.getClickDelay().reset();
 			/* RESORT THE KILLS */
-			Collections.sort(player.getDropLog(), (drop1, drop2) -> {
+			player.getDropLog().sort((drop1, drop2) -> {
 				ItemDefinition def1 = ItemDefinition.forId(drop1.item);
 				ItemDefinition def2 = ItemDefinition.forId(drop2.item);
 				int value1 = def1.getValue() * drop1.amount;
 				int value2 = def2.getValue() * drop2.amount;
-				if(value1 > value2) {
+				if (value1 > value2) {
 					return -1;
-				} else if(value2 > value1) {
+				} else if (value2 > value1) {
 					return 1;
 				} else {
-					if(def2.getName().compareTo(def2.getName()) > 0) {
+					if (def2.getName().compareTo(def2.getName()) > 0) {
 						return 1;
 					} else {
 						return -1;
@@ -73,7 +71,7 @@ public class DropLog {
 			}
 			player.getClickDelay().reset();
 			/* RESORT THE KILLS */
-			Collections.sort(player.getDropLog(), (drop1, drop2) -> {
+			player.getDropLog().sort((drop1, drop2) -> {
 				ItemDefinition def1 = ItemDefinition.forId(drop1.item);
 				ItemDefinition def2 = ItemDefinition.forId(drop2.item);
 				int value1 = def1.getValue() * drop1.amount;

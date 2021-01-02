@@ -20,8 +20,6 @@ public class DonatorBox {
 	 */
 	private final Player plr;
 	private final int BOX = 7118;
-	private final int INTERFACE_ID = 47000;
-	private final int ITEM_FRAME = 47101;
 	private int spinNum = 0;
 	private boolean canMysteryBox = true;
 	private int mysteryPrize;
@@ -74,8 +72,8 @@ public class DonatorBox {
 
 	public void process() {
 		double numGen3 = Math.random();
-		int rewardGrade3 = 0;
-		int rewardPos = 0;
+		int rewardGrade3;
+		int rewardPos;
 		Player player = plr;
 
 		if (player.getInventory().hasItem(new Item(BOX, 1))) {
@@ -83,7 +81,7 @@ public class DonatorBox {
 				plr.getPacketSender().sendMessage("You don't have enough free inventory space.");
 				return;
 			}
-			int donor[][] = {
+			int[][] donor = {
 					{7100, 12421, 12422, 11425, 11527, 11529, 20604,20095,20096,20097}, //Uncommon, 0
 					{11531, 20604, 20603, 20605, 17849}, //Rare, 1
 					{21077,12423, 21078, 21082, 12424, 20089, 11423, 11533, 20601, 11423}
@@ -125,6 +123,7 @@ public class DonatorBox {
 
 
 	public void sendItem(int i, int prizeSlot, int PRIZE_ID, int NOT_PRIZE_ID) {
+		int ITEM_FRAME = 47101;
 		if (i == prizeSlot) {
 			plr.getPA().mysteryBoxItemOnInterface(PRIZE_ID, 1, ITEM_FRAME, i);
 		} else {
@@ -144,6 +143,7 @@ public class DonatorBox {
 		plr.sendMessage(":resetBox");
 		spinNum = 0;
 		// Open
+		int INTERFACE_ID = 47000;
 		plr.getPA().sendInterface(INTERFACE_ID);
 	}
 }

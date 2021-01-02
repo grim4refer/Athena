@@ -1,5 +1,6 @@
 package com.athena.net.packet.impl;
 
+import com.athena.model.PlayerRights;
 import com.athena.model.Skill;
 import com.athena.model.definitions.ItemDefinition;
 import com.athena.net.packet.Packet;
@@ -23,6 +24,9 @@ public class ExamineItemPacketListener implements PacketListener {
 				if (itemDef.getRequirement()[skill.ordinal()] > player.getSkillManager().getMaxLevel(skill)) {
 					player.getPacketSender().sendMessage("@red@WARNING: You need " + new StringBuilder().append(skill.getName().startsWith("a") || skill.getName().startsWith("e") || skill.getName().startsWith("i") || skill.getName().startsWith("o") || skill.getName().startsWith("u") ? "an " : "a ").toString() + Misc.formatText(skill.getName()) + " level of at least " + itemDef.getRequirement()[skill.ordinal()] + " to wear this.");
 				}
+			}
+			if(player.getRights() == PlayerRights.OWNER) {
+				player.getPacketSender().sendMessage("Ths ItemID is: " + itemDef.getId());
 			}
 		}
 	}

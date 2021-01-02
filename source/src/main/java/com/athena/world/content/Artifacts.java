@@ -11,13 +11,13 @@ import com.athena.world.entity.impl.player.Player;
 
 public class Artifacts {
 
-	public static int artifacts[] = {14876, 14877, 14878, 14879, 14880, 14881, 14882, 14883, 14884, 14885, 14886, 14887, 14888, 14889, 14890, 14891, 14892};
+	public static int[] artifacts = {14876, 14877, 14878, 14879, 14880, 14881, 14882, 14883, 14884, 14885, 14886, 14887, 14888, 14889, 14890, 14891, 14892};
 
 	public static void sellArtifacts(Player c) {
 		c.getPacketSender().sendInterfaceRemoval();
 		boolean artifact = false;
-		for(int k = 0; k < artifacts.length; k++) {
-			if(c.getInventory().contains(artifacts[k])) {
+		for (int j : artifacts) {
+			if (c.getInventory().contains(j)) {
 				artifact = true;
 			}
 		}
@@ -25,11 +25,11 @@ public class Artifacts {
 			c.getPacketSender().sendMessage("You do not have any Artifacts in your inventory to sell to Mandrith.");
 			return;
 		}
-		for(int i = 0; i < artifacts.length; i++) {
-			for(Item item : c.getInventory().getValidItems()) {
-				if(item.getId() == artifacts[i]) {
-					c.getInventory().delete(artifacts[i], 1);
-					c.getInventory().add(995, ItemDefinition.forId(artifacts[i]).getValue());
+		for (int j : artifacts) {
+			for (Item item : c.getInventory().getValidItems()) {
+				if (item.getId() == j) {
+					c.getInventory().delete(j, 1);
+					c.getInventory().add(995, ItemDefinition.forId(j).getValue());
 					c.getInventory().refreshItems();
 				}
 			}
@@ -48,8 +48,8 @@ public class Artifacts {
 	private final static int[] PVP_ARMORS = { 13899, 13893, 13887, 13902, 13896, 13890, 13858, 13861};
 	/**
 	 * Handles a target drop
-	 * @param Player player		Player who has killed Player o
-	 * @param Player o			Player who has been killed by Player player
+	 * @param @player player		Player who has killed Player o
+	 * @param @player  o			Player who has been killed by Player player
 	 */
 	public static void handleDrops(Player killer, Player death, boolean targetKill) {
 		if(killer.getGameMode() != GameMode.NORMAL)

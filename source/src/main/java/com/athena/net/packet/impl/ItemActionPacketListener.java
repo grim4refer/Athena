@@ -1484,7 +1484,7 @@ public class ItemActionPacketListener implements PacketListener {
 
 			case 21045:
 
-				int rewards4[][] = {
+				int[][] rewards4 = {
 						{894}, //Uncommon, 0
 						{895,700,906,907,908}, //Rare, 1
 						{896,21044,2867}
@@ -1511,7 +1511,7 @@ public class ItemActionPacketListener implements PacketListener {
 					World.sendMessage("<shad=0>@bla@[@cya@Weaponbox box@bla@] @cya@"+player.getUsername()+"@bla@ Has just received a @cya@ "+ItemDefinition.forId(rewards4[rewardGrade3][rewardPos]).getName()+" @bla@!");
 				break;
 		case 15501:
-			int superiorRewards[][] = {
+			int[][] superiorRewards = {
 					{11995,11996,11997,12001,12002,12003,12004,2771,2771,19935,12005,12006,11990,11981,11979,2090,2091}, //Uncommon, 0
 					{11991,11992,11993,11994,11989,11988,11987,11986,11985,11984,2759,2760,2761,2762,11983,11982,}, //Rare, 1
 					{2104,2758,2095,2096,2097,2098} //Legendary, 3
@@ -2078,7 +2078,7 @@ public class ItemActionPacketListener implements PacketListener {
 			player.getPacketSender().sendMessage(player.getSlayer().getSlayerTask() == SlayerTasks.NO_TASK ? ("You do not have a Slayer task.") : ("Your current task is to kill another "+(player.getSlayer().getAmountToSlay())+" "+Misc.formatText(player.getSlayer().getSlayerTask().toString().toLowerCase().replaceAll("_", " "))+"s."));
 			break;
 			case 12421:
-				if(player.getRights() == PlayerRights.DELUXE_DONATOR || player.getRights() == PlayerRights.DONATOR || player.getRights() == PlayerRights.YOUTUBER || player.getRights() == PlayerRights.SUPER_DONATOR || player.getRights() == PlayerRights.EXTREME_DONATOR || player.getRights() == PlayerRights.LEGENDARY_DONATOR || player.getRights() == PlayerRights.UBER_DONATOR || player.getRights() == PlayerRights.SUPPORT || player.getRights() == PlayerRights.MODERATOR){
+				if(player.getRights() == PlayerRights.DELUXE_DONATOR || player.getRights() == PlayerRights.OWNER || player.getRights() == PlayerRights.DONATOR || player.getRights() == PlayerRights.YOUTUBER || player.getRights() == PlayerRights.SUPER_DONATOR || player.getRights() == PlayerRights.EXTREME_DONATOR || player.getRights() == PlayerRights.LEGENDARY_DONATOR || player.getRights() == PlayerRights.UBER_DONATOR || player.getRights() == PlayerRights.SUPPORT || player.getRights() == PlayerRights.MODERATOR){
 					player.sendMessage("You already have a higher tier donator rank!");
 				} else {
 					player.setRights(PlayerRights.DONATOR);
@@ -2088,7 +2088,7 @@ public class ItemActionPacketListener implements PacketListener {
 				}
 				break;
 				case 12422:
-				if(player.getRights() == PlayerRights.DELUXE_DONATOR || player.getRights() == PlayerRights.EXTREME_DONATOR || player.getRights() == PlayerRights.YOUTUBER || player.getRights() == PlayerRights.SUPER_DONATOR || player.getRights() == PlayerRights.LEGENDARY_DONATOR || player.getRights() == PlayerRights.UBER_DONATOR  || player.getRights() == PlayerRights.SUPPORT || player.getRights() == PlayerRights.MODERATOR){
+				if(player.getRights() == PlayerRights.DELUXE_DONATOR || player.getRights() == PlayerRights.EXTREME_DONATOR || player.getRights() == PlayerRights.YOUTUBER || player.getRights() == PlayerRights.OWNER || player.getRights() == PlayerRights.SUPER_DONATOR || player.getRights() == PlayerRights.LEGENDARY_DONATOR || player.getRights() == PlayerRights.UBER_DONATOR  || player.getRights() == PlayerRights.SUPPORT || player.getRights() == PlayerRights.MODERATOR){
 					player.sendMessage("You already have a higher tier donator rank!");
 				} else {
 					player.setRights(PlayerRights.SUPER_DONATOR);

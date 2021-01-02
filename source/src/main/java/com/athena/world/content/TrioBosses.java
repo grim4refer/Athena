@@ -36,9 +36,9 @@ public class TrioBosses {
 	public static int chest = 2079;
 
 	//arrays that hold the rare and common chest loots
-	public static int rareLoots[] = {10614};
+	public static int[] rareLoots = {10614};
 	
-	public static int commonLoots[] = {1959, 1959, 1959, 1959, 1959, 1959, 1959, 1959, 526, 526, 2947, 946, 2436, 2440, 1381, 1478,
+	public static int[] commonLoots = {1959, 1959, 1959, 1959, 1959, 1959, 1959, 1959, 526, 526, 2947, 946, 2436, 2440, 1381, 1478,
 			1704, 1540, 5297, 299, 1121, 3026, 15272, 18016, 373, 1283, 379, 1213, 1213, 2, 2, 3751, 3751, 4621, 2621, 215, 4675,
 			4675, 2412, 2412, 4115, 4115, 4107, 4107, 4131, 4131, 11126, 11126, 1333, 1333, 1333, 9185, 9185, 892, 391, 391, 6685, 6685};
 	
@@ -75,8 +75,7 @@ public class TrioBosses {
 	 * Player does not have all the keys
 	 */
     	  player.getPacketSender().sendMessage("You need all the keys to open the chest!");
-    	  return;
-      }
+		}
 	 
 	}
 	

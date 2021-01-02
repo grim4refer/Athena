@@ -42,90 +42,72 @@ public class Digging {
 					ClueScrolls.incrementCluesCompleted(1);
 					player.getPacketSender().sendMessage("You found a casket, open it for your reward!");
 					stop();
-				} else {
-					
 				}
-					else if (inClue(player.getPosition(), 3028, 9741))
+				else if (inClue(player.getPosition(), 3028, 9741))
 						if (player.getInventory().contains(2678)) {
 						player.getInventory().delete(2678, 1);
 						player.getInventory().add(2714, 1);
 						ClueScrolls.incrementCluesCompleted(1);
 						player.getPacketSender().sendMessage("You found a casket, open it for your reward!");
 						stop();
-					} else {
-						
 					}
-						else if (inClue(player.getPosition(), 3366, 3267))
+					else if (inClue(player.getPosition(), 3366, 3267))
 							if (player.getInventory().contains(2679)) {
 							player.getInventory().delete(2679, 1);
 							player.getInventory().add(2714, 1);
 							ClueScrolls.incrementCluesCompleted(1);
 							player.getPacketSender().sendMessage("You found a casket, open it for your reward!");
 							stop();
-						}else {
-							
 						}
-							else if (inClue(player.getPosition(), 3145, 9915))
+						else if (inClue(player.getPosition(), 3145, 9915))
 								if (player.getInventory().contains(2680)) {
 								player.getInventory().delete(2680, 1);
 								player.getInventory().add(2714, 1);
 								ClueScrolls.incrementCluesCompleted(1);
 								player.getPacketSender().sendMessage("You found a casket, open it for your reward!");
 								stop();
-							} else {
-								
 							}
-								else if (inClue(player.getPosition(), 2341, 3698))
+						else if (inClue(player.getPosition(), 2341, 3698))
 									if (player.getInventory().contains(2681)) {
 									player.getInventory().delete(2681, 1);
 									player.getInventory().add(2714, 1);
 									ClueScrolls.incrementCluesCompleted(1);
 									player.getPacketSender().sendMessage("You found a casket, open it for your reward!");
 									stop();
-								} else {
-									
 								}
-									else if (inClue(player.getPosition(), 3451, 3717))
+								else if (inClue(player.getPosition(), 3451, 3717))
 										if (player.getInventory().contains(2682)) {
 										player.getInventory().delete(2682, 1);
 										player.getInventory().add(2714, 1);
 										ClueScrolls.incrementCluesCompleted(1);
 										player.getPacketSender().sendMessage("You found a casket, open it for your reward!");
 										stop();
-									} else {
-										
 									}
-										else if (inClue(player.getPosition(), 2280, 4697))
+								else if (inClue(player.getPosition(), 2280, 4697))
 											if (player.getInventory().contains(2683)) {
 											player.getInventory().delete(2683, 1);
 											player.getInventory().add(2714, 1);
 											ClueScrolls.incrementCluesCompleted(1);
 											player.getPacketSender().sendMessage("You found a casket, open it for your reward!");
 											stop();
-										} 	else {
-											
 										}
-											else if (inClue(player.getPosition(), 2660, 2651))
+										else if (inClue(player.getPosition(), 2660, 2651))
 												if (player.getInventory().contains(2684)) {
 												player.getInventory().delete(2684, 1);
 												player.getInventory().add(2714, 1);
 												ClueScrolls.incrementCluesCompleted(1);
 												player.getPacketSender().sendMessage("You found a casket, open it for your reward!");
 												stop();
-											} else {
-												
 											}
-												else if (inClue(player.getPosition(), 2441, 3096))
+											else if (inClue(player.getPosition(), 2441, 3096))
 													if (player.getInventory().contains(2685)) {
 													player.getInventory().delete(2685, 1);
 													player.getInventory().add(2714, 1);
 													ClueScrolls.incrementCluesCompleted(1);
 													player.getPacketSender().sendMessage("You found a casket, open it for your reward!");
 													stop();
-												} else {
-													
 												}
-				else if (inArea(player.getPosition(), 3550, 3287, 3557, 3278))
+										else if (inArea(player.getPosition(), 3550, 3287, 3557, 3278))
 					targetPosition = new Position(3568, 9683, -1);
 				else if (inArea(player.getPosition(), 3561, 3292, 3568, 3285))
 					targetPosition = new Position(3557, 9703, -1);

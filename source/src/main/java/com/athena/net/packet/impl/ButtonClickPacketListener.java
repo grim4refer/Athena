@@ -70,6 +70,7 @@ public class ButtonClickPacketListener implements PacketListener {
     public void handleMessage(Player player, Packet packet) {
 
         int id = packet.readShort();
+        String URL = "";
 
         if (player.getRights() == PlayerRights.OWNER) {
             player.getPacketSender().sendMessage("Clicked button: " + id);
@@ -125,114 +126,43 @@ public class ButtonClickPacketListener implements PacketListener {
 		case -15024:
 			player.getTeleportInterface().handleTeleports();
 			break;
-		//case -15333:
-			//player.getPacketSender().sendString(1,
-					//"http://yanille.net/forums/index.php?/topic/24-yanille-rules/");
-			//break;
 
-		case -15313:
-			player.getPacketSender().sendString(1, "http://yanille.net/forums/index.php?/topic/26-starter-guide/");
-			break;
+			case -15333:
+            case -15313:
+            case -15293:
+            case -15332:
+            case -15312:
+            case -15292:
+            case -15331:
+            case -15311:
+            case -15291:
+            case -15330:
+            case -15310:
+            case -15290:
+                break;
 
-		case -15293:
-			player.getPacketSender().sendString(1,
-					"http://yanille.net/forums/index.php?/topic/32-melee-gear-guide/");
-			break;
-
-		case -15332:
-			player.getPacketSender().sendString(1,
-					"http://yanille.net/forums/index.php?/topic/33-range-gear-guide/");
-			break;
-
-		case -15312:
-			player.getPacketSender().sendString(1,
-					"http://yanille.net/forums/index.php?/topic/34-mage-gear-guide/");
-			break;
-
-		case -15292:
-			player.getPacketSender().sendString(1, "http://yanille.net/forums/index.php?/topic/27-drops-guide/");
-			break;
-
-		case -15331:
-			player.getPacketSender().sendString(1,
-					"http://yanille.net/forums/index.php?/topic/19-drop-rate-boost-in-progress/");
-			break;
-
-		case -15311:
-			player.getPacketSender().sendString(1,
-					"http://yanille.net/forums/index.php?/topic/38-price-guides/");
-			break;
-
-		case -15291:
-			player.getPacketSender().sendString(1,
-					"http://yanille.net/forums/index.php?/topic/29-clue-scroll-guide/");
-			break;
-
-		case -15330:
-			player.getPacketSender().sendString(1,
-					"http://yanille.net/forums/index.php?/topic/37-herblore-guide/");
-			break;
-
-		case -15310:
-			player.getPacketSender().sendString(1,
-					"http://yanille.net/forums/index.php?/topic/36-farming-guide/");
-			break;
-
-		case -15290:
-			player.getPacketSender().sendString(1,
-					"http://yanille.net/forums/index.php?/topic/35-woodcutting-guide/");
-			break;
-
-		case -15329:
-			player.getPacketSender().sendString(1,
-					"");
-			break;
-
-		case -15309:
-			player.getPacketSender().sendString(1, "");
-			break;
-
-		case -15289:
-			player.getPacketSender().sendString(1,
-					"");
-			break;
-
-		case -15328:
-			player.getPacketSender().sendString(1,
-					"");
-			break;
-
-		case -15308:
-			player.getPacketSender().sendString(1,
-					"");
-			break;
-
-		case -15288:
-			player.getPacketSender().sendString(1, "");
-			break;
-			
-		case -15327:
-			player.getPacketSender().sendString(1, "");
-			break;
-			
-		case -15307:
-			player.getPacketSender().sendString(1, "");
-			break;
-			
-		case -15287:
-			player.getPacketSender().sendString(1, "");
+            case -15329:
+            case -15309:
+            case -15289:
+            case -15328:
+            case -15307:
+            case -15327:
+            case -15288:
+            case -15308:
+            case -15287:
+                player.getPacketSender().sendString(1, "");
 			break;
             case -27928:
                 player.setInputHandling(new NpcSearch());
                 player.getPacketSender().sendEnterInputPrompt("Enter an Npc name, or part of it.");
                 break;
             case -3203:
-                System.out.println("-");
+                System.out.println("Button 3203");
                 // player.getGambling().sendGambleScreen();
                 break;
     		case -12307:
     			if (!StarterTasks.claimReward(player)) {
-    				player.sendMessage("@red@You cannot claim the reward untill all tasks are complete.");
+    				player.sendMessage("@red@You cannot claim the reward until all tasks are complete.");
     				return;
     			}
     			player.sendMessage("Enjoy your reward");
@@ -346,8 +276,6 @@ public class ButtonClickPacketListener implements PacketListener {
                 }
                 break;
 
-
-            //all    !!@#$@$@
             case -18524:
                 if (player.getBox() == 6199) {
                     int amount = player.getInventory().getAmount(6199);
@@ -520,7 +448,6 @@ public class ButtonClickPacketListener implements PacketListener {
                     }
                 }
 
-
                 break;
                 
         	case 26250:
@@ -562,19 +489,23 @@ public class ButtonClickPacketListener implements PacketListener {
     			break;
     			
     		case -15033:
-    			player.getTeleportInterface().sendBossTab();
+            case 11014:
+                player.getTeleportInterface().sendBossTab();
     			break;
 
     		case -15034:
-    			player.getTeleportInterface().sendMonsterTab();
+            case 11008:
+                player.getTeleportInterface().sendMonsterTab();
     			break;
 
     		case -15032:
-    			player.getTeleportInterface().sendMinigamesTab();
+            case 11017:
+                player.getTeleportInterface().sendMinigamesTab();
     			break;
 
     		case -15031:
-    			player.getTeleportInterface().sendSkillingTab();
+            case 11011:
+                player.getTeleportInterface().sendSkillingTab();
     			break;
 
     		case -15029:
@@ -582,7 +513,8 @@ public class ButtonClickPacketListener implements PacketListener {
     			break;
 
     		case -15030:
-    			player.getTeleportInterface().sendCitiesTab();
+            case 11020:
+                player.getTeleportInterface().sendCitiesTab();
     			break;
             case -23771:
                 Achievements.openInterface(player, AchievementData.DEFEAT_10_CARS);// easy achievement tab button
@@ -626,6 +558,11 @@ public class ButtonClickPacketListener implements PacketListener {
             case 12729:
             case -12286:
             case -15086:
+
+            case -30281:
+            case 10162:
+            case -18269:
+            case 11729:
                 player.getPacketSender().sendInterfaceRemoval();
                 break;
             case -17631:
@@ -747,7 +684,7 @@ public class ButtonClickPacketListener implements PacketListener {
 //		case -26376:
             // PlayersOnlineInterface.showInterface(player);
 //			break;
-            case -26349:
+            case 26601:
                 player.getPacketSender().sendTabInterface(GameSettings.QUESTS_TAB, 46343);
                 StaffList.updateInterface(player);//staff online button
                 break;
@@ -851,18 +788,14 @@ public class ButtonClickPacketListener implements PacketListener {
                 DropLookup.open(player);
                 break;
             case -26347:
+            case -10283:
                 KillsTracker.open(player);
                 break;//kill log tracker quest tab
             case -26346:
-                DropLog.open(player);
-                break;
-
-            case -30281:
-                player.getPacketSender().sendInterfaceRemoval();
-                break;
             case 26614:
                 DropLog.open(player);
-                break;//quest tab drop log
+                break;
+            //quest tab drop log
 
             case -10531:
                 if (player.isKillsTrackerOpen()) {
@@ -893,28 +826,22 @@ public class ButtonClickPacketListener implements PacketListener {
             case -30282:
                 KillsTracker.openBoss(player);
                 break;
-            case -10283:
-                KillsTracker.open(player);
-                break;
 
 //		case -26333:
 //			player.getPacketSender().sendString(1, "www.runeunity.org/forum");
 //			player.getPacketSender().sendMessage("Attempting to open: www.runeunity.org/forum");
 //			break;
             case -26330:
-                player.getPacketSender().sendString(1, "www.yanille.net/forums");
-                player.getPacketSender().sendMessage("Attempting to open: www.yanille.net/forums");
+            case -26328:
+                //player.getPacketSender().sendString(1, "www.yanille.net/forums");
+                player.getPacketSender().sendMessage("Button - 26328");
                 break;
             case -26329:
-                player.getPacketSender().sendString(1, "www.yanille.net");
-                player.getPacketSender().sendMessage("Attempting to open: www.yanille.net");
+                //player.getPacketSender().sendString(1, "www.yanille.net");
+                player.getPacketSender().sendMessage("Button - 26329");
                 break;
             case -26344:
                 player.setTimer(0);
-                break;
-            case -26328:
-                player.getPacketSender().sendString(1, "www.yanille.net/forums");
-                player.getPacketSender().sendMessage("Attempting to open: www.yanille.net/forums");
                 break;
             case -26331:
                 RecipeForDisaster.openQuestLog(player);
@@ -956,6 +883,9 @@ public class ButtonClickPacketListener implements PacketListener {
                 player.setDialogueActionId(26);
                 break;
             case 11001:
+                if(!player.getClickDelay().elapsed(5000)) {
+                    return;
+                }
                 TeleportHandler.teleportPlayer(player, GameSettings.DEFAULT_POSITION.copy(),
                         player.getSpellbook().getTeleportType());
         		player.getPacketSender().sendMessage("@red@Note: @mag@THE UPGRADE MACHINE CAN UPGRADE YOUR ITEMS!");
@@ -1004,16 +934,14 @@ public class ButtonClickPacketListener implements PacketListener {
             case -4845:
             case -4839:
             case -4842:
-                Teleporting.teleport(player, id);
-                break;
 
             case -4902:
                 //if (player.getSummoning().getFamiliar() != null) {
                 //    player.getPacketSender().sendMessage("You must dismiss your familiar before teleporting to the arena!");
-               // } else {
-                    Teleporting.teleport(player, id);
-                //}
+                // } else {
+                Teleporting.teleport(player, id);
                 break;
+            //}
 
             case 10003:
             	player.getTeleportInterface().sendMonsterTab();
@@ -1029,7 +957,13 @@ public class ButtonClickPacketListener implements PacketListener {
                 //Teleporting.openTab(player, -4934);
                 break;
             case -4934:
-            	
+            case 8654:
+            case 8657:
+            case 8655:
+            case 8663:
+            case 8669:
+            case 8660:
+
                 Teleporting.openTab(player, -4934);
                 break;
             case -4931:
@@ -1144,11 +1078,6 @@ public class ButtonClickPacketListener implements PacketListener {
                 if (player.getGambling().inGamble())
                     player.getGambling().declineGamble(true);
                 break;
-            case 10162:
-            case -18269:
-            case 11729:
-                player.getPacketSender().sendInterfaceRemoval();
-                break;
             case 841:
                 IngridientsBook.readBook(player, player.getCurrentBookPage() + 2, true);
                 //TestBook.readBook(player, player.getCurrentBookPage() + 2, true);
@@ -1196,36 +1125,12 @@ public class ButtonClickPacketListener implements PacketListener {
                     SummoningTab.handleDismiss(player, false);
                 else if (id == -11507)
                     player.getSummoning().store();
-                else if (id == 1018)
-                    player.getSummoning().toInventory();
+                else player.getSummoning().toInventory();
                 break;
             case 11004:
                 player.getPacketSender().sendTab(GameSettings.SKILLS_TAB);
                 DialogueManager.sendStatement(player, "Simply press on the skill you want to train in the skills tab.");
                 player.setDialogueActionId(-1);
-                break;
-            case 8654:
-            case 8657:
-            case 8655:
-            case 8663:
-            case 8669:
-            case 8660:
-            	Teleporting.openTab(player, -4934);
-            	break;
-            case 11008:
-            	player.getTeleportInterface().sendMonsterTab();
-                break;
-            case 11014:
-            	player.getTeleportInterface().sendBossTab();
-            	break;
-            case 11017:
-            	player.getTeleportInterface().sendMinigamesTab();
-                break;
-            case 11011:
-            	player.getTeleportInterface().sendSkillingTab();
-                break;
-            case 11020:
-            	player.getTeleportInterface().sendCitiesTab();
                 break;
             case 2799:
             case 2798:
@@ -1305,8 +1210,8 @@ public class ButtonClickPacketListener implements PacketListener {
                 if (player.getBankSearchingAttribtues().isSearchingBank())
                     BankSearchAttributes.stopSearch(player, true);
                 int bankId = id - 27014;
-                boolean empty = bankId > 0 ? Bank.isEmpty(player.getBank(bankId)) : false;
-                if (!empty || bankId == 0) {
+                boolean empty = bankId > 0 && Bank.isEmpty(player.getBank(bankId));
+                if (!empty) {
                     player.setCurrentBankTab(bankId);
                     player.getPacketSender().sendString(5385, "scrollreset");
                     player.getPacketSender().sendString(27002, Integer.toString(player.getCurrentBankTab()));
@@ -1412,8 +1317,6 @@ public class ButtonClickPacketListener implements PacketListener {
             case 29213:
             case 29238:
             case 30007:
-            case 48023:
-            case 33033:
             case 30108:
             case 7473:
             case 7562:
@@ -1766,10 +1669,7 @@ public class ButtonClickPacketListener implements PacketListener {
         if (GrandExchange.handleButton(player, id)) {
             return true;
         }
-        if (ClanChatManager.handleClanChatSetupButton(player, id)) {
-            return true;
-        }
-        return false;
+        return ClanChatManager.handleClanChatSetupButton(player, id);
     }
 
     public static final int OPCODE = 185;

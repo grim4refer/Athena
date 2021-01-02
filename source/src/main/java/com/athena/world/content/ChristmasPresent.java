@@ -11,10 +11,10 @@ public class ChristmasPresent {
 		
 		if (RandomUtility.getRandom(10) == 5) {
 			/*
-			 * Landing on 5 and recieve reward
+			 * Landing on 5 and receive reward
 			 */
 			player.getInventory().add(1050, 1);
-			player.getPacketSender().sendMessage("Congratulations you recieved the santa hat");
+			player.getPacketSender().sendMessage("Congratulations you received the santa hat");
 			
 		} else {
 			/*

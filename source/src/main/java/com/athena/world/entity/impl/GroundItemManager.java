@@ -133,13 +133,8 @@ public class GroundItemManager {
 		GroundItem gt = getGroundItem(p, item, position);
 		if(gt == null || gt.hasBeenPickedUp() || !groundItems.contains(gt)) //last one isn't needed, but hey, just trying to be safe
 		{
-		}
-		else {
-			/*	if(p.getHostAdress().equals(gt.getFromIP()) && !p.getUsername().equals(gt.getOwner())) { //Transferring items by IP..
-
-				p.getPacketSender().sendMessage("An error occured.");
-				return;
-			}*/
+			p.getPacketSender().sendMessage("An error occurred. Please let Aaron know!");
+		} else {
 			if(p.getGameMode() != GameMode.NORMAL && !Dungeoneering.doingDungeoneering(p)) {
 				if(gt.getOwner() != null && !gt.getOwner().equals("null") && !gt.getOwner().equals(p.getUsername())) {
 					p.getPacketSender().sendMessage("You cannot pick this item up because it was not spawned for you.");

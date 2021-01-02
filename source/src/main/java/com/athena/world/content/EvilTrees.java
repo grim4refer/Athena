@@ -21,7 +21,7 @@ public class EvilTrees {
 	
 
 	private static final int TIME = 1; //40 minutes? not sure lol
-	public static final int MAX_CUT_AMOUNT = 2_147_000_000;;//Amount of logs the tree will give before
+	public static final int MAX_CUT_AMOUNT = 2_147_000_000;//Amount of logs the tree will give before
 											//despawning
 
 	public static Stopwatch timer = new Stopwatch().reset();
@@ -48,9 +48,9 @@ public class EvilTrees {
 	}
 
 	/**
-	 * Holds the location data in an enum for where the treee's will spawn
+	 * Holds the location data in an enum for where the tree will spawn
 	 */
-	public static enum LocationData {
+	public enum LocationData {
 
 		///LOCATION_1(new Position(3052, 3516), "Outside of the monastery", "Monastery"),
 		//LOCATION_2(new Position(3093, 3535), "In the wilderness (Level 2)", "Wilderness"),
@@ -61,7 +61,7 @@ public class EvilTrees {
 		//LOCATION_7(new Position(2994, 3376), "In the Falador Garden", "Falador"),
 		LOCATION_1(new Position(2503, 2523, 2), "Home", "Home");
 
-		private LocationData(Position spawnPos, String clue, String playerPanelFrame) {
+		LocationData(Position spawnPos, String clue, String playerPanelFrame) {
 			this.spawnPos = spawnPos;
 			this.clue = clue;
 			this.playerPanelFrame = playerPanelFrame;
@@ -73,8 +73,7 @@ public class EvilTrees {
 	}
 
 	public static LocationData getRandom() {
-		LocationData tree = LocationData.values()[Misc.getRandom(LocationData.values().length - 1)];
-		return tree;
+		return LocationData.values()[Misc.getRandom(LocationData.values().length - 1)];
 	}
 /*
  * Sequences the spawning so you don't have the same location back to back

@@ -148,8 +148,8 @@ public final class WeaponInterfaces {
 		 * @param specialMeter
 		 *            the id of the special meter for this interface.
 		 */
-		private WeaponInterface(int interfaceId, int nameLineId, int speed,
-				FightType[] fightType, int specialBar, int specialMeter) {
+		WeaponInterface(int interfaceId, int nameLineId, int speed,
+						FightType[] fightType, int specialBar, int specialMeter) {
 			this.interfaceId = interfaceId;
 			this.nameLineId = nameLineId;
 			this.speed = speed;
@@ -170,8 +170,8 @@ public final class WeaponInterfaces {
 		 * @param fightType
 		 *            the fight types that correspond with this interface.
 		 */
-		private WeaponInterface(int interfaceId, int nameLineId, int speed,
-				FightType[] fightType) {
+		WeaponInterface(int interfaceId, int nameLineId, int speed,
+						FightType[] fightType) {
 			this(interfaceId, nameLineId, speed, fightType, -1, -1);
 		}
 

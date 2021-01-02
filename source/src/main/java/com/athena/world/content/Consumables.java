@@ -1,26 +1,21 @@
 package com.athena.world.content;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import com.athena.engine.task.TaskManager;
-import com.athena.engine.task.impl.FireImmunityTask;
-import com.athena.engine.task.impl.FuriousPotionTask;
-import com.athena.engine.task.impl.OverloadPotionTask;
-import com.athena.engine.task.impl.PoisonImmunityTask;
-import com.athena.engine.task.impl.PrayerRenewalPotionTask;
+import com.athena.engine.task.impl.*;
 import com.athena.model.Animation;
 import com.athena.model.Item;
-import com.athena.model.Skill;
 import com.athena.model.Locations.Location;
+import com.athena.model.Skill;
 import com.athena.model.definitions.ItemDefinition;
 import com.athena.world.content.Achievements.AchievementData;
 import com.athena.world.content.Sounds.Sound;
 import com.athena.world.content.minigames.impl.Dueling;
 import com.athena.world.content.minigames.impl.Dueling.DuelRule;
 import com.athena.world.content.skill.SkillManager;
-import com.athena.world.content.skill.impl.herblore.Herblore;
 import com.athena.world.entity.impl.player.Player;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Consumables are items that players can use to restore stats/points.
@@ -110,7 +105,7 @@ public class Consumables {
 			} else if(food == FoodType.SALMON) {
 				Achievements.finishAchievement(player, AchievementData.EAT_A_SALMON);
 			}
-			String e = food.toString() == "BANDAGES" ? "use" : "eat";
+			String e = food.toString().equals("BANDAGES") ? "use" : "eat";
 			player.getPacketSender().sendMessage("You "+e+" the " + food.name + ".");
 			player.setConstitution(player.getConstitution() + heal);
 			if(player.getConstitution() > 1190 && !nexEffect)
@@ -205,7 +200,7 @@ public class Consumables {
 		PURPLE_SWEETS(new Item(4561), 300),
 		OKTOBERTFEST_PRETZEL(new Item(19778), 120);
 
-		private FoodType(Item item, int heal) {
+		FoodType(Item item, int heal) {
 			this.item = item;
 			this.heal = heal;
 			this.name = (toString().toLowerCase().replaceAll("__", "-").replaceAll("_", " "));
@@ -217,7 +212,7 @@ public class Consumables {
 
 		private String name;
 
-		private static Map<Integer, FoodType> types = new HashMap<Integer, FoodType>();
+		private static Map<Integer, FoodType> types = new HashMap<>();
 
 		static {
 			for (FoodType type : FoodType.values()) {
@@ -1541,7 +1536,7 @@ public class Consumables {
 
 	public static int getBoostedStat(Player player, int skillId, boolean sup, boolean combatPotion) {
 		Skill skill = Skill.forId(skillId);
-		int increaseBy = 0;
+		int increaseBy;
 		if (sup)
 			increaseBy = (int)((double)player.getSkillManager().getMaxLevel(skill) * 0.2D);
 		else
@@ -1581,7 +1576,7 @@ public class Consumables {
 	}
 
 	public static int getExtremePotionBoost(Player player, int skill) {
-		int increaseBy = 0;
+		int increaseBy;
 		increaseBy = (int) (SkillManager.getLevelForExperience(player.getSkillManager().getExperience(Skill.forId(skill))) * .25) + 1;
 		if (player.getSkillManager().getCurrentLevel(Skill.forId(skill)) + increaseBy >SkillManager.getLevelForExperience(player.getSkillManager().getExperience(Skill.forId(skill))) + increaseBy + 1) {
 			return SkillManager.getLevelForExperience(player.getSkillManager().getExperience(Skill.forId(skill))) + increaseBy

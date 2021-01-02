@@ -26,7 +26,7 @@ public class Gambling {
 		}
 
 		if(!(player.getTotalPlayTime() > 72000000)) {
-			player.sendMessage("@red@You can't roll a dice because you haven't played for atleast 20 hours.");
+			player.sendMessage("@red@You can't roll a dice because you haven't played for at least 20 hours.");
 			return;
 		}
 
