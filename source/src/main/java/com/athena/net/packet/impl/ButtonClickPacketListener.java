@@ -868,6 +868,9 @@ public class ButtonClickPacketListener implements PacketListener {
                 player.setDialogueActionId(26);
                 break;
             case 11001:
+                if(!player.getClickDelay().elapsed(5000)) {
+                    return;
+                }
                 TeleportHandler.teleportPlayer(player, GameSettings.DEFAULT_POSITION.copy(),
                         player.getSpellbook().getTeleportType());
         		player.getPacketSender().sendMessage("@red@Note: @mag@THE UPGRADE MACHINE CAN UPGRADE YOUR ITEMS!");

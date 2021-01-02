@@ -129,7 +129,7 @@ public class Achievements {
 	}
 
 	public enum Difficulty {
-		BEGINNER, EASY, MEDIUM, HARD, ELITE;
+		BEGINNER, EASY, MEDIUM, HARD, ELITE
 	}
 
 	public static boolean handleButton(Player player, int button) {
@@ -137,13 +137,13 @@ public class Achievements {
 			return false;
 		}
 		int index = -1;
-		if(button >= -20531 && button <= -20503) {
+		if(button <= -20503) {
 			index = 20531 + button;
 		} else if(button >= -20499 && button <= -20469) {
 			index = 30 + 20499 + button;
 		} else if(button >= -20466 && button <= -20435) {
 			index = 61 + 20466 + button;
-		} else if(button >= -20432 && button <= -20425) {
+		} else if(button >= -20432) {
 			index = 93 + 20432 + button;
 		}
 		if(index >= 0 && index < AchievementData.values().length) {

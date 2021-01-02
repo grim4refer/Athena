@@ -51,21 +51,21 @@ public class ItemDefinition {
 				String token = args[0], value = args[1];
 				if (line.contains("Bonus[")) {
 					String[] other = line.split("]");
-					int index = Integer.valueOf(line.substring(6, other[0].length()));
-					double bonus = Double.valueOf(value);
+					int index = Integer.parseInt(line.substring(6, other[0].length()));
+					double bonus = Double.parseDouble(value);
 					definition.bonus[index] = bonus;
 					continue;
 				}
 				if (line.contains("Requirement[")) {
 					String[] other = line.split("]");
-					int index = Integer.valueOf(line.substring(12, other[0].length()));
-					int requirement = Integer.valueOf(value);
+					int index = Integer.parseInt(line.substring(12, other[0].length()));
+					int requirement = Integer.parseInt(value);
 					definition.requirement[index] = requirement;
 					continue;
 				}
 				switch (token.toLowerCase()) {
 				case "item id":
-					int id = Integer.valueOf(value);
+					int id = Integer.parseInt(value);
 					definition = new ItemDefinition();
 					definition.id = id;
 
@@ -81,26 +81,25 @@ public class ItemDefinition {
 					definition.description = value;
 					break;
 				case "value":
-					int price = Integer.valueOf(value);
-					definition.value = price;
+					definition.value = Integer.parseInt(value);
 					break;
 				case "stackable":
-					definition.stackable = Boolean.valueOf(value);
+					definition.stackable = Boolean.parseBoolean(value);
 					break;
 				case "noted":
-					definition.noted = Boolean.valueOf(value);
+					definition.noted = Boolean.parseBoolean(value);
 					break;
 					case "elemental":
-					definition.elemental = Integer.valueOf(value);
+					definition.elemental = Integer.parseInt(value);
 					break;
 				case "double-handed":
-					definition.isTwoHanded = Boolean.valueOf(value);
+					definition.isTwoHanded = Boolean.parseBoolean(value);
 					break;
 				case "equipment type":
 					definition.equipmentType = EquipmentType.valueOf(value);
 					break;
 				case "is weapon":
-					definition.weapon = Boolean.valueOf(value);
+					definition.weapon = Boolean.parseBoolean(value);
 					break;
 				}
 			}
@@ -296,7 +295,7 @@ public class ItemDefinition {
 		LEGS(Equipment.LEG_SLOT),
 		WEAPON(Equipment.WEAPON_SLOT);
 		
-		private EquipmentType(int slot) {
+		EquipmentType(int slot) {
 			this.slot = slot;
 		}
 		
@@ -306,7 +305,7 @@ public class ItemDefinition {
 	@Override
 	public String toString() {
 		return "[ItemDefinition(" + id + ")] - Name: " + name + "; equipment slot: " + getEquipmentSlot() + "; value: "
-				+ value + "; stackable ? " + Boolean.toString(stackable) + "; noted ? " + Boolean.toString(noted) + "; 2h ? " + isTwoHanded;
+				+ value + "; stackable ? " + stackable + "; noted ? " + noted + "; 2h ? " + isTwoHanded;
 	}
 	
 	public static int getItemId(String itemName) {

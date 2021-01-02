@@ -29,11 +29,11 @@ public class BonusManager {
 						bonuses[i] += player.getDfsCharges();
 					}
 				}
-			} else if (i <= 17) {
+			} else {
 				int index = i - 14;
 				player.getBonusManager().otherBonus[index] = bonuses[i];
 			}
-			player.getPacketSender().sendString(Integer.valueOf(STRING_ID[i][0]), STRING_ID[i][1] + ": " + bonuses[i]);
+			player.getPacketSender().sendString(Integer.parseInt(STRING_ID[i][0]), STRING_ID[i][1] + ": " + bonuses[i]);
 		}
 	}
 

@@ -15,7 +15,6 @@ public class EnergyHandler {
 		if(p.isRunning() && p.getMovementQueue().isMoving()) {
 			int energy = p.getRunEnergy();
 			if (energy > 0) {
-				energy = (energy);
 				p.setRunEnergy(energy);
 				p.getPacketSender().sendRunEnergy(energy);
 			} else {

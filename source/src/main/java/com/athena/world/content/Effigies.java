@@ -17,7 +17,6 @@ public class Effigies {
 			return;
 		if(player.getInterfaceId() > 0) {
 			player.getPacketSender().sendMessage("Please close the interface you have open before doing this.");
-			return;
 		} else
 			DialogueManager.start(player, cleanEffigy(player, effigy));
 	}
@@ -70,17 +69,13 @@ public class Effigies {
 
 					@Override
 					public String[] dialogue() {
-						switch(effigy) {
-						case 18778:
-							return new String[] {"This will require at least a level of 91 in one of the two", "skills to investigate. After investigation it becomes nourished,", "rewarding 15,000 experience in the skill used."};
-						case 18779:
-							return new String[] {"This will require at least a level of 93 in one of the two", "skills to investigate. After investigation it becomes sated,", "rewarding 30,000 experience in the skill used."};
-						case 18780:
-							return new String[] {"This will require at least a level of 95 in one of the two", "skills to investigate. After investigation it becomes gordged,", "rewarding 45,000 experience in the skill used."};
-						case 18781:
-							return new String[] {"This will require at least a level of 97 in one of the two", "skills to investigate. After investigation it provides 60,000 ", "experience in the skill used and, then crumbles to dust,", "leaving behind a dragonkin lamp."};
-						}
-						return new String[1];
+						return switch (effigy) {
+							case 18778 -> new String[]{"This will require at least a level of 91 in one of the two", "skills to investigate. After investigation it becomes nourished,", "rewarding 15,000 experience in the skill used."};
+							case 18779 -> new String[]{"This will require at least a level of 93 in one of the two", "skills to investigate. After investigation it becomes sated,", "rewarding 30,000 experience in the skill used."};
+							case 18780 -> new String[]{"This will require at least a level of 95 in one of the two", "skills to investigate. After investigation it becomes gordged,", "rewarding 45,000 experience in the skill used."};
+							case 18781 -> new String[]{"This will require at least a level of 97 in one of the two", "skills to investigate. After investigation it provides 60,000 ", "experience in the skill used and, then crumbles to dust,", "leaving behind a dragonkin lamp."};
+							default -> new String[1];
+						};
 					}
 
 					@Override
@@ -287,7 +282,6 @@ public class Effigies {
 				player.getPacketSender().sendInterfaceRemoval();
 				player.setEffigy(0);
 				player.setInteractingItem(null);
-				return;
 			}
 		}
 	}

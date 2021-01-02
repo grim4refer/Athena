@@ -1,19 +1,19 @@
 package com.athena.world.content;
 
-import java.util.concurrent.CopyOnWriteArrayList;
-
 import com.athena.engine.task.Task;
 import com.athena.engine.task.TaskManager;
 import com.athena.model.GameObject;
 import com.athena.model.GroundItem;
 import com.athena.model.Item;
-import com.athena.model.Locations;
-import com.athena.model.Position;
 import com.athena.model.Locations.Location;
+import com.athena.model.Position;
 import com.athena.world.World;
 import com.athena.world.clip.region.RegionClipping;
+import com.athena.world.entity.Entity;
 import com.athena.world.entity.impl.GroundItemManager;
 import com.athena.world.entity.impl.player.Player;
+
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * Handles customly spawned objects (mostly global but also privately for players)
@@ -22,25 +22,25 @@ import com.athena.world.entity.impl.player.Player;
 public class CustomObjects {
 	
 	private static final int DISTANCE_SPAWN = 70; //Spawn if within 70 squares of distance
-	public static final CopyOnWriteArrayList<GameObject> CUSTOM_OBJECTS = new CopyOnWriteArrayList<GameObject>();
+	public static final CopyOnWriteArrayList<GameObject> CUSTOM_OBJECTS = new CopyOnWriteArrayList<>();
 
 	public static void init() {
-		for(int i = 0; i < CLIENT_OBJECTS.length; i++) {
-			int id = CLIENT_OBJECTS[i][0];
-			int x = CLIENT_OBJECTS[i][1];
-			int y = CLIENT_OBJECTS[i][2];
-			int z = CLIENT_OBJECTS[i][3];
-			int face = CLIENT_OBJECTS[i][4];
+		for (int[] clientObject : CLIENT_OBJECTS) {
+			int id = clientObject[0];
+			int x = clientObject[1];
+			int y = clientObject[2];
+			int z = clientObject[3];
+			int face = clientObject[4];
 			GameObject object = new GameObject(id, new Position(x, y, z));
 			object.setFace(face);
 			RegionClipping.addObject(object);
 		}
-		for(int i = 0; i < CUSTOM_OBJECTS_SPAWNS.length; i++) {
-			int id = CUSTOM_OBJECTS_SPAWNS[i][0];
-			int x = CUSTOM_OBJECTS_SPAWNS[i][1];
-			int y = CUSTOM_OBJECTS_SPAWNS[i][2];
-			int z = CUSTOM_OBJECTS_SPAWNS[i][3];
-			int face = CUSTOM_OBJECTS_SPAWNS[i][4];
+		for (int[] customObjectsSpawn : CUSTOM_OBJECTS_SPAWNS) {
+			int id = customObjectsSpawn[0];
+			int x = customObjectsSpawn[1];
+			int y = customObjectsSpawn[2];
+			int z = customObjectsSpawn[3];
+			int face = customObjectsSpawn[4];
 			GameObject object = new GameObject(id, new Position(x, y, z));
 			object.setFace(face);
 			CUSTOM_OBJECTS.add(object);
@@ -51,11 +51,7 @@ public class CustomObjects {
 	private static void handleList(GameObject object, String handleType) {
 		switch(handleType.toUpperCase()) {
 		case "DELETE":
-			for(GameObject objects : CUSTOM_OBJECTS) {
-				if(objects.getId() == object.getId() && object.getPosition().equals(objects.getPosition())) {
-					CUSTOM_OBJECTS.remove(objects);
-				}
-			}
+			CUSTOM_OBJECTS.removeIf(objects -> objects.getId() == object.getId() && object.getPosition().equals(objects.getPosition()));
 			break;
 		case "ADD":
 			if(!CUSTOM_OBJECTS.contains(object)) {
@@ -2127,11 +2123,7 @@ public class CustomObjects {
 	public static boolean getCloudObject(Location loc) {
 		for (GameObject objects : CUSTOM_OBJECTS) {
 			System.out.println(loc);
-			if (objects.inLocation(objects.getPosition().getX(), objects.getPosition().getY(), Locations.Location.ZULRAH_CLOUD_FIVE)) {
-				return true;
-			} else {
-				return false;
-			}
+			return Entity.inLocation(objects.getPosition().getX(), objects.getPosition().getY(), Location.ZULRAH_CLOUD_FIVE);
 		}
 		return false;
 	}

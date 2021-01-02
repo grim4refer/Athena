@@ -35,32 +35,33 @@ public final class WeaponAnimations {
 		int playerStandIndex = 0x328;
 		int playerWalkIndex = 0x333;
 		int playerRunIndex = 0x338;
-		if (weaponName.contains("halberd") || weaponName.contains("guthan")) {
-			playerStandIndex = 809;
-			playerWalkIndex = 1146;
-			playerRunIndex = 1210;
+
+		if (weaponName.contains("halberd")
+				|| weaponName.contains("guthan")) {
+				playerStandIndex = 809;
+				playerWalkIndex = 1146;
+				playerRunIndex = 1210;
 		}
 		else if (weaponName.startsWith("basket")) {
-			playerStandIndex = 1836;
-			playerWalkIndex = 1836;
-			playerRunIndex = 1836;
+				playerStandIndex = 1836;
+				playerWalkIndex = 1836;
+				playerRunIndex = 1836;
 		}
 
 		else if (weaponName.startsWith("whip")) {
-			playerStandIndex = 0x328;
-			//playerStandIndex = 8980;
-		playerWalkIndex = 1660;
-		playerRunIndex = 1661;
+				playerWalkIndex = 1660;
+				playerRunIndex = 1661;
 		}
-		else if (weaponName.contains("dharok") || weaponName.contains("bludgeon")) {
-			playerStandIndex = 0x811;
-			playerWalkIndex = 0x67F;
-			playerRunIndex = 0x680;
+		else if (weaponName.contains("dharok")
+				|| weaponName.contains("bludgeon")) {
+				playerStandIndex = 0x811;
+				playerWalkIndex = 0x67F;
+				playerRunIndex = 0x680;
 		}
 		else if (weaponName.contains("sled")) {
-			playerStandIndex = 1461;
-			playerWalkIndex = 1468;
-			playerRunIndex = 1467;
+				playerStandIndex = 1461;
+				playerWalkIndex = 1468;
+				playerRunIndex = 1467;
 		}
 		else if (weaponName.contains("ahrim")) {
 			playerStandIndex = 809;
@@ -68,53 +69,49 @@ public final class WeaponAnimations {
 			playerRunIndex = 1210;
 		}
 		else if (weaponName.contains("verac")) {
-			playerStandIndex = 0x328;
-			playerWalkIndex = 0x333;
-			playerRunIndex = 824;
 		}
-		else if (weaponName.contains("longsword") || weaponName.contains("scimitar")) {
-			playerStandIndex = 15069;//12021;
-			playerRunIndex = 15070;//12023;
-			playerWalkIndex = 15073; //12024;
+		else if (weaponName.contains("longsword")
+				|| weaponName.contains("scimitar")) {
+				playerStandIndex = 15069;//12021;
+				playerRunIndex = 15070;//12023;
+				playerWalkIndex = 15073; //12024;
 		} else if(weaponName.contains("silverlight")
-				|| weaponName.contains("korasi's") || weaponName.contains("Nature") || weaponName.contains("Forest")||weaponName.contains("katana")) {
-			playerStandIndex = 12021;
-			playerRunIndex = 12023;
-			playerWalkIndex = 12024;/*
-			playerStandIndex = 8980;
-			playerRunIndex = 1210;
-			playerWalkIndex = 1146;*/
+				|| weaponName.contains("korasi's")
+				|| weaponName.contains("Nature")
+				|| weaponName.contains("Forest")
+				||weaponName.contains("katana")) {
+				playerStandIndex = 12021;
+				playerRunIndex = 12023;
+				playerWalkIndex = 12024;
 		}
-		else if (weaponName.contains("wand") || weaponName.contains("staff")
-				|| weaponName.contains("staff") || weaponName.contains("spear") || item.getId() == 21005 || item.getId() == 21010) {
-			playerStandIndex = 8980;
-			playerRunIndex = 1210;
-			playerWalkIndex = 1146;
+		else if (weaponName.contains("wand")
+				|| weaponName.contains("staff")
+				|| weaponName.contains("spear")
+				|| item.getId() == 21005
+				|| item.getId() == 21010) {
+				playerStandIndex = 8980;
+				playerRunIndex = 1210;
+				playerWalkIndex = 1146;
 		}
 		else if (weaponName.contains("karil")) {
 			playerStandIndex = 2074;
 			playerWalkIndex = 2076;
 			playerRunIndex = 2077;
 		}
-		else if (weaponName.contains("2h sword") || weaponName.contains("godsword")
+		else if (weaponName.contains("2h sword")
+				|| weaponName.contains("godsword")
 				|| weaponName.contains("saradomin sw")) {
-			playerStandIndex = 7047;
-			playerWalkIndex = 7046;
-			playerRunIndex = 7039;
+				playerStandIndex = 7047;
+				playerWalkIndex = 7046;
+				playerRunIndex = 7039;
 		}
 		else if (weaponName.contains("bow")) {
-			playerStandIndex = 808;
-			playerWalkIndex = 819;
 			playerRunIndex = 824;
 		}
 		if(weaponName.toLowerCase().contains("rapier")) {
 			playerStandIndex = 12021;
 			playerWalkIndex = 12024;
 			playerRunIndex = 12023;
-			/*
-			playerStandIndex = 8980;
-			playerRunIndex = 1210;
-			playerWalkIndex = 1146;*/
 		}
 		switch (item.getId()) {
 			case 21063:
@@ -131,7 +128,8 @@ public final class WeaponAnimations {
 				playerRunIndex = 1210;
 				break;
 		case 19467:
-			playerStandIndex = 2074;
+			case 19938:
+				playerStandIndex = 2074;
 			playerWalkIndex = 2076;
 			playerRunIndex = 2077;
 			break;
@@ -141,30 +139,17 @@ public final class WeaponAnimations {
 			playerWalkIndex = 70;
 			playerRunIndex = 70;
 			break;
-		case 19938:
-			playerStandIndex = 2074;
-			playerWalkIndex = 2076;
-			playerRunIndex = 2077;
-			break;
-		case 18353: // maul chaotic
+			case 18353: // maul chaotic
 		case 13212: // maul kryptic
 		case 3954: // maul bandos
 		case 3964: // maul saradomin
-			playerStandIndex = 13217;
+			case 16184:
+			case 16425:
+				playerStandIndex = 13217;
 			playerWalkIndex = 13218;
 			playerRunIndex = 13220;
 			break;
-		case 16184:
-			playerStandIndex = 13217;
-			playerWalkIndex = 13218;
-			playerRunIndex = 13220;
-			break;
-		case 16425:
-			playerStandIndex = 13217;
-			playerWalkIndex = 13218;
-			playerRunIndex = 13220;
-			break;
-		case 4151:
+			case 4151:
 		case 13444:
 		case 15441: // whip
 		case 15442: // whip
@@ -184,16 +169,12 @@ public final class WeaponAnimations {
 		case 18930:
 		case 18957:
 		case 21001:
-			playerStandIndex = 11973;
-			playerWalkIndex = 11975;
-			playerRunIndex = 1661;
-			break;
 			case 4705:
-			playerStandIndex = 11973;
+				playerStandIndex = 11973;
 			playerWalkIndex = 11975;
 			playerRunIndex = 1661;
 			break;
-		case 15039:
+			case 15039:
 			playerStandIndex = 12000;
 			playerWalkIndex = 1663;
 			playerRunIndex = 1664;
@@ -251,64 +232,32 @@ public final class WeaponAnimations {
 		int weaponId = c.getEquipment().getItems()[Equipment.WEAPON_SLOT].getId();
 		String weaponName = ItemDefinition.forId(weaponId).getName().toLowerCase();
 		String prop = c.getFightType().toString().toLowerCase();
-		switch(weaponId){
-			case 11539:
-			case 19004:
-				return 5;
-			case 21002:
-				return 129;
-				case 21013:
-				return 332;
-			case 21030:
-				return 127;
-			case 21060:
-				return 255;
-			case 21063:
-				return 762;
-			case 21032:
-				return 255;
-			case 21031:
-				return 128;
-			case 20079:
-			case 20862:	
-				return 1310;
-			case 21033:
-				return 68;
-            case 17847:
-                return 2345;
-			case 21003:
-				return 482;
-			case 20102:
-			case 20607:
-				return 188;
-			case 20510:
-			case 20751:
-			case 20752:
-			case 20601:
-			case 3666:
-				return 197;
-			case 21072:
-				return 481;
-			case 21073:
-				return 481;
-			case 21001:
-				return 2321;
-			case 3065:
-				return 79;
-			case 20873:
-				return 74;
-			case 21004:
-				return 1009;
-			case 20504:
-				return 1173;
-			case 15668:
-				return 184;
-			case 20922:
-				return 665;
-			case 19005:
-				return 2147;
-		}
-		return 0;
+		return switch (weaponId) {
+			case 11539, 19004 -> 5;
+			case 21002 -> 129;
+			case 21013 -> 332;
+			case 21030 -> 127;
+			case 21060, 21032 -> 255;
+			case 21063 -> 762;
+			case 21031 -> 128;
+			case 20079, 20862 -> 1310;
+			case 21033 -> 68;
+			case 17847 -> 2345;
+			case 21003 -> 482;
+			case 20102, 20607 -> 188;
+			case 20510, 20751, 20752, 20601, 3666 -> 197;
+			case 21072 -> 481;
+			case 21073 -> 481;
+			case 21001 -> 2321;
+			case 3065 -> 79;
+			case 20873 -> 74;
+			case 21004 -> 1009;
+			case 20504 -> 1173;
+			case 15668 -> 184;
+			case 20922 -> 665;
+			case 19005 -> 2147;
+			default -> 0;
+		};
 	}
 	public static int getAttackAnimation(Player c) {
 		int shieldId = c.getEquipment().getItems()[Equipment.SHIELD_SLOT].getId();
@@ -473,10 +422,9 @@ public final class WeaponAnimations {
 		case 13883:
 			return 806;
 		case 16184:
-			return 2661;
-		case 16425:
-			return 2661;
-		case 15241:
+			case 16425:
+				return 2661;
+			case 15241:
 		case 896:
 			case 4784:
 			case 21082:
@@ -500,10 +448,9 @@ public final class WeaponAnimations {
 		case 18353:
 			return 13055;
 		case 18349:
-			return 386;
-		case 19146:
-			return 386;
-		case 4755: // verac
+			case 19146:
+				return 386;
+			case 4755: // verac
 			return 2062;
 		case 4734: // karil
 		case 19467: // armadylian machine
@@ -555,86 +502,22 @@ public final class WeaponAnimations {
 			return 1156;
 		if(weapon.contains("scimitar") || weapon.contains("longsword") || weapon.contains("katana") || weapon.contains("korasi"))
 			return 15074;
-		switch (weaponId) {
-		case 4755:
-			return 2063;
-		case 15241:
-		case 896:
-			case 21082:
-			case 20695:
-			case 21062:
-			case 4784:
 		//	case 3961:
-		case 19939:
-		case 20932:
-			return 12156;
-		case 13899:
-			return 13042;
-		case 18355:
-			return 13046;
-		case 14484:
-			return 397;
-		case 19023:
-			return 397;
-		case 11716:
-			return 12008;
-		case 4153:
-			return 1666;
-		case 4151:
-		case 20079:
-		case 20862:	
-		case 20089:
-		case 13444:
-		case 15441: // whip
-		case 15442: // whip
-		case 15443: // whip
-		case 15444: // whip
-		case 20061:
-		case 17849:
-		case 17848:
-		case 18902:
-		case 18911:
-		case 18930:
-		case 18957:
-		case 21001:
-			return 11974;
-		case 21079:
-		    return 427;
-		case 15486:
-		case 15502:
-		case 22209:
-		case 22211:
-		case 22207:
-		case 22213:
-		case 21005:
-		case 21010:
-		case 14004:
-		case 14005:
-		case 14006:
-		case 14007:
-			return 12806;
-		case 18349:
-			return 12030;
-		case 18353:
-			return 13054;
-		case 18351:
-			return 13042;
-		case 20000:
-		case 20001:
-		case 20002:
-		case 20003:
-		case 11694:
-		case 3953:
-		case 11698:
-		case 11700:
-		case 11696:
-		case 11730:
-		case 19028:
-			return 7050;
-		case -1:
-			return 424;
-		default:
-			return 424;
-		}
+		return switch (weaponId) {
+			case 4755 -> 2063;
+			case 15241, 896, 21082, 20695, 21062, 4784, 19939, 20932 -> 12156;
+			case 13899, 18351 -> 13042;
+			case 18355 -> 13046;
+			case 14484, 19023 -> 397;
+			case 11716 -> 12008;
+			case 4153 -> 1666;
+			case 4151, 20079, 20862, 20089, 13444, 15441, 15442, 15443, 15444, 20061, 17849, 17848, 18902, 18911, 18930, 18957, 21001 -> 11974;
+			case 21079 -> 427;
+			case 15486, 15502, 22209, 22211, 22207, 22213, 21005, 21010, 14004, 14005, 14006, 14007 -> 12806;
+			case 18349 -> 12030;
+			case 18353 -> 13054;
+			case 20000, 20001, 20002, 20003, 11694, 3953, 11698, 11700, 11696, 11730, 19028 -> 7050;
+			default -> 424;
+		};
 	}
 }

@@ -46,7 +46,7 @@ public class NPCDrops {
 	/**
 	 * The map containing all the npc drops.
 	 */
-	private static Map<Integer, NPCDrops> dropControllers = new HashMap<Integer, NPCDrops>();
+	private static Map<Integer, NPCDrops> dropControllers = new HashMap<>();
 
 	public static boolean doubleDrop = false;
 	public static boolean yell = true;
@@ -180,66 +180,39 @@ public class NPCDrops {
 		 * @return The chance.
 		 */
 		public DropChance getChance() {
-			switch (chance) {
-				case 1:
-					return DropChance.ALMOST_ALWAYS; // 50% <-> 1/2
-				case 2:
-					return DropChance.VERY_COMMON; // 20% <-> 1/5
-				case 3:
-					return DropChance.COMMON; // 5% <-> 1/20
-				case 4:
-					return DropChance.UNCOMMON; // 2% <-> 1/50
-				case 5:
-					return DropChance.RARE; // 0.5% <-> 1/200
-				case 6:
-					return DropChance.LEGENDARY; // 0.2% <-> 1/500
-				case 7:
-					return DropChance.LEGENDARY_2;
-				case 8:
-					return DropChance.LEGENDARY_3;
-				case 9:
-					return DropChance.LEGENDARY_4;
-				case 10:
-					return DropChance.LEGENDARY_5;
-				case 1000:
-					return DropChance.PET;
-				case 1500:
-					return DropChance.GROUDON;
-
-				default:
-					return DropChance.ALWAYS; // 100% <-> 1/1
-			}
+			return switch (chance) {
+				case 1 -> DropChance.ALMOST_ALWAYS;
+				case 2 -> DropChance.VERY_COMMON;
+				case 3 -> DropChance.COMMON;
+				case 4 -> DropChance.UNCOMMON;
+				case 5 -> DropChance.RARE;
+				case 6 -> DropChance.LEGENDARY;
+				case 7 -> DropChance.LEGENDARY_2;
+				case 8 -> DropChance.LEGENDARY_3;
+				case 9 -> DropChance.LEGENDARY_4;
+				case 10 -> DropChance.LEGENDARY_5;
+				case 1000 -> DropChance.PET;
+				case 1500 -> DropChance.GROUDON;
+				default -> DropChance.ALWAYS;
+			};
 		}
 
 		public WellChance getWellChance() {
-			switch (chance) {
-				case 1:
-					return WellChance.ALMOST_ALWAYS; // 50% <-> 1/2
-				case 2:
-					return WellChance.VERY_COMMON; // 20% <-> 1/5
-				case 3:
-					return WellChance.COMMON; // 5% <-> 1/20
-				case 4:
-					return WellChance.UNCOMMON; // 2% <-> 1/50
-				case 5:
-					return WellChance.RARE; // 0.5% <-> 1/200
-				case 6:
-					return WellChance.LEGENDARY; // 0.2% <-> 1/320
-				case 7:
-					return WellChance.LEGENDARY_2; // 1/410
-				case 8:
-					return WellChance.LEGENDARY_3; // 1/850
-				case 9:
-					return WellChance.LEGENDARY_4; // 1/680
-				case 10:
-					return WellChance.LEGENDARY_5; // 1/900
-				case 1000:
-					return WellChance.PET;
-				case 1500:
-					return WellChance.GROUDON;
-				default:
-					return WellChance.ALWAYS; // 100% <-> 1/1
-			}
+			return switch (chance) {
+				case 1 -> WellChance.ALMOST_ALWAYS;
+				case 2 -> WellChance.VERY_COMMON;
+				case 3 -> WellChance.COMMON;
+				case 4 -> WellChance.UNCOMMON;
+				case 5 -> WellChance.RARE;
+				case 6 -> WellChance.LEGENDARY;
+				case 7 -> WellChance.LEGENDARY_2;
+				case 8 -> WellChance.LEGENDARY_3;
+				case 9 -> WellChance.LEGENDARY_4;
+				case 10 -> WellChance.LEGENDARY_5;
+				case 1000 -> WellChance.PET;
+				case 1500 -> WellChance.GROUDON;
+				default -> WellChance.ALWAYS;
+			};
 		}
 
 		/**
@@ -249,8 +222,7 @@ public class NPCDrops {
 		 */
 		public Item getItem() {
 			int amount = 0;
-			for (int i = 0; i < count.length; i++)
-				amount += count[i];
+			for (int j : count) amount += j;
 			if (amount > count[0])
 				amount = count[0] + RandomUtility.getRandom(count[1]);
 			return new Item(id, amount);
@@ -572,7 +544,7 @@ public class NPCDrops {
 				//p.sendMessage("Your slayer helm boosted your droprate by 5%");
 			}
 	}
-			random = (int)random / ((double)(100+drBoost)/100);
+			random = (int)random / ((100+drBoost) /100);
 
 		return (!b[chance.ordinal()] && Misc.getRandom((int) random) == 0) ; //return true if random between 0 & table value is 1.
 	}
@@ -1217,7 +1189,7 @@ public class NPCDrops {
 		double drBoost = NPCDrops.getDoubleDr(p);
 
 		p.setDoubleDropRate(drBoost);
-		random = random / ((double)(100+drBoost)/100);
+		random = random / ((100+drBoost) /100);
 
 		return !b[chance.ordinal()] && Misc.getRandom((int) random) == 0 || p.getRights() == PlayerRights.DEDICATED_DONATOR; //return true if random between 0 & table value is 1.
 	}
@@ -1297,7 +1269,7 @@ public class NPCDrops {
 		boolean ccAnnounce = false;
 		if(Location.inMulti(player)) {
 			if(player.getCurrentClanChat() != null && player.getCurrentClanChat().getLootShare()) {
-				CopyOnWriteArrayList<Player> playerList = new CopyOnWriteArrayList<Player>();
+				CopyOnWriteArrayList<Player> playerList = new CopyOnWriteArrayList<>();
 				for(Player member : player.getCurrentClanChat().getMembers()) {
 					if(member != null) {
 						if(member.getPosition().isWithinDistance(player.getPosition())) {
@@ -1461,7 +1433,7 @@ public class NPCDrops {
 
 
 		private static void init() {
-			ITEM_LIST = new ArrayList<Integer>();
+			ITEM_LIST = new ArrayList<>();
 			for (int i : TO_ANNOUNCE) {
 				ITEM_LIST.add(i);
 			}

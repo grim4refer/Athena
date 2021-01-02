@@ -149,16 +149,9 @@ public class ClueScrolls {
 		for(Item item : basicLoot) {
 			player.getInventory().add(item);
 		}
-		
-		if (RandomUtility.RANDOM.nextInt(1) == 1) {
-		Item[] lowLoot = LOW_LEVEL_REWARD[Misc.getRandom(200)];
-		for(Item item : lowLoot) {
-			player.getInventory().add(item);
-			player.getInventory().add(item);
-		}
-		}
-		
-		else if (RandomUtility.RANDOM.nextInt(3) == 2) {
+
+		RandomUtility.RANDOM.nextInt(1);
+		if (RandomUtility.RANDOM.nextInt(3) == 2) {
 		Item[] mediumLoot = MEDIUM_LEVEL_REWARD[Misc.getRandom(200)];
 		for(Item item : mediumLoot) {
 			player.getInventory().add(item);
