@@ -1298,6 +1298,10 @@ public class ItemActionPacketListener implements PacketListener {
 			break;
 			
 			case 7100:
+				if (player.getInventory().getFreeSlots() < 1) {
+					player.getPacketSender().sendMessage("You need at least 1 inventory space to open this" );
+					return;
+				}
 				int[][] rewards3 = {
 						{11995,11996,11997,12001,12002,12003,12004,2771,2771,19935,12005,12006,11990,11981,11979,2090,2091}, //Uncommon, 0
 						{11991,11992,11993,11994,11989,11988,11987,11986,11985,11984,2759,2760,2761,2762,11983,11982,}, //Rare, 1
@@ -1439,10 +1443,10 @@ public class ItemActionPacketListener implements PacketListener {
 				break;
 
             case 3230:
-// Legendary_Donator(12424, new Item[] {new Item(12424,34)}, 1, 12425),
-//        Dark_Lord_Body(3652, new Item[] {new Item(11316,250)}, 10, 3687),
-//        Dark_Lord_Legs(3653, new Item[] {new Item(11316,250)}, 10, 3688),
-//        Dark_Lord_Boots(3654, new
+				if (player.getInventory().getFreeSlots() < 3) {
+					player.getPacketSender().sendMessage("You don't have enough free inventory space." );
+					return;
+				}
                 int[][] rewards5 = {
                         {3651,3652,3653,3654,20511, 20257,11533}, //Uncommon, 0
                         { 18911,21059,21058,21057,21056,19787,19788,12424, 18989, 20089, 11423,11533, 3981, 20054, 18908, 11556 }, //Rare, 1
@@ -1462,9 +1466,6 @@ public class ItemActionPacketListener implements PacketListener {
 				} else {
 					rewardGrade3 = 2;
 				}
-
-
-
                 rewardPos = RandomUtility.getRandom(rewards5[rewardGrade3].length-1);
                 player.getInventory().delete(3230, 1);
                 player.getInventory().add(rewards5[rewardGrade3][rewardPos], 1).refreshItems();
@@ -1475,15 +1476,12 @@ public class ItemActionPacketListener implements PacketListener {
 				donorbox.openInterface();
 				player.setBox(7118);
 				break;
-//			case 3230:
-//				UberBox donorbox = new UberBBox(player);
-//				donorbox.openInterface();
-//			player.setBox(7118);
-//			break;
-//
 
 			case 21045:
-
+				if (player.getInventory().getFreeSlots() < 3) {
+					player.getPacketSender().sendMessage("You need at least 3 inventory spaces to open this" );
+					return;
+				}
 				int[][] rewards4 = {
 						{894}, //Uncommon, 0
 						{895,700,906,907,908}, //Rare, 1
@@ -1503,14 +1501,17 @@ public class ItemActionPacketListener implements PacketListener {
 				} else {
 					rewardGrade3 = 2;
 				}
-
-
 				rewardPos = RandomUtility.getRandom(rewards4[rewardGrade3].length-1);
 				player.getInventory().delete(21045, 1);
 				player.getInventory().add(rewards4[rewardGrade3][rewardPos], 1).refreshItems();
 					World.sendMessage("<shad=0>@bla@[@cya@Weaponbox box@bla@] @cya@"+player.getUsername()+"@bla@ Has just received a @cya@ "+ItemDefinition.forId(rewards4[rewardGrade3][rewardPos]).getName()+" @bla@!");
 				break;
+
 		case 15501:
+			if (player.getInventory().getFreeSlots() < 3) {
+				player.getPacketSender().sendMessage("You need at least 3 inventory spaces to open this" );
+				return;
+			}
 			int[][] superiorRewards = {
 					{11995,11996,11997,12001,12002,12003,12004,2771,2771,19935,12005,12006,11990,11981,11979,2090,2091}, //Uncommon, 0
 					{11991,11992,11993,11994,11989,11988,11987,11986,11985,11984,2759,2760,2761,2762,11983,11982,}, //Rare, 1
@@ -1529,6 +1530,10 @@ public class ItemActionPacketListener implements PacketListener {
 			player.getInventory().add(superiorRewards[superiorRewardGrade][superiorRewardPos], 1).refreshItems();
 			break;
 		case 11882:
+			if (player.getInventory().getFreeSlots() < 5) {
+				player.getPacketSender().sendMessage("You need at least 5 inventory spaces to open this" );
+				return;
+			}
 			player.getInventory().delete(11882, 1);
 			player.getInventory().add(2595, 1).refreshItems();
 			player.getInventory().add(2591, 1).refreshItems();
@@ -1536,6 +1541,10 @@ public class ItemActionPacketListener implements PacketListener {
 			player.getInventory().add(2597, 1).refreshItems();
 			break;
 		case 11884:
+			if (player.getInventory().getFreeSlots() < 5) {
+				player.getPacketSender().sendMessage("You need at least 5 inventory spaces to open this" );
+				return;
+			}
 			player.getInventory().delete(11884, 1);
 			player.getInventory().add(2595, 1).refreshItems();
 			player.getInventory().add(2591, 1).refreshItems();
@@ -1543,12 +1552,20 @@ public class ItemActionPacketListener implements PacketListener {
 			player.getInventory().add(2597, 1).refreshItems();
 			break;
 		case 11906:
+			if (player.getInventory().getFreeSlots() < 4) {
+				player.getPacketSender().sendMessage("You need at least 4 inventory spaces to open this" );
+				return;
+			}
 			player.getInventory().delete(11906, 1);
 			player.getInventory().add(7394, 1).refreshItems();
 			player.getInventory().add(7390, 1).refreshItems();
 			player.getInventory().add(7386, 1).refreshItems();
 			break;
 		case 15262:
+			if (player.getInventory().getFreeSlots() < 1) {
+				player.getPacketSender().sendMessage("You need at least 1 inventory spaces to open this" );
+				return;
+			}
 			if(!player.getClickDelay().elapsed(1000))
 				return;
 			player.getInventory().delete(15262, 1);
