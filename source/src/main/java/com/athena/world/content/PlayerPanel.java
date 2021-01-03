@@ -1,6 +1,8 @@
 package com.athena.world.content;
 
 import com.athena.GameLoader;
+import com.athena.engine.task.Task;
+import com.athena.engine.task.TaskManager;
 import com.athena.model.Item;
 import com.athena.model.definitions.NPCDrops;
 import com.athena.util.Misc;
@@ -16,6 +18,12 @@ public class PlayerPanel {
 
 		int counter = 39159;
 
+		TaskManager.submit(new Task(5) {
+			@Override
+			protected void execute() {
+				player.getPacketSender().sendString(111, "This will refresh every 5 game ticks");
+			}
+		});
 		player.getPacketSender().sendString(counter++, "");
 
 		player.getPacketSender().sendString(counter++, "@or3@-@whi@ General Information");
