@@ -684,7 +684,7 @@ public class ButtonClickPacketListener implements PacketListener {
 //		case -26376:
             // PlayersOnlineInterface.showInterface(player);
 //			break;
-            case 26601:
+            case -26349:
                 player.getPacketSender().sendTabInterface(GameSettings.QUESTS_TAB, 46343);
                 StaffList.updateInterface(player);//staff online button
                 break;
