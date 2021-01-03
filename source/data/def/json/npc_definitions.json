@@ -139053,6 +139053,28 @@
     "defenceMage": 0
   },
   {
+    "id": 10146,
+    "name": "Dragon test",
+    "examine": "A huge spiritual beast.",
+    "combat": 785,
+    "size": 3,
+    "attackable": true,
+    "aggressive": true,
+    "retreats": false,
+    "poisonous": true,
+    "respawn": 65,
+    "maxHit": 650,
+    "hitpoints": 45000,
+    "attackSpeed": 5,
+    "attackAnim": 10058,
+    "defenceAnim": 10053,
+    "deathAnim": 10059,
+    "attackBonus": 475,
+    "defenceMelee": 380,
+    "defenceRange": 420,
+    "defenceMage": 200
+  },
+  {
     "id": 10145,
     "name": "Christmas Mystery Box",
     "examine": "It's a moving Christmas Mystery Box!",

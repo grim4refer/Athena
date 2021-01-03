@@ -3711,6 +3711,16 @@ public final class NPCDef {
                 npc.sizeY = 80;
                 npc.drawMinimapDot = false;
                 break;
+            case 10146:
+                npc.name = "@bla@dragon test";
+                npc.models = new int[]{90048};
+                npc.walkAnim = 819;
+                npc.standAnim = 808;
+                npc.sizeXZ = 100;
+                npc.sizeY = 100;
+                npc.squaresNeeded = 1;
+                npc.actions = new String[]{null, "Attack", null, null, null};
+                break;
             //case 4425:
             //	npc.name = "Callisto";
             //		npc.models = new int[] { 28298 };
