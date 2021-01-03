@@ -92,7 +92,7 @@ public class ItemContainerActionPacketListener implements PacketListener {
 				}
 				break;
 			case 57150:
-				System.out.println("xd ok k");
+				//System.out.println("xd ok k");
 				break;
 		case Trading.INTERFACE_REMOVAL_ID:
 			if(player.getTrading().inTrade())

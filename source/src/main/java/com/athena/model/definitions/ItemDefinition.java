@@ -101,6 +101,9 @@ public class ItemDefinition {
 				case "is weapon":
 					definition.weapon = Boolean.parseBoolean(value);
 					break;
+				case "staff":
+					definition.stackable = Boolean.parseBoolean(value);
+					break;
 				}
 			}
 			reader.close();
@@ -188,6 +191,22 @@ public class ItemDefinition {
 		if(noted)
 			return true;
 		return stackable;
+	}
+
+	/**
+	 * Flag to check if item is Staff only
+	 */
+	private boolean staff;
+
+	/**
+	 * Checks if the item is staff only
+	 *
+	 * @return	staff
+	 */
+	public boolean isStaff() {
+		if(isStaff())
+			return true;
+		return staff;
 	}
 	
 	/**
