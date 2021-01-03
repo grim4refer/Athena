@@ -1,5 +1,5 @@
 {
-  "total-play-time-ms": 4465012497,
+  "total-play-time-ms": 4466106362,
   "username": "Joker",
   "password": "123",
   "email": "null",
@@ -12,9 +12,9 @@
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2526,
-    "y": 2534,
-    "z": 1
+    "x": 2743,
+    "y": 3472,
+    "z": 0
   },
   "online-status": "ON",
   "given-starter": false,
@@ -28,8 +28,8 @@
   "achievement-points": 5,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 53870,
-  "total-loyalty-points": 53870.0,
+  "loyalty-points": 57002,
+  "total-loyalty-points": 57002.0,
   "voting-points": 0,
   "slayer-points": 0,
   "pk-points": 0,
@@ -54,7 +54,7 @@
   "auto-retaliate": true,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 166858791,
+  "last-veng": 1609542877881,
   "fight-type": "UNARMED_PUNCH",
   "sol-effect": 0,
   "skull-timer": 0,
@@ -479,10 +479,10 @@
   ],
   "skills": {
     "level": [
-      99724,
-      99724,
-      99724,
-      99724,
+      99680,
+      99680,
+      99680,
+      99680,
       99,
       990,
       99,

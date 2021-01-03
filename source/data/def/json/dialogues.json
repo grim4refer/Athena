@@ -1410,6 +1410,14 @@
 		"line1": "Yes, I'm an experienced player.",
 		"line2": "No, I'd like to learn more about Yannille..",
 		"next": -1
+    },
+    {
+        "id": 185,
+        "type": "OPTION",
+        "lines": 2,
+        "line1": "@red@Hit",
+        "line2": "@red@Stay",
+        "next": -1,
+        "npcId": -1
     }
-	
 ]

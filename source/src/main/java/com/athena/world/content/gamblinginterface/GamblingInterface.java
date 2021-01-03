@@ -419,8 +419,8 @@ public class GamblingInterface {
                 player.getPacketSender().sendInterfaceRemoval();
                 player2.getPacketSender().sendInterfaceRemoval();
 
-                player.moveTo(new Position(2339, 3632));
-                player2.moveTo(new Position(2337, 3632));
+                player.moveTo(new Position(2733, 3473));
+                player2.moveTo(new Position(2733, 3474));
 
                 player.setDirection(Direction.EAST);
                 player2.setDirection(Direction.WEST);
@@ -428,8 +428,8 @@ public class GamblingInterface {
                 TaskManager.submit(new Task(3) {
                         @Override
                         protected void execute() {
-                                // player.sendMessage("Player name: " + player.getUsername() + " Player2 name: "
-                                // + player2.getUsername());
+                                 //player.sendMessage("Player name: " + player.getUsername() + " Player2 name: "
+                                 //+ player2.getUsername());
                                 int roll = RandomUtility.inclusiveRandom(1, 100);
                                 player2.forceChat("I rolled a " + roll);
                                 get55x2Winner(roll);
@@ -457,8 +457,8 @@ public class GamblingInterface {
                 playerPosition = player.getPosition();
                 player2Position = player2.getPosition();
 
-                player.moveTo(new Position(2326, 3642));
-                player2.moveTo(new Position(2328, 3642));
+                player.moveTo(new Position(2731, 3465));
+                player2.moveTo(new Position(2731, 3464));
                 player.setDirection(Direction.EAST);
                 player2.setDirection(Direction.WEST);
                 player.setPlayerLocked(true);
@@ -624,6 +624,8 @@ public class GamblingInterface {
 
                 player.moveTo(new Position(2744, 3465));
                 player2.moveTo(new Position(2744, 3464));
+                player.moveTo(new Position(2744, 3466));
+                player2.moveTo(new Position(2744, 3467));
 
                 TaskManager.submit(new Task(6) {
                         @Override

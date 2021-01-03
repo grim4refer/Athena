@@ -3354,15 +3354,15 @@ public class RSInterface {
 		// Select a game type child
 		addText(57155, "Select a game type", 0xff9933, true, true, 52, tda, 1);
 		// -Player name has accepted-
-		addText(57175, "---a", tda, 0, 0xFFFFFF, true, true);
+		addText(57175, "---a", tda, 0, 0xFFFFFF, false, true);
 
 		// rules for "game"
 		final String rules = " \"Game Name\" ";
 		addText(57156, "Rules for" + rules, 0xff9933, false, true, 52, tda, 1);
 		// description fields(under rules)
-		addText(57157, "First Line description(can use a extra line)", tda, 0, 0xFFFFFF, true, true);
-		addText(57158, "Second Line(can use a extra line)", tda, 0, 0xFFFFFF, true, true);
-		addText(57159, "Third Line(can use a extra line)", tda, 0, 0xFFFFFF, true, true);
+		addText(57157, "First Line description(can use a extra line)", tda, 0, 0xFFFFFF, false, true);
+		addText(57158, "Second Line(can use a extra line)", tda, 0, 0xFFFFFF, false, true);
+		addText(57159, "Third Line(can use a extra line)", tda, 0, 0xFFFFFF, false, true);
 
 		// right side item scroll
 		RSInterface rightScroll = addInterface(57170);
@@ -3394,15 +3394,15 @@ public class RSInterface {
 		addToggleButton1(57191, 1184, 1701, 119, 15, "Dice Duel(ft3)");
 
 		// game type descriptions
-		addText(57192, "Flower poker)", tda, 0, 0xFFFFFF, true, true);
-		addText(57193, "Dice Duel(ft3)", tda, 0, 0xFFFFFF, true, true);
+		addText(57192, "Flower poker)", tda, 0, 0xFFFFFF, false, true);
+		addText(57193, "Dice Duel(ft3)", tda, 0, 0xFFFFFF, false, true);
 
 		addToggleButton1(57194, 1184, 1702, 119, 15, "Blackjack");
-		addText(57195, "Blackjack (playername hosts)", tda, 0, 0xFFFFFF, true, true);
+		addText(57195, "Blackjack (playername hosts)", tda, 0, 0xFFFFFF, false, true);
 		addToggleButton1(57196, 1184, 1703, 119, 15, "Blackjack");
-		addText(57197, "55x2 (playername hosts)", tda, 0, 0xFFFFFF, true, true);
+		addText(57197, "55x2 (playername hosts)", tda, 0, 0xFFFFFF, false, true);
 
-		addText(57198, "55x2 (playername hosts)", tda, 0, 0xFFFFFF, true, true);
+		addText(57198, "", tda, 0, 0xFFFFFF, false, true);
 
 
 	}

@@ -158,7 +158,7 @@ public class ButtonClickPacketListener implements PacketListener {
                 break;
             case -3203:
                 System.out.println("Button 3203");
-                // player.getGambling().sendGambleScreen();
+                //player.getGambling().setGambleRequested();
                 break;
     		case -12307:
     			if (!StarterTasks.claimReward(player)) {
