@@ -100,6 +100,9 @@ public class Player extends Character {
 
 	public boolean isVoting = false;
 
+	public int currentPlayerPanelIndex = 1;
+
+
 	public TeleportInterface getTeleportInterface() {
 		return this.teleportInterface;
 	}
