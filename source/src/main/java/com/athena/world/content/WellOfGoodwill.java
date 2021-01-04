@@ -162,7 +162,6 @@ public class WellOfGoodwill {
 			START_TIMER = System.currentTimeMillis();
 	
 			World.sendMessage("@red@[EXP WELL]@bla@It is now granting everyone 1 hours of 30% bonus experience.");
-			World.getPlayers().forEach(p -> p.getPacketSender().sendString(39167, PlayerPanel.LINE_START + "@or1@Well of Goodwill: @yel@Active"));
 		}
 	}
 

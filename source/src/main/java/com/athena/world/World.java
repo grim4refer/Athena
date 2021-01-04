@@ -122,7 +122,6 @@ public class World {
 	}
 	
 	public static void updateServerTime() {
-		players.forEach(p-> p.getPacketSender().sendString(39172, PlayerPanel.LINE_START + "@or1@Server Time: @yel@"+Misc.getCurrentServerTime()));
 	}
 
 	public static void updatePlayersOnline() {
