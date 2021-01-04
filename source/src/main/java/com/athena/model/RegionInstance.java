@@ -25,7 +25,7 @@ public class RegionInstance {
 		CONSTRUCTION_HOUSE,
 		CONSTRUCTION_DUNGEON,
 		ZULRAHS_SHRINE, 
-		VLADIMIR
+		VLADIMIR;
 	}
 	
 	private Player owner;

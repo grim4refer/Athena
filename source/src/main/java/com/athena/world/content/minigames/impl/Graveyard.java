@@ -98,38 +98,38 @@ public class Graveyard {
 
 	private final static Position getSpawnPos(int z) {
 		switch(Misc.getRandom(15)) {
-		case 0:
-			return new Position(3508, 3570, z);
-		case 1:
-			return new Position(3507, 3572, z);
-		case 2:
-			return new Position(3508, 3574, z);
-		case 3:
-			return new Position(3504, 3576, z);
-		case 4:
-			return new Position(3505, 3573, z);
-		case 5:
-			return new Position(3499, 3575, z);
-		case 6:
-			return new Position(3499, 3578, z);
-		case 7:
-			return new Position(3495, 3572, z);
-		case 8:
-			return new Position(3495, 3574, z);
-		case 9:
-			return new Position(3499, 3569, z);
-		case 10:
-			return new Position(3503, 3569, z);
-		case 11:
-			return new Position(3504, 3571, z);
-		case 12:
-			return new Position(3502, 3574, z);
-		case 13:
-			return new Position(3503, 3577, z);
-		case 14:
-			return new Position(3505, 3577, z);
-		case 15:
-			return new Position(3506, 3575, z);
+			case 0:
+				return new Position(3508, 3570, z);
+			case 1:
+				return new Position(3507, 3572, z);
+			case 2:
+				return new Position(3508, 3574, z);
+			case 3:
+				return new Position(3504, 3576, z);
+			case 4:
+				return new Position(3505, 3573, z);
+			case 5:
+				return new Position(3499, 3575, z);
+			case 6:
+				return new Position(3499, 3578, z);
+			case 7:
+				return new Position(3495, 3572, z);
+			case 8:
+				return new Position(3495, 3574, z);
+			case 9:
+				return new Position(3499, 3569, z);
+			case 10:
+				return new Position(3503, 3569, z);
+			case 11:
+				return new Position(3504, 3571, z);
+			case 12:
+				return new Position(3502, 3574, z);
+			case 13:
+				return new Position(3503, 3577, z);
+			case 14:
+				return new Position(3505, 3577, z);
+			case 15:
+				return new Position(3506, 3575, z);
 		}
 		return new Position(3508, 3570, z);
 	}
@@ -137,37 +137,37 @@ public class Graveyard {
 	private static final int getSpawn(int level) {
 		final int random = Misc.getRandom(14);
 		switch(level) {
-		case 1:
-			if(random <= 2)
-				return 76;
-			return 5664;
-		case 2:
-			if(random <= 3)
-				return 76;
-			else if(random == 4 || random == 5)
+			case 1:
+				if(random <= 2)
+					return 76;
 				return 5664;
-			return 5400;
-		case 3:
-			if(random <= 3)
-				return 76;
-			else if(random == 4 || random == 5)
-				return 5664;
-			else if(random == 6 || random == 7)
+			case 2:
+				if(random <= 3)
+					return 76;
+				else if(random == 4 || random == 5)
+					return 5664;
 				return 5400;
-			return 8162;
-		case 4:
-		case 5:
-		case 6:
-		case 7:
-		case 8:
-		case 9:
-			if(random <= 3)
-				return 76;
-			else if(random == 4 || random == 5)
-				return 5664;
-			else if(random == 8)
+			case 3:
+				if(random <= 3)
+					return 76;
+				else if(random == 4 || random == 5)
+					return 5664;
+				else if(random == 6 || random == 7)
+					return 5400;
 				return 8162;
-			return 5407;
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+				if(random <= 3)
+					return 76;
+				else if(random == 4 || random == 5)
+					return 5664;
+				else if(random == 8)
+					return 8162;
+				return 5407;
 		}
 		return 76;
 	}

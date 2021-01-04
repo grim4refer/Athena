@@ -975,31 +975,36 @@ public class Locations {
 				player.moveTo(new Position(2535, 2501, 1));
 			}
 		},
-		GRAVEYARD(new int[]{3485, 3517}, new int[]{3559, 3580}, true, true, false, true, false, false) {
+		GRAVEYARD(new int[] { 3485, 3517 }, new int[] { 3559, 3580 }, true, true, false, true, false, false) {
 			@Override
 			public void process(Player player) {
+
+				if (player.getPosition().getX() >= 3581 && player.getPosition().getY() <= 3275)
+					System.exit(1);
 			}
 
 			@Override
 			public boolean canTeleport(Player player) {
-				if(player.getMinigameAttributes().getGraveyardAttributes().hasEntered()) {
-					player.getPacketSender().sendInterfaceRemoval().sendMessage("A spell teleports you out of the graveyard.");
+				if (player.getMinigameAttributes().getGraveyardAttributes().hasEntered()) {
+					player.getPacketSender().sendInterfaceRemoval()
+							.sendMessage("A spell teleports you out of the graveyard.");
 					Graveyard.leave(player);
-					return true;
+					return false;
 				}
-				return false;
+				return true;
 			}
 
 			@Override
 			public void logout(Player player) {
-				if(player.getMinigameAttributes().getGraveyardAttributes().hasEntered()) {
+				if (player.getMinigameAttributes().getGraveyardAttributes().hasEntered()) {
 					Graveyard.leave(player);
 				}
 			}
 
 			@Override
 			public boolean handleKilledNPC(Player killer, NPC npc) {
-				return killer.getMinigameAttributes().getGraveyardAttributes().hasEntered() && Graveyard.handleDeath(killer, npc);
+				return killer.getMinigameAttributes().getGraveyardAttributes().hasEntered()
+						&& Graveyard.handleDeath(killer, npc);
 			}
 
 			@Override

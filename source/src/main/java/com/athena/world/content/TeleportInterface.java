@@ -38,8 +38,8 @@ public class TeleportInterface {
 		CORPOREAL_BEAST(50613, "Nex", "@red@Nex Npc!", "@yel@Drops Nex items!", "", "", "", 13447, new int[] { 2905, 5204, 0 }),
 		CUSTOM_HELLHOUND(50614, "Iktomi", "@Red@Iktomi Npc!", "@yel@Drops Iktomi items!", "", "", "", 6307, new int[] { 1940, 5001, 0 }),
 		LUCARIO(50615, "Lucario", "@red@Lucario Npc!", "@yel@Drops Lucario items!", "", "", "", 170, new int[] { 2584, 2580, 1 }),
-		MEWTWO(50616, "MewTwo", "@red@MewTwo Npc!", "@yel@Drops MewTwo items!", "", "", "", 360, new int[] { 2588, 2580, 1 }),
-		CHARMELEON(50617, "Charmeleon", "@red@Charmeleon Npc!", "@yel@Drops Charmeleon items!", "", "", "", 359, new int[] { 2592, 2580, 1 }),
+		MEWTWO(50616, "MewTwo", "@red@MewTwo Npc!", "@yel@Drops MewTwo items!", "", "", "", 360, new int[] { 2588, 2580, 1 },2000),
+		CHARMELEON(50617, "Charmeleon", "@red@Charmeleon Npc!", "@yel@Drops Charmeleon items!", "", "", "", 359, new int[] { 2592, 2580, 1 },2000),
 		SQUIRTLE(50618, "Squirtle", "@red@Squirtle Npc!", "@yel@Drops Squirtle items!", "", "", "", 361, new int[] { 2597, 2580, 1 }),
 		PICKACHU(50619, "Pickachu", "@red@Pickachu Npc!", "@yel@Drops Pickachu items!", "", "", "", 365, new int[] { 2593, 2576, 1 }),
 		SONIC(50620, "Sonic", "@red@Sonic Npc!", "@yel@Drops Sonic items!", "", "", "", 363, new int[] { 2593, 2570, 1 }),
@@ -47,10 +47,11 @@ public class TeleportInterface {
 		MR_KRABS(50622, "Mr Krabs", "@red@Mr Krabs Npc!", "@yel@Drops Mr Krabs items!", "", "", "", 362, new int[] { 2593, 2558, 1 }),
 		NUTELLA(50623, "Nutella", "@red@Nutella Npc!", "@yel@Drops Nutella items!", "", "", "", 368, new int[] { 2588, 2558, 1 }),
 		MAYONAISE(50624, "Mayonnaise", "@red@Mayonnaise Npc!", "@yel@Drops Mayonaise items!", "", "", "", 367, new int[] { 2588, 2564, 1 }),
-		INFERNO(50625, "Inferno", "@red@Undead Npc!", "@yel@Drops Inferno Undead items!", "@cya@THIS NPC IS IN MULTI!", "", "", 53, new int[] { 2724, 4777, 0 }),
-		VORAGO(50626, "Vorago", "@red@Vorago Npc!", "@yel@Drops Vorago items!", "@cya@THIS IS EPIC BOSS!", "", "", 2071, new int[] { 2535, 2567, 1 }),
-		YANI(50627, "Yani", "@red@Yani Npc!", "@yel@Drops Yani items!", "@cya@THIS NPC IS IN MULTI!", "", "", 515, new int[] { 2272, 4693, 0 });
-		
+		INFERNO(50625, "Inferno", "@red@Undead Npc!", "@yel@Drops Inferno Undead items!", "@cya@THIS NPC IS IN MULTI!", "", "", 53, new int[] { 2724, 4777, 0 },3000),
+		VORAGO(50626, "Vorago", "@red@Vorago Npc!", "@yel@Drops Vorago items!", "@cya@THIS IS EPIC BOSS!", "", "", 2071, new int[] { 2535, 2567, 1 },5000),
+		YANI(50627, "Yani", "@red@Yani Npc!", "@yel@Drops Yani items!", "@cya@THIS NPC IS IN MULTI!", "", "", 515, new int[] { 2272, 4693, 0 }),
+		GODZILLA(50628, "Godzilla", "@red@Godzilla", "@mag@Drops Godzilla items!", "", "", "", 1299, new int[] { 2900, 3617, 0 });
+
 		Bosses(int textId, String name, String description1, String description2, String description3,
 				String description4, String description5, int npcId, int[] teleportCords) {
 			this.textId = textId;
@@ -91,39 +92,28 @@ public class TeleportInterface {
 
 	public enum Monsters {
 
-		ZIRCONIS(50601, "Cars", "@mag@Starter Npc", "@cya@Good for Starter gear!", "", "", "", 1265,
-				new int[] { 2504, 2506, 1 }),
-		NEW_BOSS_TELEPORT(50602, "Crash", "@mag@Gun Npc", "@cya@Drops Guns!", "", "", "", 2437,
-				new int[] { 2504, 2523, 1 }),
-		BANDITS_CAMP(50603, "Terror dog", "@mag@Assassin Npc", "@cya@Drops Assassin items!", "", "", "", 5417,
-				new int[] { 2504, 2540, 1 }),
-		YAK_FIELD(50604, "Pinguin", "@mag@Predator Npc", "@cya@Drops Predator items!", "", "", "", 131, new int[] { 2521, 2551, 1 }),
-		GHOUL_FIELD(50605, "Nature Sword", "@mag@Nature Npc", "@cya@Drops Nature items!", "", "", "", 1459, new int[] { 2549, 2551, 1 }),
-		ARMOURED_ZOMBIES(50606, "Aurlia", "@mag@Oblivion Npc", "@cya@Drops Oblivion items!", "", "", "", 6102,
-				new int[] { 2567, 2550, 1 }),
-		DUST_DEVILS(50607, "Belerion", "@mag@Depature Npc", "@cya@Drops dark depature items!", "", "", "", 4392, new int[] { 2551, 2517, 1 }),
-		MONKEY_SKELETONS(50608, "Livyathann", "@mag@Trio Npc", "@cya@Drops Trio items!", "", "", "", 52, new int[] { 2551, 2517, 2 }),
-		MONKEY_GUARDS(50609, "Dire Wolf", "@mag@Wolf Npc", "@cya@Drops Dire Wolf gloves!", "", "", "", 4413, new int[] { 2551, 2534, 2 }),
-		CHAOS_DRUIDS(50610, "Yeti", "@mag@Animal Npc", "@cya@Drops Animal items!", "", "", "", 130, new int[] { 2549, 2551, 2 }),
-		CHICKEN_PEN(50611, "Torvian", "@mag@Electric Npc", "@cya@Drops Electric items!", "", "", "", 5472, new int[] { 2521, 2551, 2 }),
+		CAR(50601, "Cars", "@mag@Starter Npc", "@cya@Good for Starter gear!", "", "", "", 1265, new int[] { 2504, 2506, 1 }),
+		CRASH(50602, "Crash", "@mag@Gun Npc", "@cya@Drops Guns!", "", "", "", 2437, new int[] { 2504, 2523, 1 },1000),
+		TERROR_DOG(50603, "Terror dog", "@mag@Assassin Npc", "@cya@Drops Assassin items!", "", "", "", 5417, new int[] { 2504, 2540, 1 }),
+		PENGUIN(50604, "Penguin", "@mag@Predator Npc", "@cya@Drops Predator items!", "", "", "", 131, new int[] { 2521, 2551, 1 }),
+		NATURE_SWORD(50605, "Nature Sword", "@mag@Nature Npc", "@cya@Drops Nature items!", "", "", "", 1459, new int[] { 2549, 2551, 1 }),
+		AURLIA(50606, "Aurlia", "@mag@Oblivion Npc", "@cya@Drops Oblivion items!", "", "", "", 6102, new int[] { 2567, 2550, 1 }),
+		BELERION(50607, "Belerion", "@mag@Depature Npc", "@cya@Drops dark depature items!", "", "", "", 4392, new int[] { 2551, 2517, 1 }),
+		LIVYATHANN(50608, "Livyathann", "@mag@Trio Npc", "@cya@Drops Trio items!", "", "", "", 52, new int[] { 2551, 2517, 2 }),
+		DIRE_WOLF(50609, "Dire Wolf", "@mag@Wolf Npc", "@cya@Drops Dire Wolf gloves!", "", "", "", 4413, new int[] { 2551, 2534, 2 }),
+		YETI(50610, "Yeti", "@mag@Animal Npc", "@cya@Drops Animal items!", "", "", "", 130, new int[] { 2549, 2551, 2 }),
+		TORVIAN(50611, "Torvian", "@mag@Electric Npc", "@cya@Drops Electric items!", "", "", "", 5472, new int[] { 2521, 2551, 2 }),
 		// this is 1st field etc
-		TEST(50612, "Bandos Avatar", "@red@Avatar Npc", "@yel@Drops Avatar items!", "", "", "", 4540,
-				new int[] { 2867, 9946, 0 }),
-		ABYSSAL_SIRE(50613, "Abbadon", "@red@THIS NPC IS IN MULTI!", "@yel@Drops Abbadon items!", "", "", "", 6303,
-				new int[] { 2517, 5172, 0 }, 4000),
-		ABBADON(50614, "Infernal Groudon", "@red@THIS NPC IS IN MULTI!", "@yel@Drops Infernal items!", "", "", "", 1234, new int[] { 1240, 1227, 0 }, 4000),
-		ABYZOU_WRENCHER(50615, "Baphomet", "@red@Baphomet Npc!", "@yel@Drops Baphomet items!", "", "", "", 2236,
-				new int[] { 2458, 10157, 0 }, 3000),
-		ANGRY_REX(50616, "Athena Guardian", "@red@Guardian Npc!", "@yel@Drops Guardian items!", "", "", "", 6305, new int[] { 2482, 10146, 0 }),
-		BARRELCHEST(50617, "Heartwrencher", "@red@Wrencher Npc!", "@yel@Drops mainly 1b Tickets!", "", "", "", 6313, new int[] { 2732, 9976, 0 }),
-		BANDOS_AVATAR(50618, "Le'Fosh", "@red@Le'Fosh Npc!", "@yel@Drops Le'Fosh items!", "", "", "", 6309, new int[] { 3620, 3534, 0 },
-				2000),
-		BALANCE_ELEMENTAL(50619, "Alien", "@red@Alien Npc!", "@yel@Drops Alien items!", "", "", "", 4419,
-				new int[] { 2420, 4690, 0 }, 2000),
-		BLACKSTONE_WARMONGER(50620, "Vladimir", "@red@ Draynor Npc!", "@yel@Drops Draynor items!", "",
-				"", "", 9357, new int[] { 2395, 4681, 0 }, 4000),
-		BORK(50621, "3 Brothers", "@red@Brothers Npc!", "@yel@Drops Brothers items!", "", "", "", 9911, 
-				new int[] { 2505, 2540, 2 });
+		BANDOS_AVATAR(50612, "Bandos Avatar", "@red@Avatar Npc", "@yel@Drops Avatar items!", "", "", "", 4540, new int[] { 2867, 9946, 0 },2000),
+		ABBADON(50613, "Abbadon", "@red@THIS NPC IS IN MULTI!", "@yel@Drops Abbadon items!", "", "", "", 6303, new int[] { 2517, 5172, 0 }, 4000),
+		INFERNAL_GROUDON(50614, "Infernal Groudon", "@red@THIS NPC IS IN MULTI!", "@yel@Drops Infernal items!", "", "", "", 1234, new int[] { 1240, 1227, 0 }, 2000),
+		BAPHOMET(50615, "Baphomet", "@red@Baphomet Npc!", "@yel@Drops Baphomet items!", "", "", "", 2236, new int[] { 2458, 10157, 0 }, 2000),
+		ATHENA_GUARDIAN(50616, "Athena Guardian", "@red@Guardian Npc!", "@yel@Drops Guardian items!", "", "", "", 6305, new int[] { 2482, 10146, 0 }),
+		HEARTWRENCHER(50617, "Heartwrencher", "@red@Wrencher Npc!", "@yel@Drops mainly 1b Tickets!", "", "", "", 6313, new int[] { 2732, 9976, 0 },2500),
+		LEFOSH(50618, "Le'Fosh", "@red@Le'Fosh Npc!", "@yel@Drops Le'Fosh items!", "", "", "", 6309, new int[] { 3620, 3534, 0 }),
+		ALIEN(50619, "Alien", "@red@Alien Npc!", "@yel@Drops Alien items!", "", "", "", 4419, new int[] { 2420, 4690, 0 }, 1800),
+		VLADIMIR(50620, "Vladimir", "@red@ Draynor Npc!", "@yel@Drops Draynor items!", "", "", "", 9357, new int[] { 2395, 4681, 0 }),
+		THREE_BROTHERS(50621, "3 Brothers", "@red@Brothers Npc!", "@yel@Drops Brothers items!", "", "", "", 9911, new int[] { 2505, 2540, 2 },3000);
 
 		Monsters(int textId, String name, String description1, String description2, String description3,
 				String description4, String description5, int npcId, int[] teleportCords) {
@@ -205,27 +195,21 @@ public class TeleportInterface {
 
 	public enum Skilling {
 		PRAYER(50601, "Donator Store", "@gre@Donator Store", "@cya@This is the Donation Shop!", "", "", "", 212, new int[] { 2531, 2518, 1 }),
-		DONATION_SHOP_2(50602, "Donator Store 2", "@gre@Donator Store 2", "@cya@The 2nd Donation Shop!", "", "", "", 548,
-				new int[] { 2582, 2572, 1 }),
-		RUNECRAFTING(50603, "Vote Store", "@gre@King Lathas", "@cya@This is the Voting Shop!", "", "", "", 364,
-				new int[] { 2532, 2518, 1 }),
-		CONSTRUCTION(50604, "Boss Point Store", "@gre@Boss Point Store", "@cya@This is the Boss Point Shop!", "", "", "", 273,
-				new int[] { 2533, 2518, 1 }),
+		DONATION_SHOP_2(50602, "Donator Store 2", "@gre@Donator Store 2", "@cya@The 2nd Donation Shop!", "", "", "", 548, new int[] { 2582, 2572, 1 }),
+		RUNECRAFTING(50603, "Vote Store", "@gre@King Lathas", "@cya@This is the Voting Shop!", "", "", "", 364, new int[] { 2532, 2518, 1 }),
+		CONSTRUCTION(50604, "Boss Point Store", "@gre@Boss Point Store", "@cya@This is the Boss Point Shop!", "", "", "", 273, new int[] { 2533, 2518, 1 }),
 		FISHING(50605, "Trivia Point Store", "@gre@Trivia Point Store", "@cya@This Shop sells Trivia Boxes!", "", "", "", 2633, new int[] { 2532, 2502, 1 }),
 		AGILITY(50606, "Prestige Store", "@gre@Prestige Point Store", "@cya@The Prestige Point Shop!", "", "", "", 4559, new int[] { 2535, 2518, 1 }),
 		DUNGEONEERING(50607, "Cards Store", "@gre@Scratch Card Store", "@cya@The Scratch Card Shop!", "", "", "", 7969, new int[] { 2534, 2518, 1 }),
 		HUNTER(50608, "Healer Store", "@gre@Healer Store", "@cya@The Shop has Consumables!", "", "", "", 961, new int[] { 2534, 2524, 1 }),
 		HERBLORE(50609, "Loyalty Store", "@gre@Loyalty Point Store", "@cya@The Loyalty Point Shop!", "", "", "", 602, new int[] { 2536, 2518, 1 }),
-		THIEVING(50610, "Slayer Store", "@gre@Slayer Store", "@cya@Vannaka has a Slayer Shop!", "", "", "", 1597,
-				new int[] { 2526, 2518, 1 }),
+		THIEVING(50610, "Slayer Store", "@gre@Slayer Store", "@cya@Vannaka has a Slayer Shop!", "", "", "", 1597, new int[] { 2526, 2518, 1 }),
 		CRAFTING(50611, "Player Store", "@gre@Player Owned Shop!", "@cya@You can sell items here!", "", "", "", 947, new int[] { 2525, 2524, 1 }),
-		COOKING(50612, "Guardian Store", "@gre@Graveyard Guardian", "@cya@This Shop sells items!", "", "", "", 3101, new int[] { 2539, 2534, 1 }),
+		COOKING(50612, "Guardian Store", "@gre@Graveyard Guardian", "@cya@This Shop sells items!", "", "", "", 3101, new int[] { 2539, 2534, 1 },2000),
 		SKILLCAPESHOP(50613, "Skillcapes Store", "@gre@Skillcapes Store", "@cya@This is the Skillcape Shop!", "", "", "", 2253, new int[] { 2519, 2527, 1 }),
 		SMITHING(50614, "Make-over", "@gre@Make-over Mage", "@cya@Mage changes your looks!", "", "", "", 2676, new int[] { 2522, 2502, 1 }),
-		FLETCHING(50615, "Town Crier", "@gre@Town Crier", "@cya@He can change Passwords!", "", "", "", 6139,
-				new int[] { 2539, 2529, 1 }),
-		ROCNAR(50616, "Rocnar", "@gre@Rocnar", "@cya@He Buys and Sells items!", "", "", "", 3594,
-				new int[] { 2526, 2528, 1 });
+		FLETCHING(50615, "Town Crier", "@gre@Town Crier", "@cya@He can change Passwords!", "", "", "", 6139, new int[] { 2539, 2529, 1 }),
+		ROCNAR(50616, "Rocnar", "@gre@Rocnar", "@cya@He Buys and Sells items!", "", "", "", 3594, new int[] { 2526, 2528, 1 });
 
 		Skilling(int textId, String name, String description1, String description2, String description3,
 				String description4, String description5, int npcId, int[] teleportCords) {
@@ -267,18 +251,18 @@ public class TeleportInterface {
 	}
 
 	public enum Minigames {
-		INSTANCE_MANAGER(50601, "Instance Manager", "@red@Instance Manager", "@yel@Instance to SOLO Bosses!", "", "", "", 457,
-				new int[] { 2525, 2502, 1 }),
+		INSTANCE_MANAGER(50601, "Instance Manager", "@red@Instance Manager", "@yel@Instance to SOLO Bosses!", "", "", "", 457, new int[] { 2525, 2502, 1 }),
 		FIGHT_CAVE(50602, "Pest Control", "@red@Pest Control", "@yel@You enter the ship", "@mag@Reward is Commendations!", "", "", 6145, new int[] { 2658, 2660, 0 }, 4000),
-		FIGHT_PITS(50603, "Godzilla", "@red@Godzilla", "@mag@Drops Godzilla items!", "", "", "", 1299, new int[] { 2900, 3617, 0 }),
-		PEST_CONTROL(50604, "Point Zone", "@red@Athena Warriors", "@mag@Drops Warriors items!", "", "", "", 2436, new int[] { 2766, 2799, 0 }),
-		DUEL_ARENA(50605, "Warrior's Guild", "@red@Warrior's Guild!", "@mag@Trade Armour Store!", "", "", "", 650, new int[] { 2841, 3538, 0 }),
-		WARRIOR_GUILD(50606, "Gambler Zone", "@red@Gambling Zone!", "@mag@Flower Poker vs PLAYERS!", "", "", "", 2998, new int[] { 2737, 3472, 0 }),
-		RECIPE_FOR_DIASTER(50607, "AFK Evil Tree", "@red@AFK Evil Tree", "@mag@Chop Evil Tree!", "", "", "", 4906, new int[] { 2504, 2519, 2 }),
-		CULINAROMANCER(50608, "Gypse", "@red@Enter the Culinar Portal", "@mag@Talk with the Gypse!", "", "", "", 3385, new int[] { 2561, 2532, 1 }),
+		//FIGHT_PITS(50603, "Godzilla", "@red@Godzilla", "@mag@Drops Godzilla items!", "", "", "", 1299, new int[] { 2900, 3617, 0 }),
+		PEST_CONTROL(50603, "Point Zone", "@red@Athena Warriors", "@mag@Drops Warriors items!", "", "", "", 2436, new int[] { 2766, 2799, 0 }),
+		DUEL_ARENA(50604, "Warrior's Guild", "@red@Warrior's Guild!", "@mag@Trade Armour Store!", "", "", "", 650, new int[] { 2841, 3538, 0 }),
+		WARRIOR_GUILD(50605, "Gambler Zone", "@red@Gambling Zone!", "@mag@Flower Poker vs PLAYERS!", "", "", "", 2998, new int[] { 2737, 3472, 0 }),
+		RECIPE_FOR_DIASTER(50606, "AFK Evil Tree", "@red@AFK Evil Tree", "@mag@Chop Evil Tree!", "", "", "", 4906, new int[] { 2504, 2519, 2 }),
+		CULINAROMANCER(50607, "Gypse", "@red@Enter the Culinar Portal", "@mag@Talk with the Gypse!", "", "", "", 3385, new int[] { 2561, 2532, 1 }),
 		//NOMAD(50608, "Bad Santa", "@red@", "", "", "", "", 1, new int[] { 2977, 9519, 1 });
-		LUIGI(50609, "Luigi", "@red@Luigi Npc!", "@mag@Reward is 7 Dragon balls!", "", "", "", 3, new int[] { 2535, 2501, 1 });
-		
+		LUIGI(50608, "Luigi", "@red@Luigi Npc!", "@mag@Reward is 7 Dragon balls!", "", "", "", 3, new int[] { 2535, 2501, 1 });
+		//ZOMBIE_SLAUGHTER(50609, "Zombie Slaughter", "", "", "", "", "", 73, new int[] { 3503, 3563, 0 });
+
 		Minigames(int textId, String name, String description1, String description2, String description3,
 				String description4, String description5, int npcId, int[] teleportCords) {
 			this.textId = textId;
@@ -320,11 +304,9 @@ public class TeleportInterface {
  */
 	public enum Cities { //events tab
 		TEST(50601, "Roy", "@bla@Roy", "@mag@It's a Multi Boss!", "@yel@Spawns every 1 minute!", "@yel@Teleport once he Spawns!", "", 2515, new int[] { 2580, 2572, 1 }),
-		GANO(50602, "Gano", "@red@Take this boss down!", "@mag@Gano's drops are invisible.", "", "", "", /*Replace this ID*/2070/*Replace this id*/,
-				new int[] { 3170, 2991, 0 }),
+		GANO(50602, "Gano", "@red@Take this boss down!", "@mag@Gano's drops are invisible.", "", "", "", /*Replace this ID*/2070/*Replace this id*/, new int[] { 3170, 2991, 0 }),
 		Vanquisher(50603, "Vanquisher", "@bla@Vanquisher", "@mag@It's a Multi Boss!", "@yel@Spawns every 3 minutes!", "", "", 3915, new int[] { 2700, 9998, 0 }),
-		Ultimatium(50604, "Ultimatium", "@red@Very Strong Boss!", "@mag@This Npc damages everyone.", "", "", "",8507,
-				new int[] { 2905, 2780, 0 });
+		Ultimatium(50604, "Ultimatium", "@red@Very Strong Boss!", "@mag@This Npc damages everyone.", "", "", "",8507, new int[] { 2905, 2780, 0 });
 		
 		Cities(int textId, String name, String description1, String description2, String description3,
 				String description4, String description5, int npcId, int[] teleportCords) {
