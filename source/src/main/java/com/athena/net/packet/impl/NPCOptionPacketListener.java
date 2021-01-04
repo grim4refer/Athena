@@ -461,9 +461,9 @@ public class NPCOptionPacketListener implements PacketListener {
 					case 2063:
 						ImmortalRaidsManager.handleNPCInteraction(player, 2);
 						break;
-//					case 947:
-//						player.getPlayerOwnedShopManager().open();
-//						break;
+					case 947:
+						player.getPlayerOwnedShopManager().open();
+						break;
 					case 2622:
 						ShopManager.getShops().get(43).open(player);
 						break;
@@ -586,9 +586,9 @@ public class NPCOptionPacketListener implements PacketListener {
 							return;
 						}
 						break;
-//					case 947:
-//						player.getPlayerOwnedShopManager().openEditor();
-//						break;
+					case 947:
+						player.getPlayerOwnedShopManager().openEditor();
+						break;
 					case 946:
 						ShopManager.getShops().get(0).open(player);
 						break;
