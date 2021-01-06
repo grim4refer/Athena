@@ -49,6 +49,15 @@ public enum CombatSpecial {
                             true);
                 }
             },
+    ICY_CLAWS(new int[]{5168}, 30, 3, 4.4, CombatType.MELEE, WeaponInterface.CLAWS) {
+        @Override
+        public CombatContainer container(Player player, Character target) {
+            player.performAnimation(new Animation(10961));
+            player.performGraphic(new Graphic(1950));
+
+            return new CombatContainer(player, target, 4, CombatType.MELEE, true);
+        }
+    },
     DUAL_SWORD(new int[]{20873}, 25, 2, 2, CombatType.MELEE, WeaponInterface.FASTSPEED2) {
                 @Override
                 public CombatContainer container(Player player, Character target) {

@@ -3827,6 +3827,113 @@ public class ItemDef_Athena_1 {
                 itemDef.editedModelColor[0] = 8334;
                 itemDef.originalModelColor[0] = 32703;
                 break;
+            case 5163:
+                itemDef.modelID = 96510;
+                itemDef.name = "Icy Golem Head";
+                itemDef.description = "Icy Golem set";
+                itemDef.modelZoom = 900;
+                itemDef.rotationY = 100;
+                itemDef.rotationX = 0;
+                itemDef.modelOffset1 = -1;
+                itemDef.modelOffsetY = -1;
+                itemDef.maleEquip1 = 96511;
+                itemDef.femaleEquip1 = 96511;
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                itemDef.actions[4] = "Drop";
+                itemDef.editedModelColor = new int[] {40};
+                itemDef.newModelColor = new int[]  {51};
+                break;
+
+            case 5164:
+                itemDef.modelID = 96512;
+                itemDef.name = "Icy Golem Body";
+                itemDef.description = "Icy Golem set";
+                itemDef.modelZoom = 1500;
+                itemDef.rotationY = 500;
+                itemDef.rotationX = 0;
+                itemDef.modelOffset1 = -1;
+                itemDef.modelOffsetY = -1;
+                itemDef.maleEquip1 = 96513;
+                itemDef.femaleEquip1 = 96513;
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                itemDef.actions[4] = "Drop";
+                itemDef.editedModelColor = new int[] {40};
+                itemDef.newModelColor = new int[]  {51};
+                break;
+
+            case 5165:
+                itemDef.modelID = 96514;
+                itemDef.name = "Icy Golem Legs";
+                itemDef.description = "Icy Golem set";
+                itemDef.modelZoom = 1800;
+                itemDef.rotationY = 500;
+                itemDef.rotationX = 0;
+                itemDef.modelOffset1 = -1;
+                itemDef.modelOffsetY = -1;
+                itemDef.maleEquip1 = 96515;
+                itemDef.femaleEquip1 = 96515;
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                itemDef.actions[4] = "Drop";
+                itemDef.editedModelColor = new int[] {40};
+                itemDef.newModelColor = new int[]  {51};
+                break;
+
+            case 5166:
+                itemDef.modelID = 96516;
+                itemDef.name = "Icy Golem Gloves";
+                itemDef.description = "Icy Golem set";
+                itemDef.modelZoom = 1000;
+                itemDef.rotationY = 500;
+                itemDef.rotationX = 0;
+                itemDef.modelOffset1 = -1;
+                itemDef.modelOffsetY = -1;
+                itemDef.maleEquip1 = 96517;
+                itemDef.femaleEquip1 = 96517;
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                itemDef.actions[4] = "Drop";
+                itemDef.editedModelColor = new int[] {40};
+                itemDef.newModelColor = new int[]  {51};
+                break;
+
+            case 5167:
+                itemDef.modelID = 96518;
+                itemDef.name = "Icy Golem Boots";
+                itemDef.description = "Icy Golem set";
+                itemDef.modelZoom = 1000;
+                itemDef.rotationY = 500;
+                itemDef.rotationX = 0;
+                itemDef.modelOffset1 = -1;
+                itemDef.modelOffsetY = -1;
+                itemDef.maleEquip1 = 96518;
+                itemDef.femaleEquip1 = 96518;
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                itemDef.actions[4] = "Drop";
+                itemDef.editedModelColor = new int[] {40};
+                itemDef.newModelColor = new int[]  {51};
+                break;
+
+            case 5168:
+                itemDef.modelID = 90311;
+                itemDef.name = "Icy Vorago Claws";
+                itemDef.description = "Icy Golem set";
+                itemDef.modelZoom = 1200;
+                itemDef.rotationY = 500;
+                itemDef.rotationX = 0;
+                itemDef.modelOffset1 = -1;
+                itemDef.modelOffsetY = -1;
+                itemDef.maleEquip1 = 90310;
+                itemDef.femaleEquip1 = 90310;
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                itemDef.actions[4] = "Drop";
+               // itemDef.editedModelColor = new int[] {40};
+                //itemDef.newModelColor = new int[]  {51};
+                break;
         }
         return ItemDef_Jarrod_1.forDef(itemDef, ID);
     }

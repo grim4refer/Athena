@@ -350,6 +350,16 @@ public final class ItemDef {
 				model.setTexture(59,800,10000000);
 				break;
 
+			case 5163:
+			case 5164:
+			case 5165:
+			case 5166:
+			case 5167:
+			case 5168:
+				model.setTexture(40,0,20562);
+				break;
+
+
 			case 11665:
 			case 11663:
 			case 11664:

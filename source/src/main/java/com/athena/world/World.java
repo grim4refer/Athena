@@ -125,7 +125,7 @@ public class World {
 	}
 
 	public static void updatePlayersOnline() {
-		//players.forEach(p-> p.getPacketSender().sendString(39173, PlayerPanel.LINE_START + "@or1@Players Online: @yel@"+players.size()));
+		players.forEach(p-> p.getPacketSender().sendString(39173, PlayerPanel.LINE_START + "@or1@Players Online: @yel@"+players.size()));
 		players.forEach(p -> p.getPacketSender().sendString(26608, "@or2@Players Online: @gre@"+ (players.size()) +""));
 		players.forEach(p -> p.getPacketSender().sendString(57003, "Players:  @gre@"+ (World.getPlayers().size()) +""));
 		updateStaffList();
