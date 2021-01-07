@@ -3934,6 +3934,201 @@ public class ItemDef_Athena_1 {
                // itemDef.editedModelColor = new int[] {40};
                 //itemDef.newModelColor = new int[]  {51};
                 break;
+
+            case 8893:
+                itemDef.modelID = 64513;
+                itemDef.name = "@whi@whitebeard Helm";
+                itemDef.description = "I can almost feel the dark power coming";
+                itemDef.modelZoom = 900;
+                itemDef.rotationY = 100;
+                itemDef.rotationX = 0;
+                itemDef.modelOffset1 = -1;
+                itemDef.modelOffsetY = -1;
+                itemDef.maleEquip1 = 64514;
+                itemDef.femaleEquip1 = 64514;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                itemDef.actions[4] = "Drop";
+                break;
+
+            case 8894:
+                itemDef.modelID = 64515;
+                itemDef.name = "@whi@whitebeard Body";
+                itemDef.description = "I can almost feel the dark power coming";
+                itemDef.modelZoom = 1306;
+                itemDef.rotationY = 473;
+                itemDef.rotationX = 2042;
+                itemDef.modelOffset1 = 0;
+                itemDef.modelOffsetY = 0;
+                itemDef.maleEquip1 = 64516;
+                itemDef.femaleEquip1 = 64516;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                itemDef.actions[4] = "Drop";
+                break;
+
+            case 8895:
+                itemDef.modelID = 64517;
+                itemDef.name = "@whi@whitebeard Legs";
+                itemDef.description = "I can almost feel the dark power coming";
+                itemDef.modelZoom = 1306;
+                itemDef.rotationY = 473;
+                itemDef.rotationX = 2042;
+                itemDef.modelOffset1 = 0;
+                itemDef.modelOffsetY = 0;
+                itemDef.maleEquip1 = 64518;
+                itemDef.femaleEquip1 = 64518;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                itemDef.actions[4] = "Drop";
+                break;
+
+            case 8896:
+                itemDef.name = "@whi@whitebeard Gloves";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wield";
+                itemDef.modelID = 64519;
+                itemDef.modelZoom = 1200;
+                itemDef.rotationY = 500;
+                itemDef.rotationX = 0;
+                itemDef.modelOffset1 = -1;
+                itemDef.modelOffsetY = -1;
+                itemDef.maleEquip1 = 64520;
+                itemDef.femaleEquip1 = 64520;
+                break;
+
+            case 8897:
+                itemDef.name = "@whi@whitebeard Boots";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wield";
+                itemDef.modelID = 64521;
+                itemDef.modelZoom = 1200;
+                itemDef.rotationY = 500;
+                itemDef.rotationX = 0;
+                itemDef.modelOffset1 = -1;
+                itemDef.modelOffsetY = -1;
+                itemDef.maleEquip1 = 64521;
+                itemDef.femaleEquip1 = 64521;
+                break;
+
+            case 8898:
+                itemDef.name = "@whi@whitebeard Staff";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wield";
+                itemDef.modelID = 64522;
+                itemDef.modelZoom = 1200;
+                itemDef.rotationY = 500;
+                itemDef.rotationX = 0;
+                itemDef.modelOffset1 = -1;
+                itemDef.modelOffsetY = -1;
+                itemDef.maleEquip1 = 64523;
+                itemDef.femaleEquip1 = 64523;
+                break;
+
+            case 8899:
+                itemDef.name = "@whi@whitebeard Cape";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wield";
+                itemDef.modelID = 64524;
+                itemDef.modelZoom = 1200;
+                itemDef.rotationY = 500;
+                itemDef.rotationX = 0;
+                itemDef.modelOffset1 = -1;
+                itemDef.modelOffsetY = -1;
+                itemDef.maleEquip1 = 64525;
+                itemDef.femaleEquip1 = 64525;
+                break;
+            case 3297:
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wield";
+                itemDef.modelID = 90927;
+                itemDef.modelZoom = 1200;
+                itemDef.rotationY = 500;
+                itemDef.rotationX = 0;
+                itemDef.modelOffsetY = -6;
+                itemDef.modelOffsetX = 1;
+                itemDef.maleEquip1 = 90927;
+                itemDef.femaleEquip1 = 90927;
+                itemDef.name = "Storm Breaker Boots";
+                break;
+
+            case 3298:
+                itemDef.modelID = 90936;
+                itemDef.name = "Storm Breaker Maul";
+                itemDef.description = "Toxidian Maul";
+                itemDef.modelZoom = 2000;
+                itemDef.rotationY = 500;
+                itemDef.modelOffset1 = -1;
+                itemDef.modelOffsetY = -1;
+                itemDef.maleEquip1 = 90938;
+                itemDef.femaleEquip1 = 90938;
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                itemDef.actions[4] = "Drop";
+                break;
+
+            case 3299:
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wield";
+                itemDef.modelID = 90930;
+                itemDef.modelZoom = 1000;
+                itemDef.rotationY = 100;
+                itemDef.rotationX = 0;
+                itemDef.modelOffsetY = -6;
+                itemDef.modelOffsetX = 1;
+                itemDef.maleEquip1 = 90931;
+                itemDef.femaleEquip1 = 90931;
+                itemDef.name = "Storm Breaker Helm";
+                break;
+
+            case 3300:
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wield";
+                itemDef.modelID = 90934;
+                itemDef.modelZoom = 1600;
+                itemDef.rotationY = 500;
+                itemDef.rotationX = 0;
+                itemDef.modelOffsetY = -6;
+                itemDef.modelOffsetX = 1;
+                itemDef.maleEquip1 = 90935;
+                itemDef.femaleEquip1 = 90935;
+                itemDef.name = "Storm Breaker Body";
+                break;
+
+            case 3301:
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wield";
+                itemDef.modelID = 90932;
+                itemDef.modelZoom = 1600;
+                itemDef.rotationY = 500;
+                itemDef.rotationX = 0;
+                itemDef.modelOffsetY = -6;
+                itemDef.modelOffsetX = 1;
+                itemDef.maleEquip1 = 90933;
+                itemDef.femaleEquip1 = 90933;
+                itemDef.name = "Storm Breaker Legs";
+                break;
+
+            case 3302:
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wield";
+                itemDef.modelID = 90928;
+                itemDef.modelZoom = 1600;
+                itemDef.rotationY = 500;
+                itemDef.rotationX = 0;
+                itemDef.modelOffsetY = -6;
+                itemDef.modelOffsetX = 1;
+                itemDef.maleEquip1 = 90929;
+                itemDef.femaleEquip1 = 90929;
+                itemDef.name = "Storm Breaker Gloves";
+                break;
+
         }
         return ItemDef_Jarrod_1.forDef(itemDef, ID);
     }

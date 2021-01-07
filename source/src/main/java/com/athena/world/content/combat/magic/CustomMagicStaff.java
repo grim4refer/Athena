@@ -17,6 +17,7 @@ public class CustomMagicStaff {
         INFERNAL_BATTLESTAFF(new int[] { 20998 }, CombatSpells.INFERNAL_BATTLESTAFF_SPELL.getSpell()),
         DRACONIAN_STAFF(new int[] { 3661 }, CombatSpells.DRACONIAN_SPELL.getSpell()),
         OBLIVIONSTAFF(new int[] { 21061 }, CombatSpells.OBLIVION.getSpell()),
+        WINTER4EVER(new int[] { 8898 }, CombatSpells.WINTER4EVER.getSpell()),
         WATER_STAFF(new int[] { 20604 }, CombatSpells.WATER_STAFF.getSpell()),
         INFERNAL_STAFF(new int[] { 20602 }, CombatSpells.INFERNAL_STAFF.getSpell()),
         ELITE_STAFF(new int[] { 18891 }, CombatSpells.ELITE_SPELL.getSpell()),

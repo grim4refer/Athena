@@ -3721,6 +3721,43 @@ public final class NPCDef {
                 npc.squaresNeeded = 1;
                 npc.actions = new String[]{null, "Attack", null, null, null};
                 break;
+            case 9003:
+                npc.name = "@whi@WhiteBeard";
+                npc.models = new int[]{140104};
+                npc.combatLevel = 100;
+                npc.squaresNeeded = 1;
+                npc.walkAnim = 11975;
+                npc.standAnim = 11973;
+                //npc.models = new int[6];
+                npc.actions = new String[5];
+                npc.actions = new String[] {null, "Attack", null, null, null};
+                npc.sizeXZ = 200;
+                npc.sizeY = 200;
+                npc.drawMinimapDot = true;
+                break;
+            case 4304:
+                npc.name = "@gre@King Storm Breaker";
+                npc.combatLevel = 100;
+                npc.squaresNeeded = 1;
+                npc.walkAnim = 11975;
+                npc.standAnim = 11973;
+                npc.models = new int[6];
+                npc.models[0] = 90927; //HEAD
+                npc.models[1] = 90938; //CHEST
+                npc.models[2] = 90931; //CAPE
+                npc.models[3] = 90935; //HAND
+                npc.models[4] = 90933; //LEG
+                npc.models[5] = 90929; //WEAPON
+                npc.actions = new String[5];
+                npc.actions = new String[] {null, "Attack", null, null, null};
+                npc.sizeXZ = 180;
+                npc.sizeY = 180;
+                break;
+
+
+
+
+
             //case 4425:
             //	npc.name = "Callisto";
             //		npc.models = new int[] { 28298 };

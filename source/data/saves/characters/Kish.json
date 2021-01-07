@@ -1,39 +1,39 @@
 {
-  "total-play-time-ms": 31726002001,
+  "total-play-time-ms": 31742444145,
   "username": "Kish",
   "password": "123",
   "email": "null",
   "staff-rights": "OWNER",
   "game-mode": "NORMAL",
-  "boss-points": 499,
+  "boss-points": 503,
   "npc-kills": 0,
   "ArcticPS-points": 0,
   "transform-id": 0,
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2272,
-    "y": 4701,
-    "z": 0
+    "x": 2984,
+    "y": 9517,
+    "z": 1
   },
   "online-status": "ON",
   "given-starter": true,
   "money-pouch": 0,
-  "donated": 0,
+  "donated": 1,
   "starterclaimed": false,
   "pvm-rank": "BRONZE",
   "minutes-bonus-exp": -1,
-  "total-gained-exp": 78012255,
+  "total-gained-exp": 2106554725,
   "prestige-points": 0,
-  "achievement-points": 21,
+  "achievement-points": 35,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 90001752,
-  "total-loyalty-points": 81976.0,
+  "loyalty-points": 90016404,
+  "total-loyalty-points": 96628.0,
   "voting-points": 1,
   "slayer-points": 50,
   "pk-points": 0,
-  "donation-points": 0,
+  "donation-points": 1,
   "trivia-points": 0,
   "cluescompleted": 0,
   "player-kills": 0,
@@ -54,8 +54,8 @@
   "auto-retaliate": true,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 240687924,
-  "fight-type": "CROSSBOW_RAPID",
+  "last-veng": 275257240,
+  "fight-type": "UNARMED_KICK",
   "sol-effect": 0,
   "skull-timer": 0,
   "accept-aid": false,
@@ -479,13 +479,13 @@
   ],
   "skills": {
     "level": [
-      99976,
-      99976,
-      99976,
-      990,
-      277,
-      99999,
-      277,
+      99819,
+      99819,
+      99819,
+      99819,
+      120,
+      96461,
+      120,
       99,
       99,
       99,
@@ -537,9 +537,9 @@
       2000000000,
       2000000000,
       2000000000,
+      2000000000,
       1000000000,
-      1000000000,
-      1000000000,
+      2000000000,
       13034431,
       13048483,
       13034431,
@@ -562,43 +562,43 @@
   },
   "inventory": [
     {
-      "id": -1,
-      "amount": 0,
+      "id": 5022,
+      "amount": 100012900,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 989,
+      "amount": 5,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 11316,
+      "amount": 7,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20201,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 7104,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 1543,
+      "amount": 3,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 8898,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 5023,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -719,8 +719,8 @@
       "slot": 0
     },
     {
-      "id": 20853,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
@@ -729,7 +729,7 @@
       "slot": 0
     },
     {
-      "id": 20854,
+      "id": 13740,
       "amount": 1,
       "slot": 0
     },
@@ -764,13 +764,13 @@
       "slot": 0
     },
     {
-      "id": 773,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 19903,
+      "amount": 9999683,
       "slot": 0
     }
   ],
@@ -927,7 +927,7 @@
     },
     {
       "id": 11316,
-      "amount": 13,
+      "amount": 14,
       "slot": 0
     },
     {
@@ -957,12 +957,12 @@
     },
     {
       "id": 7100,
-      "amount": 3,
+      "amount": 5,
       "slot": 0
     },
     {
       "id": 7118,
-      "amount": 3,
+      "amount": 7,
       "slot": 0
     },
     {
@@ -992,12 +992,12 @@
     },
     {
       "id": 15472,
-      "amount": 1,
+      "amount": 0,
       "slot": 0
     },
     {
       "id": 619,
-      "amount": 1,
+      "amount": 0,
       "slot": 0
     },
     {
@@ -1027,12 +1027,12 @@
     },
     {
       "id": 995,
-      "amount": 100000000,
+      "amount": 200000000,
       "slot": 0
     },
     {
       "id": 15371,
-      "amount": 5,
+      "amount": 10,
       "slot": 0
     },
     {
@@ -1102,17 +1102,24 @@
       "boss": true
     },
     {
-      "runningTotal": 7,
-      "npcId": 25,
-      "npcName": "Bad Santa",
-      "amount": 7,
+      "runningTotal": 8,
+      "npcId": 6305,
+      "npcName": "Yanille Guardian",
+      "amount": 8,
       "boss": true
     },
     {
-      "runningTotal": 6,
+      "runningTotal": 8,
+      "npcId": 25,
+      "npcName": "Bad Santa",
+      "amount": 8,
+      "boss": true
+    },
+    {
+      "runningTotal": 7,
       "npcId": 515,
       "npcName": "Yani",
-      "amount": 6,
+      "amount": 7,
       "boss": true
     },
     {
@@ -1124,8 +1131,22 @@
     },
     {
       "runningTotal": 2,
+      "npcId": 1299,
+      "npcName": "Godzilla",
+      "amount": 2,
+      "boss": true
+    },
+    {
+      "runningTotal": 3,
       "npcId": 367,
       "npcName": "Mayonaise",
+      "amount": 3,
+      "boss": true
+    },
+    {
+      "runningTotal": 2,
+      "npcId": 10039,
+      "npcName": "To\u0027Kash the Bloodchiller",
       "amount": 2,
       "boss": true
     },
@@ -1137,16 +1158,23 @@
       "boss": true
     },
     {
-      "runningTotal": 8,
-      "npcId": 6305,
-      "npcName": "Yanille Guardian",
-      "amount": 8,
+      "runningTotal": 1,
+      "npcId": 10141,
+      "npcName": "Bal\u0027lak The Pummeler",
+      "amount": 1,
       "boss": true
     },
     {
       "runningTotal": 1,
       "npcId": 4540,
       "npcName": "Bandos Avatar",
+      "amount": 1,
+      "boss": true
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 9911,
+      "npcName": "Har\u0027Lakk the Riftsplitter",
       "amount": 1,
       "boss": true
     },
@@ -1172,6 +1200,13 @@
       "boss": true
     },
     {
+      "runningTotal": 12,
+      "npcId": 1265,
+      "npcName": "Car",
+      "amount": 12,
+      "boss": false
+    },
+    {
       "runningTotal": 1,
       "npcId": 5596,
       "npcName": "Jubster",
@@ -1186,11 +1221,25 @@
       "boss": false
     },
     {
-      "runningTotal": 12,
-      "npcId": 1265,
-      "npcName": "Car",
-      "amount": 12,
-      "boss": false
+      "runningTotal": 1,
+      "npcId": 52,
+      "npcName": "Livyathann",
+      "amount": 1,
+      "boss": true
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 131,
+      "npcName": "Penguin",
+      "amount": 1,
+      "boss": true
+    },
+    {
+      "runningTotal": 1,
+      "npcId": 9003,
+      "npcName": "WhiteBeard",
+      "amount": 1,
+      "boss": true
     }
   ],
   "drops": [
@@ -1201,7 +1250,7 @@
     },
     {
       "item": 7118,
-      "amount": 85,
+      "amount": 93,
       "rareDrop": true
     },
     {
@@ -1221,27 +1270,27 @@
     },
     {
       "item": 20977,
-      "amount": 1,
+      "amount": 2,
       "rareDrop": true
     },
     {
       "item": 4461,
-      "amount": 75,
+      "amount": 85,
       "rareDrop": false
     },
     {
       "item": 5022,
-      "amount": 3215700,
+      "amount": 4335500,
       "rareDrop": false
     },
     {
       "item": 16600,
-      "amount": 422,
+      "amount": 633,
       "rareDrop": false
     },
     {
       "item": 7100,
-      "amount": 43,
+      "amount": 47,
       "rareDrop": true
     },
     {
@@ -1321,7 +1370,7 @@
     },
     {
       "item": 20205,
-      "amount": 1,
+      "amount": 2,
       "rareDrop": false
     },
     {
@@ -1336,7 +1385,7 @@
     },
     {
       "item": 5023,
-      "amount": 17,
+      "amount": 18,
       "rareDrop": true
     },
     {
@@ -1361,7 +1410,7 @@
     },
     {
       "item": 1543,
-      "amount": 12,
+      "amount": 15,
       "rareDrop": false
     },
     {
@@ -1382,6 +1431,31 @@
     {
       "item": 1115,
       "amount": 4,
+      "rareDrop": false
+    },
+    {
+      "item": 11320,
+      "amount": 125,
+      "rareDrop": false
+    },
+    {
+      "item": 13740,
+      "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 20604,
+      "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 20201,
+      "amount": 1,
+      "rareDrop": false
+    },
+    {
+      "item": 7104,
+      "amount": 1,
       "rareDrop": false
     }
   ],
@@ -1404,11 +1478,11 @@
     9,
     1,
     0,
-    0,
+    1,
     0,
     1,
     0,
-    0,
+    1,
     0,
     0,
     0,
@@ -1479,38 +1553,11 @@
     false,
     true,
     true,
-    false,
-    false,
-    true,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
     true,
     true,
-    false,
-    false,
-    false,
-    false,
+    true,
+    true,
+    true,
     false,
     false,
     false,
@@ -1546,11 +1593,38 @@
     false,
     false,
     false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
     true,
     false,
     true,
     true,
-    false,
+    true,
     true,
     false,
     true,
@@ -1560,7 +1634,7 @@
     9,
     0,
     0,
-    0,
+    23,
     0,
     12,
     0,
