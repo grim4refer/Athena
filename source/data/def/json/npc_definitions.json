@@ -21,7 +21,7 @@
     "defenceRange": 33,
     "defenceMage": 0
   },
-  {
+  /*{
   		"id": 8507,
 		"name": "Ultimatium",
 	    "examine": ":O Your examining me Kek.",
@@ -42,7 +42,7 @@
 	    "defenceMelee": 777,
 	    "defenceRange": 4444,
 	    "defenceMage": 333
-		},
+		},*/
 		{
     "id": 7000,
     "name": "Adamant dragon",
@@ -94938,25 +94938,25 @@
   },
   {
     "id": 4303,
-    "name": "Guard",
-    "examine": "A guard for the humans against monster group.",
-    "combat": 22,
-    "size": 1,
-    "attackable": false,
-    "aggressive": false,
-    "retreats": false,
-    "poisonous": false,
-    "respawn": 10,
-    "maxHit": 1,
-    "hitpoints": 22,
-    "attackSpeed": 7,
-    "attackAnim": 422,
-    "defenceAnim": 404,
-    "deathAnim": 2304,
-    "attackBonus": 28,
-    "defenceMelee": 28,
-    "defenceRange": 28,
-    "defenceMage": 0
+   "name": "Ultimatium",
+    "examine": ":O Your examining me Kek.",
+	"combat": 464,
+	    "size": 1,
+	    "attackable": true,
+	    "aggressive": false,
+	    "retreats": false,
+	    "poisonous": false,
+	    "respawn": 5,
+	    "maxHit": 485,
+	    "hitpoints": 500000000,
+	    "attackSpeed": 1,
+	    "attackAnim": 11968,
+	    "defenceAnim": -1,
+	    "deathAnim": 2304,
+	    "attackBonus": 200,
+	    "defenceMelee": 777,
+	    "defenceRange": 4444,
+	    "defenceMage": 333
   },
   {
    "id": 4304,

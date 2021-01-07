@@ -12,7 +12,7 @@ import com.athena.world.entity.impl.player.Player;
  */
 public class Ultimatium extends GlobalBoss {
 
-    private final static int NPC_ID = 8507;
+    private final static int NPC_ID = 4303;
 
 
 

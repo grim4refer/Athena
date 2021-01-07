@@ -163,7 +163,7 @@ public final class NPCDef {
             npc.sizeY = 250;
 			break;
 			
-		case 8507:
+		case 4303:
 			npc.models = new int[] {140091,140093,140095,140097,140098,140100,140102};
 			npc.name = "@mag@Ultimatium";
 			npc.squaresNeeded = 5;

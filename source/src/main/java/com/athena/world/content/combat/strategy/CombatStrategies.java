@@ -73,7 +73,7 @@ public class CombatStrategies {
 		STRATEGIES.put(130, defaultRangedStrategy);
 		STRATEGIES.put(27, defaultRangedStrategy);
 		STRATEGIES.put(3915, new DragonVanquisher());
-		STRATEGIES.put(8507, new CustomVoragoCombat());
+		STRATEGIES.put(4303, new CustomVoragoCombat());
 		STRATEGIES.put(4329, new DarthVader());
 		STRATEGIES.put(4331, new Troop1());
 		STRATEGIES.put(4332, new Troop2());

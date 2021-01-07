@@ -306,7 +306,7 @@ public class TeleportInterface {
 		TEST(50601, "Roy", "@bla@Roy", "@mag@It's a Multi Boss!", "@yel@Spawns every 1 minute!", "@yel@Teleport once he Spawns!", "", 2515, new int[] { 2580, 2572, 1 }),
 		GANO(50602, "Gano", "@red@Take this boss down!", "@mag@Gano's drops are invisible.", "", "", "", /*Replace this ID*/2070/*Replace this id*/, new int[] { 3170, 2991, 0 }),
 		Vanquisher(50603, "Vanquisher", "@bla@Vanquisher", "@mag@It's a Multi Boss!", "@yel@Spawns every 3 minutes!", "", "", 3915, new int[] { 2700, 9998, 0 }),
-		Ultimatium(50604, "Ultimatium", "@red@Very Strong Boss!", "@mag@This Npc damages everyone.", "", "", "",8507, new int[] { 2905, 2780, 0 });
+		Ultimatium(50604, "Ultimatium", "@red@Very Strong Boss!", "@mag@This Npc damages everyone.", "", "", "",4303, new int[] { 2905, 2780, 0 });
 		
 		Cities(int textId, String name, String description1, String description2, String description3,
 				String description4, String description5, int npcId, int[] teleportCords) {
