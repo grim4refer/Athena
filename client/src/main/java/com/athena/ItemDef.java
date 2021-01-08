@@ -356,7 +356,7 @@ public final class ItemDef {
 			case 5166:
 			case 5167:
 			case 5168:
-				model.setTexture(40,0,20562);
+				model.setTexture(50);
 				break;
 
 
@@ -437,6 +437,7 @@ public final class ItemDef {
 				model.setTexture(57);
 				Texture.get(57);
 				break;
+
 
 			case 19903:
 				model.setTexture(69);

@@ -16,26 +16,10 @@ public class PlayerPanel {
 	public static void refreshPanel(Player player) {
 
 		int counter = 39159;
-
+		player.getPacketSender().sendString(counter++, "");
 		player.getPacketSender().sendString(counter++, "@or3@-@whi@ Droprates");
 		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Droprate: "+NPCDrops.getDroprate(player));
 		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Double drop chance: "+NPCDrops.getDoubleDr(player));
-		player.getPacketSender().sendString(counter++, "");
-
-		player.getPacketSender().sendString(counter++, "@or3@-@whi@ Tools");
-		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Staff Online");
-		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Player Panel");
-		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Kill Log");
-		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Drop Log");
-
-		player.getPacketSender().sendString(counter++, "");
-
-		player.getPacketSender().sendString(counter++, "@or3@-@whi@ Worldwide Information");
-		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Evil Tree: @yel@"+(EvilTrees.getLocation() != null ? EvilTrees.getLocation().playerPanelFrame : "N/A"));
-		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Well of Goodwill: @yel@"+(WellOfGoodwill.isActive() ? WellOfGoodwill.getMinutesRemaining() + " mins" : "N/A"));
-		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Crashed Star: @yel@"+(ShootingStar.getLocation() != null ?ShootingStar.getLocation().playerPanelFrame : "N/A"));
-		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Bonus: @yel@"+GameLoader.getSpecialDay());
-
 		player.getPacketSender().sendString(counter++, "");
 
 		player.getPacketSender().sendString(counter++, "@or3@-@whi@ General Information");
@@ -45,10 +29,16 @@ public class PlayerPanel {
 		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Rank: @yel@"+player.getRights().toString());
 		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Donated: @yel@"+player.getAmountDonated());
 		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Exp Lock: @yel@"+(player.experienceLocked() ? "Locked" : "Unlocked"));
-		
+
 		player.getPacketSender().sendString(counter++, "");
-		
+		player.getPacketSender().sendString(counter++, "@or3@-@whi@ Tools");
+		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Staff Online");
+		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Player Panel");
+		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Kill Log");
+		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Drop Log");
+
 		player.getPacketSender().sendString(counter++, "");
+
 		player.getPacketSender().sendString(counter++, "@or3@-@whi@ Player Statistics");
 		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Prestige Points:@yel@ "+player.getPointsHandler().getPrestigePoints());
 		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Trivia Points:@yel@ "+player.getPointsHandler().getTriviaPoints());
@@ -65,7 +55,9 @@ public class PlayerPanel {
 //		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Arena Victories:@yel@ "+player.getDueling());
 //		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Arena Losses:@yel@ "+player.getPointsHandler().getLoyaltyPoints());
 
+
 		player.getPacketSender().sendString(counter++, "");
+
 
 		player.getPacketSender().sendString(counter++, "-@whi@ Slayer Information");
 		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Master: @yel@"+player.getSlayer().getSlayerMaster());
@@ -75,52 +67,52 @@ public class PlayerPanel {
 
 		player.getPacketSender().sendString(counter++, "");
 		//player.getPacketSender().sendString(3211, ""+player.getLiquidXPoints());
-		player.getPacketSender().sendString(counter++, "-@whi@ Quests");
-		player.getPacketSender().sendString(counter++,
-				LINE_START + RecipeForDisaster.getQuestTabPrefix(player) + "Recipe For Disaster ");
-		player.getPacketSender().sendString(counter++,
-				LINE_START + Nomad.getQuestTabPrefix(player) + "Nomad's Requiem ");
+		//player.getPacketSender().sendString(counter++, "-@whi@ Quests");
+		//player.getPacketSender().sendString(counter++,
+				//LINE_START + RecipeForDisaster.getQuestTabPrefix(player) + "Recipe For Disaster ");
+		//player.getPacketSender().sendString(counter++,
+				//LINE_START + Nomad.getQuestTabPrefix(player) + "Nomad's Requiem ");
 
-		player.getPacketSender().sendString(counter++, "");
+		//player.getPacketSender().sendString(counter++, "");
 		player.getPacketSender().sendString(counter++, "-@whi@ Souls");
 		player.getPacketSender().sendString(counter++, LINE_START +"@mag@ End soul buff!");
 		player.getPacketSender().sendString(counter++, "");
-		player.getPacketSender().sendString(counter++, "");
-		player.getPacketSender().sendString(counter++, "");
+		//player.getPacketSender().sendString(counter++, "");
+		//player.getPacketSender().sendString(counter++, "");
 
 		/**
 		 * General info
 		 *
 		 * player.getPacketSender().sendString(39159, "@or3@ - @whi@ General
 		 * Information");
-		 * 
+		 *
 		 * if(ShootingStar.CRASHED_STAR == null) {
 		 * player.getPacketSender().sendString(26623, "@or2@Crashed
 		 * star: @gre@N/A"); } else { player.getPacketSender().sendString(26623,
 		 * "@or2@Crashed
 		 * star: @gre@"+ShootingStar.CRASHED_STAR.getStarLocation().playerPanelFrame+"");
 		 * }
-		 * 
+		 *
 		 * if(EvilTrees.SPAWNED_TREE == null) {
 		 * player.getPacketSender().sendString(26625, "@or2@Evil
 		 * Tree: @gre@N/A"); } else { player.getPacketSender().sendString(26625,
 		 * "@or2@Evil
 		 * Tree: @gre@"+EvilTrees.SPAWNED_TREE.getTreeLocation().playerPanelFrame+"");
 		 * }
-		 * 
+		 *
 		 * if(GameLoader.getSpecialDay() != null) {
 		 * player.getPacketSender().sendString(26626, "@or2@Bonus: @gre@"+
 		 * GameLoader.getSpecialDay()); } else { if(GameLoader.getSpecialDay()
 		 * != null) { return; } }
-		 * 
+		 *
 		 * if(WellOfGoodwill.isActive()) {
 		 * player.getPacketSender().sendString(26622, "@or2@Well of
 		 * Goodwill: @gre@Active"); } else {
 		 * player.getPacketSender().sendString(26622, "@or2@Well of
 		 * Goodwill: @gre@N/A"); }
-		 * 
+		 *
 		 * /** Account info
-		 * 
+		 *
 		 * player.getPacketSender().sendString(39165, "@or3@ - @whi@ Account
 		 * Information"); player.getPacketSender().sendString(39167,
 		 * "@or2@Username: @yel@"+player.getUsername());
@@ -138,14 +130,14 @@ public class PlayerPanel {
 		 * "@or2@Sounds: @yel@"+(player.soundsActive() ? "On" : "Off")+"");
 		 * player.getPacketSender().sendString(26721, "@or2@Exp
 		 * Lock: @gre@"+(player.experienceLocked() ? "Locked" : "Unlocked")+"");
-		 * 
+		 *
 		 * /** Points
-		 * 
+		 *
 		 * player.getPacketSender().sendString(39174, "@or3@ - @whi@
 		 * Statistics"); player.getPointsHandler().refreshPanel();
-		 * 
+		 *
 		 * /** Slayer
-		 * 
+		 *
 		 * player.getPacketSender().sendString(39189, "@or3@ - @whi@ Slayer");
 		 * player.getPacketSender().sendString(39190, "@or2@Open Kills
 		 * Tracker"); player.getPacketSender().sendString(39191, "@or2@Open Drop
@@ -165,17 +157,17 @@ public class PlayerPanel {
 		 * Partner: @gre@"+player.getSlayer().getDuoPartner()+""); else
 		 * player.getPacketSender().sendString(26720, "@or2@Duo
 		 * Partner: @gre@None");
-		 * 
+		 *
 		 * /** Quests
-		 * 
+		 *
 		 * player.getPacketSender().sendString(26722, "@or3@ - @whi@ Quests");
 		 * player.getPacketSender().sendString(26723,
 		 * RecipeForDisaster.getQuestTabPrefix(player) + "Recipe For Disaster");
 		 * player.getPacketSender().sendString(26724,
 		 * Nomad.getQuestTabPrefix(player) + "Nomad's Requeim");
-		 * 
+		 *
 		 * /** Links
-		 * 
+		 *
 		 * player.getPacketSender().sendString(39202, "@or3@ - @whi@ Links");
 		 * player.getPacketSender().sendString(39203, "@or2@Forum");
 		 * player.getPacketSender().sendString(39204, "@or2@Rules");

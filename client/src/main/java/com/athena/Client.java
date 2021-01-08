@@ -4414,7 +4414,7 @@ public class Client extends RSApplet {
 														s = s.replaceAll("Offer", "Gamble");
 													}
 
-													System.out.println("S is: " + s);
+													//System.out.println("S is: " + s);
 
 													menuActionName[menuActionRow] = s;
 													if (j4 == 0) {

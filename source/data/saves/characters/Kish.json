@@ -1,19 +1,19 @@
 {
-  "total-play-time-ms": 31745118929,
+  "total-play-time-ms": 31746620897,
   "username": "Kish",
   "password": "123",
   "email": "null",
   "staff-rights": "OWNER",
   "game-mode": "NORMAL",
-  "boss-points": 510,
+  "boss-points": 513,
   "npc-kills": 0,
   "ArcticPS-points": 0,
   "transform-id": 0,
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2529,
-    "y": 2527,
+    "x": 2522,
+    "y": 2569,
     "z": 1
   },
   "online-status": "ON",
@@ -28,8 +28,8 @@
   "achievement-points": 39,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 90018996,
-  "total-loyalty-points": 99220.0,
+  "loyalty-points": 90020238,
+  "total-loyalty-points": 100462.0,
   "voting-points": 1,
   "slayer-points": 50,
   "pk-points": 0,
@@ -50,12 +50,12 @@
   "running": true,
   "run-energy": 100,
   "music": false,
-  "sounds": true,
+  "sounds": false,
   "auto-retaliate": true,
   "xp-locked": false,
   "veng-cast": false,
-  "last-veng": 279062482,
-  "fight-type": "BATTLEAXE_HACK",
+  "last-veng": 1609798069003,
+  "fight-type": "CLAWS_SLASH",
   "sol-effect": 0,
   "skull-timer": 0,
   "accept-aid": false,
@@ -479,10 +479,10 @@
   ],
   "skills": {
     "level": [
-      99763,
-      99763,
-      99763,
-      92382,
+      99756,
+      99756,
+      99756,
+      92375,
       99,
       95566,
       99,
@@ -562,62 +562,27 @@
   },
   "inventory": [
     {
-      "id": 11316,
-      "amount": 204,
-      "slot": 0
-    },
-    {
-      "id": 7118,
-      "amount": 2,
-      "slot": 0
-    },
-    {
-      "id": 7100,
-      "amount": 2,
-      "slot": 0
-    },
-    {
-      "id": 3230,
-      "amount": 2,
-      "slot": 0
-    },
-    {
-      "id": 11556,
+      "id": 3299,
       "amount": 1,
       "slot": 0
     },
     {
-      "id": 20813,
+      "id": 3300,
       "amount": 1,
       "slot": 0
     },
     {
-      "id": 20812,
+      "id": 3301,
       "amount": 1,
       "slot": 0
     },
     {
-      "id": 20811,
+      "id": 3302,
       "amount": 1,
       "slot": 0
     },
     {
-      "id": 20810,
-      "amount": 1,
-      "slot": 0
-    },
-    {
-      "id": 13740,
-      "amount": 1,
-      "slot": 0
-    },
-    {
-      "id": 20814,
-      "amount": 1,
-      "slot": 0
-    },
-    {
-      "id": 3692,
+      "id": 3297,
       "amount": 1,
       "slot": 0
     },
@@ -627,33 +592,68 @@
       "slot": 0
     },
     {
-      "id": 11990,
+      "id": 11316,
+      "amount": 3,
+      "slot": 0
+    },
+    {
+      "id": 7100,
+      "amount": 3,
+      "slot": 0
+    },
+    {
+      "id": 7118,
+      "amount": 6,
+      "slot": 0
+    },
+    {
+      "id": 20089,
       "amount": 1,
       "slot": 0
     },
     {
-      "id": 995,
-      "amount": 100000000,
+      "id": 4461,
+      "amount": 15,
       "slot": 0
     },
     {
-      "id": 15371,
-      "amount": 5,
+      "id": 5023,
+      "amount": 2,
       "slot": 0
     },
     {
-      "id": 19936,
+      "id": 20089,
       "amount": 1,
       "slot": 0
     },
     {
-      "id": 19100,
-      "amount": 4000,
+      "id": 20089,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": 19092,
+      "id": 20828,
       "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
@@ -704,7 +704,7 @@
   ],
   "equipment": [
     {
-      "id": 3299,
+      "id": 5163,
       "amount": 1,
       "slot": 0
     },
@@ -719,27 +719,12 @@
       "slot": 0
     },
     {
-      "id": 3298,
+      "id": 5168,
       "amount": 1,
       "slot": 0
     },
     {
-      "id": 3300,
-      "amount": 1,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": 3301,
+      "id": 5164,
       "amount": 1,
       "slot": 0
     },
@@ -749,12 +734,27 @@
       "slot": 0
     },
     {
-      "id": 3302,
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": 5165,
       "amount": 1,
       "slot": 0
     },
     {
-      "id": 3297,
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": 5166,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 5167,
       "amount": 1,
       "slot": 0
     },
@@ -927,7 +927,7 @@
     },
     {
       "id": 11316,
-      "amount": 30,
+      "amount": 234,
       "slot": 0
     },
     {
@@ -957,12 +957,12 @@
     },
     {
       "id": 7100,
-      "amount": 5,
+      "amount": 7,
       "slot": 0
     },
     {
       "id": 7118,
-      "amount": 7,
+      "amount": 9,
       "slot": 0
     },
     {
@@ -1027,17 +1027,17 @@
     },
     {
       "id": 995,
-      "amount": 300000000,
+      "amount": 400000000,
       "slot": 0
     },
     {
       "id": 15371,
-      "amount": 10,
+      "amount": 15,
       "slot": 0
     },
     {
       "id": 19936,
-      "amount": 1,
+      "amount": 2,
       "slot": 0
     },
     {
@@ -1087,7 +1087,7 @@
     },
     {
       "id": 11556,
-      "amount": 1,
+      "amount": 2,
       "slot": 0
     },
     {
@@ -1244,6 +1244,66 @@
       "id": 20859,
       "amount": 1,
       "slot": 0
+    },
+    {
+      "id": 3230,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20813,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20812,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20811,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20810,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 13740,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20814,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 3692,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 11990,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 19100,
+      "amount": 4000,
+      "slot": 0
+    },
+    {
+      "id": 19092,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 3298,
+      "amount": 1,
+      "slot": 0
     }
   ],
   "bank-1": [],
@@ -1328,10 +1388,10 @@
       "boss": true
     },
     {
-      "runningTotal": 4,
+      "runningTotal": 7,
       "npcId": 2071,
       "npcName": "Vorago",
-      "amount": 4,
+      "amount": 7,
       "boss": true
     },
     {
@@ -1359,7 +1419,7 @@
       "runningTotal": 3,
       "npcId": 8507,
       "npcName": "Ultimatium",
-      "amount": 3,
+      "amount": 4,
       "boss": true
     },
     {
@@ -1510,13 +1570,6 @@
       "boss": true
     },
     {
-      "runningTotal": 1,
-      "npcId": 4303,
-      "npcName": "Ultimatium",
-      "amount": 1,
-      "boss": true
-    },
-    {
       "runningTotal": 2,
       "npcId": 7,
       "npcName": "Broly",
@@ -1532,7 +1585,7 @@
     },
     {
       "item": 7118,
-      "amount": 97,
+      "amount": 103,
       "rareDrop": true
     },
     {
@@ -1557,7 +1610,7 @@
     },
     {
       "item": 4461,
-      "amount": 90,
+      "amount": 105,
       "rareDrop": false
     },
     {
@@ -1572,12 +1625,12 @@
     },
     {
       "item": 7100,
-      "amount": 50,
+      "amount": 53,
       "rareDrop": true
     },
     {
       "item": 20089,
-      "amount": 4,
+      "amount": 7,
       "rareDrop": true
     },
     {
@@ -1667,7 +1720,7 @@
     },
     {
       "item": 5023,
-      "amount": 18,
+      "amount": 20,
       "rareDrop": true
     },
     {

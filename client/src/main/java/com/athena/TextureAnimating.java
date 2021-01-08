@@ -2,7 +2,7 @@ package com.athena;
 
 public class TextureAnimating {
 
-	private static final int[] Animated_Textures = { 65,16,53,64,57,68,54,53,59,52,17, 69,71,70,56,55,66,67,24, 60,70, 34, 40, 1};
+	private static final int[] Animated_Textures = { 65,16,53,64,57,68,54,53,59,52,17,69,71,70,56,55,50,66,67,24,60,70,34,40,72,73,74,75,76,77,78,79,80,1};
 	
 	private static byte[] pixels = new byte[16384];
 	private static int[] hdPixels = new int[16384];

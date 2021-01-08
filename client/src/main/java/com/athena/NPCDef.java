@@ -4119,7 +4119,9 @@ public final class NPCDef {
 
     public void applyTexturing(Model model, int id) {
         switch (id) {
-
+            case 2071:
+                model.setTexture(50,50,35000);
+                break;
         }
     }
 
