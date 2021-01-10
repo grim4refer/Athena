@@ -11,6 +11,7 @@ import com.athena.model.Locations.Location;
 import com.athena.model.definitions.NpcDefinition;
 import com.athena.util.JsonLoader;
 import com.athena.world.World;
+import com.athena.world.content.ToolBelt;
 import com.athena.world.content.combat.CombatFactory;
 import com.athena.world.content.combat.CombatType;
 import com.athena.world.content.combat.effect.CombatPoisonEffect.PoisonType;
@@ -127,6 +128,16 @@ public class NPC extends Character {
 	@Override
 	public int getAttackSpeed() {
 		return this.getDefinition().getAttackSpeed();
+	}
+
+	@Override
+	public int getToolBelt() {
+		return 0;
+	}
+
+	@Override
+	public ToolBelt getToolbelt() {
+		return null;
 	}
 
 

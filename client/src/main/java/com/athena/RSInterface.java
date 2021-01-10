@@ -5861,7 +5861,7 @@ public class RSInterface {
 		int yPos = 7;
 
 		for(int i = 0; i < 150; i++) {
-			addHoverableText(id, "", "Select", tda, 0, false, true, 100, ColorConstants.ORANGE, ColorConstants.WHITE);
+			addHoverableText(id, "", "Select", tda, 0, false, true, 100, 0xFF9933, 0xFF9933);
 			npcs.child(childStart, id, 0, yPos);
 			id++;
 			childStart++;

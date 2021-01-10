@@ -6,6 +6,7 @@ import com.athena.model.*;
 import com.athena.model.Locations.Location;
 import com.athena.model.movement.MovementQueue;
 import com.athena.util.Stopwatch;
+import com.athena.world.content.ToolBelt;
 import com.athena.world.content.combat.CombatBuilder;
 import com.athena.world.content.combat.CombatType;
 import com.athena.world.content.combat.magic.CombatSpell;
@@ -76,6 +77,7 @@ public abstract class Character extends Entity {
 	public abstract int getBaseAttack(CombatType type);
 	public abstract int getBaseDefence(CombatType type);
 	public abstract int getAttackSpeed();
+	public abstract int getToolBelt();
 	
 	/*
 	 * Getters and setters
@@ -590,4 +592,6 @@ public abstract class Character extends Entity {
 	public void setRegionInstance(RegionInstance regionInstance) {
 		this.regionInstance = regionInstance;
 	}
+
+	public abstract ToolBelt getToolbelt();
 }
