@@ -5795,6 +5795,78 @@ public class RSInterface {
 		setBounds(21317, 462, 288, 3, RSinterface);
 	}
 
+	private static void dropSimulator(TextDrawingArea[] tda) {
+
+		RSInterface main = addInterface(57392);
+
+		addSpriteLoader(57393, 1079);
+		addSpriteLoader(57394, 1098);
+
+		addHoverButtonWSpriteLoader(57650, 1095, 147, 32, "Set simulation amount", -1, 57651, 1);
+		addHoveredImageWSpriteLoader(57651, 1096, 147, 32, 57652);
+
+		addHoverButtonWSpriteLoader(57653, 1095, 147, 32, "Simulate drops", -1, 57654, 1);
+		addHoveredImageWSpriteLoader(57654, 1096, 147, 32, 57655);
+
+		addText(57656, "Set simulation amount", tda, 1, ColorConstants.WHITE);
+		addText(57657, "Simulate drops", tda, 1, ColorConstants.WHITE);
+		addText(57658, "Drop Simulator", tda, 2, ColorConstants.SKY_BLUE);
+
+		addCloseButtonSmall(57659, 57660, 57661);
+
+		main.totalChildren(13);
+		main.child(0, 57393, 10, 10);
+		main.child(1, 57394, 140, 105);
+		main.child(2, 57399, 140, 110);
+		main.child(3, 57410, 20, 50);
+
+		main.child(4, 57650, 162, 65);
+		main.child(5, 57651, 162, 65);
+
+		main.child(6, 57653, 322, 65);
+		main.child(7, 57654, 322, 65);
+
+		main.child(8, 57656, 175, 72);
+		main.child(9, 57657, 350, 72);
+
+		main.child(10, 57658, 220, 20);
+
+		main.child(11, 57659, 475, 19);
+		main.child(12, 57660, 475, 19);
+
+		RSInterface loot = addTabInterface(57399);
+
+		loot.width = 330;
+		loot.height = 190;
+		loot.scrollMax = 400;
+
+		addToItemGroup(57400, 8, 60, 9, 8, true, new String[] {null, null, null, null, null});
+
+		loot.totalChildren(1);
+		loot.child(0, 57400, 9, 7);
+
+		RSInterface npcs = addTabInterface(57410);
+
+		npcs.width = 100;
+		npcs.height = 255;
+		npcs.scrollMax = 2500;
+
+		npcs.totalChildren(150);
+
+		int id = 57420;
+		int childStart = 0;
+		int yPos = 7;
+
+		for(int i = 0; i < 150; i++) {
+			addHoverableText(id, "", "Select", tda, 0, false, true, 100, ColorConstants.ORANGE, ColorConstants.WHITE);
+			npcs.child(childStart, id, 0, yPos);
+			id++;
+			childStart++;
+			yPos += 13;
+		}
+
+	}
+
 	public static void Buy(TextDrawingArea[] TDA) {
 		RSInterface rsinterface = addTabInterface(24600);
 		int x = 9;

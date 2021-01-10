@@ -1582,6 +1582,7 @@ public class ButtonClickPacketListener implements PacketListener {
                 player.setFightType(FightType.BATTLEAXE_BLOCK);
                 break;
         }
+
     }
 
     private boolean checkHandlers(Player player, int id) {
