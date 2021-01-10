@@ -4,7 +4,7 @@ package com.athena;
 
 
 public class TextureLoader317 {
-	/*   8 */   public static int textureammount = 72;
+	/*   8 */   public static int textureammount = 81;
 	/*     */
 	/*  10 */   private static int[][] texturePalettes = new int[textureammount][];
 	/*     */   private static int loadedTextureCount;
@@ -29,7 +29,7 @@ public class TextureLoader317 {
 	}
 			
 	public static void calculateTexturePalette(double brightness) {
-		for (int l = 0; l < 72; l++)
+		for (int l = 0; l < 81; l++)
 			if (textureImages[l] != null) {
 				int ai[] = textureImages[l].palette;
 				texturePalettes[l] = new int[ai.length];
@@ -41,13 +41,13 @@ public class TextureLoader317 {
 
 			}
 
-		for (int i1 = 0; i1 < 72; i1++)
+		for (int i1 = 0; i1 < 81; i1++)
 			resetTexture(i1);
 	}
 	
 	public static void clearTextureCache() {
 		texelArrayPool = null;
-		for (int j = 0; j < 72; j++)
+		for (int j = 0; j < 81; j++)
 			texelCache[j] = null;
 
 	}
@@ -63,7 +63,7 @@ public class TextureLoader317 {
 				texelArrayPool = new int[textureTexelPoolPointer][16384];
 			else
 				texelArrayPool = new int[textureTexelPoolPointer][0x10000];
-			for (int k = 0; k < 72; k++)
+			for (int k = 0; k < 81; k++)
 				texelCache[k] = null;
 
 		}

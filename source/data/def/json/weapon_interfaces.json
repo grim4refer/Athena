@@ -3532,6 +3532,26 @@
     "interface": "WARHAMMER"
   },
   {
+    "hash": 3298,
+    "item-id": 3298,
+    "interface": "BATTLEAXE"
+  },
+  {
+    "hash": 5168,
+    "item-id": 5168,
+    "interface": "CLAWS"
+  },
+  {
+    "hash": 8898,
+    "item-id": 8898,
+    "interface": "FASTSPEED1"
+  },
+  {
+    "hash": 8898,
+    "item-id": 8898,
+    "interface": "STAFF"
+  },
+  {
     "hash": 11716,
     "item-id": 11716,
     "interface": "SPEAR"

@@ -33,24 +33,24 @@ public class TeleportInterface {
 		ANT_MAN(50608, "Ant man", "@red@Ant man Npc!", "@yel@Drops Ant man items!", "", "", "", 2502, new int[] { 2591, 2545, 1 }),
 		PENNYWISE(50609, "PennyWise", "@red@PennyWise Npc!", "@yel@Drops PennyWise items!", "", "", "", 8, new int[] { 2596, 2533, 1 }),
 		PLANEFREEZER(50610, "Plane Freezer", "@red@Plane Freezer Npc!", "@yel@Drops Plane Freezer items!", "", "", "", 9939, new int[] { 3488, 9942, 0 }),
-		BADSANTA(50611, "Bad Santa", "@red@Bad Santa Npc!", "@yel@Drops Santa Tokens!", "", "", "", 25, new int[] { 2984, 9517, 1 }),
-		CERBERUS(50612, "Cursebearer", "@red@Unholy Cursebearer Npc!", "@yel@Drops Cursebearer items!", "", "", "", 10126, new int[] { 2525, 4777, 0 }),
-		CORPOREAL_BEAST(50613, "Nex", "@red@Nex Npc!", "@yel@Drops Nex items!", "", "", "", 13447, new int[] { 2905, 5204, 0 }),
-		CUSTOM_HELLHOUND(50614, "Iktomi", "@Red@Iktomi Npc!", "@yel@Drops Iktomi items!", "", "", "", 6307, new int[] { 1940, 5001, 0 }),
-		LUCARIO(50615, "Lucario", "@red@Lucario Npc!", "@yel@Drops Lucario items!", "", "", "", 170, new int[] { 2584, 2580, 1 }),
-		MEWTWO(50616, "MewTwo", "@red@MewTwo Npc!", "@yel@Drops MewTwo items!", "", "", "", 360, new int[] { 2588, 2580, 1 },2000),
-		CHARMELEON(50617, "Charmeleon", "@red@Charmeleon Npc!", "@yel@Drops Charmeleon items!", "", "", "", 359, new int[] { 2592, 2580, 1 },2000),
-		SQUIRTLE(50618, "Squirtle", "@red@Squirtle Npc!", "@yel@Drops Squirtle items!", "", "", "", 361, new int[] { 2597, 2580, 1 }),
-		PICKACHU(50619, "Pickachu", "@red@Pickachu Npc!", "@yel@Drops Pickachu items!", "", "", "", 365, new int[] { 2593, 2576, 1 }),
-		SONIC(50620, "Sonic", "@red@Sonic Npc!", "@yel@Drops Sonic items!", "", "", "", 363, new int[] { 2593, 2570, 1 }),
-		DONKEY_KONG(50621, "Donkey Kong", "@red@Donkey Kong Npc!", "@yel@Drops Donkey Kong items!", "", "", "", 370, new int[] { 2593, 2564, 1 }),
-		MR_KRABS(50622, "Mr Krabs", "@red@Mr Krabs Npc!", "@yel@Drops Mr Krabs items!", "", "", "", 362, new int[] { 2593, 2558, 1 }),
-		NUTELLA(50623, "Nutella", "@red@Nutella Npc!", "@yel@Drops Nutella items!", "", "", "", 368, new int[] { 2588, 2558, 1 }),
-		MAYONAISE(50624, "Mayonnaise", "@red@Mayonnaise Npc!", "@yel@Drops Mayonaise items!", "", "", "", 367, new int[] { 2588, 2564, 1 }),
-		INFERNO(50625, "Inferno", "@red@Undead Npc!", "@yel@Drops Inferno Undead items!", "@cya@THIS NPC IS IN MULTI!", "", "", 53, new int[] { 2724, 4777, 0 },3000),
-		VORAGO(50626, "Vorago", "@red@Vorago Npc!", "@yel@Drops Vorago items!", "@cya@THIS IS EPIC BOSS!", "", "", 2071, new int[] { 2535, 2567, 1 },5000),
-		YANI(50627, "Yani", "@red@Yani Npc!", "@yel@Drops Yani items!", "@cya@THIS NPC IS IN MULTI!", "", "", 515, new int[] { 2272, 4693, 0 }),
-		GODZILLA(50628, "Godzilla", "@red@Godzilla", "@mag@Drops Godzilla items!", "", "", "", 1299, new int[] { 2900, 3617, 0 });
+		//BADSANTA(50611, "Bad Santa", "@red@Bad Santa Npc!", "@yel@Drops Santa Tokens!", "", "", "", 25, new int[] { 2984, 9517, 1 }),
+		CERBERUS(50611, "Cursebearer", "@red@Unholy Cursebearer Npc!", "@yel@Drops Cursebearer items!", "", "", "", 10126, new int[] { 2525, 4777, 0 }),
+		CORPOREAL_BEAST(50612, "Nex", "@red@Nex Npc!", "@yel@Drops Nex items!", "", "", "", 13447, new int[] { 2905, 5204, 0 }),
+		CUSTOM_HELLHOUND(50613, "Iktomi", "@Red@Iktomi Npc!", "@yel@Drops Iktomi items!", "", "", "", 6307, new int[] { 1940, 5001, 0 }),
+		LUCARIO(50614, "Lucario", "@red@Lucario Npc!", "@yel@Drops Lucario items!", "", "", "", 170, new int[] { 2584, 2580, 1 }),
+		MEWTWO(50615, "MewTwo", "@red@MewTwo Npc!", "@yel@Drops MewTwo items!", "", "", "", 360, new int[] { 2588, 2580, 1 },2000),
+		CHARMELEON(50616, "Charmeleon", "@red@Charmeleon Npc!", "@yel@Drops Charmeleon items!", "", "", "", 359, new int[] { 2592, 2580, 1 },2000),
+		SQUIRTLE(50617, "Squirtle", "@red@Squirtle Npc!", "@yel@Drops Squirtle items!", "", "", "", 361, new int[] { 2597, 2580, 1 }),
+		PICKACHU(50618, "Pickachu", "@red@Pickachu Npc!", "@yel@Drops Pickachu items!", "", "", "", 365, new int[] { 2593, 2576, 1 }),
+		SONIC(50619, "Sonic", "@red@Sonic Npc!", "@yel@Drops Sonic items!", "", "", "", 363, new int[] { 2593, 2570, 1 }),
+		DONKEY_KONG(50620, "Donkey Kong", "@red@Donkey Kong Npc!", "@yel@Drops Donkey Kong items!", "", "", "", 370, new int[] { 2593, 2564, 1 }),
+		MR_KRABS(50621, "Mr Krabs", "@red@Mr Krabs Npc!", "@yel@Drops Mr Krabs items!", "", "", "", 362, new int[] { 2593, 2558, 1 }),
+		NUTELLA(50622, "Nutella", "@red@Nutella Npc!", "@yel@Drops Nutella items!", "", "", "", 368, new int[] { 2588, 2558, 1 }),
+		MAYONAISE(50623, "Mayonnaise", "@red@Mayonnaise Npc!", "@yel@Drops Mayonaise items!", "", "", "", 367, new int[] { 2588, 2564, 1 }),
+		INFERNO(50624, "Inferno", "@red@Undead Npc!", "@yel@Drops Inferno Undead items!", "@cya@THIS NPC IS IN MULTI!", "", "", 53, new int[] { 2724, 4777, 0 },3000),
+		VORAGO(50625, "Vorago", "@red@Vorago Npc!", "@yel@Drops Vorago items!", "@cya@THIS IS EPIC BOSS!", "", "", 2071, new int[] { 2535, 2567, 1 },5000),
+		YANI(50626, "Yani", "@red@Yani Npc!", "@yel@Drops Yani items!", "@cya@THIS NPC IS IN MULTI!", "", "", 515, new int[] { 2272, 4693, 0 }),
+		GODZILLA(50627, "Godzilla", "@red@Godzilla", "@mag@Drops Godzilla items!", "", "", "", 1299, new int[] { 2900, 3617, 0 });
 
 		Bosses(int textId, String name, String description1, String description2, String description3,
 				String description4, String description5, int npcId, int[] teleportCords) {
@@ -306,7 +306,7 @@ public class TeleportInterface {
 		TEST(50601, "Roy", "@bla@Roy", "@mag@It's a Multi Boss!", "@yel@Spawns every 1 minute!", "@yel@Teleport once he Spawns!", "", 2515, new int[] { 2580, 2572, 1 }),
 		GANO(50602, "Gano", "@red@Take this boss down!", "@mag@Gano's drops are invisible.", "", "", "", /*Replace this ID*/2070/*Replace this id*/, new int[] { 3170, 2991, 0 }),
 		Vanquisher(50603, "Vanquisher", "@bla@Vanquisher", "@mag@It's a Multi Boss!", "@yel@Spawns every 3 minutes!", "", "", 3915, new int[] { 2700, 9998, 0 }),
-		Ultimatium(50604, "Ultimatium", "@red@Very Strong Boss!", "@mag@This Npc damages everyone.", "", "", "",8507, new int[] { 2905, 2780, 0 });
+		Ultimatium(50604, "Ultimatium", "@red@Very Strong Boss!", "@mag@This Npc damages everyone.", "", "", "",4303, new int[] { 2905, 2780, 0 });
 		
 		Cities(int textId, String name, String description1, String description2, String description3,
 				String description4, String description5, int npcId, int[] teleportCords) {

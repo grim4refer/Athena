@@ -942,18 +942,6 @@
     "END_ITEM": 19098
   },
   {
-    "NAME": "SANTATOKENS",
-    "STARTER_ITEM": 20864,
-    "REQUIREMENTS": [
-      {
-        "id": 20864,
-        "amount": 100
-      }
-    ],
-    "SUCCESS_CHANCE": 35,
-    "END_ITEM": 20863
-  },
-  {
     "NAME": "COLLECTORNECKLACE",
     "STARTER_ITEM": 11423,
     "REQUIREMENTS": [

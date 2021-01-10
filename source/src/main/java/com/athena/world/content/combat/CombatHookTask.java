@@ -295,6 +295,7 @@ public class CombatHookTask extends Task {
 								container.setHitAmount(2);
 								break;
 							case 19098:
+							case 5168:
 							case 20853:
 							case 20854:
 							case 19005:

@@ -1,228 +1,181 @@
 package com.athena.world.content;
 
+import com.athena.GameLoader;
 import com.athena.model.definitions.NPCDrops;
 import com.athena.util.Misc;
 import com.athena.world.World;
-
-import com.athena.world.content.skill.impl.slayer.SlayerTasks;
+import com.athena.world.content.minigames.impl.Nomad;
+import com.athena.world.content.minigames.impl.RecipeForDisaster;
+import com.athena.world.entity.impl.npc.NPC;
 import com.athena.world.entity.impl.player.Player;
 
-
 public class PlayerPanel {
-	private static int FIRST_STRING = 39159;
-	private static int LAST_STRING = 39210;
 
-	public static void handleSwitch(Player player, int index, boolean fromCurrent) {
-		if (!fromCurrent) {
-			resetStrings(player);
-		}
-		player.currentPlayerPanelIndex = index;
-		switch (index) {
-			case 1:
-				refreshPanel(player); // first tab, cba rename just yet.
-				break;
-
-			case 2:
-				sendSecondTab(player);
-				break;
-			case 3:
-				sendThirdTab(player);
-				break;
-			case 4:
-				sendForthTab(player);
-				break;
-		}
-	}
-
-	public static void refreshCurrentTab(Player player) {
-		handleSwitch(player, player.clickindex, true);
-	}
+	public static final String LINE_START = "   > ";
 
 	public static void refreshPanel(Player player) {
 
-		if (player.clickindex != 1) { // now it would update the other tab, if this is not the current tab
-			refreshCurrentTab(player);
-			return;
-		}
+		int counter = 39159;
+		player.getPacketSender().sendString(counter++, "");
+		player.getPacketSender().sendString(counter++, "@or3@-@whi@ Droprates");
+		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Droprate: "+NPCDrops.getDroprate(player));
+		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Double drop chance: "+NPCDrops.getDoubleDr(player));
+		player.getPacketSender().sendString(counter++, "");
 
-		String[] information = {
-				"<img=3>",
-				" World & Events",
-				"- Players Online: @whi@" + (int) (0 + World.getPlayers().size()),
-				"- Well of Goodwill: @whi@"+(WellOfGoodwill.isActive() ? "On" : "Off")+"",
-				"- Bonus XP: @whi@"+(player.getMinutesBonusExp() == -1 ? "0" : Misc.format(player.getMinutesBonusExp()))+" @or5@minutes left",
-				"- Crashed Star: @whi@" + (ShootingStar.CRASHED_STAR == null ? "Off" : ShootingStar.CRASHED_STAR.getStarLocation().playerPanelFrame),
-				"- Evil Tree: @whi@" + (EvilTrees.SPAWNED_TREE == null ? "Off" : EvilTrees.SPAWNED_TREE.getTreeLocation().playerPanelFrame),
+		player.getPacketSender().sendString(counter++, "@or3@-@whi@ General Information");
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Server Time: @yel@"+Misc.getCurrentServerTime());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Time Played: @yel@"+Misc.getHoursPlayed((player.getTotalPlayTime() + player.getRecordedLogin().elapsed())));
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Username: @yel@"+player.getUsername());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Rank: @yel@"+player.getRights().toString());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Donated: @yel@"+player.getAmountDonated());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Exp Lock: @yel@"+(player.experienceLocked() ? "Locked" : "Unlocked"));
 
-		};
+		player.getPacketSender().sendString(counter++, "");
+		player.getPacketSender().sendString(counter++, "@or3@-@whi@ Tools");
+		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Staff Online");
+		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Player Panel");
+		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Kill Log");
+		player.getPacketSender().sendString(counter++, LINE_START.replace(">", "*") + "@or1@Drop Log");
 
-		for (int i = 0; i < information.length; i++)
-			player.getPacketSender().sendString(38354 + i, information[i]);
+		player.getPacketSender().sendString(counter++, "");
 
-		information = new String[] {
-				"<img=4>",
-				" Player Information",
-				"- Mode: @whi@" + Misc.capitalizeString(player.getGameMode().toString().toLowerCase().replace("_", " ")),
-				"- Amount Donated: @whi@" + player.getAmountDonated(),
-				"- Donator Points: @whi@" + player.getPointsHandler().getDonationPoints(),
-				"- Time Played: @whi@" + Misc.getTimePlayed((player.getTotalPlayTime() + player.getRecordedLogin().elapsed())),
-				"- Droprate Bonus: @whi@"+NPCDrops.getDroprate(player)+"%",
-				"- Double Drop Bonus: @whi@" + NPCDrops.getDoubleDr(player) + " %",
-				"- Pk Points: @whi@" + player.getPointsHandler().getPkPoints(),
-				"- Wilderness Killstreak: @whi@" + player.getPlayerKillingAttributes().getPlayerKillStreak(),
-				"- Wilderness Kills: @whi@" + player.getPlayerKillingAttributes().getPlayerKills(),
-				"- Wilderness Deaths: @whi@" + player.getPlayerKillingAttributes().getPlayerDeaths(),
-				"",
-				"",
-				"",
-				"",
-				"",
-				"",
-				"",
-				"",
-				"",
-				"",
-				"",
-				"",
-		};
+		player.getPacketSender().sendString(counter++, "@or3@-@whi@ Player Statistics");
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Prestige Points:@yel@ "+player.getPointsHandler().getPrestigePoints());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Trivia Points:@yel@ "+player.getPointsHandler().getTriviaPoints());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Voting Points:@yel@ "+player.getPointsHandler().getVotingPoints());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Donation Points:@yel@ "+player.getPointsHandler().getDonationPoints());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Commendations:@yel@ "+player.getPointsHandler().getCommendations());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Dung. Tokens:@yel@ "+player.getPointsHandler().getDungeoneeringTokens());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Boss Points:@yel@ "+player.getBossPoints());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Slayer Points:@yel@ "+player.getPointsHandler().getSlayerPoints());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Pk Points:@yel@ "+player.getPointsHandler().getPkPoints());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Wilderness Killstreak:@yel@ "+player.getPlayerKillingAttributes().getPlayerKillStreak());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Wilderness Kills:@yel@ "+player.getPlayerKillingAttributes().getPlayerKills());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Wilderness Deaths:@yel@ "+player.getPlayerKillingAttributes().getPlayerDeaths());
+//		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Arena Victories:@yel@ "+player.getDueling());
+//		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Arena Losses:@yel@ "+player.getPointsHandler().getLoyaltyPoints());
 
-		for (int i = 0; i < information.length; i++)
-			player.getPacketSender().sendString(38469 + i, information[i]);
 
-		information = new String[] {
-				"<img=4>",
-				" Points & Statistics",
-				"- Boss Points: @whi@" + player.getBossPoints(),
-				"- Prestige Points: @whi@" + player.getPointsHandler().getPrestigePoints(),
-				"- Commendations: @whi@" + player.getPointsHandler().getCommendations(),
-				"- Loyalty Points: @whi@" + (int) player.getPointsHandler().getLoyaltyPoints(),
-				"- Dung. Tokens: @whi@" + player.getPointsHandler().getDungeoneeringTokens(),
-				"- Voting Points: @whi@" + player.getPointsHandler().getVotingPoints(),
-				"- Arena Victories: @whi@" + player.getDueling().arenaStats[0],
-				"- Arena Points: @whi@" + player.getDueling().arenaStats[1],
-				"",
-				"",
-		};
+		player.getPacketSender().sendString(counter++, "");
 
-		for (int i = 0; i < information.length; i++)
-			player.getPacketSender().sendString(38595 + i, information[i]);
 
-		information = new String[] {
-				"<img=4>",
-				" Slayer Information",
-				"- Slayer Points: @whi@" + player.getPointsHandler().getSlayerPoints(),
-				"- Master: @whi@" + Misc.formatText(player.getSlayer().getSlayerMaster().toString().toLowerCase().replaceAll("_", " ")),
-				"- Task: @whi@" + (player.getSlayer().getSlayerTask() == SlayerTasks.NO_TASK ? "N/A" : Misc.formatText(player.getSlayer().getSlayerTask().toString().toLowerCase().replaceAll("_", " "))),
-				"- Task Streak: @whi@" + player.getSlayer().getTaskStreak(),
-				"- Task Amount: @whi@" + player.getSlayer().getAmountToSlay(),
-				"- Duo Partner: @whi@" + (player.getSlayer().getDuoPartner() == null ? "N/A" : player.getSlayer().getDuoPartner()),
-		};
+		player.getPacketSender().sendString(counter++, "-@whi@ Slayer Information");
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Master: @yel@"+player.getSlayer().getSlayerMaster());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Task: @yel@"+player.getSlayer().getSlayerTask());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Task Amount: @yel@"+player.getSlayer().getAmountToSlay());
+		player.getPacketSender().sendString(counter++, LINE_START + "@or1@Task Streak: @yel@"+player.getSlayer().getTaskStreak());
 
-		for (int i = 0; i < information.length; i++)
-			player.getPacketSender().sendString(38726 + i, information[i]);
+		player.getPacketSender().sendString(counter++, "");
+		//player.getPacketSender().sendString(3211, ""+player.getLiquidXPoints());
+		//player.getPacketSender().sendString(counter++, "-@whi@ Quests");
+		//player.getPacketSender().sendString(counter++,
+				//LINE_START + RecipeForDisaster.getQuestTabPrefix(player) + "Recipe For Disaster ");
+		//player.getPacketSender().sendString(counter++,
+				//LINE_START + Nomad.getQuestTabPrefix(player) + "Nomad's Requiem ");
+
+		//player.getPacketSender().sendString(counter++, "");
+		player.getPacketSender().sendString(counter++, "-@whi@ Souls");
+		player.getPacketSender().sendString(counter++, LINE_START +"@mag@ End soul buff!");
+		player.getPacketSender().sendString(counter++, "");
+		//player.getPacketSender().sendString(counter++, "");
+		//player.getPacketSender().sendString(counter++, "");
+
+		/**
+		 * General info
+		 *
+		 * player.getPacketSender().sendString(39159, "@or3@ - @whi@ General
+		 * Information");
+		 *
+		 * if(ShootingStar.CRASHED_STAR == null) {
+		 * player.getPacketSender().sendString(26623, "@or2@Crashed
+		 * star: @gre@N/A"); } else { player.getPacketSender().sendString(26623,
+		 * "@or2@Crashed
+		 * star: @gre@"+ShootingStar.CRASHED_STAR.getStarLocation().playerPanelFrame+"");
+		 * }
+		 *
+		 * if(EvilTrees.SPAWNED_TREE == null) {
+		 * player.getPacketSender().sendString(26625, "@or2@Evil
+		 * Tree: @gre@N/A"); } else { player.getPacketSender().sendString(26625,
+		 * "@or2@Evil
+		 * Tree: @gre@"+EvilTrees.SPAWNED_TREE.getTreeLocation().playerPanelFrame+"");
+		 * }
+		 *
+		 * if(GameLoader.getSpecialDay() != null) {
+		 * player.getPacketSender().sendString(26626, "@or2@Bonus: @gre@"+
+		 * GameLoader.getSpecialDay()); } else { if(GameLoader.getSpecialDay()
+		 * != null) { return; } }
+		 *
+		 * if(WellOfGoodwill.isActive()) {
+		 * player.getPacketSender().sendString(26622, "@or2@Well of
+		 * Goodwill: @gre@Active"); } else {
+		 * player.getPacketSender().sendString(26622, "@or2@Well of
+		 * Goodwill: @gre@N/A"); }
+		 *
+		 * /** Account info
+		 *
+		 * player.getPacketSender().sendString(39165, "@or3@ - @whi@ Account
+		 * Information"); player.getPacketSender().sendString(39167,
+		 * "@or2@Username: @yel@"+player.getUsername());
+		 * player.getPacketSender().sendString(39168,
+		 * "@or2@Claimed: @yel@$"+player.getAmountDonated());
+		 * player.getPacketSender().sendString(39169,
+		 * "@or2@Rank: @yel@"+Misc.formatText(player.getRights().toString().toLowerCase()));
+		 * player.getPacketSender().sendString(39170,
+		 * "@or2@Email: @yel@"+(player.getEmailAddress() == null ||
+		 * player.getEmailAddress().equals("null") ? "-" :
+		 * player.getEmailAddress()));
+		 * player.getPacketSender().sendString(39171,
+		 * "@or2@Music: @yel@"+(player.musicActive() ? "On" : "Off")+"");
+		 * player.getPacketSender().sendString(39172,
+		 * "@or2@Sounds: @yel@"+(player.soundsActive() ? "On" : "Off")+"");
+		 * player.getPacketSender().sendString(26721, "@or2@Exp
+		 * Lock: @gre@"+(player.experienceLocked() ? "Locked" : "Unlocked")+"");
+		 *
+		 * /** Points
+		 *
+		 * player.getPacketSender().sendString(39174, "@or3@ - @whi@
+		 * Statistics"); player.getPointsHandler().refreshPanel();
+		 *
+		 * /** Slayer
+		 *
+		 * player.getPacketSender().sendString(39189, "@or3@ - @whi@ Slayer");
+		 * player.getPacketSender().sendString(39190, "@or2@Open Kills
+		 * Tracker"); player.getPacketSender().sendString(39191, "@or2@Open Drop
+		 * Log"); player.getPacketSender().sendString(26716,
+		 * "@or2@Master: @gre@"+Misc.formatText(player.getSlayer().getSlayerMaster().toString().toLowerCase().replaceAll("_",
+		 * " "))); if(player.getSlayer().getSlayerTask() == SlayerTasks.NO_TASK)
+		 * player.getPacketSender().sendString(26717,
+		 * "@or2@Task: @gre@"+Misc.formatText(player.getSlayer().getSlayerTask().toString().toLowerCase().replaceAll("_",
+		 * " "))+""); else player.getPacketSender().sendString(26717,
+		 * "@or2@Task: @gre@"+Misc.formatText(player.getSlayer().getSlayerTask().toString().toLowerCase().replaceAll("_",
+		 * " "))+"s"); player.getPacketSender().sendString(26718, "@or2@Task
+		 * Streak: @gre@"+player.getSlayer().getTaskStreak()+"");
+		 * player.getPacketSender().sendString(26719, "@or2@Task
+		 * Amount: @gre@"+player.getSlayer().getAmountToSlay()+"");
+		 * if(player.getSlayer().getDuoPartner() != null)
+		 * player.getPacketSender().sendString(26720, "@or2@Duo
+		 * Partner: @gre@"+player.getSlayer().getDuoPartner()+""); else
+		 * player.getPacketSender().sendString(26720, "@or2@Duo
+		 * Partner: @gre@None");
+		 *
+		 * /** Quests
+		 *
+		 * player.getPacketSender().sendString(26722, "@or3@ - @whi@ Quests");
+		 * player.getPacketSender().sendString(26723,
+		 * RecipeForDisaster.getQuestTabPrefix(player) + "Recipe For Disaster");
+		 * player.getPacketSender().sendString(26724,
+		 * Nomad.getQuestTabPrefix(player) + "Nomad's Requeim");
+		 *
+		 * /** Links
+		 *
+		 * player.getPacketSender().sendString(39202, "@or3@ - @whi@ Links");
+		 * player.getPacketSender().sendString(39203, "@or2@Forum");
+		 * player.getPacketSender().sendString(39204, "@or2@Rules");
+		 * player.getPacketSender().sendString(39205, "@or2@Store");
+		 * player.getPacketSender().sendString(39206, "@or2@Vote");
+		 * player.getPacketSender().sendString(39207, "@or2@Hiscores");
+		 * player.getPacketSender().sendString(39208, "@or2@Report");
+		 */
 	}
 
-	private static void sendSecondTab(Player player) {
-
-		String[] Messages = new String[] { "  ", "<img=28>@lre@Player Information", "",
-				"@lre@Mode:  @whi@"
-						+ Misc.capitalizeString(player.getGameMode().toString().toLowerCase().replace("_", " ")),
-				"@lre@Claimed: @whi@$" + player.getAmountDonated(),
-				"@lre@Donator Points: @whi@" + player.getPointsHandler().getDonationPoints(),
-
-				"@lre@Time played:  @whi@"
-						+ Misc.getTimePlayed((player.getTotalPlayTime() + player.getRecordedLogin().elapsed())),
-				"@lre@Droprate bonus: @whi@" + NPCDrops.getDroprate(player) + " %",
-				"@lre@Double drop bonus: @whi@" + NPCDrops.getDoubleDr(player) + " %",
-				"@lre@Pk Points: @whi@" + player.getPointsHandler().getPkPoints(),
-				"@lre@Wilderness Killstreak: @whi@" + player.getPlayerKillingAttributes().getPlayerKillStreak(),
-				"@lre@Wilderness Kills: @whi@" + player.getPlayerKillingAttributes().getPlayerKills(),
-				"@lre@Wilderness Deaths: @whi@" + player.getPlayerKillingAttributes().getPlayerDeaths(), "",
-		};
-
-		for (int i = 0; i < Messages.length; i++) {
-			if (i + FIRST_STRING > LAST_STRING) {
-				System.out.println("PlayerPanel(" + player.getUsername() + "): " + i + " is larger than max string: "
-						+ LAST_STRING + ". Breaking.");
-				break;
-			}
-
-			player.getPacketSender().sendString(i + FIRST_STRING, Messages[i]);
-
-		}
-
-	}
-
-	private static void sendThirdTab(Player player) {
-
-		String[] Messages = new String[] { "  ", "<img=17>@lre@Points & Statistics", "",
-				"@lre@Prestige Points: @whi@" + player.getPointsHandler().getPrestigePoints(),
-				"@lre@Commendations: @whi@ " + player.getPointsHandler().getCommendations(),
-				"@lre@Loyalty Points: @whi@" + (int) player.getPointsHandler().getLoyaltyPoints(),
-				"@lre@Dung. Tokens: @whi@ " + player.getPointsHandler().getDungeoneeringTokens(),
-				"@lre@Voting Points: @whi@ " + player.getPointsHandler().getVotingPoints(),
-				"@lre@Slayer Points: @whi@" + player.getPointsHandler().getSlayerPoints(),
-				"@lre@Pk Points: @whi@" + player.getPointsHandler().getPkPoints(),
-
-				"@lre@Arena Victories: @whi@" + player.getDueling().arenaStats[0],
-				"@lre@Arena Points: @whi@" + player.getDueling().arenaStats[1],
-
-		};
-
-		for (int i = 0; i < Messages.length; i++) {
-			if (i + FIRST_STRING > LAST_STRING) {
-				System.out.println("PlayerPanel(" + player.getUsername() + "): " + i + " is larger than max string: "
-						+ LAST_STRING + ". Breaking.");
-				break;
-			}
-
-			player.getPacketSender().sendString(i + FIRST_STRING, Messages[i]);
-
-		}
-
-	}
-
-	private static void sendForthTab(Player player) {
-
-		String[] Messages = new String[] { " ", "<img=15>@lre@Slayer Information", "",
-				"@lre@Slayer Points: @whi@" + player.getPointsHandler().getSlayerPoints(),
-
-				"@lre@Master:  @whi@" + Misc
-						.formatText(player.getSlayer().getSlayerMaster().toString().toLowerCase().replaceAll("_", " ")),
-				(player.getSlayer().getSlayerTask() == SlayerTasks.NO_TASK
-						? "@lre@Task:  @red@" + Misc.formatText(
-						player.getSlayer().getSlayerTask().toString().toLowerCase().replaceAll("_", " "))
-						: "@lre@Task:  @whi@" + Misc.formatText(
-						player.getSlayer().getSlayerTask().toString().toLowerCase().replaceAll("_", " "))
-						+ "s"),
-
-				"@lre@Task Streak:  @whi@" + player.getSlayer().getTaskStreak(),
-
-				"@lre@Task Amount:  @whi@" + player.getSlayer().getAmountToSlay(),
-				(player.getSlayer().getDuoPartner() != null
-						? "@lre@Duo Partner:  @whi@" + player.getSlayer().getDuoPartner()
-						: "@lre@Duo Partner:  @whi@N/A"),
-
-				" ",
-
-		};
-
-		for (int i = 0; i < Messages.length; i++) {
-			if (i + FIRST_STRING > LAST_STRING) {
-				System.out.println("PlayerPanel(" + player.getUsername() + "): " + i + " is larger than max string: "
-						+ LAST_STRING + ". Breaking.");
-				break;
-			}
-
-			player.getPacketSender().sendString(i + FIRST_STRING, Messages[i]);
-
-		}
-
-	}
-
-	private static void resetStrings(Player player) {
-		for (int i = FIRST_STRING; i < LAST_STRING; i++) {
-			player.getPacketSender().sendString(i, "");
-		}
-	}
 }

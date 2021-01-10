@@ -3638,6 +3638,63 @@ public enum CombatSpells {
 			return 12891;
 		}
 	}),
+	WINTER4EVER(new CombatAncientSpell() {
+		@Override
+		public void spellEffect(Character cast, Character castOn, int damage) {
+			castOn.getMovementQueue().freeze(7);
+		}
+
+		@Override
+		public int spellRadius() {
+			return 0;
+		}
+
+		@Override
+		public Optional<Animation> castAnimation() {
+			return Optional.of(new Animation(2876));
+		}
+
+		@Override
+		public Optional<Projectile> castProjectile(Character cast, Character castOn) {
+			return Optional.of(new Projectile(cast, castOn, 500, 44, 3, 43, 31,
+					0));
+		}
+
+		@Override
+		public Optional<Graphic> endGraphic() {
+			return Optional.of(new Graphic(2189));
+		}
+
+		@Override
+		public int maximumHit() {
+			return 75000;
+		}
+
+		@Override
+		public Optional<Graphic> startGraphic() {
+			return Optional.empty();
+		}
+
+		@Override
+		public int baseExperience() {
+			return 766;
+		}
+
+		@Override
+		public Optional<Item[]> itemsRequired(Player player) {
+			return Optional.of(new Item[] {  });
+		}
+
+		@Override
+		public int levelRequired() {
+			return 58;
+		}
+
+		@Override
+		public int spellId() {
+			return 12861;
+		}
+	}),
 	DAGANNOTH_PRIME(new CombatNormalSpell() {
 		@Override
 		public Optional<Animation> castAnimation() {
