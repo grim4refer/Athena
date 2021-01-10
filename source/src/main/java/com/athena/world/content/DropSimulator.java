@@ -12,9 +12,8 @@ import com.athena.model.definitions.NpcDefinition;
 import com.athena.model.definitions.NPCDrops;
 import com.athena.model.definitions.NPCDrops.DropChance;
 import com.athena.model.definitions.NPCDrops.NpcDropItem;
-import com.athena.util.RandomUtility;
 import com.athena.world.entity.impl.player.Player;
-
+//drop
 public class DropSimulator {
 
     private Player player;
