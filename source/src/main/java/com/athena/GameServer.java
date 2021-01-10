@@ -90,6 +90,7 @@ public class GameServer {
 			logger.info("The loader has finished loading utility tasks.");
 			logger.info("Athena is now online on port "+ com.athena.GameSettings.GAME_PORT+"!");
 			//checkServersEco(null);
+		//	JavaCord.init();
 		} catch (Exception ex) {
 			logger.log(Level.SEVERE, "Could not start Athena! Program terminated.", ex);
 			System.exit(1);

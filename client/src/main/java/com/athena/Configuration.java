@@ -24,6 +24,9 @@ public class Configuration {
 
 	public static final boolean JAGCACHED_ENABLED = false;
 
+	public final static boolean STAFF_MINIMAP_DOT = true;
+
+
 	public static int[] ITEMS_WITH_BLACK = {
 		1277, 560, 559, 1077, 1089, 1125, 1149, 1153, 1155, 1157, 1159, 1161, 1163,
 		1165, 1279, 1313, 1327, 2349, 2351, 2353, 2355, 2357, 2359,
