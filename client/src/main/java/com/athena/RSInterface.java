@@ -1,5 +1,6 @@
 package com.athena;
 
+import javax.swing.text.StyleConstants;
 import java.awt.*;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -5797,6 +5798,8 @@ public class RSInterface {
 
 	private static void dropSimulator(TextDrawingArea[] tda) {
 
+		//tis is drop simualtor
+
 		RSInterface main = addInterface(57392);
 
 		addSpriteLoader(57393, 1079);
@@ -5808,11 +5811,11 @@ public class RSInterface {
 		addHoverButtonWSpriteLoader(57653, 1095, 147, 32, "Simulate drops", -1, 57654, 1);
 		addHoveredImageWSpriteLoader(57654, 1096, 147, 32, 57655);
 
-		addText(57656, "Set simulation amount", tda, 1, ColorConstants.WHITE);
-		addText(57657, "Simulate drops", tda, 1, ColorConstants.WHITE);
-		addText(57658, "Drop Simulator", tda, 2, ColorConstants.SKY_BLUE);
+		addText(57656, "Set simulation amount", tda, 1, 0xFF9933);
+		addText(57657, "Simulate drops", tda, 1, 0xFF9933);
+		addText(57658, "Drop Simulator", tda, 2, 0xFF9933);
 
-		addCloseButtonSmall(57659, 57660, 57661);
+		addCloseButton(57659, 57660, 57661);
 
 		main.totalChildren(13);
 		main.child(0, 57393, 10, 10);
