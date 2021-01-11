@@ -26,7 +26,7 @@ public class CacheDownloader implements Runnable {
 	*/
 	//https://dl.dropbox.com/s/aamuxh9uqrh6gqi/ArcticPSCache.zip
 	private static final String CACHE_PATH = System.getProperty("user.home") + File.separator + "AthenaCache" + File.separator;
-	private static final String ZIP_URL = "https://www.dropbox.com/s/c42t7o3iy60oyt0/AthenaCache.zip?dl=1";
+	private static final String ZIP_URL = "http://athenaps.org/AthenaCache.zip";
 	private static final String VERSION_FILE = CACHE_PATH + "cache_version.txt";
 	private static final int CACHE_VERSION = 6;
 
