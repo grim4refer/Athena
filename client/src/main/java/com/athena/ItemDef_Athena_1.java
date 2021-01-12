@@ -4142,7 +4142,6 @@ public class ItemDef_Athena_1 {
                 itemDef.femaleEquip1 = 140105;
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
-
                 break;
 
         }

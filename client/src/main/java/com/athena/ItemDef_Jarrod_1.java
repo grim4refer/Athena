@@ -5493,6 +5493,147 @@ public class ItemDef_Jarrod_1 {
 				itemDef.actions = new String[5];
 				itemDef.actions[1] = "Wear";
 				break;
+			case 4805:
+				itemDef.modelID = 94579;
+				itemDef.name = "Aquanium Spirit shield";
+				itemDef.description = "Aquanium Spirit shield";
+				itemDef.modelZoom = 1616;
+				itemDef.rotationY = 396;
+				itemDef.rotationX = 1050;
+				itemDef.modelOffsetY = -3;
+				itemDef.modelOffsetX = 4;
+				itemDef.maleEquip1 = 94578;
+				itemDef.femaleEquip1 = 94578;
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wear";
+				itemDef.actions[4] = "Drop";
+				itemDef.editedModelColor = new int[] {60,61,62,63,64,65,66,67,68,69,70,71,72,73};
+				itemDef.newModelColor = new int[]  {73,73,73,73,73,73,73,73,73,73,73,73,73,73};
+				break;
+			case 4774:
+				itemDef.modelID = 92021;
+				itemDef.name = "Grndmaster Helmet";
+				itemDef.description = "Grndmaster set";
+				itemDef.modelZoom = 1000;
+				itemDef.rotationY = 100;
+				itemDef.rotationX = 0;
+				itemDef.modelOffset1 = -1;
+				itemDef.modelOffsetY = -1;
+				itemDef.maleEquip1 = 92022;
+				itemDef.femaleEquip1 = 92022;
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wear";
+				itemDef.actions[4] = "Drop";
+				itemDef.editedModelColor = new int[] {60,61,62,63,64,65,66,67,68,69,70,71,72,73};
+				itemDef.newModelColor = new int[]  {73,73,73,73,73,73,73,73,73,73,73,73,73,73};
+				break;
+
+			case 4775:
+				itemDef.modelID = 92023;
+				itemDef.name = "Grndmaster Platebody";
+				itemDef.description = "Grndmaster set";
+				itemDef.modelZoom = 1600;
+				itemDef.rotationY = 600;
+				itemDef.rotationX = 0;
+				itemDef.modelOffset1 = -1;
+				itemDef.modelOffsetY = -1;
+				itemDef.maleEquip1 = 92024;
+				itemDef.femaleEquip1 = 92024;
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wear";
+				itemDef.actions[4] = "Drop";
+				itemDef.editedModelColor = new int[] {60,61,62,63,64,65,66,67,68,69,70,71,72,73};
+				itemDef.newModelColor = new int[]  {73,73,73,73,73,73,73,73,73,73,73,73,73,73};
+				break;
+
+			case 4776:
+				itemDef.modelID = 92025;
+				itemDef.name = "Grndmaster Legs";
+				itemDef.description = "Grndmaster set";
+				itemDef.modelZoom = 1500;
+				itemDef.rotationY = 500;
+				itemDef.rotationX = 0;
+				itemDef.modelOffset1 = -1;
+				itemDef.modelOffsetY = -1;
+				itemDef.maleEquip1 = 92026;
+				itemDef.femaleEquip1 = 92026;
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wear";
+				itemDef.actions[4] = "Drop";
+				itemDef.editedModelColor = new int[] {60,61,62,63,64,65,66,67,68,69,70,71,72,73};
+				itemDef.newModelColor = new int[]  {73,73,73,73,73,73,73,73,73,73,73,73,73,73};
+				break;
+
+			case 4777:
+				itemDef.modelID = 92027;
+				itemDef.name = "Grndmaster Sword";
+				itemDef.description = "Grndmaster Sword";
+				itemDef.modelZoom = 1500;
+				itemDef.rotationY = 500;
+				itemDef.rotationX = 0;
+				itemDef.modelOffset1 = -1;
+				itemDef.modelOffsetY = -1;
+				itemDef.maleEquip1 = 92028;
+				itemDef.femaleEquip1 = 92028;
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wear";
+				itemDef.actions[4] = "Drop";
+				itemDef.editedModelColor = new int[] {60,61,62,63,64,65,66,67,68,69,70,71,72,73};
+				itemDef.newModelColor = new int[]  {73,73,73,73,73,73,73,73,73,73,73,73,73,73};
+				break;
+
+			case 4779:
+				itemDef.modelID = 92027;
+				itemDef.name = "Grndmaster Sword Off-Hand";
+				itemDef.description = "Grndmaster Sword Off-Hand";
+				itemDef.modelZoom = 1700;
+				itemDef.rotationY = 600;
+				itemDef.rotationX = 0;
+				itemDef.modelOffset1 = -1;
+				itemDef.modelOffsetY = -1;
+				itemDef.maleEquip1 = 92029;
+				itemDef.femaleEquip1 = 92029;
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wear";
+				itemDef.actions[4] = "Drop";
+				itemDef.editedModelColor = new int[] {60,61,62,63,64,65,66,67,68,69,70,71,72,73};
+				itemDef.newModelColor = new int[]  {73,73,73,73,73,73,73,73,73,73,73,73,73,73};
+				break;
+			case 4555:
+				itemDef.modelID = 140107;
+				itemDef.name = "Grndmaster Boxing Gloves";
+				itemDef.description = "Grndmaster Boxing Gloves.";
+				itemDef.modelZoom = 900;
+				itemDef.rotationY = 500;
+				itemDef.rotationX = 0;
+				itemDef.membersObject = true;
+				itemDef.maleEquip1 = 140108;
+				itemDef.femaleEquip1 = 140108;
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wield";
+				itemDef.actions[4] = "Drop";
+				itemDef.stackable = false;
+				itemDef.editedModelColor = new int[] {60,61,62,63,64,65,66,67,68,69,70,71,72,73};
+				itemDef.newModelColor = new int[]  {73,73,73,73,73,73,73,73,73,73,73,73,73,73};
+				break;
+
+			case 4556:
+				itemDef.modelID = 140109;
+				itemDef.name = "Grndmaster Wing Boots";
+				itemDef.description = "Grndmaster Wing Boots.";
+				itemDef.modelZoom = 900;
+				itemDef.rotationY = 100;
+				itemDef.rotationX = 50;
+				itemDef.membersObject = true;
+				itemDef.maleEquip1 = 140109;
+				itemDef.femaleEquip1 = 140109;
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wield";
+				itemDef.actions[4] = "Drop";
+				itemDef.stackable = false;
+				itemDef.editedModelColor = new int[] {60,61,62,63,64,65,66,67,68,69,70,71,72,73};
+				itemDef.newModelColor = new int[]  {73,73,73,73,73,73,73,73,73,73,73,73,73,73};
+				break;
 		}
 
 		return ItemDef_Lewis_1.forDef(itemDef, ID);

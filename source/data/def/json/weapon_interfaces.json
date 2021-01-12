@@ -617,8 +617,11 @@
     "interface": "SHORTBOW"
   },
   {
-
-
+    "hash": 4777,
+    "item-id": 4777,
+    "interface": "SWORD"
+  },
+  {
     "hash": 3190,
     "item-id": 3190,
     "interface": "HALBERD"
