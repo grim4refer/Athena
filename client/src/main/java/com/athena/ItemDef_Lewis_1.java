@@ -4057,6 +4057,8 @@ public class ItemDef_Lewis_1 {
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
+                itemDef.editedModelColor = new int[] {60,61,62,63,64,65,66,67,68,69,70,71,72,73};
+                itemDef.newModelColor = new int[]  {73,73,73,73,73,73,73,73,73,73,73,73,73,73};
                 break;
             case 20090:
                 itemDef.modelID = 95064;

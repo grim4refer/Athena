@@ -3842,7 +3842,7 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
                 itemDef.editedModelColor = new int[] {40};
-                itemDef.newModelColor = new int[]  {51};
+                itemDef.newModelColor = new int[]  {50};
                 break;
 
             case 5164:
@@ -3860,7 +3860,7 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
                 itemDef.editedModelColor = new int[] {40};
-                itemDef.newModelColor = new int[]  {51};
+                itemDef.newModelColor = new int[]  {50};
                 break;
 
             case 5165:
@@ -3878,7 +3878,7 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
                 itemDef.editedModelColor = new int[] {40};
-                itemDef.newModelColor = new int[]  {51};
+                itemDef.newModelColor = new int[]  {50};
                 break;
 
             case 5166:
@@ -3896,7 +3896,7 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
                 itemDef.editedModelColor = new int[] {40};
-                itemDef.newModelColor = new int[]  {51};
+                itemDef.newModelColor = new int[]  {50};
                 break;
 
             case 5167:
@@ -3914,7 +3914,7 @@ public class ItemDef_Athena_1 {
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
                 itemDef.editedModelColor = new int[] {40};
-                itemDef.newModelColor = new int[]  {51};
+                itemDef.newModelColor = new int[]  {50};
                 break;
 
             case 5168:
@@ -3931,8 +3931,8 @@ public class ItemDef_Athena_1 {
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
-               // itemDef.editedModelColor = new int[] {40};
-                //itemDef.newModelColor = new int[]  {51};
+                itemDef.editedModelColor = new int[] {40};
+                itemDef.newModelColor = new int[]  {50};
                 break;
 
             case 8893:
@@ -4071,6 +4071,7 @@ public class ItemDef_Athena_1 {
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
+                
                 break;
 
             case 3299:
@@ -4127,6 +4128,21 @@ public class ItemDef_Athena_1 {
                 itemDef.maleEquip1 = 90929;
                 itemDef.femaleEquip1 = 90929;
                 itemDef.name = "Storm Breaker Gloves";
+                break;
+            case 3303:
+                itemDef.modelID = 140106;
+                itemDef.name = "Green desi gun";
+                itemDef.description = "Simply onfire.";
+                itemDef.modelZoom = 1150;
+                itemDef.rotationY = 324;
+                itemDef.rotationX = 1008;
+                itemDef.modelOffsetX = 1;
+                itemDef.modelOffsetY = 3;
+                itemDef.maleEquip1 = 140105;
+                itemDef.femaleEquip1 = 140105;
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+
                 break;
 
         }

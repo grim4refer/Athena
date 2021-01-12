@@ -280,6 +280,7 @@ public class CombatHookTask extends Task {
 							case 21041:
 							case 21042:
 							case 21043:
+							case 3302:
 							case 18957:
 							case 20504:
 							case 18965:

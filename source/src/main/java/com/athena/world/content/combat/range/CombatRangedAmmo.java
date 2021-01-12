@@ -395,7 +395,7 @@ public class CombatRangedAmmo {
 
         DUEL(new int[] { 21080 , 18931, 18889, 3650}, new AmmunitionData[] {AmmunitionData.BULLETS2, AmmunitionData.ICE_1BALL},
                 RangedWeaponType.CROSSBOW),
-        AK(new int[] { 894,21044,20695,700,701,895,896,2867,21082,18965,20805,19098,20853,20854,3961,4784,20705,21077,21079,21080, 12927,21038,21039,21040,21041,21042,21043 }, new AmmunitionData[] {AmmunitionData.BULLETS2, AmmunitionData.ICE_1BALL},
+        AK(new int[] { 894,21044,20695,700,701,895,896,2867,21082,18965,20805,19098,20853,20854,3961,4784,20705,21077,21079,21080, 12927,21038,21039,21040,21041,21042,21043,3303 }, new AmmunitionData[] {AmmunitionData.BULLETS2, AmmunitionData.ICE_1BALL},
                 RangedWeaponType.CROSSBOW),
 
         SNIPER(new int[] { 21079, 2867}, new AmmunitionData[] {AmmunitionData.BULLETS2, AmmunitionData.ICE_1BALL},

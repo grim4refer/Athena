@@ -298,7 +298,9 @@ public final class WeaponAnimations {
 		if(weaponId == 21042)
 			return 427;	
 		if(weaponId == 21043)
-			return 427;	
+			return 427;
+		if(weaponId == 3303)
+			return 427;
 		if(weaponId == 21072)
 			return 451;	
 		if(weaponId == 21073)

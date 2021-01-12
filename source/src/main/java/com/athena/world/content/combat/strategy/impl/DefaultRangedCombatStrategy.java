@@ -310,7 +310,7 @@ public class DefaultRangedCombatStrategy implements CombatStrategy {
         int slot = player.getWeapon() == WeaponInterface.SHORTBOW || player.getWeapon() == WeaponInterface.LONGBOW
                 || player.getWeapon() == WeaponInterface.CROSSBOW ? Equipment.AMMUNITION_SLOT : Equipment.WEAPON_SLOT;
 
-        int[] buggedGuns = {423, 18931, 3650, 18889,601,20605, 20695,894, 21044, 20705,21082,700,701,895,896,18965,3961,4784,20932,21077,2867,21080, 20805, 21079,422,19098,20853,20854,21038,21039,21040,21041,21042,21043};
+        int[] buggedGuns = {423, 18931, 3650, 18889,601,20605, 20695,894, 21044, 20705,21082,700,701,895,896,18965,3961,4784,20932,21077,2867,21080, 20805, 21079,422,19098,20853,20854,21038,21039,21040,21041,21042,21043,3303,};
         for (int i = 0; i < buggedGuns.length; ++i) {
             if (player.getEquipment().get(Equipment.WEAPON_SLOT).getId() == buggedGuns[i])
                 slot = Equipment.AMMUNITION_SLOT;
