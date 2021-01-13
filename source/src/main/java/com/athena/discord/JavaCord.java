@@ -1,5 +1,6 @@
-package com.athena;
+package com.athena.discord;
 
+import com.athena.GameSettings;
 import com.athena.world.World;
 import com.athena.world.entity.impl.player.Player;
 import org.javacord.api.DiscordApi;

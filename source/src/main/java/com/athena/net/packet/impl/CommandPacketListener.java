@@ -60,7 +60,6 @@ import mysql.impl.Donation;
 import mysql.impl.Vote;
 
 import mysql.MySQLController;
-
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;

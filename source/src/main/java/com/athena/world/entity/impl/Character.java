@@ -6,7 +6,6 @@ import com.athena.model.*;
 import com.athena.model.Locations.Location;
 import com.athena.model.movement.MovementQueue;
 import com.athena.util.Stopwatch;
-import com.athena.world.content.ToolBelt;
 import com.athena.world.content.combat.CombatBuilder;
 import com.athena.world.content.combat.CombatType;
 import com.athena.world.content.combat.magic.CombatSpell;
@@ -23,10 +22,10 @@ public abstract class Character extends Entity {
 
 	public Character(Position position) {
 		super(position);
-		if(position == null)
+		if (position == null)
 			location = Location.DEFAULT;
 		else
-		location = Location.getLocation(this);
+			location = Location.getLocation(this);
 	}
 
 	/*
@@ -35,9 +34,9 @@ public abstract class Character extends Entity {
 
 	/*** STRINGS ***/
 	private String forcedChat;
-	
+
 	/*** LONGS **/
-	
+
 	/*** INSTANCES ***/
 	private Direction direction, primaryDirection = Direction.NONE, secondaryDirection = Direction.NONE, lastDirection = Direction.NONE;
 	private CombatBuilder combatBuilder = new CombatBuilder(this);
@@ -54,31 +53,37 @@ public abstract class Character extends Entity {
 	private Hit primaryHit;
 	private Hit secondaryHit;
 	private RegionInstance regionInstance;
-	
+
 	/*** INTS ***/
 	private int npcTransformationId;
 	private int poisonDamage;
 	private int freezeDelay;
-	
+
 	/*** BOOLEANS ***/
 	private boolean[] prayerActive = new boolean[30], curseActive = new boolean[20];
 	private boolean registered;
 	private boolean teleporting;
 	private boolean resetMovementQueue;
 	private boolean needsPlacement;
-	
+
 	/*** ABSTRACT METHODS ***/
 	public abstract Character setConstitution(int constitution);
+
 	public abstract CombatStrategy determineStrategy();
+
 	public abstract void appendDeath();
+
 	public abstract void heal(int damage);
+
 	public abstract void poisonVictim(Character victim, CombatType type);
+
 	public abstract int getConstitution();
+
 	public abstract int getBaseAttack(CombatType type);
+
 	public abstract int getBaseDefence(CombatType type);
+
 	public abstract int getAttackSpeed();
-	public abstract int getToolBelt();
-	
 	/*
 	 * Getters and setters
 	 * Also contains methods.
@@ -114,22 +119,21 @@ public abstract class Character extends Entity {
 
 	/**
 	 * Deals one damage to this entity.
-	 * 
-	 * @param hit
-	 *            the damage to be dealt.
+	 *
+	 * @param hit the damage to be dealt.
 	 */
 	public void dealDamage(Hit hit) {
 		if (getUpdateFlag().flagged(Flag.SINGLE_HIT)) {
 			dealSecondaryDamage(hit);
 			return;
 		}
-		if(getConstitution() <= 0)
+		if (getConstitution() <= 0)
 			return;
 		primaryHit = decrementHealth(hit);
 		getUpdateFlag().flag(Flag.SINGLE_HIT);
-		if(isPlayer()){
+		if (isPlayer()) {
 			Player p = (Player) this;
-			if(p.getLocation() == Locations.Location.GODS_RAID ){
+			if (p.getLocation() == Locations.Location.GODS_RAID) {
 				p.setRaidDmg(primaryHit.getDamage());
 
 			}
@@ -139,9 +143,9 @@ public abstract class Character extends Entity {
 	public Hit decrementHealth(Hit hit) {
 		if (getConstitution() <= 0)
 			return hit;
-		if(hit.getDamage() > getConstitution())
+		if (hit.getDamage() > getConstitution())
 			hit.setDamage(getConstitution());
-		if(hit.getDamage() < 0)
+		if (hit.getDamage() < 0)
 			hit.setDamage(0);
 		int outcome = getConstitution() - hit.getDamage();
 		if (outcome < 0)
@@ -152,17 +156,16 @@ public abstract class Character extends Entity {
 
 	/**
 	 * Deal secondary damage to this entity.
-	 * 
-	 * @param hit
-	 *            the damage to be dealt.
+	 *
+	 * @param hit the damage to be dealt.
 	 */
 	private void dealSecondaryDamage(Hit hit) {
 		secondaryHit = decrementHealth(hit);
 		getUpdateFlag().flag(Flag.DOUBLE_HIT);
-		if(isPlayer()){
+		if (isPlayer()) {
 			Player p = (Player) this;
-			if(p.getLocation() == Locations.Location.GODS_RAID ){
-				p.setRaidDmg(primaryHit.getDamage()+secondaryHit.getDamage());
+			if (p.getLocation() == Locations.Location.GODS_RAID) {
+				p.setRaidDmg(primaryHit.getDamage() + secondaryHit.getDamage());
 
 			}
 		}
@@ -170,11 +173,9 @@ public abstract class Character extends Entity {
 
 	/**
 	 * Deals two damage splats to this entity.
-	 * 
-	 * @param hit
-	 *            the first hit.
-	 * @param secondHit
-	 *            the second hit.
+	 *
+	 * @param hit       the first hit.
+	 * @param secondHit the second hit.
 	 */
 	public void dealDoubleDamage(Hit hit, Hit secondHit) {
 		dealDamage(hit);
@@ -183,21 +184,18 @@ public abstract class Character extends Entity {
 
 	/**
 	 * Deals three damage splats to this entity.
-	 * 
-	 * @param hit
-	 *            the first hit.
-	 * @param secondHit
-	 *            the second hit.
-	 * @param thirdHit
-	 *            the third hit.
+	 *
+	 * @param hit       the first hit.
+	 * @param secondHit the second hit.
+	 * @param thirdHit  the third hit.
 	 */
 	public void dealTripleDamage(Hit hit, Hit secondHit, final Hit thirdHit) {
 		dealDoubleDamage(hit, secondHit);
 
-		if(isPlayer()){
+		if (isPlayer()) {
 			Player p = (Player) this;
-			if(p.getLocation() == Locations.Location.GODS_RAID ){
-				p.setRaidDmg(primaryHit.getDamage()+secondHit.getDamage()+thirdHit.getDamage());
+			if (p.getLocation() == Locations.Location.GODS_RAID) {
+				p.setRaidDmg(primaryHit.getDamage() + secondHit.getDamage() + thirdHit.getDamage());
 
 			}
 		}
@@ -219,24 +217,20 @@ public abstract class Character extends Entity {
 
 	/**
 	 * Deals four damage splats to this entity.
-	 * 
-	 * @param hit
-	 *            the first hit.
-	 * @param secondHit
-	 *            the second hit.
-	 * @param thirdHit
-	 *            the third hit.
-	 * @param fourthHit
-	 *            the fourth hit.
+	 *
+	 * @param hit       the first hit.
+	 * @param secondHit the second hit.
+	 * @param thirdHit  the third hit.
+	 * @param fourthHit the fourth hit.
 	 */
 	public void dealQuadrupleDamage(Hit hit, Hit secondHit, final Hit thirdHit,
-			final Hit fourthHit) {
+									final Hit fourthHit) {
 		dealDoubleDamage(hit, secondHit);
 
-		if(isPlayer()){
+		if (isPlayer()) {
 			Player p = (Player) this;
-			if(p.getLocation() == Locations.Location.GODS_RAID ){
-				p.setRaidDmg(primaryHit.getDamage()+secondHit.getDamage()+thirdHit.getDamage()+fourthHit.getDamage());
+			if (p.getLocation() == Locations.Location.GODS_RAID) {
+				p.setRaidDmg(primaryHit.getDamage() + secondHit.getDamage() + thirdHit.getDamage() + fourthHit.getDamage());
 
 			}
 		}
@@ -256,7 +250,7 @@ public abstract class Character extends Entity {
 
 	/**
 	 * Get the primary hit for this entity.
-	 * 
+	 *
 	 * @return the primaryHit.
 	 */
 	public Hit getPrimaryHit() {
@@ -265,7 +259,7 @@ public abstract class Character extends Entity {
 
 	/**
 	 * Get the secondary hit for this entity.
-	 * 
+	 *
 	 * @return the secondaryHit.
 	 */
 	public Hit getSecondaryHit() {
@@ -274,11 +268,9 @@ public abstract class Character extends Entity {
 
 	/**
 	 * Prepares to cast the argued spell on the argued victim.
-	 * 
-	 * @param spell
-	 *            the spell to cast.
-	 * @param victim
-	 *            the victim to cast the spell on.
+	 *
+	 * @param spell  the spell to cast.
+	 * @param victim the victim to cast the spell on.
 	 */
 	public void prepareSpell(CombatSpell spell, Character victim) {
 		currentlyCasting = spell;
@@ -287,7 +279,7 @@ public abstract class Character extends Entity {
 
 	/**
 	 * Gets if this entity is registered.
-	 * 
+	 *
 	 * @return the unregistered.
 	 */
 	public boolean isRegistered() {
@@ -296,9 +288,8 @@ public abstract class Character extends Entity {
 
 	/**
 	 * Sets if this entity is registered,
-	 * 
-	 * @param unregistered
-	 *            the unregistered to set.
+	 *
+	 * @param unregistered the unregistered to set.
 	 */
 	public void setRegistered(boolean registered) {
 		this.registered = registered;
@@ -306,7 +297,7 @@ public abstract class Character extends Entity {
 
 	/**
 	 * Gets the combat session.
-	 * 
+	 *
 	 * @return the combat session.
 	 */
 	public CombatBuilder getCombatBuilder() {
@@ -333,7 +324,7 @@ public abstract class Character extends Entity {
 	}
 
 	public boolean isPoisoned() {
-		if(poisonDamage < 0)
+		if (poisonDamage < 0)
 			poisonDamage = 0;
 		return poisonDamage != 0;
 	}
@@ -348,22 +339,23 @@ public abstract class Character extends Entity {
 		getUpdateFlag().flag(Flag.FACE_POSITION);
 		return this;
 	}
-	
+
 	public Character moveTo(Position teleportTarget) {
 		getMovementQueue().reset();
 		super.setPosition(teleportTarget.copy());
 		setNeedsPlacement(true);
 		setResetMovementQueue(true);
 		setTeleporting(true);
-		if(isPlayer()) {
+		if (isPlayer()) {
 			getMovementQueue().handleRegionChange();
 		}
 		return this;
 	}
 
 	private boolean moving;
+
 	public void delayedMoveTo(final Position teleportTarget, final int delay) {
-		if(moving)
+		if (moving)
 			return;
 		moving = true;
 		TaskManager.submit(new Task(delay, this, false) {
@@ -372,6 +364,7 @@ public abstract class Character extends Entity {
 				moveTo(teleportTarget);
 				stop();
 			}
+
 			@Override
 			public void stop() {
 				setEventRunning(false);
@@ -411,14 +404,14 @@ public abstract class Character extends Entity {
 
 	@Override
 	public void performAnimation(Animation animation) {
-		if(animation == null)
+		if (animation == null)
 			return;
 		setAnimation(animation);
 	}
 
 	@Override
 	public void performGraphic(Graphic graphic) {
-		if(graphic == null)
+		if (graphic == null)
 			return;
 		setGraphic(graphic);
 	}
@@ -433,34 +426,32 @@ public abstract class Character extends Entity {
 		setPositionToFace(getPosition().copy().add(directionDeltas[0], directionDeltas[1]));
 	}
 
-    /**
-     * Sets the value for {@link CharacterNode#secondaryDirection}.
-     *
-     * @param secondaryDirection
-     *            the new value to set.
-     */
-    public final void setSecondaryDirection(Direction secondaryDirection) {
-        this.secondaryDirection = secondaryDirection;
-    }
+	/**
+	 * Sets the value for {@link CharacterNode#secondaryDirection}.
+	 *
+	 * @param secondaryDirection the new value to set.
+	 */
+	public final void setSecondaryDirection(Direction secondaryDirection) {
+		this.secondaryDirection = secondaryDirection;
+	}
 
-    /**
-     * Gets the last direction this character was facing.
-     *
-     * @return the last direction.
-     */
-    public final Direction getLastDirection() {
-        return lastDirection;
-    }
+	/**
+	 * Gets the last direction this character was facing.
+	 *
+	 * @return the last direction.
+	 */
+	public final Direction getLastDirection() {
+		return lastDirection;
+	}
 
-    /**
-     * Sets the value for {@link CharacterNode#lastDirection}.
-     *
-     * @param lastDirection
-     *            the new value to set.
-     */
-    public final void setLastDirection(Direction lastDirection) {
-        this.lastDirection = lastDirection;
-    }
+	/**
+	 * Sets the value for {@link CharacterNode#lastDirection}.
+	 *
+	 * @param lastDirection the new value to set.
+	 */
+	public final void setLastDirection(Direction lastDirection) {
+		this.lastDirection = lastDirection;
+	}
 
 	public boolean isTeleporting() {
 		return this.teleporting;
@@ -479,7 +470,7 @@ public abstract class Character extends Entity {
 		this.forcedChat = forcedChat;
 		return this;
 	}
-	
+
 	public boolean[] getPrayerActive() {
 		return prayerActive;
 	}
@@ -548,7 +539,7 @@ public abstract class Character extends Entity {
 	public void setFreezeDelay(int freezeDelay) {
 		this.freezeDelay = freezeDelay;
 	}
-	
+
 	public int decrementAndGetFreezeDelay() {
 		return this.freezeDelay--;
 	}
@@ -556,36 +547,35 @@ public abstract class Character extends Entity {
 	public boolean isFrozen() {
 		return freezeDelay > 0;
 	}
-	
-	/**
-     * Determines if this character needs to reset their movement queue.
-     *
-     * @return {@code true} if this character needs to reset their movement
-     *         queue, {@code false} otherwise.
-     */
-    public final boolean isResetMovementQueue() {
-        return resetMovementQueue;
-    }
 
-    /**
-     * Sets the value for {@link CharacterNode#resetMovementQueue}.
-     *
-     * @param resetMovementQueue
-     *            the new value to set.
-     */
-    public final void setResetMovementQueue(boolean resetMovementQueue) {
-        this.resetMovementQueue = resetMovementQueue;
-    }
-    
-    public void setNeedsPlacement(boolean needsPlacement) {
-    	this.needsPlacement = needsPlacement;
-    }
-    
-    public boolean isNeedsPlacement() {
-    	return needsPlacement;
-    }
-    
-    public RegionInstance getRegionInstance() {
+	/**
+	 * Determines if this character needs to reset their movement queue.
+	 *
+	 * @return {@code true} if this character needs to reset their movement
+	 * queue, {@code false} otherwise.
+	 */
+	public final boolean isResetMovementQueue() {
+		return resetMovementQueue;
+	}
+
+	/**
+	 * Sets the value for {@link CharacterNode#resetMovementQueue}.
+	 *
+	 * @param resetMovementQueue the new value to set.
+	 */
+	public final void setResetMovementQueue(boolean resetMovementQueue) {
+		this.resetMovementQueue = resetMovementQueue;
+	}
+
+	public void setNeedsPlacement(boolean needsPlacement) {
+		this.needsPlacement = needsPlacement;
+	}
+
+	public boolean isNeedsPlacement() {
+		return needsPlacement;
+	}
+
+	public RegionInstance getRegionInstance() {
 		return regionInstance;
 	}
 
@@ -593,5 +583,4 @@ public abstract class Character extends Entity {
 		this.regionInstance = regionInstance;
 	}
 
-	public abstract ToolBelt getToolbelt();
 }

@@ -382,11 +382,6 @@ public class Player extends Character {
 		return this;
 	}
 
-	@Override
-	public ToolBelt getToolbelt() {
-		return null;
-	}
-
 	public int getNpcTransformationId() {
 		return npcTransformationId;
 	}
@@ -854,11 +849,6 @@ public class Player extends Character {
 		if (flag.flagged(Flag.DOUBLE_HIT)) {
 			updateDoubleHit(builder, target);
 		}
-		/*
-		 * if (!player.equals(target) && !updateAppearance && !noChat) {
-		 * player.setCachedUpdateBlock(cachedBuffer.buffer()); }
-		 */
-		// }
 	}
 
 	/**
@@ -1277,11 +1267,6 @@ public class Player extends Character {
 		}
 		return speed;
 		// return DesolaceFormulas.getAttackDelay(this);
-	}
-
-	@Override
-	public int getToolBelt() {
-		return 0;
 	}
 
 	public boolean sendElementalMessage = true;

@@ -1,5 +1,6 @@
 package com.athena.world.content;
 
+import com.athena.discord.JavaCord;
 import com.athena.model.Animation;
 import com.athena.model.GameObject;
 import com.athena.model.Position;
@@ -7,8 +8,9 @@ import com.athena.util.Misc;
 import com.athena.util.Stopwatch;
 import com.athena.world.World;
 import com.athena.world.entity.impl.player.Player;
+import org.javacord.api.Javacord;
 
-	/** Evil Tree's Spawning every 40 minutes **/
+/** Evil Tree's Spawning every 40 minutes **/
 	/*@author Levi <www.rune-server.org/members/AuguryPS>
 	 */
 
@@ -92,6 +94,7 @@ public class EvilTrees {
 				SPAWNED_TREE = new EvilTree(new GameObject(11434, locationData.spawnPos), locationData);
 				CustomObjects.spawnGlobalObject(SPAWNED_TREE.treeObject);
 				World.sendMessage("<img=10> @blu@[Evil Tree]@bla@ The Evil Tree(afkable) has sprouted " + locationData.clue + "!");
+				JavaCord.sendMessage("bot", "hello");
 				timer.reset();
 			}
 		} else {

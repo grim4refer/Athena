@@ -1,9 +1,12 @@
 package com.athena.world.content;
 
 import com.athena.GameLoader;
+import com.athena.model.Damage;
 import com.athena.model.definitions.NPCDrops;
 import com.athena.util.Misc;
 import com.athena.world.World;
+import com.athena.world.content.combat.CombatContainer;
+import com.athena.world.content.combat.CombatHitTask;
 import com.athena.world.content.minigames.impl.Nomad;
 import com.athena.world.content.minigames.impl.RecipeForDisaster;
 import com.athena.world.entity.impl.npc.NPC;

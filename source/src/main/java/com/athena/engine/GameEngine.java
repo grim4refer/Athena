@@ -6,13 +6,11 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy;
 import java.util.concurrent.TimeUnit;
 
-import com.athena.JavaCord;
 import com.athena.engine.task.TaskManager;
 import com.athena.world.World;
 import com.athena.world.content.clan.ClanChatManager;
 import com.athena.world.content.grandexchange.GrandExchangeOffers;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
-import org.javacord.api.Javacord;
 
 /**
  * 
