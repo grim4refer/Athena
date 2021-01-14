@@ -20261,9 +20261,19 @@ public class Client extends RSApplet {
 		}
 		return " " + s;
 	}
+	public static double round(double value, int places) {
+		if (places < 0) throw new IllegalArgumentException();
+
+		long factor = (long) Math.pow(10, places);
+		value = value * factor;
+		long tmp = Math.round(value);
+		return (double) tmp / factor;
+	}
 
 	public void hitmarkDraw(Entity e, int hitLength, int type, int icon, int damage, int soak, int move, int opacity,
 							int mask) {
+		String damageS = ""+damage;
+
 		int drawPos = 0;
 		if (mask == 0) {
 			e.hitMarkPos[0] = spriteDrawY + move;
@@ -20286,6 +20296,17 @@ public class Client extends RSApplet {
 				if (damage == 0) {
 					damage = 1;
 				}
+			}
+			if(damage > 999 && damage <= 999999) {
+				int damageD =  damage/1000;
+
+				damageS = damageD+"K";
+				hitLength-=3;
+			} else if( damage > 999999) {
+				hitLength-=3;
+				double damageD = (double) damage/1000000;
+				damageS = ""+round(damageD, 1) +"M";
+
 			}
 			switch (hitLength) {
 				/* Trial and error shit, terrible hardcoding :( */
@@ -20315,8 +20336,8 @@ public class Client extends RSApplet {
 				x += 4;
 			}
 			end2.drawSprite3(spriteDrawX - 12 + x, drawPos - 12, opacity);
-			(type == 1 ? bigHit : smallHit).drawOpacityText(0xffffff, String.valueOf(damage),
-					drawPos + (type == 1 ? 2 : 32), spriteDrawX + 4 + (soak > 0 ? -16 : 0), opacity);
+			(type == 1 ? smallText : smallText).drawOpacityText(0xffffff, damageS,
+					drawPos + 2, spriteDrawX + 4 + 2 , opacity);
 			if (soak > 0) {
 				drawSoak(soak, opacity, drawPos, x);
 			}
@@ -20382,6 +20403,10 @@ public class Client extends RSApplet {
 		}
 		if (damage > 7000) {
 			x -= 5;
+		}
+		String newDmage = ""+damage;
+        if(damage > 1000) {
+		newDmage = ""+(double) (damage/1000)+"k";
 		}
 		smallHit.drawOpacityText(0xffffff, String.valueOf(damage), drawPos + 32,
 				spriteDrawX - 8 + x + (soakLength == 1 ? 5 : 0), opacity);
