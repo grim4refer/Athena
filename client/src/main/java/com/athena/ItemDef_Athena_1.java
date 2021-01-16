@@ -4129,6 +4129,7 @@ public class ItemDef_Athena_1 {
                 itemDef.femaleEquip1 = 90929;
                 itemDef.name = "Storm Breaker Gloves";
                 break;
+
             case 3303:
                 itemDef.modelID = 140106;
                 itemDef.name = "Green desi gun";
@@ -4142,6 +4143,265 @@ public class ItemDef_Athena_1 {
                 itemDef.femaleEquip1 = 140105;
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
+                break;
+
+            case 20640:
+                itemDef.name = "Aura of Immunity";
+                //itemDef.modelOffsetY = itemDef2.modelOffsetY;
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 746577;//23622
+                break;
+
+            case 20642:
+                itemDef.name = "Aura of Oblivion";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 574224;//23622
+                break;
+
+            case 7619:
+                itemDef.name = "Invigorate aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 3444;//23622
+                break;
+
+            case 20570:
+                itemDef.name = "Illumination aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 334;//23622
+                break;
+
+            case 20572:
+                itemDef.name = "Precision aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.modelOffsetX = 5;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 644;//23622
+                break;
+
+            case 20574:
+                itemDef.name = "Mahjarrat aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 85111;//23622
+                break;
+
+            case 20576:
+                itemDef.name = "Warriors light aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 7855;//23622
+                break;
+
+            case 20578:
+                itemDef.name = "Berserking aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 89999;//23622
+                break;
+
+            case 20580:
+                itemDef.name = "Chance aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 60460;//23622
+                break;
+
+            case 20582:
+                itemDef.name = "Greater chance aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 10000;//23622
+                break;
+
+            case 20599:
+                itemDef.name = "Ancestors shield aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 40404;//23622
+                break;
+
+            case 20584:
+                itemDef.name = "Legendary chance aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 723;//23622
+                break;
+
+            case 20586:
+                itemDef.name = "Basic drop aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 3483;//23622
+                break;
+
+            case 20588:
+                itemDef.name = "Master drop aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 32357;//23622
+                break;
+
+            case 20590:
+                itemDef.name = "Supreme drop aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 64534;//23622
+                break;
+
+            case 20592:
+                itemDef.name = "Aegis blessing aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 5190;//23622
+                break;
+
+            case 20594:
+                itemDef.name = "Call of the wisp aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 9866;//23622
+                break;
+
+            case 20596:
+                itemDef.name = "Wizards instinct";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 1001;//23622
+                break;
+
+            case 20598:
+                itemDef.name = "Forsaken aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 36066;//23622
+                break;
+
+            case 20595:
+                itemDef.name = "Regeneration aura";//double check
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 45666;//23622
+                break;
+
+            case 20573:
+                itemDef.name = "Oddball shield aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 34456;//23622
+                break;
+
+            case 20606:
+                itemDef.name = "Spirits shield aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 75655;//23622
+                break;
+
+            case 20608:
+                itemDef.name = "Surefooted aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.modelZoom = 2000;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 53457;//23622
+                break;
+
+            case 20610:
+                itemDef.name = "Pantheon aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 84235;//23622
+                break;
+
+            case 20612:
+                itemDef.name = "Pegonian aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 19111;//23622
+                break;
+
+            case 20614:
+                itemDef.name = "Oblivion aura";
+                // itemDef.modelID = itemDef2.modelID;
+                itemDef.modelID = 9948;
+                itemDef.stackable = false;
+                itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
+                itemDef.newColor = 44954;//23622
                 break;
 
         }

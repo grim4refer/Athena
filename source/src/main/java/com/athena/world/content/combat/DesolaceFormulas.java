@@ -76,6 +76,18 @@ public class DesolaceFormulas {
 				base = (base * 1.2);
 			if (hasObsidianEffect(plr) || EquipmentBonus.voidEMelee(plr))
 				base = (base * 1.6);
+			if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20574) {
+				base *= 1.05;
+			}
+			if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20576) {
+				base *= 1.10;
+			}
+			if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20578) {
+				base *= 1.15;
+			}
+			if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20642) {
+				base *= 1.35;
+			}
 
 			if (EquipmentBonus.voidGMelee(plr))
 				base *= 1.9;
@@ -506,6 +518,20 @@ public class DesolaceFormulas {
 	public static int getMeleeDefence(Player plr) {
 		int defenceLevel = plr.getSkillManager().getCurrentLevel(Skill.DEFENCE);
 		int i = (int) plr.getBonusManager().getDefenceBonus()[bestMeleeDef(plr)];
+
+		if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20599) {
+			defenceLevel += plr.getSkillManager().getMaxLevel(Skill.DEFENCE) * 0.10;
+		}
+		if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20573) {
+			defenceLevel += plr.getSkillManager().getMaxLevel(Skill.DEFENCE) * 0.20;
+		}
+		if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20606) {
+			defenceLevel += plr.getSkillManager().getMaxLevel(Skill.DEFENCE) * 0.30;
+		}
+		if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20640) {
+			defenceLevel += plr.getSkillManager().getMaxLevel(Skill.DEFENCE) * 0.60;
+		}
+
 		if (plr.getPrayerActive()[PrayerHandler.THICK_SKIN]) {
 			defenceLevel += plr.getSkillManager().getMaxLevel(Skill.DEFENCE) * 0.05;
 		} else if (plr.getPrayerActive()[PrayerHandler.ROCK_SKIN]) {
@@ -637,6 +663,18 @@ public class DesolaceFormulas {
 		} else if (plr.getCurseActive()[CurseHandler.LEECH_RANGED]) {
 			rangeLevel *= 1.10;
 		}
+		if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 7619) {
+			rangeLevel *= 1.05;
+		}
+		if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20570) {
+			rangeLevel *= 1.10;
+		}
+		if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20572) {
+			rangeLevel *= 1.15;
+		}
+		if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20642) {
+			rangeLevel *= 1.35;
+		}
 		if (hasVoid && accuracy > 1.15)
 			rangeLevel *= 1.4;
 		if (hasVoid2 && accuracy > 1.15)
@@ -652,6 +690,18 @@ public class DesolaceFormulas {
 	 */
 	public static int getRangedDefence(Player plr) {
 		int defenceLevel = plr.getSkillManager().getCurrentLevel(Skill.DEFENCE);
+		if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20599) {
+			defenceLevel += plr.getSkillManager().getMaxLevel(Skill.DEFENCE) * 0.10;
+		}
+		if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20573) {
+			defenceLevel += plr.getSkillManager().getMaxLevel(Skill.DEFENCE) * 0.20;
+		}
+		if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20606) {
+			defenceLevel += plr.getSkillManager().getMaxLevel(Skill.DEFENCE) * 0.30;
+		}
+		if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20640) {
+			defenceLevel += plr.getSkillManager().getMaxLevel(Skill.DEFENCE) * 0.60;
+		}
 		if (plr.getPrayerActive()[PrayerHandler.THICK_SKIN]) {
 			defenceLevel += plr.getSkillManager().getMaxLevel(Skill.DEFENCE) * 0.05;
 		} else if (plr.getPrayerActive()[PrayerHandler.ROCK_SKIN]) {
@@ -704,6 +754,21 @@ public class DesolaceFormulas {
 
 		int defenceLevel = plr.getSkillManager().getCurrentLevel(Skill.DEFENCE) / 2
 				+ plr.getSkillManager().getCurrentLevel(Skill.MAGIC) / 2;
+
+		if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20599) {
+			defenceLevel += plr.getSkillManager().getMaxLevel(Skill.DEFENCE) * 0.10;
+		}
+
+		if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20573) {
+			defenceLevel += plr.getSkillManager().getMaxLevel(Skill.DEFENCE) * 0.20;
+		}
+		if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20606) {
+			defenceLevel += plr.getSkillManager().getMaxLevel(Skill.DEFENCE) * 0.30;
+		}
+
+		if(plr.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20640) {
+			defenceLevel += plr.getSkillManager().getMaxLevel(Skill.DEFENCE) * 0.60;
+		}
 
 		if (plr.getPrayerActive()[PrayerHandler.THICK_SKIN]) {
 			defenceLevel += plr.getSkillManager().getMaxLevel(Skill.DEFENCE) * 0.05;
@@ -833,8 +898,19 @@ public class DesolaceFormulas {
 			}
 		} else {
 			damageMultiplier += 0.25;
+			if(p.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20594) {
+				damageMultiplier *= .05;
+			}
+			if(p.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20596) {
+				damageMultiplier *= .10;
+			}
+			if(p.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20598) {
+				damageMultiplier *= .15;
+			}
+			if(p.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20642) {
+				damageMultiplier *= .35;
+			}
 		}
-
 		if (p.getEquipment().getItems()[Equipment.AMULET_SLOT].getId() == 18335) {
 			damageMultiplier += .10;
 		}

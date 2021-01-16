@@ -13,6 +13,7 @@ public final class ItemDef {
 	public int[] originalModelColors;
 	public int[] clorDefcodeTo = {0};
 	public int colourRedefine = 0;
+	public int newColor = 0;
 	public int colourRedefine2 = 0;
 	public int colourRedefine3 = 0;
 	private static List<Integer> untradeableItems = new ArrayList<Integer>();
@@ -135,9 +136,9 @@ public final class ItemDef {
 				model.setTexture(53);
 				break;
 
-			case 20967:
-				model.setTexture(53);
-				break;
+			//case 20967:
+				//model.setTexture(53);
+				//break;
 
 			case 20956:
 				model.setTexture(53);
@@ -573,6 +574,8 @@ public final class ItemDef {
 			model.method1338(colourRedefine2);
 		if (colourRedefine3 != 0)
 			model.method1339(colourRedefine3);
+		if (newColor != 0)
+			model.method1338(newColor);
 
 		applyTexturing(model, id);
 
@@ -649,6 +652,8 @@ public final class ItemDef {
 			model.method1338(colourRedefine2);
 		if (colourRedefine3 != 0)
 			model.method1339(colourRedefine3);
+		if (newColor != 0)
+			model.method1338(newColor);
 
 		applyTexturing(model, id);
 
@@ -702,6 +707,7 @@ public final class ItemDef {
 		lentItemID = -1;
 		colourRedefine = 0;
 		colourRedefine2 = 0;
+		newColor = 0;
 		colourRedefine3 = 0;
 	}
 
@@ -1667,6 +1673,8 @@ public final class ItemDef {
 			model.method1338(colourRedefine2);
 		if (colourRedefine3 != 0)
 			model.method1339(colourRedefine3);
+		if (newColor != 0)
+			model.method1338(newColor);
 		modelCache.put(model, id);
 
 		applyTexturing(model, id);
@@ -1713,6 +1721,8 @@ public final class ItemDef {
 			model.method1338(colourRedefine2);
 		if (colourRedefine3 != 0)
 			model.method1339(colourRedefine3);
+		if (newColor != 0)
+			model.method1338(newColor);
 
 
 		applyTexturing(model, id);

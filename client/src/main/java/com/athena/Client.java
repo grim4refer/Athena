@@ -10049,7 +10049,6 @@ public class Client extends RSApplet {
 					menuActionID[menuActionRow] = 1673;
 					menuActionRow++;
 				}
-
 				++l;
 			}
 			if (j1 == 12) {

@@ -97,7 +97,7 @@ public class Equipment extends ItemContainer {
 	 * The rings slot.
 	 */
 	public static final int RING_SLOT = 12;
-
+	public static final int AURA_SLOT = 8;
 	/**
 	 * The arrows slot.
 	 */

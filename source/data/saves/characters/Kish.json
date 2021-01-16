@@ -1,18 +1,18 @@
 {
-  "total-play-time-ms": 31748006149,
+  "total-play-time-ms": 31752424359,
   "username": "Kish",
   "password": "123",
   "email": "null",
   "staff-rights": "OWNER",
   "game-mode": "NORMAL",
-  "boss-points": 521,
+  "boss-points": 525,
   "npc-kills": 0,
   "ArcticPS-points": 0,
   "transform-id": 0,
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2532,
+    "x": 2527,
     "y": 2534,
     "z": 1
   },
@@ -25,11 +25,11 @@
   "minutes-bonus-exp": -1,
   "total-gained-exp": 2106554725,
   "prestige-points": 0,
-  "achievement-points": 41,
+  "achievement-points": 43,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 90021507,
-  "total-loyalty-points": 101731.0,
+  "loyalty-points": 90036087,
+  "total-loyalty-points": 116311.0,
   "voting-points": 1,
   "slayer-points": 50,
   "pk-points": 0,
@@ -52,10 +52,10 @@
   "music": false,
   "sounds": false,
   "auto-retaliate": true,
-  "xp-locked": false,
+  "xp-locked": true,
   "veng-cast": false,
-  "last-veng": 1609803368709,
-  "fight-type": "SWORD_LUNGE",
+  "last-veng": 876034543,
+  "fight-type": "UNARMED_KICK",
   "sol-effect": 0,
   "skull-timer": 0,
   "accept-aid": false,
@@ -479,12 +479,12 @@
   ],
   "skills": {
     "level": [
-      99742,
-      99742,
-      99742,
-      92286,
       99,
-      95566,
+      99,
+      99,
+      990,
+      99,
+      990,
       99,
       99,
       99,
@@ -704,7 +704,47 @@
   ],
   "equipment": [
     {
-      "id": 4774,
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": 20596,
       "amount": 1,
       "slot": 0
     },
@@ -719,18 +759,8 @@
       "slot": 0
     },
     {
-      "id": 4777,
-      "amount": 1,
-      "slot": 0
-    },
-    {
-      "id": 4775,
-      "amount": 1,
-      "slot": 0
-    },
-    {
-      "id": 4805,
-      "amount": 1,
+      "id": -1,
+      "amount": 0,
       "slot": 0
     },
     {
@@ -739,38 +769,8 @@
       "slot": 0
     },
     {
-      "id": 4776,
-      "amount": 1,
-      "slot": 0
-    },
-    {
       "id": -1,
       "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": 4555,
-      "amount": 1,
-      "slot": 0
-    },
-    {
-      "id": 4556,
-      "amount": 1,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": 11556,
-      "amount": 1,
-      "slot": 0
-    },
-    {
-      "id": 19903,
-      "amount": 9999683,
       "slot": 0
     }
   ],
@@ -927,7 +927,7 @@
     },
     {
       "id": 11316,
-      "amount": 241,
+      "amount": 242,
       "slot": 0
     },
     {
@@ -992,11 +992,6 @@
     },
     {
       "id": 15472,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": 619,
       "amount": 0,
       "slot": 0
     },
@@ -1312,7 +1307,7 @@
     },
     {
       "id": 3300,
-      "amount": 2,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -1397,6 +1392,166 @@
     },
     {
       "id": 3652,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": 20602,
+      "amount": 4,
+      "slot": 0
+    },
+    {
+      "id": 20642,
+      "amount": 6,
+      "slot": 0
+    },
+    {
+      "id": 20614,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20612,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20610,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20608,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20606,
+      "amount": 5,
+      "slot": 0
+    },
+    {
+      "id": 20598,
+      "amount": 3,
+      "slot": 0
+    },
+    {
+      "id": 20596,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20594,
+      "amount": 3,
+      "slot": 0
+    },
+    {
+      "id": 20592,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20590,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20588,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20586,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20584,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20580,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20578,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20576,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20574,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20572,
+      "amount": 3,
+      "slot": 0
+    },
+    {
+      "id": 20570,
+      "amount": 3,
+      "slot": 0
+    },
+    {
+      "id": 7619,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20640,
+      "amount": 5,
+      "slot": 0
+    },
+    {
+      "id": 20573,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20595,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20582,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20871,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20872,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20599,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20604,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 20502,
+      "amount": 2,
+      "slot": 0
+    },
+    {
+      "id": 2601,
       "amount": 1,
       "slot": 0
     }
@@ -1438,7 +1593,9 @@
   "friends": [
     19516667
   ],
-  "ignores": [],
+  "ignores": [
+    34619225402962699
+  ],
   "loyalty-titles": [
     false,
     true,
@@ -1483,10 +1640,10 @@
       "boss": true
     },
     {
-      "runningTotal": 7,
+      "runningTotal": 9,
       "npcId": 2071,
       "npcName": "Vorago",
-      "amount": 7,
+      "amount": 9,
       "boss": true
     },
     {
@@ -1504,10 +1661,10 @@
       "boss": true
     },
     {
-      "runningTotal": 2,
+      "runningTotal": 5,
       "npcId": 10039,
       "npcName": "To\u0027Kash the Bloodchiller",
-      "amount": 2,
+      "amount": 5,
       "boss": true
     },
     {
@@ -1560,10 +1717,10 @@
       "boss": true
     },
     {
-      "runningTotal": 12,
+      "runningTotal": 13,
       "npcId": 1265,
       "npcName": "Car",
-      "amount": 12,
+      "amount": 13,
       "boss": false
     },
     {
@@ -1677,22 +1834,29 @@
       "npcName": "Plane-freezer Lakhrahnaz",
       "amount": 1,
       "boss": true
+    },
+    {
+      "runningTotal": 2,
+      "npcId": 170,
+      "npcName": "Lucario",
+      "amount": 2,
+      "boss": true
     }
   ],
   "drops": [
     {
       "item": 3230,
-      "amount": 13,
+      "amount": 15,
       "rareDrop": true
     },
     {
       "item": 7118,
-      "amount": 113,
+      "amount": 121,
       "rareDrop": true
     },
     {
       "item": 20827,
-      "amount": 2,
+      "amount": 3,
       "rareDrop": true
     },
     {
@@ -1712,12 +1876,12 @@
     },
     {
       "item": 4461,
-      "amount": 105,
+      "amount": 115,
       "rareDrop": false
     },
     {
       "item": 5022,
-      "amount": 6476050,
+      "amount": 6676150,
       "rareDrop": false
     },
     {
@@ -1727,12 +1891,12 @@
     },
     {
       "item": 7100,
-      "amount": 58,
+      "amount": 62,
       "rareDrop": true
     },
     {
       "item": 20089,
-      "amount": 7,
+      "amount": 9,
       "rareDrop": true
     },
     {
@@ -1822,7 +1986,7 @@
     },
     {
       "item": 5023,
-      "amount": 20,
+      "amount": 22,
       "rareDrop": true
     },
     {
@@ -1837,17 +2001,17 @@
     },
     {
       "item": 20200,
-      "amount": 12,
+      "amount": 13,
       "rareDrop": false
     },
     {
       "item": 7102,
-      "amount": 12,
+      "amount": 13,
       "rareDrop": false
     },
     {
       "item": 1543,
-      "amount": 15,
+      "amount": 16,
       "rareDrop": false
     },
     {
@@ -1862,7 +2026,7 @@
     },
     {
       "item": 1067,
-      "amount": 3,
+      "amount": 4,
       "rareDrop": false
     },
     {
@@ -1872,12 +2036,12 @@
     },
     {
       "item": 11320,
-      "amount": 245,
+      "amount": 370,
       "rareDrop": false
     },
     {
       "item": 13740,
-      "amount": 1,
+      "amount": 2,
       "rareDrop": false
     },
     {
@@ -2064,6 +2228,26 @@
       "item": 3652,
       "amount": 1,
       "rareDrop": true
+    },
+    {
+      "item": 18957,
+      "amount": 2,
+      "rareDrop": false
+    },
+    {
+      "item": 20820,
+      "amount": 1,
+      "rareDrop": true
+    },
+    {
+      "item": 20943,
+      "amount": 422,
+      "rareDrop": false
+    },
+    {
+      "item": 20967,
+      "amount": 2,
+      "rareDrop": true
     }
   ],
   "tasks-completion": [
@@ -2216,7 +2400,7 @@
     true,
     true,
     true,
-    false,
+    true,
     true,
     false,
     false,
@@ -2243,7 +2427,7 @@
     0,
     23,
     0,
-    12,
+    13,
     0,
     0,
     0,
@@ -2264,7 +2448,7 @@
     0,
     0,
     0,
-    12,
+    13,
     1,
     0,
     0,

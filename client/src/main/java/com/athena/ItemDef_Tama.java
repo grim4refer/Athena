@@ -391,15 +391,13 @@ public class ItemDef_Tama {
                 break;
 
             case 20967:
-                itemDef.name = "@mag@Lucario @yel@Pet @red@15dr";
-                itemDef2 = ItemDef.forID(12458);
-                itemDef.modelID = itemDef2.modelID;
-                itemDef.modelOffset1 = itemDef2.modelOffset1;
-                itemDef.modelOffsetX = itemDef2.modelOffsetX;
-                itemDef.modelOffsetY = itemDef2.modelOffsetY;
-                itemDef.modelZoom = itemDef2.modelZoom;
-                itemDef.groundActions = new String[]{null, null, "Take", null, null};
-                itemDef.actions = new String[]{null, null, "Summon", null, "Drop"};
+                itemDef.name = "Pet Lucario";
+                itemDef.modelID = 23141;
+                itemDef.modelZoom = 2750;
+                itemDef.rotationY = 340;
+                itemDef.rotationX = 0;
+                itemDef.groundActions = new String[] { null, null, "Take", null, null };
+                itemDef.actions = new String[] { null, null, "Summon", null, "Drop" };
                 break;
 
             case 20968:
