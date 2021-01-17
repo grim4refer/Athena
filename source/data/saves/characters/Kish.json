@@ -12,7 +12,7 @@
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2527,
+    "x": 2536,
     "y": 2534,
     "z": 1
   },
@@ -28,8 +28,8 @@
   "achievement-points": 43,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 90036087,
-  "total-loyalty-points": 116311.0,
+  "loyalty-points": 90046383,
+  "total-loyalty-points": 126607.0,
   "voting-points": 1,
   "slayer-points": 50,
   "pk-points": 0,
@@ -54,7 +54,7 @@
   "auto-retaliate": true,
   "xp-locked": true,
   "veng-cast": false,
-  "last-veng": 876034543,
+  "last-veng": 1609981062227,
   "fight-type": "UNARMED_KICK",
   "sol-effect": 0,
   "skull-timer": 0,
@@ -562,8 +562,23 @@
   },
   "inventory": [
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20596,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20571,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20595,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 11133,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -572,8 +587,18 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20586,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20595,
+      "amount": 1,
+      "slot": 0
+    },
+    {
+      "id": 20586,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -582,58 +607,33 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20588,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20590,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20580,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20582,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20640,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
+      "id": 20642,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -704,8 +704,8 @@
   ],
   "equipment": [
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20807,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -739,12 +739,12 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20809,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": 20596,
+      "id": 20584,
       "amount": 1,
       "slot": 0
     },

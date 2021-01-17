@@ -287,6 +287,25 @@ public class NPCDrops {
 		boolean[] dropsReceived = new boolean[30];
 
 
+		if(p.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20592) {
+
+			if(p.getSkillManager().getCurrentLevel(Skill.PRAYER) < p.getSkillManager().getMaxLevel(Skill.PRAYER)) {
+
+				p.getSkillManager().setCurrentLevel(Skill.PRAYER, p.getSkillManager().getMaxLevel(Skill.PRAYER), true);
+				p.getPacketSender().sendMessage("@red@[ALERT] @mag@Your Aura recharges your prayer!");
+			}
+		}
+		if(p.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20595) {
+
+			if(p.getSkillManager().getCurrentLevel(Skill.CONSTITUTION) < p.getSkillManager().getMaxLevel(Skill.CONSTITUTION)) {
+
+				p.getSkillManager().setCurrentLevel(Skill.CONSTITUTION, p.getSkillManager().getMaxLevel(Skill.CONSTITUTION), true);
+				p.getPacketSender().sendMessage("@red@[ALERT] @mag@Your Aura blesses you with full hitpoints!!");
+			}
+		}
+
+
+
 		if (npc.getId () == 3) {
 			p.moveTo(new Position(2535, 2501, 1));
 			p.getInventory().add(19101, 1 + Misc.getRandom(9)).add(5022, 1 + Misc.getRandom(75000));
@@ -612,6 +631,18 @@ public class NPCDrops {
         }  if(p.getSummoned() > 3053) {
             drBoost += 3;
         }
+		if (p.getEquipment().get(Equipment.AURA_SLOT).getId() == 20580) { //if the chance from the table is greater or equal to 60, and player is wearing ring of wealth
+			drBoost += 5; //Chance Aura
+		}
+		if (p.getEquipment().get(Equipment.AURA_SLOT).getId() == 20582) { //if the chance from the table is greater or equal to 60, and player is wearing ring of wealth
+			drBoost += 10; //Greater Chance Aura
+		}
+		if (p.getEquipment().get(Equipment.AURA_SLOT).getId() == 20584) { //if the chance from the table is greater or equal to 60, and player is wearing ring of wealth
+			drBoost += 15; //Legendary Chance aura
+		}
+		if (p.getEquipment().get(Equipment.AURA_SLOT).getId() == 20640) { //if the chance from the table is greater or equal to 60, and player is wearing ring of wealth
+			drBoost += 15; //Aura of immunity
+		}
 		if (ringOfWealth) { //if the chance from the table is greater or equal to 60, and player is wearing ring of wealth
 			drBoost += 2;
 		}
@@ -866,7 +897,21 @@ public class NPCDrops {
 		if(p.getSummoned() == 2074) {
 			drBoost += 0;
 		}
-		
+		if (p.getEquipment().get(Equipment.AURA_SLOT).getId() == 20586) { //if the chance from the table is greater or equal to 60, and player is wearing ring of wealth
+			drBoost += 5; //Basic Aura
+		}
+		if (p.getEquipment().get(Equipment.AURA_SLOT).getId() == 20588) { //if the chance from the table is greater or equal to 60, and player is wearing ring of wealth
+			drBoost += 10; //Master Drop Aura
+		}
+		if (p.getEquipment().get(Equipment.AURA_SLOT).getId() == 20590) { //if the chance from the table is greater or equal to 60, and player is wearing ring of wealth
+			drBoost += 15; //Supreme Drop Aura
+		}
+		if (p.getEquipment().get(Equipment.AURA_SLOT).getId() == 20640) { //if the chance from the table is greater or equal to 60, and player is wearing ring of wealth
+			drBoost += 25; //Aura of immunity
+		}
+		if (p.getEquipment().get(Equipment.AURA_SLOT).getId() == 20642) { //if the chance from the table is greater or equal to 60, and player is wearing ring of wealth
+			drBoost += 15; //Aura of oblivion
+		}
 		if (ringOfWealth) { //if the chance from the table is greater or equal to 60, and player is wearing ring of wealth
 			drBoost += 2;
 		}		if (p.getEquipment().get(Equipment.RING_SLOT).getId() == 11527) { //if the chance from the table is greater or equal to 60, and player is wearing ring of wealth

@@ -21,7 +21,7 @@ import com.athena.world.content.Sounds;
 import com.athena.world.content.WellOfGoodwill;
 import com.athena.world.content.Achievements.AchievementData;
 import com.athena.world.content.Sounds.Sound;
-//import com.arlania.world.content.auras.AuraData.AuraType;
+//import com.athena.world.content.auras.AuraData.AuraType;
 import com.athena.world.content.combat.prayer.CurseHandler;
 import com.athena.world.content.combat.prayer.PrayerHandler;
 import com.athena.world.content.skill.impl.dungeoneering.UltimateIronmanHandler;
@@ -98,6 +98,9 @@ public class SkillManager {
 			experience *= 1.6;
 		if(player.getGameMode() != GameMode.NORMAL) {
 			experience *= 1.3;
+		}
+		if(player.getEquipment().getItems()[Equipment.AURA_SLOT].getId() == 20608) {
+			experience *= 2.0;
 		}
 		if(Location.inResource(player)) {
 			experience *= 2.0D;
