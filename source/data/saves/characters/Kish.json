@@ -1,19 +1,19 @@
 {
-  "total-play-time-ms": 31752424359,
+  "total-play-time-ms": 31757507537,
   "username": "Kish",
   "password": "123",
   "email": "null",
   "staff-rights": "OWNER",
   "game-mode": "NORMAL",
-  "boss-points": 525,
+  "boss-points": 527,
   "npc-kills": 0,
   "ArcticPS-points": 0,
   "transform-id": 0,
   "timer": 0,
   "loyalty-title": "NONE",
   "position": {
-    "x": 2536,
-    "y": 2534,
+    "x": 2520,
+    "y": 2524,
     "z": 1
   },
   "online-status": "ON",
@@ -28,8 +28,8 @@
   "achievement-points": 43,
   "dung-tokens": 0,
   "commendations": 0,
-  "loyalty-points": 90046383,
-  "total-loyalty-points": 126607.0,
+  "loyalty-points": 90063252,
+  "total-loyalty-points": 143476.0,
   "voting-points": 1,
   "slayer-points": 50,
   "pk-points": 0,
@@ -54,7 +54,7 @@
   "auto-retaliate": true,
   "xp-locked": true,
   "veng-cast": false,
-  "last-veng": 1609981062227,
+  "last-veng": 1610047857280,
   "fight-type": "UNARMED_KICK",
   "sol-effect": 0,
   "skull-timer": 0,
@@ -567,7 +567,7 @@
       "slot": 0
     },
     {
-      "id": 20571,
+      "id": 20616,
       "amount": 1,
       "slot": 0
     },
@@ -582,8 +582,8 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20584,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -602,8 +602,8 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20809,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -637,33 +637,33 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20807,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 11316,
+      "amount": 14,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 773,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 4151,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 19092,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 20615,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -704,7 +704,27 @@
   ],
   "equipment": [
     {
-      "id": 20807,
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": -1,
+      "amount": 0,
+      "slot": 0
+    },
+    {
+      "id": 20615,
       "amount": 1,
       "slot": 0
     },
@@ -719,43 +739,23 @@
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": -1,
-      "amount": 0,
-      "slot": 0
-    },
-    {
-      "id": 20809,
+      "id": 20617,
       "amount": 1,
       "slot": 0
     },
     {
-      "id": 20584,
+      "id": 20614,
       "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 21059,
+      "amount": 1,
       "slot": 0
     },
     {
-      "id": -1,
-      "amount": 0,
+      "id": 5167,
+      "amount": 1,
       "slot": 0
     },
     {
@@ -1007,7 +1007,7 @@
     },
     {
       "id": 21059,
-      "amount": 1,
+      "amount": 0,
       "slot": 0
     },
     {
@@ -1292,7 +1292,7 @@
     },
     {
       "id": 19092,
-      "amount": 1,
+      "amount": 0,
       "slot": 0
     },
     {
@@ -1382,7 +1382,7 @@
     },
     {
       "id": 5167,
-      "amount": 1,
+      "amount": 0,
       "slot": 0
     },
     {
@@ -1619,10 +1619,10 @@
       "boss": true
     },
     {
-      "runningTotal": 8,
+      "runningTotal": 13,
       "npcId": 6305,
       "npcName": "Yanille Guardian",
-      "amount": 8,
+      "amount": 13,
       "boss": true
     },
     {
@@ -1640,10 +1640,10 @@
       "boss": true
     },
     {
-      "runningTotal": 9,
+      "runningTotal": 11,
       "npcId": 2071,
       "npcName": "Vorago",
-      "amount": 9,
+      "amount": 11,
       "boss": true
     },
     {
@@ -1717,10 +1717,10 @@
       "boss": true
     },
     {
-      "runningTotal": 13,
+      "runningTotal": 17,
       "npcId": 1265,
       "npcName": "Car",
-      "amount": 13,
+      "amount": 17,
       "boss": false
     },
     {
@@ -1841,17 +1841,24 @@
       "npcName": "Lucario",
       "amount": 2,
       "boss": true
+    },
+    {
+      "runningTotal": 3,
+      "npcId": 9357,
+      "npcName": "Vladimir",
+      "amount": 3,
+      "boss": true
     }
   ],
   "drops": [
     {
       "item": 3230,
-      "amount": 15,
+      "amount": 17,
       "rareDrop": true
     },
     {
       "item": 7118,
-      "amount": 121,
+      "amount": 131,
       "rareDrop": true
     },
     {
@@ -1876,12 +1883,12 @@
     },
     {
       "item": 4461,
-      "amount": 115,
+      "amount": 130,
       "rareDrop": false
     },
     {
       "item": 5022,
-      "amount": 6676150,
+      "amount": 7690350,
       "rareDrop": false
     },
     {
@@ -1891,12 +1898,12 @@
     },
     {
       "item": 7100,
-      "amount": 62,
+      "amount": 74,
       "rareDrop": true
     },
     {
       "item": 20089,
-      "amount": 9,
+      "amount": 11,
       "rareDrop": true
     },
     {
@@ -1911,7 +1918,7 @@
     },
     {
       "item": 4784,
-      "amount": 3,
+      "amount": 5,
       "rareDrop": true
     },
     {
@@ -1986,7 +1993,7 @@
     },
     {
       "item": 5023,
-      "amount": 22,
+      "amount": 24,
       "rareDrop": true
     },
     {
@@ -2001,32 +2008,32 @@
     },
     {
       "item": 20200,
-      "amount": 13,
+      "amount": 17,
       "rareDrop": false
     },
     {
       "item": 7102,
-      "amount": 13,
+      "amount": 17,
       "rareDrop": false
     },
     {
       "item": 1543,
-      "amount": 16,
+      "amount": 20,
       "rareDrop": false
     },
     {
       "item": 1153,
-      "amount": 5,
+      "amount": 6,
       "rareDrop": false
     },
     {
       "item": 20929,
-      "amount": 6,
+      "amount": 7,
       "rareDrop": true
     },
     {
       "item": 1067,
-      "amount": 4,
+      "amount": 6,
       "rareDrop": false
     },
     {
@@ -2248,6 +2255,16 @@
       "item": 20967,
       "amount": 2,
       "rareDrop": true
+    },
+    {
+      "item": 3981,
+      "amount": 1,
+      "rareDrop": true
+    },
+    {
+      "item": 21012,
+      "amount": 1,
+      "rareDrop": false
     }
   ],
   "tasks-completion": [
@@ -2427,7 +2444,7 @@
     0,
     23,
     0,
-    13,
+    17,
     0,
     0,
     0,
@@ -2448,7 +2465,7 @@
     0,
     0,
     0,
-    13,
+    17,
     1,
     0,
     0,

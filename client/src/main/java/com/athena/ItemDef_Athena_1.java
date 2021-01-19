@@ -4401,7 +4401,61 @@ public class ItemDef_Athena_1 {
                 itemDef.modelID = 9948;
                 itemDef.stackable = false;
                 itemDef.actions = new String[]{null, "Wear", null, null, "Drop"};
-                itemDef.newColor = 44954;//23622
+                itemDef.newColor = 44954;//236
+                break;
+
+            case 20615:
+                itemDef.modelID = 140111;
+                itemDef.name = "Athena Starter body";
+                itemDef.description = "Athena";
+                itemDef.modelZoom = 1740;
+                itemDef.rotationY = 474;
+                itemDef.rotationX = 2045;
+                itemDef.modelOffset1 = 0;
+                itemDef.modelOffsetY = -5;
+                itemDef.maleEquip1 = 140110;
+                itemDef.femaleEquip1 = 140110;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                itemDef.actions[4] = "Drop";
+                break;
+
+            case 20616:
+                itemDef.modelID = 140113;
+                itemDef.name = "Athena Starter Helm";
+                itemDef.description = "Athena";
+                itemDef.modelZoom = 1730;
+                itemDef.rotationY = 525;
+                itemDef.rotationX = 0;
+                itemDef.modelOffset1 = 0;
+                itemDef.modelOffsetY = 0;
+                itemDef.maleEquip1 = 140112;
+                itemDef.femaleEquip1 = 140112;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                itemDef.actions[4] = "Drop";
+                break;
+
+            case 20617:
+                itemDef.modelID = 140115;
+                itemDef.name = "Athena Starter legs";
+                itemDef.description = "Athena";
+                itemDef.modelZoom = 1740;
+                itemDef.rotationY = 474;
+                itemDef.rotationX = 2045;
+                itemDef.modelOffset1 = 0;
+                itemDef.modelOffsetY = -5;
+                itemDef.maleEquip1 = 140114;
+                itemDef.femaleEquip1 = 140114;
+                itemDef.groundActions = new String[5];
+                itemDef.groundActions[2] = "Take";
+                itemDef.actions = new String[5];
+                itemDef.actions[1] = "Wear";
+                itemDef.actions[4] = "Drop";
                 break;
 
         }
