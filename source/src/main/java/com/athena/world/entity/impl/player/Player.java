@@ -85,6 +85,7 @@ import com.athena.world.content.skill.impl.slayer.Slayer;
 import com.athena.world.content.skill.impl.summoning.Pouch;
 import com.athena.world.content.skill.impl.summoning.Summoning;
 import com.athena.world.content.transportation.TeleportHandler;
+import com.athena.world.content.Dissolving;
 import com.athena.world.entity.impl.Character;
 import com.athena.world.entity.impl.npc.NPC;
 
@@ -398,6 +399,12 @@ public class Player extends Character {
 
 	public void setNpcKills(int npcKills) {
 		this.npcKills = npcKills;
+	}
+
+	private Dissolving dissolving = new Dissolving(this);
+
+	public Dissolving getDissolving() {
+		return dissolving;
 	}
 
 	/*

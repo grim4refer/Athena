@@ -40,7 +40,7 @@ public enum Skill {
 	HUNTER(8267, 3, 22),
 	SUMMONING(9267, 5, 23),
 	DUNGEONEERING(10267, 5, 24),
-	//INVENTION(10267, 5, 25);
+	INVENTION(10267, 5, 25),
 ;
 	Skill(int chatboxInterface, int prestigePoints, int prestigeId) {
 		this.chatboxInterface = chatboxInterface;

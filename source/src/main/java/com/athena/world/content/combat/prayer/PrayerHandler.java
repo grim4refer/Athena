@@ -220,14 +220,14 @@ public class PrayerHandler {
 			player.getPacketSender().sendMessage("You need a Defence level of at least 70 to use Piety.");
 			return;
 		}
-		if (prayerId == RIGOUR && player.getSkillManager().getMaxLevel(Skill.DEFENCE) < 80) {
+		if (prayerId == RIGOUR && player.getSkillManager().getMaxLevel(Skill.INVENTION) < 80) {
 			player.getPacketSender().sendConfig(pd.configId, 0);
-			player.getPacketSender().sendMessage("You need a Defence level of at least 80 to use Rigour.");
+			player.getPacketSender().sendMessage("You need a Invention level of at least 80 to use Rigour.");
 			return;
 		}
-		if (prayerId == AUGURY && player.getSkillManager().getMaxLevel(Skill.DEFENCE) < 80) {
+		if (prayerId == AUGURY && player.getSkillManager().getMaxLevel(Skill.INVENTION) < 80) {
 			player.getPacketSender().sendConfig(pd.configId, 0);
-			player.getPacketSender().sendMessage("You need a Defence level of at least 80 to use Augury.");
+			player.getPacketSender().sendMessage("You need a Invention level of at least 80 to use Augury.");
 			return;
 		}
 		switch (prayerId) {

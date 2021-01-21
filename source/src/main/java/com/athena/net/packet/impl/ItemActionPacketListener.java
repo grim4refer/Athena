@@ -52,6 +52,7 @@ import com.athena.world.content.treasuretrails.DiggingScrolls;
 import com.athena.world.content.treasuretrails.MapScrolls;
 import com.athena.world.content.treasuretrails.Puzzle;
 import com.athena.world.content.treasuretrails.SearchScrolls;
+import com.athena.world.content.upgrade.Upgrade;
 import com.athena.world.entity.impl.npc.NPC;
 import com.athena.world.entity.impl.player.Player;
 import com.google.common.collect.Multiset.Entry;
@@ -151,6 +152,7 @@ public class ItemActionPacketListener implements PacketListener {
 			return;
 		}
 
+
 		switch(itemId) {
 
 			case 691:
@@ -188,6 +190,11 @@ public class ItemActionPacketListener implements PacketListener {
 				StarterTasks.finishTask(player, StarterTaskData.READ_THE_GUIDE_BOOK);
 				player.sendMessage("@red@You've read the book!");
 				player.getPacketSender().sendInterface(50200);
+				break;
+			case 12855://upgrade orb
+				int[] re3296 = { -1 };
+				for (int i = 0; i < re3296.length; i++)
+					player.getPacketSender().sendInterface(29000);
 				break;
 
 			case 18898:
@@ -1591,8 +1598,6 @@ public class ItemActionPacketListener implements PacketListener {
 		int interfaceId = packet.readLEShortA();
 		int slot = packet.readLEShort();
 		int itemId = packet.readShortA();
-
-
 		if(slot < 0 || slot > player.getInventory().capacity())
 			return;
 		if(player.getInventory().getItems()[slot].getId() != itemId)
@@ -1600,6 +1605,7 @@ public class ItemActionPacketListener implements PacketListener {
 		if (SummoningData.isPouch(player, itemId, 2))
 			return;
 
+		player.getDissolving().handle(itemId,1);
 
 		/*if(itemId == 5023) {
 			for(int i = 0; i < player.getInventory().getAmount(5023); i++) {
@@ -1891,6 +1897,8 @@ public class ItemActionPacketListener implements PacketListener {
 		if (SummoningData.isPouch(player, itemId, 3)) {
 			return;
 		}
+
+		player.getDissolving().handle(itemId,1);
 		/*if(itemId == 5023) {
 			int amount = 0;
 			for(int i = 0; i < player.getInventory().getAmount(5023); i++) {

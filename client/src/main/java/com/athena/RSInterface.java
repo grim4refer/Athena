@@ -281,9 +281,9 @@ public class RSInterface {
 		setBounds(29006, 379, 155, 7, widget);
 
 
-		addText(29007, "Where to obtain Dusts from?", 0xFF981F, true, true, -1, 2);
+		addText(29007, "How to get Upgrade orbs?", 0xFF981F, true, true, -1, 2);
 		setBounds(29007, 256, 274, 8, widget);
-		addText(29008, "@whi@Dusts are obtainable from dismantling items, or donating!" , 0xFF981F, true, true, -1, 1);
+		addText(29008, "@whi@Upgrade orbs are obtained from dissolving items & PvM drops" , 0xFF981F, true, true, -1, 1);
 		setBounds(29008, 256, 288, 9, widget);
 
 		addHoverButtonWSpriteLoader(29009, 1236, 100, 32, "Search", 0, 29010, 1);

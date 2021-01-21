@@ -292,7 +292,7 @@ public class ItemDefinition {
 		return bonus;
 	}
 	
-	private int[] requirement = new int[25];
+	private int[] requirement = new int[26];
 
 	public int[] getRequirement() {
 		return requirement;

@@ -4420,6 +4420,7 @@ public class ItemDef_Athena_1 {
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
+                itemDef.actions[3] = "Dissolve into Orbs";
                 break;
 
             case 20616:
@@ -4438,6 +4439,7 @@ public class ItemDef_Athena_1 {
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
+                itemDef.actions[3] = "Dissolve into Orbs";
                 break;
 
             case 20617:
@@ -4456,6 +4458,13 @@ public class ItemDef_Athena_1 {
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
                 itemDef.actions[4] = "Drop";
+                itemDef.actions[3] = "Dissolve into Orbs";
+                break;
+
+            case 12855:
+                itemDef.name = "Upgrade-orb";
+                itemDef.modelZoom = 1000;
+                itemDef.actions = new String[]{"Read", null, null, null, "Destroy"};
                 break;
 
         }

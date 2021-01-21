@@ -390,8 +390,8 @@ public class EquipPacketListener implements PacketListener {
 						 */
 						if (item != null && id == item.getId()) {
 							for (Skill skill : Skill.VALUES) {
-								if (skill == Skill.CONSTRUCTION)
-									continue;
+								//if (skill == Skill.INVENTION)
+									//continue;
 								if (item.getDefinition().getRequirement()[skill.ordinal()] > player.getSkillManager().getMaxLevel(skill)) {
 									StringBuilder vowel = new StringBuilder();
 									if (skill.getName().startsWith("a") || skill.getName().startsWith("e") || skill.getName().startsWith("i") || skill.getName().startsWith("o") || skill.getName().startsWith("u")) {

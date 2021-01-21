@@ -141,6 +141,13 @@ public class SkillManager {
 			player.getPacketSender().sendMessage("<shad=0>@red@You will gain NO EXP until you claim your stored Dungeoneering items.");
 			return this;
 		}
+		if (skill.equals(Skill.INVENTION)) {
+			experience = experience * 2; // reduced by 3 times.
+		}
+		if (skill.equals(Skill.PRAYER)) {
+			experience = experience / 5; // reduced by 3 times.
+		}
+
 		/*
 		 * The skill's level after adding the experience.
 		 */
@@ -169,7 +176,11 @@ public class SkillManager {
 			player.performGraphic(new Graphic(312));
 			player.getPacketSender().sendMessage("You've just advanced " + skillName + " level! You have reached level " + newLevel);
 			Sounds.sendSound(player, Sound.LEVELUP);
+			if (skill.equals(Skill.INVENTION)) {
+				player.performGraphic(new Graphic(312));
+				player.getPacketSender().sendInterfaceRemoval();
 
+			}
 			if(player.getSkillManager().getTotalLevel() >= 999) {
 				Achievements.finishAchievement(player, AchievementData.REACH_LEVEL_99_IN_ALL_SKILLS);
 			}
@@ -223,13 +234,13 @@ public class SkillManager {
 	 */
 	public SkillManager updateSkill(Skill skill) {
 		int maxLevel = getMaxLevel(skill), currentLevel = getCurrentLevel(skill);
-		if (skill == Skill.PRAYER)
-			player.getPacketSender().sendString(687, currentLevel + "/" + maxLevel);
+		// if (skill == Skill.PRAYER)
+		// player.getPacketSender().sendString(687, currentLevel + "/" + maxLevel);
 		if (isNewSkill(skill)) {
 			maxLevel = (maxLevel / 10);
 			currentLevel = (currentLevel / 10);
 		}
-		player.getPacketSender().sendString(31200, ""+getTotalLevel());
+		player.getPacketSender().sendString(31200, Integer.toString(getTotalLevel()));
 		player.getPacketSender().sendString(19000, "Combat level: " + getCombatLevel());
 		player.getPacketSender().sendSkill(skill);
 		return this;
@@ -245,7 +256,7 @@ public class SkillManager {
 			return this;
 		}
 		if(prestige && player.getSkillManager().getMaxLevel(skill) < getMaxAchievingLevel(skill)) {
-			player.getPacketSender().sendMessage("You must have reached the maximum level in a skill to prestige in it.");
+			player.getPacketSender().sendMessage("You must have reached the maximum level in a skill to prestige in it. @blu@(Level 120)");
 			return this;
 		}
 		if(prestige) {
@@ -282,8 +293,8 @@ public class SkillManager {
 	 * @return			The least amount of experience needed to achieve said level.
 	 */
 	public static int getExperienceForLevel(int level) {
-		if(level <= 99) {
-			return EXP_ARRAY[--level > 98 ? 98 : level];
+		if (level <= 120) {
+			return EXP_ARRAY[--level > 119 ? 119 : level];
 		} else {
 			int points = 0;
 			int output = 0;
@@ -292,7 +303,7 @@ public class SkillManager {
 				if (lvl >= level) {
 					return output;
 				}
-				output = (int)Math.floor(points / 4);
+				output = (int) Math.floor(points / 4);
 			}
 		}
 		return 0;
@@ -304,15 +315,15 @@ public class SkillManager {
 	 * @return				The level you obtain when you have specified experience.
 	 */
 	public static int getLevelForExperience(int experience) {
-		if(experience <= EXPERIENCE_FOR_99) {
-			for(int j = 98; j >= 0; j--) {
-				if(EXP_ARRAY[j] <= experience) {
-					return j+1;
+		if (experience <= EXPERIENCE_FOR_120) {
+			for (int j = 119; j >= 0; j--) {
+				if (EXP_ARRAY[j] <= experience) {
+					return j + 1;
 				}
 			}
 		} else {
 			int points = 0, output = 0;
-			for (int lvl = 1; lvl <= 99; lvl++) {
+			for (int lvl = 1; lvl <= 120; lvl++) {
 				points += Math.floor(lvl + 300.0 * Math.pow(2.0, lvl / 7.0));
 				output = (int) Math.floor(points / 4);
 				if (output >= experience) {
@@ -320,7 +331,7 @@ public class SkillManager {
 				}
 			}
 		}
-		return 99;
+		return 120;
 	}
 
 	/**
@@ -369,18 +380,18 @@ public class SkillManager {
 	 */
 	public int getTotalLevel() {
 		int total = 0;
-		for (Skill skill : Skill.VALUES) {
+		for (Skill skill : Skill.values()) {
 			/*
-			 * If the skill is not equal to constitution or prayer, total can 
-			 * be summed up with the maxLevel.
+			 * If the skill is not equal to constitution or prayer, total can be summed up
+			 * with the maxLevel.
 			 */
-			if (isNewSkill(skill)) {
-				total += skills.maxLevel[skill.ordinal()] / 10;
-			} else {
+			if (!isNewSkill(skill)) {
 				total += skills.maxLevel[skill.ordinal()];
 				/*
 				 * Other-wise add the maxLevel / 10, used for 'constitution' and prayer * 10.
 				 */
+			} else {
+				total += skills.maxLevel[skill.ordinal()] / 10;
 			}
 		}
 		return total;
@@ -412,9 +423,9 @@ public class SkillManager {
 	 * @return			The max level that can be achieved in said skill.
 	 */
 	public static int getMaxAchievingLevel(Skill skill) {
-		int level = 99;
+		int level = 120;
 		if (isNewSkill(skill)) {
-			level = 990;
+			level = 1200;
 		}
 		/*if (skill == Skill.DUNGEONEERING) {
 			level = 120;
@@ -573,7 +584,7 @@ public class SkillManager {
 	/**
 	 * The maximum amount of skills in the game.
 	 */
-	public static final int MAX_SKILLS = 25;
+	public static final int MAX_SKILLS = 26;
 
 	/**
 	 * The maximum amount of experience you can
@@ -582,18 +593,17 @@ public class SkillManager {
 	private static final int MAX_EXPERIENCE = 2000000000;
 
 	private static final int EXPERIENCE_FOR_99 = 13034431;
+	private static final int EXPERIENCE_FOR_120 = 104273167;
 
-	private static final int EXP_ARRAY[] = {
-			0,83,174,276,388,512,650,801,969,1154,1358,1584,1833,2107,2411,2746,3115,3523,
-			3973,4470,5018,5624,6291,7028,7842,8740,9730,10824,12031,13363,14833,16456,18247,
-			20224,22406,24815,27473,30408,33648,37224,41171,45529,50339,55649,61512,67983,75127,
-			83014,91721,101333,111945,123660,136594,150872,166636,184040,203254,224466,247886,
-			273742,302288,333804,368599,407015,449428,496254,547953,605032,668051,737627,814445,
-			899257,992895,1096278,1210421,1336443,1475581,1629200,1798808,1986068,2192818,2421087,
-			2673114,2951373,3258594,3597792,3972294,4385776,4842295,5346332,5902831,6517253,7195629,
-			7944614,8771558,9684577,10692629,11805606,13034431,/*14391160,15889109,17542976,19368992,
-			21385073,23611006,26068632,28782069,31777943,35085654,38737661,42769801,47221641,52136869,
-			57563718,63555443,70170840,77474828,85539082,94442737,104273167 to 120 skill*/
-	};
+	private static final int EXP_ARRAY[] = { 0, 83, 174, 276, 388, 512, 650, 801, 969, 1154, 1358, 1584, 1833, 2107,
+			2411, 2746, 3115, 3523, 3973, 4470, 5018, 5624, 6291, 7028, 7842, 8740, 9730, 10824, 12031, 13363, 14833,
+			16456, 18247, 20224, 22406, 24815, 27473, 30408, 33648, 37224, 41171, 45529, 50339, 55649, 61512, 67983,
+			75127, 83014, 91721, 101333, 111945, 123660, 136594, 150872, 166636, 184040, 203254, 224466, 247886, 273742,
+			302288, 333804, 368599, 407015, 449428, 496254, 547953, 605032, 668051, 737627, 814445, 899257, 992895,
+			1096278, 1210421, 1336443, 1475581, 1629200, 1798808, 1986068, 2192818, 2421087, 2673114, 2951373, 3258594,
+			3597792, 3972294, 4385776, 4842295, 5346332, 5902831, 6517253, 7195629, 7944614, 8771558, 9684577, 10692629,
+			11805606, 13034431, 14391160, 15889109, 17542976, 19368992, 21385073, 23611006, 26068632, 28782069,
+			31777943, 35085654, 38737661, 42769801, 47221641, 52136869, 57563718, 63555443, 70170840, 77474828,
+			85539082, 94442737, 104273167 };
 
 }
