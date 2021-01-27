@@ -13,6 +13,7 @@ import com.athena.net.PipelineFactory;
 import com.athena.net.security.ConnectionHandler;
 import com.athena.world.SlotMachineRewards;
 import com.athena.world.World;
+import com.athena.world.content.AOESystem;
 import com.athena.world.clip.region.RegionClipping;
 import com.athena.world.content.*;
 import com.athena.world.content.clan.ClanChatManager;
@@ -171,6 +172,7 @@ public final class GameLoader {
 		serviceLoader.execute(PlayerOwnedShopManager::loadShops);
 		serviceLoader.execute(MonsterDrops::initialize);
 		serviceLoader.execute(GlobalBossHandler::init);
+		serviceLoader.execute(AOESystem.getSingleton()::parseData);
 
 	}
 

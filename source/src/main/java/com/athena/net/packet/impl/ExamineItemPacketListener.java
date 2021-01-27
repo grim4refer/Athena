@@ -87,7 +87,7 @@ public class ExamineItemPacketListener implements PacketListener {
 		 * itemDef.getName() + " price is currently estimated at " + data.getPrice()); }
 		 * }
 		 */
-		player.sendMessage("@bla@<img=30>[PRICE CHECK] <col=5e0606>" + itemDef.getName()
+		player.sendMessage("@bla@<img=18>[PRICE CHECK] <col=5e0606>" + itemDef.getName()
 				+ ": <col=06195e>Value of this item is : <col=065e16> " + formatCoins(itemDef.getValue()) + ".");
 	}
 	public static String formatCoins(int amount) {

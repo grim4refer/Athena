@@ -8,8 +8,10 @@ import com.athena.model.Locations.Location;
 import com.athena.model.container.impl.Equipment;
 import com.athena.model.definitions.WeaponAnimations;
 import com.athena.util.Misc;
-import com.athena.world.content.Achievements;
-import com.athena.world.content.Sounds;
+import com.athena.world.content.*;
+import com.athena.world.content.AOEHandler;
+import com.athena.world.content.AOESystem;
+import com.athena.world.content.AOEWeaponData;
 //import com.arlania.world.content.auras.AuraData.AuraType;
 import com.athena.world.content.Achievements.AchievementData;
 import com.athena.world.content.combat.CombatContainer.CombatHit;
@@ -203,6 +205,16 @@ public class CombatHitTask extends Task {
 						Achievements.doProgress(p, AchievementData.DEAL_EASY_DAMAGE_USING_MAGIC, damage);
 						Achievements.doProgress(p, AchievementData.DEAL_MEDIUM_DAMAGE_USING_MAGIC, damage);
 						Achievements.doProgress(p, AchievementData.DEAL_HARD_DAMAGE_USING_MAGIC, damage);
+					}
+					AOEWeaponData aoeData = AOESystem.getSingleton()
+							.getAOEData(p.getEquipment().get(Equipment.WEAPON_SLOT).getId());
+
+					if (aoeData != null && aoeData.getRadius() > 0) {
+						AOEHandler.handleAttack(p, victim, aoeData.getMinDamage(), aoeData.getMaxDamage(),
+								aoeData.getRadius(), aoeData.getIcon());
+						//System.out.println(
+						//	"Attacking with data: " + aoeData.getMinDamage() + " | " + aoeData.getMaxDamage()
+						//		+ " | " + aoeData.getRadius() + " | " + aoeData.getIcon().toString());
 					}
 				}
 			} else {
